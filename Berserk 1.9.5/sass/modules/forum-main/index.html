@@ -1,0 +1,196 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Forum Main"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+  <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+  <main class="main-container">
+    <div class="brk-base-bg-light brk-base-box-shadow-inset pt-80 pb-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-6">
+            @@include('./templates/forum-list.html',{
+              "bg-class":"brk-base-bg-3",
+              "header-title":"Hot Forums"
+            })
+          </div>
+          <div class="col-12 col-xl-6">
+            @@include('./templates/forum-list.html',{
+              "bg-class":"brk-base-bg-gradient-10deg",
+              "header-title":"Latest Forums"
+            })
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-50">
+      <div class="row">
+        <div class="col-12 col-lg-8 col-xl-8 order-xs-2 order-lg-1">
+          <div class="pb-70 pt-10">
+            @@include('../alerts/templates/simple-v1.html',{
+            "button":"false",
+            "containerClass":"alert_forum mb-50",
+            "icon":"<i class='start-icon far fa-thumbs-up font__size-14'></i>",
+            "title":"<span class='font__size-14 font__weight-light letter-spacing-20'>This forum contains 1 topic, and was last updated by<a href=''><span class='brk-forum-user-alert'><img src='img/users/3.png' alt='alt' class='brk-forum-user-alert__img'> </span>Demo 5 days, 7 hours ago.</a></span>"
+            })
+            @@loop('./templates/post-preview.html', [
+            {
+            "img-src":"img/50x50_1.jpg",
+            "title":"Some forum title",
+            "last-update":"Updated on January 7, 2016 in",
+            "category":"Ideas",
+            "comment-count":"20",
+            "like-count":"24",
+            "private":"true",
+            "wide":"true",
+            "name":"",
+            "postHeader":""
+            },
+            {
+            "img-src":"img/50x50_2.jpg",
+            "title":"Some forum title",
+            "last-update":"Updated on January 7, 2016 in",
+            "category":"JobPosting",
+            "comment-count":"20",
+            "like-count":"24",
+            "private":"",
+            "wide":"true",
+            "name":"",
+            "postHeader":""
+            },
+            {
+            "img-src":"img/50x50_3.jpg",
+            "title":"Some forum title",
+            "last-update":"Updated on January 7, 2016 in",
+            "category":"Question",
+            "comment-count":"20",
+            "like-count":"24",
+            "private":"true",
+            "wide":"true",
+            "name":"",
+            "postHeader":""
+            },
+            {
+            "img-src":"img/50x50_4.jpg",
+            "title":"Some forum title",
+            "last-update":"Updated on January 7, 2016 in",
+            "category":"Feature",
+            "comment-count":"20",
+            "like-count":"24",
+            "private":"true",
+            "wide":"true",
+            "name":"",
+            "postHeader":""
+            },
+            {
+            "img-src":"img/50x50_5.jpg",
+            "title":"Some forum title",
+            "last-update":"Updated on January 7, 2016 in",
+            "category":"Ideas",
+            "comment-count":"20",
+            "like-count":"24",
+            "private":"",
+            "wide":"true",
+            "name":"",
+            "postHeader":""
+            },
+            {
+            "img-src":"img/50x50_1.jpg",
+            "title":"Some forum title",
+            "last-update":"Updated on January 7, 2016 in",
+            "category":"",
+            "comment-count":"20",
+            "like-count":"24",
+            "private":"",
+            "wide":"true",
+            "name":"",
+            "postHeader":""
+            },
+            {
+            "img-src":"img/50x50_2.jpg",
+            "title":"Some forum title",
+            "last-update":"Updated on January 7, 2016 in",
+            "category":"",
+            "comment-count":"20",
+            "like-count":"24",
+            "private":"",
+            "wide":"true",
+            "name":"",
+            "postHeader":""
+            },
+            {
+            "img-src":"img/50x50_3.jpg",
+            "title":"Some forum title",
+            "last-update":"Updated on January 7, 2016 in",
+            "category":"",
+            "comment-count":"20",
+            "like-count":"24",
+            "private":"",
+            "wide":"true",
+            "name":"",
+            "postHeader":""
+            },
+            {
+            "img-src":"img/50x50_4.jpg",
+            "title":"Some forum title",
+            "last-update":"Updated on January 7, 2016 in",
+            "category":"",
+            "comment-count":"20",
+            "like-count":"24",
+            "private":"true",
+            "wide":"true",
+            "name":"",
+            "postHeader":""
+            }
+            ])
+          </div>
+
+          <div class="col-12 text-center mt-10 mb-80" data-brk-library="component__button">
+            <button class="icon__btn icon__btn-anim icon__btn-md icon__btn-invert">
+              <span class="before"></span>
+              <i class="fal fa-sync" aria-hidden="true"></i>
+              <span class="after"></span>
+              <span class="bg"></span>
+            </button>
+          </div>
+
+          @@include('../alerts/templates/simple-v1.html',{
+          "containerClass":"alert_forum mb-60",
+          "icon":"<i class='start-icon far fa-thumbs-up font__size-14'></i>",
+          "title":"<span class='font__size-14 font__weight-light letter-spacing-20'>Your account has the ability to post unrestricted HTML content.</span>"
+          })
+          <div id="add-topic">
+            @@include('templates/forum-redactor.html',{})
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 col-xl-4 order-xs-1 order-lg-2">
+          @@include('../widgets/templates/sidebar-forum.html',{
+          "containerClass":"h-100"
+          })
+        </div>
+      </div>
+    </div>
+    @@include('../CFA/templates/hot.html',{
+      "bordered__text":"HOT!",
+      "bold__text":"CALL FOR ACTION ",
+      "light__text":"BLOCK HEADING TITLE GOES HERE",
+      "button__text":"READ MORE",
+      "text_hover": "READ MORE"
+    })
+  </main>
+
+</div>
+
+
+@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

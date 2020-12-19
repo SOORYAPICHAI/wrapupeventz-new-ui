@@ -1,0 +1,30 @@
+<div class="brk-grid__item magazines design">
+  @@include("../content-sliders/templates/filmstrip-card.html",{
+  "title":"7 Signs Your Website is Boring",
+  "paragrap":"The web is both an interactive and virtually unlimited medium, meaning that your own little corner of it has great potential.",
+  "img":"@@if(context.img_1){@@img_1}@@if(!context.img_1){img/home-page/isotope-1.jpg}",
+  "customClass":"text-center brk-base-box-shadow"
+  })
+</div>
+<div class="brk-grid__item brk-grid__item_width-2 brk-grid__item_height-2 logotypes magazines">
+  @@include("../content-sliders/templates/filmstrip-card.html",{
+  "title":"Smartly Coded & Maintained.",
+  "paragrap":"The web is both an interactive and virtually unlimited medium, meaning that your own little corner of it has great potential.",
+  "img":"@@if(context.img_2){@@img_2}@@if(!context.img_2){img/home-page/isotope-2.jpg}",
+  "customClass":"text-center brk-base-box-shadow"
+  })
+</div>
+<div class="brk-grid__item  brk-grid__item_height-2 albums design">
+  @@include("../content-sliders/templates/filmstrip-card.html",{
+  "title":"Scalable on Devices",
+  "paragrap":"The web is both an interactive and virtually unlimited medium, meaning that your own little corner of it has great potential.",
+  "img":"@@if(context.img_3){@@img_3}@@if(!context.img_3){img/home-page/isotope-3.jpg}",
+  "customClass":"text-center brk-base-box-shadow"
+  })
+</div>
+<div class="brk-grid__item  brk-grid__item_width-2 logotypes albums">
+  @@include("../media-embeds/templates/html5.html",{
+  "img":"@@if(context.img_4){@@img_4}@@if(!context.img_4){img/home-page/isotope-4.jpg}",
+  "overlay": "@@if(context.overlay){@@overlay}"
+  })
+</div>

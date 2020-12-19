@@ -1,0 +1,68 @@
+<div class="brs-tab brs-tab_dual" data-brk-library="component__widgets">
+    <ul class="nav nav-tabs brs-tab__header" id="news-tab" role="tablist">
+        <li class="nav-item brs-tab__header-item">
+            <a class="nav-link active brs-tab__header-title font__family-montserrat font__size-16 font__weight-bold line__height-18 "
+                id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="true">
+                <i class="fal fa-bolt brs-tab__header-title-icon"></i>Popular</a>
+        </li>
+        <li class="nav-item brs-tab__header-item">
+            <a class="nav-link brs-tab__header-title font__family-montserrat font__size-16 font__weight-bold line__height-18 "
+                id="recent-tab" data-toggle="tab" href="#recent" role="tab" aria-controls="recent" aria-selected="false">
+                <i class="far fa-clock brs-tab__header-title-icon"></i>Recent</a>
+        </li>
+    </ul>
+    @@if(context.demo !== "true"){
+      <div class="tab-content brs-tab__body" id="news-tabContent">
+        <div class="tab-pane brs-tab__body-item fade show active" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+          @@include('post-mini-horizontal.html',{
+            "src": "img/blog/news-mini-1.png"
+          })
+          @@include('post-mini-horizontal.html',{
+            "src": "img/blog/news-mini-2.png"
+          })
+          @@include('post-mini-horizontal.html',{
+            "src": "img/blog/news-mini-3.png"
+          })
+        </div>
+        <div class="tab-pane fade brs-tab__body-item" id="recent" role="tabpanel" aria-labelledby="recent-tab">
+          @@include('post-mini-horizontal.html',{
+            "src": "img/blog/news-mini-3.png"
+          })
+          @@include('post-mini-horizontal.html',{
+            "src": "img/blog/news-mini-1.png"
+          })
+          @@include('post-mini-horizontal.html',{
+            "src": "img/blog/news-mini-2.png"
+          })
+        </div>
+      </div>
+    }
+    @@if(context.demo === "true"){
+      <div class="tab-content brs-tab__body" id="news-tabContent">
+        <div class="tab-pane brs-tab__body-item fade show active" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+          @@include('post-mini-horizontal.html',{
+            "src": "img/110x84_1.jpg"
+          })
+          @@include('post-mini-horizontal.html',{
+            "src": "img/110x84_2.jpg"
+          })
+          @@include('post-mini-horizontal.html',{
+            "src": "img/110x84_3.jpg"
+          })
+        </div>
+        <div class="tab-pane fade brs-tab__body-item" id="recent" role="tabpanel" aria-labelledby="recent-tab">
+          @@include('post-mini-horizontal.html',{
+            "src": "img/110x84_1.jpg"
+          })
+          @@include('post-mini-horizontal.html',{
+            "src": "img/110x84_2.jpg"
+          })
+          @@include('post-mini-horizontal.html',{
+            "src": "img/110x84_3.jpg"
+          })
+        </div>
+      </div>
+    }
+    
+
+</div>

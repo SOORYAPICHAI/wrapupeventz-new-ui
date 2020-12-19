@@ -1,0 +1,64 @@
+<footer 
+  class="brk-footer position-relative
+    @@if(!context.customClass){ml-10 mr-10 mb-10}
+    @@if(context.customClass){@@customClass}" 
+  @@if(context.id){id="@@id"} 
+  data-brk-library="component__footer">
+  <div 
+    class="brk-footer__wrapper pt-120 pb-60 d-flex flex-column align-items-center 
+      @@if(context.animated === 'true'){brk-footer__wrapper_animated}">
+    <img 
+      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+      @@if(!context.bg){
+        data-src="img/1920x480_1.jpg" 
+      }
+      @@if(context.bg){
+        data-src="@@bg"
+      }
+      alt="alt" 
+      class="brk-abs-img lazyload">
+
+    <span class="brk-abs-overlay @@if(context.overlay){@@overlay}@@if(!context.overlay){brk-black-82-overlay}"></span>
+    @@if(context.logo !== "false"){
+      <a  class="mb-120 pl-15 pr-15">
+        <img
+          class="lazyload"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          @@if(context.logo){
+            data-src="@@logo"
+          }
+          @@if(!context.logo){
+            data-src="img/logo-italic.png" 
+          }
+          alt="berserk">
+      </a>
+    }
+    @@if(context.typingRotator) {
+      <div class="text-center mb-100" data-brk-library="component__typing_rotator,assets__typing_rotator">
+        <h2 class="brk-headline font__family-poppins font__size-84 font__weight-normal letters rotate-2 text-center show-inline">
+          <span class="brk-words-rotators brk-white-font-color">
+            <b class="is-visible">@@word1</b>
+            <b>@@word2</b>
+            @@if(context.word3){
+              <b>@@word3</b>
+            }
+            @@if(context.word4){
+              <b>@@word4</b>
+            }
+          </span>
+        </h2>
+      </div>
+    }
+    @@include('../../social-links/templates/simple-social-links.html',{
+      "socialIcon1":"<i class='fab fa-twitter'></i>",
+      "socialIcon2":"<i class='fab fa-instagram'></i>",
+      "socialIcon3":"<i class='fab fa-google-plus-g'></i>",
+      "socialIcon4":"<i class='fab fa-youtube'></i>",
+      "socialIcon5":"<i class='fab fa-vimeo'></i>",
+      "socialIcon6":"<i class='fab fa-vk'></i>",
+      "customContainerClass":"brk-white-font-color d-flex justify-content-center mb-25 font__size-16 brk-social-links_bordered",
+      "wowAnimated": "true"
+    })
+    <p class="font__family-open-sans font__size-16 lh-18 letter-spacing-100 brk-dark-font-color">© All Rights Reserved</p>
+  </div>
+</footer> 

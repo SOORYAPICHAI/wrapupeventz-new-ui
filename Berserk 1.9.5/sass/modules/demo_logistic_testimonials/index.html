@@ -1,0 +1,97 @@
+@@include('../../assets/templates/head.html',{
+"titlePage": "Logistic - Testimonials",
+"themeSkin": "brk-dark-blue-1.css",
+"style": ["vendor/revslider/fonts/font-awesome/css/font-awesome.css"]
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+<div class="main-page" style="padding-top: 72px">
+  @@include('../../modules/header-11/templates/style-header-11.html', {
+  "topBarPosition": "brk-header__top-bar_hide",
+  "topBarCustomStyle": "bg-white",
+  "mainBarCustomStyle": "bg-white",
+  "logo_1": "img/demo_logistic/logo-dark-1.png",
+  "logo_2": "img/demo_logistic/logo-dark-1.png",
+  "customNav": "true",
+  "title1": "Home",
+  "link1": "demo_logistic.html",
+  "title2": "About",
+  "link2": "demo_logistic_about.html",
+  "submenu2": {
+  "subtitle1": "About Us",
+  "sublink1": "demo_logistic_about.html",
+  "subtitle2": "Team",
+  "sublink2": "demo_logistic_team.html",
+  "subtitle3": "Partners",
+  "sublink3": "demo_logistic_partners.html",
+  "subtitle4": "Testimonials",
+  "sublink4": "demo_logistic_testimonials.html"
+  },
+  "title3": "Services",
+  "link3": "demo_logistic_services.html",
+  "title4": "News",
+  "link4": "demo_logistic_news.html",
+  "title5": "Contact",
+  "link5": "demo_logistic_contact.html"
+  })
+
+  <h1 class="sr-only">Logistic - Team</h1>
+
+  <section>
+  @@include('../../modules/breadcrumbs/templates/angle.html',{
+  "title": "Some Title",
+  "right": "true",
+  "img": "img/demo_logistic/1920x180_1.jpg"
+  })
+  </section>
+
+  <section class="pt-lg-90 pt-70 pb-60">
+    <div class="container">
+      <h1 class="font__family-montserrat brk-base-2-font-color font__size-36  font__weight-bold line__height-46 text-uppercase text-center mb-20">Clients reviews</h1>
+      <p class="font__famil-open-sans brk-text-base-color-1 font__size-18 font__style-italic line__height-28 text-center mb-50">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <br>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </p>
+
+      @@include('../../modules/testimonials/templates/dash-five.html',{
+      "demo": "true"
+      })
+
+    </div>
+  </section>
+
+  <section class="pt-lg-80 pt-60 pb-90" style="background-color: #e7eef6;">
+    <h1 class="font__family-montserrat brk-base-2-font-color font__size-36  font__weight-bold line__height-46 text-uppercase text-center mb-50">Our Office</h1>
+    <div class="container">
+      @@include('../../modules/gallery-sliders/templates/solid.html',{
+      "demo": "true",
+      "customClass": "mt-80 mt-sm-50 mt-md-0"
+      })
+    </div>
+  </section>
+
+  <section>
+  @@include('../../modules/demo_logistic/subscribe.html')
+  </section>
+
+  @@include('../../modules/footer/templates/footer-7.html',{
+  "newsImg": "img/demo_logistic/270x270_1.jpg",
+  "workImg1": "img/demo_logistic/90x90_1.jpg",
+  "workImg2": "img/demo_logistic/90x90_2.jpg",
+  "workImg3": "img/demo_logistic/90x90_3.jpg",
+  "workImg4": "img/demo_logistic/90x90_4.jpg",
+  "workImg5": "img/demo_logistic/90x90_5.jpg",
+  "workImg6": "img/demo_logistic/90x90_6.jpg",
+  "workImg7": "img/demo_logistic/90x90_7.jpg",
+  "workImg8": "img/demo_logistic/90x90_8.jpg",
+  "workImg9": "img/demo_logistic/90x90_9.jpg"
+  })
+</div>
+
+
+@@include('../../assets/templates/footer.html',{
+  "demo": "true"
+})
+
+</body>

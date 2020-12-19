@@ -1,0 +1,44 @@
+<!--
+.brk-sc-tiles-trend_white-text
+.brk-sc-tiles-trend_dark-text
+.brk-sc-tiles-trend_right-text
+.brk-sc-tiles-trend_left-text
+-->
+<div class="brk-sc-tiles-trend @@if(context.coloText){@@coloText} @@if(context.directionText){@@directionText}"
+     style="background-image: @@if(context.bgImage){url(@@bgImage)}" data-brk-library="component__shop_tiles">
+  <div class="brk-sc-tiles-trend__content">
+    <div class="brk-sc-tiles-trend__thumbnail"><img src="@@if(context.thumb){@@thumb}" alt="alt"></div>
+    <div class="brk-sc-tiles-trend__description">
+      <h4 class="brk-sc-tiles-trend__title font__family-montserrat text-uppercase">
+        @@if(context.title){@@title}
+      </h4>
+
+      <div class="brk-sc-tiles-trend__text">
+        @@if(context.text){@@text}
+      </div>
+
+      <div class="brk-sc-tiles-trend__price-buy">
+        <div class="brk-sc-tiles-trend__price-buy--price font__family-montserrat font__weight-ultralight">@@if(context.price){@@price}</div>
+
+        @@if(context.buttonColor === "white") {
+          @@include('../../buttons/templates/buttons.html',{
+          "text": "@@if(context.textButtons){@@textButtons}@@if(!context.textButtons){Add to cart}",
+          "type": "btn-inside-out btn-inside-out-invert",
+          "customClass": "border-radius-25 font__family-open-sans font__weight-bold",
+          "icon": "<i class=\"fa fa-shopping-basket icon-inside icon-inline\"></i>"
+          })
+        }
+
+        @@if(context.buttonColor === "dark") {
+          @@include('../../buttons/templates/buttons.html',{
+          "text": "@@if(context.textButtons){@@textButtons}@@if(!context.textButtons){Add to cart}",
+          "type": "btn-inside-out btn-inside-out-invert",
+          "customClass": "border-radius-25 font__family-open-sans font__weight-bold btn-inside-out_text-dark btn-dark-shadow",
+          "icon": "<i class=\"fa fa-shopping-basket icon-inside icon-inline\"></i>"
+          })
+        }
+
+      </div>
+    </div>
+  </div>
+</div><!-- /.brk-sc-tiles-trend -->

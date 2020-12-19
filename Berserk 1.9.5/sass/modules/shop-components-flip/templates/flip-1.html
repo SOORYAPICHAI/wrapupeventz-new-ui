@@ -1,0 +1,46 @@
+<div class="flip-box brk-sc-flip-one text-center" data-brk-library="component__shop_flip,component__flip_box_css,slider__swiper">
+  <div class="flip @@if(context.styleFlip){@@styleFlip} @@if(!context.styleFlip){flip_horizontal}">
+    <div class="flip__front brk-sc-flip-one__front">
+      @@if(context.stick){<div class="brk-sc-flip-one__stick @@styleStick font__family-montserrat font__weight-bold">@@stick</div>}
+      <div class="brk-sc-flip-one__thumb">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@thumb" alt="alt" class="brk-abs-img lazyload">
+      </div>
+      <div class="brk-sc-flip-one__description">
+        <div class="brk-sc-flip-one__cat font__family-montserrat font__weight-bold text-uppercase brk-white-font-color brk-bg-primary brk-base-box-shadow-primary">@@cat</div>
+        <div class="brk-sc-flip-one__title">
+          <h4 class="font__family-montserrat font__weight-bold">@@title</h4>
+        </div>
+        <div class="brk-sc-flip-one__price font__family-montserrat">
+          <div class="price font__weight-bold brk-base-font-color">@@price</div>
+          @@if(context.oldPrice){<div class="old-price font__weight-light brk-dark-font-color">@@oldPrice</div>}
+        </div>
+      </div>
+    </div>
+    <div class="flip__back brk-sc-flip-one__back">
+      @@if(context.stick){<div class="brk-sc-flip-one__stick @@styleStick font__family-montserrat font__weight-bold">@@stick</div>}
+      <div class="brk-swiper-default brk-sc-flip-one__slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            @@for (var i = 0; i < slider.length; i++) {
+            <div class="swiper-slide">
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="`+slider[i]+`" alt="alt" class="lazyload">
+            </div>
+            }
+          </div>
+        </div>
+
+        <div class="brk-swiper-default-nav-light brk-swiper-default-nav-prev"><i class="fal fa-angle-left"></i></div>
+        <div class="brk-swiper-default-nav-light brk-swiper-default-nav-next"><i class="fal fa-angle-right"></i></div>
+      </div>
+
+      @@include('../../buttons/templates/buttons.html',{
+      "type": "btn-inside-out",
+      "text": "Buy Now",
+      "customClass": "border-radius-25 font__family-open-sans font__weight-bold",
+      "icon": "<i class='fa fa-shopping-basket icon-inside' aria-hidden='true'></i>",
+      "size": "md"
+      })
+
+    </div>
+  </div>
+</div>

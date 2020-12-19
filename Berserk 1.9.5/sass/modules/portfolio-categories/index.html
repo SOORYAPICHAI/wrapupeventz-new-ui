@@ -1,0 +1,125 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Portfolio Categories"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+  <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+  <main class="main-container">
+    <div class="container">
+
+      <section class=" mt-160">
+        <!--title-->
+        <div class="z-index-high text-center">
+          <h2 class="title__heading-02 title__heading-main font__family-roboto" data-brk-library="component__title">Some category</h2>
+          <span class="title__heading-02 title__heading-sub wow font__family-roboto font__weight-thin fadeIn">Some Category</span>
+        </div>
+        <!--carousel-->
+        <div class="mt-90 mb-90">
+          @@include("./templates/carousel.html")
+        </div>
+      </section>
+
+      <section class=" mt-190">
+        <!--title-->
+        <div class="z-index-high text-center">
+          <h2 class="title__heading-02 title__heading-main font__family-roboto" data-brk-library="component__title">Some category</h2>
+          <span class="title__heading-02 title__heading-sub wow fadeIn font__family-roboto font__weight-thin">Some Category</span>
+        </div>
+        <!--carousel-->
+        <div class="mt-90 mb-90">
+          @@include("./templates/carousel-img-set-1.html")
+        </div>
+      </section>
+      <section class=" mt-190">
+        <!--title-->
+        <div class="z-index-high text-center">
+          <h2 class="title__heading-02 title__heading-main font__family-roboto" data-brk-library="component__title">Some category</h2>
+          <span class="title__heading-02 title__heading-sub wow fadeIn font__family-roboto font__weight-thin">Some Category</span>
+        </div>
+        <!--carousel-->
+        <div class="mt-90">
+          @@include("./templates/carousel-img-set-2.html")
+        </div>
+      </section>
+
+      <section class=" mt-190">
+        <!--title-->
+        <div class="z-index-high text-center">
+          <h2 class="title__heading-02 title__heading-main font__family-roboto" data-brk-library="component__title">Some category</h2>
+          <span class="title__heading-02 title__heading-sub wow fadeIn font__family-roboto font__weight-thin">Some Category</span>
+        </div>
+        <!--carousel-->
+        <div class="mt-90">
+          <div class="row brk-gutters-5">
+            <div class='col-12 col-sm-6 col-md-4 col-lg-3'>
+              @@include("templates/portfolio-categories-item.html",{
+              "imgSrc" : "img/370x370_6.jpg"
+              })
+            </div>
+            <div class='col-12 col-sm-6 col-md-4 col-lg-3'>
+              @@include("templates/portfolio-categories-item.html",{
+              "imgSrc" : "img/370x370_1.jpg"
+              })
+            </div>
+            <div class='col-12 col-sm-6 col-md-4 col-lg-3'>
+              @@include("templates/portfolio-categories-item.html",{
+              "imgSrc" : "img/370x370_2.jpg"
+              })
+            </div>
+            <div class='col-12 col-sm-6 col-md-4 col-lg-3'>
+              @@include("templates/portfolio-categories-item.html",{
+              "imgSrc" : "img/370x370_3.jpg"
+              })
+            </div>
+            <div class='col-12 col-sm-6 col-md-4 col-lg-3'>
+              @@include("templates/portfolio-categories-item.html",{
+              "imgSrc" : "img/370x370_4.jpg"
+              })
+            </div>
+            <div class='col-12 col-sm-6 col-md-4 col-lg-3'>
+              @@include("templates/portfolio-categories-item.html",{
+              "imgSrc" : "img/370x370_5.jpg"
+              })
+            </div>
+            <div class='col-12 col-sm-6 col-md-4 col-lg-3'>
+              @@include("templates/portfolio-categories-item.html",{
+              "imgSrc" : "img/370x370_6.jpg"
+              })
+            </div>
+            <div class='col-12 col-sm-6 col-md-4 col-lg-3'>
+              @@include("templates/portfolio-categories-item.html",{
+              "imgSrc" : "img/370x370_1.jpg"
+              })
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <div class="mt-90 mb-90 text-center" data-brk-library="component__button">
+        <button class="icon__btn icon__btn-anim icon__btn-md icon__btn-invert">
+          <span class="before"></span>
+          <i class="fal fa-sync" aria-hidden="true"></i>
+          <span class="after"></span>
+          <span class="bg"></span>
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+</div>
+
+@@include("../../assets/templates/footer.html")
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+<div class="tiled-slider arrows-classic-ellipse slick-loading fa-req"
+     data-slick='{"slidesToShow": 5, "slidesToScroll": 1, "arrows": true, "autoplay": true, "autoplaySpeed": 2800, "centerMode": true, "centerPadding": "0"}'
+     data-brk-library="slider__slick,fancybox">
+
+  @@if(context.images){
+  @@for (var i = 0; i < images.length; i++) {
+  <div class="brk-slid">
+    <a href="`+images[i]+`" class="image-popup-gradient img-square fancybox">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="`+images[i]+`" class="lazyload" alt="alt">
+    </a>
+  </div>
+  }
+  }
+</div>

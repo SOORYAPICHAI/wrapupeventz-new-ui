@@ -1,0 +1,55 @@
+<div class="brk-shop-grid-filter-strict">
+  <div class="brk-shop-grid-filter-strict__thumb">
+    <img src="@@thumb" alt="alt">
+  </div>
+  <div class="brk-shop-grid-filter-strict__inform text-center d-flex flex-column align-content-center justify-content-center">
+    <h4 class="font__family-montserrat font__weight-bold font__size-18">@@title</h4>
+    <div class="price brk-base-font-color font__family-montserrat font__size-15 line__height-22 font__weight-medium">
+      <span class="old-price brk-dark-font-color">@@oldPrice</span>
+      <span class='font__weight-bold'>@@price</span>
+    </div>
+  </div>
+
+  @@if(context.stick){<div class="brk-shop-grid-filter-strict__stick brk-white-font-color font__family-montserrat font__weight-bold">@@stick</div>}
+  <div class="before brk-sc-tiles-split-gradient"></div>
+
+  <div class="brk-shop-grid-filter-strict__back">
+
+    <div class="brk-shop-grid-filter-strict__inform text-center d-flex flex-column align-content-center justify-content-center">
+      <h4 class="font__family-montserrat font__weight-bold font__size-18">@@title</h4>
+      <div class="price brk-base-font-color font__family-montserrat font__size-15 line__height-22 font__weight-medium">
+        <span class="old-price brk-dark-font-color">@@oldPrice</span>
+        <span class='font__weight-bold'>@@price</span>
+      </div>
+    </div>
+
+    <div class="brk-shop-grid-filter-strict__list pt-40 pb-40">
+      @@if(context.list){
+      <ul class="font__size-15 line__height-20 font__weight-light text-left letter-spacing-60">
+        @@for (var i = 0; i < list.length; i++) {
+        <li class="d-flex"><i class="far fa-check brk-blue-light-font-color"></i><span class="letter-spacing-40">`+list[i]+`</span></li>
+        }
+      </ul>
+      }
+    </div>
+
+    <div class="text-center pt-35">
+      <div class="brk-shop-grid-filter-strict__actions clearfix brk-base-box-shadow-primary">
+        @@if(cartBtn === "true"){
+        <a href="#" class="add-cart brk-bg-color"><i class="fal fa-shopping-cart brk-white-font-color"></i></a>
+        }
+        @@if(searchBtn === "true"){
+        <a href="#" class="add-search brk-bg-color"><i class="fal fa-search brk-white-font-color"></i></a>
+        }
+        @@if(wishBtn === "true"){
+        <a href="#" class="add-wishlist brk-bg-color"><i class="fal fa-star brk-white-font-color"></i></a>
+        }
+        @@if(compareBtn === "true"){
+        <a href="#" class="add-compare brk-bg-color"><i class="fas fa-exchange-alt brk-white-font-color"></i></a>
+        }
+      </div>
+    </div>
+
+
+  </div>
+</div>

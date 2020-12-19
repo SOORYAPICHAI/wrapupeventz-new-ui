@@ -1,0 +1,75 @@
+<div class="brk-shop-grid-filter" data-brk-library="component__shop_grid_filter">
+
+  <ul class="brk-shop-grid-filter__button brk-shop-grid-filter__button_style-1">
+    <li class="checked" data-filter="*">
+      <div class="brk-shop-grid-filter__button-text">
+        <i class="fal fa-th"></i>
+        All
+      </div>
+      <span class="before brk-base-bg-gradient-14"></span>
+    </li>
+    <li data-filter=".bags">
+      <div class="brk-shop-grid-filter__button-text">
+        Bags
+      </div>
+      <span class="before brk-base-bg-gradient-14"></span>
+    </li>
+    <li data-filter=".shoes">
+      <div class="brk-shop-grid-filter__button-text">
+        Shoes
+      </div>
+      <span class="before brk-base-bg-gradient-14"></span>
+    </li>
+    <li data-filter=".dresses">
+      <div class="brk-shop-grid-filter__button-text">
+        Dresses
+      </div>
+      <span class="before brk-base-bg-gradient-14"></span>
+    </li>
+    <li data-filter=".shirts">
+      <div class="brk-shop-grid-filter__button-text">
+        Shirts
+      </div>
+      <span class="before brk-base-bg-gradient-14"></span>
+    </li>
+  </ul>
+
+  <div class="brk-shop-grid-filter__items row no-gutters">
+    <div class="col-xl-3 col-md-6 brk-shop-grid-filter__item bags shoes">
+      @@include('grid-element.html', {
+      "thumb": "img/shop-grid-filter-1.jpg",
+      "title": "Large Shop Item name goes here",
+      "price": "$64.00",
+      "stick": [
+        "<span class='brk-white-font-color brk-base-bg-gradient-14'>-20%</span>"
+      ]
+      })
+    </div>
+    <div class="col-xl-3 col-md-6 brk-shop-grid-filter__item bags shoes">
+      @@include('grid-element.html', {
+      "thumb": "img/shop-grid-filter-2.jpg",
+      "title": "Shop Item name",
+      "price": "$64.00"
+      })
+    </div>
+    <div class="col-xl-3 col-md-6 brk-shop-grid-filter__item dresses bags">
+      @@include('grid-element.html', {
+      "thumb": "img/shop-grid-filter-3.jpg",
+      "title": "Large Shop Item name goes here",
+      "price": "$64.00"
+      })
+    </div>
+    <div class="col-xl-3 col-md-6 brk-shop-grid-filter__item shirts dresses">
+      @@include('grid-element.html', {
+      "thumb": "img/shop-grid-filter-4.jpg",
+      "title": "Large Shop Item name goes here",
+      "price": "$64.00",
+      "stick": [
+      "<span class='brk-white-font-color brk-base-bg-gradient-14'>-30%</span>",
+      "<span class='brk-white-font-color brk-base-bg-gradient-left-blue'>Sale</span>"
+      ]
+      })
+    </div>
+  </div>
+</div>
+

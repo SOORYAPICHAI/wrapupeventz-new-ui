@@ -1,0 +1,141 @@
+<footer class="brk-footer position-relative @@if(context.customClass){@@customClass}" @@if(context.id){id="@@id"} data-brk-library="component__footer">
+  @@if(context.map === "true"){
+  @@include('../../google-maps/templates/hidden-classic.html')
+  }
+  <div class="brk-footer__wrapper pt-50 pb-50 @@if(context.animated === "true"){brk-footer__wrapper_animated}">
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.bg){@@bg}@@if(!context.bg){img/footer/bg-5.jpg}" alt="alt" class="brk-abs-img lazyload">
+  <span class="brk-abs-overlay brk-bg-gradient-10deg-92"></span>
+  <div class="container">
+    <div class="brk-footer__shop-element pb-2 pb-lg-40 mb-30">
+      <div class="row">
+        <div class="col-12 col-lg-3">
+
+          <h6 class="brk-white-font-color font__size-24  font__weight-normal text-uppercase pb-30 mb-35 brk-footer__shop-title font__family-open-sans brk-footer__shop-title_wide text-left">
+            Categories</h6>
+          @@include("../../widgets/templates/categories.html",{
+          "customContainerClass":"brk-categories_white brk-categories_full-width brk-categories_no-borders",
+          "active":"disable"
+          })
+        </div>
+        <div class="col-12 col-lg-9">
+          <h6 class="brk-white-font-color font__size-24 font__weight-normal text-uppercase pb-30 mb-35 mt-40 mt-lg-0 brk-footer__shop-title">
+            Popular items</h6>
+          <div class="position-relative brk-slider_shop-footer" data-brk-library="slider__slick">
+            <div class="brk-slider__nav">
+              <button type="button" class="brk-slider__nav-prev font__size-24 brk-white-font-color mr-20">
+                <i class="fal fa-arrow-left"></i>
+              </button>
+              <button type="button" class="brk-slider__nav-next font__size-24 brk-white-font-color">
+                <i class="fal fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="brk-slider__items">
+              <div>
+                @@include('../../shop-components-flip/templates/flip-4.html', {
+                "title": "Polo shirt Hugo Boss",
+                "titleBack": "Tommy Hilfiger",
+                "oldPrice": "$26.00",
+                "price": "$24.00",
+                "cat": "Sport",
+                "stick": "Sale",
+                "styleFlip": "flip_vertical",
+                "thumb": "@@if(context.contentImg_1){@@contentImg_1}@@if(!context.contentImg_1){img/sh-flip-1.png}",
+                "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa natoque"
+                })
+              </div>
+              <div>
+                @@include('../../shop-components-flip/templates/flip-4.html', {
+                "title": "Long-sleeve top Burberry",
+                "titleBack": "Sleeveless shirt",
+                "oldPrice": "$26.00",
+                "price": "$24.00",
+                "cat": "Sport",
+                "stick": "Sale",
+                "styleFlip": "flip_vertical",
+                "thumb": "@@if(context.contentImg_2){@@contentImg_2}@@if(!context.contentImg_2){img/sh-flip-2.png}",
+                "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa natoque"
+                })
+              </div>
+              <div>
+                @@include('../../shop-components-flip/templates/flip-4.html', {
+                "title": "Sport shoes The North Face",
+                "titleBack": "Business shoes",
+                "oldPrice": "$26.00",
+                "price": "$24.00",
+                "cat": "Sport",
+                "stick": "Sale",
+                "styleFlip": "flip_vertical",
+                "thumb": "@@if(context.contentImg_3){@@contentImg_3}@@if(!context.contentImg_3){img/sh-flip-3.png}",
+                "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa natoque"
+                })
+              </div>
+              <div>
+                @@include('../../shop-components-flip/templates/flip-4.html', {
+                "title": "Trench coat Ralph Lauren",
+                "titleBack": "Sport shoes",
+                "oldPrice": "$26.00",
+                "price": "$24.00",
+                "cat": "Sport",
+                "stick": "Sale",
+                "styleFlip": "flip_vertical",
+                "thumb": "@@if(context.contentImg_4){@@contentImg_4}@@if(!context.contentImg_4){img/sh-flip-1.png}",
+                "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa natoque"
+                })
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-between flex-wrap mb-30">
+      <div class="d-flex align-items-center flex-wrap justify-content-between">
+        <p class="brk-white-font-color font__size-16 lh-16 mt-10 mb-10 line__height-24 text-uppercase mr-25 flex-wrap">
+          follow us:</p>
+
+        <div style="margin-top: 5px;" >
+           @@include('../../social-links/templates/simple-social-links.html',{
+            "socialIcon1":"<i class='fab fa-twitter'></i>",
+            "socialIcon2":"<i class='fab fa-instagram'></i>",
+            "socialIcon3":"<i class='fab fa-google-plus-g'></i>",
+            "socialIcon4":"<i class='fab fa-youtube'></i>",
+            "socialIcon5":"<i class='fab fa-vimeo'></i>",
+            "socialIcon6":"<i class='fab fa-vk'></i>",
+            "customContainerClass":"brk-white-font-color font__size-13 pb-1"
+          })
+        </div>
+      </div>
+      @@include('../../buttons/templates/buttons.html',{
+      "type":"btn-prime",
+      "text":"contact us",
+      "customClass":"mx-0 my-0 border-radius-0 btn-prime-white-transparent btn-no-shadow mx-xs-auto mt-xs-20 btn-xs-max-width"
+      })
+    </div>
+    <div class="brk-footer__wide-menu pt-20 pt-sm-15 pb-15 d-flex flex-wrap justify-content-between align-items-center">
+      <p class="font__size-14 line__height-21 font__weight-normal text-sm-left mx-xs-auto">© 2018 Berserk All rights
+        reserved</p>
+      <nav class="brk-footer-nav pt-10 pt-md-0">
+        <ul class="d-flex flex-wrap justify-content-center font__size-14 font__weight-medium text-uppercase">
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">pages</a>
+          </li>
+          <li>
+            <a href="#">elements</a>
+          </li>
+          <li>
+            <a href="#">portfolio</a>
+          </li>
+          <li>
+            <a href="#">blog</a>
+          </li>
+          <li>
+            <a href="#">shop</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </div>
+</footer>

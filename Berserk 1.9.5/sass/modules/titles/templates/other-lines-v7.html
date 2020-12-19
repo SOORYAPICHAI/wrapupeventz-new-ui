@@ -1,0 +1,12 @@
+@@if (context.text){
+  @@if (context.text.main){
+	  <h5 class="font__size-21 font__family-montserrat font__weight-light text-gray" data-brk-library="component__title">@@text.main</h5>
+  }
+  @@if (context.text.secondary){
+	  <h3 class="font__family-montserrat font__weight-bold title-lines-dotted" data-brk-library="component__title">
+      <span class="line"></span>
+      <span class="text">@@text.secondary</span>
+      <span class="line"></span>
+    </h3>
+  }
+}

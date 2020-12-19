@@ -1,0 +1,14 @@
+<@@if(context.tag){@@tag}@@if(!context.tag){a}
+@@if(!context.tag || context.tag === 'a') {
+@@if(context.href){
+href="@@href"
+}
+@@if(!context.href){
+href="#"
+}
+} class="@@if(context.class){@@class}@@if(!context.class){icon__btn icon__btn-anim icon__btn-md icon__btn-invert}"  data-brk-library="component__button">
+  <span class="before"></span>
+  <i class="fas fa-sync" aria-hidden="true"></i>
+  <span class="after"></span>
+  <span class="bg"></span>
+</@@if(context.tag){@@tag}@@if(!context.tag){a}>

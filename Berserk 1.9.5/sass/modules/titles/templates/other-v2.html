@@ -1,0 +1,13 @@
+@@if (context.text){
+  <div class="z-index-high" data-brk-library="component__title">
+	@@if (context.text.main){
+		<h2 class="title__heading-02 title__heading-main font__family-roboto font__size-36 font__weight-bold">@@text.main</h2>
+	}
+	@@if (context.text.secondary){
+		<span class="title__heading-02 title__heading-sub font__family-roboto font__size-50 line__height-68 font__weight-thin">@@text.secondary</span>
+	}
+  </div>
+  @@if(context.text.divider !== "false"){
+    <div class="divider-lines"><span></span><span></span></div>
+  }
+}

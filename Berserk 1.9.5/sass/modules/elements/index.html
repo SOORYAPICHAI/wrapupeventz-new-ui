@@ -1,0 +1,134 @@
+ @@include("../../assets/templates/head.html", {
+ "titlePage": "Elements"
+ })
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-50 mt-70">
+      <section>
+        <div class="container mb-90 mt-90">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">01</span> Rating
+            </h3>
+          </div>
+        </div>
+
+        <div class="container"> 
+          @@include('./templates/rating.html', { 
+            "value": "80%" 
+          })
+        </div>
+
+        <div class="container mb-90 mt-90">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">02</span> Action buttons
+            </h3>
+          </div>
+        </div>
+
+        <div class="container">
+          @@include('./templates/action-buttons.html', {
+            "customContainerClass":""
+          })
+        </div>
+
+        <div class="container mb-90 mt-90">
+            <div class="text-left">
+              <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+                <span class="heading__number">03</span> Size Chooser
+              </h3>
+            </div>
+          </div>
+  
+          <div class="container">
+            @@include('./templates/size-chooser.html', {})
+          </div>
+
+          <div class="container mb-90 mt-90">
+            <div class="text-left">
+              <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+                <span class="heading__number">04</span> Category
+              </h3>
+            </div>
+          </div>
+  
+          <div class="container"> 
+            @@include('./templates/category.html', { 
+              "item1": "T-Shirts,",
+              "item2": "Branding,"
+            })
+          </div>
+
+        <div class="container mb-90 mt-90">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold text-left">
+            <span class="heading__number">05</span> Logo</h3>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-8 col-sm-10">
+              <div class="brk-base-bg-gradient--30deg pt-30 pb-30 pl-40 pr-40">
+                @@include('../portfolio-page/templates/logos.html', {})
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container mb-70 mt-90">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold text-left">
+            <span class="heading__number">06</span> Logo</h3>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-8">
+              @@include('../widgets/templates/brand-filter.html',{
+              "title":"false",
+              "customContainerClass":"mb-30",
+              "item1img":"",
+              "item1text":"logo",
+              "item2img":"",
+              "item2text":"logo",
+              "item3img":"",
+              "item3text":"logo",
+              "item4img":"",
+              "item4text":"logo",
+              "item5img":"",
+              "item5text":"logo",
+              "item6img":"",
+              "item6text":"logo",
+              "item7img":"",
+              "item7text":"logo"
+              })
+            </div>
+          </div>
+        </div>
+
+        <div class="container mb-70 mt-90">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold text-left">
+            <span class="heading__number">06</span> Dashed divider</h3>
+        </div>
+        <div class="container">
+          <div class="overflow-hid">
+           @@include("./templates/dashed-divider.html")
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+  
+
+</body>
+
+</html>

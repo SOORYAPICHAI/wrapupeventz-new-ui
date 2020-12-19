@@ -1,0 +1,72 @@
+
+<div class="@@if(!context.customClass){pt-60} @@if(context.customClass){@@customClass} text-center position-relative"
+     data-brk-library="component__social_block,component__button">
+   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.img){@@img}@@if(!context.img){img/bg-1920_1.jpg}" alt="alt" class="brk-abs-img lazyload @@if(context.grayscale === "true"){grayscale-100}">
+   <span class="brk-abs-overlay @@if(context.overlay){@@overlay} @@if(!context.overlay){brk-black-76-overlay}"></span>
+		<div class="container all-light">
+      @@if(context.onlyLinks !== "true"){
+        @@if(context.title_type !== "thin" && context.title_type !== "bold"){
+          <h2 class="title__heading-01 title__heading-main">Heading here</h2>
+          <h4 class="title__heading-01 title__heading-sub">Some subtitle here</h4>
+          <hr class="title__heading-01 divider">
+        }
+        @@if(context.title_type === "thin" && context.title_type !== "bold"){
+          <div class="text-center">
+            @@include('../../titles/templates/other-v5.html',{ 
+              "text": { 
+                "main": "Follow Me", 
+                "main_weight": "thin", 
+                "main_size": "86", 
+                "secondary": "I think you will like it",
+                "secondary_opacity": "60",
+                "secondary_customClass": "pl-2"
+              } 
+            })
+          </div>
+        }
+        @@if(context.title_type === "bold"){
+          <div class="text-center">
+            <h3 class="brk-white-font-color font__family-montserrat font__size-56  font__weight-bold lh-60">Our Socials</h3>
+          </div>
+        }
+      }
+			<div class="row row-no-gutter @@if(context.customMargin){@@customMargin} @@if(!context.customMargin){mt-70}">
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="social__icon-square @@if(context.dark_theme === "true"){social__icon-square_dark}">
+						<a href="#"><i class="brk-icon slide-bg-wrap fab fa-facebook-f"><span class="slide-bg"></span></i></a>
+						<h4 class="font__family-montserrat font__size-16 text">Facebook</h4>
+					</div>
+				</div>
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="social__icon-square @@if(context.dark_theme === "true"){social__icon-square_dark}">
+						<a href="#"><i class="brk-icon slide-bg-wrap fab fa-twitter"><span class="slide-bg"></span></i></a>
+						<h4 class="font__family-montserrat font__size-16 text">Twitter</h4>
+					</div>
+				</div>
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="social__icon-square @@if(context.dark_theme === "true"){social__icon-square_dark}">
+						<a href="#"><i class="brk-icon slide-bg-wrap fab fa-instagram"><span class="slide-bg"></span></i></a>
+						<h4 class="font__family-montserrat font__size-16 text">Instagram</h4>
+					</div>
+				</div>
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="social__icon-square @@if(context.dark_theme === "true"){social__icon-square_dark}">
+						<a href="#"><i class="brk-icon slide-bg-wrap fab fa-youtube"><span class="slide-bg"></span></i></a>
+						<h4 class="font__family-montserrat font__size-16 text">YouTube</h4>
+					</div>
+				</div>
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="social__icon-square @@if(context.dark_theme === "true"){social__icon-square_dark}">
+						<a href="#"><i class="brk-icon slide-bg-wrap fab fa-google"><span class="slide-bg"></span></i></a>
+						<h4 class="font__family-montserrat font__size-16 text">Google +</h4>
+					</div>
+				</div>
+				<div class="col-6 col-md-4 col-lg-2">
+					<div class="social__icon-square @@if(context.dark_theme === "true"){social__icon-square_dark}">
+						<a href="#"><i class="brk-icon slide-bg-wrap fab fa-vimeo-v"><span class="slide-bg"></span></i></a>
+						<h4 class="font__family-montserrat font__size-16 text">Vimeo</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

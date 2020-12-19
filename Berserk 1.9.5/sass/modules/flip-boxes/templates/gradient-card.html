@@ -1,0 +1,40 @@
+<div class="flip-box">
+  <div class="flip flip_horizontal flip-box__gradient" data-brk-library="component__flip_box">
+    <div 
+      class="flip__front text-center flip-box__bg flip-box__gradient-pb100 lazyload" 
+      @@if(context.img){data-bg="@@img"}@@if(!context.img){data-bg="img/370x370_1.jpg"}>
+      <span class="overlay-position-full @@if(context.overlay){@@overlay} @@if(!context.overlay){brk-base-bg-1}"></span>
+      <div class="flip-box__gradient-title font__family-montserrat font__weight-light font__size-28 text-capitalize">
+        @@if(context.title){@@title}
+        @@if(!context.title){<span class="font__weight-bold">Why</span> Creators Are Turning...}
+      </div>
+    </div>
+    <div class="flip__back text-center">
+      <div class="flip-box__position flip-box__position_75">
+        <h4 class="flip-box__gradient-h4 font__family-montserrat font__weight-light font__size-28 text-capitalize">
+          @@if(context.title){@@title}
+          @@if(!context.title){<span class="font__weight-bold">Why</span> Creators Are Turning...}
+        </h4>
+        <p class="font__family-open-sans font__size-14 line__height-21 text-gray mt-25 pl-30 pr-30">
+          @@if(context.paragraph){@@paragraph}
+          @@if(!context.paragraph){ Because a glance is all people tend to offer nowadays, videos, pictures, and graphics are now the most relied upon ways...}
+        </p>
+        @@if(context.btnType === "prime"){
+          @@include("../../buttons/templates/buttons.html",{
+            "type": "btn-prime",
+            "text": "more",
+            "customClass": "text-lowercase btn-prime-primary-text-transparent border-radius-25 btn-no-shadow mx-0 mb-0 mt-35 btn-min-width-200 btn-prime_thin",
+            "size": "md"
+          })
+        }
+        @@if(!context.btnType){
+          @@include('../../buttons/templates/buttons.html',{ 
+            "type":"btn-gradient", "size":"md", 
+            "text":"read more", 
+            "customClass":"border-radius-25 flip-box__bg mt-35 font__weight-bold" 
+          })
+        }
+      </div>
+    </div>
+  </div>
+</div>

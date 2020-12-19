@@ -1,0 +1,68 @@
+$brk-base-colors: ();
+$brk-base-colors: map-merge((
+				"brand-primary":      darken(desaturate(adjust-hue(#2775ff, 36), 52.14), 3.53),
+				"secondary":          lighten(desaturate(adjust-hue(#7202bb, -4), 40.03), 15.49),
+				"white":              #fff,
+				"black":              #000,
+				"brk-dark-base":      #272727,
+				"brk-base-1":         darken(desaturate(adjust-hue(#69adff, 36), 52.14), 3.53),
+				"brk-base-2":         darken(desaturate(adjust-hue(#00c6ff, 36), 52.14), 3.53),
+				"brk-base-3":         darken(desaturate(adjust-hue(#0F5AE0, 36), 52.14), 3.53),
+				"brk-base-4":         darken(desaturate(adjust-hue(#e8ecff, 36), 52.14), 3.53),
+				"brk-base-5":         darken(desaturate(adjust-hue(#00f6ff, 36), 52.14), 3.53),
+				"brk-base-6":         darken(desaturate(adjust-hue(#0B98F6, 36), 52.14), 3.53),
+				"brk-base-7":         darken(desaturate(adjust-hue(#a7ebff, 36), 52.14), 3.53),
+				"brk-base-8":         darken(desaturate(adjust-hue(#1600ba, 36), 52.14), 3.53),
+				"brk-secondary-1":    lighten(desaturate(adjust-hue(#4f34c9, -4), 40.03), 15.49),
+				"brk-secondary-2":    lighten(desaturate(adjust-hue(#4F00BA, -4), 40.03), 15.49),
+				"brk-secondary-3":    lighten(desaturate(adjust-hue(#7400ba, -4), 40.03), 15.49),
+				"brk-secondary-4":    darken(desaturate(adjust-hue(#2775ff, 36), 52.14), 3.53),
+				"brk-secondary-5":    lighten(desaturate(adjust-hue(#6377DF, -4), 40.03), 15.49),
+				"brk-secondary-6":    lighten(desaturate(adjust-hue(#b50aff, -4), 40.03), 15.49),
+				"text-base-color-1":  #c4c4c4,
+				"text-base-color-2":  darken(desaturate(adjust-hue(#0F5AE0, 36), 52.14), 3.53),
+				"text-base-color-3":  #f3f3f3,
+        "form-color-1":				#e8ecff
+), $brk-base-colors);
+
+@function safe-rgb($color) {
+	@return unquote("#{red($color)}, #{green($color)}, #{blue($color)}");
+}
+
+/* ----------- Palette variable ----------- */
+:root {
+	@each $color, $value in $brk-base-colors {
+		--#{$color}: #{$value};
+	}
+
+	// RGB
+	@each $color, $value in $brk-base-colors {
+		--#{$color}-rgb: #{safe-rgb($value)};
+  }
+  
+  --b-radius: inherit; 
+}
+/* ----------- Palette variable ----------- */
+
+
+// fix for demo_shop_drone
+
+.brk-pricing-horizontal .h-button {
+  box-shadow: none !important;
+}
+
+.brk-pricing-horizontal:hover .h-button {
+  box-shadow: 0 0 0 6px rgba(var(--white-rgb),.14) !important;
+}
+
+.brk-pricing-horizontal:hover .brk-pricing-horizontal__viewed {
+  background-color: #644cb3 !important;
+}
+
+.brk-pricing-horizontal:hover .brk-pricing-horizontal__viewed>* {
+  color: #fff
+}
+
+.brk-abs-bg-overlay.brk-hosted-video__before {
+  display: none;
+}

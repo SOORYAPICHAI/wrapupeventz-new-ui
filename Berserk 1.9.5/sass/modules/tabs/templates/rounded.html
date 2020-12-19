@@ -1,0 +1,238 @@
+<div class="brk-tabs w-100 brk-tabs_rounded d-flex flex-column @@if(context.containerClass){@@containerClass}" data-brk-library="component__tabs">
+    <ul class="brk-tabs-nav brk-white-font-color font__family-montserrat font__size-15 font__weight-normal line__height-16 d-inline-flex flex-wrap align-items-center ml-auto mr-auto">
+      <li class="brk-tab d-flex align-items-center text-uppercase pl-40 pr-40">
+        @@if(context.title1){
+        @@title1
+        } @@if(!context.title1){
+        <span>01. Description</span>
+        }
+      </li>
+      <li class="brk-tab d-flex align-items-center text-uppercase pl-40 pr-40">
+        @@if(context.title2){
+        @@title2
+        } @@if(!context.title2){
+        <span>02. Main goal</span>
+        }
+      </li>
+      <li class="brk-tab d-flex align-items-center text-uppercase pl-40 pr-40">
+        @@if(context.title3){
+        @@title3
+        } @@if(!context.title3){
+        <span>03. Project process</span>
+        }
+      </li> 
+    </ul>
+  
+    <div class="brk-tabs-content">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.img){@@img}@@if(!context.img){img/1920x800.jpg}" alt="alt" class="brk-tabs-content__img lazyload" data-brk-library="fancybox">
+      <span class="brk-tabs-content__overlay brk-base-bg-gradient-90deg"></span>
+      @@if(context.content1){ 
+        <div class="brk-tab-item">
+          @@content1
+        </div>
+      } 
+      @@if(!context.content1) {
+      <div class="brk-tab-item">
+        <div class="container">
+          <div class="brk-slider">
+            <div class="brk-slider__items slick-loading"
+                 data-slick='{"slidesToShow": 4, "slidesToScroll": 2, "arrows": false, "dots": true}'
+                 data-brk-library="slider__slick">
+              @@if(context.demo !== "true"){
+              <div>
+                @@include('../../shop-components-flip/templates/flip-2.html', {
+                  "frontTitle": "Trench coat",
+                  "backTitle": "Trench coat",
+                  "stick": "-40%",
+                  "price": "$24.00",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/brk-honeycomb-1.png"
+                })
+              </div>
+              <div>
+                @@include('../../shop-components-flip/templates/flip-2.html', {
+                  "frontTitle": "Ralph Lauren",
+                  "backTitle": "Ralph Lauren",
+                  "stick": "-40%",
+                  "price": "$24.00",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/brk-honeycomb-1.png"
+                })
+              </div>
+              <div>
+                @@include('../../shop-components-flip/templates/flip-2.html', {
+                  "frontTitle": "Business shoes",
+                  "backTitle": "Business shoes",
+                  "stick": "-40%",
+                  "price": "$24.00",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/brk-honeycomb-1.png"
+                })
+              </div>
+              <div>
+                @@include('../../shop-components-flip/templates/flip-2.html', {
+                  "frontTitle": "Some large item name here",
+                  "backTitle": "Some Title Here",
+                  "stick": "-40%",
+                  "price": "$24.00",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/brk-honeycomb-1.png"
+                })
+              </div>
+              <div>
+                @@include('../../shop-components-flip/templates/flip-2.html', {
+                  "frontTitle": "The North Face",
+                  "backTitle": "The North Face",
+                  "stick": "-40%",
+                  "price": "$24.00",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/brk-honeycomb-1.png"
+                })
+              </div>
+              <div>
+                @@include('../../shop-components-flip/templates/flip-2.html', {
+                  "frontTitle": "Sport shoes",
+                  "backTitle": "Sport shoes",
+                  "stick": "-40%",
+                  "price": "$24.00",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/brk-honeycomb-1.png"
+                })
+              </div>
+              }
+              @@if(context.demo === "true"){
+              <div>
+                @@include('../../shop-components-flip/templates/flip-2.html', {
+                  "frontTitle": "Sleeveless shirt",
+                  "backTitle": "Sleeveless shirt",
+                  "stick": "-40%",
+                  "price": "$24.00",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/124x215_1.png"
+                })
+              </div>
+              <div>
+                @@include('../../shop-components-flip/templates/flip-2.html', {
+                  "frontTitle": "Burberry",
+                  "backTitle": "Burberry",
+                  "stick": "-40%",
+                  "price": "$24.00",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/124x215_2.png"
+                })
+              </div>
+              <div>
+                @@include('../../shop-components-flip/templates/flip-2.html', {
+                  "frontTitle": "Long-sleeve top",
+                  "backTitle": "Long-sleeve top",
+                  "stick": "-40%",
+                  "price": "$24.00",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/124x215_1.png"
+                })
+              </div>
+              <div>
+                @@include('../../shop-components-flip/templates/flip-2.html', {
+                  "frontTitle": "Tommy Hilfiger",
+                  "backTitle": "Tommy Hilfiger",
+                  "stick": "-40%",
+                  "price": "$24.00",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/124x215_2.png"
+                })
+              </div>
+              <div>
+                @@include('../../shop-components-flip/templates/flip-2.html', {
+                  "frontTitle": "Hugo Boss",
+                  "backTitle": "Hugo Boss",
+                  "stick": "-40%",
+                  "price": "$24.00",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/124x215_1.png"
+                })
+              </div>
+              <div>
+                @@include('../../shop-components-flip/templates/flip-2.html', {
+                  "frontTitle": "Polo shirt",
+                  "backTitle": "Polo shirt",
+                  "stick": "-40%",
+                  "price": "$24.00",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/124x215_2.png"
+                })
+              </div>
+              } 
+            </div>
+            <div class="brk-slider__control d-flex align-items-center">
+              <span class="brk-slider__prev brk-base-font-color font__size-24">
+                <i class="fa fa-angle-left " aria-hidden="true"></i>
+              </span>
+              <span class="brk-slider__next brk-base-font-color font__size-24">
+                  <i class="fa fa-angle-right " aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      } 
+      @@if(context.content2){ 
+        <div class="brk-tab-item">
+          @@content2
+        </div>
+      } 
+      @@if(!context.content2){
+        <div class="brk-tab-item">
+          <div class="container">
+
+            <div class="border-radius-25 bg-white pl-30 pr-30 pt-30 pb-30 mt-30 mb-40">
+              @@include('../../blog-page/templates/reply-item.html',{})
+              @@include('../../blog-page/templates/reply-item.html',{})
+              @@include('../../blog-page/templates/reply-item.html',{})
+            </div>
+
+            <div class="border-radius-25 bg-white pl-30 pr-30 pt-30 pb-30">
+              @@include('../../forum-post/templates/reply-form.html',{
+                "containerClass":"",
+                "titleCustomClass":"text-center",
+                "stars":"true",
+                "replyTitle":"Your Review",
+                "buttonText":"Review"
+              })
+            </div>
+
+            
+
+          </div>
+        </div>
+      }
+      @@if(context.content3){ 
+        <div class="brk-tab-item">
+          @@content3
+        </div>
+      } 
+      @@if(!context.content3){
+       <div class="brk-tab-item">
+         <div class="container">
+
+          <div class="border-radius-25 bg-white pl-30 pr-30 pt-30 pb-30 mb-40 mt-30">
+            @@include('../../blog-page/templates/reply-item.html',{})
+            @@include('../../blog-page/templates/reply-item.html',{})
+            @@include('../../blog-page/templates/reply-item.html',{})
+          </div>
+
+          <div class="border-radius-25 bg-white pl-30 pr-30 pt-30 pb-30 ">
+            @@include('../../forum-post/templates/reply-form.html',{
+              "containerClass":"",
+              "titleCustomClass":"text-center",
+              "replyTitle":"Your Reply",
+              "buttonText":"Reply"
+            })
+          </div>
+
+           
+
+          </div>
+       </div>
+      }
+    </div>
+  </div>

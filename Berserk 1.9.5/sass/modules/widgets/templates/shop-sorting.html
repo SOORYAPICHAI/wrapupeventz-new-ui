@@ -1,0 +1,38 @@
+<div class="brk-sc-sorting" data-brk-library="component__widgets,jquerySlider,component__form">
+  
+  <div class='brk-sc-view-swiper @@if(view === "row"){row-view} @@if(view === "col"){col-view} mr-20'>
+    <a href="@@rowLink" class="brk-sc-view-swiper__btn">
+      <i class="fas fa-bars font__size-14"></i>
+    </a>
+    <a href="@@colLink" class="brk-sc-view-swiper__btn">
+      <i class="fas fa-th font__size-14"></i>
+    </a>
+  </div>
+  
+  <span class="brk-dark-font-color brk-sc-sorting__label font__family-open-sans font__size-14 font__weight-normal line__height-14 mr-15">Sort by</span>
+  <div class="brk-sc-sorting__sort-select d-inline brk-form-round mr-20">
+    <select name="select">
+      <option value="Option 1">Date </option>
+      <option value="Option 2">Popular </option>
+    </select>
+  </div>
+  <span class="brk-dark-font-color brk-sc-sorting__label font__family-open-sans font__size-14 font__weight-normal line__height-14 mr-15">Show</span>
+  <div class="brk-sc-sorting__show-count d-inline brk-form-round mr-30">
+      <select name="select1">
+        <option value="Option 1">10</option>
+        <option value="Option 2">40</option>
+        <option value="Option 2">All</option>
+      </select>
+    </div>
+  <div class="brk-sc-price-slider font__family-open-sans line__height-24 text-uppercase font__weight-bold">
+    <label for="lowest">$</label>
+    <input type="text" class="brk-sc-price-slider__input sliderValue font__size-14" id="lowest"
+      data-index="0" value="150" />
+    <span class="font__family-open-sans font__size-14 line__height-24 font__weight-normal font__weight-bold mr-1">—</span>
+    <label for="highest">$</label>
+    <input type="text" class="brk-sc-price-slider__input sliderValue font__size-14" id="highest"
+      data-index="1" value="600" />
+    <div class="brk-sc-price-slider__container" data-min-value="2" data-max-value="9000"></div>
+  </div>
+
+</div>

@@ -1,0 +1,168 @@
+<article class="brk-pricing-horizontal brk-base-box-shadow @@if(context.rounded === 'true'){brk-pricing-horizontal_rounded-5}" data-brk-library="component__pricing_table,component__button">
+  <span class="before @@if(context.overlay){@@overlay}@@if(!context.overlay){brk-base-bg-gradient-brown}"></span>
+  <div class="brk-pricing-horizontal__container">
+    <h2 class="sr-only">Pricing package</h2>
+    <div class="brk-pricing-horizontal__viewed @@if(context.horizontalViewedDarken === 'true'){brk-pricing-horizontal__viewed_darken}">
+      <h3 class="font__family-montserrat font__weight-bold font__size-12">Basic</h3>
+    </div>
+
+    <div class="brk-pricing-horizontal__info">
+      <div class="brk-pricing-horizontal__img-icon">
+        <img 
+          class="img-icon lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+          data-src="
+            @@if(context.demo !== 'true' && context.demo !== 'its'){img/195x91_1.png}
+            @@if(context.demo === 'true'){img/195x91_1.png}
+            @@if(context.demo === 'its'){@@img1}"  
+          alt="alt">
+      </div>
+      <div class="brk-pricing-horizontal__price">
+        <span class="sign">$</span>
+        <span class="font__family-montserrat font__weight-bold font__size-40 line__height-50">149</span>
+      </div>
+      <div class="brk-pricing-horizontal__list-options font__family-roboto font__weight-light font__size-15 line__height-28">
+        <span class="options-active">
+          <i class="fal fa-check"></i> 12 High-Res Photos</span>
+        <span class="options-active">
+          <i class="fal fa-check"></i> 48 Hour Delivery</span>
+        <span class="options-deactive">
+          <i class="fal fa-minus"></i> 6 Video Clips</span>
+        <span class="options-deactive">
+          <i class="fal fa-minus"></i> 30 Sec Video</span>
+        <span class="options-deactive">
+          <i class="fal fa-minus"></i> Listing Address</span>
+        <span class="options-deactive">
+          <i class="fal fa-minus"></i> Music</span>
+      </div>
+    </div>
+
+    @@if(context.gradientBtn !== "true"){
+      <button class="h-button btn font__family-montserrat font__weight-bold">
+        <span class="before brk-bg-grad"></span>
+        <strong>Buy now</strong>
+        <i class="fa fa-angle-right"></i>
+      </button>
+    }
+    @@if(context.gradientBtn === "true"){
+      @@include('../../buttons/templates/buttons.html',{
+        "type": "btn-gradient",
+        "customClass": "border-radius-0 text-capitalize brk-white-font-color pl-50 pr-50 mt-10 mb-10 ml-10 mr-40 font__family-montserrat font__size-14 font__weight-medium letter-spacing-100",
+        "text": "Buy Now",
+        "size": "lg-1"
+      })
+    }
+   
+  </div>
+</article>
+
+<article class="brk-pricing-horizontal brk-base-box-shadow @@if(context.rounded === 'true'){brk-pricing-horizontal_rounded-5}" data-brk-library="component__pricing_table,component__button">
+  <span class="before @@if(context.overlay){@@overlay}@@if(!context.overlay){brk-base-bg-gradient-brown}"></span>
+  <div class="brk-pricing-horizontal__container">
+    <h2 class="sr-only">Pricing package</h2>
+    <div class="brk-pricing-horizontal__viewed @@if(context.horizontalViewedDarken === 'true'){brk-pricing-horizontal__viewed_darken}">
+      <h3 class="font__family-montserrat font__weight-bold font__size-12">Popular</h3>
+    </div>
+
+    <div class="brk-pricing-horizontal__info">
+      <div class="brk-pricing-horizontal__img-icon">
+        <img 
+          class="img-icon lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+          data-src="
+            @@if(context.demo !== 'true' && context.demo !== 'its'){img/193x118_1.png}
+            @@if(context.demo === 'true'){img/193x118_1.png}
+            @@if(context.demo === 'its'){@@img2}" 
+          alt="alt">
+      </div>
+      <div class="brk-pricing-horizontal__price">
+        <span class="sign">$</span>
+        <span class="font__family-montserrat font__weight-bold font__size-40 line__height-50">199</span>
+      </div>
+      <div class="brk-pricing-horizontal__list-options font__family-roboto font__weight-light font__size-15 line__height-28">
+        <span class="options-active">
+          <i class="fal fa-check"></i> 12 High-Res Photos</span>
+        <span class="options-active">
+          <i class="fal fa-check"></i> 48 Hour Delivery</span>
+        <span class="options-active">
+          <i class="fal fa-check"></i> 6 Video Clips</span>
+        <span class="options-active">
+          <i class="fal fa-check"></i> 30 Sec Video</span>
+        <span class="options-deactive">
+          <i class="fal fa-minus"></i> Listing Address</span>
+        <span class="options-deactive">
+          <i class="fal fa-minus"></i> Music</span>
+      </div>
+    </div>
+
+    @@if(context.gradientBtn !== "true"){
+      <button class="h-button btn font__family-montserrat font__weight-bold">
+        <span class="before brk-bg-grad"></span>
+        <strong>Buy now</strong>
+        <i class="fa fa-angle-right"></i>
+      </button>
+    }
+    @@if(context.gradientBtn === "true"){
+      @@include('../../buttons/templates/buttons.html',{
+        "type": "btn-gradient",
+        "customClass": "border-radius-0 text-capitalize brk-white-font-color pl-50 pr-50 mt-10 mb-10 ml-10 mr-40 font__family-montserrat font__size-14 font__weight-medium letter-spacing-100",
+        "text": "Buy Now",
+        "size": "lg-1"
+      })
+    }
+  </div>
+</article>
+
+<article class="brk-pricing-horizontal brk-base-box-shadow @@if(context.rounded === 'true'){brk-pricing-horizontal_rounded-5}" data-brk-library="component__pricing_table,component__button">
+  <span class="before @@if(context.overlay){@@overlay}@@if(!context.overlay){brk-base-bg-gradient-brown}"></span>
+  <div class="brk-pricing-horizontal__container">
+    <h2 class="sr-only">Pricing package</h2>
+    <div class="brk-pricing-horizontal__viewed @@if(context.horizontalViewedDarken === 'true'){brk-pricing-horizontal__viewed_darken}">
+      <h3 class="font__family-montserrat font__weight-bold font__size-12">Premium</h3>
+    </div>
+
+    <div class="brk-pricing-horizontal__info">
+      <div class="brk-pricing-horizontal__img-icon">
+        <img 
+          class="img-icon lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+          data-src="
+          @@if(context.demo !== 'true' && context.demo !== 'its'){img/153x91_1.png}
+          @@if(context.demo === 'true'){img/153x91_1.png}
+          @@if(context.demo === 'its'){@@img3}" 
+          alt="alt"> 
+      </div>
+      <div class="brk-pricing-horizontal__price">
+        <span class="sign">$</span>
+        <span class="font__family-montserrat font__weight-bold font__size-40 line__height-50">249</span>
+      </div>
+      <div class="brk-pricing-horizontal__list-options font__family-roboto font__weight-light font__size-15 line__height-28">
+        <span class="options-active">
+          <i class="fal fa-check"></i> 12 High-Res Photos</span>
+        <span class="options-active">
+          <i class="fal fa-check"></i> 48 Hour Delivery</span>
+        <span class="options-active">
+          <i class="fal fa-check"></i> 6 Video Clips</span>
+        <span class="options-active">
+          <i class="fal fa-check"></i> 30 Sec Video</span>
+        <span class="options-active">
+          <i class="fal fa-check"></i> Listing Address</span>
+        <span class="options-active">
+          <i class="fal fa-check"></i> Music</span>
+      </div>
+    </div>
+
+    @@if(context.gradientBtn !== "true"){
+      <button class="h-button btn font__family-montserrat font__weight-bold">
+        <span class="before brk-bg-grad"></span>
+        <strong>Buy now</strong>
+        <i class="fa fa-angle-right"></i>
+      </button>
+    }
+    @@if(context.gradientBtn === "true"){ 
+      @@include('../../buttons/templates/buttons.html',{
+        "type": "btn-gradient",
+        "customClass": "border-radius-0 text-capitalize brk-white-font-color pl-50 pr-50 mt-10 mb-10 ml-10 mr-40 font__family-montserrat font__size-14 font__weight-medium letter-spacing-100",
+        "text": "Buy Now",
+        "size": "lg-1"
+      })
+    }
+  </div>
+</article>

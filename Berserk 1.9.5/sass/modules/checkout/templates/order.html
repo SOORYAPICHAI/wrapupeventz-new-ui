@@ -1,0 +1,43 @@
+<article class="brk-checkout-order @@if(context.customClass){@@customClass}" data-brk-library="component__checkout">
+  <header class="brk-checkout-order__header d-flex align-items-center justify-content-between">
+    <h1 class="font__family-montserrat font__size-21 line__height-24 font__weight-bold">Your order</h1>
+    @@include("../../buttons/templates/buttons.html",{
+      "type": "btn-prime",
+      "icon": "<i class='icon-inside fas fa-sync-alt'></i>",
+      "size": "md",
+      "text": "Update Cart",
+      "text_hover": "Update Cart",
+      "customClass": "border-radius-25 btn-no-shadow mx-0 my-0 font__weight-bold"
+    })
+  </header>
+  @@if(context.list !== "false"){
+    <ul class="brk-checkout-order__list brk-styled-scroll-x">
+      @@include("order-item.html")
+      @@include("order-item.html")
+      @@include("order-item.html")
+    </ul>
+  }
+  <footer class="brk-checkout-order__footer">
+    @@if(context.form === 'true'){
+      <section class="brk-checkout-order__footer-section pl-30 pr-30">
+        <form class="brk-form-round brk-form-round-btn-inside-full w-100">
+          <input type="text" placeholder="Coupon code">
+          @@include("../../buttons/templates/buttons.html",{
+            "type": "btn-inside-out",
+            "tag": "button",
+            "text": "apply",
+            "text_hover": "apply",
+            "customClass": "border-radius-25 btn-shadow mx-0 my-0"
+          })
+        </form>
+      </section>
+    }
+    <section class="brk-checkout-order__footer-section">
+      <h3 class="font__family-montserrat"><span class="font__size-14 font__weight-bold pr-2">Subtotal:</span><span class="font__size-24 font__weight-bold brk-base-font-color">$35.00</span></h3>
+    </section>
+    <section class="brk-checkout-order__footer-section">
+      <h3 class="font__family-montserrat"><span class="font__size-14 font__weight-bold pr-2">Total:</span><span class="font__size-24 font__weight-bold brk-base-font-color">$35.00</span></h3>
+    </section>
+  </footer>
+  <span class="brk-checkout-order__after"></span>
+</article>

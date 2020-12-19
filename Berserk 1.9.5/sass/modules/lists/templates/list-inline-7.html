@@ -1,0 +1,16 @@
+<ul class="list-check list-check_base-color list-check_tiny" data-brk-library="component__list">
+  @@if(!context.list){
+    <li>Maecenas vestibulum</li>
+    <li>Pellentesque</li>
+    <li>Fellentesque habita</li>
+    <li>Maecenas vestib</li>
+    <li>Pellentes</li>
+  }
+  @@if(context.list){
+    @@for (var i = 0; i < list.length; i++) {
+      <li>`+list[i]+`</li>
+    }
+  }
+</ul>
+
+      

@@ -1,0 +1,87 @@
+<div 
+class="staff-slider 
+  @@if(context.customClass){@@customClass}
+  @@if(context.cornedPagination){staff-slider_cornder-pagination}" @@if(context.dataperwiew){data-perwiew="@@dataperwiew"} data-brk-library="slider__swiper">
+  <div class="staff-slider-container swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        @@include('../templates/staff-card.html', {
+        "img": "img/270x270_13.jpg",
+        "title": "Bernard Show",
+        "position": "Web Developer"
+        })
+      </div>
+
+      <div class="swiper-slide">
+        @@include('../templates/staff-card.html', {
+        "img": "img/270x270_14.jpg",
+        "title": "Bernard Show",
+        "position": "Web Developer"
+        })
+      </div>
+
+      <div class="swiper-slide">
+        @@include('../templates/staff-card.html', {
+        "img": "img/270x270_15.jpg",
+        "title": "Bentley Diana",
+        "position": "CEO & Manager"
+        })
+      </div>
+
+      <div class="swiper-slide">
+        @@include('../templates/staff-card.html', {
+        "img": "img/270x270_16.jpg",
+        "title": "Mathef Julia",
+        "position": "UI/UX Designer"
+        })
+      </div>
+
+      <div class="swiper-slide">
+        @@include('../templates/staff-card.html', {
+        "img": "img/270x270_17.jpg",
+        "title": "Bernard Show",
+        "position": "CEO & Manager"
+        })
+      </div>
+
+      <div class="swiper-slide">
+        @@include('../templates/staff-card.html', {
+        "img": "img/270x270_15.jpg",
+        "title": "Bentley Diana",
+        "position": "CEO & Manager"
+        })
+      </div>
+
+      <div class="swiper-slide">
+        @@include('../templates/staff-card.html', {
+        "img": "img/270x270_14.jpg",
+        "title": "Bernard Show",
+        "position": "Web Developer"
+        })
+      </div>
+
+      <div class="swiper-slide">
+        @@include('../templates/staff-card.html', {
+        "img": "img/270x270_17.jpg",
+        "title": "Bernard Show",
+        "position": "CEO & Manager"
+        })
+      </div>
+
+      <div class="swiper-slide">
+        @@include('../templates/staff-card.html', {
+        "img": "img/270x270_14.jpg",
+        "title": "Bernard Show",
+        "position": "Web Developer"
+        })
+      </div>
+
+    </div>
+  </div>
+  <div class="dots-base-staff-skin">
+    <div class="swiper-arrow button-prev"><i class="far fa-angle-left" aria-hidden="true"></i></div>
+    <ul class="pagination"></ul>
+    <div class="swiper-arrow button-next"><i class="far fa-angle-right" aria-hidden="true"></i></div>
+  </div>
+</div>

@@ -1,0 +1,77 @@
+  @@include("../../assets/templates/head.html", {
+  "titlePage": "Dividers"
+  })
+  </head>
+
+  <body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-70 mt-100 mt-md-130">
+
+      <!-- Divider Lines -->
+      <div class="mt-100 mt-md-110">
+        <div class="container">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+            class="heading__number">01</span> Lines</h3>
+        </div>
+        <div class="container">
+          <div class="mt-100">
+            @@include("templates/line-v1.html")
+          </div>
+          <div class="mt-80">
+            @@include("templates/line-v2.html")
+          </div>
+          <div class="mt-90">
+            @@include("templates/line-v3.html")
+          </div>
+          <div class="mt-70">
+            @@include("templates/line-v4.html")
+          </div>
+          <div class="mt-100">
+            @@include("templates/line-v5.html")
+          </div>
+          <div class="mt-100">
+            @@include("templates/line-v6.html")
+          </div>
+          <div class="mt-90">
+            @@include("templates/line-v7.html")
+          </div>
+          <div class="mt-100">
+            @@include("templates/line-v8.html")
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider Shadow -->
+      <div class="mt-100 mt-md-130">
+        <div class="container">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+            class="heading__number">02</span> Shadow</h3>
+        </div>
+        <div class="container">
+          <div class="mt-100">
+            @@include("templates/shadow-v1.html")
+          </div>
+          <div class="mt-80">
+            @@include("templates/shadow-v2.html")
+          </div>
+          <div class="mt-90">
+            @@include("templates/shadow-v3.html")
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+  
+
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<div class="brk-shop-grid-filter-special @@customClass">
+  <img class="brk-shop-grid-filter-special__thumb" src="@@thumb" alt="alt">
+  <div class="brk-shop-grid-filter-special__overlay"></div>
+
+  @@if (stick_1 !== '' || stick_2 !== '') {
+  <div class="brk-shop-grid-filter-special__stick brk-white-font-color font__family-montserrat font__weight-light text-uppercase">
+    @@if(context.stick_1){
+    <div class="stick"><span>@@stick_1</span></div>
+    }
+    @@if(context.stick_2){
+    <div class="stick"><span>@@stick_2</span></div>
+    }
+  </div>
+  }
+
+  <div class="brk-shop-grid-filter-special__container">
+    <div class="brk-shop-grid-filter-special__content text-center">
+      <div class="brk-shop-grid-filter-special__title mb-30">
+        <h4 class="font__family-montserrat font__weight-light font__size-20 line__height-24 brk-white-font-color text-uppercase">@@title</h4>
+      </div>
+
+      <div class="brk-white-font-color font__family-montserrat mb-40">
+        <span class="old-price brk-dark-font-color font__size-13">@@oldPrice</span>
+        <span class='font__size-18'>@@price</span>
+      </div>
+
+      <a href="#" class="brk-shop-grid-filter-special__buy brk-base-bg-gradient-13 brk-base-box-shadow-primary">
+        <span class="text brk-white-font-color text-uppercase font__family-montserrat font__weight-light font__size-14 line__height-44">Buy it now</span>
+        <span class="icon brk-base-font-color brk-base-box-shadow-primary"><i class="far fa-shopping-cart"></i></span>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,201 @@
+<footer class="brk-footer position-relative" @@if(context.id){id="@@id"} data-brk-library="component__footer">
+  
+  <div class="brk-footer__wrapper @@if(context.animated === "true"){brk-footer__wrapper_animated}">
+    @@if(context.map === "true"){
+     @@include('../../google-maps/templates/hidden-classic.html',{
+       "customClass": "overflow-hid"
+     })
+  }
+    <div class="pt-lg-60 pb-lg-40 pt-30 pb-30 @@if(context.overlay1){@@overlay1} @@if(!context.overlay1){brk-bg-color-dark-2}">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <h6 class="brk-white-font-color font__family-montserrat font__weight-semibold font__size-21 text-uppercase letter-spacing-100 text-sm-left text-center">Popular Items</h6>
+            <hr class="horiz-line mt-20 mb-30">
+            <ul class="d-flex flex-column">
+              <li class="mb-30">
+                @@if(context.light_theme !== "true"){
+                  @@include("../../shop-components-cards/templates/mini-card.html",{
+                    "titleClass":"brk-white-font-color",
+                    "customClass":"brk-sc-card-preview_mini",
+                    "img": "img/80x80_1.jpg",
+                    "title": "Network device"
+                  })
+                }
+                @@if(context.light_theme === "true"){
+                  @@include("../../shop-components-cards/templates/mini-card.html",{
+                    "titleClass":"brk-white-font-color",
+                    "customClass":"brk-sc-card-preview_mini",
+                    "gradient": "brk-bg-primary",
+                    "old_price_color": "brk-white-font-color opacity-60",
+                    "img": "img/80x80_1.jpg",
+                    "title": "Network device"
+                  })
+                }
+              </li>
+              <li class="mb-30">
+                  @@if(context.light_theme !== "true"){
+                    @@include("../../shop-components-cards/templates/mini-card.html",{
+                      "titleClass":"brk-white-font-color",
+                      "customClass":"brk-sc-card-preview_mini",
+                      "img": "img/80x80_2.jpg",
+                      "title": "Wireless device"
+                    })
+                  }
+                  @@if(context.light_theme === "true"){
+                    @@include("../../shop-components-cards/templates/mini-card.html",{
+                      "titleClass":"brk-white-font-color",
+                      "customClass":"brk-sc-card-preview_mini",
+                      "gradient": "brk-bg-primary",
+                      "old_price_color": "brk-white-font-color opacity-60",
+                      "img": "img/80x80_2.jpg",
+                      "title": "Wireless device"
+                    })
+                  }
+                </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h6 class="brk-white-font-color font__family-montserrat font__weight-semibold font__size-21 text-uppercase letter-spacing-100 text-sm-left text-center">Best Rated</h6>
+            <hr class="horiz-line mt-20 mb-30">
+            <ul class="d-flex flex-column">
+              <li class="mb-30">
+                @@if(context.light_theme !== "true"){
+                  @@include("../../shop-components-cards/templates/mini-card.html",{
+                    "titleClass":"brk-white-font-color",
+                    "customClass":"brk-sc-card-preview_mini",
+                    "img": "img/80x80_3.jpg",
+                    "title": "Display device"
+                  })
+                }
+                @@if(context.light_theme === "true"){
+                  @@include("../../shop-components-cards/templates/mini-card.html",{
+                    "titleClass":"brk-white-font-color",
+                    "customClass":"brk-sc-card-preview_mini",
+                    "gradient": "brk-bg-primary",
+                    "old_price_color": "brk-white-font-color opacity-60",
+                    "img": "img/80x80_3.jpg",
+                    "title": "Display device"
+                  })
+                }
+              </li>
+              <li class="mb-30">
+                @@if(context.light_theme !== "true"){
+                  @@include("../../shop-components-cards/templates/mini-card.html",{
+                    "titleClass":"brk-white-font-color",
+                    "customClass":"brk-sc-card-preview_mini",
+                    "img": "img/80x80_4.jpg",
+                    "title": "Car navigation"
+                  })
+                }
+                @@if(context.light_theme === "true"){
+                  @@include("../../shop-components-cards/templates/mini-card.html",{
+                    "titleClass":"brk-white-font-color",
+                    "customClass":"brk-sc-card-preview_mini",
+                    "gradient": "brk-bg-primary",
+                    "old_price_color": "brk-white-font-color opacity-60",
+                    "img": "img/80x80_4.jpg",
+                    "title": "Car navigation"
+                  })
+                }
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h6 class="brk-white-font-color font__family-montserrat font__weight-semibold font__size-21 text-uppercase letter-spacing-100 text-sm-left text-center">Top sellers</h6>
+            <hr class="horiz-line mt-20 mb-30">
+            <ul class="d-flex flex-column">
+              <li class="mb-30">
+                @@if(context.light_theme !== "true"){
+                  @@include("../../shop-components-cards/templates/mini-card.html",{
+                    "titleClass":"brk-white-font-color",
+                    "customClass":"brk-sc-card-preview_mini",
+                    "img": "img/80x80_5.jpg",
+                    "title": "Wireless device"
+                  })
+                }
+                @@if(context.light_theme === "true"){
+                  @@include("../../shop-components-cards/templates/mini-card.html",{
+                    "titleClass":"brk-white-font-color",
+                    "customClass":"brk-sc-card-preview_mini",
+                    "gradient": "brk-bg-primary",
+                    "old_price_color": "brk-white-font-color opacity-60",
+                    "img": "img/80x80_5.jpg",
+                    "title": "Wireless device"
+                  })
+                }
+              </li>
+              <li class="mb-30">
+                @@if(context.light_theme !== "true"){
+                  @@include("../../shop-components-cards/templates/mini-card.html",{
+                    "titleClass":"brk-white-font-color",
+                    "customClass":"brk-sc-card-preview_mini",
+                    "img": "img/80x80_6.jpg",
+                    "title": "Portable media player"
+                  })
+                }
+                @@if(context.light_theme === "true"){
+                  @@include("../../shop-components-cards/templates/mini-card.html",{
+                    "titleClass":"brk-white-font-color",
+                    "customClass":"brk-sc-card-preview_mini",
+                    "gradient": "brk-bg-primary",
+                    "old_price_color": "brk-white-font-color opacity-60",
+                    "img": "img/80x80_6.jpg",
+                    "title": "Portable media player"
+                  })
+                }
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="brk-footer__borders_footer-10 lazyload" @@if(context.img2){data-bg="@@img2"}>
+      <span class="brk-abs-bg-overlay @@if(context.overlay2){@@overlay2} @@if(!context.overlay2){brk-bg-color-dark-3}"></span>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-12">
+            <div class="h-100 d-flex flex-column justify-content-center mt-20 mb-10 mb-lg-0 mt-lg-0">
+              <h6 class="sr-only">Copyright</h6>
+              <a href="#" class="mt-15 mb-15 d-sm-inline-block d-block">
+                <img src="img/logo.png" alt="alt">
+              </a>
+              <p class='@@if(context.light_theme !== "true"){brk-dark-font-color}@@if(context.light_theme === "true"){brk-color-base-7} font__family-open-sans font__size-14 font__weight-normal line__height-21 pl-10 pl-xs-0'>© 2018 Berserk All rights reserved</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="brk-footer__bordered-col h-100 pt-40 pt-lg-30 pr-lg-30">
+              <h6 class="brk-white-font-color font__family-montserrat font__weight-semibold text-uppercase letter-spacing-100 font__size-21 line__height-28 mb-30">Tags</h6>
+              @@if(context.light_theme !== "true"){
+                @@include('../../tags/templates/solid.html',{
+                  "customClass":"brk-tags_transparent brk-tags_gray mb-20"
+                })
+              }
+              @@if(context.light_theme === "true"){
+                @@include('../../tags/templates/solid.html',{
+                  "customClass":"brk-tags_transparent brk-tags_gray mb-20",
+                  "primary": "true"
+                })
+              }
+            </div>
+          </div> 
+          <div class="col-lg-4 col-12">
+              <h6 class="brk-white-font-color font__family-montserrat font__weight-semibold text-uppercase letter-spacing-100 font__size-21 line__height-28 mb-40 mt-30">Follow us</h6>
+              @@if(context.light_theme !== "true"){
+                @@include('../../social-links/templates/wide-social-links.html',{
+                  "itemClass":"brk-dark-font-color",
+                  "customClass":"mb-25"
+                })
+              }
+              @@if(context.light_theme === "true"){
+                @@include('../../social-links/templates/wide-social-links.html',{
+                  "itemClass":"brk-color-base-7 brk-social-links-wide__item_light",
+                  "customClass":"mb-25"
+                })
+              }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

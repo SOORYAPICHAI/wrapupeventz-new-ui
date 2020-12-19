@@ -1,0 +1,544 @@
+@@include('../../assets/templates/head.html',{
+  "titlePage": "Demo SAAS",
+  "themeSkin": "brk-cyan.css"
+  })
+  </head>
+  
+  <body> 
+    @@include('../../modules/theme-options/templates/options.html', {})
+  
+    <div class="main-page">
+      @@include('../header-7/templates/style-header-7.html', {
+        "customNav": "true",
+        "title1": "About",
+        "link1": "#about",
+        "title2": "Reviews",
+        "link2": "#reviews",
+        "title3": "Our Office",
+        "link3": "#office",
+        "title4": "Team",
+        "link4": "#team",
+        "title5": "Contact",
+        "link5": "#contact",
+        "only_header": "true",
+        "mainBarHeight": "80px",
+        "white": "true",
+        "justifyLeft": "true",
+        "modifier": "brk-nav_modifier-capitalize"
+      })
+      <section class="position-relative pt-90 overflow-hid">
+        <span class="brk-abs-overlay brk-alt-gradient--30deg-96"></span>
+        @@include("../svg-pattern/templates/pattern-2.html",{
+          "color1": "var(--brk-base-3)",
+          "color2": "var(--brk-base-4)",
+          "customClass" : "brk-svg-pattern-container_rotate-y brk-svg-pattern-container_bottom"
+        })
+
+        <div class="brk-swiper-default z-index-5 position-relative"
+             data-brk-swiper='{"autoplay": {"delay": 8000}}'
+             data-brk-library="slider__swiper">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="brk-app-slider__slide">
+                  <div class="container position-relative">
+                    <div class="row">
+                      <div class="col-12 col-lg-5">
+                        <h1 class="font__family-montserrat font__weight-bold font__size-56 line__height-56 mb-10 brk-white-font-color mt-80">Some APP</h1>
+                        <h2 class="mb-40 font__family-montserrat font__size-18 line__height-20 font__weight-semibold brk-white-font-color letter-spacing-100">a new begining for your team</h2>
+                        <p class="brk-white-font-color font__size-16 line__height-28 mb-45" style="max-width: 330px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <div class="mb-50">
+                          @@include('../buttons/templates/buttons.html',{
+                          "type": "btn-gradient",
+                          "customClass": "border-radius-0 text-capitalize brk-white-font-color btn-min-width-200  font__family-montserrat font__size-14 font__weight-medium letter-spacing-200 mt-10 ml-0 mr-10 mb-0",
+                          "text": "Download Now",
+                          "size": "lg-1"
+                          })
+                          @@include('../buttons/templates/buttons.html',{
+                          "type": "btn-prime",
+                          "customClass": "border-radius-0 text-capitalize font__family-montserrat font__size-14 font__weight-medium btn-min-width-200 btn-prime-primary-transparent btn-prime_thin btn-no-shadow letter-spacing-100 mt-10 ml-0 mr-10 mb-0",
+                          "size": "lg-1",
+                          "text": "Watch Demo"
+                          })
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-7">
+                        <img src="img/demo_saas/1418x623_1.png" alt="app promo" class="brk-app-slider__img">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brk-app-slider__slide">
+                  <div class="container position-relative">
+                    <div class="row">
+                      <div class="col-12 col-lg-5">
+                        <h1 class="font__family-montserrat font__weight-bold font__size-56 line__height-56 mb-10 brk-white-font-color mt-80">Berserk APP</h1>
+                        <h2 class="mb-40 font__family-montserrat font__size-18 line__height-20 font__weight-semibold brk-white-font-color letter-spacing-100">awesome designed app for you</h2>
+                        <p class="brk-white-font-color font__size-16 line__height-28 mb-45" style="max-width: 330px">The future of mobile is the future of online. It is how people access online content now.</p>
+                        <div class="mb-50">
+                          @@include('../buttons/templates/buttons.html',{
+                          "type": "btn-gradient",
+                          "customClass": "border-radius-0 text-capitalize brk-white-font-color btn-min-width-200  font__family-montserrat font__size-14 font__weight-medium letter-spacing-200 mt-10 ml-0 mr-10 mb-0",
+                          "text": "Rate APP",
+                          "size": "lg-1"
+                          })
+                          @@include('../buttons/templates/buttons.html',{
+                          "type": "btn-prime",
+                          "customClass": "border-radius-0 text-capitalize font__family-montserrat font__size-14 font__weight-medium btn-min-width-200 btn-prime-primary-transparent btn-prime_thin btn-no-shadow letter-spacing-100 mt-10 ml-0 mr-10 mb-0",
+                          "size": "lg-1",
+                          "text": "Donate"
+                          })
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-7">
+                        <img data-src="img/demo_saas/820x601_1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="app promo" class="lazyload shadow brk-img-no-max-width">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="brk-swiper-default-modern-arrow brk-swiper-default-nav-prev"></div>
+            <div class="brk-swiper-default-modern-arrow brk-swiper-default-nav-next"></div>
+          </div>
+        </div>
+        
+      </section>
+
+
+      <section id="about">
+        <div class="text-center brk-promo-crcl-title pt-30 pt-lg-0">
+          @@include('../titles/templates/other-v6.html',{
+            "text": {
+              "main": "Check it Now",
+              "main_colorByClass": "true",
+              "main_customClass": "brk-text-base-color-1 font__weight-bold font__family-montserrat",
+              "secondary": "Screenshots, <br> <span class='font__weight-extrabold'>showcase & Features</span>",
+              "secondary_customClass": "brk-color-base-dark font__family-montserrat font__size-40 font__weight-ultralight"
+            }
+          })
+        </div>
+        @@include("../promo/templates/01-circle.html")
+      </section>
+
+      <section class="position-relative brk-base-bg-13 pt-80 pt-lg-220 pb-40">
+        @@include("../svg-pattern/templates/pattern-7.html",{
+          "only_top": "true",
+          "id-1": "featured-svg"
+        })
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <h2 class="pt-50 font__family-montserrat font__size-56 font__weight-bold line__height-62 brk-color-base-dark mb-10">Our Featured Works</h2>
+              <h3 class="mb-40 font__family-montserrat font__size-18 line__height-22 font__weight-semibold brk-color-base-dark letter-spacing-100">a new begining for your team</h3>
+              <p class="brk-dark-font-color font__size-16 line__height-28 mb-50" style="max-width: 330px">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
+              </p>
+              @@include('../buttons/templates/buttons.html',{
+                "type": "btn-gradient",
+                "customClass": "border-radius-5 text-capitalize brk-white-font-color btn-min-width-200 mt-0 mb-50 my-0 font__family-montserrat font__size-14 font__weight-medium letter-spacing-200",
+                "text": "Download Now",
+                "size": "lg-1"
+              })
+            </div>
+            <div class="col-12 col-lg-7">
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/demo_saas/670x519_1.png" alt="" class="lazyload">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="position-relative pt-80">
+        <span class="brk-abs-overlay brk-alt-gradient--30deg-96"></span>
+
+        @@include("../svg-pattern/templates/pattern-20.html",{
+          "fill": "brk-base-bg-13-fill"
+        })
+
+        <div class="container z-index-5">
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <div class="mb-50">
+                @@include('../titles/templates/other-v6.html',{
+                  "text": {
+                    "main": "Our clinets",
+                    "main_customClass": "brk-text-white-10 position-absolute font__family-montserrat font__size-100 line__heigh-100 font__weight-bold",
+                    "secondary": "Trusted by <br> <span class='font__weight-bold'>500+ worldwide Companies</span>",
+                    "secondary_customClass": "mt-0 pt-70 font__family-montserrat font__size-40 font__weight-ultralight"
+                  },
+                  "white": "true"
+                })
+              </div>
+
+            </div>
+            <div class="col-12 col-lg-7">
+              <div class="row mt-70">
+                <div class="col-md-4">
+                  <a href="#" class="brk-hover-opacity text-center d-block pl-20 pr-20 pt-15 pb-15">
+                    <img 
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+                      data-src="img/demo_saas/logo-1.png" 
+                      alt="logo"
+                      class="lazyload">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="brk-hover-opacity text-center d-block pl-20 pr-20 pt-15 pb-15">
+                    <img 
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+                      data-src="img/demo_saas/logo-2.png" 
+                      alt="logo"
+                      class="lazyload">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="brk-hover-opacity text-center d-block pl-20 pr-20 pt-15 pb-15">
+                    <img 
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+                      data-src="img/demo_saas/logo-3.png" 
+                      alt="logo"
+                      class="lazyload">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="brk-hover-opacity text-center d-block pl-20 pr-20 pt-15 pb-15">
+                    <img 
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+                      data-src="img/demo_saas/logo-3.png" 
+                      alt="logo"
+                      class="lazyload">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="brk-hover-opacity text-center d-block pl-20 pr-20 pt-15 pb-15">
+                    <img 
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+                      data-src="img/demo_saas/logo-1.png" 
+                      alt="logo"
+                      class="lazyload">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="brk-hover-opacity text-center d-block pl-20 pr-20 pt-15 pb-15">
+                    <img 
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+                      data-src="img/demo_saas/logo-2.png" 
+                      alt="logo"
+                      class="lazyload">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          @@include('../testimonials/templates/dash-four.html', {
+            "customClass": "pt-15 pb-80",
+            "transparent" : "true",
+            "cornerPagination": "true",
+            "largePagination": "true",
+            "attr": "id='reviews'",
+            "arr": [
+            {
+              "title": "Dantley Davis, <span class='font__family-playfair font__style-italic text-capitalize'> Design Director at </span> Envato", 
+              "text": "“ InSymbiosis is a strategic drug development partner for the biopharma industry. By combining uniquely structured investment deals, cutting-edge cost reduction strategies and a smart outsourcing platform, we help our partners advance their programs towards key clinical and financial milestones. ”", 
+              "img": "img/people/pexels-photo-262391.jpeg"
+            },
+            {
+              "title": "Anna Jonson", 
+              "text": "GrooveJar is a tool that helps you optimize your conversion rate. It offers several tools that can aid in email collection, highlight social proof and promotions and determine why your customers are leaving your site without buying just to name a few.", 
+              "img": "img/people/pexels-photo-274595.jpeg"
+            },
+            {
+              "title": "Lia Mit", 
+              "text": "Within Evernote, you can easily add links, tables, attachments, checklists, audio recordings, handwritten notes and other media to your notes, making it a convenient means of storing and sharing many types of data.", 
+              "img":"img/people/pexels-photo-355164.jpeg"
+            },
+            {
+              "title": "Mike Paterson", 
+              "text": "If you're still relying on handwritten to-do lists, whiteboards, sticky notes and other physical or paper-based tools for productivity and collaboration, you might find it useful to move your documents to the cloud for quicker and easier access -- especially if you're working with contractors or remote workers.", 
+              "img": "img/people/pexels-photo-428341.jpeg"
+            }
+            ],
+            "titleFirst": "true",
+            "subtitleClass": "font__family-open-sans font__size-20 line__height-28 mt-45 text-white maxw-970",
+            "titleClass": "font__family-montserrat font__size-12 font__weight-medium mt-40 text-white text-uppercase"
+            })
+        </div>
+       
+      </section>
+
+      <section class="pt-130 pb-20" id='office'>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="brk-testimonials-layered-horizontal pb-0 mb-50">
+               @@include("../sliders/templates/rotation-slider.html",{
+                 "imgArr": [
+                  "img/demo_saas/1015x540_1.jpg", "img/demo_saas/1015x540_1.jpg", "img/demo_saas/1015x540_1.jpg"
+                 ],
+                 "customClass": "rotation-slider_full-width"
+               })
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="text-center mb-50 wow fadeIUp">
+                    <svg class="svg-md svg-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                      <path fill="none" stroke="#F39C12" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M20.15,34.19L29.34,25c0,0,1.41,0,3.54,2.12S35,30.66,35,30.66l-9.19,9.19"/>
+                      <path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M-1.06,66.72l-5.66-5.66l26.87-26.87c0,0,1.41,0,3.54,2.12s2.12,3.54,2.12,3.54L-1.06,66.72z"/>
+                      <path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M20.15,34.19L29.34,25c0,0,1.41,0,3.54,2.12S35,30.66,35,30.66l-9.19,9.19"/>
+                      <path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M-1.06,66.72l-5.66-5.66l26.87-26.87c0,0,1.41,0,3.54,2.12s2.12,3.54,2.12,3.54L-1.06,66.72z"/>
+                      <path fill="none" stroke="#F9BF3B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M16,22c0,0-0.4-1.2-1.6-2.4C13.2,18.4,12,18,12,18s1.2-0.4,2.4-1.6C15.6,15.2,16,14,16,14s0.4,1.2,1.6,2.4C18.8,17.6,20,18,20,18s-1.2,0.4-2.4,1.6C16.4,20.8,16,22,16,22z"/>
+                      <path fill="none" stroke="#F9BF3B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M30,9c0,0-0.1-0.3-0.4-0.6C29.3,8.1,29,8,29,8s0.3-0.1,0.6-0.4C29.9,7.3,30,7,30,7s0.1,0.3,0.4,0.6C30.7,7.9,31,8,31,8s-0.3,0.1-0.6,0.4C30.1,8.7,30,9,30,9z"/>
+                      <path fill="none" stroke="#F9BF3B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M44,22c0,0-0.6-1.8-2.4-3.6C39.8,16.6,38,16,38,16s1.8-0.6,3.6-2.4C43.4,11.8,44,10,44,10s0.6,1.8,2.4,3.6C48.2,15.4,50,16,50,16s-1.8,0.6-3.6,2.4C44.6,20.2,44,22,44,22z"/>
+                      <path fill="none" stroke="#F9BF3B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M52,31c0,0-0.1-0.3-0.4-0.6C51.3,30.1,51,30,51,30s0.3-0.1,0.6-0.4C51.9,29.3,52,29,52,29s0.1,0.3,0.4,0.6C52.7,29.9,53,30,53,30s-0.3,0.1-0.6,0.4C52.1,30.7,52,31,52,31z"/>
+                      <path fill="none" stroke="#F9BF3B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M42,48c0,0-0.4-1.2-1.6-2.4C39.2,44.4,38,44,38,44s1.2-0.4,2.4-1.6C41.6,41.2,42,40,42,40s0.4,1.2,1.6,2.4C44.8,43.6,46,44,46,44s-1.2,0.4-2.4,1.6C42.4,46.8,42,48,42,48z"/>
+                    </svg>
+                    <h3 class="font__family-montserrat font__weight-light font__size-24 line__height-30 text-uppercase mt-30">
+                    Awesome
+                    </h3>
+                    <h3 class="font__family-montserrat font__weight-bold font__size-24 line__height-30 text-uppercase">
+                      Design
+                    </h3>
+                    <p class="font__family-open-sans font__size-14 text-gray mt-10">Put a plan into action</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="text-center mb-50 wow fadeIUp">
+                    <svg class="svg-md svg-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                      <circle fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="15"
+                              cy="13" r="6"/>
+                      <path fill="none" stroke="#e9b995" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M34.33,48.29c-2.92-3.86-6.16-3.47-9.37-5.55c-2.01-1.31-4.43-1.93-6.26-4.11c-1.13-1.35-2.22-3.39-3.77-4.99c-1.25-1.29-2.54-2.87-2.14-3.6c1.71-3.03,5.99,0.36,11.39,5.67c0.09,0.09,0.24-0.1,0.17-0.22c-1-1.73-11-19.05-11-19.05c-2.76-4.78,2.49-7.46,5.2-3l6.9,11.95c0.25,0.41,0.07,0.2,0.1,0.17c0.2-0.13-1.7-4.16,1.28-5.04c3.13-0.92,3.8,3.14,4.02,3.05c0.23-0.1-1.39-3.15,1.92-3.92c1.95-0.45,2.96,1.91,3.17,1.88c0.13-0.02-0.11-2.32,2.01-2.31c2.79,0.01,5.55,5.22,8.29,10.18c1.17,2.11,1.11,6.5,3.61,9.92L34.33,48.29z"/>
+                      <rect x="40.89" y="34.66" transform="matrix(-0.5 -0.866 0.866 -0.5 24.789 105.6386)" fill="none"
+                            stroke="#2980B9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4"
+                            height="22"/>
+                      <rect x="40.89" y="34.59" transform="matrix(-0.4999 -0.8661 0.8661 -0.4999 24.8453 105.5295)"
+                            display="inline" fill="none" stroke="#34495E" stroke-width="1" stroke-linecap="square"
+                            stroke-miterlimit="10" width="4" height="22"/>
+                    </svg>
+                    <h3 class="font__family-montserrat font__weight-light font__size-24 line__height-30 text-uppercase mt-30">
+                      Friendly
+                    </h3>
+                    <h3 class="font__family-montserrat font__weight-bold font__size-24 line__height-30 text-uppercase">
+                      Interface
+                    </h3>
+                    <p class="font__family-open-sans font__size-14 text-gray mt-10">Achieve the target</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="text-center mb-50 wow fadeInUp">
+                    <svg class="svg-md svg-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                      <path fill="none" stroke="#9CAAB9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M42,31h1.43l0.35,2.94l2.65,1.1L49,33l2,2l-2.04,2.56l1.1,2.65L53,40.57v2.87l-2.94,0.35l-1.1,2.65L51,49l-2,2l-2.56-2.04l-2.65,1.1L43.43,53h-2.87l-0.35-2.94l-2.65-1.1L35,51l-2-2l2.04-2.56l-1.1-2.65L31,43.43v-2.87l2.94-0.35l1.1-2.65L33,35l2-2l2.56,2.04l2.65-1.1L40.57,31H42zM42,39c-1.66,0-3,1.34-3,3c0,1.66,1.34,3,3,3c1.66,0,3-1.34,3-3C45,40.34,43.66,39,42,39z"/>
+                      <path fill="none" stroke="#95A5A6" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M23,7h1.04l1.01,4.31l2.02,0.54l3.03-3.23l1.81,1.04l-1.28,4.23l1.48,1.48l4.23-1.28l1.05,1.81l-3.22,3.03l0.54,2.02L39,21.96l0,2.08l-4.31,1.01l-0.54,2.02l3.22,3.03l-1.04,1.81l-4.23-1.28l-1.48,1.48l1.28,4.23l-1.81,1.05l-3.03-3.23l-2.02,0.54L24.04,39l-2.09,0l-1.01-4.31l-2.02-0.54l-3.02,3.23l-1.81-1.04l1.28-4.23l-1.48-1.48L9.66,31.9L8.62,30.1l3.23-3.03l-0.54-2.02L7,24.04l0-2.09l4.31-1.01l0.54-2.02L8.62,15.9l1.04-1.81l4.24,1.28l1.48-1.48L14.1,9.66l1.81-1.04l3.03,3.23l2.02-0.54L21.96,7H23zM23,17c-3.31,0-6,2.68-6,6c0,3.31,2.68,6,6,6c3.31,0,6-2.69,6-6C29,19.68,26.31,17,23,17z"/>
+                    </svg>
+                    <h3 class="font__family-montserrat font__weight-light font__size-24 line__height-30 text-uppercase mt-30">
+                      User
+                    </h3>
+                    <h3 class="font__family-montserrat font__weight-bold font__size-24 line__height-30 text-uppercase">
+                      Experience
+                    </h3>
+                    <p class="font__family-open-sans font__size-14 text-gray mt-10">Wrap up the project</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="text-center mb-50 wow fadeInUp">
+                    <svg class="svg-md svg-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                      <path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M52.97,28.91C52.99,29.27,53,29.63,53,30"/>
+                      <path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M51.55,21.96c0.26,0.7,0.48,1.4,0.67,2.11"/>
+                      <path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M46.84,14.33c0.78,0.83,1.49,1.73,2.14,2.67"/>
+                      <path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M49.8,42.19C45.75,48.75,38.27,53,30,53C17.3,53,7,42.7,7,30C7,17.3,17.3,7,30,7c4.17,0,8.22,1.11,11.78,3.24"/>
+                      <polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                                points="43,41 51,41 51,49"/>
+                      <line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30"
+                            y1="31" x2="41" y2="24"/>
+                      <line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30"
+                            y1="31" x2="18" y2="19"/>
+                      <path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M52.97,28.91C52.99,29.27,53,29.63,53,30"/>
+                      <path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M51.55,21.96c0.26,0.7,0.48,1.4,0.67,2.11"/>
+                      <path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M46.84,14.33c0.78,0.83,1.49,1.73,2.14,2.67"/>
+                      <path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10"
+                            d="M49.8,42.19C45.75,48.75,38.27,53,30,53C17.3,53,7,42.7,7,30C7,17.3,17.3,7,30,7c4.17,0,8.22,1.11,11.78,3.24"/>
+                      <polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10"
+                                points="43,41 51,41 51,49"/>
+                      <line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="30"
+                            y1="31" x2="41" y2="24"/>
+                      <line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="30"
+                            y1="31" x2="18" y2="19"/>
+                    </svg>
+                    <h3 class="font__family-montserrat font__weight-light font__size-24 line__height-30 text-uppercase mt-30">
+                      Adaptive to
+                    </h3>
+                    <h3 class="font__family-montserrat font__weight-bold font__size-24 line__height-30 text-uppercase">
+                      Devices
+                    </h3>
+                    <p class="font__family-open-sans font__size-14 text-gray mt-10">According to schedule</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="position-relative z-index-2">
+        <div class="text-center mb-70">
+          @@include('../titles/templates/other-v6.html',{
+            "text": {
+              "main": "Our Prices",
+              "main_colorByClass": "true",
+              "main_customClass": "font__weight-bold brk-text-base-color-1",
+              "secondary": "Check our, <br> <span class='font__weight-extrabold'>Best Offers & Prices</span>",
+              "secondary_customClass": "brk-color-base-dark font__family-montserrat font__size-40 font__weight-ultralight"
+            }
+          })
+        </div>
+        <div class="container">
+          @@include("../pricing-tables/templates/horizontal.html",{
+            "overlay": "brk-alt-gradient--30deg-96",
+            "demo": "its",
+            "img1": "img/demo_saas/170x100_1.jpg",
+            "img2": "img/demo_saas/170x100_2.jpg",
+            "img3": "img/demo_saas/170x100_3.jpg",
+            "gradientBtn": "true",
+            "horizontalViewedDarken": "true"
+          })
+        </div>
+      </section>
+
+      <section class="pt-100 position-relative brk-base-bg-13 z-index-1" id='team'>
+        @@include("../svg-pattern/templates/pattern-21.html",{
+          "fill": "#f8f9fe"
+        })
+        <div class="text-center z-index-5">
+          <h2 class="font__family-montserrat font__weight-semibold font__size-40 line__height-42 text-uppercase mb-60 brk-color-base-dark">Our team</h2>
+        </div>
+        <div 
+          class="staff-slider pb-70 z-index-5 staff-slider_cornder-pagination"
+          data-brk-library="slider__swiper">
+          <div class="staff-slider-container swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                @@include('../team/templates/staff-card.html', {
+                "img": "img/270x270_13.jpg",
+                "title": "Bernard Show",
+                "position": "Web Developer",
+                "overlay": "brk-alt-gradient--30deg-96"
+                })
+              </div>
+
+              <div class="swiper-slide">
+                @@include('../team/templates/staff-card.html', {
+                "img": "img/270x270_14.jpg",
+                "title": "Bernard Show",
+                "position": "Web Developer",
+                "overlay": "brk-alt-gradient--30deg-96"
+                })
+              </div>
+
+              <div class="swiper-slide">
+                @@include('../team/templates/staff-card.html', {
+                "img": "img/270x270_15.jpg",
+                "title": "Bentley Diana",
+                "position": "CEO & Manager",
+                "overlay": "brk-alt-gradient--30deg-96"
+                })
+              </div>
+
+              <div class="swiper-slide">
+                @@include('../team/templates/staff-card.html', {
+                "img": "img/270x270_16.jpg",
+                "title": "Mathef Julia",  
+                "position": "UI/UX Designer",
+                "overlay": "brk-alt-gradient--30deg-96"
+                })
+              </div>
+
+              <div class="swiper-slide">
+                @@include('../team/templates/staff-card.html', {
+                "img": "img/270x270_17.jpg",
+                "title": "Bernard Show",
+                "position": "CEO & Manager",
+                "overlay": "brk-alt-gradient--30deg-96"
+                })
+              </div>
+
+              <div class="swiper-slide">
+                @@include('../team/templates/staff-card.html', {
+                "img": "img/270x270_18.jpg",
+                "title": "Mathef Julia",
+                "position": "Designer",
+                "overlay": "brk-alt-gradient--30deg-96"
+                })
+              </div>
+            </div>
+          </div>
+          <div class="dots-base-staff-skin">
+            <div class="swiper-arrow button-prev"><i class="far fa-angle-left" aria-hidden="true"></i></div>
+            <ul class="pagination"></ul>
+            <div class="swiper-arrow button-next"><i class="far fa-angle-right" aria-hidden="true"></i></div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="pt-120 pb-80">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="font__family-montserrat font__size-40 line__height-42 text-uppercase brk-color-base-dark mb-20">
+              <span class="font__weight-light">Some Issues? </span>
+              <span class="font__weight-semibold">Get your Money Back</span>
+            </h2>
+            <h3 class="mb-40 font__family-montserrat font__size-18 line__height-22 font__weight-semibold brk-color-base-dark letter-spacing-100">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+            <p class="brk-dark-font-color font__size-16 line__height-28 mb-30 maxw-770">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
+            </p>
+            @@include('../buttons/templates/buttons.html',{
+              "type": "btn-gradient",
+              "customClass": "border-radius-5 text-capitalize brk-white-font-color btn-min-width-200 mx-0 my-0 font__family-montserrat font__size-14 font__weight-medium letter-spacing-100",
+              "text": "Try it Now",
+              "size": "lg-1"
+            })
+          </div>
+        </div>
+      </section>
+    </div>
+
+    @@include('../footer/templates/footer-5.html',{
+      "singleOverlay": "true",
+      "whiteColors": "true",
+      "svg": "true",
+      "customClass": "pt-150 pb-50",
+      "logo": "img/demo_saas/42x42_1.png",
+      "inputCustomClass": "brk-color-base-dark font__family-montserrat font__size-14 font__weight-medium",
+      "buttonCustomClass": "font__family-montserrat font__size-14 font__weight-medium text-capitalize border-radius-0",
+      "id":"contact"
+    })
+
+    @@include('../../assets/templates/footer.html',{
+      "demo": "true"
+    })
+
+  </body> 

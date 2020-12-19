@@ -1,0 +1,22 @@
+<div class="brk-shop-grid-filter-grid" style="background-image: url(@@thumb)">
+  <div class="brk-shop-grid-filter-grid__stick">
+    @@if(context.stick) {
+      @@for (var i = 0; i < stick.length; i++) {
+      `+stick[i]+`
+      }
+    }
+  </div>
+  <div class="brk-shop-grid-filter-grid__content">
+    <h4 class="font__family-montserrat d-flex align-items-end flex-wrap font__weight-bold font__size-24 line__height-28 brk-white-font-color text-uppercase mb-35">@@title</h4>
+    <ul class="brk-white-font-color font__size-14 line__height-21 mb-40">
+      <li class="d-flex align-items-start"><i class="far fa-check font__size-16"></i> Duis arcu tortor, suscipit eget, Aenean vulputate eleifend tellu</li>
+      <li class="d-flex align-items-start"><i class="far fa-check font__size-16"></i> Quisque rutrum. Aenean imperdiet</li>
+      <li class="d-flex align-items-start"><i class="far fa-check font__size-16"></i> Etiam ultricies nisi vel augue</li>
+      <li class="d-flex align-items-start"><i class="far fa-check font__size-16"></i> Etiam ultricies nisi vel augue</li>
+    </ul>
+    <div class="brk-shop-grid-filter-grid__buy brk-bg-grad">
+      <a href="#" class="brk-shop-grid-filter-grid__buy-add brk-white-font-color font__weight-bold font__size-14 line__height-48 text-uppercase"><i class="far fa-shopping-cart"></i>Buy now</a>
+      <span class="price font__weight-bold font__size-14 line__height-42 brk-base-font-color bg-white text-center">@@price</span>
+    </div>
+  </div>
+</div>

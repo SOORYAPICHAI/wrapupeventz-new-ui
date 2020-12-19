@@ -1,0 +1,142 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Flip Boxes"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <section>
+    	<div class="container mb-100">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">01</span> Strict
+    			</h3>
+    		</div>
+    	</div>
+		  @@include("templates/strict.html",{
+        "customClass": "mb-140"
+      })
+    </section>
+
+    <section>
+    	<div class="container mb-100">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">02</span> Gradient
+    			</h3>
+    		</div>
+    	</div>
+      <div class="container mb-140">
+        <div class="row">
+          <div class="col-lg-4 mb-20">
+            @@include('./templates/gradient-card.html',{
+              "img":"img/370x370_1.jpg",
+              "overlay":"brk-base-bg-1",
+              "title":"<span class='font__weight-bold'>Why</span> Creators Are Turning...",
+              "paragraph":"Because a glance is all people tend to offer nowadays, videos, pictures, and graphics are now the most relied upon ways..."
+            })
+          </div>
+          <div class="col-lg-4 mb-20">
+            @@include('./templates/gradient-card.html',{
+              "img":"img/370x370_2.jpg",
+              "overlay":"brk-base-bg-gradient-right-bottom",
+              "title":"<span class='font__weight-bold'>Blossom:</span> The Best in Floral",
+              "paragraph":"Flowers are one of Mother Nature's most beautiful gifts. Not only are they a source of natural beauty..."
+            })
+          </div>
+          <div class="col-lg-4 mb-20">
+            @@include('./templates/gradient-card.html',{
+              "img":"img/370x370_3.jpg",
+              "overlay":"brk-base-bg-2",
+              "title":"<span class='font__weight-bold'>The</span> Lyric Video Is Trending",
+              "paragraph":"You've just heard the newest hit song. Next step: learn the words so you don't embarrass yourself again by mumbling..."
+            })
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+    	<div class="container mb-100">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">03</span> Multiply
+    			</h3>
+    		</div>
+    	</div>
+      <div class="container mb-140">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+           @@include('./templates/multiply-card.html',{
+              "title":"Lyric Video",
+              "number":"01",
+              "img": "img/370x370_1.jpg"
+            })
+          </div>
+          <div class="col-12 col-lg-4">
+            @@include('./templates/multiply-card.html',{
+              "title":"Best Photo",
+              "number":"02",
+              "img": "img/370x370_2.jpg"
+            })
+          </div>
+          <div class="col-12 col-lg-4">
+            @@include('./templates/multiply-card.html',{
+              "title":"Stock Photo",
+              "number":"03",
+              "img": "img/370x370_3.jpg"
+            })
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+    	<div class="container mb-80">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">04</span> Split
+    			</h3>
+    		</div>
+    	</div>
+		  @@include('./templates/split.html') 
+    </section>
+
+    <section class="mb-140">
+    	<div class="container mb-80">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">05</span> Overlay
+    			</h3>
+    		</div>
+    	</div>
+		  @@include("templates/overlay.html")
+    </section>
+
+    <section>
+    	<div class="container mb-100">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">06</span> Circle
+    			</h3>
+    		</div>
+    	</div>
+		  @@include("templates/circle.html")
+    </section>
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

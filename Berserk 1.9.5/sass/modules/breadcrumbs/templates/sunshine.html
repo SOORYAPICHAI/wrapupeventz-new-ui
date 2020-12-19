@@ -1,0 +1,27 @@
+	<div class="breadcrumbs__section breadcrumbs__section-sunshine pt-90 pb-90 bg__style @@if(context.customPadding){@@customPadding} @@if(!context.customPadding){pt-90 pb-90} @@if(context.customCLass){@@customCLass} lazyload" data-bg="@@if(context.img){@@img}@@if(!context.img){img/1920x226_1.jpg}" data-brk-library="component__breadcrumbs_css">
+    <div class="breadcrumb-bg @@if(context.overlay1){@@overlay1}@@if(!context.overlay1){brk-base-bg-7} full__size-absolute"></div>
+    @@if(context.title !== "false"){
+      <h2 class="font__size-38 line__height-46 font__family-montserrat font__weight-ultralight text-center">@@if(context.title){@@title}@@if(!context.title){Some Title}</h2>
+    }
+		<div class="breadcrumbs__wrapper">
+			<div class="container">
+				<ol class="breadcrumb @@if(context.squared === 'true'){breadcrumb_squared} @@if(context.overlay2){@@overlay2}@@if(!context.overlay2){brk-base-bg-gradient-7}">
+					<li class="breadcrumb__icon text-center">
+						<a href="#"><i class="far fa-home font__size-14"></i></a>
+					</li>
+					<li>
+						<a href="#">Bread</a>
+					</li>
+					<li class="active">Crumbs</li>
+				</ol>
+				<form action="#" method="post" class="form-horizontal pull-right" role="form">
+					<div class="form-group">
+						<input type="search" placeholder="Search...">
+            <button type="submit" class="btn btn-primary" data-brk-library="component__button">
+              <i class="far fa-search font__size-14"></i>
+            </button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>

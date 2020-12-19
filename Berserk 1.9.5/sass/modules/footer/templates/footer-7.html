@@ -1,0 +1,151 @@
+<footer class="brk-footer position-relative" @@if(context.id){id="@@id"} data-brk-library="component__footer,twitter_init">
+  @@if(context.map !== "false"){
+    @@include('../../google-maps/templates/hidden-classic.html')
+  }
+  <div class='brk-footer__wrapper @@if(context.animated === "true"){brk-footer__wrapper_animated} pt-70 pt-md-90 border-bottom-3 brk-border-color-light brk-bg-center-cover'
+    style="background-image: url(@@if(context.bgImg){@@bgImg})">
+    <div class="brk-abs-bg-overlay @@if(context.overlay){@@overlay} @@if(!context.overlay){brk-base-gradient-27}"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-12 col-md-6">
+          <h6 class="sr-only">Twitter posts</h6>
+          <a href="#" class="d-sm-inline-block d-block text-center mb-45 " style="margin-top:-10px">
+            <img src="@@if(context.logo_src){@@logo_src}@@if(!context.logo_src){img/footer/brk-logo.png}" alt="alt">
+          </a>
+          <div class="brk-swiper-default z-index-5 position-relative"
+          data-brk-swiper='{"autoplay": {"delay": 3500}}'
+          data-brk-library="slider__swiper">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="mb-20 brk-styled-twitter-2 brk-styled-twitter-2_primary">
+                    <a href="https://twitter.com/We_Nikadevs" class="twitter-timeline" data-tweet-limit="1" data-chrome="noheader,nofooter,noborders,transparent" data-theme="dark"></a>
+                  </div>  
+                </div>
+                <div class="swiper-slide">
+                  <div class="mb-20 brk-styled-twitter-2 brk-styled-twitter-2_primary brk-styled-twitter-slide-2">
+                    <a href="https://twitter.com/We_Nikadevs" class="twitter-timeline" data-tweet-limit="2" data-chrome="noheader,nofooter,noborders,transparent" data-theme="dark"></a>
+                  </div>  
+                </div>
+                <div class="swiper-slide">
+                  <div class="mb-20 brk-styled-twitter-2 brk-styled-twitter-2_primary brk-styled-twitter-slide-3">
+                    <a href="https://twitter.com/We_Nikadevs" class="twitter-timeline" data-tweet-limit="3" data-chrome="noheader,nofooter,noborders,transparent" data-theme="dark"></a>
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-12 col-md-6">
+          <h6 class="brk-white-font-color mb-40 mb-md-25 font__family-montserrat font__weight-semibold font__size-24 text-center text-sm-left">
+            Latest news
+          </h6>
+
+          <article class="brk-tiles-simple mb-20 lazyload" data-bg="@@if(context.newsImg){@@newsImg}@@if(!context.newsImg){img/tiles-simple-1.jpg}" data-brk-library="component__tiles">
+            <div class="before"></div>
+            <div class="brk-tiles-simple__content pt-30">
+              <h4 class="font__family-montserrat font__weight-semibold font__size-21 text-truncate">Wrap up the project</h4>
+              <p>Aenean vulputate eleifend tellus. Renean leo ligula, porttitor euequat vitae.</p>
+              <a class="brk-tiles-simple__link" href="#">
+                <span class="before"></span>
+                <i class="fas fa-angle-right"></i>
+                <span class="after"></span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+        <div class="col-xl-3 col-12 col-md-6">
+          <h6 class="brk-white-font-color mb-40 mb-md-25 font__family-montserrat font__weight-semibold font__size-24 text-center text-sm-left mt-xs-20">Latest Works</h6>
+          <ul class="brk-latest-works d-flex flex-wrap mb-20">
+            <li class="brk-latest-works__item position-relative">
+              <a href="#" class="brk-latest-works__link">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(!context.workImg1){img/footer/works-1.jpg}@@if(context.workImg1){@@workImg1}" alt="alt" class="brk-abs-img lazyload">
+              </a>
+            </li>
+            <li class="brk-latest-works__item position-relative">
+              <a href="#" class="brk-latest-works__link">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(!context.workImg2){img/footer/works-2.jpg}@@if(context.workImg2){@@workImg2}" alt="alt" class="brk-abs-img lazyload">
+              </a>
+            </li>
+            <li class="brk-latest-works__item position-relative">
+              <a href="#" class="brk-latest-works__link">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(!context.workImg3){img/footer/works-3.jpg}@@if(context.workImg3){@@workImg3}" alt="alt" class="brk-abs-img lazyload">
+              </a>
+            </li>
+            <li class="brk-latest-works__item position-relative">
+              <a href="#" class="brk-latest-works__link">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(!context.workImg4){img/footer/works-4.jpg}@@if(context.workImg4){@@workImg4}" alt="alt" class="brk-abs-img lazyload">
+              </a>
+            </li>
+            <li class="brk-latest-works__item position-relative">
+              <a href="#" class="brk-latest-works__link">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(!context.workImg5){img/footer/works-5.jpg}@@if(context.workImg5){@@workImg5}" alt="alt" class="brk-abs-img lazyload">
+              </a>
+            </li>
+            <li class="brk-latest-works__item position-relative">
+              <a href="#" class="brk-latest-works__link">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(!context.workImg6){img/footer/works-6.jpg}@@if(context.workImg6){@@workImg6}" alt="alt" class="brk-abs-img lazyload">
+              </a>
+            </li>
+            <li class="brk-latest-works__item position-relative">
+              <a href="#" class="brk-latest-works__link">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(!context.workImg7){img/footer/works-7.jpg}@@if(context.workImg7){@@workImg7}" alt="alt" class="brk-abs-img lazyload">
+              </a>
+            </li>
+            <li class="brk-latest-works__item position-relative">
+              <a href="#" class="brk-latest-works__link">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(!context.workImg8){img/footer/works-8.jpg}@@if(context.workImg8){@@workImg8}" alt="alt" class="brk-abs-img lazyload">
+              </a>
+            </li>
+            <li class="brk-latest-works__item position-relative">
+              <a href="#" class="brk-latest-works__link">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(!context.workImg9){img/footer/works-9.jpg}@@if(context.workImg9){@@workImg9}" alt="alt" class="brk-abs-img lazyload">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-12 col-md-6">
+          <h6 class="brk-white-font-color mb-25 font__family-montserrat font__weight-semibold font__size-24 text-center text-sm-left mt-xs-20">Find Us</h6>
+          <hr class="horiz-line mt-0">
+          @@include('../../social-links/templates/simple-social-links.html',{
+            "socialIcon1":"<i class='fab fa-vimeo-v'></i>",
+            "socialIcon2":"<i class='fab fa-youtube'></i>",
+            "socialIcon3":"<i class='fab fa-facebook-f'></i>", 
+            "socialIcon4":"<i class='fab fa-twitter'></i>",
+            "socialIcon5":"<i class='fab fa-google'></i>",
+            "socialIcon6":"<i class='fab fa-vk'></i>",
+            "customContainerClass":"brk-social-links_rounded brk-white-font-color mb-25 d-flex justify-content-center justify-content-sm-start"
+          })
+          <hr class="horiz-line mt-0 mb-35">
+          <p class="font__size-36 mb-40 text-sm-left text-center">
+            <a href="#" class="brk-white-font-color font__family-open-sans font__weight-light line__height-36">8 800 12 34 567</a>
+          </p>
+          <p class="font__family-open-sans font__weight-bold font__size-14 mb-10 brk-white-font-color text-sm-left text-center">
+            <i class="brk-footer-icon text-middle fa fa-envelope line__height-24"></i>
+            <a href="mailto:info@domain.com" class="show-inline-block">info@domain.com</a>
+          </p>
+          <p class="font__family-open-sans font__weight-bold font__size-14 mb-10 brk-white-font-color text-sm-left text-center">
+            <i class="brk-footer-icon text-middle fas fa-map-marker-alt line__height-24 mb-20"></i>
+            <span>Chicago, USA</span>
+          </p>
+        </div>
+      </div>
+      <hr class="horiz-line mt-750 mb-20">
+      <div class="d-flex align-items-center justify-content-sm-between justify-content-center flex-wrap mb-25">
+        <p class="brk-dark-font-color font__family-open-sans font__size-14 mr-15">
+           © All rights reserved
+        </p>
+         @@include('../../social-links/templates/simple-social-links.html',{
+          "socialIcon1":"<i class='fab fa-twitter'></i>",
+          "socialIcon2":"<i class='fab fa-instagram'></i>",
+          "socialIcon3":"<i class='fab fa-google-plus-g'></i>",
+          "socialIcon4":"<i class='fab fa-youtube'></i>",
+          "socialIcon5":"<i class='fab fa-vimeo'></i>",
+          "socialIcon6":"<i class='fab fa-vk'></i>",
+          "customContainerClass":"brk-dark-font-color font__size-14"
+        })
+      </div>
+    </div>
+  </div>
+</footer> 

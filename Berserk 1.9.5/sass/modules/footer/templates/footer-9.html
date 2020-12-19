@@ -1,0 +1,132 @@
+<footer class="brk-footer position-relative" @@if(context.id){id="@@id"} data-brk-library="component__footer">
+
+  @@if(context.svg === "true"){
+    <div class="position-relative pt-260 pb-230 pt-xs-100 pb-xs-70 brk-bg-center-cover lazyload"
+         data-bg="@@if(context.bg){@@bg}@@if(!context.bg){img/bg-26.jpg}">
+      @@include('../../svg-pattern/templates/pattern-12.html')
+      <span class="brk-abs-bg-overlay brk-primary-92-overlay"></span>
+      <div class="container">
+        <h2 class="brk-white-font-color font__family-montserrat font__size-56 line__height-60 text-uppercase text-center mb-xs-20 mb-40">Contact us</h2>
+        <form action="#" class="brk-subscribe-mail brk-form brk-form-strict brk-form_footer-9" data-brk-library="component__form,recaptcha">
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <input type="text" placeholder="Your Name" name="FNAME">
+              <input type="text" placeholder="Your mail" name="EMAIL">
+              <input type="text" placeholder="Mail Subject" name="SUBJECT">
+            </div>
+            <div class="col-12 col-lg-8">
+              <div class="brk-form__textarea-container">
+                <textarea name="MESSAGE" id="footer9" placeholder="Your Questions"></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="text-center">
+                @@include('../../buttons/templates/buttons.html',{
+                  "tag": "button",
+                  "type": "btn-inside-out",
+                  "text": "Submit Now",
+                  "size": "md",
+                  "customClass": "btn-inside-out-invert border-radius-25 letter-spacing-100 btn-no-shadow font__weight-normal mt-40"
+                })
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  }
+
+  <div class="brk-footer__wrapper pt-30 @@if(context.svg !== "true"){pt-90 mt-30} @@if(context.svg === "true"){z-index-3} @@if(context.animated === "true"){brk-footer__wrapper_animated}">
+
+    @@if(context.svg !== "true"){
+      <img src="img/footer/bg-4.jpg" alt="alt" class="brk-abs-img">
+      <span class="brk-abs-overlay brk-bg-color-dark"></span>
+    }
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <h6 class="sr-only">About us</h6>
+          <a href="#" class="d-sm-inline-block d-block text-center">
+
+            @@if(context.svg !== "true"){
+              <img src="img/logo.png" alt="alt">
+            }
+            @@if(context.svg === "true"){
+              <img src="img/logo-dark.png" alt="alt">
+            }
+
+            </a>
+            <hr class="horiz-line mt-25">
+            <p class="@@if(context.svg !== "true"){brk-dark-font-color}@@if(context.svg === "true"){brk-black-font-color} font__family-open-sans font__size-14 line__height-24 mb-50 pr-lg-4 text-sm-left text-center">
+              Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra fequis. 
+            </p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <h6 class="@@if(context.svg !== "true"){brk-white-font-color}@@if(context.svg === "true"){brk-black-font-color} font__family-open-sans font__size-24 line__height-32 text-center text-sm-left">Menu</h6>
+          <hr class="horiz-line mt-25">
+          <nav>
+            <div class="row">
+              <div class="col-6">
+                <ul class="d-flex flex-column font__family-open-sans @@if(context.svg !== "true"){brk-dark-font-color}@@if(context.svg === "true"){brk-black-font-color} font__size-14 font__weight-normal line__height-16 text-sm-left text-center">
+                  <li class="mb-20"><a href="#">Home</a></li>
+                  <li class="mb-20"><a href="#">Pages</a></li>
+                  <li class="mb-20"><a href="#">Elements</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="d-flex flex-column font__family-open-sans @@if(context.svg !== "true"){brk-dark-font-color}@@if(context.svg === "true"){brk-black-font-color} font__size-14 font__weight-normal line__height-16 text-sm-left text-center">
+                  <li class="mb-20"><a href="#">Portfolio</a></li>
+                  <li class="mb-20"><a href="#">Blog</a></li>
+                  <li class="mb-20"><a href="#">Shop</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-4">
+          <article class="brk-get-in-touch brk-get-in-touch_footer @@if(context.svg === "true"){brk-get-in-touch_footer-svg}  pt-40 pb-30 pl-30 pr-30 position-static position-lg-relative mt-xs-20">
+            <h6 class="font__family-montserrat font__size-28 font__weight-bold line__height-30 text-uppercase pl-10">Get in Touch <br><span class="font__weight-light">with us</span></h6>
+            <form action="#" class="brk-subscribe-mail brk-subscribe-mail_dark brk-form-strict" data-brk-library="component__form,recaptcha">
+              <input type="text" placeholder="Name" name="FNAME">
+              <input type="email" placeholder="Email" name="EMAIL">
+              @@include('../../buttons/templates/buttons.html',{
+                "type":"btn-inside-out",
+                "tag":"button",
+                "size":"lg",
+                "customClass":"mt-30 border-radius-0 font__family-open-sans font__weight-bold text-uppercase btn-icon-abs ml-0 mr-0 mb-0 w-100 btn-shadow",
+                "icon":"<i class='fa fa-comments' aria-hidden='true'></i>"
+              })
+            </form>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="brk-footer__rights_footer-9 bg-primary">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8 col-12">
+            <p class="brk-white-font-color font__family-open-sans font__size-14 pt-15 pb-15 text-sm-left text-center">
+              © 2018 Berserk All rights reserved
+            </p>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="position-relative brk-footer__socials-bg z-index-2 pl-35 d-flex align-items-center flex-wrap">
+              <p class="brk-white-font-color font__family-open-sans font__size-14 font__weight-semibold mr-20">Socials</p>
+               @@include('../../social-links/templates/simple-social-links.html',{
+                "socialIcon1":"<i class='fab fa-twitter'></i>",
+                "socialIcon2":"<i class='fab fa-instagram'></i>",
+                "socialIcon3":"<i class='fab fa-google-plus-g'></i>",
+                "socialIcon4":"<i class='fab fa-youtube'></i>",
+                "socialIcon5":"<i class='fab fa-vimeo'></i>",
+                "socialIcon6":"<i class='fab fa-vk'></i>",
+                "customContainerClass":"font__size-13 brk-white-font-color brk-social-links_opacity"
+              })
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

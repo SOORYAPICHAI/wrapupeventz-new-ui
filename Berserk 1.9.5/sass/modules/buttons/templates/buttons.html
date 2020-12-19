@@ -1,0 +1,47 @@
+@@if(context.type){
+<@@if(context.tag){@@tag}@@if(!context.tag){a}
+	@@if(!context.tag || context.tag === 'a') {
+		@@if(context.href){
+			href="@@href"
+		}
+		@@if(!context.href){
+			href="#"
+    }
+  }
+  @@if(context.attr){@@attr}
+	class="@@if(context.type !== "icon__btn"){btn}
+	@@if(!context.type){btn-inside-out}
+	@@if(context.type){@@type}
+	@@if(context.size && context.type !== "icon__btn"){btn-@@size}
+	@@if(!context.size && context.type !== "icon__btn"){btn-lg}
+	@@if(context.size && context.type === "icon__btn"){icon__btn-@@size}
+	@@if(!context.size && context.type === "icon__btn"){icon__btn-lg}
+	@@if(context.width === "full"){btn__full_width}
+	@@if((context.icon && context.iconType !== "background") && (context.type === "btn-inside-out" || context.type === "btn-inside-out btn-inside-out-invert")){btn-icon}
+	@@if(context.iconType === "background"){btn-icon-abs}
+	@@if(context.customClass){ @@customClass}" data-brk-library="component__button">
+
+	@@if(context.icon && context.type !== "btn-ice" && context.type !== "btn-two-bg"){@@icon}
+  @@if((context.text && !context.text_hover) && (context.type === "btn-inside-out" || context.type === "btn-inside-out btn-inside-out-invert")){<span class="before">@@text</span><span class="text">Click Me</span><span class="after">@@text</span>}
+  @@if((context.text && context.text_hover) && (context.type === "btn-inside-out" || context.type === "btn-inside-out btn-inside-out-invert")){<span class="before">@@text</span><span class="text">@@text_hover</span><span class="after">@@text</span>}
+	@@if((!context.text && !context.text_hover) && (context.type === "btn-inside-out" || context.type === "btn-inside-out btn-inside-out-invert")){<span class="before">Button</span><span class="text">Click Me</span><span class="after">Button</span>}
+	@@if((!context.text && context.text_hover) && (context.type === "btn-inside-out" || context.type === "btn-inside-out btn-inside-out-invert")){<span class="before">Button</span><span class="text">@@text_hover</span><span class="after">Button</span>}
+	@@if(context.text && context.type === "btn-prime"){<span class="before"></span><span class="after"></span><span class="border-btn"></span>@@text}
+	@@if(!context.text && context.type === "btn-prime"){<span class="before"></span><span class="after"></span><span class="border-btn"></span>Button}
+	@@if(context.text && context.type === "btn-gradient"){<span>@@text</span>}
+	@@if(!context.text && context.type === "btn-gradient"){<span>Button</span>}
+	@@if(context.text && context.type === "btn-slice"){<div class="before"></div><span class="border-btn"></span><span></span><div class="after"></div>@@text}
+	@@if(!context.text && context.type === "btn-slice"){<div class="before"></div><span class="border-btn"></span><span></span><div class="after"></div>Button}
+	@@if(context.text && context.type === "btn-pos"){<span></span>@@text}
+	@@if(!context.text && context.type === "btn-pos"){<span></span>Button}
+	@@if(context.text && context.type === "btn-lightning"){<div class="before"></div><span class="bg"></span><span>@@text</span>}
+	@@if(!context.text && context.type === "btn-lightning"){<div class="before"></div><span class="bg"></span><span>Button</span>}
+	@@if(context.text && context.type === "btn-gradient-wave"){<span></span>@@text}
+  @@if(!context.text && context.type === "btn-gradient-wave"){<span></span>Button}
+  @@if(context.text && context.type === "btn-ice"){<span class="left-border"></span><span class="top-line"><span class="after"></span></span><span class="btn-text">@@if(context.icon){@@icon}<span class="before"></span>@@text</span>}
+	@@if(!context.text && context.type === "btn-ice"){<span class="left-border"></span><span class="top-line"><span class="after"></span></span><span class="btn-text">@@if(context.icon){@@icon}<span class="before"></span>Button</span>}
+	@@if(context.text && context.type === "btn-two-bg"){<span class="before"></span><span>@@if(context.icon){@@icon} @@text</span><span class="after"></span>}
+	@@if(!context.text && context.type === "btn-two-bg"){<span class="before"></span><span>@@if(context.icon){@@icon} Button</span><span class="after"></span>}
+	@@if(context.type === "icon__btn"){<span class="before"></span><span class="after"></span>}
+</@@if(context.tag){@@tag}@@if(!context.tag){a}>
+}

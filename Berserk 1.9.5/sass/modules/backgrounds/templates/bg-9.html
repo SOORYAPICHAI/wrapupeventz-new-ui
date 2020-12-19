@@ -1,0 +1,33 @@
+<div class="brk-backgrounds @@if(context.overlay1){@@overlay1}@@if(!context.overlay1){brk-base-bg-gradient-17} @@if(context.customClass){@@customClass}" data-brk-library="component__backgrounds_css">
+	<div class="brk-backgrounds__before @@if(context.overlay2){@@overlay2}@@if(!context.overlay2){brk-base-bg-gradient-18} brk-backgrounds_gradient-flash"></div>
+  <div class="brk-backgrounds__after" style="background-image: url(img/backgrounds-1.png)"></div>
+  @@if(context.innerContent !== "false"){
+ 	<div class="brk-backgrounds__content">
+
+ 		<div class="container mt-150 mb-150">
+
+			<div class="text-center" data-brk-library="component__title">
+        <h2 class="font__family-montserrat font__size-36 brk-white-font-color">We are Awesome
+        </h2>
+        <h2 class="font__family-montserrat font__weight-bold font__size-56 line__height-60 mt-10 brk-white-font-color">
+          Engaging, purposeful, and</h2>
+        <h2 class="highlight-massive font__family-playfair font__weight-bold font__size-56 line__height-60 brk-white-font-color mb-30">
+          creative
+          <span class="after wow zoomIn"></span>
+        </h2>
+        <br>
+
+				@@include('../../buttons/templates/buttons-backgrounds.html', {
+				"class": "btn-backgrounds btn-backgrounds_dark font__family-montserrat font__weight-semibold text-uppercase font__size-13 brk-base-gradient-btn-backgrounds",
+				"style": "",
+				"text": "",
+				"tag": "button",
+				"href": ""
+				})
+			</div>
+
+		</div>
+
+  </div>
+  } 
+</div>

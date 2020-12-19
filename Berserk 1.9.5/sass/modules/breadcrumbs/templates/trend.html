@@ -1,0 +1,44 @@
+@@if(withBottomBtn === "true"){
+<div class="breadcrumbs__bottom-btn">
+}
+
+
+
+
+<div class="breadcrumbs__section breadcrumbs__section-trend bg__style pt-70 pb-60"
+		style="background-image: url(img/1920x194_1.jpg) " data-brk-library="component__breadcrumbs_css">
+	<div class="brk-base-bg-gradient-4 full__size-absolute breadcrumb-bg"></div>
+	<div class="container">
+		<div class="breadcrumbs__wrapper">
+			<div class="float-left text-left">
+				<h2 class="font__size-36 line__height-40 font__family-montserrat-alt font__weight-bold">Some Page Title</h2>
+				<h5 class="font__size-15 font__family-montserrat">Page sub title goes here</h5>
+			</div>
+
+			<ol class="breadcrumb float-right font__size-15 font__family-montserrat-alt">
+				<li>
+					<a href="#">Bread</a>
+				</li>
+				<li class="active">Crumbs</li>
+			</ol>
+		</div>
+		 
+	</div>
+	
+</div>
+
+@@if(context.withBottomBtn === "true"){
+
+<div class="container">
+		@@include('../../buttons/templates/buttons.html',{
+      "type": "icon__btn",
+      "href":"#add-topic",
+			"customClass": "icon__btn-anim breadcrumbs__btn",
+			"icon": "<i class='fal fa-plus icon-inside' aria-hidden='true'></i>",
+			"size": "sm" 
+		})
+</div>
+
+</div>
+
+}

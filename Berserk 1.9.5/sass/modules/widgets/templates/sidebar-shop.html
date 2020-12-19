@@ -1,0 +1,45 @@
+<div class="brs-sidebar brs-sidebar_right @@if(customClass){@@customClass}" data-brk-library="component__widgets">
+  <div class="brs-sidebar__title">
+    <h3 class="font__family-montserrat font__size-21 font__weight-bold line__height-22">Categories</h3>
+  </div>
+  
+  @@include('categories.html',{
+    "customContainerClass":"mb-20"
+  })
+  <div class="brs-sidebar__title">
+    <h3 class="font__family-montserrat font__size-21 font__weight-bold line__height-22">Filter</h3>
+  </div>
+  @@include('../../elements/templates/color-filter.html',{
+    "customContainerClass":"mt-40 mb-45",
+    "title":"color",
+    "titleClass":"",
+    "item1bg":"brk-bg-blue",
+    "item2bg":"brk-bg-green",
+    "item3bg":"brk-bg-cyan",
+    "item4bg":"brk-bg-yellow",
+    "item5bg":"brk-bg-orange",
+    "item6bg":"brk-bg-brown",
+    "item7bg":"brk-bg-black"
+  })
+  @@include('brand-filter.html',{
+    "customContainerClass":"mb-30",
+    "item1img":"",
+    "item1text":"logo",
+    "item2img":"",
+    "item2text":"logo",
+    "item3img":"",
+    "item3text":"logo",
+    "item4img":"",
+    "item4text":"logo",
+    "item5img":"",
+    "item5text":"logo",
+    "item6img":"",
+    "item6text":"logo",
+    "item7img":"",
+    "item7text":"logo"
+  })
+  <div class="brs-sidebar__title">
+    <h3 class="font__family-montserrat font__size-21 font__weight-bold line__height-22">Popular items</h3>
+  </div>
+  @@include('serial-slider.html')
+</div>

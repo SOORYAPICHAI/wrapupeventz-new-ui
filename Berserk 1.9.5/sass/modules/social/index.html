@@ -1,0 +1,78 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Social"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- Social Block Round -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> Round</h3>
+    	</div>
+			@@include('./templates/round.html', {
+        "customClass":"side-circles"
+      })
+    </div>
+
+    <!-- Social Block Circle -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> Circle</h3>
+    	</div>
+			@@include('./templates/circle.html', {})
+    </div>
+
+    <!-- Social Block Square -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">03</span> Square</h3>
+    	</div>
+			@@include('./templates/square.html')
+    </div>
+
+    <!-- Social Block Honeycomb -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">04</span> Honeycomb</h3>
+    	</div>
+			@@include('./templates/honeycomb.html', {})
+    </div>
+
+    <!-- Social Block Round -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">05</span> Double</h3>
+    	</div>
+			@@include('./templates/double.html', {})
+    </div>
+
+    <!-- Social Block Gradient -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">06</span> Gradient</h3>
+    	</div>
+			@@include('./templates/gradient.html', {})
+    </div> 
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

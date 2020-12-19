@@ -1,0 +1,54 @@
+<div class='brk-gallery-card 
+            @@if(context.grayscale === "true"){brk-gallery-card_grayscale}
+            @@if(type === "centralBtnOverlay"){brk-gallery-card_shadow}
+            @@if(type === "animated"){brk-gallery-card_overflow}
+            @@if(context.style1 === "true"){brk-gallery-card_style-1}' data-brk-library="component__gallery">
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@img" alt="alt" class="brk-gallery-card__img lazyload">
+  @@if(type === "animated"){
+  <span class="brk-gallery-card__add-1"></span>
+  <span class="brk-gallery-card__add-2"></span>
+  <span class="brk-gallery-card__add-3"></span>
+  <span class="brk-gallery-card__add-4"></span>
+  <span class="brk-gallery-card__add-5"></span>
+  <span class="brk-gallery-card__add-6"></span>
+  
+  <span class="brk-gallery-card__overlay brk-bg-gradient-40deg-60"></span>
+  <a href="@@img" data-fancybox="gallery" class="brk-gallery-card__fancy fancybox brk-white-font-color d-flex align-items-center justify-content-center">
+    <i class="fas fa-plus font__size-36"></i>
+  </a> 
+  }
+  @@if(type === "centralBtn"){
+  <a href="@@img" data-fancybox="gallery" class="icon__btn icon__btn-white icon__btn-lg icon__btn-circled brk-gallery-card__central-btn">
+      <i class="fas fa-search icon-inside" aria-hidden="true"></i>
+      <span class="before"></span>
+      <span class="after"></span>
+    </a>
+  }
+  @@if(type === "centralBtnOverlay"){
+    <a href="@@img" data-fancybox="gallery" class="fancybox brk-gallery-card__overlay-full brk-bg-gradient-40deg-85-28 d-flex align-items-center justify-content-center">
+      <i class="fas fa-plus font__size-36 brk-white-font-color"></i>
+    </a>
+  }
+  @@if(type === "angleBtn"){
+    <span class="brk-gallery-card__overlay-angle"></span>
+    <a href="@@img" data-fancybox="gallery" class="brk-gallery-card__fancy_angle"></a>
+    <span class="brk-gallery-card__angle-btn pr-15 pb-15 justify-content-end align-items-end d-flex">
+      <i class="fas fa-search font__size-16 brk-white-font-color" aria-hidden="true"></i>
+    </span>
+  }
+  @@if(type === "angleBtnTop"){
+    <span class="brk-gallery-card__overlay-angle-top @@if(context.overlay){@@overlay}@@if(!context.overlay){bg-black opacity-70}"></span>
+    <a href="@@img" data-fancybox="gallery" class="brk-gallery-card__fancy_angle"></a>
+    <span class="brk-gallery-card__angle-btn-top pr-15 pt-15 justify-content-end align-items-start d-flex">
+      <i class="fas fa-search font__size-16 brk-white-font-color" aria-hidden="true"></i>
+    </span>
+  }
+  @@if(type === "masonry"){
+    <span class="brk-gallery-card__overlay-angle-top @@if(context.overlay){@@overlay}@@if(!context.overlay){bg-black opacity-70}"></span>
+    <a href="@@img" data-fancybox="gallery" class="brk-gallery-card__fancy_angle"></a>
+    <span class="brk-gallery-card__angle-btn-top pr-15 pt-15 justify-content-end align-items-start d-flex">
+      <i class="fas fa-search font__size-16 brk-white-font-color" aria-hidden="true"></i>
+    </span>
+  }
+  
+</div>   

@@ -1,0 +1,95 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Progress Circles"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- chart Circle Minimal -->
+    <section>
+    	<div class="container mb-40">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">01 </span>Minimal
+    			</h3>
+    		</div>
+    	</div>
+      @@include('./templates/minimal.html')
+    </section>
+
+    <!-- chart Circle Light -->
+    <section>
+    	<div class="container mt-110 mb-40">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">02 </span>Light
+    			</h3>
+    		</div>
+    	</div>
+      @@include('./templates/light.html')
+    </section>
+
+    <!-- chart Circle Triangled -->
+    <section>
+    	<div class="container mb-40">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">03 </span>Triangled
+    			</h3>
+    		</div>
+    	</div>
+      @@include('./templates/triangled.html')
+    </section>
+
+    <!-- chart Circle Vertical -->
+    <section class="mb-100">
+    	<div class="container mb-40">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">04 </span>Vertical
+    			</h3>
+    		</div>
+    	</div>
+		  @@include("./templates/vertical.html")
+    </section>
+
+    <!-- chart Circle "Two circles" -->
+    <section class="mb-100">
+    	<div class="container mb-40">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">05 </span>Two circles
+    			</h3>
+    		</div>
+    	</div>
+		  @@include("./templates/two-circles.html")
+    </section>
+
+    <!-- Progress Circle Icon -->
+    <section class="mb-100">
+    	<div class="container mb-40">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">06 </span>Icon
+    			</h3>
+    		</div>
+    	</div>
+		  @@include("./templates/icon.html")
+    </section> 
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

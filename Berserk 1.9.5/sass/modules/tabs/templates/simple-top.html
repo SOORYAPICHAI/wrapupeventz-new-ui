@@ -1,0 +1,136 @@
+<div class='brk-tabs @@if(context.position === "top"){brk-tabs-simple-top} @@if(!context.position){brk-tabs-simple-top} @@if(context.position === "bottom") {brk-tabs-simple-bottom}' data-hash="true" data-brk-library="component__tabs">
+  <ul class="brk-tabs-nav font__family-montserrat">
+    <li class="brk-tab">
+        <i class="far fa-gem"></i>
+      <span>Diamond</span>
+    </li>
+    <li class="brk-tab">
+      <i class="fab fa-delicious" aria-hidden="true"></i>
+      <span>Delicious</span>
+    </li>
+    <li class="brk-tab">
+      <i class="fab fa-gg" aria-hidden="true"></i>
+      <span>G & G</span>
+    </li>
+  </ul>
+  <div class="brk-tabs-content">
+    <div id="tab-1" class="brk-tab-item">
+      <div class="row">
+        <div class="col-lg-9">
+          <span class="font__family-montserrat font__weight-light text-uppercase font__size-28 mt-10">Make business with us</span>
+          <span class="font__family-montserrat font__weight-bold text-uppercase font__size-28 mt-10"> & become beautiful</span>
+          <p class="brk-dark-font-color font__family-open-sans font__size-15 line__height-24 mt-40">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+            eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+          <p class="brk-dark-font-color font__family-open-sans font__size-15 line__height-24 mt-25">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+            Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget
+            dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
+            sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+          </p>
+          @@include("../../cfa/templates/minimal.html",{
+            "btnText":"",
+            "title":"CFA Heading",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor nean massa. Cum sociis natoque penatibus et magnis dis parturient mnsectetes.",
+            "customClass":"mt-20 mb-30"
+          })
+
+        </div>
+        <div class="col-lg-3">
+          @@if(context.shapeImg1){
+            @@include("../../shape-box/templates/stripe-card.html",{ 
+              "img":"@@shapeImg1", 
+              "title":"Extensive",
+              "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat" 
+            })
+          }
+          @@if(!context.shapeImg1){
+            @@include("../../shape-box/templates/stripe-card.html",{ 
+              "img":"img/shape-box-1.jpg", 
+              "title":"Extensive",
+              "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat" 
+            })
+          }
+        </div>
+      </div>
+    </div>
+    <div id="tab-2" class="brk-tab-item">
+      <div class="row">
+        <div class="col-lg-9">
+          <span class="font__family-montserrat font__weight-light text-uppercase font__size-28 mt-10">Tons Color Schemes, </span>
+          <span class="font__family-montserrat font__weight-bold text-uppercase font__size-28 mt-10">HTML5 Video</span>
+          <p class="brk-dark-font-color font__family-open-sans font__size-15 line__height-24 mt-40">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+            eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+          <p class="brk-dark-font-color font__family-open-sans font__size-15 line__height-24 mt-25">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+            Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget
+            dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
+            sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+          </p>
+          @@include("../../cfa/templates/minimal.html",{
+            "btnText":"",
+            "title":"CFA Heading",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor nean massa. Cum sociis natoque penatibus et magnis dis parturient mnsectetes.",
+            "customClass":"mt-20 mb-30"
+          })          
+        </div>
+        <div class="col-lg-3">
+          @@if(context.shapeImg2){
+            @@include("../../shape-box/templates/half-card.html",{ 
+              "img":"@@shapeImg2", 
+              "title":"Endless",
+              "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat" 
+            })
+          }
+          @@if(!context.shapeImg2){
+            @@include("../../shape-box/templates/half-card.html",{ 
+              "img":"img/shape-box-1.jpg", 
+              "title":"Endless",
+              "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat" 
+            })
+          }
+        </div>
+      </div>
+    </div>
+    <div id="tab-3" class="brk-tab-item">
+      <div class="row">
+        <div class="col-lg-9">
+          <span class="font__family-montserrat font__weight-light text-uppercase font__size-28 mt-10">Smartly Coded </span>
+          <span class="font__family-montserrat font__weight-bold text-uppercase font__size-28 mt-10">& Maintained</span>
+          <p class="brk-dark-font-color font__family-open-sans font__size-15 line__height-24 mt-40">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+            eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+          <p class="brk-dark-font-color font__family-open-sans font__size-15 line__height-24 mt-25">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+            Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget
+            dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
+            sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+          </p>
+          @@include("../../cfa/templates/minimal.html",{
+            "btnText":"",
+            "title":"CFA Heading",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor nean massa. Cum sociis natoque penatibus et magnis dis parturient mnsectetes.",
+            "customClass":"mt-20 mb-30"
+          })
+        </div>
+        <div class="col-lg-3">
+          @@if(context.shapeImg3){
+            @@include("../../shape-box/templates/wave-card.html",{ 
+              "img":"@@shapeImg3", 
+              "title":"Maintained",
+              "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat" 
+            })
+          }
+          @@if(!context.shapeImg3){
+            @@include("../../shape-box/templates/wave-card.html",{ 
+              "img":"img/shape-box-1.jpg", 
+              "title":"Maintained",
+              "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat" 
+            })
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

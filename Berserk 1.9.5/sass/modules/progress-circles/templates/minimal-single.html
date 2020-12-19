@@ -1,0 +1,14 @@
+<div class="chart__wrapper @@if(context.customClass){@@customClass} @@if(context.single == "true"){chart__wrapper_single} chart-minimal align-items-center flex-row text-center" data-brk-library="component__progress_circle">
+<div class="chart mx-auto">
+  <div class="chart__circle"
+       data-valuenow="@@if(context.valueCur){@@valueCur}@@if(!context.valueCur){75}"
+       data-color="@@if(context.color_1){@@color_1}@@if(!context.color_1){var(--brand-primary)}"
+       data-color-end="@@if(context.color_2){@@color_2}@@if(!context.color_2){var(--secondary)}"
+       data-color-back="@@if(context.colorBack){@@colorBack}">
+      <span class="font__family-montserrat font__size-21 chart__circle-counter">
+        <span class="percents">0</span>%</span>
+    <h5 class="font__family-montserrat font__size-16 font__weight-bold chart__title @@if(context.chartTitleClass){@@chartTitleClass}">
+      @@if(context.title){@@title}@@if(!context.title){Hard Work}</h5>
+  </div>
+</div>
+</div>

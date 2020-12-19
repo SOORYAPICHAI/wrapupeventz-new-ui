@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-brk-skin="brk-blue.css">
+
+<head>
+	<title>Register - Berserk HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="favicon.ico">
+	<meta name="theme-color" content="#2775FF">
+	<meta name="keywords" content="themeforest, theme, html, template">
+	<meta name="description" content="themeforest, theme, html, template">
+	<link rel="stylesheet" id="brk-direction-bootstrap" href="css/assets/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" id="brk-skin-color" href="css/skins/brk-orange.css">
+	<link id="brk-base-color" rel="stylesheet" href="css/skins/brk-base-color.css">
+	<link rel="stylesheet" id="brk-direction-offsets" href="css/assets/offsets.css">
+	<link id="brk-css-min" rel="stylesheet" href="css/assets/styles.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="brk-loader">
+		<div class="brk-loader__loader"></div>
+	</div>
+	<!-- header -->
+	<div id="header"></div>
+
+	<div class="main-wrapper mt-110">
+		<main class="main-container">
+			<section>
+				<div class="row no-gutters">
+					<div class="col-12 col-lg-12 order-1 order-lg-2">
+						<div class="full-screen d-flex align-items-center">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-lg-2 col-md-1"></div>
+									<div class="col-12 col-md-12">
+										<h1 class="font__family-montserrat font__weight-bold font__size-42 line__height-42 text-center pt-4 pb-3"
+                                            >
+											Candidate Detail</h1>
+										<div class="brk-form brk-form-round" data-brk-library="component__form">
+											<!-- <input type="email" placeholder="Email Address">
+											<input type="password" placeholder="Password"> -->
+											<div class="container mt-10 mb-10 mt-md-80 mb-md-80">
+												<div class="accordion accordion-slider" role="tablist"
+													aria-multiselectable="true"
+													data-brk-library="component__accordions">
+													<div class="card ">
+														<div class="card-header text-left" role="tab" id="headingOne">
+															<span class="card-dash brk-base-bg-gradient-bottom"></span>
+															<h5
+																class="mb-0 font__family-montserrat font__weight-semibold letter-spacing-20 font__size-16 line__height-16 brk-base-font-color text-uppercase">
+																<a class="font__weight-medium card-title"
+																	data-toggle="collapse"
+																	data-parent=".accordion-slider" href="#collapseOne"
+																	aria-expanded="false" aria-controls="collapseOne">
+																	<i class="far fa-gem"></i> Basic
+																</a>
+															</h5>
+														
+														</div>
+                                                        <div id="collapseOne" class="collapse show" 
+                                                        role="tabpanel"
+															aria-labelledby="headingOne">
+															<div class="card-block text-left font__family-open-sans"
+																style="padding: 40px 40px 40px;">
+																<div class="row">
+																	<div class="col-sm-6 mb-20">
+																		<label
+																			class="brk-form-label font__family-montserrat font__weight-bold"
+																			for="brk-name-form">Name</label>
+																		<input id="brk-name-form" name="name"
+																			type="text" placeholder="Syed">
+																	</div>
+																	<div class="col-sm-6 mb-20">
+																		<label
+																			class="brk-form-label font__family-montserrat font__weight-bold"
+																			for="brk-email-form">Email</label>
+																		<input id="brk-email-form" name="email"
+																			type="email"
+																			placeholder="enter-your@mail.com">
+																	</div>
+																	<div class="col-sm-6 mb-20">
+																		<label
+																			class="brk-form-label font__family-montserrat font__weight-bold">Gender</label>
+
+																		<div class="row">
+																			<div class="col-12 col-sm-6  text-left ">
+																				<input id="radio-round-1" name="radio"
+																					type="radio" value="3"
+																					checked="checked">
+																				<label for="radio-round-1"
+																					class="brk-form-radio-label">Male</label>
+																			</div>
+																			<div class="col-12 col-sm-6 text-left">
+																				<input id="radio-round-2" name="radio"
+																					type="radio" value="3">
+																				<label for="radio-round-2"
+																					class="brk-form-radio-label">Female</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-sm-6 mb-20">
+																		<label
+																			class="brk-form-label font__family-montserrat font__weight-bold">DOB</label>
+																		<input id="date-id-round" class="brk-form-date"
+																			name="date-round" type="date">
+																	</div>
+																	<div class="col-sm-6 mb-20">
+																		<label
+																			class="brk-form-label font__family-montserrat font__weight-bold"
+																			for="brk-ph-form">Phone Number</label>
+																		<input id="brk-ph-form" name="ph" type="tel"
+																			placeholder="9856214589">
+																	</div>
+																	<div class="col-sm-6 mb-20">
+																		<label
+																			class="brk-form-label font__family-montserrat font__weight-bold">City/State</label>
+																		<select name="select">
+																			<option value="Option 1">Option 1</option>
+																			<option value="Option 2">Option 2</option>
+																			<option value="Option 3">Option 3</option>
+																			<option value="Option 4">Option 4</option>
+																			<option value="Option 5">Option 5</option>
+																			<option value="Option 6">Option 6</option>
+																			<option value="Option 7">Option 7</option>
+																			<option value="Option 8">Option 8</option>
+																			<option value="Option 9">Option 9</option>
+																			<option value="Option 10">Option 10</option>
+																		</select>
+																	</div>
+																	<div class="col-sm-6 mb-20">
+																		<label
+																			class="brk-form-label font__family-montserrat font__weight-bold"
+																			for="brk-pincode-form">Pincode</label>
+																		<input id="brk-pincode-form" name="pincode"
+																			type="tel" placeholder="600087">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+													<div class="card">
+														<div class="card-header text-left" role="tab" id="headingTwo">
+															<span class="card-dash brk-base-bg-gradient-bottom"></span>
+															<h5
+																class="mb-0 font__family-montserrat font__weight-semibold letter-spacing-20 font__size-16 line__height-16 brk-base-font-color text-uppercase">
+																<a class="font__weight-medium card-title collapsed"
+                                                                    >
+																	<i class="fab fa-delicious"></i> Additional
+																</a>
+															</h5>
+                                                            <!-- <a class="card-toggle-icon collapsed"
+                                                                aria-expanded="false" aria-controls="collapseOne"
+                                                                >
+																<span class="before"></span><span class="after"></span>
+															</a> -->
+														</div>
+														<div id="collapseTwo" class="collapse show" role="tabpanel"
+															aria-labelledby="headingTwo">
+															<div class="card-block text-left font__family-open-sans"
+																id="additionalQuestions">
+
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+											<!-- <div class="mt-20 d-flex flex-wrap justify-content-between">
+												<button class="btn-backgrounds btn-backgrounds btn-backgrounds_280 btn-backgrounds_white btn-backgrounds_left-icon font__family-montserrat font__weight-bold text-uppercase font__size-13 z-index-2 text-center letter-spacing-20 mt-10" data-brk-library="component__button">
+													<span class="text">REGISTER</span>
+													<span class="before"><i class="far fa-hand-point-right"></i></span>
+												</button>
+												<a href="login.html" class="btn-backgrounds btn-backgrounds_no-icon btn-backgrounds btn-backgrounds_280 btn-backgrounds_white btn-backgrounds_left-icon font__family-montserrat font__weight-bold text-uppercase font__size-13 z-index-2 text-center letter-spacing-20 mt-10" data-brk-library="component__button">
+													<span class="text">LOGIN</span>
+												</a>
+											</div> -->
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+		</main>
+    </div>
+    <div id="footer"></div>
+	<a href="#top" id="toTop"></a>
+	<script defer="defer" src="js/scripts.min.js"></script>
+    <script src="data/userRegister/questions.js"></script>
+    <script src="header/index.js"></script>
+	<script src="footer/index.js"></script>
+
+
+	<!-- LOAD HEADERS AND FOOTER -->
+
+	<script>
+		document.getElementById('header').innerHTML += header()
+		document.getElementById('footer').innerHTML += footer()
+	</script>
+	<script>
+		document.getElementById('additionalQuestions').innerHTML += questions()
+	</script>
+</body>
+
+</html>

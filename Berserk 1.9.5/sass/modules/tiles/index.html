@@ -1,0 +1,77 @@
+  @@include("../../assets/templates/head.html", {
+  "titlePage": "Tiles"
+  })
+  </head>
+
+  <body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-70 mt-100 mt-130">
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">01</span> Full
+          </h3>
+        </div>
+      </div>
+      @@include("templates/full.html")
+    </section>
+
+    <section>
+      <div class="container mb-80 mt-100">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">02</span> Simple
+          </h3>
+        </div>
+      </div>
+      @@include("templates/simple.html")
+    </section>
+
+    <section>
+      <div class="container mb-100 mt-100">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">03</span> Clean
+          </h3>
+        </div>
+      </div>
+      @@include("templates/clean.html")
+    </section>
+
+    <section>
+      <div class="container mb-110 mt-150">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">04</span> Assorted
+          </h3>
+        </div>
+      </div>
+      @@include("templates/assorted.html")
+    </section>
+
+    <section>
+      <div class="container mb-110 mt-150">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">05</span> Formats
+          </h3>
+        </div>
+      </div>
+      @@include("templates/formats.html")
+    </section>
+
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")  
+
+  </body>
+</html>

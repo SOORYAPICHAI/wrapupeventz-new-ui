@@ -1,0 +1,23 @@
+<div class="flip-box" data-brk-library="component__flip_box">
+  <div class='flip @@if(context.flip){flip_@@flip} @@if(!context.flip){flip_horizontal} flip-box__multiply @@if(context.dark === "true"){flip-box__multiply_dark}'>
+    <div class="flip__front">
+      <div class="flip-box__multiply-title @@if(context.titleCustomClass){@@titleCustomClass}@@if(!context.titleCustomClass){font__family-montserrat font__weight-bold font__size-78 text-uppercase mt-35 pl-xl-50 pr-xl-50 pl-20 pr-20} lazyload"
+        data-bg="@@if(context.img){@@img}@@if(!context.img){img/370x370_1.jpg}">@@if(context.title){@@title}@@if(!context.title){Lyric Video}
+      </div>
+      <div class='flip-box__multiply-decoration lazyload @@if(context.square === "true"){flip-box__multiply-decoration_square} border-radius-25 ml-xl-50 ml-20 mt-90 mb-40' data-bg="@@if(context.img){@@img}@@if(!context.img){img/370x370_1.jpg}">
+        <i class="fal fa-angle-right font__size-28 font__weight-thin" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="flip__back flip-box__bg flip-box__bg_overlay lazyload" data-bg="@@if(context.img){@@img}@@if(!context.img){img/370x370_1.jpg}">
+      <div class="flip-box__position flip-box__position_35 text-center">
+        <h4 class="flip-box__multiply-h4 font__family-montserrat font__weight-bold font__size-78">@@if(context.number){@@number}@@if(!context.number){01}</h4>
+        <p class="font__family-open-sans font__size-14 line__height-21 text-white mt-40 pl-30 pr-30">@@if(context.text){@@text}@@if(!context.text){You've just heard the newest hit song. Next step: learn the words so you don't embarrass yourself again by mumbling}</p>
+        <button class='btn btn-md @@if(context.square !== "true"){border-radius-25} font__family-open-sans font__size-16 font__weight-bold btn-inside-out btn-no-shadow flip-box__multiply-btn mt-40 @@if(context.btnCustomClass){@@btnCustomClass}' data-brk-library="component__button">
+          <span class="before">Read More</span>
+          <span class="text">Read More</span>
+          <span class="after">Read More</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>  

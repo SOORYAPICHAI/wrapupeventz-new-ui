@@ -1,0 +1,41 @@
+<div class="brk-pricing-shop @@if(context.style1 === 'true'){brk-pricing-shop_style-1} brk-base-box-shadow @@if(context.customClass){@@customClass}" data-brk-library="component__pricing_table,component__button">
+  <div class="brk-pricing-shop__view">
+    <div class="brk-pricing-shop__title font__family-open-sans font__weight-bold font__size-24 line__height-24">
+      @@if(context.title){@@title}@@if(!context.title){1 Package}
+    </div>
+    <div class="brk-pricing-shop__price">
+      <div class="price-item font__family-montserrat">
+        <span class="price font__weight-ultralight">@@if(context.price){@@price}@@if(!context.price){$299}</span>
+        <span class="period font__weight-light">@@if(context.pricePer){@@pricePer}@@if(!context.pricePer){/ mo}</span>
+      </div>
+      <div class="price-icon">
+        <span class="before"></span>
+        <i class="fal fa-trophy"></i>
+        <p style="text-align: left"></p><span class="after"></span>
+      </div>
+    </div>
+  </div>
+  <div class="brk-pricing-shop__description font__family-open-sans">
+    <ul>
+      @@if(context.list){
+        @@for (var i = 0; i < list.length; i++) {
+          <li>`+list[i]+`</li>
+        }
+      }
+      @@if(!context.list){
+        <li>Express Service</li>      
+        <li>Customs Clearance</li> 
+        <li>Time-Critical Services</li>
+      }
+    </ul>
+  </div>
+  <div class="brk-pricing-shop__block-info">
+    @@include('../../elements/templates/rating.html', {
+    "value": "80%"
+    })
+    <a href="#" class="info-link font__family-montserrat font__weight-bold">Info<i class="fal fa-arrow-right"></i></a>
+  </div>
+  <button class="brk-pricing-shop__btn @@if(context.btnStyle1 === 'true'){brk-pricing-shop__btn_style-1} btn font__family-open-sans font__weight-bold">
+    <i class="fa fa-shopping-basket"></i>Add to cart
+  </button>
+</div>

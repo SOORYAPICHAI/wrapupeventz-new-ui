@@ -1,0 +1,71 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Checkout"
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+  <div class="main-wrapper">
+    <main class="main-container mt-100 mt-md-130">
+      <div class="container">
+        @@include("../steps/templates/checkers.html",{
+          "title1": "Cart",
+          "title2": "Checkout",
+          "title3": "Payment",
+          "title4": "Done",
+          "complete1": "true",
+          "complete2": "true",
+          "active2": "true",
+          "fullWidth": "true",
+          "customClass": "mb-130",
+          "link1": "cart.html"
+        })
+      </div>
+      <form action="#" class="brk-form-strict" data-brk-library="component__form">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              @@include("../alerts/templates/simple-v1.html",{
+                "icon": "<i class='fas fa-tag mr-25'></i>",
+                "title": "<strong class='font__weight-semibold'>Have a coupon?</strong> <button data-toggle='collapse' data-target='#couponCollapse' aria-expanded='false' aria-controls='couponCollapse' type='button'>Click here to enter your code</button>."
+              })
+            </div>
+            <div class="col-12 col-md-6 collapse" id="couponCollapse">
+              <input type="text" placeholder="Enter your code">
+            </div>
+            <div class="col-12">
+              <h2 class="font__family-montserrat font__size-36 font__weight-bold line__height-42 mt-40">Billing details</h2>
+            </div>
+            <div class="col-12 col-md-6"><input type="text" placeholder="First Name" required></div>
+            <div class="col-12 col-md-6"><input type="text" placeholder="Last Name" required></div>
+            <div class="col-12"><input type="text" placeholder="Company name"></div>
+            <div class="col-12 col-md-6"><input type="text" required placeholder="Country"></div>
+            <div class="col-12 col-md-6"><input type="text" required placeholder="House number and street name"></div>
+            <div class="col-12 col-md-6"><input type="text" required placeholder="Town / City"></div>
+            <div class="col-12 col-md-6"><input type="text" placeholder="Apartment, suite, until etc (optional)"></div>
+            <div class="col-12 col-md-6"><input type="text" required placeholder="State / Country"></div>
+            <div class="col-12 col-md-6"><input type="text" required placeholder="Postcode / ZIP"></div>
+            <div class="col-12 col-md-6"><input type="text" required placeholder="Phone"></div>
+            <div class="col-12 col-md-6"><input type="text" required placeholder="Email address"></div>
+            <div class="col-12">
+              <h2 class="font__family-montserrat font__size-36 font__weight-bold line__height-42 mt-60 mb-10">Additional Information</h2>
+            </div>
+            <div class="col-12"><textarea placeholder="Order notes" class="mb-60"></textarea></div>
+          </div>
+          @@include("./templates/order.html")
+          <div class="text-center translate-top-50">
+            @@include("../buttons/templates/buttons.html",{
+              "type": "btn-inside-out",
+              "text": "Proceed to Checkout",
+              "text_hover": "Proceed to Checkout",
+              "customClass" : "border-radius-25 btn-shadow pl-50 pr-50"
+            })
+          </div>
+        </div>
+      </form>
+      
+    </main>
+  </div>
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

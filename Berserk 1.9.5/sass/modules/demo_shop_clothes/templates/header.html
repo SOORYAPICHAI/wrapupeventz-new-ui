@@ -1,0 +1,153 @@
+<div class="brk-header-mobile">
+  <div class="brk-header-mobile__open">
+    <span></span>
+  </div>
+
+  <div class="brk-header-mobile__logo">
+    <a href="#"><img src="img/logo-dark-2.png" alt=""></a>
+  </div>
+</div><!-- /.brk-header-mobile -->
+
+<header class="brk-header brk-header_style-1 brk-header_skin-1 position-fixed d-flex flex-column brk-header_color-dark position-fixed"
+        data-logo-src="img/logo-dark-2.png"
+        data-bg-mobile="img/brk-bg-mobile-menu.jpg"
+        data-brk-library="component__header">
+
+<!-- TOP BAR
+brk-header__top-bar_hide
+brk-header__top-bar_scroll
+-->
+<div class="brk-header__top-bar order-lg-1 order-2 font__family-montserrat brk-header__top-bar_scroll"
+     style="height: 46px;">
+  <div class="brk-header__title font__family-montserrat font__weight-bold">Contact Us</div>
+
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-6 align-self-lg-stretch text-left">
+        @@include('../../../modules/header-1/templates/brk-header-element.html', {
+        "classMod": "brk-header__element_skin-2",
+        "tag": "a",
+        "href": "tel:88002003040",
+        "icon": "fa fa-phone",
+        "text": "8 800 200 30 40",
+        "textStyle": "font__weight-semibold",
+        "compareStyle": "",
+        "compare": ""
+        })
+
+        @@include('../../../modules/header-1/templates/brk-header-element.html', {
+        "classMod": "brk-header__element_skin-2",
+        "tag": "a",
+        "href": "#",
+        "icon": "fa fa-envelope",
+        "text": "hello@berserk.com",
+        "textStyle": "font__weight-medium",
+        "compareStyle": "",
+        "compare": ""
+        })
+      </div>
+      <div class="col-lg-6 align-self-lg-stretch text-left text-lg-right">
+        @@include('../../../modules/header-1/templates/brk-mini-cart.html', {
+        "skinOpen": "skin-1",
+        "openMod": "brk-mini-cart__open_skin-1",
+        "countSkin": "brk-mini-cart__count_skin-1 brk-mini-cart__count_white",
+        "openMod": "@@if(context.openMod){@@openMod}"
+        })
+
+        @@include('../../../modules/header-1/templates/brk-header-element.html', {
+        "classMod": "brk-header__element_skin-2 @@if(context.classMod){@@classMod}",
+        "tag": "a",
+        "href": "#",
+        "icon": "fa fa-heart",
+        "text": "My wishlist",
+        "textStyle": "font__weight-medium",
+        "compareStyle": "brk-header__compare_white brk-header__compare_skin-1",
+        "compare": "12"
+        })
+
+        @@include('../../../modules/header-1/templates/brk-lang.html', {
+        "interactive": "brk-lang_interactive",
+        "styleSelect": "@@if(context.styleSelect){@@styleSelect}"
+        })
+
+        @@include('../../../modules/header-1/templates/brk-header-element.html', {
+        "classMod": "brk-header__element_skin-2 @@if(context.classMod){@@classMod}",
+        "tag": "a",
+        "href": "#",
+        "icon": "fa fa-user",
+        "text": "Login",
+        "textStyle": "font__weight-medium",
+        "compareStyle": "",
+        "compare": ""
+        })
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End TOP BAR -->
+
+<!-- MAIN BAR -->
+<div class="brk-header__main-bar brk-header_border-top-dark order-lg-2 order-1"
+     style="height: 72px;">
+
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-3 align-self-lg-center d-none d-lg-block ml-10">
+        @@include('../../../modules/header-1/templates/brk-header-logo.html', {
+        "logo_1": "img/logo-dark-1.png",
+        "logo_2": "img/logo-dark-1.png"
+        })
+      </div>
+      <div class="col-lg align-self-lg-stretch text-lg-center">
+        <nav class="brk-nav brk-header__item">
+          <ul class="brk-nav__menu">
+            @@include("../../../modules/header-1/templates/brk-nav-home.html")
+            <li>
+              <a href="#collections">
+                <span>Collections</span>
+              </a>
+            </li>
+            <li>
+              <a href="#team">
+                <span>Team</span>
+              </a>
+            </li>
+            @@include("../../../modules/header-1/templates/brk-nav-shop.html")
+            @@include("../../../modules/header-1/templates/brk-nav-elements.html")
+            <li>
+              <a href="#contact">
+                <span>Contact Us</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-lg-3 align-self-lg-stretch text-lg-right">
+        <div class="brk-header__title font__family-montserrat font__weight-bold">Info</div>
+
+        @@include('../../../modules/header-1/templates/brk-search.html',{
+        "icon": "fal fa-search",
+        "searchOpenClass": "@@if(context.searchOpenClass){@@searchOpenClass}"
+        })
+
+        @@include('../../../modules/buttons/templates/buttons.html',{
+        "type": "btn-inside-out",
+        "size": " ",
+        "text": "Buy now <span class='font__family-times-new-roman text-lowercase font__style-italic'>for</span> 39$",
+        "customClass": "brk-header__item brk-header__btn brk-header__btn_white btn-sm-1 brk-base-box-shadow  border-radius-25 font__family-open-sans font__weight-bold m-0 pl-30 pr-30"
+        })
+
+        @@include('../../../modules/header-1/templates/brk-info-menu-open.html',{
+        "skin": "brk-info-menu-open_skin-2",
+        "infoOpenClass": "@@if(context.infoOpenClass){@@infoOpenClass}"
+        })
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- End MAIN BAR -->
+
+  @@include('../../header-1/templates/brk-info-menu.html',{})
+
+</header><!-- /.brk-header -->

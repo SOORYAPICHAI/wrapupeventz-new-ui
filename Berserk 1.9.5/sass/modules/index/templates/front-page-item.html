@@ -1,0 +1,31 @@
+<div class="col-lg-4 col-sm-6 col-12 brk-page-intro__item @@if(context.cat){@@cat}">
+  <div class="brk-page-intro__template">
+    <div class="brk-preloader"></div>
+    <a class="brk-page-intro__template-active-link" target="_blank" href="@@if(context.link){@@link}">
+      <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.img){@@img}" alt="@@if(context.title){@@title}">
+      <div class="brk-page-intro__template-link">
+        <span class="before"></span>
+        <i class="far fa-search"></i>
+        <span class="after"></span>
+      </div>
+    </a>
+    <div class="brk-page-intro__template-info text-center d-flex flex-column justify-content-center">
+      <h4 class="font__weight-bold text-uppercase font__size-18 line__height-22">@@if(context.title){@@title}</h4>
+      <div class="brk-dark-font-color font__size-16 line__height-22">@@if(context.subtitle){@@subtitle}</div>
+    </div>
+    @@if(context.stick1){
+      <div class="brk-page-intro__template-stick">
+        <div class="stick">
+          <span class="before"></span><span class="after"></span>
+          <span>@@stick1</span>
+        </div>
+        @@if(context.stick2){
+          <div class="stick">
+            <span class="before"></span><span class="after"></span>
+            <span>@@stick2</span>
+          </div>
+        }
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,26 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Portfolio Masonry"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper --> 
+  <div class="main-wrapper mb-70">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    @@include('./templates/full-page.html', {
+      "img_1": "img/400x400_1.jpg",
+      "img_2": "img/800x800_1.jpg",
+      "img_3": "img/400x800_1.jpg",
+      "img_4": "img/800x400_1.jpg",
+      "inline_style": "margin-bottom: -150px;"
+    })
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Social Links"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mt-70">
+      <div class="container mb-120">
+        <div class="font__family-montserrat font__size-21 font__weight-bold text-left mb-100">
+            <span>01 Simple social links</span>
+        </div>
+        @@include('./templates/simple-social-links.html',{
+          "socialIcon1":"<i class='fab fa-facebook-f'></i>",
+          "socialIcon2":"<i class='fab fa-twitter'></i>",
+          "socialIcon3":"<i class='fab fa-google-plus-g'></i>",
+          "socialIcon4":"<i class='fab fa-pinterest'></i>",
+          "socialIcon5":"<i class='fab fa-linkedin-in'></i>",
+          "socialIcon6":"<i class='fab fa-vk'></i>",
+          "socialLink6":"",
+          "socialIcon7":"",
+          "customContainerClass":""
+        })
+      </div>
+      <div class="container mb-120">
+        <div class="font__family-montserrat font__size-21 font__weight-bold text-left mb-100">
+            <span>02 Bordered social links</span>
+        </div>
+        @@include('./templates/simple-social-links.html',{
+          "socialIcon1":"<i class='fab fa-facebook-f'></i>",
+          "socialIcon2":"<i class='fab fa-twitter'></i>",
+          "socialIcon3":"<i class='fab fa-google-plus-g'></i>",
+          "socialIcon4":"<i class='fab fa-pinterest'></i>",
+          "socialIcon5":"<i class='fab fa-linkedin-in'></i>",
+          "socialIcon6":"<i class='fab fa-vk'></i>",
+          "socialLink6":"",
+          "socialIcon7":"",
+          "customContainerClass":"brk-social-links_bordered"
+        })
+      </div>
+
+      <div class="container mb-120">
+        <div class="font__family-montserrat font__size-21 font__weight-bold text-left mb-100">
+            <span>02 Rounded social links</span>
+        </div>
+        @@include('./templates/simple-social-links.html',{
+          "socialIcon1":"<i class='fab fa-facebook-f'></i>",
+          "socialIcon2":"<i class='fab fa-twitter'></i>",
+          "socialIcon3":"<i class='fab fa-google-plus-g'></i>",
+          "socialIcon4":"<i class='fab fa-pinterest'></i>",
+          "socialIcon5":"<i class='fab fa-linkedin-in'></i>",
+          "socialIcon6":"<i class='fab fa-vk'></i>",
+          "socialLink6":"",
+          "socialIcon7":"",
+          "customContainerClass":"brk-social-links_rounded opacity-80"
+        })
+      </div>
+
+      <div class="container mb-120">
+        <div class="font__family-montserrat font__size-21 font__weight-bold text-left mb-100">
+          <span>03 List</span>
+        </div>
+        @@include("./templates/wide-social-links.html")
+      </div>
+
+    <div class="container mb-120">
+      <div class="font__family-montserrat font__size-21 font__weight-bold text-left mb-100">
+        <span>04 Round</span>
+      </div>
+      <div class="bg-cover position-relative pt-50 pb-50 pl-30 pr-30" style="background-image:url(img/bg-26.jpg);">
+        <div class="brk-layer brk-bg-black position-absolute opacity-70"></div>
+
+        <div class="position-relative brk-z-index-10">
+          @@include("./templates/round-social-links.html", {
+          "arr": [
+          {"link": "#", "icon": "fab fa-twitter", "title": "Twitter"},
+          {"link": "#", "icon": "fab fa-facebook-f", "title": "Facebook"},
+          {"link": "#", "icon": "fab fa-instagram", "title": "Instagram"}
+          ]
+          })
+        </div>
+      </div>
+    </div>
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

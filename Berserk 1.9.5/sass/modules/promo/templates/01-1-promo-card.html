@@ -1,0 +1,14 @@
+<a 
+  class="brk-promo-hover-card"
+  href="@@if(context.href){@@href}@@if(!context.href){#}">
+  <div class="brk-promo-hover-card__icon-wrapper">
+    <div class="brk-abs-overlay brk-promo-hover-card__icon-overlay brk-alt-gradient--30deg-96"></div>
+    @@if(context.icon){@@icon}
+    @@if(!context.icon){<i class="far fa-envelope"></i>}
+  </div>
+  <p class="brk-promo-hover-card__title font__family-montserrat font__size-12 line__height-14 font__weight-bold pt-20 pb-10 text-center text-uppercase letter-spacing-40 brk-black-font-color">
+    @@if(context.title){@@title}
+    @@if(!context.title){Development}
+  </p>
+  <p class="brk-promo-hover-card__subtitle brk-dark-font-color font__size-14 line__height-21 text-center">Aenean vulputate eleifend tellus. Aenean leo ligula.</p>
+</a>

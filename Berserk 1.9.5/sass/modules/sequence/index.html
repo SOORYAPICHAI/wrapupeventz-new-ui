@@ -1,0 +1,88 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Sequence"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- Sequence Gradient -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> Gradient</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+				@@include("../sequence/templates/gradient.html")
+    	</div>
+    </div>
+
+    <!-- Sequence Linear -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> Linear</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+				@@include("../sequence/templates/linear.html")
+    	</div>
+    </div>
+
+    <!-- Sequence Overlay -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">03</span> Overlay</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+		  @@include("../sequence/templates/overlay.html")
+    	</div>
+    </div>
+
+    <!-- Sequence Arrow -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">04</span> Arrow</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+				@@include("../sequence/templates/arrow.html")
+    	</div>
+    </div>
+
+    <!-- Sequence Triangle -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">05</span> Triangle</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+		  @@include("../sequence/templates/triangle.html")
+    	</div>
+    </div>
+
+    <!-- Sequence Strict -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">06</span> Strict</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+				@@include("../sequence/templates/strict.html")
+    	</div>
+    </div>
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

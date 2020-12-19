@@ -1,0 +1,41 @@
+<div class="brk-forum-redactor brk-form-strict" data-brk-library="component__form,component__forum_main">
+  <input name="company" type="text" placeholder="Topic Title (Maximum Length: 80):">
+  <textarea name="textarea" placeholder="Type your text"></textarea>
+  <div class="brk-forum-redactor__tags">
+    <span class="brk-dark-font-color brk-forum-redactor__tags-text font__family-open-sans font__size-14">Topic Tags:</span>
+    <input name="company" type="text" placeholder="">
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="brk-forum-redactor__topic-type">
+        <span class="brk-dark-font-color font__family-open-sans font__size-14 brk-forum-redactor__topic-type-text">Topic Type:</span>
+        <select name="select">
+          <option value="Option 1">Option 1</option>
+          <option value="Option 2">Option 2</option>
+        </select>
+      </div>
+    </div> 
+    <div class="col-12 col-md-6">
+      <div class="brk-forum-redactor__topic-status">
+        <span class="brk-dark-font-color font__family-open-sans font__size-14 brk-forum-redactor__topic-satus-text">Topic Status:</span>
+        <select name="select2">
+          <option value="Option 1">Option 1</option> 
+          <option value="Option 2">Option 2</option>
+          <option value="Option 2">Option 2</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="brk-forum-redactor__footer d-flex pt-50 pb-100 align-items-center">
+    <input id="checkbox-strict-1" name="checkbox" type="checkbox" value="1" checked="checked">
+    <label class="brk-form-checkbox-label" for="checkbox-strict-1">Notify me of follow-up replies via email</label>
+    
+    @@include('../../buttons/templates/buttons.html',{
+      "tag": "button",
+      "type": "btn-inside-out",
+      "customClass": "border-radius-25 font__family-open-sans font__weight-bold",
+      "text": "submit",
+      "size": "md"
+    })
+  </div>
+</div>

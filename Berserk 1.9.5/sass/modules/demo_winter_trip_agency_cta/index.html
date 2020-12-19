@@ -1,0 +1,302 @@
+@@include('../../assets/templates/head.html',{
+  "titlePage": "Winter Trip Agency",
+  "themeSkin": "brk-cold-blue.css"
+  })
+  </head>
+  
+  <body data-brk-library="component__winter"> 
+    @@include('../../modules/theme-options/templates/options.html', {})
+  
+  <div class="main-page">
+    @@include('../header-7/templates/style-header-7.html', {
+      "customNav": "true",
+      "title1": "About",
+      "link1": "#about",
+      "title2": "Reviews",
+      "link2": "#reviews",
+      "title3": "Our Office",
+      "link3": "#office",
+      "title4": "Team",
+      "link4": "#team",
+      "title5": "Contact",
+      "link5": "#contact",
+      "only_header": "true",
+      "mainBarHeight": "80px",
+      "white": "true",
+      "justifyLeft": "true",
+      "modifier": "brk-nav_modifier-capitalize font__family-montserrat font__size-14 font__weight-normal",
+      "mainBarCustomClass": "brk-header_border-bottom",
+      "logoModifier": "pl-20 pr-30",
+      "search": "true",
+      "headerStyle": "brk-header_style-2",
+      "sticky": "true"
+    })  
+    <section class="wow fadeInUp" id="about">
+      <div 
+        class="bg__style lazyload position-relative pt-170 pb-90" 
+        data-bg="img/demo_winter_trip/1920x500_2.jpg">
+        <span class="brk-abs-bg-overlay brk-base-bg-primary-30"></span>
+
+        <div class="brk-swiper-default z-index-5 position-relative"
+             data-brk-swiper='{"autoplay": {"delay": 8000}}'
+             data-brk-library="slider__swiper">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-lg-5">
+                      <div class="d-flex align-items-center text-white mb-lg-80 mb-30">
+                        <div class="text-center">
+                          <p class="font__family-montserrat font__weight-bold font__size-64 line__height-64 mb-10">29</p>
+                          <p class="font__family-montserrat font__weight-bold font__size-14 line__height-12 text-uppercase">December</p>
+                        </div>
+                        <div class="font__size-24 ml-25 mr-25 pb-10">
+                          <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="text-center">
+                          <p class="font__family-montserrat font__weight-bold font__size-64 line__height-64 mb-10">05</p>
+                          <p class="font__family-montserrat font__weight-bold font__size-14 line__height-12 text-uppercase">January</p>
+                        </div>
+                      </div>
+                      @@include("../buttons/templates/buttons.html",{
+                        "type": "btn-prime",
+                        "text": "check the offer",
+                        "customClass": "text-lowercase btn-prime-white-transparent border-radius-25 btn-no-shadow mx-0 my-0 btn-min-width-200 btn-prime_thin mb-20",
+                        "size": "md-2"
+                      })
+                    </div>
+                    <div class="col-12 col-lg-7">
+                      <p class="font__family-montserrat font__weight-semibold font__size-18 line__height-20 text-uppercase brk-white-font-color letter-spacing-20 mb-15 pt-10">USA <i class="fas fa-plane pl-10 pr-10"></i> Barcelona</p>      
+                      <h2 class="font__family-montserrat font__weight-bold font__size-98 line__height-98 brk-white-font-color">New Year <br>in Andorra</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-lg-5">
+                      <div class="d-flex align-items-center text-white mb-lg-80 mb-30">
+                        <div class="text-center">
+                          <p class="font__family-montserrat font__weight-bold font__size-64 line__height-64 mb-10">29</p>
+                          <p class="font__family-montserrat font__weight-bold font__size-14 line__height-12 text-uppercase">December</p>
+                        </div>
+                        <div class="font__size-24 ml-25 mr-25 pb-10">
+                          <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="text-center">
+                          <p class="font__family-montserrat font__weight-bold font__size-64 line__height-64 mb-10">11</p>
+                          <p class="font__family-montserrat font__weight-bold font__size-14 line__height-12 text-uppercase">January</p>
+                        </div>
+                      </div>
+                      @@include("../buttons/templates/buttons.html",{
+                        "type": "btn-prime",
+                        "text": "check the offer",
+                        "customClass": "text-lowercase btn-prime-white-transparent border-radius-25 btn-no-shadow mx-0 my-0 btn-min-width-200 btn-prime_thin mb-20",
+                        "size": "md-2"
+                      })
+                    </div>
+                    <div class="col-12 col-lg-7">
+                      <p class="font__family-montserrat font__weight-semibold font__size-18 line__height-20 text-uppercase brk-white-font-color letter-spacing-20 mb-15 pt-10">USA <i class="fas fa-plane pl-10 pr-10"></i> Barcelona</p>      
+                      <h2 class="font__family-montserrat font__weight-bold font__size-98 line__height-98 brk-white-font-color">New Year <br>in Bansko</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="brk-swiper-default-modern-arrow brk-swiper-default-nav-prev"></div>
+            <div class="brk-swiper-default-modern-arrow brk-swiper-default-nav-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-60 pb-50 wow fadeInUp" id="reviews">
+      @@include("../counter/templates/icon.html",{
+        "only_counter": "true",
+        "title1": "Available <br> apartments",
+        "title2": "5 star <br>reviews",
+        "title3": "Spend vocation <br>with us",
+        "title4": "Now on the <br> way to us"
+      })
+    </section>
+
+    <section class="wow fadeInUp" id="office">
+      @@include("../cfa/templates/video.html",{
+        "squared": "true",
+        "cfa": "false",
+        "title": "true",
+        "title_type": "other_v6",
+        "img": "img/demo_winter_trip/1920x440_1.jpg",
+        "overlay": "brk-base-bg-primary-90",
+        "poster": "img/demo_winter_trip/770x460_1.jpg",
+        "poster_overlay": "brk-base-bg-primary-30",
+        "style1": "true"
+      })
+    </section>
+
+    <section class="wow fadeInUp" id="team">
+      @@include("../timelines/templates/masonry.html",{
+        "img_1": "img/demo_winter_trip/240x240_1.jpg",
+        "img_2": "img/demo_winter_trip/320x240_1.jpg",
+        "img_3": "img/demo_winter_trip/240x290_1.jpg",
+        "img_4": "img/demo_winter_trip/320x240_2.jpg",
+        "img_5": "img/demo_winter_trip/240x240_1.jpg",
+        "img_6": "img/demo_winter_trip/320x240_1.jpg",
+        "img_7": "img/demo_winter_trip/240x290_1.jpg",
+        "imgOverlay": "brk-base-bg-primary-30",
+        "customClass": "pt-70 pb-50"
+      })
+    </section>
+
+    <section class="pt-70 pb-80 bg__style lazyload position-relative wow fadeInUp" id="contact" data-bg="img/demo_winter_trip/1920x560_1.jpg">
+      <div class="brk-abs-bg-overlay brk-base-bg-primary-30"></div>
+      <div class="container">
+        <div class="text-center position-relative z-index-2">
+          <i class="fas fa-gift main-icon main-icon_white"></i>
+          <h3 class="font__family-montserrat font__weight-light font__size-36 line__height-36 brk-white-font-color mt-40 mb-10">Some description goes here</h3>
+          <h2 class="font__family-montserrat font__weight-bold font__size-56 line__height-60 brk-white-font-color mb-30">Call for action Block heading title</h2>
+          @@include("../buttons/templates/buttons.html",{
+            "type": "btn-prime",
+            "text": "check the offer",
+            "customClass": "text-lowercase btn-prime-white-transparent border-radius-25 btn-no-shadow mx-0 my-0 btn-min-width-200 btn-prime_thin mb-20",
+            "size": "md-2"
+          })
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-80 pb-80 wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            @@include("../pricing-tables/templates/plan.html", {
+            "bg": "img/demo_winter_trip/386x603_1.jpg",
+            "title": "Basic",
+            "price": "39",
+            "included": [
+            "Proin gravida nibhconseq",
+            "Enean sollicitud",
+            "Lorem quis bibendum"
+            ]
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include("../pricing-tables/templates/plan.html", {
+            "bg": "img/demo_winter_trip/386x603_1.jpg",
+            "title": "Popular",
+            "price": "59",
+            "included": [
+            "Proin gravida nibhconseq",
+            "Enean sollicitud",
+            "Lorem quis bibendum",
+            "Aliquam laoreet sodales",
+            "Enean sollicitud"
+            ]
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include("../pricing-tables/templates/plan.html", {
+            "bg": "img/demo_winter_trip/386x603_1.jpg",
+            "title": "Classic",
+            "price": "79",
+            "included": [
+            "Proin gravida nibhconseq",
+            "Enean sollicitud",
+            "Lorem quis bibendum",
+            "Aliquam laoreet sodales",
+            "Enean sollicitud",
+            "Proin gravida nibhconseq"
+            ]
+            })
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-20 pb-50 wow fadeInUp">
+      <div class="text-center mb-60">
+        @@include("../titles/templates/other-v6.html",{
+          "text": {
+            "main": "6th Season",
+            "main_customClass": "text-transform-none font__family-montserrat font__size-56 font__weight-bold",
+            "secondary": "We create best & popular <br> <span class='font__weight-extrabold'>winter festivals</span>",
+            "secondary_customClass": "text-transform-none font__size-56 line__height-50 font__family-montserrat font__weight-light brk-color-base-dark"
+          }
+        })
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            @@include("../flip-boxes/templates/strict-card.html",{
+              "number": "01",
+              "title": "New year in <span class='font__weight-bold'>Andora</span>",
+              "numberOpacity": "opacity-10"
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include("../flip-boxes/templates/strict-card.html",{
+              "number": "02",
+              "title": "New year in <span class='font__weight-bold'>Bansko</span>",
+              "numberOpacity": "opacity-10"
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include("../flip-boxes/templates/strict-card.html",{
+              "number": "03",
+              "title": "New year in <span class='font__weight-bold'>Livigno</span>",
+              "numberOpacity": "opacity-10"
+            })
+          </div>
+        </div>
+      </div>
+      @@include("../cfa/templates/hot-prime.html",{
+        "img": "img/demo_winter_trip/1920x140_1.jpg",
+        "overlay": "brk-base-bg-primary-90",
+        "customClass": "mt-50 mb-60"
+      })
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            @@include("../flip-boxes/templates/strict-card.html",{
+              "number": "04",
+              "title": "New year in <span class='font__weight-bold'>Passo Tonale</span>",
+              "numberOpacity": "opacity-10",
+              "btnType": "prime"
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include("../flip-boxes/templates/strict-card.html",{
+              "number": "05",
+              "title": "New year in <span class='font__weight-bold'>Reberty</span>",
+              "numberOpacity": "opacity-10",
+              "btnType": "prime"
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include("../flip-boxes/templates/strict-card.html",{
+              "number": "06",
+              "title": "New year in <span class='font__weight-bold'>Jasna</span>",
+              "numberOpacity": "opacity-10",
+              "btnType": "prime"
+            })
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+    @@include('../footer/templates/footer-16.html',{
+      "bigForm": "true",
+      "style1": "true",
+      "img": "img/demo_winter_trip/1920x796_1.png"
+    })
+
+    @@include('../../assets/templates/footer.html',{
+      "demo": "true"
+    })
+
+  </body> 

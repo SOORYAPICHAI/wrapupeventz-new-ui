@@ -1,0 +1,77 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Shop Components Grid Filter"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+  <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+  <main class="main-container mb-50 mt-70">
+    <section>
+      <div class="container mb-90 mt-90">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">01</span> Grid
+          </h3>
+        </div>
+      </div>
+
+      @@include('templates/grid.html', {})
+
+    </section>
+
+    <section>
+      <div class="container mb-90 mt-90">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">02</span> Cells
+          </h3>
+        </div>
+      </div>
+
+      @@include('templates/cells.html', {})
+
+    </section>
+
+    <section>
+      <div class="container mb-90 mt-90">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">03</span> Strict
+          </h3>
+        </div>
+      </div>
+
+      <div class="container">
+        @@include('templates/strict.html', {})
+      </div>
+
+    </section>
+
+    <section>
+      <div class="container mb-90 mt-90">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">04</span> Special
+          </h3>
+        </div>
+      </div>
+
+      <div class="container">
+        @@include('templates/special.html', {})
+      </div>
+
+    </section>
+  </main>
+
+</div>
+
+
+@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

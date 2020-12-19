@@ -1,0 +1,20 @@
+<div class="countdown__wrapper countdown__flip-2 
+            @@if(context.white === 'true'){countdown__flip-2_white}
+            @@if(context.primary === 'true'){countdown__flip-2_primary}
+            @@if(context.brk_base_1 === 'true'){countdown__flip-2_brk-base-1}
+            @@if(context.not_centred === 'true'){countdown__flip-2_not-centred}
+            @@if(context.customClass){@@customClass}"
+     data-format="
+           <div class='countdown__section'>
+             <div class='time <%= label %>'>
+               <span class='count curr top'><%= curr %></span>
+               <span class='count next top'><%= next %></span>
+               <span class='count next bottom'><%= next %></span>
+               <span class='count curr bottom'><%= curr %></span>
+             </div>
+             <span class='label'><%= label %></span>
+           </div>
+         "
+     data-time="" data-brk-library="component__countdown"></div>
+    <!-- 2018/12/31/12:00 data format -->
+     

@@ -1,0 +1,23 @@
+<div class="post-filmstrip @@if(context.customClass){@@customClass} lazyload"
+     data-bg="@@if(context.img){@@img}@@if(!context.img){img/image-border-1.jpg}"
+     data-brk-library="component__content_slider,fancybox,anime">
+  <div class="post-filmstrip__overlay brk-base-bg-gradient-50deg"></div>
+  <div class="post-filmstrip__content text-center">
+    <h3 class="font__family-montserrat font__weight-semibold font__size-21 line__height-24">
+      @@if(context.title){@@title}
+      @@if(!context.title){7 Signs Your Website is Boring}
+    </h3>
+    <div class="post-filmstrip__excerpt font__family-open-sans font__size-16 line__height-26">
+      @@if(context.paragraph){@@paragraph}
+      @@if(!context.paragraph){The web is both an interactive and virtually unlimited medium, meaning that your own little corner of it has great potential.}
+    </div>
+    <div class="links">
+      <a href="#" class="links__permalink @@if(context.permalink_bg){@@permalink_bg}@@if(!context.permalink_bg){bg-white-20}">
+        <i class="fas fa-link"></i>
+      </a>
+      <a href="@@if(context.img){@@img}@@if(!context.img){img/image-border-1.jpg}" class="links__view fancybox">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+  </div>
+</div>

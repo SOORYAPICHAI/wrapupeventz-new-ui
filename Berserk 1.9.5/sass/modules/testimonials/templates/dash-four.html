@@ -1,0 +1,47 @@
+<div 
+  class="brk-testimonials-dash-four
+    @@if(context.transparent){brk-testimonials-dash-four_transparent}
+    @@if(context.cornerPagination){brk-testimonials-dash-four_corner-pagination}
+    @@if(context.customClass){@@customClass}" 
+  data-brk-library="component__testimonials,slider__swiper"
+  @@if(context.attr){@@attr}>
+  <div class="dash-four-slider swiper-container">
+    <div class="swiper-wrapper">
+      @@for (var i = 0; i < arr.length; i++) {
+      <div class="swiper-slide">
+        <div class="brk-testimonials-dash-four__item text-center" data-img="`+arr[i].img+`">
+          <i class="fa fa-quote-right font__size-64"></i>
+
+          @@if(context.titleFirst !== "true"){
+            <h4
+              class="
+                @@if(context.titleClass){@@titleClass}
+                @@if(!context.titleClass){brk-testimonials-dash-four__title font__family-open-sans font__weight-bold}">`+arr[i].title+`</h4>
+            <div 
+              class="
+                @@if(context.subtitleClass){@@subtitleClass}
+                @@if(!context.subtitleClass){brk-testimonials-dash-four__text font__family-open-sans}">`+arr[i].text+`</div>
+          }
+          @@if(context.titleFirst === "true"){
+            <div 
+              class="
+                @@if(context.subtitleClass){@@subtitleClass}
+                @@if(!context.subtitleClass){brk-testimonials-dash-four__text font__family-open-sans}">`+arr[i].text+`</div>
+            <h4 
+              class="
+                @@if(context.titleClass){@@titleClass}
+                @@if(!context.titleClass){brk-testimonials-dash-four__title font__family-open-sans font__weight-bold}">`+arr[i].title+`</h4>
+          }
+
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+
+  <div class="dash-four-pagination @@if(context.largePagination){dash-four-pagination_large}"></div>
+
+  <div class="brk-testimonials-dash-four__layout lazyload" data-bg="@@if(context.bg){@@bg}@@if(!context.bg){img/1920_174_1.jpg}">
+    <div class="brk-abs-bg-overlay @@if(context.overlay){@@overlay} @@if(!context.overlay){bg-primary}"></div>
+  </div>
+</div>

@@ -1,0 +1,150 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Construction - Projects",
+"themeSkin": "brk-yellow.css"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+<div class="main-page">
+
+  @@include('../demo_construction/templates/header.html', {})
+
+  <section>
+    @@include('../../modules/breadcrumbs/templates/dark.html', {
+    "bg": "img/demo_construction/1920x430_1.jpg",
+    "offset": "pt-80 pb-130",
+    "title": "Realized <span class=\"font__weight-bold\">Projects</span>"
+    })
+  </section>
+
+  <h1 class="sr-only">Construction - Projects</h1>
+  <section class="pt-100 pb-70">
+    <div class="brk-shop-grid-filter">
+
+      <ul class="brk-shop-grid-filter__button brk-shop-grid-filter__button_style-1" data-brk-library="component__shop_grid_filter">
+        <li class="checked" data-filter="*">
+          <div class="brk-shop-grid-filter__button-text">
+            <i class="fal fa-th"></i>
+            All
+          </div>
+          <span class="before brk-base-bg-gradient-14"></span>
+        </li>
+        <li data-filter=".projects">
+          <div class="brk-shop-grid-filter__button-text">
+            Projects
+          </div>
+          <span class="before brk-base-bg-gradient-14"></span>
+        </li>
+        <li data-filter=".construction">
+          <div class="brk-shop-grid-filter__button-text">
+            Construction
+          </div>
+          <span class="before brk-base-bg-gradient-14"></span>
+        </li>
+        <li data-filter=".repair">
+          <div class="brk-shop-grid-filter__button-text">
+            Repair
+          </div>
+          <span class="before brk-base-bg-gradient-14"></span>
+        </li>
+      </ul>
+
+      <div class="container">
+        <div class="brk-shop-grid-filter__items row">
+          <div class="col-xl-4 pt-15 pb-15 brk-shop-grid-filter__item projects construction">
+            @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+            "title":"The development will deliver 39 new buildings",
+            "paragraph":"The practices Wickside project will deliver 475 homes and 300 jobs on a 2.9ha former waste transfer site at Hackney Wick.",
+            "img":"img/demo_construction/370x370_1.jpg",
+            "customClass":"brk-base-box-shadow"
+            })
+          </div>
+          <div class="col-xl-4 pt-15 pb-15 brk-shop-grid-filter__item construction repair">
+            @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+            "title":"BUJ Architects and Ash Sakula Architects",
+            "paragraph":"Olympic Park that falls under the remit of the London Legacy Development Corporation.",
+            "img":"img/demo_construction/370x370_2.jpg",
+            "customClass":"brk-base-box-shadow"
+            })
+          </div>
+          <div class="col-xl-4 pt-15 pb-15 brk-shop-grid-filter__item projects">
+            @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+            "title":"Wickside project will deliver",
+            "paragraph":"The practices’ Wickside project will deliver 475 homes and 300 jobs on a 2.9ha former waste transfer site at Hackney Wick. ",
+            "img":"img/demo_construction/370x370_3.jpg",
+            "customClass":"brk-base-box-shadow"
+            })
+          </div>
+          <div class="col-xl-4 pt-15 pb-15 brk-shop-grid-filter__item repair">
+            @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+            "title":"The final report by Dame Judith Hackitt",
+            "paragraph":"Fire and Rescue Authorities (FRAs) and the Health and Safety Executive (HSE), to oversee the approval and regulation of buildings higher than 10-storeys.",
+            "img":"img/demo_construction/370x370_4.jpg",
+            "customClass":"brk-base-box-shadow"
+            })
+          </div>
+          <div class="col-xl-4 pt-15 pb-15 brk-shop-grid-filter__item projects repair">
+            @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+            "title":"As widely expected, Hackitt has declined to proscribe",
+            "paragraph":"Her report instead says it is for the construction industry to 'respond to the [building regulations] by shaping detailed guidance.'",
+            "img":"img/demo_construction/370x370_5.jpg",
+            "customClass":"brk-base-box-shadow"
+            })
+          </div>
+          <div class="col-xl-4 pt-15 pb-15 brk-shop-grid-filter__item projects">
+            @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+            "title":"Aquatic: Stock Photography from Under The Sea",
+            "paragraph":"Deep below the ocean's surface there is a vibrant, vast ecosystem full of life: a rich diversity of marine life.",
+            "img":"img/demo_construction/370x370_6.jpg",
+            "customClass":"brk-base-box-shadow"
+            })
+          </div>
+          <div class="col-xl-4 pt-15 pb-15 brk-shop-grid-filter__item construction repair">
+            @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+            "title":"Changes to product testing",
+            "paragraph":"Changes to product testing, documentation requirements and points at which a building must be approved safe, could also all have big ramifications on industry.",
+            "img":"img/demo_construction/370x370_7.jpg",
+            "customClass":"brk-base-box-shadow"
+            })
+          </div>
+          <div class="col-xl-4 pt-15 pb-15 brk-shop-grid-filter__item repair">
+            @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+            "title":"Dame Judith Hackitt’s",
+            "paragraph":"Final report has made a number of recommendations that will have significant implications for the construction industry if or when they are passed into law.",
+            "img":"img/demo_construction/370x370_8.jpg",
+            "customClass":"brk-base-box-shadow"
+            })
+          </div>
+          <div class="col-xl-4 pt-15 pb-15 brk-shop-grid-filter__item construction">
+            @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+            "title":"The team carrying out the job will be a 50:50",
+            "paragraph":"Joint venture between Keller and ground engineering and foundation works specialist Intrafor, which is part of Bouygues Construction.",
+            "img":"img/demo_construction/370x370_9.jpg",
+            "customClass":"brk-base-box-shadow"
+            })
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center pt-60">
+      @@include('../../modules/buttons/templates/buttons-invert.html', {
+      "class": "icon__btn icon__btn-anim icon__btn-md icon__btn-invert",
+      "tag": "a",
+      "href": "#"
+      })
+    </div>
+  </section>
+
+  @@include('../../modules/footer/templates/footer-7.html')
+
+</div>
+
+
+@@include("../../assets/templates/footer.html", {
+  "demo": "true"
+})
+
+
+</body>

@@ -1,0 +1,51 @@
+<div class="flip-box brk-sc-flip-three text-center" data-brk-library="component__shop_flip,component__flip_box_css">
+  <div class="flip @@if(context.styleFlip){@@styleFlip} @@if(!context.styleFlip){flip_horizontal}">
+    <div class="flip__front brk-sc-flip-three__front @@if(context.whiteFront === "true"){brk-sc-flip-three__front_white}">
+      @@if(context.stick){
+        <div class="brk-sc-flip-three__stick font__family-montserrat">
+          <span class="@@if(context.stickOverlay){@@stickOverlay}@@if(!context.stickOverlay){brk-bg-primary brk-base-bg-8}">@@stick</span>
+        </div>
+      }
+      <div class="brk-sc-flip-three__thumb"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@thumb" alt="alt" class="lazyload"></div>
+      <div class="brk-sc-flip-three__price font__family-montserrat font__weight-bold brk-white-font-color @@if(context.btnOverlay){@@btnOverlay}@@if(!context.overlay){ brk-bg-primary} brk-base-box-shadow-primary">@@price</div>
+    </div>
+    <div class="flip__back brk-sc-flip-three__back">
+      <div class="brk-abs-bg-overlay z-index-2 @@if(context.overlay){@@overlay}@@if(!context.overlay){brk-base-bg-gradient-50deg-a}"></div>
+      <div class="brk-sc-flip-three__thumb"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@thumb" alt="alt" class="lazyload"></div>
+      @@if(context.stick){
+        <div class="brk-sc-flip-three__stick font__family-montserrat">
+          <span class="@@if(context.stickOverlay){@@stickOverlay}@@if(!context.stickOverlay){brk-bg-primary brk-base-bg-8}">@@stick</span>
+        </div>
+      }
+      <div class="brk-sc-flip-three__description">
+        <div class="brk-sc-flip-three__description-scroll scrollbar-inner">
+          <ul class="pr-15">
+            <li class="brk-white-font-color"><i class="far fa-check"></i> Cum sociis natoque</li>
+            <li class="brk-white-font-color"><i class="far fa-check"></i> Duis arcu tortor, suscipit</li>
+            <li class="brk-white-font-color"><i class="far fa-check"></i> Quisque rutruperdiet</li>
+            <li class="brk-white-font-color"><i class="far fa-check"></i> Etiam ultricies nisi vel</li>
+          </ul>
+        </div>
+
+        <div class="brk-sc-flip-three__rating mt-30">
+          @@include('../../elements/templates/rating.html', {
+          "value": "@@if(context.rating){@@rating}@@if(!context.rating){80%}"
+          })
+        </div>
+      </div>
+
+      @@include('../../buttons/templates/buttons.html',{
+      "type": "btn-inside-out",
+      "text": " ",
+      "text_hover": " ",
+      "customClass": "font__family-open-sans font__weight-bold",
+      "icon": "<i class='fa fa-shopping-basket icon-inside' aria-hidden='true'></i>"
+      })
+    </div>
+  </div>
+
+  <div class="brk-sc-flip-three__title">
+    <h4 class="font__family-montserrat font__weight-medium">@@title</h4>
+  </div>
+</div>
+

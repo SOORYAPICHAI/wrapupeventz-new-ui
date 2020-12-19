@@ -1,0 +1,585 @@
+<div class="brk-header-mobile">
+  <div class="brk-header-mobile__open brk-header-mobile__open_white">
+    <span></span>
+  </div>
+
+  <div class="brk-header-mobile__logo">
+    <a href="#"><img src="img/logo-2.png" alt=""></a>
+  </div>
+</div><!-- /.brk-header-mobile -->
+
+<header class="brk-header brk-header_style-1 brk-header_color-white brk-header_skin-1 position-fixed d-flex flex-column" data-logo-src="img/logo-dark-2.png" data-bg-mobile="img/brk-bg-mobile-menu.jpg" data-brk-library="component__header">
+
+  <!-- MAIN BAR -->
+  <div class="brk-header__main-bar brk-header_border-bottom-20"
+       style="@@if(context.mainBarHeight){height: @@mainBarHeight;}
+              @@if(!context.mainBarHeight){height: 72px;}
+              @@if(context.mainBarStyle){@@mainBarStyle}"
+       @@if(context.mainBarHeightScroll){data-height-scroll="@@mainBarHeightScroll"}>
+
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-auto align-self-lg-stretch brk-header_border-right-20 order-6 order-lg-first">
+          @@include('../../../modules/header-1/templates/brk-info-menu-open.html',{
+          "skin": "brk-info-menu-open_skin-2"
+          })
+        </div>
+        <div class="col-lg-auto pl-25 align-self-lg-center d-none d-lg-block">
+          <div class="text-center">
+            @@include('../../../modules/header-1/templates/brk-header-logo.html', {
+            "logo_1": "img/logo-1.png",
+            "logo_2": "img/logo-dark-1.png"
+            })
+          </div>
+        </div>
+        <div class="col-lg align-self-lg-stretch">
+          <nav class="brk-nav @@if(context.modifier){@@modifier} brk-header__item">
+            <ul class="brk-nav__menu">
+              <li>
+                <a href="/">
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="#about">
+                  <span>About</span>
+                </a>
+              </li>
+              <li>
+                <a href="#testimonials">
+                  <span>Testimonials</span>
+                </a>
+              </li>
+              <li class="brk-nav__children brk-nav__drop-down-effect">
+                <a href="#">
+                  <span>Shop</span>
+                </a>
+                <ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+                  <li class="dd-effect">
+                    <a href="shop-components-flip.html">Shop flip</a>
+                  </li>
+                  <li class="dd-effect">
+                    <a href="shop-components-grid.html">Shop grid</a>
+                  </li>
+                  <li class="dd-effect">
+                    <a href="shop-components-grid-filter.html">Shop grid-filter</a>
+                  </li>
+                  <li class="dd-effect">
+                    <a href="shop-components-honeycomb.html">Shop honeycomb</a>
+                  </li>
+                  <li class="dd-effect">
+                    <a href="shop-components-item-sidebar.html">Shop item with sidebar</a>
+                  </li>
+                  <li class="dd-effect">
+                    <a href="shop-components-list.html">Shop list</a>
+                  </li>
+                  <li class="dd-effect">
+                    <a href="shop-components-masonry.html">Shop masonry</a>
+                  </li>
+                  <li class="dd-effect">
+                    <a href="shop-components-row.html">Shop row</a>
+                  </li>
+                  <li class="dd-effect">
+                    <a href="shop-components-tiles.html">Shop tiles</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="brk-nav__children brk-nav__full-width brk-nav__drop-down-effect">
+                <a href="#">
+                  <span>Elements</span>
+                </a>
+                <div class="brk-nav__mega-menu brk-nav-drop-down">
+                  <div class="bg-white">
+                    <div class="row no-gutters">
+                      <div class="col-xl-2">
+                        <div class="brk-nav__header font__family-montserrat">ELEMENTS</div>
+                        <div class="brk-header_border-right pb-60 pt-20">
+                          <ul class="brk-header-list font__family-montserrat">
+                            <li class="dd-effect">
+                              <a href="alerts.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-university" aria-hidden="true"></i>
+                                  </span>
+                                Alerts
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="app.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-cube" aria-hidden="true"></i>
+                                  </span>
+                                App
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="backgrounds.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="far fa-gem" aria-hidden="true"></i>
+                                  </span>
+                                Backgrounds
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="backgrounds-patterns.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                                  </span>
+                                Background patterns
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="breadcrumbs.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-life-ring" aria-hidden="true"></i>
+                                  </span>
+                                Breadcrumbs
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="buttons.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-male" aria-hidden="true"></i>
+                                  </span>
+                                Buttons
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="CFA.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-sign-language" aria-hidden="true"></i>
+                                  </span>
+                                CFA
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="content-sliders.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-qrcode" aria-hidden="true"></i>
+                                  </span>
+                                Content sliders
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-xl-2">
+                        <div class="brk-nav__header font__family-montserrat">ELEMENTS</div>
+                        <div class="brk-header_border-right pb-60 pt-20">
+                          <ul class="brk-header-list font__family-montserrat">
+                            <li class="dd-effect">
+                              <a href="countdown.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-university" aria-hidden="true"></i>
+                                  </span>
+                                Countdown
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="counter.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-cube" aria-hidden="true"></i>
+                                  </span>
+                                Counter
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="counter-dark.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="far fa-gem" aria-hidden="true"></i>
+                                  </span>
+                                Counter dark
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="delimiters.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                                  </span>
+                                Delimiters
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="dividers.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-life-ring" aria-hidden="true"></i>
+                                  </span>
+                                Dividers
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="flip-boxes.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-male" aria-hidden="true"></i>
+                                  </span>
+                                Flip boxes
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="form-controls.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-tasks" aria-hidden="true"></i>
+                                  </span>
+                                Form controls
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="google-maps.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-map" aria-hidden="true"></i>
+                                  </span>
+                                Google maps
+                              </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-xl-2">
+                        <div class="brk-nav__header font__family-montserrat">ELEMENTS</div>
+                        <div class="brk-header_border-right pb-60 pt-20">
+                          <ul class="brk-header-list font__family-montserrat">
+                            <li class="dd-effect">
+                              <a href="image-caption-parallax.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-sign-language" aria-hidden="true"></i>
+                                  </span>
+                                Image caption parallax
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="image-frames.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-qrcode" aria-hidden="true"></i>
+                                  </span>
+                                Image frames
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="image-map.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-university" aria-hidden="true"></i>
+                                  </span>
+                                Image map
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="info-box.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-cube" aria-hidden="true"></i>
+                                  </span>
+                                Info box
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="lists.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="far fa-gem" aria-hidden="true"></i>
+                                  </span>
+                                Lists
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="logo.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="far fa-gem" aria-hidden="true"></i>
+                                  </span>
+                                Logo
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="media-embeds.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                                  </span>
+                                Media embeds
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="pagination.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-life-ring" aria-hidden="true"></i>
+                                  </span>
+                                Pagination
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="panels.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-male" aria-hidden="true"></i>
+                                  </span>
+                                Panels
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-xl-2">
+                        <div class="brk-nav__header font__family-montserrat">ELEMENTS</div>
+                        <div class="brk-header_border-right pb-60 pt-20">
+                          <ul class="brk-header-list font__family-montserrat">
+                            <li class="dd-effect">
+                              <a href="parallax.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-tasks" aria-hidden="true"></i>
+                                  </span>
+                                Parallax
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="parallax-video.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-sign-language" aria-hidden="true"></i>
+                                  </span>
+                                Parallax video
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="pricing-tables.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-qrcode" aria-hidden="true"></i>
+                                  </span>
+                                Pricing tables
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="progress-circles.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-university" aria-hidden="true"></i>
+                                  </span>
+                                Progress circles
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="section-titles.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-cube" aria-hidden="true"></i>
+                                  </span>
+                                Section titles
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="sequence.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="far fa-gem" aria-hidden="true"></i>
+                                  </span>
+                                Sequence
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="services.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                                  </span>
+                                Services
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="shape-box.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-male" aria-hidden="true"></i>
+                                  </span>
+                                Shape box
+                              </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-xl-2">
+                        <div class="brk-nav__header font__family-montserrat">ELEMENTS</div>
+                        <div class="brk-header_border-right pb-60 pt-20">
+                          <ul class="brk-header-list font__family-montserrat">
+                            <li class="dd-effect">
+                              <a href="sliders.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-male" aria-hidden="true"></i>
+                                  </span>
+                                Sliders
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="social.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                                  </span>
+                                Social
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="steps.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-cube" aria-hidden="true"></i>
+                                  </span>
+                                Steps
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="tabbed-contents.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-sign-language" aria-hidden="true"></i>
+                                  </span>
+                                Tabbed contents
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="tables.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-qrcode" aria-hidden="true"></i>
+                                  </span>
+                                Tables
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="tabs.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="far fa-gem" aria-hidden="true"></i>
+                                  </span>
+                                Tabs
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="tags.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-tasks" aria-hidden="true"></i>
+                                  </span>
+                                Tags
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="team.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-university" aria-hidden="true"></i>
+                                  </span>
+                                Team
+                              </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-xl-2">
+                        <div class="brk-nav__header font__family-montserrat">ELEMENTS</div>
+                        <div class="brk-header_border-right pb-60 pt-20">
+                          <ul class="brk-header-list font__family-montserrat">
+                            <li class="dd-effect">
+                              <a href="team-member.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-tasks" aria-hidden="true"></i>
+                                  </span>
+                                Team-member
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="testimonials.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-university" aria-hidden="true"></i>
+                                  </span>
+                                Testimonials
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="tiles.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-male" aria-hidden="true"></i>
+                                  </span>
+                                Tiles
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="timelines.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-life-ring" aria-hidden="true"></i>
+                                  </span>
+                                Timelines
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="titles.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                                  </span>
+                                Titles
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="typing-rotator.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fab fa-adversal" aria-hidden="true"></i>
+                                  </span>
+                                Typing rotator
+                              </a>
+                            </li>
+                            <li class="dd-effect">
+                              <a href="svg-pattern.html">
+                                  <span class="brk-header-list__icon">
+                                    <i class="fab fa-adversal" aria-hidden="true"></i>
+                                  </span>
+                                Blocks transition
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#footer">
+                  <span>Contact Us</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-auto align-self-lg-stretch text-right">
+          @@include('../../../modules/header-1/templates/brk-mini-cart.html', {
+          "skinOpen": "skin-2",
+          "thumb_1": "img/40x40_2.jpg",
+          "thumb_2": "img/40x40_1.jpg",
+          "productImg_1": "img/95x95_1.jpg",
+          "productImg_2": "img/95x95_2.jpg",
+          "productImg_3": "img/95x95_3.jpg",
+          "productImg_4": "img/95x95_4.jpg"
+          })
+
+          @@include('../../../modules/header-1/templates/brk-header-element.html', {
+          "classMod": "brk-header__element_skin-1",
+          "tag": "a",
+          "href": "#",
+          "icon": "far fa-heart",
+          "text": "My wishlist",
+          "textStyle": "d-lg-none",
+          "compareStyle": "brk-header__compare_white",
+          "compare": "6"
+          })
+
+          @@include('../../../modules/header-1/templates/brk-search.html',{
+          "interactive": "brk-search_interactive",
+          "icon": "fal fa-search"
+          })
+
+          @@include('../../../modules/header-1/templates/brk-header-element.html', {
+          "classMod": "brk-header__element_skin-1",
+          "tag": "a",
+          "href": "#",
+          "icon": "fal fa-user",
+          "text": "Login",
+          "textStyle": "d-lg-none",
+          "compareStyle": "",
+          "compare": ""
+          })
+
+          @@include('../../../modules/header-1/templates/brk-lang.html', {
+          "interactive": "brk-lang_interactive"
+          })
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End MAIN BAR -->
+
+  @@include('../../header-1/templates/brk-info-menu.html',{})
+
+</header><!-- /.brk-header -->

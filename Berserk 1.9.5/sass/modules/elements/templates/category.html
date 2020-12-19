@@ -1,0 +1,26 @@
+<div class="brk-sc-category d-flex align-items-baseline @@if(context.containerClass){@@containerClass}" data-brk-library="component__elements">
+  <span class="brk-sc-category__title @@if(context.titleClass){@@titleClass} font__family-montserrat font__size-14 font__weight-bold mr-10 text-uppercase">
+    @@if(context.title){@@title}
+    @@if(!context.title){Category:}    
+  </span>
+  <div class="brk-sc-category__items @@if(context.itemsClass){@@itemsClass} d-flex align-items-center flex-wrap">
+    @@if(context.item1){
+      <a href="#" class="brk-dark-font-color font__family-open-sans font__size-14 mr-1">@@item1</a>
+    }
+    @@if(!context.item1){
+      <a href="#" class="brk-dark-font-color font__family-open-sans font__size-14 mr-1">T-Shirts</a>
+    }
+    @@if(context.item2){
+      <a href="#" class="brk-dark-font-color font__family-open-sans font__size-14 mr-1">@@item2</a>
+    }
+    @@if(!context.item2){
+      <a href="#" class="brk-dark-font-color font__family-open-sans font__size-14 mr-1">Branding</a>
+    }
+    @@if(context.item3){
+      <a href="#" class="brk-dark-font-color font__family-open-sans font__size-14 mr-1">@@item3</a>
+    }
+    @@if(context.item4){
+      <a href="#" class="brk-dark-font-color font__family-open-sans font__size-14 mr-1">@@item4</a>
+    }
+  </div>
+</div>

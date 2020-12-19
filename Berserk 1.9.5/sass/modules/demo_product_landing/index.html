@@ -1,0 +1,392 @@
+@@include('../../assets/templates/head.html',{
+  "titlePage": "Shop Product Landing",
+  "themeSkin": "brk-blue.css",
+  "style": [
+  "vendor/revslider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css",
+  "vendor/revslider/fonts/font-awesome/css/font-awesome.css",
+  "vendor/revslider/css/settings.css"
+  ]
+})
+</head>
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+<div class="main-page">
+  @@include('../../modules/header-8/templates/style-header-8.html',{
+  "customNav": "true",
+  "homeNav": "true",
+  "homeNavLink": "/index.html",
+  "shopNav": "true",
+  "elementsNav": "true",
+  "title1": "Description",
+  "link1": "#description",
+  "title2": "FAQ",
+  "link2": "#faq",
+  "title3": "Contact",
+  "link3": "#contact",
+  "white": "true"
+  })
+
+  <h1 class="sr-only">Product Landing</h1>
+  <section class="brk-sc-item-page-header mb-130" data-brk-library="component__shop_item_page">
+    <div class="brk-sc-item-page-header__carousel pt-150 pt-xs-30">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <div class="brk-sc-item-page-header__carousel-labels">
+              @@include('../../modules/shop-components-cards/templates/label.html')
+              @@include('../../modules/shop-components-cards/templates/label.html',{
+              "title":"<i class='fas fa-leaf'></i> ECO",
+              "gradient":"brk-base-bg-gradient-21"
+              })
+            </div>
+            @@include('../../modules/sliders/templates/thumbnailed.html',{
+            "containerCustomClass":"brk-sc-item-page-header__carousel-items slider-thumbnailed_shop",
+            "img1":"img/demo_product_landing/470x670_1.png",
+            "img2":"img/demo_product_landing/470x670_2.png",
+            "img3":"img/demo_product_landing/470x670_3.png",
+            "img4":"img/demo_product_landing/470x670_1.png",
+            "img5":"img/demo_product_landing/470x670_2.png",
+            "primaryArrows": "true"
+            })
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="brk-sc-item-page-header__info pt-150">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/demo_product_landing/1920x686_1.jpg" alt="alt" class="brk-sc-item-page-header__img lazyload">
+      <span class="brk-sc-item-page-header__overlay"></span>
+
+      <span class="brk-sc-item-page-header__svg">
+
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 176" enable-background="new 0 0 1920 176" xml:space="preserve">
+              <g id="Shape_1_3_" enable-background="new    ">
+                <g id="Shape_1">
+                  <g>
+                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="88.0386" x2="1920" y2="88.0386">
+                      <stop offset="0" style="stop-color: var(--brand-primary)" />
+                      <stop offset="1" style="stop-color: var(--brk-secondary-6)" />
+                    </linearGradient>
+                    <path fill="url(#SVGID_1_)" d="M1474,3.999C1242.633,14.896,945.797,39.185,689,78.04C316.793,134.359,0,0.078,0,0.078v175.921
+              h1920c0,0,0-55.483,0-118.001C1865.432,34.371,1692.556-6.294,1474,3.999z" />
+                  </g>
+                </g>
+              </g>
+              <g id="Shape_1_2_" enable-background="new    ">
+                <g id="Shape_1_1_">
+                  <g>
+                    <path fill="#FFFFFF" d="M1421,27.998c-231.366,10.897-475.203,49.169-732,88.024C316.793,172.341,0,100.03,0,100.03v75.969h1920
+              c0,0,0-34.484,0-97C1865.432,55.371,1639.556,17.706,1421,27.998z" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </span>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+
+          </div>
+          <div class="col-12 col-lg-7">
+            @@include('../../modules/elements/templates/main-info.html',{})
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5"></div>
+        <div class="col-12 col-lg-7">
+          <div class="brk-sc-item-page-header__info-secondary">
+            <div class="d-flex flex-wrap">
+              <div class="d-flex flex-column mr-60 mb-40 font__family-open-sans">
+                <span class="font__size-12 font__weight-normal brk-dark-font-color line__height-16 text-uppercase mb-1">SKU</span>
+                <span class="font__size-14 font__weight-bold line__height-14">5149 8422</span>
+                <span class="font__size-13 font__weight-semibold line__height-14">Code</span>
+              </div>
+              <div class="d-flex flex-column mr-60 mb-40 font__family-open-sans">
+                <span class="font__size-12 font__weight-normal brk-dark-font-color line__height-16 text-uppercase mb-1">Material</span>
+                <span class="font__size-14 font__weight-bold line__height-14">Lether</span>
+                <span class="font__size-13 font__weight-semibold line__height-14">Black</span>
+              </div>
+              <div class="d-flex flex-column mr-60 mb-40 font__family-open-sans">
+                <span class="font__size-12 font__weight-normal brk-dark-font-color line__height-16 text-uppercase mb-1">Country</span>
+                <span class="font__size-14 font__weight-bold line__height-14">China</span>
+                <span class="font__size-13 font__weight-semibold line__height-14">Warehouse</span>
+              </div>
+              <div class="d-flex flex-column mr-60 mb-40 font__family-open-sans">
+                <span class="font__size-12 font__weight-normal brk-dark-font-color line__height-16 text-uppercase mb-1">shipment</span>
+                <span class="font__size-14 font__weight-bold line__height-14">2 Days</span>
+                <span class="font__size-13 font__weight-semibold line__height-14">Working days</span>
+              </div>
+              <p class="w-100 brk-dark-font-color font__family-open-sans font__size-16 font__weight-normal line__height-26">
+                Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque esque habitant morbi tristique senectus et netus
+                et malesuada fames ac turpis gestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    @@include('../../modules/app/templates/notebook.html',{
+    "customClass":"mb-70",
+    "title":"T-shirt",
+    "img":"img/demo_product_landing/459x667_1.png",
+    "id": "description",
+    "title_1": "Polo",
+    "subTitle_1": "shirt",
+    "title_2": "Tommy",
+    "subTitle_2": "Hilfiger",
+    "title_3": "Hugo",
+    "subTitle_3": "Boss",
+    "title_4": "Business",
+    "subTitle_4": "shoes"
+    })
+  </section>
+
+  <section class="brk-sc-item-page-body">
+
+    <div class="brk-sc-item-page-section-1 mb-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-1"></div>
+          <div class="col-xl-5">
+            <div class="brk-sc-item-page-section-1__img-container">
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/demo_product_landing/599x1471_1.png" alt="alt" class="brk-sc-item-page-section-1__img lazyload">
+            </div>
+          </div>
+          <div class="col-12 col-xl-6">
+            <div class="brk-sc-item-page-section-1__info text-center text-xl-left">
+              <h4 class="font__family-montserrat font__size-28 font__weight-light line__height-32 text-uppercase">
+                Make business with us
+              </h4>
+              <h4 class="font__family-montserrat font__size-28 font__weight-bold line__height-32 text-uppercase mb-30">& become beautiful
+              </h4>
+              <p class="brk-dark-font-color font__family-open-sans font__size-15 font__weight-normal line__height-24 mb-20">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.
+              </p>
+              <p class="brk-dark-font-color font__family-open-sans font__size-15 font__weight-normal line__height-24 mb-40">
+                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+                rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
+              </p>
+
+              @@include("../../modules/CFA/templates/minimal.html",{
+              "customClass":"brk-sc-item-page-section-1__cfa border-radius-25 dark-shadow",
+              "title":"CFA Heading",
+              "paragraph":"Lorem ipsum dolor sit amet, consectetuer cing elit. Aenean commodo ligula",
+              "btnText":"" ,
+              "img": "img/demo_product_landing/570x108_1.jpg"
+              })
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="brk-sc-item-page-section-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="brk-sc-item-page-section-2__info">
+              <div class="brk-sc-item-page-body__title d-flex mb-35">
+                <h3 class="font__family-montserrat font__size-36 line__height-42 text-uppercase">
+                  <span class="font__weight-normal">the best</span>
+                  <span class="font__weight-bold">t-shirts</span><br>
+                  <span class="font__weight-bold brk-base-font-color">for you!</span>
+                </h3>
+                <span class="brk-sc-long-label brk-white-font-color font__family-open-sans font__size-14 font__weight-bold text-uppercase d-flex align-items-center"> <i class="fas fa-leaf" aria-hidden="true"></i>есо</span>
+              </div>
+              <p class="brk-dark-font-color font__family-open-sans font__size-16 line__height-26 font__weight-normal mb-50">
+                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero
+              </p>
+              @@include("../../modules/progress-bars/templates/gradient.html",{
+              "valueCur":"100",
+              "title":"Hard Work"
+              })
+              @@include("../../modules/progress-bars/templates/gradient.html",{
+              "valueCur":"80",
+              "title":"Projects Delivery"
+              })
+              @@include("../../modules/progress-bars/templates/gradient.html",{
+              "valueCur":"40",
+              "title":"Customers Love"
+              })
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5">
+            <div class="brk-sc-item-page-section-2__img-container">
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/demo_product_landing/507_1428_1.png" alt="alt" class="brk-sc-item-page-section-2__img lazyload">
+            </div>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+      </div>
+      <div class="brk-sc-item-page-section-2__balls">
+        <span class="brk-radial-ball"></span>
+        <span class="brk-radial-ball"></span>
+        <span class="brk-radial-ball"></span>
+      </div>
+      <span class="brk-sc-item-page-section-2__svg-bg">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1922" height="1623" viewBox="0 0 1922 1623">
+              <defs>
+                <path id="xy8ha" d="M0 2592s411.73-10.8 844-103c640.73-149.29 1076-357 1076-357v1620H0z" />
+                <linearGradient id="xy8hb" x1="960" x2="960" y1="3752" y2="2132" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#f2fcff" />
+                  <stop offset="1" stop-color="#ebf7ff" />
+                </linearGradient>
+              </defs>
+              <g>
+                <g transform="translate(1 -2130)">
+                  <use fill="red" xlink:href="#xy8ha" />
+                  <use fill="url(#xy8hb)" xlink:href="#xy8ha" />
+                </g>
+              </g>
+            </svg>
+          </span>
+      <span class="brk-sc-item-page-section-2__svg-container">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1920px"
+              height="277px" viewBox="0 0 1920 277" enable-background="new 0 0 1920 277" xml:space="preserve">
+            <g id="Shape_10_1_" enable-background="new    ">
+              <g id="Shape_10">
+                <g>
+                  <linearGradient id="SVGID_1_11" gradientUnits="userSpaceOnUse" x1="960.0005" y1="276.999" x2="960.0005" y2="0.7793">
+                    <stop  offset="0" style="stop-color: var(--brk-base-2)"/>
+                    <stop  offset="1" style="stop-color: var(--brk-base-5)"/>
+                  </linearGradient>
+                  <path fill="url(#SVGID_1_11)" d="M1420,170.999c-264.209,81.183-385.061,38.809-895-110C319.539,1.042,140.531-6.536,0,5.783
+                    v271.216h1920V60.511C1763.375,73.852,1598.687,116.096,1420,170.999z"/>
+                </g>
+              </g>
+            </g>
+            <g id="Shape_9_1_" enable-background="new    ">
+              <g id="Shape_9">
+                <g>
+                  <path fill="#FFFFFF" d="M1294,149C730.998-17.98,210.142,80.934,0,135.381v141.618h1920v-36.195
+                    C1810.955,257.711,1621.742,246.204,1294,149z"/>
+                </g>
+              </g>
+            </g>
+            </svg>
+          </span>
+    </div>
+
+    <div class="container position-relative z-index-2" style="top: -50px; margin-bottom: -40px;">
+      <div class="mb-190 mb-lg-250">
+        <div class="row no-gutters">
+          <div class="col-12 col-md-5 col-lg-3">
+            <div class="pl-md-5 text-center text-md-left ml-20">
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/demo_product_landing/263x382_1.png" alt="alt" class="lazyload" style="box-shadow: 0 0 15px #d5d4d4;">
+            </div>
+          </div>
+          <div class="col-12 col-md-7 col-lg-9">
+            <div class="pl-xs-0 pl-50 pt-20 text-center text-md-left">
+              <p class="brk-dark-font-color font__family-open-sans font__size-15 font__weight-normal line__height-24 mb-25">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis. Curabitur ullamcorper ultricies
+                nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus.
+              </p>
+              <p class="brk-dark-font-color font__family-open-sans font__size-15 font__weight-normal line__height-24 mb-40 pb-120 pb-lg-0 pb-xl-0">
+                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+                rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed
+                ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg__style overlay__gradient all-light shadow mt--140 lazyload" data-bg="img/demo_product_landing/1170x106_1.jpg">
+          <span class="overlay_after brk-base-bg-gradient-90deg"></span>
+          <div class="cfa__wrapper cfa__hot pt-15 pb-15  pl-20 pr-20">
+            <div>
+              <span class="font__family-open-sans font__size-13 font__weight-bold hot-panel">HOT!</span>
+            </div>
+            <h4 class="font__family-montserrat font__size-25 font__weight-bold text-uppercase">CALL FOR ACTION
+              <span class="font__weight-ultralight">BLOCK HEADING TITLE GOES HERE</span>
+            </h4>
+            @@include('../../modules/buttons/templates/buttons.html',{
+            "type": "btn-prime",
+            "customClass": "border-radius-30 font__family-open-sans font__weight-normal cfa-card__btn",
+            "icon": "<i class='fa fa-shopping-basket' aria-hidden='true'></i>",
+            "text":"Add to cart"
+            })
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brk-sc-item-page-body__bg" id="faq">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/demo_product_landing/1920x909.png" alt="alt" class="brk-sc-item-page-body__bg-img lazyload">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            @@include('../../modules/shop-components-cards/templates/bonus.html',{
+            "containerClass":"mb-30",
+            "link":"Sign Up"
+            })
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            @@include('../../modules/shop-components-cards/templates/bonus.html',{
+            "containerClass":"mb-30",
+            "title":
+            "<span class='text-uppercase font__weight-medium'>do you want even</span><br><span class='font__family-playfair font__style-italic'>cheaper?</span>",
+            "paragraph":
+            "Do <span class='font__weight-bold brk-black-font-color'>selfie</span> with our products & get <br> $100 <br> for the next purchase."
+            })
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            @@include('../../modules/shop-components-cards/templates/bonus.html',{
+            "containerClass":"mb-30",
+            "title":
+            "<span class='text-uppercase font__weight-medium'>Do you want a gift</span> <br> <span class='font__family-playfair font__style-italic'>or a souvenir?</span>",
+            "paragraph":
+            "Buy our product with <span class='font__weight-bold brk-black-font-color'>free shipping</span> <br> and recieve a gift from us or <br> a souvenir"
+            })
+          </div>
+        </div>
+
+        <div class="brk-sc-item-page-tabs pb-90">
+          <h5 class="brk-sc-item-page-tabs__title brk-black-font-color font__family-montserrat font__size-36 line__height-42 font__weight-normal d-inline-flex flex-wrap"><span class="pr-2">Need help?</span> <span class="font__weight-bold"> Read F.A.Q</span>
+          </h5>
+          @@include('../../modules/tabs/templates/simple-smooth.html',{
+          "title1":"How to get a discount?",
+          "title2":"Free Shipping",
+          "title3":"How to buy & pay",
+          "content1":
+          "<h3 class='font__family-montserrat font__size-21 font__weight-bold line__height-22 mb-50'>How to get a discount?</h3><p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit amet orci eget met orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nigna magna mi.</p> <p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>Donec sodales sagittis mbibenagna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. </p> <p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>",
+          "content2":
+          "<h3 class='font__family-montserrat font__size-21 font__weight-bold line__height-22 mb-50'>Free Shipping</h3><p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit amet orci eget met orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nigna magna mi.</p> <p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>Donec sodales sagittis mbibenagna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. </p> <p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>",
+          "content3":
+          "<h3 class='font__family-montserrat font__size-21 font__weight-bold line__height-22 mb-50'>How to buy & pay</h3><p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit amet orci eget met orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nigna magna mi.</p> <p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>Donec sodales sagittis mbibenagna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. </p> <p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>"
+          })
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="position-relative brk-z-index-10">
+    @@include('../../modules/tabs/templates/rounded.html',{
+    "title1":"<i class='fa fa-shopping-basket' aria-hidden='true'></i> <span>Related posts</span>",
+    "title2":"<i class='fa fa-star' aria-hidden='true'></i> <span>Reviews</span>",
+    "title3":"<i class='fa fa-comments' aria-hidden='true'></i> <span>comments</span>",
+    "demo": "true",
+    "img": "img/demo_product_landing/1920x850_1.jpg"
+    })
+  </section>
+
+  @@include("../../modules/footer/templates/footer-1.html",{
+  "id": "contact"
+  })
+</div>
+
+  @@include('../../assets/templates/footer.html',{
+    "demo": "true"
+  })
+
+</body>

@@ -1,0 +1,35 @@
+<div class="bg-cover bg-norepeat bg-position_center bg-white bg-shaded lazyload pt-150 pb-150"
+     data-bg="@@if(context.bg){@@bg}@@if(!context.bg){img/bg-1920_1.jpg}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+         @@include('../../../modules/progress-circles/templates/minimal-single.html', {
+        "single": "true",
+        "valueCur": "75",
+        "title": "Hard Work"
+        })
+      </div>
+      <div class="col-lg-3 col-md-6">
+        @@include('../../../modules/progress-circles/templates/minimal-single.html', {
+        "single": "true",
+        "valueCur": "90",
+        "title": "Donates"
+        })
+      </div>
+      <div class="col-lg-3 col-md-6">
+        @@include('../../../modules/progress-circles/templates/minimal-single.html', {
+        "single": "true",
+        "valueCur": "65",
+        "title": "Hard Work"
+        })
+      </div>
+      <div class="col-lg-3 col-md-6">
+        @@include('../../../modules/progress-circles/templates/minimal-single.html', {
+        "single": "true",
+        "valueCur": "50",
+        "title": "Donates"
+        })
+      </div>
+    </div>
+  </div>
+</div>

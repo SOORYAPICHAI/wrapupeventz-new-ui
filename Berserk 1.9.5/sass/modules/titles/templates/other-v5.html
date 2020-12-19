@@ -1,0 +1,10 @@
+@@if (context.text){
+  <div class="heading-style-left" data-brk-library="component__title">
+  @@if (context.text.main){
+	  <h2 class="font__family-roboto @@if(context.text.main_weight){font__weight-@@text.main_weight} @@if(!context.text.main_weight){font__weight-bold} @@if(context.text.main_size){font__size-@@text.main_size} @@if(!context.text.main_size){font__size-64} line__height-64 heading-style-left-h">@@text.main</h2>
+  }
+  @@if (context.text.secondary){
+	  <span class="title__heading-05 @@if(context.text.secondary_opacity){opacity-@@text.secondary_opacity} title__heading-sub wow fadeInLeft heading-style-left-span font__family-roboto font__size-18 font__weight-bold @@if(context.text.secondary_customClass){@@text.secondary_customClass}">@@text.secondary</span>
+  }
+  </div>
+}

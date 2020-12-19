@@ -1,0 +1,64 @@
+<div class="brk-forum-list" data-brk-library="component__forum_main">
+    <div class="brk-forum-list__header @@bg-class">
+        <h3 class="font__family-montserrat font__size-19 font__weight-semibold text-white">@@header-title</h3>
+        <div class="brk-forum-users">
+            <a href="#" class="brk-forum-users__link">
+                <img src="img/50x50_1.jpg" class="brk-forum-users__img" alt="alt">
+                <div class="brk-forum-users__overlay brk-base-bg-gradient-10deg"></div>
+                <i class="fal fa-plus brk-forum-users__icon text-white font__size-24"></i>
+            </a>
+            <a href="#" class="brk-forum-users__link">
+                <img src="img/50x50_2.jpg" class="brk-forum-users__img" alt="alt">
+                <div class="brk-forum-users__overlay brk-base-bg-gradient-10deg"></div>
+                <i class="fal fa-plus brk-forum-users__icon text-white font__size-24"></i>
+            </a>
+            <a href="#" class="brk-forum-users__link">
+                <img src="img/50x50_3.jpg" class="brk-forum-users__img" alt="alt">
+                <div class="brk-forum-users__overlay brk-base-bg-gradient-10deg"></div>
+                <i class="fal fa-plus brk-forum-users__icon text-white font__size-24"></i>
+            </a>
+            <a href="#" class="brk-forum-users__link">
+                <img src="img/50x50_4.jpg" class="brk-forum-users__img" alt="alt">
+                <div class="brk-forum-users__overlay brk-base-bg-gradient-10deg"></div>
+                <i class="fal fa-plus brk-forum-users__icon text-white font__size-24"></i>
+            </a>
+        </div>
+    </div>
+    <div class="brk-forum-list__body">
+        @@include('post-preview.html',{
+            "img-src":"img/50x50_1.jpg",
+            "title":"Some forum title",
+            "last-update":"Updated on January 7, 2016 in",
+            "category":"Ideas",
+            "comment-count":"20",
+            "like-count":"24",
+            "wide":"",
+            "private":"",
+            "name":"",
+            "postHeader":""
+        })
+        @@include('post-preview.html',{
+            "img-src":"img/50x50_2.jpg",
+            "title":"Some forum title",
+            "last-update":"Updated on January 7, 2016 in",
+            "category":"Feature",
+            "comment-count":"20",
+            "like-count":"24",
+            "wide":"",
+            "private":"",
+            "name":"",
+            "postHeader":""
+        })
+
+        @@include('../../buttons/templates/buttons.html',{ 
+            "tag": "a", 
+            "type": "btn-inside-out", 
+            "customClass": "border-radius-25 font__family-open-sans font__weight-bold ", 
+            "text": "View More", 
+            "href": "", 
+            "size": "md", 
+            "width": "", "icon": "",
+            "iconType": "background"
+        })
+    </div>
+</div>

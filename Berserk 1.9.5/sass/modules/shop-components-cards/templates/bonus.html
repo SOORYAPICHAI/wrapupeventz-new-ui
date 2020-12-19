@@ -1,0 +1,21 @@
+<div class="brk-sc-bonus text-center pl-50 pr-50 pb-40 pt-50 d-flex flex-column @@if(context.containerClass){@@containerClass}" data-brk-library="component__shop_cards">
+  <h6 class="brk-sc-bonus__subtitle font__family-montserrat brk-white-font-color font__size-14 font__weight-bold line__height-14 brk-bg-primary">
+    @@if(context.subtitle){@@subtitle}
+    @@if(!context.subtitle){We are Awesome}
+  </h6>
+  <h5 class="brk-sc-bonus__title font__family-montserrat font__size-21 font__weight-normal line__height-28 mb-15">
+      @@if(context.title){@@title}
+      @@if(!context.title){
+        $100<span class="font__family-playfair font__style-italic"> for </span> <br> <span class="text-uppercase font__weight-medium">the first purchase!</span>
+      }
+  </h5>
+  <p class="font__family-open-sans font__size-16 font__weight-normal line__height-26 brk-dark-font-color ">
+    @@if(context.paragraph){@@paragraph}
+    @@if(!context.paragraph){  
+    Get <span class="font__weight-bold brk-black-font-color">100</span> bonus dollars for your first purchase right now! 
+    }
+  </p>
+  @@if(context.link){ 
+    <a href="#" class="brk-base-font-color font__family-open-sans font__size-16 font__weight-normal line__height-26  brk-sc-bonus__link">@@link</a>
+  }
+</div>

@@ -1,0 +1,17 @@
+@@if (context.text){
+	@@if (context.text.secondary){
+    <p 
+      class="font__family-montserrat font__weight-semibold font__size-12 letter-spacing-200 text-uppercase 
+        @@if(!context.white){text-blue}
+        @@if(context.white){brk-white-font-color}" 
+      data-brk-library="component__title">@@text.secondary
+    </p>
+	}
+	@@if (context.text.main){
+    <h3 
+      class="font__family-montserrat font__weight-semibold font__size-30 letter-spacing-100 line__height-44 mt-10
+        @@if(context.white){brk-white-font-color}" 
+      data-brk-library="component__title">@@text.main
+    </h3>
+	}
+}

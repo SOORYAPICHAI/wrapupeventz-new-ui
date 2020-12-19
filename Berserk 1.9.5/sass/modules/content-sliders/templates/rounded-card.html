@@ -1,0 +1,12 @@
+<div class="post-rounded brk-base-box-shadow @@if(context.customClass){@@customClass}" @@if(context.attr){@@attr} data-brk-library="component__content_slider">
+    <div class="post-rounded__thumb lazyload" data-bg="@@if(context.img){@@img}@@if(!context.img){img/rounded-1.jpg}">
+      <button class="post-rounded__btn pl-70 pr-70 btn btn-lg font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 @@if(context.squareBtn === "true"){post-rounded__btn-square}" data-brk-library="component__button">
+        @@if(context.buttonText){@@buttonText}@@if(!context.buttonText){Read More}
+      </button>
+    </div>
+    <div class="post-rounded__text">
+      <h3 class="font__family-montserrat font__weight-bold font__size-19@@if(context.titleCustomClass){ @@titleCustomClass}">@@if(context.title){@@title}@@if(!context.title){Aquatic: Stock Photography}</h3>
+      <p class="font__family-open-sans font__size-16 text-gray line__height-28@@if(context.pCustomClass){ @@pCustomClass}">@@if(context.p){@@p}@@if(!context.p){Deep below the ocean's surface
+          there is a vibrant, vast ecosystem full of life: a rich diversity of marine life.}</p>
+    </div>
+  </div>

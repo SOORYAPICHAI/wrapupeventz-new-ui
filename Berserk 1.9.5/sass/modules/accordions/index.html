@@ -1,0 +1,60 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Accordions"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+  @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- Accordion slider -->
+    <div class="mt-100 mt-md-130">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left">
+          <span class="heading__number">01</span> Slider</h3>
+    	</div>
+
+    	<div class="container mt-70 mt-md-80">
+		  @@include("templates/slider.html")
+    	</div>
+    </div>
+
+    <!-- Accordion image -->
+    <div class="mt-100 mt-md-90">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left">
+          <span class="heading__number">02</span> Image</h3>
+    	</div>
+
+    	<div class="container mt-70 mt-md-80">
+		  @@include("./templates/image.html")
+    	</div>
+    </div>
+
+		@@include("./templates/others.html")
+
+		<!-- Accordion slider min -->
+		<div class="mt-100 mt-md-130">
+			<div class="container">
+				<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left">
+          <span class="heading__number">03</span> Slider</h3>
+			</div>
+
+			<div class="container mt-70 mt-md-80">
+				@@include("templates/slider-min.html")
+			</div>
+		</div>
+
+	</main>
+
+</div>
+
+  @@include("../../assets/templates/footer.html")
+
+</body>
+</html>

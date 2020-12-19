@@ -1,0 +1,151 @@
+<div class="brk-tabs brk-tabs-simple-smooth" data-brk-library="component__tabs">
+  <ul class="brk-tabs-nav font__family-montserrat font__size-16 font__weight-400 line__height-16 pt-10">
+    <li class="brk-tab">
+      @@if(context.title1){
+      <span>@@title1</span>
+      } @@if(!context.title1){
+      <span>01. Description</span>
+      }
+    </li>
+    <li class="brk-tab">
+      @@if(context.title2){
+      <span>@@title2</span>
+      } @@if(!context.title2){
+      <span>02. Main goal</span>
+      }
+    </li>
+    <li class="brk-tab">
+      @@if(context.title3){
+      <span>@@title3</span>
+      } @@if(!context.title3){
+      <span>03. Project process</span>
+      }
+    </li>
+  </ul>
+
+  <div class="brk-tabs-content">
+    @@if(context.content1){ 
+      <div class="brk-tab-item">
+        @@content1
+      </div>
+    } 
+    @@if(!context.content1) {
+    <div class="brk-tab-item">
+      <h2 class="mb-40 font__family-montserrat font__size-56 font__weight-bold line__height-58">
+        Main Idea</h2>
+      <img class="mw-100 mb-30" src="img/portfolio-page/tab-img.png" alt="alt">
+      <p class="mb-35 brk-dark-font-color  font__family-open-sans font__size-16 font__weight-normal line__height-26">Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam
+        sit amet orci eget met orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nigna magna mi.
+        Donec sodales sagittis mbibenagna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida
+        magna mi a libero. Fusce vulputate. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. condimentum
+        rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel.</p>
+      <ul class="row">
+        <li class="mb-30 col-12 col-sm-6 col-lg-4">
+          <h3 class="mb-20 font__family-montserrat font__size-21 font__weight-bold line__height-28">01</h3>
+          <p class="brk-dark-font-color font__family-open-sans font__size-16 font__weight-normal line__height-26">
+            Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit
+            amet orci eget met orci eget eros
+          </p>
+        </li>
+        <li class="mb-30 col-12 col-sm-6 col-lg-4">
+          <h3 class="mb-20 font__family-montserrat font__size-21 font__weight-bold line__height-28">02</h3>
+          <p class="brk-dark-font-color font__family-open-sans font__size-16 font__weight-normal line__height-26">
+            Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit
+            amet orci eget met orci eget eros
+          </p>
+        </li>
+        <li class="mb-30 col-12 col-sm-6 col-lg-4">
+          <h3 class="mb-20 font__family-montserrat font__size-21 font__weight-bold line__height-28">03</h3>
+          <p class="brk-dark-font-color font__family-open-sans font__size-16 font__weight-normal line__height-26">
+            Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit
+            amet orci eget met orci eget eros
+          </p>
+        </li>
+      </ul>
+    </div>
+    } 
+    @@if(context.content2){ 
+      <div class="brk-tab-item">
+        @@content2
+      </div>
+    } 
+    @@if(!context.content2){
+    <div class="brk-tab-item">
+      <h2 class="mb-40 font__family-montserrat font__size-56 font__weight-bold line__height-58">
+        Main Goal</h2>
+      <img class="mw-100 mb-30" src="img/portfolio-page/tab-img.png" alt="alt">
+      <p class="mb-35 brk-dark-font-color  font__family-open-sans font__size-16 font__weight-normal line__height-26">Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam
+        sit amet orci eget met orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nigna magna mi.
+        Donec sodales sagittis mbibenagna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida
+        magna mi a libero. Fusce vulputate. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. condimentum
+        rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel.
+      </p>
+      <ul class="row">
+        <li class="mb-30 col-12 col-sm-6 col-lg-4">
+          <h3 class="mb-20 font__family-montserrat font__size-21 font__weight-bold line__height-28">01</h3>
+          <p class="brk-dark-font-color font__family-open-sans font__size-16 font__weight-normal line__height-26">
+            Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit
+            amet orci eget met orci eget eros
+          </p>
+        </li>
+        <li class="mb-30 col-12 col-sm-6 col-lg-4">
+          <h3 class="mb-20 font__family-montserrat font__size-21 font__weight-bold line__height-28">02</h3>
+          <p class="brk-dark-font-color font__family-open-sans font__size-16 font__weight-normal line__height-26">
+            Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit
+            amet orci eget met orci eget eros
+          </p>
+        </li>
+        <li class="mb-30 col-12 col-sm-6 col-lg-4">
+          <h3 class="mb-20 font__family-montserrat font__size-21 font__weight-bold line__height-28">03</h3>
+          <p class="brk-dark-font-color font__family-open-sans font__size-16 font__weight-normal line__height-26">
+            Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit
+            amet orci eget met orci eget eros
+          </p>
+        </li>
+      </ul>
+    </div>
+    }
+    @@if(context.content3){ 
+      <div class="brk-tab-item">
+        @@content3
+      </div>
+    } 
+    @@if(!context.content3){
+      <div class="brk-tab-item">
+        <h2 class="mb-40 font__family-montserrat font__size-56 font__weight-bold line__height-58">
+          Project process</h2>
+  
+        <img class="mw-100 mb-30" src="img/portfolio-page/tab-img.png" alt="alt">
+        <p class="mb-35 brk-dark-font-color  font__family-open-sans font__size-16 font__weight-normal line__height-26">Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam
+          sit amet orci eget met orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nigna magna mi.
+          Donec sodales sagittis mbibenagna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida
+          magna mi a libero. Fusce vulputate. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. condimentum
+          rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel.
+        </p>
+        <ul class="row">
+          <li class="mb-30 col-12 col-sm-6 col-lg-4">
+            <h3 class="mb-20 font__family-montserrat font__size-21 font__weight-bold line__height-28">01</h3>
+            <p class="brk-dark-font-color font__family-open-sans font__size-16 font__weight-normal line__height-26">
+              Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit
+              amet orci eget met orci eget eros
+            </p>
+          </li>
+          <li class="mb-30 col-12 col-sm-6 col-lg-4">
+            <h3 class="mb-20 font__family-montserrat font__size-21 font__weight-bold line__height-28">02</h3>
+            <p class="brk-dark-font-color font__family-open-sans font__size-16 font__weight-normal line__height-26">
+              Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit
+              amet orci eget met orci eget eros
+            </p>
+          </li>
+          <li class="mb-30 col-12 col-sm-6 col-lg-4">
+            <h3 class="mb-20 font__family-montserrat font__size-21 font__weight-bold line__height-28">03</h3>
+            <p class="brk-dark-font-color font__family-open-sans font__size-16 font__weight-normal line__height-26">
+              Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit
+              amet orci eget met orci eget eros
+            </p>
+          </li>
+        </ul>
+      </div>
+    }
+  </div>
+</div>

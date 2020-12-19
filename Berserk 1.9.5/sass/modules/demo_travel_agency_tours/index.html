@@ -1,0 +1,299 @@
+@@include('../../assets/templates/head.html',{
+"titlePage": "Travel Agency - Tours",
+"themeSkin": "brk-orange.css",
+"style": ""
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {})
+  @@include("../../modules/header-1/templates/style-header-1.html",{
+    "only_header": "true",
+    "customNav": "true",
+    "title1": "Home",
+    "link1": "demo_travel_agency.html",
+    "title2": "About",
+    "link2": "demo_travel_agency_about.html",
+    "submenu2": {
+      "subtitle1": "About Us",
+      "sublink1": "demo_travel_agency_about.html",
+      "subtitle2": "Team",
+      "sublink2": "demo_travel_agency_team.html",
+      "subtitle3": "History",
+      "sublink3": "demo_travel_agency_history.html",
+      "subtitle4": "Prices",
+      "sublink4": "demo_travel_agency_prices.html",
+      "subtitle5": "Testimonials",
+      "sublink5": "demo_travel_agency_testimonials.html"
+      },
+    "title3": "Services",
+    "link3": "demo_travel_agency_services.html",
+    "title4": "Tours",
+    "link4": "demo_travel_agency_tours.html",
+    "title5": "Contact",
+    "link5": "demo_travel_agency_contact.html"
+  })
+  <div class="main-wrapper">
+    <main class="main-container">
+
+      @@include("../breadcrumbs/templates/sunshine.html",{
+        "customPadding": "pt-130 pb-90 breadcrumbs__section-sunshine_white",
+        "title": "Tours",
+        "overlay1": "brk-base-gradient-34",
+        "overlay2": "brk-base-bg-gradient-90deg",
+        "squared": "true",
+        "img": "img/demo_travel_agency/1920x260_1.jpg"
+      })
+
+      <section class="pt-80 pb-80">
+        <h2 class="sr-only">Tours cards</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-10">
+              @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                "flipType":"vertical",
+                "imgSrc":"img/demo_travel_agency/370x370_1.jpg",
+                "cardTitle": "Birmingham",
+                "titleFontSize":"18",
+                "oldPrice":"$41.00",
+                "newPrice":"$21.30",
+                "newPriceFontSize":"18",
+                "labelsType":"top",
+                "label1":"",
+                "label2":"",
+                "list":["Maecenas vestibulum mollis","Pellentesque ut neque","Fellentesque habitant morbi","Maecenas vestibulum mollis"],
+                "description":"",
+                "imgSrcBack": "true"
+              })
+            </div>
+            <div class="col-lg-4 mb-10">
+              @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                "flipType":"vertical",
+                "imgSrc":"img/demo_travel_agency/370x370_2.jpg",
+                "cardTitle": "Shropshire",
+                "titleFontSize":"18",
+                "oldPrice":"$41.00",
+                "newPrice":"$21.30",
+                "newPriceFontSize":"18",
+                "labelsType":"top",
+                "label1":"",
+                "label2":"",
+                "list":["Maecenas vestibulum mollis","Pellentesque ut neque","Fellentesque habitant morbi","Maecenas vestibulum mollis"],
+                "description":"",
+                "imgSrcBack": "true"
+              })
+            </div>
+            <div class="col-lg-4 mb-10">
+              @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                "flipType":"vertical",
+                "imgSrc":"img/demo_travel_agency/370x370_3.jpg",
+                "cardTitle":"West Midlands",
+                "titleFontSize":"18",
+                "oldPrice":"$41.00",
+                "newPrice":"$21.30",
+                "newPriceFontSize":"18",
+                "labelsType":"top",
+                "label1":"TOP",
+                "label2":"",
+                "list":["Maecenas vestibulum mollis","Pellentesque ut neque","Fellentesque habitant morbi","Maecenas vestibulum mollis"],
+                "description":"",
+                "imgSrcBack": "true"
+              })
+            </div>
+            <div class="col-lg-4 mb-10">
+              @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                "flipType":"vertical",
+                "imgSrc":"img/demo_travel_agency/370x370_4.jpg",
+                "cardTitle":"Lincoln",
+                "titleFontSize":"18",
+                "oldPrice":"$41.00",
+                "newPrice":"$21.30",
+                "newPriceFontSize":"18",
+                "labelsType":"top",
+                "label1":"",
+                "label2":"",
+                "list":["Maecenas vestibulum mollis","Pellentesque ut neque","Fellentesque habitant morbi","Maecenas vestibulum mollis"],
+                "description":"",
+                "imgSrcBack": "true"
+              })
+            </div>
+            <div class="col-lg-4 mb-10">
+              @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                "flipType":"vertical",
+                "imgSrc":"img/demo_travel_agency/370x370_5.jpg",
+                "cardTitle":"Derbyshire",
+                "titleFontSize":"18",
+                "oldPrice":"$41.00",
+                "newPrice":"$21.30",
+                "newPriceFontSize":"18",
+                "labelsType":"top",
+                "label1":"",
+                "label2":"",
+                "list":["Maecenas vestibulum mollis","Pellentesque ut neque","Fellentesque habitant morbi","Maecenas vestibulum mollis"],
+                "description":"",
+                "imgSrcBack": "true"
+              })
+            </div>
+            <div class="col-lg-4 mb-10">
+              @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                "flipType":"vertical",
+                "imgSrc":"img/demo_travel_agency/370x370_6.jpg",
+                "cardTitle":"Peak District",
+                "titleFontSize":"18",
+                "oldPrice":"$41.00",
+                "newPrice":"$21.30",
+                "newPriceFontSize":"18",
+                "labelsType":"top",
+                "label1":"",
+                "label2":"",
+                "list":["Maecenas vestibulum mollis","Pellentesque ut neque","Fellentesque habitant morbi","Maecenas vestibulum mollis"],
+                "description":"",
+                "imgSrcBack": "true"
+              })
+            </div>
+          </div>
+          <div class="text-center pt-40">
+            @@include('../buttons/templates/buttons-invert.html', {
+              "class": "icon__btn icon__btn-anim icon__btn-md icon__btn-invert",
+              "tag": "a",
+              "href": "#"
+            })
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-80 pb-80 position-relative brk-bg-center-cover lazyload" data-bg="img/demo_travel_agency/1920x1410_1.jpg">
+        <span class="brk-abs-bg-overlay brk-base-gradient-34"></span>
+        <div class="container">
+          <div class="text-center">
+            <h2 class="font__family-montserrat font__size-36 line__height-40 text-white">
+              <span class="font__weight-light">TOP</span>
+              <span class="font__weight-bold">Travels</span>
+            </h2>
+            <hr class="opacity-20 bg-white mt-30 mb-50">
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-10">
+              @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                "flipType":"vertical",
+                "imgSrc":"img/demo_travel_agency/370x370_1.jpg",
+                "cardTitle":"Liverpool",
+                "titleFontSize":"18",
+                "oldPrice":"$41.00",
+                "newPrice":"$21.30",
+                "newPriceFontSize":"18",
+                "labelsType":"top",
+                "label1":"",
+                "label2":"",
+                "list":["Maecenas vestibulum mollis","Pellentesque ut neque","Fellentesque habitant morbi","Maecenas vestibulum mollis"],
+                "description":"",
+                "imgSrcBack": "true"
+              })
+            </div>
+            <div class="col-lg-4 mb-10">
+              @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                "flipType":"vertical",
+                "imgSrc":"img/demo_travel_agency/370x370_2.jpg",
+                "cardTitle":"Blackpool",
+                "titleFontSize":"18",
+                "oldPrice":"$41.00",
+                "newPrice":"$21.30",
+                "newPriceFontSize":"18",
+                "labelsType":"top",
+                "label1":"",
+                "label2":"",
+                "list":["Maecenas vestibulum mollis","Pellentesque ut neque","Fellentesque habitant morbi","Maecenas vestibulum mollis"],
+                "description":"",
+                "imgSrcBack": "true"
+              })
+            </div>
+            <div class="col-lg-4 mb-10">
+              @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                "flipType":"vertical",
+                "imgSrc":"img/demo_travel_agency/370x370_3.jpg",
+                "cardTitle":"Merseyside",
+                "titleFontSize":"18",
+                "oldPrice":"$41.00",
+                "newPrice":"$21.30",
+                "newPriceFontSize":"18",
+                "labelsType":"top",
+                "label1":"TOP",
+                "label2":"",
+                "list":["Maecenas vestibulum mollis","Pellentesque ut neque","Fellentesque habitant morbi","Maecenas vestibulum mollis"],
+                "description":"",
+                "imgSrcBack": "true"
+              })
+            </div>
+            <div class="col-lg-4 mb-10">
+              @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                "flipType":"Lancashire",
+                "imgSrc":"img/demo_travel_agency/370x370_4.jpg",
+                "cardTitle":"Some shop item",
+                "titleFontSize":"18",
+                "oldPrice":"$41.00",
+                "newPrice":"$21.30",
+                "newPriceFontSize":"18",
+                "labelsType":"top",
+                "label1":"",
+                "label2":"",
+                "list":["Maecenas vestibulum mollis","Pellentesque ut neque","Fellentesque habitant morbi","Maecenas vestibulum mollis"],
+                "description":"",
+                "imgSrcBack": "true"
+              })
+            </div>
+            <div class="col-lg-4 mb-10">
+              @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                "flipType":"vertical",
+                "imgSrc":"img/demo_travel_agency/370x370_5.jpg",
+                "cardTitle":"Chester",
+                "titleFontSize":"18",
+                "oldPrice":"$41.00",
+                "newPrice":"$21.30",
+                "newPriceFontSize":"18",
+                "labelsType":"top",
+                "label1":"",
+                "label2":"",
+                "list":["Maecenas vestibulum mollis","Pellentesque ut neque","Fellentesque habitant morbi","Maecenas vestibulum mollis"],
+                "description":"",
+                "imgSrcBack": "true"
+              })
+            </div>
+            <div class="col-lg-4 mb-10">
+              @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                "flipType":"vertical",
+                "imgSrc":"img/demo_travel_agency/370x370_6.jpg",
+                "cardTitle":"Cumbria",
+                "titleFontSize":"18",
+                "oldPrice":"$41.00",
+                "newPrice":"$21.30",
+                "newPriceFontSize":"18",
+                "labelsType":"top",
+                "label1":"",
+                "label2":"",
+                "list":["Maecenas vestibulum mollis","Pellentesque ut neque","Fellentesque habitant morbi","Maecenas vestibulum mollis"],
+                "description":"",
+                "imgSrcBack": "true"
+              })
+            </div>
+          </div>
+          <div class="text-center pt-40">
+            @@include('../buttons/templates/buttons-invert.html', {
+              "class": "icon__btn icon__btn-anim icon__btn-md icon__btn-invert",
+              "tag": "a",
+              "href": "#"
+            })
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  @@include("../../modules/footer/templates/footer-3.html",{
+  "demo": "true",
+  "overlay": "brk-base-gradient-34"
+  })
+
+  @@include('../../assets/templates/footer.html',{
+  "demo": "true"
+  })
+</body>

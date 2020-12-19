@@ -1,0 +1,14 @@
+@@if (context.text){
+  <div class="title-lines-four" data-brk-library="component__title">
+  @@if (context.text.main){
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <h5 class="font__size-21 font__family-montserrat font__weight-light text-gray">@@text.main</h5>
+  }
+  @@if (context.text.secondary){
+    <h3 class="font__family-montserrat font__weight-bold mt-10">@@text.secondary</h3>
+  }
+  </div>
+}

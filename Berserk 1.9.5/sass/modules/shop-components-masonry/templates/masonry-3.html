@@ -1,0 +1,35 @@
+<div class="brk-sc-masonry-three @@class" data-brk-library="component__shop_masonry">
+  <div class="brk-abs-overlay @@if(!context.overlay){bg-primary opacity-90}@@if(context.overlay){@@overlay}"></div>
+  <div class="brk-sc-masonry-three__thumbnail">
+    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@thumb" alt="alt" class="lazyload">
+  </div>
+  <div class="brk-sc-masonry-three__container d-flex flex-wrap">
+    <div class="brk-sc-masonry-three__top-content">
+      <div class="brk-sc-masonry-three__title">
+        <h4 class="font__family-montserrat font__weight-bold text-uppercase">@@title</h4>
+      </div>
+      <div class="brk-sc-masonry-three__category brk-white-font-color brk-bg-grad text-uppercase font__weight-semibold ">@@category</div>
+    </div>
+    <div class="brk-sc-masonry-three__bottom-content d-flex flex-wrap align-content-start justify-content-end">
+      @@include('../../buttons/templates/buttons.html',{
+      "type": "btn-inside-out btn-inside-out-invert",
+      "customClass": "border-radius-5 font__family-open-sans font__weight-bold",
+      "text": " ",
+      "text_hover": " ",
+      "icon": "<i class='fas fa-shopping-basket'></i>"
+      })
+
+      <div class="clearfix">
+        <div class="brk-sc-masonry-three__price font__family-montserrat d-flex flex-wrap justify-content-end">
+          @@if(context.oldPrice){<div class="old-price font__weight-light brk-dark-font-color">@@oldPrice</div>}
+          <div class="price font__weight-bold brk-base-font-color">@@price</div>
+        </div>
+
+        @@include('../../elements/templates/rating.html', {
+        "value": "80%"
+        })
+      </div>
+
+    </div>
+  </div>
+</div>

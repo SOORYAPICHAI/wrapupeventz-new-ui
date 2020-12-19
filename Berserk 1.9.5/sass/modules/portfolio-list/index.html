@@ -1,0 +1,51 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Portfolio List"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+  <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+  <main class="main-container mb-50">
+    <div class="container mt-80">
+      <div class="row">
+        <div class="col-12">
+          @@include("./templates/card-video.html")
+        </div>
+        <div class="col-12">
+          @@include("./templates/card-image.html")
+        </div>
+        <div class="col-12">
+          @@include("./templates/card-video.html")
+        </div>
+        <div class="col-12">
+          @@include("./templates/card-image-1.html")
+        </div>
+        <div class="col-12">
+          @@include("./templates/card-video.html")
+        </div>
+        <div class="col-12">
+          @@include("./templates/card-image-2.html")
+        </div>
+        <div class="col-12 text-center mt-80">
+          @@include('../buttons/templates/buttons-invert.html', {
+          "class": "icon__btn icon__btn-anim icon__btn-md icon__btn-invert",
+          "tag": "a",
+          "href": "#"
+          })
+        </div>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+
+@@include("../../assets/templates/footer.html")
+</body>
+</html>

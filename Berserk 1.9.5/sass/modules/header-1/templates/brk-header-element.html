@@ -1,0 +1,16 @@
+<div class="brk-header__element @@if(context.classMod){@@classMod} brk-header__item">
+  <@@if(context.tag){@@tag}@@if(!context.tag){a}
+  @@if(!context.tag || context.tag === 'a') {
+  @@if(context.href){
+  href="@@href"
+  }
+  @@if(!context.href){
+  href="#"
+  }
+  }
+  class="brk-header__element--wrap">
+    <i class="@@icon"></i>
+    @@if(context.text){<span class="brk-header__element--label @@if(context.textStyle){@@textStyle}">@@text</span>}
+    @@if(context.compare && context.compareStyle){<span class="brk-header__compare @@compareStyle">@@compare</span>}
+  </@@if(context.tag){@@tag}@@if(!context.tag){a}>
+</div>

@@ -1,0 +1,149 @@
+@@include("../../assets/templates/head.html", {
+  "titlePage": "Contact Us",
+  "themeSkin": "brk-purple-pink-1.css"
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {})
+  <div class="main-wrapper">
+    <main class="main-container">
+
+      <section>
+        <div class="position-relative brk-bg-center-cover pt-110 lazyload" style="padding-bottom: 295px;" data-bg='img/contact-us/1920x620_1.jpg'>
+          <span class="brk-abs-bg-overlay brk-base-gradient-40"></span>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-10">
+                <h1 class="font__family-montserrat font__weight-light font__size-36 line__height-40 mb-30 brk-white-font-color">Get in Touch!</h1>
+                <h2 class="font__family-montserrat font__weight-bold font__size-48 line__height-52 mb-40 brk-white-font-color">
+                  Have an idea? <br>
+                  Drop your details below
+                </h2>
+              </div>
+              <div class="col-12 col-lg-2">
+                <div class="d-flex align-items-center justify-content-center w-100 h-100"> 
+                  <img src="img/contact-us/98x138_1.png" alt="point" class="mb-40">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container" style="margin-top: -250px">
+          <div class="pl-15 pr-15 shadow">
+            <div class="row row-no-gutter">
+              <div class="col-lg-9 col-12">
+                <form action="#" class="bg-white pt-45 pb-30 pl-40 pr-40 brk-form-strict brk-subscribe-mail brk-subscribe-mail_dark" data-brk-library='component__form,recaptcha'>
+                  <h3 class="font__family-montserrat font__weight-bold font__size-24 line__height-28 mb-10 pl-15">Send a Request</h3>
+                  <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <input type="text" name="FNAME" placeholder="Your Name">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <input type="text" name="EMAIL" placeholder="Your Mail">
+                    </div>
+                    <div class="col-12">
+                      <textarea name="MESSAGE" class="bordered-bottom" placeholder="Your Question" style="min-height: 80px"></textarea>
+                    </div>
+                    @@include("../buttons/templates/buttons.html",{
+                      "tag": "button",
+                      "type": "btn-gradient",
+                      "text": "Contact Us",
+                      "customClass": "btn-shadow border-radius-0 ml-15 mt-30 font__weight-bold"
+                    })
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-3 col-12">
+                <div class="brk-base-bg-gradient-30deg w-100 h-100 pt-50 pr-50 pb-30 pl-50 d-flex flex-column justify-content-between">
+                  <h3 class="font__family-montserrat font__weight-bold font__size-24 brk-white-font-color">Find Us</h3>
+                  
+                  <div class="mt-15 mb-15">
+                    <p class="font__family-open-sans font__weight-bold font__size-14 mb-10 brk-white-font-color">
+                      <i class="brk-footer-icon text-middle fa fa-envelope line__height-24 brk-color-base-1"></i> 
+                      <a href="mailto:info@domain.com" class="show-inline-block">info@domain.com</a>
+                    </p>
+                    <p class="font__family-open-sans font__weight-bold font__size-14 mb-10 brk-white-font-color">
+                      <i class="brk-footer-icon text-middle fas fa-map-marker-alt line__height-24 brk-color-base-1"></i> 
+                      <span>Chicago, USA</span>
+                    </p>
+                    <p class="font__family-open-sans font__weight-bold font__size-14 mb-10 brk-white-font-color">
+                      <i class="brk-footer-icon text-middle fa fa-phone line__height-24 brk-color-base-1"></i> 
+                      <a href="#" class="show-inline-block">800 12 34 567</a>
+                    </p>
+                  </div>
+
+                  @@include('../social-links/templates/simple-social-links.html',{
+                    "socialIcon1":"<i class='fab fa-twitter'></i>",
+                    "socialIcon2":"<i class='fab fa-instagram'></i>",
+                    "socialIcon3":"<i class='fab fa-google-plus-g'></i>",
+                    "socialIcon4":"<i class='fab fa-youtube'></i>",
+                    "customContainerClass":"brk-white-font-color mb-10 font__size-15 justify-content-between"
+                  })
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-70 pb-40">
+        <div class="container">
+          <h3 class="font__family-montserrat font__size-36 line__height-44 font__weight-bold mb-40">Our Support</h3>
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <p class="font__family-roboto brk-dark-font-color font__size-15  font__weight-light line__height-26 mb-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.</p>
+            </div>
+            <div class="col-12 col-lg-5">
+              @@include('../lists/templates/list-inline-8.html',{
+                "customClass": "mb-15 brk-color-base-1 font__family-roboto font__weight-light font__size-15 line__height-28"
+              })
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="h-100 w-100 d-flex align-items-center">
+                @@include("../buttons/templates/buttons.html",{
+                  "type": "btn-gradient",
+                  "text": "Check our faq",
+                  "customClass": "btn-shadow border-radius-0 w-100 mx-0 mt-0 mb-15 font__weight-bold"
+                })
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-50 pb-80" style="background-image: url('img/pink-wave.svg'); background-repeat: no-repeat; background-position-y: 50px;">
+        <div class="container">
+          <h3 class="font__family-montserrat font__size-36 font__weight-bold mb-50">Our Services</h3>
+          <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+              <i class="fas fa-briefcase brk-secondary-font-color font__size-48 line__height-48 mb-30"></i>
+              <h4 class="font__family-montserrat font__size-21 line__height-20 font__weight-bold mb-20">Service 2</h4>
+              <p class="font__family-roboto font__size-15 font__weight-light line__height-26 brk-dark-font-color">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.</p>
+            </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+              <i class="fas fa-leaf brk-secondary-font-color font__size-48 line__height-48 mb-30 mt-lg-15"></i>
+              <h4 class="font__family-montserrat font__size-21 line__height-20 font__weight-bold mb-20">Service 1</h4>
+              <p class="font__family-roboto font__size-15 font__weight-light line__height-26 brk-dark-font-color">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.</p>
+            </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+              <i class="fas fa-glasses brk-secondary-font-color font__size-48 line__height-48 mb-30 mt-lg-110"></i>
+              <h4 class="font__family-montserrat font__size-21 line__height-20 font__weight-bold mb-20">Service 3</h4>
+              <p class="font__family-roboto font__size-15 font__weight-light line__height-26 brk-dark-font-color">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+  @@include("../footer/templates/footer-17.html")
+  @@include("../../assets/templates/footer.html",{
+    "demo": "true"
+  })
+
+</body>
+</html>

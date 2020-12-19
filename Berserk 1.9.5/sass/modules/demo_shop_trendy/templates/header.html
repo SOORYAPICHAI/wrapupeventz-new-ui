@@ -1,0 +1,114 @@
+<div class="brk-header-mobile" data-brk-library="component__header">
+  <div class="brk-header-mobile__open brk-header-mobile__open_white">
+    <span></span>
+  </div>
+
+  <div class="brk-header-mobile__logo">
+    <a href="#"><img src="img/logo-2.png" alt=""></a>
+  </div>
+</div><!-- /.brk-header-mobile -->
+
+<header class="brk-header brk-header_style-2 brk-header_skin-2 d-flex flex-column position-fixed brk-header_color-white" data-logo-src="img/logo-dark-2.png" data-bg-mobile="img/brk-bg-mobile-menu.jpg">
+
+<!-- MAIN BAR -->
+<div class="brk-header__main-bar brk-header_border-bottom @@if(context.mainBarCustomStyle){@@mainBarCustomStyle}"
+     style="@@if(context.mainBarHeight){height: @@mainBarHeight;}
+              @@if(!context.mainBarHeight){height: 72px;}
+              @@if(context.mainBarStyle){@@mainBarStyle}"
+     @@if(context.mainBarHeightScroll){data-height-scroll="@@mainBarHeightScroll"}>
+
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-auto pr-40 align-self-lg-stretch order-6 order-lg-first">
+        @@include('../../../modules/header-1/templates/brk-info-menu-open.html',{
+        "skin": "brk-info-menu-open_skin-2"
+        })
+      </div>
+
+      <div class="col-lg-auto align-self-lg-stretch">
+        <nav class="brk-nav @@if(context.modifier){@@modifier} brk-header__item">
+          <ul class="brk-nav__menu">
+            @@include("../../../modules/header-1/templates/brk-nav-home.html")
+            <li>
+              <a href="#about">
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#collections">
+                <span>Collections</span>
+              </a>
+            </li>
+            @@include("../../../modules/header-1/templates/brk-nav-shop.html")
+            @@include("../../../modules/header-1/templates/brk-nav-elements.html")
+            <li>
+              <a href="#contact">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-lg-auto align-self-lg-center d-none d-lg-block brk-align-center">
+        @@include('../../../modules/header-1/templates/brk-header-logo.html', {
+        "logo_1": "img/logo-1.png",
+        "logo_2": "img/logo-dark-1.png"
+        })
+      </div>
+
+      @@if(context.onlyLinks !== "true"){
+
+      <div class="col-lg-auto align-self-lg-stretch text-lg-right brk-align-right">
+        @@include('../../../modules/header-1/templates/brk-header-element.html', {
+        "classMod": "brk-header__element_skin-1",
+        "tag": "a",
+        "href": "tel:88002003040",
+        "icon": "far fa-phone",
+        "text": "8 800 200 30 40",
+        "textStyle": "d-lg-none",
+        "compareStyle": "",
+        "compare": ""
+        })
+
+        @@include('../../../modules/header-1/templates/brk-mini-cart.html', {
+        "skinOpen": "skin-1",
+        "productImg_1": "img/95x95_1.jpg",
+        "productImg_2": "img/95x95_2.jpg",
+        "productImg_3": "img/95x95_3.jpg",
+        "productImg_4": "img/95x95_4.jpg"
+        })
+
+        @@include('../../../modules/header-1/templates/brk-header-element.html', {
+        "classMod": "brk-header__element_skin-1",
+        "tag": "a",
+        "href": "#",
+        "icon": "far fa-heart",
+        "text": "My wishlist",
+        "textStyle": "d-lg-none",
+        "compareStyle": "brk-header__compare_white",
+        "compare": "6"
+        })
+
+        @@include('../../../modules/buttons/templates/buttons.html',{
+        "type": "btn-inside-out",
+        "size": " ",
+        "text": "Buy now <span class='font__family-times-new-roman text-lowercase font__style-italic'>for</span> 39$",
+        "customClass": "ml-20 mr-10 brk-header__item brk-header__btn btn-sm-1 border-radius-25 font__family-open-sans font__weight-bold m-0 pl-30 pr-30"
+        })
+
+        @@include('../../../modules/header-1/templates/brk-lang.html', {
+        "interactive": "brk-lang_interactive"
+        })
+      </div>
+      }
+
+    </div>
+  </div>
+
+</div>
+<!-- End MAIN BAR -->
+
+  @@include('../../header-1/templates/brk-info-menu.html',{})
+
+</header><!-- /.brk-header -->

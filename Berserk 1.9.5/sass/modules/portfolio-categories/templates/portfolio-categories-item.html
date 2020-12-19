@@ -1,0 +1,16 @@
+<div class="brs-portfolio-categories-item" data-brk-library="component__portfolio_category,fancybox">
+  <img src="@@imgSrc" class="brs-portfolio-categories-item__img" alt="alt">
+  @@if(context.staticOverlay){
+    <div class="brs-portfolio-categories-item__static-overlay @@staticOverlay"></div>
+  }
+  <div 
+    class="brs-portfolio-categories-item__overlay 
+      @@if(!context.overlay){brk-base-bg-12}
+      @@if(context.overlay){@@overlay}">
+  </div>
+  <a class="brs-portfolio-categories-item__title font__family-montserrat font__size-28 font__weight-light line__height-32 text-left">@@if(context.title){@@title}@@if(!context.title){Some Project Title}</a>
+  <div class="brs-portfolio-categories-item__buttons">
+    <a href="@@imgSrc" class="brs-portfolio-categories-item__btn fancybox" aria-label="search"><i class="fal fa-search brs-portfolio-categories-item__btn__icon"></i></a>
+    <a href='javascript:void(0)' class="brs-portfolio-categories-item__btn" aria-label="link"><i class="fal fa-link brs-portfolio-categories-item__btn__icon"></i></a>
+  </div>
+</div>

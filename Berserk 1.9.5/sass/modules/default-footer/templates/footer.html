@@ -1,0 +1,10 @@
+@@if(context.customClass){
+  @@include("../../footer/templates/footer-11.html",{
+    "customClass": "@@customClass"
+  })
+}
+@@if(!context.customClass){
+  @@include("../../footer/templates/footer-11.html",{
+    "customClass": "pt-80"
+  })
+}

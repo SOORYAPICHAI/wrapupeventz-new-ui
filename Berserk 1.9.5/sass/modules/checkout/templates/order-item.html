@@ -1,0 +1,29 @@
+<li class="brk-checkout-order-item @@if(context.cart_item === 'true'){brk-checkout-order-item_cart} font__family-montserrat font__size-14 line__height-16" data-brk-library="component__checkout">
+  @@if(context.cart_item === 'true'){
+    <button type="button" class="brk-checkout-order-item__del-btn">
+      <i class="fas fa-times-circle font__size-14"></i>
+    </button>
+  }
+  <img data-src="img/62x62_1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="item-alt"
+    class="lazyload brk-checkout-order-item__img">
+  <h2 class="font__size-14 line__height-16 font__weight-bold brk-checkout-order-item__title">Some shop item</h2>
+  <p class="brk-checkout-order-item__price">
+    <s class="brk-dark-font-color">$26.00</s>
+    <span class="brk-base-font-color pl-1 font__weight-bold">$16.00</span>
+  </p>
+  @@if(context.cart_item === 'true'){
+    <div class="brk-checkout-order-item__count brk-checkout-order-item__count_input">
+      <button type="button" class="count-less">
+          <i class="fas fa-caret-left brk-base-font-color"></i>
+      </button>
+      <input type="number" value="1">
+      <button type="button" class="count-more">
+          <i class="fas fa-caret-right brk-base-font-color"></i>
+      </button>
+    </div>
+  }
+  @@if(context.cart_item !== 'true'){
+    <p class="font__weight-light brk-checkout-order-item__count">x 1</p>
+  }
+  <p class="font__weight-bold brk-base-font-color brk-checkout-order-item__price-total">$16.00</p>
+</li>

@@ -1,0 +1,51 @@
+<div class="post-angle-slider arrows-classic-ellipse slick-loading fa-req" data-slick='{
+     "slidesToShow": 3,
+     "slidesToScroll": 1,
+     "arrows": true,
+     "autoplaySpeed": 2800,
+     "centerMode": true,
+     "centerPadding": 0,
+     "responsive": [
+     {
+     	"breakpoint": 1200,
+     	"settings": {"slidesToShow": @@bp1200}
+     },
+     {
+     	"breakpoint": 992,
+     	"settings": {"slidesToShow": @@bp992}
+     },
+     {
+     	"breakpoint": 768,
+     	"settings": {"slidesToShow": @@bp768}
+     },
+     {
+     	"breakpoint": 576,
+     	"settings": {"slidesToShow": @@bp576}
+     }
+     ]}' data-brk-library="slider__slick">
+
+  @@include('../../shop-components-row/templates/sc-angle-post.html', {
+  "bgImage": "270x270_1.jpg",
+  "title": "Tommy Hilfiger",
+  "price": "$24"
+  })
+
+  @@include('../../shop-components-row/templates/sc-angle-post.html', {
+  "bgImage": "270x270_2.jpg",
+  "title": "Hugo Boss",
+  "price": "$22"
+  })
+
+  @@include('../../shop-components-row/templates/sc-angle-post.html', {
+  "bgImage": "270x270_1.jpg",
+  "title": "Polo shirt",
+  "price": "$18"
+  })
+
+  @@include('../../shop-components-row/templates/sc-angle-post.html', {
+  "bgImage": "270x270_2.jpg",
+  "title": "Long-sleeve top",
+  "price": "$9"
+  })
+
+</div>

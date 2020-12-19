@@ -1,0 +1,67 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Gallery Sliders"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+    <main class="main-container mb-70 mt-100 mt-md-130">
+
+      <div class="container">
+        <div class="font__family-montserrat font__size-28 font__weight-bold text-left mb-140 pt-1">
+          <span class="brk-dark-font-color">01</span>
+          <span class="brk-black-font-color"> Gradient</span>
+        </div>
+      </div>
+      <div class="container mb-180">
+        @@include('./templates/gradient.html')
+      </div>
+
+      <div class="container">
+        <div class="font__family-montserrat font__size-28 font__weight-bold text-left mb-140 pt-1">
+          <span class="brk-dark-font-color">02</span>
+          <span class="brk-black-font-color"> Solid</span>
+        </div>
+      </div>
+
+      <div class="container mb-180">
+        @@include('./templates/solid.html')
+      </div>
+
+      <div class="container">
+        <div class="font__family-montserrat font__size-28 font__weight-bold text-left mb-140 pt-1">
+          <span class="brk-dark-font-color">03</span>
+          <span class="brk-black-font-color"> Strict</span>
+        </div>
+      </div>
+      <div class="mb-160">
+        @@include('./templates/strict.html')
+      </div>
+
+      <div class="container">
+        <div class="font__family-montserrat font__size-28 font__weight-bold text-left mb-140 pt-1">
+          <span class="brk-dark-font-color">04</span>
+          <span class="brk-black-font-color">Dark</span>
+        </div>
+      </div>
+      <div class="mb-180">
+        @@include('./templates/dark.html')
+      </div>
+
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+  
+
+</body>
+
+</html>

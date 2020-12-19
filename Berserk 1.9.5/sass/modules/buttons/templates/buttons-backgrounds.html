@@ -1,0 +1,12 @@
+<@@if(context.tag){@@tag}@@if(!context.tag){a}
+@@if(!context.tag || context.tag === 'a') {
+@@if(context.href){
+href="@@href"
+}
+@@if(!context.href){
+href="#"
+}
+} class="btn-backgrounds @@if(context.icon === "false"){btn-backgrounds_no-icon} @@if(context.class){@@class}@@if(!context.class){btn-backgrounds_white font__family-montserrat font__weight-bold text-uppercase font__size-13}" @@if(context.style){style="@@style"} data-brk-library="component__button">
+  @@if(context.text){@@text}@@if(!context.text){Play The review}
+  @@if(context.icon && context.icon !== "false"){<span class="before">@@icon</span>}@@if(!context.icon && context.icon !== "false"){<span class="before"><i class="fas fa-caret-right"></i></span>}
+</@@if(context.tag){@@tag}@@if(!context.tag){a}>

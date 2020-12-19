@@ -1,0 +1,487 @@
+@@include('../../assets/templates/head.html',{
+  "titlePage": "Winter Trip Agency",
+  "themeSkin": "brk-cold-blue.css"
+  })
+  </head>
+  
+  <body data-brk-library="component__winter"> 
+    @@include('../../modules/theme-options/templates/options.html', {})
+  
+  <div class="main-page">
+    @@include('../header-7/templates/style-header-7.html', {
+      "customNav": "true",
+      "title1": "About",
+      "link1": "#about",
+      "title2": "Reviews",
+      "link2": "#reviews",
+      "title3": "Our Office",
+      "link3": "#office",
+      "title4": "Team",
+      "link4": "#team",
+      "title5": "Contact",
+      "link5": "#contact",
+      "only_header": "true",
+      "mainBarHeight": "80px",
+      "white": "true",
+      "justifyLeft": "true",
+      "modifier": "brk-nav_modifier-capitalize font__family-montserrat font__size-14 font__weight-normal",
+      "mainBarCustomClass": "brk-header_border-bottom",
+      "logoModifier": "pl-20 pr-30",
+      "search": "true",
+      "headerStyle": "brk-header_style-2",
+      "sticky": "true"
+    })
+    <section class="mb-140 wow fadeInUp">
+      <div 
+        class="bg__style lazyload position-relative pt-200" 
+        data-bg="img/demo_winter_trip/1920x820_1.jpg">
+        <span class="brk-abs-bg-overlay brk-base-bg-primary-30"></span>
+
+        <div class="brk-swiper-default z-index-5 position-relative"
+             data-brk-swiper='{"autoplay": {"delay": 8000}}'
+             data-brk-library="slider__swiper">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-lg-8">
+                      <h3 class="font__family-montserrat font__weight-semibold font__size-18 line__height-20 brk-white-font-color letter-spacing-20 mb-10">UKRAINE</h3>
+                      <h2 class="font__family-montserrat font__weight-bold font__size-98 line__height-98 brk-white-font-color pb-20">Carpathian Mountains</h2>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <p class="brk-white-font-color font__size-16 line__height-28 pr-lg-40 mb-35 pt-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                      @@include("../buttons/templates/buttons.html",{
+                      "type": "btn-prime",
+                      "text": "check the offer",
+                      "customClass": "text-lowercase btn-prime-white-transparent border-radius-25 btn-no-shadow mx-0 my-0 btn-min-width-200 btn-prime_thin mb-20",
+                      "size": "md-2"
+                      })
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-lg-8">
+                      <h3 class="font__family-montserrat font__weight-semibold font__size-18 line__height-20 brk-white-font-color letter-spacing-20 mb-10">BULGARIA</h3>
+                      <h2 class="font__family-montserrat font__weight-bold font__size-98 line__height-98 brk-white-font-color pb-20">Bansko Ski Resort</h2>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <p class="brk-white-font-color font__size-16 line__height-28 pr-lg-40 mb-35 pt-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                      @@include("../buttons/templates/buttons.html",{
+                      "type": "btn-prime",
+                      "text": "check the offer",
+                      "customClass": "text-lowercase btn-prime-white-transparent border-radius-25 btn-no-shadow mx-0 my-0 btn-min-width-200 btn-prime_thin mb-20",
+                      "size": "md-2"
+                      })
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="brk-swiper-default-modern-arrow brk-swiper-default-nav-prev"></div>
+            <div class="brk-swiper-default-modern-arrow brk-swiper-default-nav-next"></div>
+          </div>
+        </div>
+
+        <div class="position-relative z-index-5" style="top: 120px;"> 
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 mb-20 text-center">
+                @@include("../flip-boxes/templates/gradient-card.html",{
+                  "img": "img/demo_winter_trip/370x320_3.jpg",
+                  "overlay": "brk-base-bg-primary-30",
+                  "btnType": "prime"
+                })
+              </div>
+              <div class="col-lg-4 mb-20 text-center">
+                @@include("../flip-boxes/templates/gradient-card.html",{
+                  "img": "img/demo_winter_trip/370x320_2.jpg",
+                  "title": "<span class='font__weight-bold'>Blossom:</span> The Best in Floral",
+                  "overlay": "brk-base-bg-primary-30",
+                  "btnType": "prime"
+                })
+              </div>
+              <div class="col-lg-4 mb-20 text-center">
+                @@include("../flip-boxes/templates/gradient-card.html",{
+                  "img": "img/demo_winter_trip/370x320_1.jpg",
+                  "title": "<span class='font__weight-bold'>The</span> Lyric Video Is Trending",
+                  "overlay": "brk-base-bg-primary-30",
+                  "btnType": "prime"
+                })
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-80 wow fadeInUp" id="about">
+      <div class="text-center mb-60">
+        @@include("../titles/templates/other-v6.html",{
+          "text": {
+            "main": "6th Season",
+            "main_customClass": "text-transform-none font__family-montserrat font__size-56 font__weight-bold",
+            "secondary": "We create best & popular <br> <span class='font__weight-extrabold'>winter festivals</span>",
+            "secondary_customClass": "text-transform-none font__size-56 line__height-50 font__family-montserrat font__weight-light brk-color-base-dark"
+          }
+        })
+      </div>
+      <div 
+        class="default-slider dots-rounded-skin pb-40" 
+        data-brk-library="slider__slick"
+        data-slick='{"dots": true, "autoplay": true, "autoplaySpeed": 3500}' data-brk-library="slider__slick" style="min-height: 660px">
+        <div>
+          <div class="container">
+            <div class="row brk-gutters-5 justify-content-center">
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_1.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30", 
+                  "overlay": "brk-base-bg-primary-80" 
+                })
+              </div>
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_2.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30", 
+                  "overlay": "brk-base-bg-primary-80" 
+                })
+              </div>
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_3.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30", 
+                  "overlay": "brk-base-bg-primary-80" 
+                })
+              </div>
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_4.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30",  
+                  "overlay": "brk-base-bg-primary-80"  
+                })
+              </div>
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_5.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30", 
+                  "overlay": "brk-base-bg-primary-80" 
+                })
+              </div>
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_6.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30", 
+                  "overlay": "brk-base-bg-primary-80" 
+                })
+              </div>
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_7.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30",
+                  "overlay": "brk-base-bg-primary-80"
+                })
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="container">
+            <div class="row brk-gutters-5 justify-content-center">
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_3.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30", 
+                  "overlay": "brk-base-bg-primary-80" 
+                })
+              </div>
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_7.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30", 
+                  "overlay": "brk-base-bg-primary-80" 
+                })
+              </div>
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_2.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30", 
+                  "overlay": "brk-base-bg-primary-80" 
+                })
+              </div>
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_5.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30",  
+                  "overlay": "brk-base-bg-primary-80"  
+                })
+              </div>
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_6.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30", 
+                  "overlay": "brk-base-bg-primary-80" 
+                })
+              </div>
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_4.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30", 
+                  "overlay": "brk-base-bg-primary-80" 
+                })
+              </div>
+              <div class="col-lg-3">
+                @@include("../portfolio-categories/templates/portfolio-categories-item.html",{ 
+                  "imgSrc" : "img/demo_winter_trip/280x280_1.jpg",
+                  "title": "Put a plan into action",
+                  "staticOverlay": "brk-base-bg-primary-30",
+                  "overlay": "brk-base-bg-primary-80"
+                })
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="mb-70 position-relative" id='reviews'>
+      @@include("../parallax/templates/corner.html",{
+        "img1": "img/demo_winter_trip/1920x1080_2.jpg",
+        "img2": "img/demo_winter_trip/1920x1080_1.jpg",
+        "btnType": "prime",
+        "staticOverlay1": "brk-base-bg-primary-30",
+        "staticOverlay2": "brk-base-bg-primary-30",
+        "overlay2": "brk-base-bg-primary-80",
+        "textBaseDark": "true",
+        "whiteColors": "true",
+        "customMargin": "mt-30",
+        "svg": "snow"
+      })
+    </section>
+
+    <section class="wow fadeInUp" id='office'>
+      <div class="text-center mb-40">
+        @@include("../titles/templates/other-v6.html",{
+          "text": {
+            "main": "Best Winter Rest",
+            "main_customClass": "text-capitalize font__family-montserrat font__size-56 font__weight-bold",
+            "secondary": "Latest <span class='font__weight-extrabold'>Photos</span>",
+            "secondary_customClass": "text-transform-none font__size-56 line__height-50 font__weight-light font__family-montserrat brk-color-base-dark"
+          }
+        })
+        <div class="maxw-770">
+          <p class="font__family-open-sans font__size-15 line__height-24 mt-30">
+            Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante. Etiam rhoncus. Maecenas tempus, tellus eget condimentum oncus, sem quam semper. 
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/demo_winter_trip/370x270_1.jpg",
+              "type":"animated",
+              "style1": "true"
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/demo_winter_trip/370x270_2.jpg",
+              "type":"animated",
+              "style1": "true"
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/demo_winter_trip/370x270_3.jpg",
+              "type":"animated",
+              "style1": "true"
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/demo_winter_trip/370x270_4.jpg",
+              "type":"animated",
+              "style1": "true"
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/demo_winter_trip/370x270_5.jpg",
+              "type":"animated",
+              "style1": "true"
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/demo_winter_trip/370x270_6.jpg",
+              "type":"animated",
+              "style1": "true"
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/demo_winter_trip/370x270_7.jpg",
+              "type":"animated",
+              "style1": "true"
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/demo_winter_trip/370x270_8.jpg",
+              "type":"animated",
+              "style1": "true"
+            })
+          </div>
+          <div class="col-lg-4">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/demo_winter_trip/370x270_9.jpg",
+              "type":"animated",
+              "style1": "true"
+            })
+          </div>
+        </div>
+        <div class="text-center pt-20 pb-80">
+          @@include('../buttons/templates/buttons-invert.html', {
+            "class": "icon__btn icon__btn-anim icon__btn-md icon__btn-invert",
+            "tag": "a",
+            "href": "#"
+          })
+        </div>
+      </div>
+    </section>
+
+    <section 
+      class="lazyload brk-bg-center-cover pt-70 pb-90 position-relative wow fadeInUp" 
+      data-bg="img/demo_winter_trip/1920x500_1.jpg"
+      id='team'>
+      <div class="brk-abs-bg-overlay brk-base-bg-primary-50"></div>
+      <div class="container">
+        <div class="text-center mb-30">
+          @@include("../titles/templates/other-v6.html",{
+            "text": {
+              "main": "New Year",
+              "main_colorByClass": "true",
+              "main_customClass": "font__family-montserrat font__size-56 font__weight-bold brk-text-white-10 text-transform-none",
+              "secondary": "Wait for a new year with us & <br> <span class='font__weight-extrabold'>our company</span>",
+              "secondary_customClass": "text-white text-transform-none font__family-montserrat font__weight-light font__size-56 line__height-50 brk-color-base-dark"
+            }
+          })
+        </div>
+        @@include("../countdown/templates/flip-2.html",{
+          "white": "true"
+        })
+      </div>
+    </section>
+
+    <section class="pt-60 pb-40 wow fadeInUp" id='contact'>
+      <div class="container">
+        <div class="text-center mb-80">
+          @@include("../titles/templates/other-v6.html",{
+            "text": {
+              "main": "Check it now",
+              "main_customClass": "text-transform-none font__family-montserrat font__size-56 font__weight-bold",
+              "secondary": "Popular Places <br> <span class='font__weight-extrabold'>& Countries to visit</span>", 
+              "secondary_customClass": "text-transform-none font__family-montserrat font__weight-light font__size-56 line__height-50 brk-color-base-dark"
+            }
+          })
+        </div>
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            @@include("../shape-box/templates/half-card.html",{
+              "img":"img/demo_winter_trip/270x430_1.jpg",
+              "icon": "svg",
+              "title":"Freeride",
+              "subtitle": "01",
+              "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat",
+              "overlay": "brk-base-bg-primary-30",
+              "btnType": "prime"
+            })
+          </div>
+          <div class="col-lg-3 text-center">
+            @@include("../shape-box/templates/half-card.html",{
+              "img":"img/demo_winter_trip/270x430_2.jpg",
+              "icon": "svg",
+              "title":"Moto",
+              "subtitle": "02",
+              "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat",
+              "overlay": "brk-base-bg-primary-30",
+              "btnType": "prime"
+            })
+          </div>
+          <div class="col-lg-3 text-center">
+            @@include("../shape-box/templates/half-card.html",{
+              "img":"img/demo_winter_trip/270x430_3.jpg",
+              "icon": "svg",
+              "title":"Ski School", 
+              "subtitle": "03",
+              "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat",
+              "overlay": "brk-base-bg-primary-30",
+              "btnType": "prime"
+            })
+          </div>
+          <div class="col-lg-3 text-center">
+            @@include("../shape-box/templates/half-card.html",{
+              "img":"img/demo_winter_trip/270x430_4.jpg",
+              "icon": "svg",
+              "title":"Photo",
+              "subtitle": "04",
+              "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat",
+              "overlay": "brk-base-bg-primary-30",
+              "btnType": "prime"
+            })
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-80 wow fadeInUp">
+      @@include("../timelines/templates/masonry.html",{
+        "img_1": "img/demo_winter_trip/240x240_1.jpg",
+        "img_2": "img/demo_winter_trip/320x240_1.jpg",
+        "img_3": "img/demo_winter_trip/240x290_1.jpg",
+        "img_4": "img/demo_winter_trip/320x240_2.jpg",
+        "img_5": "img/demo_winter_trip/240x240_1.jpg",
+        "img_6": "img/demo_winter_trip/320x240_1.jpg",
+        "img_7": "img/demo_winter_trip/240x290_1.jpg",
+        "imgOverlay": "brk-base-bg-primary-30",
+        "customClass": "pt-80 pb-20"
+      })
+    </section>
+
+    <section class="wow fadeInUp">
+      <div class="container">
+        @@include("../shop-components-row/templates/row-4.html",{
+          "img": "img/demo_winter_trip/1170x240_1.jpg",
+          "overlay": "brk-base-bg-primary-80"
+        })
+      </div>
+    </section>
+
+  </div>
+
+    @@include('../footer/templates/footer-16.html')
+
+    @@include('../../assets/templates/footer.html',{
+      "demo": "true"
+    })
+
+  </body> 

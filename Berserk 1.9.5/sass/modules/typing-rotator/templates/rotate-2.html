@@ -1,0 +1,17 @@
+<div class="text-center @@if(context.customClass){@@customClass}" data-brk-library="component__typing_rotator,assets__typing_rotator">
+  @@if(context.notAnimatedWord){
+    <h2 class="font__family-montserrat font__size-64 font__weight-bold text-uppercase show-inline">@@notAnimatedWord</h2>
+  }
+  <h2 class="brk-headline font__family-montserrat font__size-64 font__weight-bold text-uppercase letters rotate-2 text-center @@mask-class show-inline">
+    <span class="brk-words-rotators brk-base-font-color">
+      <b class="is-visible">@@Word1</b>
+      <b>@@Word2</b>
+      @@if(context.Word3){
+        <b>@@Word3</b>
+      }
+      @@if(context.Word4){
+        <b>@@Word4</b>
+      }
+    </span>
+  </h2>
+</div>

@@ -1,0 +1,129 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Magazine - Testimonials",
+"themeSkin": "brk-gray-yellow.css"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+
+@@include('../../modules/demo_magazine/templates/header.html', {})
+
+@@include('../../modules/breadcrumbs/templates/grayscale.html',{
+"bg": "img/demo_magazine/1920x195_1.jpg",
+"overlay": "brk-bg-black opacity-70",
+"title": "Testimonials"
+})
+<!-- /Header -->
+
+<h1 class="sr-only">Magazine - Testimonials</h1>
+
+<div class="container pt-70 pb-30">
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <div class="font__size-46 line__height-60">
+        <span class="font__family-playfair font__style-italic">Team</span>
+        <span class="font__family-montserrat font__weight-bold text-uppercase">Reviews</span>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="font__family-playfair font__size-18 line__height-24 brk-dark-font-color">Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus.</div>
+    </div>
+  </div>
+</div>
+
+<div class="pb-70">
+  @@include('../../modules/testimonials/templates/double.html', {
+  "slider_1_style": "double-dark-light",
+  "slider_1_bg": "img/demo_magazine/570x400_3.jpg",
+  "slider_1_people_1": "img/demo_magazine/86x86_3.jpg",
+  "slider_1_people_2": "img/demo_magazine/86x86_2.jpg",
+  "slider_1_people_3": "img/demo_magazine/86x86_4.jpg",
+  "slider_2_style": "double-dark",
+  "slider_2_bg": "img/demo_magazine/570x400_4.jpg",
+  "slider_2_people_1": "img/demo_magazine/86x86_1.jpg",
+  "slider_2_people_2": "img/demo_magazine/86x86_2.jpg"
+  })
+</div>
+
+<div class="bg-cover bg-norepeat bg-position_bottom-center position-relative pt-60 pb-60 lazyload" data-bg="img/demo_magazine/1920x556_1.jpg">
+  <div class="brk-layer brk-bg-black position-absolute opacity-70"></div>
+
+  <div class="container position-relative brk-z-index-10">
+    <div class="font__size-46 line__height-60 text-white mb-20">
+      <span class="font__family-playfair font__style-italic">Team</span>
+      <span class="font__family-montserrat font__weight-bold text-uppercase">Reviews</span>
+    </div>
+  </div>
+
+  <div class="position-relative brk-z-index-10">
+    @@include('../../modules/testimonials/templates/double.html', {
+    "slider_1_style": "double-white",
+    "slider_1_bg": "img/demo_magazine/570x400_2.jpg",
+    "slider_1_people_1": "img/demo_magazine/86x86_2.jpg",
+    "slider_1_people_2": "img/demo_magazine/86x86_3.jpg",
+    "slider_1_people_3": "img/demo_magazine/86x86_4.jpg",
+    "slider_2_style": "double-dark",
+    "slider_2_bg": "img/demo_magazine/570x400_1.jpg",
+    "slider_2_people_1": "img/demo_magazine/86x86_4.jpg",
+    "slider_2_people_2": "img/demo_magazine/86x86_2.jpg"
+    })
+  </div>
+</div>
+
+
+<div class="brk-bg-light-dark-2 pt-60 pb-40">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4 pb-20">
+        <div class="font__family-montserrat font__weight-bold font__size-36 line__height-42 text-uppercase text-center text-lg-left">Check our Professional skills</div>
+      </div>
+      <div class="col-lg-5 pb-20">
+        <div class="font__family-playfair font__size-18 line__height-24 brk-dark-font-color text-center text-lg-left">Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.
+        </div>
+      </div>
+      <div class="col-lg-3 text-lg-right text-center pb-20">
+        @@include('../../modules/buttons/templates/buttons.html',{
+        "type": "btn-inside-out",
+        "customClass": "border-radius-25 font__family-open-sans font__weight-bold m-0 mb-10",
+        "icon": "<i class=\"fab fa-linkedin-in icon-inside\"></i>",
+        "size": "lg",
+        "text": "Our Linkedin ",
+        "text_hover": "Our Linkedin "
+        })
+        @@include('../../modules/buttons/templates/buttons.html',{
+        "type": "btn-inside-out",
+        "customClass": "border-radius-25 btn-inside-out_dark font__family-open-sans font__weight-bold m-0 mb-10",
+        "icon": "<i class=\"fas fa-box-open icon-inside\"></i>",
+        "size": "lg",
+        "text": "Our Projects",
+        "text_hover": "Our Projects"
+        })
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+@@include('../../modules/social/templates/square.html', {
+  "img": "img/demo_magazine/1920x430_1.jpg",
+  "onlyLinks": "true",
+  "dark_theme": "true",
+  "customMargin": "mt-0 mt-lg-70",
+  "customClass": "pt-60 pb-60 pb-lg-0"
+})
+
+@@include('../../modules/footer/templates/footer-3.html', {
+"imgBg": "img/demo_magazine/1920x430_2.jpg",
+"bottomBarStyle": "brk-base-bg-6",
+"submitStyle": "brk-base-bg-6"
+})
+
+
+@@include("../../assets/templates/footer.html", {
+  "demo": "true"
+})
+
+
+
+</body>

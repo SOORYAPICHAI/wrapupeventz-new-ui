@@ -1,0 +1,46 @@
+<div class="extra__heading-3 @@if(context.customClass){@@customClass}" data-brk-library="component__title_section">
+  <div class="heading">
+    <h2 class="font__family-montserrat font__weight-ultralight font__size-40 text-uppercase">@@if(context.word1){@@word1} @@if(!context.word1){QUality}</h2>
+    <h2 class="font__family-montserrat font__weight-bold font__size-40 text-uppercase">@@if(context.word2){@@word2} @@if(!context.word2){Technology}
+      <br>
+      @@if(context.word3){@@word3}
+      @@if(!context.word3){
+      <span class="font__weight-ultralight">&</span> People
+      }
+    </h2>
+  </div>
+  <h2 class="font__family-montserrat font__weight-semibold letter-spacing-20 after-heading">
+    @@if(context.word4){@@word4} @@if(!context.word4){about}
+  </h2>
+  <p class="font__family-open-sans font__size-16 line__height-30">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+    dapibus in, viverra quis, feugiat a, tellus. </p> 
+  <a href="#" class="font__family-montserrat font__weight-medium font__size-13 text-uppercase text-blue link-icon mt-15 mb-30 d-flex align-items-center">Learn more
+    <i class="fas fa-long-arrow-alt-right ml-10"></i>
+  </a>
+  @@if(context.video === "true"){
+  <div class="row">
+    <div class="col-12 col-xl-6">
+      @@if(context.demo === "true"){
+        @@include('../../media-embeds/templates/html5.html',{
+          "info": "false",
+          "xs_button": "true",
+          "customClass": "border-radius-5 overflow-hid",
+          "large_shadow": "true",
+          "img": "img/200x113_1.jpg"
+        })
+      }
+      @@if(context.demo !== "true"){
+        @@include('../../media-embeds/templates/html5.html',{
+          "info": "false",
+          "xs_button": "true",
+          "customClass": "border-radius-5 overflow-hid",
+          "large_shadow": "true"
+        })
+      }
+    </div>
+  </div>
+  <p class="font__family-open-sans font__size-14 font__weight-light line__height-24 mt-15">
+     The Circle (2016): Camera Capabilities — 3:25 min. 
+  </p>
+  }
+</div>

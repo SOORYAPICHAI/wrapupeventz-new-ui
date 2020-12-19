@@ -1,0 +1,200 @@
+  @@include("../../assets/templates/head.html", {
+  "titlePage": "Shop Components Masonry"
+  })
+
+  </head>
+
+  <body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-100 mt-100 mt-md-130">
+
+      <section>
+        <div class="container mb-90">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">01</span> Container
+            </h3>
+          </div>
+        </div>
+
+          <div class="row no-gutters">
+            <div class="col-lg-6">
+              @@include('templates/masonry-1.html', {
+              "title": "Some Title Here",
+              "price": "$34",
+              "class": "brk-sc-masonry_main-640",
+              "background": "img/brk-sc-masonry-1.jpg"
+              })
+            </div>
+
+            <div class="col-lg-6">
+              <div class="row no-gutters">
+                <div class="col-lg-6">
+                  @@include('templates/masonry-1.html', {
+                  "title": "Some Title Here",
+                  "price": "$34",
+                  "class": "brk-sc-masonry_small-320",
+                  "background": "img/brk-sc-masonry-2.jpg"
+                  })
+                </div>
+                <div class="col-lg-6">
+                  @@include('templates/masonry-1.html', {
+                  "title": "Some Title Here",
+                  "price": "$34",
+                  "class": "brk-sc-masonry_small-320",
+                  "background": "img/brk-sc-masonry-3.jpg"
+                  })
+                </div>
+                <div class="col-12">
+                  @@include('templates/masonry-1.html', {
+                  "title": "Some Title Here",
+                  "price": "$34",
+                  "class": "brk-sc-masonry_small-320",
+                  "background": "img/brk-sc-masonry-4.jpg"
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+      <section>
+        <div class="container mb-90 mt-90">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">02</span> Container
+            </h3>
+          </div>
+        </div>
+
+        <div class="container">
+          @@include('templates/masonry-2.html', {})
+        </div>
+
+        <div class="text-center mt-35">
+          @@include('../buttons/templates/buttons.html',{
+          "type": "btn-inside-out btn-inside-out-invert",
+          "text": "All products",
+          "customClass": "btn-violet border-radius-5 font__family-montserrat font__weight-bold",
+          "icon": "<i class='fa fa-angle-right icon-inside icon-inline' aria-hidden='true'></i>"
+          })
+        </div>
+
+      </section>
+
+      <section>
+        <div class="container mb-100 mt-150">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">03</span> Container
+            </h3>
+          </div>
+        </div>
+
+        <div class="brk-bg-style-1 brk-base-bg-gradient-5 pt-80 pb-80" style="background-image: url(img/bg-1920_1.jpg)">
+          <div class="container" style="position: relative;z-index: 9">
+            <div class="row">
+              <div class="col-lg-6 pt-15 pb-15">
+                <div class="brk-swiper-default brk-sc-masonry-slider" data-brk-library="slider__swiper">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      @@loop('templates/masonry-3.html', [
+                      {
+                      "class": "swiper-slide brk-sc-masonry_long brk-sc-masonry_main-570",
+                      "thumb": "img/shop-masonry-5.png",
+                      "title": "Some T-shirt",
+                      "category": "Sport",
+                      "oldPrice": "$26.00",
+                      "price": "$24.00"
+                      },
+                      {
+                      "class": "swiper-slide brk-sc-masonry_long brk-sc-masonry_main-570",
+                      "thumb": "img/shop-masonry-5.png",
+                      "title": "Some T-shirt 2",
+                      "category": "Sport",
+                      "oldPrice": "$28.00",
+                      "price": "$21.50"
+                      },
+                      {
+                      "class": "swiper-slide brk-sc-masonry_long brk-sc-masonry_main-570",
+                      "thumb": "img/shop-masonry-5.png",
+                      "title": "Some T-shirt",
+                      "category": "Sport",
+                      "oldPrice": "$26.00",
+                      "price": "$24.00"
+                      },
+                      {
+                      "class": "swiper-slide brk-sc-masonry_long brk-sc-masonry_main-570",
+                      "thumb": "img/shop-masonry-5.png",
+                      "title": "Some T-shirt",
+                      "category": "Sport",
+                      "oldPrice": "$26.00",
+                      "price": "$24.00"
+                      }
+                      ])
+                    </div>
+                  </div>
+
+                  <div class="brk-swiper-default-pagination"></div>
+                  <div class="brk-swiper-default-nav brk-swiper-default-nav-prev"><i class="fa fa-angle-left"></i></div>
+                  <div class="brk-swiper-default-nav brk-swiper-default-nav-next"><i class="fa fa-angle-right"></i></div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="pt-15 pb-15">
+                  @@include('templates/masonry-3.html', {
+                  "class": "brk-sc-masonry_narrow brk-sc-masonry_small-270",
+                  "thumb": "img/shop-masonry-7.jpg",
+                  "title": "Some T-shirt",
+                  "category": "Sport",
+                  "price": "$24.00"
+                  })
+                </div>
+                <div class="pt-15 pb-15">
+                  @@include('templates/masonry-3.html', {
+                  "class": "brk-sc-masonry_narrow brk-sc-masonry_small-270",
+                  "thumb": "img/shop-masonry-7.jpg",
+                  "title": "Some T-shirt 2",
+                  "category": "Sport",
+                  "price": "$21.00"
+                  })
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="pt-15 pb-15">
+                  @@include('templates/masonry-3.html', {
+                  "class": "brk-sc-masonry_narrow brk-sc-masonry_main-570",
+                  "thumb": "img/shop-masonry-6.jpg",
+                  "title": "Some T-shirt",
+                  "category": "Sport",
+                  "price": "$67.00"
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+
+          @@include('../buttons/templates/buttons.html',{
+          "type": "btn-inside-out btn-inside-out-invert",
+          "text": "Show All",
+          "customClass": "btn-bottom-position border-radius-25 font__family-open-sans font__weight-bold",
+          "size": "md"
+          })
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+
+  </body>
+</html>

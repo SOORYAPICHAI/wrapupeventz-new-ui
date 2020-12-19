@@ -1,0 +1,2240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Site Title -->
+  <title>Berserk Documentation</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/brk-normalize.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/brk-header-elements.css">
+  <link rel="stylesheet" href="css/brk-blue.css">
+  <link rel="stylesheet" href="css/brk-base-color.css">
+
+  <link rel="stylesheet" href="vendor/highlight/styles/github.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-50 mt-70">
+
+
+      <div class="brk-header-mobile">
+        <div class="brk-header-mobile__open brk-header-mobile__open_white">
+          <span></span>
+        </div>
+        <div class="brk-header-mobile__logo">
+          <a href="#">
+            <img src="img/logo-2.png" alt="alt">
+          </a>
+        </div>
+      </div>
+      <header class="brk-header brk-header_style-2 brk-header_color-white brk-header_skin-2 d-flex flex-column" data-logo-src="img/logo-dark-2.png" data-bg-mobile="img/brk-bg-mobile-menu.jpg">
+        <div class="brk-header__main-bar brk-header_border-top order-lg-2 order-1" style="height: 94px;">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-lg-auto align-self-lg-center d-none d-lg-block">
+                <div class="text-left">
+                  <a href="#" class="brk-header__logo brk-header__item">
+                    <img class="brk-header__logo-1" src="img/logo-1.png" alt="alt">
+                    <img class="brk-header__logo-2" src="img/logo-dark-1.png" alt="alt">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-auto align-self-lg-stretch text-lg-center">
+                <nav class="brk-nav brk-header__item">
+                  <ul class="brk-nav__menu">
+                    <li class="brk-nav__children brk-nav__drop-down-effect">
+                      <a href="#project_structure">
+                        <span>Structure</span>
+                      </a>
+                      <ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+                        <li class="dd-effect">
+                          <a href="#project_structure">Project Structure</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#structure_html">HTML</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#structure_css">CSS</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#structure_js">JavaScript</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#async">Async Loader</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#skin">Skin Color</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#rtl">RTL</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#retina">Retina</a>
+                        </li>    
+                        <li class="dd-effect">
+                          <a href="#page-options">Page Options</a>
+                        </li>   
+                      </ul>
+                    </li>
+                    <li class="brk-nav__children brk-nav__drop-down-effect">
+                      <a href="#installation">
+                        <span>Installation</span>
+                      </a>
+                      <ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">                    
+                        <li class="dd-effect">
+                          <a href="#installation">Project Installation</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#howtostart">How to start?</a>
+                        </li>                  
+                        <li class="dd-effect">
+                          <a href="#updates">Updates</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#customizations">Customizations</a>
+                        </li> 
+                      </ul>
+                    </li>
+
+                    <li class="brk-nav__children brk-nav__drop-down-effect">
+                      <a href="main_elements.html">
+                        <span>Main Elements</span>
+                      </a>
+                      <ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+                        <li class="dd-effect">
+                          <a href="main_elements.html#headers">Headers</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="main_elements.html#footers">Footers</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="brk-nav__children brk-nav__full-width brk-nav__drop-down-effect">
+                      <a href="#elements">
+                        <span>Elements</span>
+                      </a>
+                      <div class="brk-nav__mega-menu brk-nav-drop-down">
+                        <div class="bg-white">
+                          <div class="row no-gutters">
+                            <div class="col-xl-2">
+                              <div class="brk-nav__header font__family-montserrat">ELEMENTS</div>
+                              <div class="brk-header_border-right pb-60 pt-20">
+                                <ul class="brk-header-list font__family-montserrat">
+                                  <li class="dd-effect">
+                                    <a href="elements.html#alerts">
+                                      <span class="brk-header-list__icon"><i class="fa fa-university" aria-hidden="true"></i> </span>Alerts</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#app_showcase">
+                                      <span class="brk-header-list__icon"><i class="fa fa-cube" aria-hidden="true"></i> </span>App</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#backgrounds">
+                                      <span class="brk-header-list__icon"><i class="far fa-gem" aria-hidden="true"></i> </span>Backgrounds</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#breadcrumbs">
+                                      <span class="brk-header-list__icon"><i class="fa fa-life-ring" aria-hidden="true"></i> </span>Breadcrumbs</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#buttons">
+                                      <span class="brk-header-list__icon"><i class="fa fa-male" aria-hidden="true"></i> </span>Buttons</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#cfa">
+                                      <span class="brk-header-list__icon"><i class="fa fa-sign-language" aria-hidden="true"></i> </span>Call for Actions</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#content_sliders">
+                                      <span class="brk-header-list__icon"><i class="fa fa-qrcode" aria-hidden="true"></i> </span>Content sliders</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-2">
+                              <div class="brk-nav__header font__family-montserrat">ELEMENTS</div>
+                              <div class="brk-header_border-right pb-60 pt-20">
+                                <ul class="brk-header-list font__family-montserrat">
+                                  <li class="dd-effect">
+                                    <a href="elements.html#countdown">
+                                      <span class="brk-header-list__icon"><i class="fa fa-university" aria-hidden="true"></i> </span>Countdown</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#counter">
+                                      <span class="brk-header-list__icon"><i class="fa fa-cube" aria-hidden="true"></i> </span>Counter</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#delimiters">
+                                      <span class="brk-header-list__icon"><i class="fa fa-id-card" aria-hidden="true"></i> </span>Delimiters</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#dividers">
+                                      <span class="brk-header-list__icon"><i class="fa fa-life-ring" aria-hidden="true"></i> </span>Dividers</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#flip_boxes">
+                                      <span class="brk-header-list__icon"><i class="fa fa-male" aria-hidden="true"></i> </span>Flip boxes</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#form_controls">
+                                      <span class="brk-header-list__icon"><i class="fa fa-tasks" aria-hidden="true"></i> </span>Form controls</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#google_maps">
+                                      <span class="brk-header-list__icon"><i class="fa fa-map" aria-hidden="true"></i> </span>Google maps</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#image_caption">
+                                      <span class="brk-header-list__icon"><i class="fa fa-sign-language" aria-hidden="true"></i> </span>Image caption</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-2">
+                              <div class="brk-nav__header font__family-montserrat">ELEMENTS</div>
+                              <div class="brk-header_border-right pb-60 pt-20">
+                                <ul class="brk-header-list font__family-montserrat">
+                                  <li class="dd-effect">
+                                    <a href="elements.html#image_frames">
+                                      <span class="brk-header-list__icon"><i class="fa fa-qrcode" aria-hidden="true"></i> </span>Image frames</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#image_map">
+                                      <span class="brk-header-list__icon"><i class="fa fa-university" aria-hidden="true"></i> </span>Image map</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#info_box">
+                                      <span class="brk-header-list__icon"><i class="fa fa-cube" aria-hidden="true"></i> </span>Info box</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#lists">
+                                      <span class="brk-header-list__icon"><i class="far fa-gem" aria-hidden="true"></i> </span>Lists</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#logo">
+                                      <span class="brk-header-list__icon"><i class="far fa-gem" aria-hidden="true"></i> </span>Logo</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#media_embeds">
+                                      <span class="brk-header-list__icon"><i class="fa fa-id-card" aria-hidden="true"></i> </span>Media embeds</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#pagination">
+                                      <span class="brk-header-list__icon"><i class="fa fa-life-ring" aria-hidden="true"></i> </span>Pagination</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#panels">
+                                      <span class="brk-header-list__icon"><i class="fa fa-male" aria-hidden="true"></i> </span>Panels</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-2">
+                              <div class="brk-nav__header font__family-montserrat">ELEMENTS</div>
+                              <div class="brk-header_border-right pb-60 pt-20">
+                                <ul class="brk-header-list font__family-montserrat">
+                                  <li class="dd-effect">
+                                    <a href="elements.html#parallax">
+                                      <span class="brk-header-list__icon"><i class="fa fa-tasks" aria-hidden="true"></i> </span>Parallax</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#parallax_video">
+                                      <span class="brk-header-list__icon"><i class="fa fa-sign-language" aria-hidden="true"></i> </span>Parallax video</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#pricing_tables">
+                                      <span class="brk-header-list__icon"><i class="fa fa-qrcode" aria-hidden="true"></i> </span>Pricing tables</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#progress_circles">
+                                      <span class="brk-header-list__icon"><i class="fa fa-university" aria-hidden="true"></i> </span>Progress circles</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#section_titles">
+                                      <span class="brk-header-list__icon"><i class="fa fa-cube" aria-hidden="true"></i> </span>Section titles</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#sequence">
+                                      <span class="brk-header-list__icon"><i class="far fa-gem" aria-hidden="true"></i> </span>Sequence</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#services">
+                                      <span class="brk-header-list__icon"><i class="fa fa-id-card" aria-hidden="true"></i> </span>Services</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#shape_box">
+                                      <span class="brk-header-list__icon"><i class="fa fa-male" aria-hidden="true"></i> </span>Shape box</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-2">
+                              <div class="brk-nav__header font__family-montserrat">ELEMENTS</div>
+                              <div class="brk-header_border-right pb-60 pt-20">
+                                <ul class="brk-header-list font__family-montserrat">
+                                  <li class="dd-effect">
+                                    <a href="elements.html#sliders">
+                                      <span class="brk-header-list__icon"><i class="fa fa-male" aria-hidden="true"></i> </span>Sliders</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#social">
+                                      <span class="brk-header-list__icon"><i class="fa fa-id-card" aria-hidden="true"></i> </span>Social</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#steps">
+                                      <span class="brk-header-list__icon"><i class="fa fa-cube" aria-hidden="true"></i> </span>Steps</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#tabbed_contents">
+                                      <span class="brk-header-list__icon"><i class="fa fa-sign-language" aria-hidden="true"></i> </span>Tabbed contents</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#tables">
+                                      <span class="brk-header-list__icon"><i class="fa fa-qrcode" aria-hidden="true"></i> </span>Tables</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#tabs">
+                                      <span class="brk-header-list__icon"><i class="far fa-gem" aria-hidden="true"></i> </span>Tabs</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#tags">
+                                      <span class="brk-header-list__icon"><i class="fa fa-tasks" aria-hidden="true"></i> </span>Tags</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#team">
+                                      <span class="brk-header-list__icon"><i class="fa fa-university" aria-hidden="true"></i> </span>Team</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-2">
+                              <div class="brk-nav__header font__family-montserrat">ELEMENTS</div>
+                              <div class="brk-header_border-right pb-60 pt-20">
+                                <ul class="brk-header-list font__family-montserrat">
+                                  <li class="dd-effect">
+                                    <a href="elements.html#team_member">
+                                      <span class="brk-header-list__icon"><i class="fa fa-tasks" aria-hidden="true"></i> </span>Team-member</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#testimonials">
+                                      <span class="brk-header-list__icon"><i class="fa fa-university" aria-hidden="true"></i> </span>Testimonials</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#tiles">
+                                      <span class="brk-header-list__icon"><i class="fa fa-male" aria-hidden="true"></i> </span>Tiles</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#timelines">
+                                      <span class="brk-header-list__icon"><i class="fa fa-life-ring" aria-hidden="true"></i> </span>Timelines</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#titles">
+                                      <span class="brk-header-list__icon"><i class="fa fa-id-card" aria-hidden="true"></i> </span>Titles</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#typing_rotator">
+                                      <span class="brk-header-list__icon"><i class="fab fa-adversal" aria-hidden="true"></i> </span>Typing rotator</a>
+                                  </li>
+                                  <li class="dd-effect">
+                                    <a href="elements.html#block_transition">
+                                      <span class="brk-header-list__icon"><i class="fab fa-adversal" aria-hidden="true"></i> </span>Blocks transition</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="brk-nav__children brk-nav__drop-down-effect">
+                      <a href="#plugins">
+                        <span>Plugins</span>
+                      </a>
+                      <ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+                        <li class="dd-effect">
+                          <a href="#page_builder">Page Builder</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#image_map_documentation">Image Map and Hotspots</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#revolution_slider">Revolution Slider</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#revolution_slider_builder">Revolution Slider Visual Editor</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#mailchimp">MailChimp</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#gmaps">Google Maps</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#recaptcha">ReCaptcha</a>
+                        </li>                        
+                      </ul>
+                    </li>
+
+                    <li class="brk-nav__children brk-nav__drop-down-effect">
+                      <a href="#support">
+                        <span>Support</span>
+                      </a>
+                      <ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+                        <li class="dd-effect">
+                          <a href="#support">Support Forum</a>
+                        </li>
+                        <li class="dd-effect">
+                          <a href="#frequently_used_classes">Frequently Used Classes</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-lg-auto align-self-lg-stretch text-lg-right">
+                <div class="brk-header__title font__family-montserrat font__weight-bold">Info</div>
+                <a href="https://themeforest.net/item/berserk-multipurpose-commerce-template-with-page-builder/22423538?ref=NikaDevs" class="btn btn-inside-out btn- brk-header__item brk-header__btn btn-sm-1 border-radius-25 font__family-open-sans font__weight-bold m-0">
+                  <span class="before">Buy now
+                    <span class="font__family-times-new-roman text-lowercase font__style-italic">for</span> 17$</span>
+                  <span class="text">Buy now
+                    <span class="font__family-times-new-roman text-lowercase font__style-italic">for</span> 17$</span>
+                  <span class="after">Buy now
+                    <span class="font__family-times-new-roman text-lowercase font__style-italic">for</span> 17$</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div style="background-image:url(img/header-1-2.jpg);background-repeat:no-repeat;background-position:center center;background-size: cover;height: 200px;"></div>
+
+
+
+
+
+
+        <div class="container">
+
+          <div class = "doc_block mt-5">
+            <h2 class = "mt-5 mb-3"  id = "project_structure">Project Structure</h2>
+
+            <p>The structure of the Berserk HTML template:</p>
+
+            <ul>
+              <li><b>css</b></li>
+                <ul>
+                  <li><b>assets</b> - all common styles used on the pages</li>
+                  <li><b>components</b> - styles for specific elements</li>
+                  <li><b>skins</b> - color styles</li>
+                </ul>
+              <li><b>img</b> - images for the project</li>
+              <li><b>js</b></li>
+                <ul>
+                  <li><b>assets</b> - all common scripts used on the pages</li>
+                  <li><b>components</b> - scripts for specific elements</li>
+                </ul>
+              <li><b>vendor</b> - additional libraries used on our project</li>
+            </ul>
+
+            <h2 class = "mb-3 mt-5" id = "structure_html">HTML</h2>
+
+            <p>The default page template, where you can replace the Page Title, Favicon, and put your CSS, JavaScript and the page content:</p> 
+
+            <pre><code class="html">&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html class=&#x22;brk-preloader&#x22; lang=&#x22;en&#x22; data-brk-skin=&#x22;brk-blue.css&#x22;&#x3E;
+&#x3C;head&#x3E;
+  &#x3C;title&#x3E;&#x3C;/title&#x3E;
+  &#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
+  &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width,height=device-height,initial-scale=1,maximum-scale=1&#x22;&#x3E;
+  &#x3C;meta name=&#x22;format-detection&#x22; content=&#x22;telephone=no&#x22;&#x3E;
+  &#x3C;link rel=&#x22;shortcut icon&#x22; href=&#x22;favicon.ico&#x22;&#x3E;
+  &#x3C;link rel=&#x22;apple-touch-icon-precomposed&#x22; href=&#x22;favicon.ico&#x22;&#x3E;
+  &#x3C;meta name=&#x22;theme-color&#x22; content=&#x22;#2775FF&#x22;&#x3E;
+  &#x3C;meta name=&#x22;keywords&#x22; content=&#x22;themeforest, theme, html, template&#x22;&#x3E;
+  &#x3C;meta name=&#x22;description&#x22; content=&#x22;themeforest, theme, html, template&#x22;&#x3E;
+  &#x3C;link rel=&#x22;stylesheet&#x22; id=&#x22;brk-direction-bootstrap&#x22; href=&#x22;css/assets/bootstrap.css&#x22;&#x3E;
+  &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://use.fontawesome.com/releases/v5.0.13/css/all.css&#x22; integrity=&#x22;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&#x22; crossorigin=&#x22;anonymous&#x22;&#x3E;
+  &#x3C;link id=&#x22;brk-base-color&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;css/skins/brk-base-color.css&#x22;&#x3E;
+  &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/offsets.css&#x22;&#x3E;
+  &#x3C;link id=&#x22;brk-css-min&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/styles.min.css&#x22;&#x3E;
+
+  [-- CSS -- ]
+
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+  &#x3C;div class = &#x22;builder-page&#x22;&#x3E;
+  &#x3C;/div&#x3E;
+
+  [-- CONTENT -- ]
+
+  [-- JAVASCRIPT -- ]
+
+  &#x3C;script src=&#x22;js/scripts.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;</code></pre>
+
+            <p>In our template we have used Bootstrap 4, here you can read more about this library: <a href = "https://getbootstrap.com/docs/4.1/layout/overview/" target="_blank">https://getbootstrap.com/docs/4.1/layout/overview/</a></p>
+
+            <h2 class = "mt-5 mb-3" id = "structure_css">CSS</h2>
+
+            <p>Code of css styles which used on all our pages, so it should be at the head tag on each page:</p>
+            <pre><code>&#x3C;link rel=&#x22;stylesheet&#x22; id=&#x22;brk-direction-bootstrap&#x22; href=&#x22;css/assets/bootstrap.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://use.fontawesome.com/releases/v5.0.13/css/all.css&#x22; integrity=&#x22;sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp&#x22; crossorigin=&#x22;anonymous&#x22;&#x3E;
+&#x3C;link id=&#x22;brk-base-color&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;css/skins/brk-base-color.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/offsets.css&#x22;&#x3E;
+&#x3C;link id=&#x22;brk-css-min&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/styles.min.css&#x22;&#x3E;</code></pre>
+
+            <p>Detailed explanation for what these files are:</p>
+            <ul>
+              <li><b>FontAwesome fonts</b> - these icons used on all our pages, but if you removed them, or decide to use another library, then you can remove/replace with another fonts</li>
+              <li><b>css/skins/brk-base-color.css</b> - main styled file</li>
+              <li><b>css/skins/brk-blue.css</b> - or any other skin file which you preffer</li>
+              <li><b>css/styles.min.css</b> - all common, compiled styles for this demo. <b>css/assets/unminimized/styles.css</b> - not minified of this file. This file contain:
+                <ul>
+                  <li><b>css/assets/styles/brk-header-elements.css</b> - Header</li>
+                  <li><b>css/assets/styles/brk-preloader.css</b> - Preloader</li>
+                  <li><b>css/assets/styles/block-visibility.css</b> - Required</li>
+                  <li><b>css/assets/styles/text-align.css</b> - Required</li>
+                  <li><b>css/assets/styles/brk-normalize.css</b> - Required</li>
+                  <li><b>css/assets/styles/style.css</b> - Required</li>
+                  <li><b>css/assets/styles/type-styles.css</b> - Required</li>
+                  <li><b>css/assets/styles/text-style.css</b> - Required</li>
+                  <li><b>css/assets/styles/controls.css</b> - Form Controls</li>
+                  <li><b>css/components/accordions.css</b> - Very oftenly used</li>
+                  <li><b>css/components/tabs.css</b> - Very oftenly used</li>
+                  <li><b>css/components/buttons.css</b> - Very oftenly used</li>
+                  <li><b>css/components/pricing-tables.css</b> - Very oftenly used</li>
+                  <li><b>css/components/testimonials.css</b> - Very oftenly used</li>
+                  <li><b>css/components/CFA.css</b> - Very oftenly used</li>
+                  <li><b>css/components/form-controls.css</b> - Very oftenly used</li>
+                  <li><b>css/components/flip-boxes.css</b> - Very oftenly used</li>
+                  <li><b>css/components/elements.css</b> - Very oftenly used</li>
+                  <li><b>css/components/footer.css</b> - Very oftenly used</li>
+                  <li><b>css/components/image-map.css</b> - Very oftenly used</li>
+                  <li><b>css/components/media-embeds.css</b> - Very oftenly used</li>
+                  <li><b>vendor/normalize/css/normalize.css</b> - Required library</li>
+                  <li><b>vendor/animate/css/animate.min.css</b> - Animation plugin</li>
+                  <li><b>vendor/fancybox/css/jquery.fancybox.min.css</b> - FancyBox plugin</li>
+                </ul>
+              </li>
+              <li>Other files under the root of the CSS folder - these files used by Revolution Slider and also there can be more styles required by other plugings.</li>
+            </ul>
+            <p>If you wish more control and customizations then you can replace this line:</p>
+            <pre><code>&#x3C;link id=&#x22;brk-css-min&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/styles.min.css&#x22;&#x3E;</code></pre>
+            <p>with styles which this file contain, so you will be able to edit them or remove not used in your project:</p>
+            <pre><code>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/styles/brk-header-elements.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/styles/brk-preloader.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/styles/block-visibility.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/styles/text-align.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/styles/brk-normalize.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/styles/style.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/styles/type-styles.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/styles/text-style.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/assets/styles/controls.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/components/accordions.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/components/tabs.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/components/buttons.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/components/pricing-tables.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/components/testimonials.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/components/CFA.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/components/form-controls.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/components/flip-boxes.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/components/elements.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/components/footer.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/components/image-map.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/components/media-embeds.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;vendor/normalize/css/normalize.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;vendor/animate/css/animate.min.css&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;vendor/fancybox/css/jquery.fancybox.min.css&#x22;&#x3E;</code></pre>
+            <p>If files have been minimized, then in that folder you will find the <b>unminimized</b> folder, which contain the same files, but without compression.</p>
+
+            <h2 class = "mt-5 mb-3" id = "structure_js">JavaScript</h2>
+
+            <p>Code of JS files which used on all our pages, so it should be at the end of the body tag on each page:</p>
+            <pre><code class="html">&#x3C;script src=&#x22;js/scripts.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</code></pre>
+
+
+            <p>Detailed explanation for what these files are:</p>
+            <ul>
+              <li><b>js/scripts.min.js</b> - all common, compiled scripts for this demo. In this folder you can find the <b>scripts.js</b> - not minified of this file. This file contain:
+                <ul>
+                  <li><b>vendor/jquery/js/jquery.min.js</b> - jQuery Library</li>
+                  <li><b>vendor/popper/js/popper.min.js</b> - Popper</li>
+                  <li><b>vendor/bootstrap/js/bootstrap.min.js</b> - Bootstrap</li>
+                  <li><b>vendor/waypoints/js/jquery.waypoints.min.js</b> - WayPoints</li>
+                  <li><b>vendor/wow/js/wow.min.js</b> - Wow animation</li>
+                  <li><b>vendor/uiToTop/js/jquery.ui.totop.min.js</b> - ToTop button functionality</li>
+                  <li><b>vendor/unveilhooks/js/ls.unveilhooks.min.js</b> - Required by LazySizes</li>
+                  <li><b>vendor/lazysizes/js/lazysizes.min.js</b> - Lazy loading script for images</li>
+                  <li><b>vendor/formStyler/js/jquery.formstyler.min.js</b> - Form Styler script</li>
+                  <li><b>js/assets/berserk.js</b> - Template customizations</li>
+                  <li><b>js/assets/brk-header.js</b> - Header</li>
+                  <li><b>js/components/accordions.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/tabs.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/buttons.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/form-controls.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/media-embeds.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/image-map.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/footer.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/portfolio-masonry.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/progress-bars.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/portfolio-rows.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/steps.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/parallax-video.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/counter.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/sliders.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/breadcrumbs.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/info-box.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/shop-components-tiles.js</b> - Very oftenly used component</li>
+                  <li><b>js/components/blog-page.js</b> - Very oftenly used component</li>
+                </ul>
+              </li>
+            </ul>
+
+            <p>If you wish more control and customizations then you can replace this line:</p>
+            <pre><code>&#x3C;script src=&#x22;js/scripts.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</code></pre>
+            <p>with scripts which this file contain, so you will be able to edit them or remove not used in your project:</p>
+            <pre><code>&#x3C;script src=&#x22;vendor/jquery/js/jquery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendor/popper/js/popper.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendor/bootstrap/js/bootstrap.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendor/waypoints/js/jquery.waypoints.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendor/wow/js/wow.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendor/uiToTop/js/jquery.ui.totop.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendor/unveilhooks/js/ls.unveilhooks.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendor/lazysizes/js/lazysizes.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;vendor/formStyler/js/jquery.formstyler.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/assets/berserk.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/assets/brk-customizer.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/assets/brk-header.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/accordions/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/tabs/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/buttons/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/form-controls/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/media-embeds/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/image-map/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/footer/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/portfolio-masonry/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/progress-bars/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/portfolio-rows/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/steps/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/parallax-video/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/counter/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/sliders/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/breadcrumbs/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/info-box/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/shop-components-tiles/main.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;js/components/blog-page/main.js&#x22;&#x3E;&#x3C;/script&#x3E;</code></pre>
+
+            <p>If files have been minimized, then in that folder you will find the <b>unminimized</b> folder, which contain the same files, but without compression.</p>
+
+          </div>
+
+          <div class = "doc_block mb-5 mt-5" id = "async">
+            
+            <h2 class = "mt-5 mb-3">Async Loader</h2>
+
+            <p>All our components are using their own set of CSS and JavaScript files, which grouped to libraries. Lets check how it works on the <b>Alerts</b> example. If you check the first line of this element, then you will notice <b>data-brk-library</b> attribute:</p> 
+
+            <pre><code>&#x3C;div data-brk-library=&#x22;component__alert&#x22; class=&#x22;alert alert-clean fade alert-primary alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light show&#x22; role=&#x22;alert&#x22;&#x3E;</code></pre>
+
+            <p>This is mean that then a page will be loaded, our script will search for all elements with this attribute, after this try to search for such library in our berserk.js file (or in the scripts.js file if you are using original compressed version) and will add all required CSS and JS files. List of used files you can find on the <a href = "elements.html" target = "_blank">documentation</a> for each element.</p>
+            <p>If for some reason you wish to change the source folder path then you need to override the <b>Berserk.settings.project_prefix</b> variable and type your project path. This variable also can be found on the berserk.js file (or in the scripts.js). For example this is how it could looks: </p>
+            <pre><code>Berserk.settings.project_prefix = '/your/custom/project/path/';</code></pre>
+            <p>You can avoid this method and add all CSS and JS files manually, but for this you also need to remove the data-brk-library attribute on the element. If you wish to deeper inspect this async method, then please open the <b>js\assets\unminimized\berserk.js</b> file and find the line <b>var libraries = </b> which contains all libraries and their dependencies.</p>
+
+          </div>
+
+          <div class = "doc_block mb-5 mt-5" id = "installation">
+            
+            <h2 class = "mt-5 mb-3">Installation</h2>
+
+            <p>After you download your website template from ThemeForest and make all of your edits you're going to need to upload the files to your web server. You will need an FTP client such as TotalCommander or FileZilla. In your FTP client add your server details (get this from your web host provider) and then you can connect to your server and upload your files. After this your website should work correctly.</p> 
+
+          </div>
+
+          <div class = "doc_block mb-5 mt-5" id = "howtostart">
+            
+            <h2 class = "mt-5 mb-3">How to start?</h2>
+
+            <p>You can edit project in 2 ways:</p> 
+            <ul>
+              <li>
+                <b>Manual HTML editing</b> - This method is most flexible, because gives you the 100% control at the project, but you need to be familiar with HTML, CSS and JS. In this case you don't need <b>novi</b> folder, and you can upload to your server all folders except this one. After this you can create a new empty page and add our elements from the pages which you like and edit it, or you can use our original pages and just edit them - this is preferred way, because we worked hard to make the pages looks great and well balanced. In this method you can leave only the pages which you like and remove the not used.
+              </li>
+              <li>
+                <b>Page Builder using</b> - You can use the builder which is placed in the <b>novi</b> folder. It allow you to easily add any elements on the page and edit the images, text, links and other attributes. Unfortunately the builder doesn't allow you to edit any HTML attributes, like some sliders or dynamic blocks, but you can use buil-it HTML, CSS and JavaScript editor to behave this. Please read the documentation about this editor, so you will be able to use it on full power. Once you completed the project configuration, then you can download the archive with project and upload it to the server, or you can edit it directly on the server and just configure the Publish path, so the project will be saved to your server home directory. This is described more detailed in the <a href = "http://novibuilder.com/documentation/" target="_blank">Page Builder Documentaion</a>.
+              </li>
+            </ul>
+
+          </div>
+
+          <div class = "doc_block mb-5 mt-5" id = "updates">
+            
+            <h2 class = "mt-5 mb-3">Updates</h2>
+
+            <p>You have lifetime free updates of this template, which can be downloaded from the themerest.com -> Downloads section. Don't forgot to make backup of your live website before applying any updates. You need to replace all folders and files which placed on the template archive, especially make sure that /css /js /vendor folders are updated. Sometimes it will be required to update also the HTML structure, so if some of your edited element is stopped working then compare it structure with structure at our live website: <a href = "http://html.berserk.nikadevs.com/" target="_blank">http://html.berserk.nikadevs.com/</a>.</p> 
+
+          </div>
+
+          <div class = "doc_block mb-5 mt-5" id = "customizations">
+            
+            <h2 class = "mt-5 mb-3">Customizations</h2>
+
+            <p>We strongly recommend to add your own CSS and JS code customizations as separated files and add them to the project via LINK and SCRIPT tag. The suggested css file name is /css/custom.css. The suggested JS filename is /js/custom.js. In this case you will be able to easily update the folder under the /css and /js folder there is our scripts and styles a stored. Don't forgot to add your CSS file at the end of styles list or to add !important suffix, so your styles will override our own. In our JS files we are used behaviors - this is helpful functions which can be easily overriden. Just copy the entire required block of the code, didn't change the Behaviors object function name and update the function body code as you need. In this case your code will override our function and will be used instead.</p> 
+
+          </div>
+
+          <div class = "doc_block mb-5 mt-5" id = "skin">
+            
+            <h2 class = "mt-5 mb-3">Skin Color</h2>
+
+            <p>In raw html version we used the <b>CSS Variables</b> for color controls. This is mean that you can easily change the website colors in one place and you can even test how it will looks before, right in the browser development console.</p>
+            <p>All predefined skin files placed in the <b>/css/skins</b> folder, so if you wish to change your skin to another then you can change path to this file in your project, or connect required file after all other CSS files, so it will override previous settings.</p>
+            <p>For example this file after all CSS files will change color skin to the Green skin: </p>
+            <pre><code>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/skins/brk-green.css&#x22;&#x3E;</code></pre>
+
+            <p>The Page Builder currently doesn't support CSS Variables, because they are still waiting for approvements from W3C. So we used the previous stable method for this: css variables were replaced with their real values and all css files stored in their own folders, which you can find on the <b>novi\projects\template\css\</b> folder. So if you wish to change the skin file, then you should edit the folder name on the line 16</p>
+            <pre><code>&#x3C;link id=&#x22;brk-base-color&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;css/brk-blue/skins/brk-base-color.css&#x22;&#x3E;</code></pre>
+            <p>for example to this: </p>
+            <pre><code>&#x3C;link id=&#x22;brk-base-color&#x22; rel=&#x22;stylesheet&#x22; href=&#x22;css/brk-green/skins/brk-base-color.css&#x22;&#x3E;</code></pre>
+
+          </div>
+
+          <div class = "doc_block mb-5 mt-5" id = "rtl">
+            
+            <h2 class = "mt-5 mb-3">RTL</h2>
+
+            <p>To make your website in RTL mode you need to make next steps:</p>
+            <ul>
+              <li>Add <b>dir = "rtl"</b> attribute to the html tag</li>
+              <li>Replace the <b>css\assets\bootstrap.css</b> file with <b>css\assets\bootstrap-rtl.css</b></li>
+              <li>Replace the <b>css\assets\offsets.css</b> file with <b>css\assets\offsets-rtl.css</b></li>
+            </ul> 
+            <p>If you are not familiar with the RTL mode, then this usually mean that it doesn't need you. More information about this you can read here : <a href = "https://en.wikipedia.org/wiki/Right-to-left" target="_blank">https://en.wikipedia.org/wiki/Right-to-left</a></p>
+
+          </div>
+
+          <div class = "doc_block mb-5 mt-5" id = "retina">
+            
+            <h2 class = "mt-5 mb-3">Retina</h2>
+
+            <p>To make your image retina ready you should use <b>data-srcset</b> attribute instead of <b>data-src</b>, so instead of this: </p>
+
+            <pre><code class="html">&#x3C;img data-src=&#x22;image.jpg&#x22; class=&#x22;lazyload&#x22;&#x3E;</code></pre>
+
+            <p>you need to use this type of code:</p>
+
+            <pre><code class="html">&#x3C;img data-srcset=&#x22;responsive-image1.jpg 1x, responsive-image2.jpg 2x&#x22; class=&#x22;lazyload&#x22;&#x3E;</code></pre>
+
+            <p>If you are using a background image, then instead of <b>data-bg</b> attribute you should use <b>data-bgset</b>, so instead of this: </p>
+
+            <pre><code class="html">&#x3C;div class=&#x22;lazyload&#x22; data-bg=&#x22;img/1170x562_2.jpg&#x22;&#x3E;&#x3C;/div&#x3E;</code></pre>
+
+            <p>you need to use this type of code:</p>
+
+            <pre><code class="html">&#x3C;div class=&#x22;lazyload&#x22; data-bgset=&#x22;img/1170x562_1.jpg 1x, img/2240x1104_1.jpg 2x&#x22;&#x3E;&#x3C;/div&#x3E;</code></pre>
+
+            <p>This structure is used because our website implements the lazyload script, which is reduce the amount of requests to your server and loads images only then users scroll to them. This also speed up the website loading time.</p>
+
+
+          </div>
+
+          <div class = "doc_block mb-5 mt-5" id = "page-options">
+            
+            <h2 class = "mt-5 mb-3">Page options</h2>
+
+            <h4 class = "mt-3 mb-3">Preloader</h4>
+
+            <p>The preloader will be showed on the page if HTML tag has class <b>brk-preloader</b>: </p>
+
+            <pre><code class="html">&#x3C;html class=&#x22;brk-preloader&#x22; lang=&#x22;en&#x22; data-brk-skin=&#x22;brk-pink-purple.css&#x22;&#x3E;</code></pre>
+
+            <p>To change the preloader to your custom image, just upload and replace the original file <b>img/page-preloader.gif</b></p>
+
+          </div>
+
+
+          <div class = "doc_block mb-5 mt-5">
+            
+            <h2 class = "mt-5 mb-3">Elements</h2>
+
+            <p>Elements documentations <a href="elements.html">check here</a></p> 
+
+          </div>
+
+          <!-- Plugins section -->
+
+          <div class = "doc_block mb-5 mt-5" id = "plugins">
+            
+            <h2 class = "mt-5 mb-3">Plugins</h2>
+
+            <p>Berserk coming with a list of premium plugins for free. You can check theirs documentation below. These plugins can be used in your current project, but not allowed to use on anothers.</p> 
+
+          </div>
+
+
+          <div class = "doc_block mb-5 mt-5" id = "page_builder">
+            
+            <h2 class = "mt-5 mb-3">Page Builder</h2>
+
+            <p>Berserk coming page builder, called Novi Builder. The project imported and configured with this builder can be found in the /novi folder inside the berserk archive.</p>
+            <p>If you wish to use Page Builder then you should work with this folder, and configure the builder to publish the project in the required folder on your server.</p>
+            <p>Before working with this builder please check the documentation: <a href = "http://novibuilder.com/documentation/" target="_blank">http://novibuilder.com/documentation/</a></p> 
+            <p>The default password: <b>novi</b> </p>
+            <p>Some helpful instructions for our template:</p>
+            <ul>
+              <li>If you wish to edit the front side of the element which have 2 position: front side and back side for hover, then just make double click by left button of the mouse on any element area.</li>
+            </ul>
+
+          </div>
+
+          <div class = "doc_block mb-5 mt-5" id = "image_map_documentation">
+            
+            <h2 class = "mt-5 mb-3">Image Map and Hotstpots</h2>
+
+            <p>The elements on the "Image Map" section were created with the help of this plugin, plus our custom CSS coding. Before working with this plugin please check the documentation: <a href = "plugins\image_map\index.html" target="_blank">plugins\image_map\index.html</a></p> 
+
+          </div>
+
+
+          <div class = "doc_block mb-5 mt-5" id = "revolution_slider">
+            
+            <h2 class = "mt-5 mb-3">Revolution Slider</h2>
+
+            <p>The sliders on the homepages handled by Revolution Slider plugin. Before working with this plugin please check the online documentation: <a href = "https://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/" target="_blank">https://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/</a></p> 
+
+          </div>
+
+
+          <div class = "doc_block mb-5 mt-5" id = "revolution_slider_builder">
+            
+            <h2 class = "mt-5 mb-3">Revolution Slider Visual Editor</h2>
+
+            <p>This plugin allows you to easily create a new Revolutoins Plugins without a coding. Before working with this plugin please check the documentation: <a href = "plugins/revolution_slider_visual_editor/index.html" target="_blank">plugins/revolution_slider_visual_editor/index.html</a></p>
+
+            <p>You can download all our sliders exports on this page: <a href="https://drive.google.com/open?id=1dROYpDSA8xMcrSBLAVf_eQibvB6lMGkJ" target="_blank">https://drive.google.com/open?id=1dROYpDSA8xMcrSBLAVf_eQibvB6lMGkJ</a> After this </p>
+
+            <p>Once you installed the Revolution Slider Visual Editor, you have to download the HTML Revolution Slider archive and extract it. After this use the file addon-visual-editor\visual-editor-extension.zip for activating it manually (push the button "Manual Installation" on the "Visual Editor Addon Enabling & Actionation). The process showed on this video: <a href = "https://www.youtube.com/watch?v=O2FDYoWj5_Q" target="_blank">https://www.youtube.com/watch?v=O2FDYoWj5_Q</a></p>
+
+          </div>
+
+          <div class = "doc_block mb-5 mt-5" id = "mailchimp">
+            
+            <h2 class = "mt-5 mb-3">MailChimp</h2>
+
+            <p>Berserk forms integrated with MailChimp service. If you didn't familiar with it, then you can start from this article: <a href = "https://mailchimp.com/resources/" target="_blank">Mail Chimp Learning Resources</a></p> 
+            <p>Once you configured your MailChimp account, then you need to edit the subscriber.php file in our berserk root directory and fill out the fields with MailChimp key and MailChimp list Id:</p>
+            <p><img src = "img/mailchimp.png" alt = "MailChimp"></p>
+
+          </div>
+
+          <div class = "doc_block mb-5 mt-5" id = "google_maps">
+            
+            <h2 class = "mt-5 mb-3">Google Maps</h2>
+
+            <p>To use the Maps Embed API, you must register your app project on the Google Cloud Platform Console and get a Google API key which you can add to your app or website. To get your key, please check this page: <a href = "https://developers.google.com/maps/documentation/embed/get-api-key" target="_blank">https://developers.google.com/maps/documentation/embed/get-api-key</a></p> 
+            <p>Once you configured your Google Maps account, then you need to replace the minimized <b>js/scripts.min.js</b> with <b>js/scripts.js</b>. After this open this file and search for the Berserk.settings.gmap_api_key variable. Usually it's placed near the line 40. Type in this variable your google maps api key, so it will looks like: </p>
+            <p><code><pre>Berserk.settings.gmap_api_key = "BYzaSyCSzRKxiq0GL_aWvND_lYwciIe4moNzNMY";</pre></code></p>
+
+          </div>
+
+          <div class = "doc_block mb-5 mt-5" id = "recaptcha">
+            
+            <h2 class = "mt-5 mb-3">Recaptcha</h2>
+
+            <p>To use the Google ReCaptcha, you must register your app project on the Google reCAPTCHA service page. The reCAPTCHA v3 returns a score for each request without user friction. The score is based on interactions with your site and enables you to take fine-grained action. Register reCAPTCHA v3 keys <a href = "https://g.co/recaptcha/v3" target="_blank">here</a>.</p> 
+            <p>Once you configured your Google reCAPTCHA v3 account, then you need to replace the minimized <b>js/scripts.min.js</b> with <b>js/scripts.js</b>. After this open this file and search for the Berserk.settings.recaptcha_api_key variable. Usually it's placed near the line 41. Type in this variable your google maps api key, so it will looks like: </p>
+            <p><code><pre>Berserk.settings.recaptcha_api_key = "REzaSyCSzRKxiq0GL_aWvND_lYwciIe4moNzNMY";</pre></code></p>
+            <p>After this open the <b>php/subscribe.php</b> file and type your reCAPTCHA secret key in the <b>$secretKey</b> variable which is usually placed on the line 9, so it will looks like:</p>
+            <p><code><pre>$secretKey = "9Faru5QQBGHTTExjV7mfo_dEDo-12nEne7D7IchX";</pre></code></p>
+
+          </div>
+          <!-- END of Plugins section -->
+
+
+          <!-- Support Section -->
+
+          <div class = "doc_block mb-5 mt-5" id = "support">
+            
+            <h2 class = "mt-5 mb-3">Support Forum</h2>
+
+            <p>This template coming with 6 months free support. If you didn't find answer on this documentation or you have a problem with website which should be fixed, then please post at ticket on our forum <a href = "http://nikadevs.ticksy.com/" target="_blank">http://nikadevs.ticksy.com/</a>. Keep in mind what the support doesn't cover the template customizations or custom work.</p> 
+
+          </div>
+
+          <h2 id = "frequently_used_classes" class = "mt-5 mb-4">Frequently Used Classes</h2>
+
+          <table class="brk-base-class table table-bordered mb-5">
+            <thead>
+              <tr>
+                <th>Base Class</th>
+                <th>Demonstration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code>brk-base-font-color</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display brk-base-font-color">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-dark-font-color</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display brk-dark-font-color">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-black-font-color</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display brk-black-font-color">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-dark-blur-font-color</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display brk-dark-blur-font-color">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-white-font-color , text-white</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-white-font-color">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-white-font-color-opacity-4</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-white-font-color-opacity-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-box-shadow
+                    <br>box-shadow-base</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display brk-base-box-shadow">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-box-shadow-primary</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display brk-base-box-shadow-primary">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-box-shadow-inset
+                    <br> (inset bottom shadow)
+                  </code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display brk-base-box-shadow-inset">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-box-shadow-inset-2
+                    <br>(inset top shadow)
+                  </code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display brk-base-box-shadow-inset-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-light
+                  </code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display brk-base-bg-light">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>scrollbar</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display scrollbar">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <code>brk-bt-color</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display border-example brk-bt-color">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <code>brk-br-color</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display border-example brk-br-color">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <code>brk-bb-color</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display border-example brk-bb-color">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <code>brk-bl-color</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display border-example brk-bl-color">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <code>brk-bl-color-2</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display border-example brk-bl-color">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <code>scrollbar-range</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display brk-bg-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>image-popup-gradient (:after)</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display image-popup-gradient display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-1</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-1 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-2</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-2 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-3</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-3 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-brighter</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-brighter display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-10deg</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-10deg display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-90deg</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-90deg display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient--30deg</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient--30deg display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-bottom</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-bottom display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-top</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-top display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-right-no-opacity</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-right-no-opacity display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-left-no-opacity</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-left-no-opacity display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-50deg</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-50deg display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-50deg-a</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-50deg-a display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-50deg-opacity-28</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-50deg-opacity-28 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-0deg-a</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-0deg-a display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-50deg-b</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-50deg-b display-reset">
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <code>brk-bg-gradient-40deg-72</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-bg-gradient-40deg-72 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-bg-gradient-40deg-92</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-bg-gradient-40deg-92 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-bg-gradient-40deg-80</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-bg-gradient-40deg-80 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-bg-gradient-40deg-85-28</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-bg-gradient-40deg-85-28 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-bg-gradient-40deg-60</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-bg-gradient-40deg-60 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-bg-gradient-10deg-92</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-bg-gradient-10deg-92 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-bg-gradient-80deg-92</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-bg-gradient-80deg-92 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-light-gradient-90deg-94</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-light-gradient-90deg-94 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-light-gradient-0deg-100</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-light-gradient-0deg-100 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-bg-alt-gradient-90deg-92</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-bg-alt-gradient-90deg-92 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+
+              <!--  -->
+              <!--  -->
+              <!--  -->
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-10deg</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-10deg display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-90deg</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-90deg display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-90deg-96</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-90deg-96 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient--30deg</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient--30deg display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient--30deg-96</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient--30deg-96 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-50deg</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-50deg display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-50deg-92</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-50deg-92 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <!--  -->
+              <!--  -->
+              <!--  -->
+
+
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-1</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-1 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-3</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-3 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-4</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-4 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-5</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-5 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-13</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-13 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-14</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-14 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-15</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-15 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-sc-tiles-split-gradient</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-sc-tiles-split-gradient display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-sc-tiles-row-gradient-right-1</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-sc-tiles-row-gradient-right-1 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-bg-color</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-bg-color display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-10deg</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-10deg display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-50deg</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-50deg display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-50deg-a</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-50deg-a display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-50deg-b</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-50deg-b display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-right</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-right display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-gradient-persone-table</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-gradient-persone-table display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-bottom</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-bottom display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-bg-grad
+                    <br>brk-parallax__bg-gradient
+                    <br>brk-parallax__bg-gradient-md</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-bg-grad display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-20</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-20 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-bg-primary</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-bg-primary display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-bg-primary-opacity</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-bg-primary-opacity display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-left-blue</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-left-blue display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-right-bottom</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-right-bottom display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-right</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-right display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-3</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-3 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-post-brick-gradient-1</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-post-brick-gradient-1 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-post-brick-gradient-2</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-post-brick-gradient-2 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-8</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-8 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-bottom-blue</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-bottom-blue display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-11</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-11 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-12</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-12 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-16</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-16 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-2</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-2 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-6-black</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-6-black display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-7-transperent</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-7-transperent display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-8</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-8 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-9</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-9 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-10</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-10 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-17</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-17 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-18</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-18 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-19</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-19 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-white-transparent</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-white-transparent display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-post-brick-gradient-3</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-post-brick-gradient-3 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-pink-purple</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-pink-purple display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-green</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-green display-reset">
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <code>brk-base-bg-yellow</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-yellow display-reset">
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <code>brk-base-bg-light-dark</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-light-dark display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-4</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-4 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-5</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-5 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-6</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-6 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-7</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-7 display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-chevron</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-chevron display-reset">
+
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <code>brk-base-bg-gradient-chevron-pseudo</code>
+                </td>
+                <td style="background-image: url(img/bg-12.jpg)">
+                  <div class="brk-base-class__display brk-base-bg-gradient-chevron-pseudo display-reset">
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>
+                    font__family-open-sans
+                    <br> font__family-montserrat
+                    <br> font__family-montserrat-alt
+                    <br> font__family-playfair
+                    <br> font__family-poppins
+                    <br> font__family-pacifico
+                    <br> font__family-roboto
+                    <br> font__family-roboto-slab
+                    <br> font__family-oxygen
+                    <br> font__family-times-new-roman
+                  </code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display font__family-montserrat">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                  <div class="brk-base-class__display font__family-playfair">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                  <div class="brk-base-class__display font__family-oxygen">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>
+                    (100) font__weight-thin
+                    <br> (200) font__weight-ultralight
+                    <br> (300) font__weight-light
+                    <br> (400) font__weight-normal
+                    <br> (500) font__weight-medium
+                    <br> (600) font__weight-semibold
+                    <br> (700) font__weight-bold
+                    <br> (800) font__weight-extrabold
+                  </code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display font__weight-thin">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                  <div class="brk-base-class__display font__weight-medium">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                  <div class="brk-base-class__display font__weight-bold">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>
+                    font__size- (10-124)
+                  </code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display ">
+                    <span class="font__size-10">aA</span>
+                    <span class="font__size-12">aA</span>
+                    <span class="font__size-13">aA</span>
+                    <span class="font__size-14">aA</span>
+                    <span class="font__size-15">aA</span>
+                    <span class="font__size-16">aA</span>
+                    <span class="font__size-17">aA</span>
+                    <span class="font__size-18">aA</span>
+                    <span class="font__size-19">aA</span>
+                    <span class="font__size-21">aA</span>
+                    <span class="font__size-24">aA</span>
+                    <span class="font__size-25">aA</span>
+                    <span class="font__size-26">aA</span>
+                    <span class="font__size-28">aA</span>
+                    <span class="font__size-30">aA</span>
+                    <span class="font__size-34">aA</span>
+                    <span class="font__size-36">aA</span>
+                    <span class="font__size-38">aA</span>
+                    <span class="font__size-40">aA</span>
+                    <span class="font__size-42">aA</span>
+                    <span class="font__size-46">aA</span>
+                    <span class="font__size-48">aA</span>
+                    <span class="font__size-56">aA</span>
+                    <span class="font__size-58">aA</span>
+                    <span class="font__size-64">aA</span>
+                    <span class="font__size-72">aA</span>
+                    <span class="font__size-78">aA</span>
+                    <span class="font__size-82">aA</span>
+                    <span class="font__size-96">aA</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>font__style-italic
+                    <br>font__style-normal</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display font__style-italic font__size-16">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                  <div class="brk-base-class__display font__style-normal font__size-16">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos voluptas facilis harum minima consectetur sunt. Velit,
+                    consectetur fuga at?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>
+                    letter-spacing--100
+                    <br> letter-spacing-20
+                    <br> letter-spacing-40
+                    <br> letter-spacing-60
+                    <br> letter-spacing-100
+                    <br> letter-spacing-200
+                    <br> letter-spacing-300
+                  </code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display ">
+                    <span class="letter-spacing--100 font__size-16">Lorem ipsum dolor.</span>
+                    <span class="letter-spacing-20 font__size-16">Lorem ipsum dolor.</span>
+                    <span class="letter-spacing-40 font__size-16">Lorem ipsum dolor.</span>
+                    <span class="letter-spacing-60 font__size-16">Lorem ipsum dolor.</span>
+                    <span class="letter-spacing-100 font__size-16">Lorem ipsum dolor.</span>
+                    <span class="letter-spacing-200 font__size-16">Lorem ipsum dolor.</span>
+                    <span class="letter-spacing-300 font__size-16">Lorem ipsum dolor.</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>
+                    line__height-21
+                    <br> line__height-22
+                    <br> line__height-24
+                    <br> line__height-26
+                    <br> line__height-28
+                    <br> line__height-30
+                    <br> line__height-32
+                    <br> line__height-34
+                    <br> line__height-40
+                    <br> line__height-42
+                    <br> line__height-44
+                    <br> line__height-46
+                    <br> line__height-50
+                    <br> line__height-52
+                    <br> line__height-60
+                    <br> line__height-68
+                    <br>
+                  </code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display ">
+                    <div class="line__height-21">Lorem ipsum dolor.</div>
+                    <div class="line__height-22">Lorem ipsum dolor.</div>
+                    <div class="line__height-24">Lorem ipsum dolor.</div>
+                    <div class="line__height-26">Lorem ipsum dolor.</div>
+                    <div class="line__height-28">Lorem ipsum dolor.</div>
+                    <div class="line__height-30">Lorem ipsum dolor.</div>
+                    <div class="line__height-32">Lorem ipsum dolor.</div>
+                    <div class="line__height-34">Lorem ipsum dolor.</div>
+                    <div class="line__height-40">Lorem ipsum dolor.</div>
+                    <div class="line__height-42">Lorem ipsum dolor.</div>
+                    <div class="line__height-44">Lorem ipsum dolor.</div>
+                    <div class="line__height-46">Lorem ipsum dolor.</div>
+                    <div class="line__height-50">Lorem ipsum dolor.</div>
+                    <div class="line__height-52">Lorem ipsum dolor.</div>
+                    <div class="line__height-60">Lorem ipsum dolor.</div>
+                    <div class="line__height-68">Lorem ipsum dolor.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>img-icon</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display ">
+                    .img-icon {
+                    <br> &nbsp;&nbsp;max-width: 100%;
+                    <br> &nbsp;&nbsp;max-height: 100%;
+                    <br> &nbsp;&nbsp;width: auto;
+                    <br> &nbsp;&nbsp;height: auto;
+                    <br> }
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>centering-child-img
+                    <br>centering-img</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display ">
+                    .centering-child-img img,
+                    <br>.centering-img {
+                    <br> &nbsp;&nbsp;position: absolute;
+                    <br> &nbsp;&nbsp;top: 0;
+                    <br> &nbsp;&nbsp;bottom: 0;
+                    <br> &nbsp;&nbsp;left: 0;
+                    <br> &nbsp;&nbsp;right: 0;
+                    <br> &nbsp;&nbsp;margin: auto;
+                    <br> }
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>brk-lightning-effect</code>
+                </td>
+                <td>
+                  <div class="brk-base-class__display brk-base-class__display_noafter">
+                    <span class="brk-lightning-effect font__size-21 text-uppercase">Lorem ipsum dolor</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+        </div>
+
+    </main>
+
+  </div>
+
+  <footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script src="vendor/highlight/highlight.pack.js"></script>
+    <script src="js/brk-header.js"></script>
+    <script src="js/global.js"></script>
+
+  </footer>
+
+</body>
+
+</html>

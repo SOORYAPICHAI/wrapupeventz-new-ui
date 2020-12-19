@@ -1,0 +1,157 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Content Sliders"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+  @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+    <section>
+    	<div class="container mb-100">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">01</span> Rounded
+    			</h3>
+    		</div>
+    	</div>
+
+    	<div class="container mb-140">
+				@@include('./templates/rounded.html', {})
+    	</div>
+    </section>
+ 
+		<section>
+			<div class="container mb-100">
+				<div class="text-left">
+					<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+						<span class="heading__number">02</span> Strict
+					</h3>
+				</div>
+			</div>
+      <div class="mb-140">
+        @@include("../team/templates/strict.html")
+      </div>
+		</section>
+
+    <section>
+    	<div class="container mb-100">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">03</span> Sqaure
+    			</h3>
+    		</div>
+    	</div>
+
+    	<div class="container mb-140">
+		  @@include("templates/sqaure.html")
+    	</div>
+    </section>
+
+    <section>
+    	<div class="container mb-100">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">04</span> Shop window
+    			</h3>
+    		</div>
+    	</div>
+
+    	<div class="container mb-80">
+		  @@include("templates/shop-window.html")
+    	</div>
+    </section>
+
+    <section>
+    	<div class="container mb-100">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">05</span> Setout
+    			</h3>
+    		</div>
+    	</div>
+
+    	<div class="container mb-140">
+		  @@include("templates/setout.html")
+    	</div>
+    </section>
+
+    <section  class="mb-140">
+    	<div class="container mb-100">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">06</span> Rotation Slider
+    			</h3>
+    		</div>
+    	</div>
+
+    	<div class="container">
+        @@include('./templates/rotation-slider.html')
+    	</div>
+    </section>
+
+    <section>
+    	<div class="container mb-100">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">07</span> Landscape
+    			</h3>
+    		</div>
+    	</div>
+
+    	<div class="container mb-140">
+		  @@include("templates/landscape.html")
+    	</div>
+    </section>
+
+    <section>
+    	<div class="container mb-100">
+    		<div class="text-left">
+    			<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+    				<span class="heading__number">08</span> Filmstrip
+    			</h3>
+    		</div>
+    	</div>
+
+			<div class="mb-140">
+			  @@include('./templates/filmstrip.html', {})
+			</div>
+    </section>
+
+		<section class="mb-140">
+			<div class="container mb-100">
+				<div class="text-left">
+					<h3 class="font__family-montserrat font__size-28 font__weight-bold">
+						<span class="heading__number">09</span> Angle Slider
+					</h3>
+				</div>
+			</div>
+
+			<div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            @@include('templates/angle-slider.html')
+          </div>
+          <div class="col-lg-4">
+            @@include('templates/angle-slider.html')
+          </div>
+          <div class="col-lg-4">
+            @@include('templates/angle-slider.html')
+          </div>
+        </div>
+			</div>
+		</section>
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Company Services"
+})
+
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+  @@include('../header-1/templates/style-header-1.html', {
+    "logo_1": "img/logo-1.png",
+    "logo_2": "img/logo-color-1.png",
+    "white": "true",
+    "only_header": "true"
+  })
+
+  <div class="main-wrapper">
+    <main class="main-container">
+      @@include('../breadcrumbs/templates/thin.html')
+
+      <section class="pt-80 pb-80 pb-lg-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="mb-40 mt-30">
+                @@include('../titles/templates/massive.html',{
+                  "text": {
+                    "main": "Our Skills ready",
+                    "secondary": "For you"
+                  }
+                })
+              </div>
+              <p class="brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-30">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Aenean vulputate eleifend tellus. </p>
+
+              @@include('../buttons/templates/buttons.html',{
+                "type": "btn-inside-out",
+                "text": "read more",
+                "customClass": "ml-0 btn-shadow border-radius-25 btn-min-width-200"
+              })
+            </div>
+            <div class="col-12 col-lg-6">
+              @@include('../image-frames/templates/double-images.html',{
+                "img2":"img/540x370_1.jpg",
+                "img1":"img/370x540_1.jpg"
+              })
+            </div>
+          </div>
+          <div class="overflow-hid position-static position-lg-relative" style="top: -80px">
+            <svg width="1920" height="1" version="1.1" xmlns="http://www.w3.org/2000/svg" class="mb-45">
+              <line stroke-dasharray="5, 5" x1="0" y1="1" x2="1920" y2="1" stroke="var(--brand-primary)" stroke-width="1"></line>
+            </svg>
+            <h2 class="font__family-montserrat font__size-28 line__height-32 text-uppercase mb-35"><span class="font__weight-light">Make business</span> <span class="font__weight-bold">with us</span></h2>
+            <p class="brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-20">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim
+            </p>
+            <p class="brk-dark-font-color font__size-16 font__weight-normal line__height-26">
+              Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      @@include('../steps/templates/gradient-v2.html')
+
+      <section class="pt-100 pb-100">
+        <div class="text-center">
+          <h2 class="font__family-montserrat font__size-56 font__weight-bold line__height-60 mb-20">Our Services</h2>
+          <p class="brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-80">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat <br> vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in</p>
+        </div>
+        <div class="mb-70">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                @@include('../flip-boxes/templates/gradient-card.html',{
+                  "img":"img/370x370_1.jpg",
+                  "overlay":"brk-base-bg-1",
+                  "title":"<span class='font__weight-bold'>Why</span> Creators Are Turning...",
+                  "paragraph":"Because a glance is all people tend to offer nowadays, videos, pictures, and graphics are now the most relied upon ways..."
+                })
+              </div>
+              <div class="col-lg-4">
+                @@include('../flip-boxes/templates/gradient-card.html',{
+                  "img":"img/370x370_2.jpg",
+                  "overlay":"brk-base-bg-gradient-right-bottom",
+                  "title":"<span class='font__weight-bold'>Blossom:</span> The Best in Floral",
+                  "paragraph":"Flowers are one of Mother Nature's most beautiful gifts. Not only are they a source of natural beauty..."
+                })
+              </div>
+              <div class="col-lg-4">
+                @@include('../flip-boxes/templates/gradient-card.html',{
+                  "img":"img/370x370_3.jpg",
+                  "overlay":"brk-base-bg-2",
+                  "title":"<span class='font__weight-bold'>The</span> Lyric Video Is Trending",
+                  "paragraph":"You've just heard the newest hit song. Next step: learn the words so you don't embarrass yourself again by mumbling..."
+                })
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          @@include("../cfa/templates/minimal.html",{
+            "customClass":"dark-shadow mb-50",
+            "title":"CFA Heading",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor nean massa. Cum sociis natoque penatibus et magnis dis parturient mnsectetes.",
+            "btnText":"Read More"
+          })
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-8">
+              <p class="font__family-montserrat font__size-24 font__weight-light line__height-34 mb-35">Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.</p>
+              <p class="font__family-montserrat font__size-24 font__weight-light line__height-34 mb-30">
+                  Curabitur ligula sapien, tincidunt non, euismod vitae, posuere
+              </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <h3 class="font__family-montserrat font__weight-bold font__size-21 line__height-24 mb-20 mt-2">How to hire me?</h3>
+              <p class="brk-dark-font-color font__size-16 line__height-26 font__style-italic">Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis. Sed consequat, leo eget bibendum sodales.</p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      @@include('../social/templates/square.html',{
+        "title_type": "bold",
+        "overlay": "brk-light-gradient-90deg-94",
+        "customClass": "pt-90"
+      })
+
+      <section class="pt-130 pb-90">
+        <div class="container">
+          @@include('../media-embeds/templates/html5.html',{
+            "inner": "true",
+            "customClass": "mb-80",
+            "overlay": "false",
+            "img": "img/1170x647_1.jpg"
+          })
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <h3 class="font__family-montserrat font__size-56 line__height-60 mb-25"><span class="font__weight-thin">Our Best</span> <br> <span class="font__weight-bold">Skills</span></h3>
+              <p class="brk-dark-font-color font__size-16 line__height-26 mb-30">
+                  Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. 
+                  Quisque rutrum. Aenean imperdiet. 
+              </p>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-12 col-lg-6">
+                @@include("../progress-bars/templates/gradient.html",{
+                  "valueCur":"100",
+                  "title":"Hard Work",
+                  "customClass": "mt-30"
+                })
+                @@include("../progress-bars/templates/gradient.html",{
+                  "valueCur":"80",
+                  "title":"Projects Delivery"
+                })
+                @@include("../progress-bars/templates/gradient.html",{
+                  "valueCur":"90",
+                  "title":"Customers Love"
+                })
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+ 
+  @@include("../../assets/templates/footer.html",{
+    "customClass": "pt-0"
+  })
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<!--
+option-1: btn__primary font__family-open-sans font__weight-bold border-radius-25 invert open
+
+option-2: btn__white font__family-open-sans font__weight-light border-radius-25 open
+-->
+<ul class="btn__dropdown_wrap @@if(context.class){@@class}@@if(!context.class){btn__primary font__family-open-sans font__weight-bold border-radius-25 invert}" data-brk-library="component__button">
+  @@for (var i = 0; i < arrItem.length; i++) {
+    <li class="btn__dropdown_item">
+      <button class="btn btn__dropdown_btn">`+arrItem[i]+`</button>
+    </li>
+  }
+</ul>

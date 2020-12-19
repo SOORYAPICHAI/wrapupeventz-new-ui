@@ -1,0 +1,50 @@
+
+	<div class="container z-index-high">
+		<div class="maxw-770">
+			<div class="embed-responsive embed-responsive-16by9 border-radius-30 video-wrap" data-embed="https://www.youtube.com/embed/6v2L2UGZJAM">
+				<div class="overlay-image lazyload" @@if(!context.poster){data-bg="img/770x433_1.jpg"} @@if(context.poster){data-bg="@@poster"}>
+					<a href="#" class="icon__btn icon__btn-anim icon__btn-lg">
+						<span class="before"></span>
+						<i class="fa fa-play" aria-hidden="true"></i>
+						<span class="after"></span>
+          </a>
+          @@if(context.poster_overlay){
+            <div class="brk-abs-bg-overlay @@poster_overlay"></div>
+          }
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cfa__wrapper cfa__video @@if(context.style1 === 'true'){cfa__video_style-1} brk-bg-center-cover lazyload @@if(context.title !== 'true'){all-light}"
+	     data-bg="@@if(context.img){@@img}@@if(!context.img){img/bg-1920_1.jpg}" data-brk-library="component__call_to_action"> 
+		<div class="container">
+      @@if(context.title === "true"){
+        @@if(context.title_type === "other_v6"){
+          <div class="text-center">
+          @@include("../../titles/templates/other-v6.html",{
+            "text": {
+              "main": "Tour Program",
+              "main_colorByClass": "true",
+              "main_customClass": "font__family-montserrat font__size-56 font__weight-bold brk-text-white-10 text-transform-none",
+              "secondary": "More <span class='font__weight-extrabold'>Info</span>",
+              "secondary_customClass": "text-white text-transform-none font__family-montserrat font__weight-light font__size-56 line__height-50"
+            }
+          })
+          </div>
+
+        }
+      }
+      @@if(context.cfa !== "false"){
+        <div class="maxw-770">
+          <h4 class="font__family-montserrat font__size-24 font__weight-bold text-uppercase border-left">Call for action
+            Block heading title</h4>
+            <a href="#" class="btn btn-md border-radius-25 font__family-open-sans font__weight-bold btn-inside-out  btn-inside-out-invert" data-brk-library="component__button">
+              <span class="before">Read More</span>
+              <span class="text">Read More</span>
+              <span class="after">Read More</span>
+            </a>
+          </div>
+        }
+		</div>
+		<span class="brk-abs-bg-overlay @@if(context.overlay){@@overlay}@@if(!context.overlay){brk-base-bg-gradient-14 opacity-90}"></span>
+	</div>

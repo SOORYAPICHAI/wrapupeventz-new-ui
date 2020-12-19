@@ -1,0 +1,54 @@
+<div class="dash-one-slider swiper-container" data-brk-library="component__testimonials,slider__swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="brk-testimonials-dash-one">
+        <div class="brk-testimonials-dash-one__info">
+          <div class="brk-testimonials-dash-one__img">
+            <img src="@@if(context.img_1){@@img_1}@@if(!context.img_1){img/people/pexels-photo-262391.jpeg}" alt="alt">
+          </div>
+          @@include('../../elements/templates/rating.html', {
+          "value": "80%"
+          })
+          <h4 class="font__family-montserrat font__weight-bold">Mark Donavant</h4>
+          <span class="brk-testimonials-dash-one__position font__family-open-sans">SEO Digity</span>
+        </div>
+        <div class="brk-testimonials-dash-one__description font__family-open-sans text-center text-lg-left">For many small business owners and
+          entrepreneurs, popular apps like Uber and Snapchat are sources of inspiration. It's easy to see the appeal of
+          mobile apps: they can provide a direct connection between businesses and their customers, encouraging
+          engagement by providing new services and perks.
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="brk-testimonials-dash-one">
+        <div class="brk-testimonials-dash-one__info">
+          <div class="brk-testimonials-dash-one__img">
+            <img src="@@if(context.img_2){@@img_2}@@if(!context.img_2){img/people/pexels-photo-274595.jpeg}" alt="alt">
+          </div>
+          @@include('../../elements/templates/rating.html', {
+          "value": "80%"
+          })
+          <h4 class="font__family-montserrat font__weight-bold">Lora Mi</h4>
+          <span class="brk-testimonials-dash-one__position font__family-open-sans">Web Design</span>
+        </div>
+        <div class="brk-testimonials-dash-one__description font__family-open-sans text-center text-lg-left">From the war room to the battlefield,
+          the world was continually blowing up around Diana Prince. Yet Diana, aka Wonder Woman, never lost focus on why
+          she left the safety of Themyscira for war-torn Europe: to stop the evil Ares and end the war. No matter what
+          got in her way, no matter how often her path was blocked, she didn't stop.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-modern-arrow">
+    <div class="button-prev"><i class="fa fa-angle-left"></i></div>
+    <div class="button-next"><i class="fa fa-angle-right"></i></div>
+  </div>
+
+  <button class="brk-testimonials-dash-one__btn btn btn-lg border-radius-30 font__family-open-sans font__weight-bold btn-inside-out">
+    <span class="before">All Reviews</span>
+    <span class="text">All Reviews</span>
+    <span class="after">All Reviews</span>
+  </button>
+</div>

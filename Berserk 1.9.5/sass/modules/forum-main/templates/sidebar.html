@@ -1,0 +1,69 @@
+<div class="brk-sidebar brk-sidebar_right">
+    <h3 class="brk-sidebar__title brk-dark-font-2 font__family-montserrat font__size-21 font__weight-bold line__height-22">
+        Statistics
+    </h3>
+
+    <div class="brk-tabs brk-tabs_forum brk-tabs-hovers" data-index="0">
+        <ul class="brk-tabs-nav font__family-open-sans">
+            <a href="#" class="brk-tab">
+                <span class="brk-tab__number brk-base-font-color font__size-24 font__weight-bold mr-10">12</span>
+                <span class="brk-dark-font font__size-16 font__weight-normal brk-tab__title">Members</span>
+                <span class="brk-tab__icon">
+                    <i class="fa fa-angle-right"></i>
+                </span>
+            </a>
+            <a href="#" class="brk-tab current">
+                <span class="brk-tab__number brk-base-font-color font__size-24 font__weight-bold mr-10">112</span>
+                <span class="brk-dark-font font__size-16 font__weight-normal brk-tab__title">Threads</span>
+                <span class="brk-tab__icon ">
+                    <i class="fa fa-angle-right"></i>
+                </span>
+            </a>
+            <a href="#" class="brk-tab">
+                <span class="brk-tab__number brk-base-font-color font__size-24 font__weight-bold mr-10">18</span>
+                <span class="brk-dark-font font__size-16 font__weight-normal brk-tab__title">Replies</span>
+                <span class="brk-tab__icon">
+                    <i class="fa fa-angle-right"></i>
+                </span>
+            </a>
+        </ul>
+    </div>
+
+    <h3 class="brk-sidebar__title brk-dark-font-2 font__family-montserrat font__size-21 font__weight-bold line__height-22">
+        Categories
+    </h3>
+    <div class="pt-10 pl-10 mb-15">
+        @@include('category-with-circle.html',{
+            "bg-color-class":"brk-bg-blue",
+            "category-name":"Job Posting",
+            "customClass":"mb-10"
+        })
+        @@include('category-with-circle.html',{
+            "bg-color-class":"brk-bg-green",
+            "category-name":"Getting Started",
+            "customClass":"mb-10"
+        })
+        @@include('category-with-circle.html',{
+            "bg-color-class":"brk-bg-cyan",
+            "category-name":"Question?",
+            "customClass":"mb-10"
+        })
+        @@include('category-with-circle.html',{
+            "bg-color-class":"brk-bg-orange",
+            "category-name":"Feature",
+            "customClass":"mb-10"
+        })
+        @@include('category-with-circle.html',{
+            "bg-color-class":"brk-bg-brown",
+            "category-name":"Ideas",
+            "customClass":""
+        })
+    </div>
+    <h3 class="brk-sidebar__title brk-dark-font-2 font__family-montserrat font__size-21 font__weight-bold line__height-22">
+        Our instagram
+    </h3>
+
+    @@include('../../header-1/templates/instagram-carousel.html') 
+    
+ 
+</div>

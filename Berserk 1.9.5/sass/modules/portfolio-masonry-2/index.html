@@ -1,0 +1,69 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Portfolio Masonry 2"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+  <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+  <main class="main-container mb-50 mt-100 mt-md-130">
+
+    <section>
+      <div class="container">
+
+        <div class="brk-grid" data-grid-cols='3' data-grid-cols-tablet='3' data-brk-library="component__portfolio_masonry-2">
+          <div class="brk-grid__sizer"></div>
+          <div class="brk-grid__item">
+            @@include("../portfolio-isotope/templates/card-2.html",{
+            "masonry":"true",
+            "img":"img/400x400_1.jpg"
+            })
+          </div>
+          <div class="brk-grid__item brk-grid__item_height-2">
+            @@include("../portfolio-isotope/templates/card-2.html",{
+            "masonry":"true",
+            "img":"img/400x800_1.jpg"
+            })
+          </div>
+          <div class="brk-grid__item">
+            @@include("../portfolio-isotope/templates/card-2.html",{
+            "masonry":"true",
+            "img":"img/400x400_2.jpg"
+            })
+          </div>
+          <div class="brk-grid__item">
+            @@include("../portfolio-isotope/templates/card-2.html",{
+            "masonry":"true",
+            "img":"img/400x400_3.jpg"
+            })
+          </div>
+
+          <div class="brk-grid__item brk-grid__item_height-2">
+            @@include("../portfolio-isotope/templates/card-2.html",{
+            "masonry":"true",
+            "img":"img/400x800_1.jpg"
+            })
+          </div>
+          <div class="brk-grid__item brk-grid__item_width-2">
+            @@include("../portfolio-isotope/templates/card-2.html",{
+            "masonry":"true",
+            "img":"img/800x400_1.jpg"
+            })
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+
+@@include("../../assets/templates/footer.html")
+
+</body>
+
+</html>

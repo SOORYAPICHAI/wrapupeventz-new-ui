@@ -1,0 +1,24 @@
+<div class="brk-sc-tiles-images lazyload
+@@if(context.style){@@style}
+@@if(!context.style){brk-sc-tiles-images_style-1}
+@@if(context.dark === "true"){brk-sc-tiles-images_dark}"
+     data-bg="@@if(context.bgImage){@@bgImage}" data-brk-library="component__shop_tiles">
+  <div class="brk-sc-tiles-images__content">
+    <h4 class="brk-sc-tiles-images__title font__family-montserrat text-uppercase">
+      @@if(context.title){@@title}
+    </h4>
+    <span class="brk-sc-tiles-images__year font__family-montserrat font__weight-bold">
+      @@if(context.year){@@year}
+    </span>
+
+    <div class="brk-sc-tiles-images__text font__family-oxygen font__weight-light">
+      @@if(context.text){@@text}
+    </div>
+
+    @@include('../../buttons/templates/buttons.html',{
+    "type": "@@if(context.typeButtons){@@typeButtons}@@if(!context.typeButtons){btn-gradient}",
+    "text": "@@if(context.textButtons){@@textButtons}@@if(!context.textButtons){Read more}",
+    "customClass": "brk-sc-tiles-images__btn border-radius-30 font__family-open-sans font__weight-bold pl-50 pr-50 @@if(context.customClassButton){@@customClassButton}"
+    })
+  </div>
+</div>

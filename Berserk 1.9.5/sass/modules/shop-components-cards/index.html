@@ -1,0 +1,181 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Shop Components Cards"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+  <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+  <main class="main-container mb-50 mt-70">
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">01</span> Simple
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+        <div class="row">
+          <div class="col-3">
+              @@include('./templates/simple.html',{
+                "imgSrc":"img/shop/shop-win-5.png" 
+              })
+            </div>
+            <div class="col-3">
+              @@include('./templates/simple.html',{
+                "imgSrc":"img/shop/shop-win-1.jpg" 
+              })
+            </div>
+            <div class="col-3">
+              @@include('./templates/simple.html',{
+                "imgSrc":"img/shop/shop-win-2.jpg" 
+              })
+            </div>
+            <div class="col-3">
+              @@include('./templates/simple.html',{
+                "imgSrc":"img/shop/shop-win-3.jpg" 
+              })
+            </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">02</span> Shop horizontal
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+        <div class="row">
+            
+          <div class="col-12">
+             @@include('./templates/shop-horizontal.html',{
+               "containerCustomClass":"mb-30",
+               "labelsType":"top",
+               "label1":"hot",
+               "label2":"",
+               "img":"img/shop/shop-win-1.jpg",
+               "title":"Some shop item",
+               "oldPrice":"$26.00",
+               "newPrice":"$16.00",
+               "paragraphDescription":"",
+               "listDescription":["Maecenas vestibulum","Pellentesque","Fellentesque habita","Maecenas vestib","Pellentes"]
+             })
+          </div>
+          <div class="col-12">
+              @@include('./templates/shop-horizontal.html',{
+                "containerCustomClass":"mb-30",
+                "labelsType":"side",
+                "label1":"hot",
+                "label2":"",
+                "img":"img/shop/shop-win-1.jpg",
+                "title":"Some shop item",
+                "oldPrice":"$26.00",
+                "newPrice":"$16.00",
+                "paragraphDescription":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam",
+                "listDescription":""
+              })
+           </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">03</span> Bonus
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+        <div class="row">
+          <div class="col-4">
+            @@include('./templates/bonus.html',{
+              "link":"Sign Up"  
+            })
+          </div>
+          <div class="col-4">
+            @@include('./templates/bonus.html',{
+            "title":
+                    "<span class='text-uppercase'>do you want even</span><br><span class='font__family-playfair font__style-italic'>cheaper?</span>",
+            "paragraph":
+                        "Do <b>selfie</b> with our products & get <br> $100 <br> for the next purchase." 
+            })
+          </div>
+          <div class="col-4">
+            @@include('./templates/bonus.html',{
+              "title":
+                      "<span class='text-uppercase'>Do you want a gift</span> <br> <span class='font__family-playfair font__style-italic'>or a souvenir?</span>",
+              "paragraph":
+                          "Buy our product with <b>free shipping</b> <br> and recieve a gift from us or <br> a souvenir"
+            })
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">03</span> Labels
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180"> 
+        <div class="row">
+          <div class="col-3">
+            @@include('./templates/label.html') 
+          </div>
+          <div class="col-3">
+            @@include('./templates/label.html',{
+              "title":"<i class='fas fa-leaf'></i> ECO", 
+              "gradient":"brk-base-bg-gradient-21"
+            })               
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mb-110">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            @@include('./templates/photo-overlay.html',{
+              "img": "img/370x370_1.jpg"
+            })
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            @@include('./templates/photo-overlay.html',{
+              "img": "img/370x370_2.jpg"
+            })
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            @@include('./templates/photo-overlay.html',{
+              "img": "img/370x370_3.jpg"
+            })
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            @@include('./templates/photo-overlay.html',{
+              "img": "img/370x370_4.jpg"
+            })
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+</div>
+
+
+  @@include("../../assets/templates/footer.html")
+
+</body>
+</html>

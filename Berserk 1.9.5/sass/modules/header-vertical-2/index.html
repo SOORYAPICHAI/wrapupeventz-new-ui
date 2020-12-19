@@ -1,0 +1,29 @@
+  @@include("../../assets/templates/head.html", {
+  "titlePage": "Header Vertical 2"
+  })
+
+	</head>
+
+  <body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-50">
+
+			@@include('templates/style-header-vertical-2.html')
+
+      <div style="background-image:url(img/bg-img-parallax.jpg);background-repeat:no-repeat;background-position:center center;background-size: cover;height: 100vh;position: relative">
+        <div class="opacity-90" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color:#1540fa;"></div>
+      </div>
+
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+
+  </body>
+</html>

@@ -1,0 +1,185 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Services"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- Services Pedestal -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> Pedestal</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+				@@include('./templates/pedestal.html', {})
+    	</div>
+    </div>
+
+    <!-- Services Hexagon -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> Hexagon</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+				@@include('../shop-components-honeycomb/templates/honeycomb-6.html', {})
+    	</div>
+    </div>
+
+    <!-- Services Honeycomb -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">03</span> Honeycomb</h3>
+    	</div>
+			@@include('./templates/honeycomb.html', {})
+    </div>
+
+
+		<div class="mt-100 mt-md-160">
+			<div class="container mb-50">
+				<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+								class="heading__number">04</span> Architecture</h3>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						@@include('./templates/architecture.html', {
+						"icon": "fas fa-car",
+						"title": "Cargo delivery",
+						"description": "Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent"
+						})
+					</div>
+
+					<div class="col-lg-4">
+						@@include('./templates/architecture.html', {
+						"icon": "fas fa-briefcase",
+						"title": "Builing Programs",
+						"description": "Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent"
+						})
+					</div>
+
+					<div class="col-lg-4">
+						@@include('./templates/architecture.html', {
+						"icon": "far fa-map",
+						"title": "House plans",
+						"description": "Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent"
+						})
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mt-100 mt-md-160">
+			<div class="container mb-50">
+				<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+								class="heading__number">05</span> Architecture BG</h3>
+			</div>
+
+			<div class="container">
+				<div class="row align-items-stretch">
+					<div class="col-lg-4">
+						@@include('./templates/architecture-bg.html', {
+            "bg": "image-border-6.jpg",
+            "overlay": "brk-base-bg-gradient-90deg",
+						"icon": "far fa-thumbs-up",
+						"title": "36 Employees",
+						"description": "Vestibulum fringilla pede sit amet augue. In turpis ntesque posuere. Praesent turpis."
+						})
+					</div>
+
+					<div class="col-lg-4">
+						@@include('./templates/architecture-bg.html', {
+            "bg": "image-border-7.jpg",
+            "overlay": "brk-base-bg-gradient-90deg",
+						"icon": "fas fa-phone-volume",
+						"title": "Call center",
+						"description": "Vestibulum fringilla pede sit amet augue. In turpis ntesque posuere. Praesent turpis."
+						})
+					</div>
+
+					<div class="col-lg-4">
+						@@include('./templates/architecture-bg.html', {
+            "bg": "image-border-8.jpg",
+            "overlay": "brk-base-bg-gradient-90deg",
+						"icon": "far fa-credit-card",
+						"title": "Pre-ordering",
+						"description": "Vestibulum fringilla pede sit amet augue. In turpis ntesque posuere. Praesent turpis."
+						})
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Services Info -->
+		<div class="mt-100 mt-md-160 pb-50">
+			<div class="container">
+				<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left mb-20"><span
+								class="heading__number">05</span> Info</h3>
+			</div>
+			<div class="container pt-30 pb-30" style="background:#111;">
+				@@include('../services/templates/info.html', {})
+			</div>
+
+    </div>
+    
+		<!-- Icon Info -->
+		<div class="mt-100 mt-md-160 pb-50">
+			<div class="container">
+				<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left mb-20"><span
+								class="heading__number">05</span> Icon</h3>
+			</div>
+			<div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            @@include('./templates/icon.html',{
+              "customClass": "mb-30",
+              "icon": "<i class='fas fa-tint'></i>"
+            })
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            @@include('./templates/icon.html',{
+              "customClass": "mb-30",
+              "title": "The best masters",
+              "icon": "<i class='fas fa-cut'></i>",
+              "p": "We highly recommend appointments be made several weeks in advance. 25-minute spa services "
+            })
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            @@include('./templates/icon.html',{
+              "customClass": "mb-30",
+              "title": "Body Treatments",
+              "icon": "<i class='fas fa-shopping-cart'></i>",
+              "p": "A powerful ingredient for overall wellness, massage therapies decrease anxiety, enhance quality."
+            })
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            @@include('./templates/icon.html',{
+              "customClass": "mb-30",
+              "title": "Massage Therapies",
+              "p": "Experience the healthy benefits of bathing for improved sleep and overall well-being."
+            })
+          </div>
+          
+        </div>
+			</div>
+
+		</div>
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

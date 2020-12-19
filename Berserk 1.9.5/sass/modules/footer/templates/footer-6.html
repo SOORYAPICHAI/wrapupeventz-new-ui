@@ -1,0 +1,82 @@
+<footer class="brk-footer position-relative" @@if(context.id){id="@@id"} data-brk-library="component__footer">
+  <div class="brk-footer__wrapper @@if(context.animated === "true"){brk-footer__wrapper_animated} @@if(context.customClass){@@customClass}">
+    <div class="container-fluid"> 
+      <div class="row">
+        <div class="col-12 col-lg-7">
+          <div class="brk-map brk-map_extra h-100" data-height="367" data-brk-library="component__map">
+            <div class="brk-map__canvas"
+              data-address="412 Throop Ave, Brooklyn, NY 11221, USA"
+              data-zoom="13"
+              data-type="roadmap"
+              data-marker="img/gm-3.png"
+              data-offset-lat=""
+              data-offset-lng=""
+              data-style="silver"
+              data-info-window=".info-map">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="pl-15 pr-15">
+            <div class="row">
+              <nav class="col-6 col-lg-3">
+                <p class="font__family-montserrat font__size-16 font__weight-medium text-uppercase mt-15 mb-30">Policy info</p>
+                <ul class="brk-dark-font-color line__height-26">
+                  <li class="mb-10"><a href="#">Privacy info</a></li>
+                  <li class="mb-10"><a href="#">Terms of Sale</a></li>
+                  <li class="mb-10"><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Takedown Policy</a></li>
+                </ul>
+              </nav>
+              <nav class="col-6 col-lg-3">
+                <p class="font__family-montserrat font__size-16 font__weight-medium text-uppercase mt-15 mb-30">Company</p>
+                <ul class="brk-dark-font-color line__height-26">
+                  <li class="mb-10"><a href="#">About Us</a></li>
+                  <li class="mb-10"><a href="#">Careers</a></li>
+                  <li class="mb-10"><a href="#">Find Store</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </nav>
+              <nav class="col-6 col-lg-3">
+                <p class="font__family-montserrat font__size-16 font__weight-medium text-uppercase mt-15 mb-30">Business</p>
+                <ul class="brk-dark-font-color line__height-26">
+                  <li class="mb-10"><a href="#">Online Shopping</a></li>
+                  <li class="mb-10"><a href="#">Become a Seller</a></li>
+                  <li class="mb-10"><a href="#">Advertisement</a></li>
+                  <li><a href="#">Be an Affiliate</a></li>
+                </ul>
+              </nav>
+              <nav class="col-6 col-lg-3">
+                <p class="font__family-montserrat font__size-16 font__weight-medium text-uppercase mt-15 mb-30">Need Help?</p>
+                <ul class="brk-dark-font-color line__height-26">
+                  <li class="mb-10"><a href="#">FAQ</a></li>
+                  <li class="mb-10"><a href="#">Help Center</a></li>
+                  <li><a href="#">Online Chat</a></li>
+                </ul>
+              </nav>
+            </div> 
+          </div>
+          <div class="pl-15">
+            <div class="position-relative d-flex align-items-center justify-content-between rounded overflow-hid pt-30 pb-30 pr-20 pl-50 cfa_footer mt-50" data-brk-library="component__call_to_action">
+              <img src="img/750x115_1.jpg" alt="alt" class="brk-abs-img">
+              <span class="brk-abs-overlay @@if(context.cfaOverlay){@@cfaOverlay}@@if(!context.cfaOverlay){brk-base-bg-gradient-50deg-a}"></span>
+              <p class="brk-white-font-color font__family-montserrat font__size-21 font__weight-bold mr-35">
+                CFA Heading
+              </p>
+              <form action="#" class="brk-subscribe-mail brk-subscribe-mail_overlay brk-form-transparent brk-form-transparent_footer-6 position-relative flex-grow" data-brk-library="component__form,recaptcha">
+                <input type="text" placeholder="Enter your e-mail" name="EMAIL"> 
+                @@include('../../buttons/templates/buttons.html',{ 
+                  "type":"btn-inside-out", 
+                  "tag":"button", 
+                  "size":"lg", 
+                  "text":"subscribe",
+                  "customClass":" btn-inside-out-invert border-radius-30 font__family-open-sans font__size-16 font__weight-bold text-uppercase"
+                })
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

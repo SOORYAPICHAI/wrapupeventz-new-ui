@@ -1,0 +1,119 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Magazine - Contact",
+"themeSkin": "brk-gray-yellow.css"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+@@include('../../modules/demo_magazine/templates/header.html', {})
+
+
+@@include('../../modules/breadcrumbs/templates/grayscale.html',{
+"bg": "img/demo_magazine/1920x195_1.jpg",
+"overlay": "brk-bg-black opacity-70",
+"title": "Contact"
+})
+<!-- /Header -->
+
+<h1 class="sr-only">Magazine - Contact</h1>
+
+<div class="container pt-80">
+  <div class="font__size-46 line__height-60 text-center mb-30">
+    <span class="font__family-playfair font__style-italic">Berserk Office</span>
+    <span class="font__family-montserrat font__weight-bold text-uppercase">Location</span>
+  </div>
+
+  <div class="maxw-770 text-center font__family-playfair font__size-18 line__height-24 brk-align-center brk-dark-font-color mb-90">
+    Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor
+    sed cursus feugiat, nunc augue blandit nunc.
+  </div>
+
+  @@include('../../modules/google-maps/templates/layout-4.html')
+</div>
+
+<div class="container pt-70 pb-30">
+  <div class="row justify-content-center">
+    <div class="col-xl-8 col-lg-10">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          @@include('../../modules/team-member/templates/services.html',{
+          "icon":"<i class='fal fa-home'></i>",
+          "title":"Current Location",
+          "description":"Phasellus dolor. Maecenas vestibulum mollis ellentesque ut neque esque habitant morbi tristique senectus et"
+          })
+        </div>
+        <div class="col-12 col-lg-4">
+          @@include('../../modules/team-member/templates/services.html',{
+          "icon":"<i class='fal fa-list-ul'></i>",
+          "title":"Best Skills",
+          "description":"Phasellus dolor. Maecenas vestibulum mollis ellentesque ut neque esque habitant morbi tristique senectus et"
+          })
+        </div>
+        <div class="col-12 col-lg-4">
+          @@include('../../modules/team-member/templates/services.html',{
+          "icon":"<i class='fas fa-cog'></i>",
+          "title":"Preferences",
+          "description":"Phasellus dolor. Maecenas vestibulum mollis ellentesque ut neque esque habitant morbi tristique senectus et"
+          })
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-cover bg-norepeat bg-position_bottom-center position-relative pt-lg-90 pb-lg-110 pt-70 pb-70 lazyload"
+     data-bg="img/demo_magazine/1920x680_1.jpg">
+  <div class="brk-layer position-absolute bg-white opacity-90"></div>
+
+  <div class="container position-relative brk-z-index-10">
+    <div class="font__size-46 line__height-60 text-center mb-30">
+      <span class="font__family-playfair font__style-italic">Photos of our</span>
+      <span class="font__family-montserrat font__weight-bold text-uppercase">Office</span>
+    </div>
+
+    <div class="maxw-770 text-center font__family-playfair font__size-18 line__height-24 brk-align-center brk-dark-font-color mb-40">
+      Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor
+      sed cursus feugiat, nunc augue blandit nunc.
+    </div>
+
+    @@include('../../modules/sliders/templates/tiled.html', {
+    "images": [
+    "img/demo_magazine/234x234_1.jpg",
+    "img/demo_magazine/234x234_2.jpg",
+    "img/demo_magazine/234x234_3.jpg",
+    "img/demo_magazine/234x234_4.jpg",
+    "img/demo_magazine/234x234_5.jpg",
+    "img/demo_magazine/234x234_6.jpg",
+    "img/demo_magazine/234x234_4.jpg",
+    "img/demo_magazine/234x234_2.jpg",
+    "img/demo_magazine/234x234_1.jpg"
+    ]
+    })
+  </div>
+</div>
+
+
+<!-- Footer -->
+@@include('../../modules/social/templates/square.html', {
+  "img": "img/demo_magazine/1920x430_1.jpg",
+  "onlyLinks": "true",
+  "dark_theme": "true",
+  "customMargin": "mt-0 mt-lg-70",
+  "customClass": "pt-60 pb-60 pb-lg-0"
+})
+
+@@include('../../modules/footer/templates/footer-3.html', {
+"imgBg": "img/demo_magazine/1920x430_2.jpg",
+"bottomBarStyle": "brk-base-bg-6",
+"submitStyle": "brk-base-bg-6"
+})
+
+
+@@include("../../assets/templates/footer.html", {
+  "demo": "true"
+})
+
+
+
+</body>

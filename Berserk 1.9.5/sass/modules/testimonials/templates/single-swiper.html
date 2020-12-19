@@ -1,0 +1,57 @@
+<div class="brk-testimonials-double" data-brk-library="component__testimonials,slider__swiper">
+  <div class="brk-testimonials-double__slider lazyload @@if(context.slider_1_style){@@slider_1_style}@@if(!context.slider_1_style){double-white}"
+    data-bg="@@if(context.slider_1_bg){@@slider_1_bg}@@if(!context.slider_1_bg){img/570x400_1.jpg}">
+    <div class="brk-testimonials-double__type-reviews font__family-montserrat font__weight-bold text-uppercase @@if(context.reviews_squared === 'true'){brk-testimonials-double__type-reviews_squared}">@@if(context.reviews){@@reviews}@@if(!context.reviews){Clients}</div>
+    <div class="double-pagination"></div>
+
+    <div class="double-slider swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="brk-testimonials-double__item">
+            <div class="brk-testimonials-double__title font__family-montserrat letter-spacing-20">@@if(context.slide_1_title){@@slide_1_title}@@if(!context.slide_1_title){Want to make your Business More Productive?}</div>
+            <div class="brk-testimonials-double__contant">
+              <div class="brk-testimonials-double__photo lazyload" data-bg="@@if(context.slider_1_people_1){@@slider_1_people_1}@@if(!context.slider_1_people_1){img/people/pexels-photo-672599.jpeg}"></div>
+              <div class="brk-testimonials-double__name">
+                @@include('../../elements/templates/rating.html', {
+                "value": "80%"
+                })
+                <strong class="font__family-montserrat font__weight-semibold">Jon Jonson</strong>
+                <span>SEO Digity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brk-testimonials-double__item">
+            <div class="brk-testimonials-double__title font__family-montserrat letter-spacing-20">@@if(context.slide_2_title){@@slide_2_title}@@if(!context.slide_2_title){How to Thrive Like Wonder Woman During Times of Major}</div>
+            <div class="brk-testimonials-double__contant">
+              <div class="brk-testimonials-double__photo lazyload" data-bg="@@if(context.slider_1_people_2){@@slider_1_people_2}@@if(!context.slider_1_people_2){img/people/pexels-photo-598745.jpeg}"></div>
+              <div class="brk-testimonials-double__name">
+                @@include('../../elements/templates/rating.html', {
+                "value": "80%"
+                })
+                <strong class="font__family-montserrat font__weight-semibold">Sarah Kranz</strong>
+                <span>Designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brk-testimonials-double__item">
+            <div class="brk-testimonials-double__title font__family-montserrat letter-spacing-20">@@if(context.slide_3_title){@@slide_3_title}@@if(!context.slide_3_title){How to Thrive Like Wonder Woman During Times of Major}</div>
+            <div class="brk-testimonials-double__contant">
+              <div class="brk-testimonials-double__photo lazyload" data-bg="@@if(context.slider_1_people_3){@@slider_1_people_3}@@if(!context.slider_1_people_3){img/people/pexels-photo-262391.jpeg}"></div>
+              <div class="brk-testimonials-double__name">
+                @@include('../../elements/templates/rating.html', {
+                "value": "80%"
+                })
+                <strong class="font__family-montserrat font__weight-semibold">Mike Paterson</strong>
+                <span>SEO Digity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

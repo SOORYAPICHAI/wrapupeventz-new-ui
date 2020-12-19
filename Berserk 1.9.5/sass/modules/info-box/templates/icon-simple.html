@@ -1,0 +1,24 @@
+<div class="info-box-icon-simple d-flex flex-column align-items-center pt-60 pb-50 pl-50 pr-50 position-relative @@if(context.customClass){@@customClass}" data-brk-library="component__info_box">
+  <span class="brk-abs-overlay @@if(context.overlay){@@overlay} @@if(!context.overlay){brk-base-bg-gradient-50deg}"></span>
+  <div class="info-box-icon-simple__icon-wrapper d-flex align-items-center justify-content-center mb-45">
+    @@if(context.icon){@@icon}
+    @@if(!context.icon){<i class="fa fa-diamond" aria-hidden="true"></i>}
+  </div>
+  <p class="font__family-montserrat info-box-icon-simple__title font__size-28 font__weight-bold line__height-30 mb-20 text-center">
+    @@if(context.title){@@title}
+    @@if(!context.title){Service}
+  </p>
+  <p class="brk-dark-font-color font__size-16 info-box-icon-simple__about line__height-26 font__weight-normal mb-35 text-center">
+     @@if(context.paragraph){@@paragraph}
+     @@if(!context.paragraph){
+       Aenean vulputate eleifend tellus. Renean leo ligula, porttitor euequat vitae, eleifend ac, enim.
+     }
+  </p>
+
+  @@include('../../buttons/templates/buttons.html',{
+    "type":"btn-inside-out",
+    "text":"read more",
+    "customClass":"border-radius-30 btn-shadow ml-0 mr-0 mt-0 mb-0 pl-60 pr-60"
+  })
+
+</div>

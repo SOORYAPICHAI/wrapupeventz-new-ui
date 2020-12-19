@@ -1,0 +1,311 @@
+@@include('../../header-1/templates/brk-header-mobile.html', {
+"white": "true"
+})
+
+<header class="brk-header brk-header_style-2 brk-header_popup brk-header_color-white brk-header_skin-1 position-fixed d-flex flex-column brk-header_popup" data-logo-src="img/logo-dark-2.png" data-bg-mobile="img/brk-bg-mobile-menu.jpg" data-brk-library="component__header">
+
+  <!-- MAIN BAR -->
+  <div class="brk-header__main-bar brk-header_border-bottom"
+       style="@@if(context.mainBarHeight){height: @@mainBarHeight;}
+              @@if(!context.mainBarHeight){height: 74px;}
+              @@if(context.mainBarStyle){@@mainBarStyle}"
+       @@if(context.mainBarHeightScroll){data-height-scroll="@@mainBarHeightScroll"}>
+
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg align-self-lg-stretch pl-lg-4">
+          @@if(context.customNav !== "true"){
+            @@include('../../header-1/templates/brk-popup-menu.html')
+          }
+          @@if(context.customNav === "true"){
+            <div class="brk-header-popup-menu">
+              <div class="brk-header-popup-menu__open-close font__family-montserrat font__weight-light font__size-14 letter-spacing-40">
+                <div class="brk-open"><i class="fal fa-bars"></i> Menu</div>
+                <div class="brk-close"><i class="fal fa-times"></i> Close</div>
+              </div>
+                
+              <div class="brk-header-popup-menu__menu text-lg-center font__family-roboto font__weight-thin">
+                <ul>
+                  @@if(context.title1){
+                    <li>
+                      <a href="@@link1">
+                        <span>@@title1</span>
+                      </a>
+                      @@if(context.submenu1){
+                        <ul >
+                          @@if(context.submenu1.subtitle1){
+                            <li >
+                              <a href="@@submenu1.sublink1">@@submenu1.subtitle1</a>
+                            </li>
+                          }
+                          @@if(context.submenu1.subtitle2){
+                            <li >
+                              <a href="@@submenu1.sublink2">@@submenu1.subtitle2</a>
+                            </li>
+                          }
+                          @@if(context.submenu1.subtitle3){
+                            <li >
+                              <a href="@@submenu1.sublink3">@@submenu1.subtitle3</a>
+                            </li>
+                          }
+                          @@if(context.submenu1.subtitle4){
+                            <li >
+                              <a href="@@submenu1.sublink4">@@submenu1.subtitle4</a>
+                            </li>
+                          }
+                          @@if(context.submenu1.subtitle5){
+                            <li >
+                              <a href="@@submenu1.sublink5">@@submenu1.subtitle5</a>
+                            </li>
+                          }
+                          @@if(context.submenu1.subtitle6){
+                            <li >
+                              <a href="@@submenu1.sublink6">@@submenu1.subtitle6</a>
+                            </li>
+                          }
+                        </ul>
+                      }
+                    </li>
+                  }
+                  @@if(context.title2){
+                    <li>
+                      <a href="@@link2">
+                        <span>@@title2</span>
+                      </a>
+                      @@if(context.submenu2){
+                        <ul >
+                          @@if(context.submenu2.subtitle1){
+                            <li >
+                              <a href="@@submenu2.sublink1">@@submenu2.subtitle1</a>
+                            </li>
+                          }
+                          @@if(context.submenu2.subtitle2){
+                            <li >
+                              <a href="@@submenu2.sublink2">@@submenu2.subtitle2</a>
+                            </li>
+                          }
+                          @@if(context.submenu2.subtitle3){
+                            <li >
+                              <a href="@@submenu2.sublink3">@@submenu2.subtitle3</a>
+                            </li>
+                          }
+                          @@if(context.submenu2.subtitle4){
+                            <li >
+                              <a href="@@submenu2.sublink4">@@submenu2.subtitle4</a>
+                            </li>
+                          }
+                          @@if(context.submenu2.subtitle5){
+                            <li >
+                              <a href="@@submenu2.sublink5">@@submenu2.subtitle5</a>
+                            </li>
+                          }
+                          @@if(context.submenu2.subtitle6){
+                            <li >
+                              <a href="@@submenu2.sublink6">@@submenu2.subtitle6</a>
+                            </li>
+                          }
+                        </ul>
+                      }
+                    </li>
+                  }
+                  @@if(context.title3){
+                    <li>
+                      <a href="@@link3">
+                        <span>@@title3</span>
+                      </a>
+                      @@if(context.submenu3){
+                        <ul >
+                          @@if(context.submenu3.subtitle1){
+                            <li >
+                              <a href="@@submenu3.sublink1">@@submenu3.subtitle1</a>
+                            </li>
+                          }
+                          @@if(context.submenu3.subtitle2){
+                            <li >
+                              <a href="@@submenu3.sublink2">@@submenu3.subtitle2</a>
+                            </li>
+                          }
+                          @@if(context.submenu3.subtitle3){
+                            <li >
+                              <a href="@@submenu3.sublink3">@@submenu3.subtitle3</a>
+                            </li>
+                          }
+                          @@if(context.submenu3.subtitle4){
+                            <li >
+                              <a href="@@submenu3.sublink4">@@submenu3.subtitle4</a>
+                            </li>
+                          }
+                          @@if(context.submenu3.subtitle5){
+                            <li >
+                              <a href="@@submenu3.sublink5">@@submenu3.subtitle5</a>
+                            </li>
+                          }
+                          @@if(context.submenu3.subtitle6){
+                            <li >
+                              <a href="@@submenu3.sublink6">@@submenu3.subtitle6</a>
+                            </li>
+                          }
+                        </ul>
+                      }
+                    </li>
+                  }
+                  @@if(context.title4){
+                    <li>
+                      <a href="@@link4">
+                        <span>@@title4</span>
+                      </a>
+                      @@if(context.submenu4){
+                        <ul >
+                          @@if(context.submenu4.subtitle1){
+                            <li >
+                              <a href="@@submenu4.sublink1">@@submenu4.subtitle1</a>
+                            </li>
+                          }
+                          @@if(context.submenu4.subtitle2){
+                            <li >
+                              <a href="@@submenu4.sublink2">@@submenu4.subtitle2</a>
+                            </li>
+                          }
+                          @@if(context.submenu4.subtitle3){
+                            <li >
+                              <a href="@@submenu4.sublink3">@@submenu4.subtitle3</a>
+                            </li>
+                          }
+                          @@if(context.submenu4.subtitle4){
+                            <li >
+                              <a href="@@submenu4.sublink4">@@submenu4.subtitle4</a>
+                            </li>
+                          }
+                          @@if(context.submenu4.subtitle5){
+                            <li >
+                              <a href="@@submenu4.sublink5">@@submenu4.subtitle5</a>
+                            </li>
+                          }
+                          @@if(context.submenu4.subtitle6){
+                            <li >
+                              <a href="@@submenu4.sublink6">@@submenu4.subtitle6</a>
+                            </li>
+                          }
+                        </ul>
+                      }
+                    </li>
+                  }
+                  @@if(context.title5){
+                    <li>
+                      <a href="@@link5">
+                        <span>@@title5</span>
+                      </a>
+                      @@if(context.submenu5){
+                        <ul >
+                          @@if(context.submenu5.subtitle1){
+                            <li >
+                              <a href="@@submenu5.sublink1">@@submenu5.subtitle1</a>
+                            </li>
+                          }
+                          @@if(context.submenu5.subtitle2){
+                            <li >
+                              <a href="@@submenu5.sublink2">@@submenu5.subtitle2</a>
+                            </li>
+                          }
+                          @@if(context.submenu5.subtitle3){
+                            <li >
+                              <a href="@@submenu5.sublink3">@@submenu5.subtitle3</a>
+                            </li>
+                          }
+                          @@if(context.submenu5.subtitle4){
+                            <li >
+                              <a href="@@submenu5.sublink4">@@submenu5.subtitle4</a>
+                            </li>
+                          }
+                          @@if(context.submenu5.subtitle5){
+                            <li >
+                              <a href="@@submenu5.sublink5">@@submenu5.subtitle5</a>
+                            </li>
+                          }
+                          @@if(context.submenu5.subtitle6){
+                            <li >
+                              <a href="@@submenu5.sublink6">@@submenu5.subtitle6</a>
+                            </li>
+                          }
+                        </ul>
+                      }
+                    </li>
+                  }
+                  @@if(context.title6){
+                    <li>
+                      <a href="@@link6">
+                        <span>@@title6</span>
+                      </a>
+                      @@if(context.submenu6){
+                        <ul >
+                          @@if(context.submenu6.subtitle1){
+                            <li >
+                              <a href="@@submenu5.sublink1">@@submenu6.subtitle1</a>
+                            </li>
+                          }
+                          @@if(context.submenu6.subtitle2){
+                            <li >
+                              <a href="@@submenu6.sublink2">@@submenu6.subtitle2</a>
+                            </li>
+                          }
+                          @@if(context.submenu6.subtitle3){
+                            <li >
+                              <a href="@@submenu6.sublink3">@@submenu6.subtitle3</a>
+                            </li>
+                          }
+                          @@if(context.submenu6.subtitle4){
+                            <li >
+                              <a href="@@submenu6.sublink4">@@submenu6.subtitle4</a>
+                            </li>
+                          }
+                          @@if(context.submenu6.subtitle5){
+                            <li >
+                              <a href="@@submenu6.sublink5">@@submenu6.subtitle5</a>
+                            </li>
+                          }
+                          @@if(context.submenu6.subtitle6){
+                            <li >
+                              <a href="@@submenu6.sublink6">@@submenu6.subtitle6</a>
+                            </li>
+                          }
+                        </ul>
+                      }
+                    </li>
+                  }
+                </ul>
+              </div>
+            </div>
+          }
+        </div>
+
+        <div class="col-lg align-self-lg-center d-none d-lg-block">
+          <div class="text-center">
+            @@include('../../header-1/templates/brk-header-logo.html', {
+            "logo_1": "@@if(context.logo_1){@@logo_1}@@if(!context.logo_1){img/logo-1.png}",
+            "logo_2": "@@if(context.logo_2){@@logo_2}@@if(!context.logo_2){img/logo-dark-1.png}"
+            })
+          </div>
+        </div>
+
+        <div class="col-lg align-self-lg-stretch text-lg-right">
+          @@include('../../header-1/templates/brk-header-element.html', {
+          "classMod": "brk-header__element_skin-1 brk-header__element_label-mob-only",
+          "tag": "a",
+          "href": "tel:88002003040",
+          "icon": "fal fa-phone",
+          "text": "88002003040",
+          "compareStyle": "",
+          "compare": ""
+          })
+
+          @@include('../../header-1/templates/brk-social-links.html', {
+          "icon": "fal fa-share-alt"
+          })
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End MAIN BAR -->
+
+</header><!-- /.brk-header -->

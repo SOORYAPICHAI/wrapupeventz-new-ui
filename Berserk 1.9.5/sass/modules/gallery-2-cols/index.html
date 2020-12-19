@@ -1,0 +1,82 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Gallery 2-columns"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+  <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+  <main class="main-container">
+    <div class="container mt-50">
+      <div class="brk-gallery"> 
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/gallary/gallery-1.png",
+              "grayscale":"false",
+              "type":"angleBtn"
+            })
+          </div>
+          <div class="col-12 col-sm-6">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/gallary/gallery-2.PNG",
+              "grayscale":"false",
+              "type":"angleBtn"
+              
+            })
+          </div>
+          <div class="col-12 col-sm-6">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/gallary/gallery-3.png",
+              "grayscale":"false",
+              "type":"angleBtn"
+
+            })
+          </div>
+          <div class="col-12 col-sm-6">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/gallary/gallery-4.png",
+              "grayscale":"false",
+              "type":"angleBtn"
+
+            })
+          </div>
+          <div class="col-12 col-sm-6">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/gallary/gallery-5.png",
+              "grayscale":"false",
+              "type":"angleBtn"
+
+            })
+          </div>
+          <div class="col-12 col-sm-6">
+            @@include('../gallery-cols/templates/pic-container.html',{
+              "img":"img/gallary/gallery-6.png",
+              "grayscale":"false",
+              "type":"angleBtn"
+
+            })
+          </div>
+          <div class="col-12 text-center mt-80 mb-80" data-brk-library="component__button">
+            <a href="#" class="icon__btn icon__btn-anim icon__btn-md icon__btn-invert">
+              <span class="before"></span>
+              <i class="fal fa-sync" aria-hidden="true"></i>
+              <span class="after"></span>
+              <span class="bg"></span>
+            </a>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </main>
+</div>
+
+
+  @@include("../../assets/templates/footer.html")
+
+</body>
+</html>

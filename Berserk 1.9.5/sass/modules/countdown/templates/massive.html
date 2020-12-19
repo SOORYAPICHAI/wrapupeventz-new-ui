@@ -1,0 +1,33 @@
+@@if(context.only_circles !== "true"){
+  <div class="bg__style overlay__white" style="background-image: url(img/1920x500_1.jpg);">
+		<div class="container">
+      }
+      
+			<div class="countdown__wrapper countdown__massive @@if(context.customPadding){@@customPadding}@@if(!context.customPadding){pt-100 pb-100 pt-md-120 pb-md-120}" data-brk-library="component__countdown">
+				<div class="countdown"
+				     data-format="
+                <div class='countdown__section'>
+                  <div class='font__family-montserrat font__size-96 font__weight-ultralight countdown__amount'>%D</div>
+                  <span class='font__family-montserrat font__size-18 font__weight-light font__size-14 countdown__period'>Dys</span>
+                </div>
+                <div class='countdown__section'>
+                  <div class='font__family-montserrat font__size-96 font__weight-ultralight countdown__amount'>%H</div>
+                  <span class='font__family-montserrat font__size-18 font__weight-light font__size-14 countdown__period'>Hrs</span>
+                </div>
+                <div class='countdown__section'>
+                  <div class='font__family-montserrat font__size-96 font__weight-ultralight countdown__amount'>%M</div>
+                  <span class='font__family-montserrat font__size-18 font__weight-light font__size-14 countdown__period'>Min</span>
+                </div>
+                <div class='countdown__section'>
+                  <div class='font__family-montserrat font__size-96 font__weight-ultralight countdown__amount'>%S</div>
+                  <span class='font__family-montserrat font__size-18 font__weight-light font__size-14 countdown__period'>Sec</span>
+                </div>
+              "
+				     data-type="until"
+             data-time=""></div>
+            <!-- 2018/12/31/12:00 data format -->
+      </div>
+@@if(context.only_circles !== "true"){
+  </div>
+</div>
+}

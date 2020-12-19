@@ -1,0 +1,48 @@
+<footer class="brk-footer position-relative" @@if(context.id){id="@@id"} data-brk-library="component__footer">
+  <div class="brk-footer__wrapper @@if(context.animated === "true"){brk-footer__wrapper_animated} @@if(context.customClass){@@customClass}">
+
+    <div class="brk-footer-map-overflow">
+
+      <div class="brk-map brk-map_extra" data-height="420" data-brk-library="component__map">
+        <div class="brk-map__canvas" data-address="412 Throop Ave, Brooklyn, NY 11221, USA" data-zoom="13" data-type="roadmap" data-marker="@@if(context.marker){@@marker}@@if(!context.marker){img/gm-3.png}" data-offset-lat="" data-offset-lng="" data-style="silver" data-info-window=".info-map">
+        </div>
+      </div>
+
+      <div class="brk-footer-map-overflow__info">
+        <h2 class="brk-white-font-color font__family-montserrat font__size-28 text-uppercase">
+          <span class="font__weight-light">Subscribe</span>
+          <span class="font__weight-bold">Now</span>
+        </h2>
+        <hr class="horiz-line">
+        <form action="#" class="brk-subscribe-squared brk-subscribe-mail" data-brk-library="recaptcha">
+          <input type="text" name="EMAIL" placeholder="enter-your@mail.com" class="font__size-14 font__weight-normal">
+          <button type="submit"><i class="fas fa-envelope"></i></button>
+        </form>
+        <hr class="horiz-line mb-10">
+        <div class="d-flex flex-wrap brk-footer__info-grid flex-sm-row flex-column brk-white-font-color">
+          <p class="font__family-open-sans font__weight-bold font__size-14 mt-10">
+            <i class="brk-footer-icon text-middle fa fa-map-marker line__height-24"></i>Chicago
+          </p>        
+          <p class="font__family-open-sans font__weight-bold font__size-14 mt-10">
+            <i class="brk-footer-icon text-middle fa fa-envelope line__height-24"></i>
+            <a href="mailto:i@nikadevs.com" class="show-inline-block">we@dev.com</a>
+          </p>
+          <p class="font__family-open-sans font__weight-bold font__size-14 mt-10">
+            <i class="brk-footer-icon text-middle fa fa-comments line__height-24"></i>Contact
+          </p>
+          <p class="font__family-open-sans font__weight-bold font__size-14 mt-10">
+            <i class="brk-footer-icon text-middle fa fa-phone line__height-24"></i>
+            <a href="#" class="show-inline-block">800 12 34 567</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="brk-base-bg-gradient-26 d-flex align-items-center justify-content-center pt-20 pb-20 brk-footer__border-gradient-1">
+      <p class="brk-dark-font-color font__family-open-sans font__size-14">
+        © 2018
+        <span class="brk-white-font-color font__weight-bold pl-1 pr-1">Berserk</span> 
+        All rights reserved</p>
+    </div>
+  </div>
+</footer>

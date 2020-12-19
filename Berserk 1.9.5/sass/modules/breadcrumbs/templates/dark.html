@@ -1,0 +1,40 @@
+	<div class="breadcrumbs__section breadcrumbs__section-dark bg__style @@if(context.offset){@@offset}@@if(!context.offset){mt-80 mb-30 pt-80 pb-130} lazyload"
+	     data-bg="@@if(context.bg){@@bg}@@if(!context.bg){img/1920x256_1.jpg}" data-brk-library="component__breadcrumbs_css">
+		<div class="brk-base-bg-6 breadcrumb-bg full__size-absolute"></div>
+		<h2 class="font__size-40 line__height-46 font__family-montserrat font__weight-ultralight text-center">
+      @@if(context.title){@@title}
+      @@if(!context.title){
+      Some Title
+			<span class="font__weight-bold">Goes Here</span>
+      }
+    </h2>
+		<div class="breadcrumbs__wrapper">
+			<div class="container">
+				<ol class="breadcrumb font__family-montserrat  font__weight-medium font__size-12 letter-spacing-100">
+					<li class="breadcrumb__icon">
+						<a href="#"><i class="fas fa-home"></i></a>
+					</li>
+					<li>
+						<a href="#">Bread <i class="fas fa-arrow-right"></i></a>
+					</li>
+					<li class="active">Crumbs</li>
+				</ol>
+
+				<div class="dropdown">
+					<button
+						class="btn btn-default font__family-montserrat dropdown-toggle letter-spacing-100 font__weight-medium font__size-12"
+						type="button" id="dropdownMenu2" data-toggle="dropdown" data-brk-library="component__button">
+						Categories
+            <i class="fas fa-chevron-down"></i>
+					</button>
+					<ul
+						class="dropdown-menu font__family-montserrat letter-spacing-100  font__weight-medium font__size-12 brk-bb-color"
+						role="menu" aria-labelledby="dropdownMenu2">
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Some Category</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Some Category</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Some Category</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>

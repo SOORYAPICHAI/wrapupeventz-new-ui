@@ -1,0 +1,43 @@
+<div class="brk-reply @@if(context.containerClass){@@containerClass}  mt-30" data-brk-library="component__forum_post">
+  <h3 class="brk-reply__header font__family-montserrat font__size-21 font__weight-bold line__height-60 
+    @@titleCustomClass">@@replyTitle</h3>
+
+  <form action="#" class="brk-reply__form brk-form-strict" data-brk-library="component__form">
+    <div class="row">
+      @@if(context.stars !== "true"){
+        <div class="col-lg-6 col-12">
+          <input name="name" type="text" placeholder="Your Name">
+        </div>
+        <div class="col-lg-6 col-12">
+          <input name="email" type="email" placeholder="Email">
+        </div> 
+      }
+      @@if(context.stars === "true"){
+        <div class="col-12 col-lg-4">
+          <input name="name" type="text" placeholder="Your Name">
+        </div>
+        <div class="col-12 col-lg-4">
+          <input name="email" type="email" placeholder="Email">
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="d-flex align-items-center justify-content-center w-100 h-100 pt-30">
+            @@include('../../elements/templates/rating.html', { 
+              "value": "80%" 
+            })  
+          </div>
+        </div>
+      }
+      <div class="col-12">
+        <textarea name="textarea" placeholder="Some text"></textarea>
+      </div>
+    
+    </div>
+
+    <button type="submit" class="btn btn-inside-out btn-md btn-icon border-radius-25 font__family-open-sans font__weight-bold" data-brk-library="component__button">
+      <span class="before">@@buttonText</span>
+      <span class="text">@@buttonText</span>
+      <span class="after">@@buttonText</span>
+    </button>
+  </form>
+
+</div>

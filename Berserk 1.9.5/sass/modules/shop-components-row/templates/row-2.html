@@ -1,0 +1,211 @@
+<div class='filmstrip-slider slider--scroll brk-sc-row-two position-relative pt-30 pb-30 @@if(context.svg === "true"){pt-70 pt-md-100 pt-lg-170}'
+     data-perwiew="1"
+     data-bg="@@if(context.bg){@@bg}@@if(!context.bg){img/bg-1920_1.jpg}"
+     data-brk-library="component__shop_product_row,slider__swiper,component__svg_pattern,component__content_slider"
+     data-brk-swiper='{"autoplay": {"delay": 8000}}'>
+     @@if(context.svg === "true"){
+      @@include('../../svg-pattern/templates/pattern-7.html',{
+        "only_top": "true"
+      })
+    }
+  
+  <div class="brk-sc-row-two__before @@if(!context.overlay){brk-bg-grad opacity-90} @@if(context.overlay){@@overlay}"></div>
+
+  <div class="filmstrip-slider-container swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="brk-sc-row-two__slide swiper-slide">
+        <div class="brk-sc-row-two__container">
+          <div class="brk-sc-row-two__layer-content"><div class="layer-content-before" style="background-image: url(img/brk-sc-row-layer-top.png)"></div></div>
+
+          <div class="brk-sc-row-two__thumb">
+            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/brk-sc-row-2.png" alt="alt">
+          </div>
+
+          <div class="brk-sc-row-two__desc">
+            <div class="brk-sc-row-two__desc-before" style="background-image: url(img/brk-sc-row-layer-bottom.png)"></div>
+            <div class="brk-sc-row-two__decor-layer">
+              <div class="brk-sc-row-two__decor-layer--col-l">
+                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/brk-sc-row-2.png" alt="alt">
+              </div>
+              <div class="brk-sc-row-two__decor-layer--col-r">
+                <div class="brk-sc-row-two__title">
+                  <h4 class="font__family-montserrat text-uppercase brk-sc-row-two__title-text">
+                    <span class="font__weight-light">Hugo </span>
+                    <span class="font__weight-bold">Boss</span>
+                  </h4>
+
+                  <div class="year brk-bg-grad brk-white-font-color">2018</div>
+                </div>
+
+                <div class="brk-sc-row-two__price font__family-montserrat">
+                  <div class="price brk-base-font-color">$24.00</div>
+                  <div class="old-price brk-dark-font-color">$26.00</div>
+                </div>
+
+                @@include('../../elements/templates/rating.html', {
+                "value": "80%"
+                })
+
+                <div class="brk-sc-row-two__content brk-dark-font-color font__family-oxygen">
+                  Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel.
+                </div>
+              </div>
+            </div>
+
+            @@include('../../buttons/templates/buttons.html',{
+              "type": "btn-gradient",
+              "text": "Read more",
+              "customClass": "border-radius-30 font__family-open-sans font__weight-bold btn-min-width-200"
+            })
+          </div>
+        </div>
+      </div>
+      <div class="brk-sc-row-two__slide swiper-slide">
+        <div class="brk-sc-row-two__container">
+          <div class="brk-sc-row-two__layer-content"><div class="layer-content-before" style="background-image: url(img/brk-sc-row-layer-top.png)"></div></div>
+
+          <div class="brk-sc-row-two__thumb">
+            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/341x486_1.png" alt="alt">
+          </div>
+
+          <div class="brk-sc-row-two__desc">
+            <div class="brk-sc-row-two__desc-before" style="background-image: url(img/brk-sc-row-layer-bottom.png)"></div>
+            <div class="brk-sc-row-two__decor-layer">
+              <div class="brk-sc-row-two__decor-layer--col-l">
+                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/341x486_1.png" alt="alt">
+              </div>
+              <div class="brk-sc-row-two__decor-layer--col-r">
+                <div class="brk-sc-row-two__title">
+                  <h4 class="font__family-montserrat text-uppercase brk-sc-row-two__title-text">
+                    <span class="font__weight-light">Tommy </span>
+                    <span class="font__weight-bold">Hilfiger</span>
+                  </h4>
+
+                  <div class="year brk-bg-grad brk-white-font-color">2018</div>
+                </div>
+
+                <div class="brk-sc-row-two__price font__family-montserrat">
+                  <div class="price brk-base-font-color">$31.00</div>
+                  <div class="old-price brk-dark-font-color">$36.00</div>
+                </div>
+
+                @@include('../../elements/templates/rating.html', {
+                "value": "80%"
+                })
+
+                <div class="brk-sc-row-two__content brk-dark-font-color font__family-oxygen">
+                  Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel.
+                </div>
+              </div>
+            </div>
+
+            @@include('../../buttons/templates/buttons.html',{
+            "type": "btn-gradient",
+            "text": "Read more",
+            "customClass": "border-radius-30 font__family-open-sans font__weight-bold"
+            })
+          </div>
+        </div>
+      </div>
+      <div class="brk-sc-row-two__slide swiper-slide">
+        <div class="brk-sc-row-two__container">
+          <div class="brk-sc-row-two__layer-content"><div class="layer-content-before" style="background-image: url(img/brk-sc-row-layer-top.png)"></div></div>
+
+          <div class="brk-sc-row-two__thumb">
+            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/brk-sc-row-2.png" alt="alt">
+          </div>
+
+          <div class="brk-sc-row-two__desc">
+            <div class="brk-sc-row-two__desc-before" style="background-image: url(img/brk-sc-row-layer-bottom.png)"></div>
+            <div class="brk-sc-row-two__decor-layer">
+              <div class="brk-sc-row-two__decor-layer--col-l">
+                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/brk-sc-row-2.png" alt="alt">
+              </div>
+              <div class="brk-sc-row-two__decor-layer--col-r">
+                <div class="brk-sc-row-two__title">
+                  <h4 class="font__family-montserrat text-uppercase brk-sc-row-two__title-text">
+                    <span class="font__weight-light">Sleeveless </span>
+                    <span class="font__weight-bold">shirt</span>
+                  </h4>
+
+                  <div class="year brk-bg-grad brk-white-font-color">2018</div>
+                </div>
+
+                <div class="brk-sc-row-two__price font__family-montserrat">
+                  <div class="price brk-base-font-color">$12.00</div>
+                </div>
+
+                @@include('../../elements/templates/rating.html', {
+                "value": "80%"
+                })
+
+                <div class="brk-sc-row-two__content brk-dark-font-color font__family-oxygen">
+                  Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel.
+                </div>
+              </div>
+            </div>
+
+            @@include('../../buttons/templates/buttons.html',{
+            "type": "btn-gradient",
+            "text": "Read more",
+            "customClass": "border-radius-30 font__family-open-sans font__weight-bold"
+            })
+          </div>
+        </div>
+      </div>
+      <div class="brk-sc-row-two__slide swiper-slide">
+        <div class="brk-sc-row-two__container">
+          <div class="brk-sc-row-two__layer-content"><div class="layer-content-before" style="background-image: url(img/brk-sc-row-layer-top.png)"></div></div>
+
+          <div class="brk-sc-row-two__thumb">
+            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/341x486_1.png" alt="alt">
+          </div>
+
+          <div class="brk-sc-row-two__desc">
+            <div class="brk-sc-row-two__desc-before" style="background-image: url(img/brk-sc-row-layer-bottom.png)"></div>
+            <div class="brk-sc-row-two__decor-layer">
+              <div class="brk-sc-row-two__decor-layer--col-l">
+                <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/341x486_1.png" alt="alt">
+              </div>
+              <div class="brk-sc-row-two__decor-layer--col-r">
+                <div class="brk-sc-row-two__title">
+                  <h4 class="font__family-montserrat text-uppercase brk-sc-row-two__title-text">
+                    <span class="font__weight-light">Sport </span>
+                    <span class="font__weight-bold">shoes</span>
+                  </h4>
+
+                  <div class="year brk-bg-grad brk-white-font-color">2018</div>
+                </div>
+
+                <div class="brk-sc-row-two__price font__family-montserrat">
+                  <div class="price brk-base-font-color">$18.00</div>
+                  <div class="old-price brk-dark-font-color">$21.00</div>
+                </div>
+
+                @@include('../../elements/templates/rating.html', {
+                "value": "80%"
+                })
+
+                <div class="brk-sc-row-two__content brk-dark-font-color font__family-oxygen">
+                  Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel.
+                </div>
+              </div>
+            </div>
+
+            @@include('../../buttons/templates/buttons.html',{
+            "type": "btn-gradient",
+            "text": "Read more",
+            "customClass": "border-radius-30 font__family-open-sans font__weight-bold"
+            })
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="brk-scrollbar">
+    <div class="brk-scrollbar-track"></div>
+  </div>
+</div>

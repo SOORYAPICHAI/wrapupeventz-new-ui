@@ -1,0 +1,15 @@
+<div class="brk-btn-swipe-card overflow-hid @@if(context.masonry === "true"){brk-btn-swipe-card_masonry} @@if(context.customClass){@@customCLass}" @@if(context.height){style="min-height: @@height"} data-brk-library="component__portfolio_isotope">
+  <div class="brk-btn-swipe-card__body position-relative pt-50 pl-60 pr-50 pb-50 z-index-2">
+    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.img){@@img}@@if(!context.img){img/image-border-3.jpg}" class="brk-abs-img lazyload" alt="alt">
+    <span class="brk-abs-overlay @@if(context.overlay){@@overlay}@@if(!context.overlay){brk-bg-gradient-10deg-92}"></span>
+    <div class="brk-btn-swipe-card__caption">
+      <h2 class="brk-white-font-color font__family-montserrat font__size-24 font__weight-bold line__height-28 text-uppercase mb-1">
+        @@if(context.title){@@title}@@if(!context.title){Some title}
+      </h2>
+      <h2 class="@@if(context.subtitleClass){@@subtitleClass}@@if(!context.subtitleClass){brk-base-2-font-color font__family-montserrat font__size-14 font__weight-bold text-uppercase line__height-18}">
+        @@if(context.subtitle){@@subtitle}@@if(!context.subtitle){Category}
+      </h2>
+    </div>
+    <a href="#" class="@@if(context.btnStyle !== "2"){brk-btn-swipe-card__btn} @@if(context.btnStyle === "2"){brk-btn-swipe-card__btn-2} @@if(context.btnClass){@@btnClass}@@if(!context.btnClass){brk-white-font-color font__size-14 font__weight-bold text-uppercase}">@@if(context.btnText){@@btnText}@@if(!context.btnText){View more} @@if(context.btnStyle !== "2"){<i class="fas fa-long-arrow-alt-right font__size-14 ml-10"></i>}</a>
+  </div>
+</div>

@@ -1,0 +1,238 @@
+  @@include("../../assets/templates/head.html", {
+  "titlePage": "Tabs"
+  })
+
+  </head>
+
+  <body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-70 mt-100 mt-md-130">  
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">01</span> Simple <span class="font__weight-light">Top</span>
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+      @@include("templates/simple-top.html")
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">01</span> Simple <span class="font__weight-light">Bottom</span>
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+       @@include("templates/simple-top.html",{
+         "position":"bottom"
+       })
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">02</span> Side <span class="font__weight-light">Left</span>
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+        @@include("templates/side-left.html")
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">02</span> Side <span class="font__weight-light">Right</span>
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+       @@include("templates/side-left.html",{
+         "position":"right"
+       })
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">03</span> Icon <span class="font__weight-light">Left</span>
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+      @@include("templates/icon-left.html")
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">03</span> Icon <span class="font__weight-light">Right</span>
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+      @@include("templates/icon-left.html",{
+        "position":"right"
+      })
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">04</span> Bottom <span class="font__weight-light">Top</span>
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+      @@include("templates/bottom-bottom.html")
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">04</span> Bottom <span class="font__weight-light">Bottom</span>
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+      @@include("./templates/bottom-bottom.html",{
+        "position":"bottom"
+      })
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">05</span> Parallax
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+      @@include("templates/parallax.html")
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">06</span> Smooth
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+      @@include("templates/smooth.html")
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">07</span> Simple
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+      @@include("templates/simple.html")
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">08</span> Hover
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+
+        @@include('./templates/hover.html')
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">09</span> Simple Smooth
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-180">
+      @@include('./templates/simple-smooth.html',{
+        "title1":"01. Description",
+        "title2":"02. Main goal",
+        "title3":"03. Project process"        
+      })
+      </div>
+    </section>
+
+    <section>
+        <div class="container mb-110">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">10</span> Canted
+            </h3>
+          </div>
+        </div>
+        <div class="container mb-180">
+          @@include('./templates/canted.html')
+        </div>
+      </section>
+
+
+      <section>
+        <div class="container mb-110">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">11</span> Rounded
+            </h3>
+          </div>
+        </div>
+        <div class="mb-180">
+          @@include('./templates/rounded.html',{
+            "title1":"<i class='fa fa-shopping-basket' aria-hidden='true'></i> <span>Related posts</span>",
+            "title2":"<i class='fa fa-star' aria-hidden='true'></i> <span>Reviews</span>",
+            "title3":"<i class='fa fa-comments' aria-hidden='true'></i> <span>comments</span>"
+          })
+        </div>
+      </section>
+
+
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+
+  </body>
+</html>

@@ -1,0 +1,274 @@
+  @@include("../../assets/templates/head.html", {
+  "titlePage": "Shop Components Flip"
+  })
+
+  </head>
+
+  <body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-50 mt-100 mt-md-130">
+
+      <section>
+        <div class="container mb-90 mt-90">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">01</span> Container
+            </h3>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-6">
+              @@include('./templates/flip-1.html', {
+              "styleFlip": "flip_horizontal",
+              "title": "Some item name",
+              "stick": "-10%",
+              "styleStick": "brk-sc-flip-one__stick_style-1",
+              "thumb": "img/shop-1.jpg",
+              "cat": "Sport",
+              "price": "$24.00",
+              "oldPrice": "$26.00",
+              "slider": ["img/shop-1.jpg", "img/shop-2.jpg", "img/shop-3.jpg"]
+              })
+            </div>
+
+            <div class="col-xl-3 col-lg-6">
+              @@include('./templates/flip-1.html', {
+              "styleFlip": "flip_vertical",
+              "title": "Some item name",
+              "stick": "Sale",
+              "styleStick": "brk-sc-flip-one__stick_style-2",
+              "thumb": "img/shop-2.jpg",
+              "cat": "Sport",
+              "price": "$24.00",
+              "oldPrice": "$26.00",
+              "slider": ["img/shop-1.jpg", "img/shop-2.jpg", "img/shop-3.jpg"]
+              })
+            </div>
+
+            <div class="col-xl-3 col-lg-6">
+              @@include('./templates/flip-1.html', {
+              "styleFlip": "flip_vertical",
+              "title": "Some item name",
+              "thumb": "img/shop-3.jpg",
+              "cat": "Sport",
+              "price": "$24.00",
+              "oldPrice": "$26.00",
+              "slider": ["img/shop-1.jpg", "img/shop-2.jpg", "img/shop-3.jpg"]
+              })
+            </div>
+
+            <div class="col-xl-3 col-lg-6">
+              @@include('./templates/flip-1.html', {
+              "styleFlip": "flip_horizontal",
+              "title": "Some large item name here",
+              "thumb": "img/shop-2.jpg",
+              "cat": "Sport",
+              "price": "$24.00",
+              "oldPrice": "$26.00",
+              "slider": ["img/shop-1.jpg", "img/shop-2.jpg", "img/shop-3.jpg"]
+              })
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section>
+        <div class="container mb-90 mt-90">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">02</span> Container
+            </h3>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-6">
+              @@include('./templates/flip-2.html', {
+              "frontTitle": "Some large item name here",
+              "backTitle": "Some Title Here",
+              "stick": "-40%",
+              "price": "$24.00",
+              "styleFlip": "flip_horizontal",
+              "thumb": "img/brk-honeycomb-1.png"
+              })
+            </div>
+
+            <div class="col-xl-3 col-lg-6">
+              @@include('./templates/flip-2.html', {
+              "frontTitle": "Some large item name here",
+              "backTitle": "Some Title Here",
+              "stick": "-40%",
+              "price": "$24.00",
+              "styleFlip": "flip_vertical",
+              "thumb": "img/brk-honeycomb-1.png"
+              })
+            </div>
+
+            <div class="col-xl-3 col-lg-6">
+              @@include('./templates/flip-2.html', {
+              "frontTitle": "Some large item name here",
+              "backTitle": "Some Title Here",
+              "price": "$24.00",
+              "styleFlip": "flip_vertical",
+              "thumb": "img/brk-honeycomb-1.png"
+              })
+            </div>
+
+            <div class="col-xl-3 col-lg-6">
+              @@include('./templates/flip-2.html', {
+              "frontTitle": "Some large item name here",
+              "backTitle": "Some Title Here",
+              "price": "$24.00",
+              "styleFlip": "flip_horizontal",
+              "thumb": "img/brk-honeycomb-1.png"
+              })
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section>
+        <div class="container mb-90 mt-90">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">03</span> Container
+            </h3>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-6">
+              @@include('./templates/flip-3.html', {
+              "price": "$24.00",
+              "title": "Some large item name here",
+              "styleFlip": "flip_horizontal",
+              "thumb": "img/brk-honeycomb-1.png",
+              "rating": "75%"
+              })
+            </div>
+
+            <div class="col-xl-3 col-lg-6">
+              @@include('./templates/flip-3.html', {
+              "price": "$24.00",
+              "stick": "-30%",
+              "title": "Some Title Here",
+              "styleFlip": "flip_vertical",
+              "thumb": "img/brk-honeycomb-1.png",
+              "rating": "90%"
+              })
+            </div>
+
+            <div class="col-xl-3 col-lg-6">
+              @@include('./templates/flip-3.html', {
+              "price": "$24.00",
+              "title": "Some large item name here",
+              "styleFlip": "flip_vertical",
+              "thumb": "img/brk-honeycomb-1.png",
+              "rating": "60%"
+              })
+            </div>
+
+            <div class="col-xl-3 col-lg-6">
+              @@include('./templates/flip-3.html', {
+              "price": "$24.00",
+              "stick": "-30%",
+              "title": "Some Title Here",
+              "styleFlip": "flip_horizontal",
+              "thumb": "img/brk-honeycomb-1.png",
+              "rating": "50%"
+              })
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section>
+        <div class="container mb-90 mt-90">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">04</span> Container
+            </h3>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-6">
+              @@include('./templates/flip-4.html', {
+              "title": "Some large item name here",
+              "titleBack": "Some Title",
+              "oldPrice": "$26.00",
+              "price": "$24.00",
+              "cat": "Sport",
+              "stick": "Sale",
+              "styleFlip": "flip_horizontal",
+              "thumb": "img/sh-flip-1.png",
+              "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa natoque"
+              })
+            </div>
+
+            <div class="col-xl-4 col-lg-6">
+              @@include('./templates/flip-4.html', {
+              "title": "Some large item name here",
+              "titleBack": "Some Title",
+              "oldPrice": "$26.00",
+              "price": "$24.00",
+              "cat": "Sport",
+              "stick": "Sale",
+              "styleFlip": "flip_vertical",
+              "thumb": "img/sh-flip-2.png",
+              "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa natoque"
+              })
+            </div>
+
+            <div class="col-xl-4 col-lg-6">
+              @@include('./templates/flip-4.html', {
+              "title": "Some large item name here",
+              "titleBack": "Some Title",
+              "oldPrice": "$26.00",
+              "price": "$24.00",
+              "cat": "Sport",
+              "stick": "Sale",
+              "styleFlip": "flip_horizontal",
+              "thumb": "img/sh-flip-3.png",
+              "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa natoque"
+              })
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section>
+        <div class="container mb-90 mt-90">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">05</span> Container
+            </h3>
+          </div>
+        </div>
+
+          @@include('../flip-boxes/templates/split.html', {})
+
+      </section>
+
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+
+  </body>
+</html>

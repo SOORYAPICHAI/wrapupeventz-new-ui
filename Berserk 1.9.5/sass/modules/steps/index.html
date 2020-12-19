@@ -1,0 +1,103 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Steps"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- Steps Gradient -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> Gradient</h3>
+    	</div>
+    	<div class="container mt-100 mt-md-130">
+		    @@include('./templates/gradient.html')
+    	</div>
+      <div class="mt-70">
+        @@include('./templates/gradient-v2.html')
+      </div>
+    </div>
+
+    <!-- Steps History -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> History</h3>
+    	</div>
+    	<div class="container mt-100 mt-md-130">
+        @@include('./templates/history.html')
+    	</div>
+
+      @@include('./templates/history-v2.html')
+    </div>
+
+    <!-- Steps Checkers -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">03</span> Checkers</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130 mb-130">
+      @@include("../steps/templates/checkers.html",{
+        "title1": "Cart",
+        "title2": "Checkout",
+        "title3": "Payment",
+        "title4": "Done",
+        "complete1": "true",
+        "complete2": "true",
+        "complete3": "true",
+        "active3": "true",
+        "customClass": "mb-70"
+      })
+    	</div>
+
+		@@include('./templates/checkers-v2.html')
+    </div>
+
+    <!-- Steps Squared -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">04</span> Squared</h3>
+    	</div>
+    	<div class="container mt-100 mt-md-130">
+		    @@include('./templates/squared.html')
+      </div>
+      
+      <div class="mt-70 pt-80 pb-80 bg__style overlay__gradient overlay__gradient-left" style="background-image: url(img/bg-full_1.jpg);">
+        @@include('./templates/squared-v2.html',{
+          "light": "true"
+        })
+        <span class="overlay_after brk-bg-gradient-10deg-92"></span>  
+      </div>
+    </div>
+
+    <!-- Steps Light -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">05</span> Light</h3>
+    	</div>
+    	<div class="container mt-100 mt-md-130">
+		@@include('./templates/light.html')
+	    </div>
+
+		@@include('./templates/light-v2.html')
+    </div>
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

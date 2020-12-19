@@ -1,0 +1,17 @@
+
+		<div class="cfa__wrapper cfa__image @@if(context.customPadding){@@customPadding} @@if(!context.customPadding){pt-70 pb-70 pl-40 pr-40} bg__style overlay__gradient text-left" data-brk-library="component__call_to_action">
+			<h2 class="font__family-montserrat font__size-48 font__weight-bold"><span class="font__weight-light">CALL</span>
+				<span class="font__family-playfair font__weight-light font__style-italic text-blue">for</span> ACTION</h2>
+      @@include('../../buttons/templates/buttons.html',{
+        "type":"btn-gradient",
+        "text":"read more",
+        "customClass":"border-radius-30 btn-min-width-200"
+      })
+      @@if(context.img){
+        <span class="bg-after bg__style" style="background-image: url(@@img);"></span>
+      }
+      @@if(!context.img){
+        <span class="bg-after bg__style" style="background-image: url(img/1140x236_1.jpg);"></span>
+      }
+			<span class="overlay_after brk-base-bg-gradient-14 opacity-90"></span>
+		</div>

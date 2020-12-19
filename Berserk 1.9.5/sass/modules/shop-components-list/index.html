@@ -1,0 +1,149 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Shop Components List"
+})
+
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+    <main class="main-container">
+      <div class="container mt-80">
+       <div class="row">
+         <div class="col-12 mb-70">
+           @@include('../widgets/templates/banner.html',{
+            "bgImage":"img/bg-1920_1.jpg", 
+            "overlayClass":"",
+            "title":"Best products for you and your friends",
+            "mainImg":"img/shop/tshirt-brk.png"
+           })
+         </div> 
+        <div class="col-12 col-lg-8 col-xl-9 order-xs-2 order-lg-1">
+          <div class="brk-border-btw-sidebar_right">
+            @@include('../widgets/templates/shop-sorting.html',{
+              "view":"row",
+              "colLink":"http://dev.nikadevs.com/berserk-html/shop-components-grid.html",
+              "rowLink":"http://dev.nikadevs.com/berserk-html/shop-components-list.html"  
+            })
+            <div class="row">
+              <div class="col-12">
+                @@include('../shop-components-cards/templates/shop-horizontal.html',{
+                  "containerCustomClass":"mb-30",
+                  "labelsType":"top",
+                  "label1":"hot",
+                  "label2":"",
+                  "img":"img/shop/shop-win-1.jpg",
+                  "title":"Some shop item",
+                  "oldPrice":"$26.00",
+                  "newPrice":"$16.00",
+                  "paragraphDescription":"",
+                  "listDescription":["Maecenas vestibulum","Pellentesque","Fellentesque habita","Maecenas vestib","Pellentes"]
+                })
+              </div>
+              <div class="col-12">
+                @@include('../shop-components-cards/templates/shop-horizontal.html',{
+                  "containerCustomClass":"mb-30",
+                  "labelsType":"side",
+                  "label1":"",
+                  "label2":"",
+                  "img":"img/shop/shop-win-2.jpg",
+                  "title":"Some shop item",
+                  "oldPrice":"$26.00",
+                  "newPrice":"$16.00",
+                  "paragraphDescription":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam",
+                  "listDescription":""
+                })
+              </div>
+              <div class="col-12">
+                @@include('../shop-components-cards/templates/shop-horizontal.html',{
+                  "containerCustomClass":"mb-30",
+                  "labelsType":"sideCornered",
+                  "label1":"",
+                  "label2":"",
+                  "img":"img/shop/shop-win-3.jpg",
+                  "title":"Some shop item",
+                  "oldPrice":"$26.00",
+                  "newPrice":"$16.00",
+                  "paragraphDescription":"",
+                  "listDescription":["Maecenas vestibulum","Pellentesque","Fellentesque habita","Maecenas vestib","Pellentes"]
+                })
+              </div>
+              <div class="col-12">
+                @@include('../shop-components-cards/templates/shop-horizontal.html',{
+                  "containerCustomClass":"mb-30",
+                  "labelsType":"top",
+                  "label1":"",
+                  "label2":"",
+                  "img":"img/shop/shop-win-4.jpg",
+                  "title":"Some shop item",
+                  "oldPrice":"$26.00",
+                  "newPrice":"$16.00",
+                  "paragraphDescription":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam",
+                  "listDescription":""
+                })
+              </div>
+              <div class="col-12">
+                @@include('../shop-components-cards/templates/shop-horizontal.html',{
+                  "containerCustomClass":"mb-30",
+                  "labelsType":"top",
+                  "label1":"",
+                  "label2":"",
+                  "img":"img/shop/shop-win-5.png",
+                  "title":"Some shop item",
+                  "oldPrice":"$26.00",
+                  "newPrice":"$16.00",
+                  "paragraphDescription":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam",
+                  "listDescription":""
+                })
+              </div>
+              <div class="col-12">
+                @@include('../shop-components-cards/templates/shop-horizontal.html',{
+                  "containerCustomClass":"mb-30",
+                  "labelsType":"top",
+                  "label1":"",
+                  "label2":"",
+                  "img":"img/shop/shop-win-6.png",
+                  "title":"Some shop item",
+                  "oldPrice":"$26.00",
+                  "newPrice":"$16.00",
+                  "paragraphDescription":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam",
+                  "listDescription":""
+                })
+              </div>
+              
+              <div class="col-12">
+                <div class="text-center mt-110 mb-80">
+                    <a href="#" class="icon__btn icon__btn-anim icon__btn-md icon__btn-invert">
+                      <span class="before"></span>
+                      <i class="fal fa-sync" aria-hidden="true"></i>
+                      <span class="after"></span>
+                      <span class="bg"></span>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+         <div class="col-12 col-lg-4 col-xl-3 order-xs-1 order-lg-2">
+          @@include('../widgets/templates/sidebar-shop.html',{
+            "customClass":""
+          })
+         </div>
+       </div>
+      </div>
+
+    </main>
+
+  </div>
+  
+    @@include("../../assets/templates/footer.html")
+
+</body>
+
+</html>

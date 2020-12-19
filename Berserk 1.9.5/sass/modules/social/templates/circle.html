@@ -1,0 +1,82 @@
+@@if(context.onlySocial !== "true"){
+<div class="pt-100 pb-100 brk-bg-center-cover text-center lazyload"
+     @@if(context.img){data-bg="@@img" }
+     @@if(!context.img){data-bg="img/bg-1920_3.jpg" }
+     data-brk-library="component__social_block">
+  <span class="brk-abs-bg-overlay @@if(context.overlay){@@overlay}@@if(!context.overlay){brk-bg-color-dark-6}"></span>
+  <div class="container all-light">
+    @@if(context.onlyLinks !== "true"){
+    <div class="line-heading" data-brk-library="component__title">
+      <div class="text-left text-lg-right">
+        <h2 class="font__family-montserrat font__weight-bold font__size-42">Just Follow Us</h2>
+        <h4 class="font__family-montserrat font__weight-light font__size-28 text-light-blue">Stay with us</h4>
+      </div>
+      <p class="font__family-open-sans font__size-16 text-left text-gray vert-line">Lorem ipsum dolor sit amet,
+        consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        <br class="hide show-md-block">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+    </div>
+    }
+    }
+
+    <div class="row @@if(context.noMargin !== "true"){mt-30}" data-brk-library="component__social_block">
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="social__icon-circle @@if(context.dark === " true"){social__icon-circle-dark}">
+      <a href="#"><i class="brk-icon fab fa-facebook-f"><span class="before"></span><span
+              class="after"></span></i></a>
+      <h4 class="font__family-montserrat font__weight-light font__size-28 @@if(context.dark !== "true"){text-light-blue} @@if(context.dark === "true"){brk-white-font-color}">Facebook</h4>
+      <p class="font__family-montserrat @@if(context.dark === "true"){brk-white-font-color
+      font__weight-bold}@@if(context.dark !=="true"){font__weight-medium} font__size-16">Follow Now</p>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-2">
+    <div class="social__icon-circle @@if(context.dark === "true"){social__icon-circle-dark}">
+    <a href="#"><i class="brk-icon fab fa-twitter"><span class="before"></span><span class="after"></span></i></a>
+    <h4 class="font__family-montserrat font__weight-light font__size-28 @@if(context.dark !== "true"){text-light-blue}
+    @@if(context.dark === "true"){brk-white-font-color}">Twitter</h4>
+    <p class="font__family-montserrat @@if(context.dark === "true"){brk-white-font-color
+    font__weight-bold}@@if(context.dark !=="true"){font__weight-medium} font__size-16">Follow Now</p>
+  </div>
+</div>
+<div class="col-6 col-md-4 col-lg-2">
+  <div class="social__icon-circle @@if(context.dark === "true"){social__icon-circle-dark}">
+  <a href="#"><i class="brk-icon fab fa-instagram"><span class="before"></span><span class="after"></span></i></a>
+  <h4 class="font__family-montserrat font__weight-light font__size-28 @@if(context.dark !== "true"){text-light-blue}
+  @@if(context.dark === "true"){brk-white-font-color}">Instagram</h4>
+  <p class="font__family-montserrat @@if(context.dark === "true"){brk-white-font-color
+  font__weight-bold}@@if(context.dark !=="true"){font__weight-medium} font__size-16">Follow Now</p>
+</div>
+</div>
+<div class="col-6 col-md-4 col-lg-2">
+  <div class="social__icon-circle @@if(context.dark === "true"){social__icon-circle-dark}">
+  <a href="#"><i class="brk-icon fab fa-youtube"><span class="before"></span><span class="after"></span></i></a>
+  <h4 class="font__family-montserrat font__weight-light font__size-28 @@if(context.dark !== "true"){text-light-blue}
+  @@if(context.dark === "true"){brk-white-font-color}">YouTube</h4>
+  <p class="font__family-montserrat @@if(context.dark === "true"){brk-white-font-color
+  font__weight-bold}@@if(context.dark !=="true"){font__weight-medium} font__size-16">Follow Now</p>
+</div>
+</div>
+<div class="col-6 col-md-4 col-lg-2">
+  <div class="social__icon-circle @@if(context.dark === "true"){social__icon-circle-dark}">
+  <a href="#"><i class="brk-icon fab fa-google"><span class="before"></span><span class="after"></span></i></a>
+  <h4 class="font__family-montserrat font__weight-light font__size-28 @@if(context.dark !== "true"){text-light-blue}
+  @@if(context.dark === "true"){brk-white-font-color}">Google +</h4>
+  <p class="font__family-montserrat @@if(context.dark === "true"){brk-white-font-color
+  font__weight-bold}@@if(context.dark !=="true"){font__weight-medium} font__size-16">Follow Now</p>
+</div>
+</div>
+<div class="col-6 col-md-4 col-lg-2">
+  <div class="social__icon-circle @@if(context.dark === "true"){social__icon-circle-dark}">
+  <a href="#"><i class="brk-icon fab fa-vimeo-v"><span class="before"></span><span class="after"></span></i></a>
+  <h4 class="font__family-montserrat font__weight-light font__size-28 @@if(context.dark !== "true"){text-light-blue}
+  @@if(context.dark === "true"){brk-white-font-color}">Vimeo</h4>
+  <p class="font__family-montserrat @@if(context.dark === "true"){brk-white-font-color
+  font__weight-bold}@@if(context.dark !=="true"){font__weight-medium} font__size-16">Follow Now</p>
+</div>
+</div>
+</div>
+
+@@if(context.onlySocial !== "true"){
+
+</div>
+</div>
+}

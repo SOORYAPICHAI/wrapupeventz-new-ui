@@ -1,0 +1,154 @@
+body{
+  font-family: Roboto, Arial, Tahoma, sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  height: 100%;
+  color: #626262;
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding-bottom: 10px !important;
+}
+h2 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+
+.doc_block b, .doc_block strong {
+  font-weight: 600;
+}
+.doc_block  ul{
+  list-style-type: disc;
+}
+.doc_block ul {
+  margin-top: 1em;
+  margin-bottom: 1rem;
+  margin-left: 2em;
+}
+.doc_block ul ul{
+  list-style-type: circle;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.right-sidebar{
+  padding: 40px 0;
+}
+.doc_block a:not(.btn){
+  color: #2775FF;
+}
+
+code{
+  margin: 15px 0;
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+.row-fluid{
+  margin-bottom: 40px;
+}
+ol.linenums li{
+  padding: 2px 5px 2px 12px;
+}
+
+.brk-base-class {
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.brk-base-class thead {
+  background-color: #E3E3E3;
+  line-height: 40px;
+}
+
+.brk-base-class td {
+  border: 1px solid #2B2B2B;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.brk-base-class__display {
+  min-height: 25px;
+  text-align: left;
+  margin: 25px;
+  padding: 5px;
+  font-size: 12px;
+  line-height: 1.125;
+  position: relative;
+  height: auto !important;
+}
+
+.display-reset {
+  width: 100%;
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.brk-base-class__display span {
+  display: inline-block;
+  padding: 3px;
+}
+
+.brk-base-class__display:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 100% !important;
+  height: 100% !important;
+  transform: none !important;
+}
+
+.brk-base-class__display_noafter:after {
+  display: none;
+}
+
+.brk-base-class__class {
+  width: 40%;
+}
+
+.brk-base-class code {
+  padding: 20px 15px;
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+}
+
+.border-example {
+  border-width: 3px;
+  border-style: solid;
+}
+
+.shortcode .table td:first-child{
+  vertical-align: middle;
+}
+
+.shortcode .table td:first-child,
+.shortcode .table th:first-child{
+  width: 60%;
+  overflow: auto;
+}
+.shortcode .table td:nth-child(2),
+.shortcode .table th:nth-child(2){
+  width: 40%;
+  text-align: center;
+}
+.shortcode .table td:nth-child(2) img{
+  width: auto;
+}
+.shortcode .table {
+  table-layout: fixed;
+}

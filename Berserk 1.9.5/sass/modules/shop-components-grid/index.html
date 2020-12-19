@@ -1,0 +1,267 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Shop Components Grid"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+    <main class="main-container">
+      <div class="container mt-80">
+       <div class="row">
+         <div class="col-12 mb-70">
+           @@include('../widgets/templates/banner.html',{
+            "bgImage":"img/bg-1920_1.jpg", 
+            "overlayClass":"",
+            "title":"Best products for you and your friends",
+            "mainImg":"img/shop/tshirt-brk.png"
+           })
+         </div> 
+        <div class="col-12 col-lg-8 col-xl-9 order-xs-2 order-lg-1">
+          <div class="brk-border-btw-sidebar_right">
+            @@include('../widgets/templates/shop-sorting.html',{
+              "view":"col",
+              "colLink":"http://dev.nikadevs.com/berserk-html/shop-components-grid.html",
+              "rowLink":"http://dev.nikadevs.com/berserk-html/shop-components-list.html"  
+            })
+            <div class="row">
+              <div class="col-12 col-md-6 col-xl-4">
+                @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                  "flipType":"vertical",
+                  "imgSrc":"img/shop-1.jpg",
+                  "cardTitle":"Some shop item",
+                  "titleFontSize":"15",
+                  "oldPrice":"$41.00",
+                  "newPrice":"$21.30",
+                  "newPriceFontSize":"",
+                  "labelsType":"top",
+                  "label1":"",
+                  "label2":"-10%",
+                  "list":"",
+                  "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus",
+                  "imgSrcBack": "true"
+                })
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                  "flipType":"vertical",
+                  "imgSrc":"img/shop-2.jpg",
+                  "cardTitle":"Some shop item",
+                  "titleFontSize":"15",
+                  "oldPrice":"$41.00",
+                  "newPrice":"$21.30",
+                  "newPriceFontSize":"",
+                  "labelsType":"side",
+                  "label1":"new",
+                  "label2":"",
+                  "list":["Maecenas vestib","Pellentesque","Fellentesque habita","Maecenas vestib"],
+                  "description":"",
+                  "imgSrcBack": "true"
+                })
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                  "flipType":"vertical",
+                  "imgSrc":"img/shop/shop-win-1.jpg",
+                  "cardTitle":"Some shop item",
+                  "titleFontSize":"15",
+                  "oldPrice":"$41.00",
+                  "newPrice":"$21.30",
+                  "newPriceFontSize":"",
+                  "labelsType":"sideCornered",
+                  "label1":"new",
+                  "label2":"-10%",
+                  "list":["Maecenas vestib","Pellentesque","Fellentesque habita","Maecenas vestib"],
+                  "description":"",
+                  "imgSrcBack": "true"
+                })
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                  "flipType":"vertical",
+                  "imgSrc":"img/shop/shop-win-2.jpg",
+                  "cardTitle":"Some shop item",
+                  "titleFontSize":"15",
+                  "oldPrice":"$41.00",
+                  "newPrice":"$21.30",
+                  "newPriceFontSize":"",
+                  "labelsType":"sideCornered",
+                  "label1":"new",
+                  "label2":"-10%",
+                  "list":["Maecenas vestib","Pellentesque","Fellentesque habita","Maecenas vestib"],
+                  "description":"",
+                  "imgSrcBack": "true"
+                })
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                  "flipType":"vertical",
+                  "imgSrc":"img/shop/shop-win-3.jpg",
+                  "cardTitle":"Some shop item",
+                  "titleFontSize":"15",
+                  "oldPrice":"$41.00",
+                  "newPrice":"$21.30",
+                  "newPriceFontSize":"",
+                  "labelsType":"sideCornered",
+                  "label1":"",
+                  "label2":"",
+                  "list":["Maecenas vestib","Pellentesque","Fellentesque habita","Maecenas vestib"],
+                  "description":"",
+                  "imgSrcBack": "true"
+                })
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                  "flipType":"vertical",
+                  "imgSrc":"img/shop/shop-win-4.jpg",
+                  "cardTitle":"Some shop item",
+                  "titleFontSize":"15",
+                  "oldPrice":"$41.00",
+                  "newPrice":"$21.30",
+                  "newPriceFontSize":"",
+                  "labelsType":"sideCornered",
+                  "label1":"",
+                  "label2":"",
+                  "list":["Maecenas vestib","Pellentesque","Fellentesque habita","Maecenas vestib"],
+                  "description":"",
+                  "imgSrcBack": "true"
+                })
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                  "flipType":"vertical",
+                  "imgSrc":"img/shop/shop-win-5.png",
+                  "cardTitle":"Some shop item",
+                  "titleFontSize":"15",
+                  "oldPrice":"$41.00",
+                  "newPrice":"$21.30",
+                  "newPriceFontSize":"",
+                  "labelsType":"sideCornered",
+                  "label1":"",
+                  "label2":"",
+                  "list":["Maecenas vestib","Pellentesque","Fellentesque habita","Maecenas vestib"],
+                  "description":"",
+                  "imgSrcBack": "true"
+                })
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                  "flipType":"vertical",
+                  "imgSrc":"img/shop/shop-win-6.png",
+                  "cardTitle":"Some shop item",
+                  "titleFontSize":"15",
+                  "oldPrice":"$41.00",
+                  "newPrice":"$21.30",
+                  "newPriceFontSize":"",
+                  "labelsType":"sideCornered",
+                  "label1":"",
+                  "label2":"",
+                  "list":["Maecenas vestib","Pellentesque","Fellentesque habita","Maecenas vestib"],
+                  "description":"",
+                  "imgSrcBack": "true"
+                })
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                  "flipType":"vertical",
+                  "imgSrc":"img/shop/shop-win-7.png",
+                  "cardTitle":"Some shop item",
+                  "titleFontSize":"15",
+                  "oldPrice":"$41.00",
+                  "newPrice":"$21.30",
+                  "newPriceFontSize":"",
+                  "labelsType":"sideCornered",
+                  "label1":"",
+                  "label2":"",
+                  "list":["Maecenas vestib","Pellentesque","Fellentesque habita","Maecenas vestib"],
+                  "description":"",
+                  "imgSrcBack": "true"
+                })
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                  "flipType":"vertical",
+                  "imgSrc":"img/shop/shop-win-8.png",
+                  "cardTitle":"Some shop item",
+                  "titleFontSize":"15",
+                  "oldPrice":"$41.00",
+                  "newPrice":"$21.30",
+                  "newPriceFontSize":"",
+                  "labelsType":"sideCornered",
+                  "label1":"",
+                  "label2":"",
+                  "list":["Maecenas vestib","Pellentesque","Fellentesque habita","Maecenas vestib"],
+                  "description":"",
+                  "imgSrcBack": "true"
+                })
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                  "flipType":"vertical",
+                  "imgSrc":"img/shop/shop-win-9.png",
+                  "cardTitle":"Some shop item",
+                  "titleFontSize":"15",
+                  "oldPrice":"$41.00",
+                  "newPrice":"$21.30",
+                  "newPriceFontSize":"",
+                  "labelsType":"sideCornered",
+                  "label1":"",
+                  "label2":"",
+                  "list":["Maecenas vestib","Pellentesque","Fellentesque habita","Maecenas vestib"],
+                  "description":"",
+                  "imgSrcBack": "true"
+                })
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                @@include('../flip-boxes/templates/split-horizontal-card.html',{
+                  "flipType":"vertical",
+                  "imgSrc":"img/shop/shop-win-10.png",
+                  "cardTitle":"Some shop item",
+                  "titleFontSize":"15",
+                  "oldPrice":"$41.00",
+                  "newPrice":"$21.30",
+                  "newPriceFontSize":"",
+                  "labelsType":"sideCornered",
+                  "label1":"",
+                  "label2":"",
+                  "list":["Maecenas vestib","Pellentesque","Fellentesque habita","Maecenas vestib"],
+                  "description":"",
+                  "imgSrcBack": "true"
+                })
+                </div>
+              <div class="col-12">
+                <div class="text-center mt-110 mb-80">
+                    <a href="#" class="icon__btn icon__btn-anim icon__btn-md icon__btn-invert">
+                      <span class="before"></span>
+                      <i class="fal fa-sync" aria-hidden="true"></i>
+                      <span class="after"></span>
+                      <span class="bg"></span>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+         <div class="col-12 col-lg-4 col-xl-3 order-xs-1 order-lg-2">
+          @@include('../widgets/templates/sidebar-shop.html',{
+            "customClass":""
+          })
+         </div>
+       </div>
+      </div>
+
+    </main>
+
+  </div>
+  
+    @@include("../../assets/templates/footer.html")
+
+</body>
+
+</html>

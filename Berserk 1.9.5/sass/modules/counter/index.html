@@ -1,0 +1,85 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Counter"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- Counter Filled -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> Filled</h3>
+    	</div>
+		  @@include("templates/filled.html")
+    </div>
+
+    <!-- Counter Invertible -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> Invertible</h3>
+    	</div>
+		  @@include("templates/invertible.html")
+    </div>
+
+    <!-- Counter Clean -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">03</span> Clean</h3>
+    	</div>
+		  @@include("templates/clean.html")
+    </div>
+
+    <!-- Counter Roller -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">04</span> Roller</h3>
+    	</div>
+		  @@include("templates/roller.html")
+    </div>
+
+    <!-- Counter Icon -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">05</span> Icon</h3>
+    	</div>
+		  @@include("templates/icon.html")
+    </div>
+
+    <!-- Counter Airport -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">06</span> Airport</h3>
+    	</div>
+		  @@include("templates/airport.html")
+    </div>
+
+    <!-- Counter Gradient -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">07</span> Gradient</h3>
+    	</div>
+		  @@include("templates/gradient.html")
+    </div> 
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

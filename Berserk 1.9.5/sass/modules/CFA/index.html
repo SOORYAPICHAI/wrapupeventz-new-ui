@@ -1,0 +1,139 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Call for Action"
+})
+
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- CFA Container -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> Container</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+		  @@include("templates/container.html",{
+        "customClass":"border-radius-25 violet-shadow"
+      })
+    	</div>
+    </div>
+
+    <!-- CFA Minimal -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> Minimal</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+        @@include("./templates/minimal.html",{
+          "customClass":"border-radius-25 dark-shadow",
+          "title":"CFA Heading",
+          "paragraph":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor nean massa. Cum sociis natoque penatibus et magnis dis parturient mnsectetes.",
+          "btnText":"Read More"
+        })
+    	</div>
+    </div>
+
+    <!-- CFA Hot -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">03</span> Hot</h3>
+    	</div>
+        @@include('templates/hot.html',{
+          "bordered__text":"HOT!",
+          "bold__text":"CALL FOR ACTION ",
+          "light__text":"BLOCK HEADING TITLE GOES HERE",
+          "button__text":"READ MORE",
+          "text_hover": "READ MORE"
+        })
+    </div>
+
+    <!-- CFA Outer -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">04</span> Outer</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+		  @@include("templates/outer.html")
+    	</div>
+    </div>
+
+    <!-- CFA Email -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">05</span> Email</h3>
+    	</div>
+		  @@include("templates/email.html")
+    </div>
+
+    <!-- CFA Trend -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">06</span> Trend</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+		  @@include("templates/trend.html")
+    	</div>
+    </div>
+
+    <!-- CFA Video -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">07</span> Video</h3>
+    	</div>
+		  @@include("templates/video.html")
+    </div>
+
+    <!-- CFA Image -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">08</span> Image</h3>
+    	</div>
+    	<div class="container mt-70">
+		  @@include("templates/image.html")
+    	</div>
+    </div>
+
+    <!-- CFA Icon -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130 ">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">09</span> Icon</h3>
+    	</div>
+		  @@include("templates/icon.html")
+    </div>     
+
+    <!-- CFA lined -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130 ">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">09</span> Lined</h3>
+      </div>
+      <div class="container">
+        @@include("templates/simple-lined.html")
+      </div>
+    </div>     
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

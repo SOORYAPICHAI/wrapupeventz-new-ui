@@ -1,0 +1,186 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Sliders"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+  <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+  <main class="main-container mb-70 mt-100 mt-md-130">
+
+    <section>
+      <div class="container mb-20">
+        <div class="row">
+
+          <div class="col-xl-8 mb-110">
+            <div class="mb-100">
+              <div class="text-left">
+                <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+                  <span class="heading__number">01</span> Rotation Slider
+                </h3>
+              </div>
+            </div>
+            @@include('./templates/rotation-slider.html', {})
+          </div>
+
+          <div class="col-xl-4 mb-110">
+            <div class="mb-100">
+              <div class="text-left">
+                <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+                  <span class="heading__number">02</span> Rotation Slider
+                </h3>
+              </div>
+            </div>
+            <div class="text-center text-xl-left">
+              @@include('./templates/rotation-slider-mini.html', {
+              "customClass":"ml-auto mr-auto ml-xl-0"
+              })
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-20">
+        <div class="row">
+
+          <div class="col-lg-6 mb-110">
+            <div class="mb-100">
+              <div class="text-left">
+                <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+                  <span class="heading__number">03</span> Dark
+                </h3>
+              </div>
+            </div>
+            @@include('./templates/dark.html')
+          </div>
+
+          <div class="col-lg-6 mb-110">
+            <div class="mb-100">
+              <div class="text-left">
+                <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+                  <span class="heading__number">04</span> Thumbnailed
+                </h3>
+              </div>
+            </div>
+            @@include('templates/thumbnailed.html',{
+            "containerCustomClass":"",
+            "img1":"img/570x350_1.jpg",
+            "img2":"img/570x350_2.jpg",
+            "img3":"img/570x350_3.jpg",
+            "img4":"img/570x350_4.jpg",
+            "img5":"img/570x350_3.jpg"
+            })
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-20">
+        <div class="row">
+          <div class="col-12 mb-110">
+            <div class="mb-60">
+              <div class="text-left">
+                <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+                  <span class="heading__number">05</span> Tiled
+                </h3>
+              </div>
+            </div>
+            @@include('templates/tiled.html', {
+            "images": [
+            "img/234x234_1.jpg",
+            "img/234x234_2.jpg",
+            "img/234x234_3.jpg",
+            "img/234x234_4.jpg",
+            "img/234x234_5.jpg",
+            "img/234x234_1.jpg",
+            "img/234x234_2.jpg",
+            "img/234x234_3.jpg"
+            ]
+            })
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-100">
+        <div class="mb-100">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">06</span> Thumbnailed Slider
+            </h3>
+          </div>
+        </div>
+        @@include('templates/thumbnailed-full.html')
+      </div>
+    </section>
+
+    <section class="mt-50 mb-110">
+      @@include('templates/thumbnailed-full-100vh.html')
+     </section>
+
+     <section class="mb-100">
+       <div class="container mb-100">
+         <div class="mb-100">
+           <div class="text-left">
+             <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+               <span class="heading__number">07</span> Projects slider
+             </h3>
+           </div>
+         </div>
+       </div>
+       @@include('templates/projects.html')
+     </section>
+
+     <section>
+       <div class="container">
+         <div class="mb-100">
+           <div class="text-left">
+             <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+               <span class="heading__number">08</span> Trpile
+             </h3>
+           </div>
+         </div>
+       </div>
+       <div class="mb-100">
+         @@include('./templates/triple.html',{
+         "customCLass":"arrows-classic"
+         })
+       </div>
+     </section>
+
+     <section class="pb-120 overflow-hid">
+       <div class="container">
+         <div class="mb-100">
+           <div class="text-left">
+             <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+               <span class="heading__number">09</span> Services
+             </h3>
+           </div>
+         </div>
+       </div>
+       <div class="mb-100">
+         @@include('./templates/services.html')
+       </div>
+     </section>
+
+
+
+   </main>
+
+ </div>
+
+
+   @@include("../../assets/templates/footer.html")
+
+</body>
+</html>

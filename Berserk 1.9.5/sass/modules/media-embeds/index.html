@@ -1,0 +1,102 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Media Embeds"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mt-100 mt-md-130">
+      <div class="container mb-130">
+        <div class="row">
+          <!--Youtube-->
+          <div class="text-left col-12 col-lg-6 mb-180">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold mb-130">
+              <span class="heading__number">01</span> YouTube
+            </h3>
+            @@include("./templates/youtube.html")
+          </div>
+          <!--Vimeo-->
+          <div class="text-left col-12 col-lg-6  mb-180">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold mb-130">
+              <span class="heading__number">02</span> Vimeo
+            </h3>
+            @@include("./templates/vimeo.html")
+          </div>
+          <!--HTML5-->
+          <div class="text-left col-12 col-lg-6 mb-180">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold mb-130">
+              <span class="heading__number">03</span> HTML5
+            </h3>
+            @@include('./templates/html5.html', {
+            "info":"false"
+            })
+          </div>
+          <!--Facebook-->
+          <div class="text-left col-12 col-lg-6 mb-180">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold mb-130">
+              <span class="heading__number">04</span> Facebook Media
+            </h3>
+            @@include("./templates/facebook.html")
+          </div>
+          <!--Soundcloud-->
+          <div class="text-left col-12 col-lg-6 mb-180">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold mb-130">
+              <span class="heading__number">05</span> SoundCloud
+            </h3>
+            @@include("./templates/soundcloud.html")
+          </div>
+          <!--Spotify-->
+          <div class="text-left col-12 col-lg-6 mb-180">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold mb-130">
+              <span class="heading__number">06</span> Spotify
+            </h3>
+            @@include("./templates/spotify.html")
+          </div>
+          <!--Spotify light-->
+          <div class="text-left col-12 col-lg-6 mb-180">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold mb-130">
+              <span class="heading__number">07</span> Spotify
+              <span class="font__weight-thin">Light</span>
+            </h3>
+            @@include("./templates/spotify-light.html")
+          </div>
+          <!--Spotify light-->
+          <div class="text-left col-12 col-lg-6 mb-180">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold mb-130">
+              <span class="heading__number">08</span> Spotify
+              <span class="font__weight-thin">Dark</span>
+            </h3>
+            @@include("./templates/spotify-dark.html")
+          </div>
+          <!--Spotify light mini-->
+          <div class="text-left col-12 col-lg-6">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold mb-130">
+              <span class="heading__number">09</span> Spotify
+              <span class="font__weight-thin">Light</span>
+            </h3>
+            @@include("./templates/spotify-light-mini.html")
+          </div>
+          <!--Spotify light mini-->
+          <div class="text-left col-12 col-lg-6">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold mb-130">
+              <span class="heading__number">10</span> Spotify
+              <span class="font__weight-thin">Dark</span>
+            </h3>
+            @@include("./templates/spotify-dark-mini.html")
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+
+  @@include("../../assets/templates/footer.html")
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<nav class="brk-nav @@if(context.modifier){@@modifier} brk-header__item">
+  <ul class="brk-nav__menu">
+    @@if(context.two == 1 || !context.two){
+      @@if(context.quantity >= 1 || !context.quantity){
+        @@if(context.el_1 !== "del"){
+          @@include("brk-nav-home.html")
+        }
+      }
+      @@if(context.quantity >= 2 || !context.quantity){
+        @@if(context.el_2 !== "del"){
+          @@include("brk-nav-blog.html")
+        }
+      }
+      @@if(context.quantity >= 3 || !context.quantity){
+        @@if(context.el_3 !== "del"){
+          @@include("brk-nav-pages.html")
+        }
+      }
+    }
+    @@if(context.two == 2 || !context.two){
+      @@if(context.quantity >= 4 || !context.quantity){
+        @@if(context.el_4 !== "del"){
+          @@include("brk-nav-portfolio.html")
+        }
+      }
+      @@if(context.quantity >= 5 || !context.quantity){
+        @@if(context.el_5 !== "del"){
+          @@include("brk-nav-shop.html")
+        }
+      }
+      @@if(context.quantity == 6 || !context.quantity){
+        @@if(context.el_6 !== "del"){
+          @@include("brk-nav-elements.html")
+        }
+      }
+    }
+  </ul>
+</nav>

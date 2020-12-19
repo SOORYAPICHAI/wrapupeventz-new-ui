@@ -1,0 +1,86 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Portfolio Rows"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-50">
+
+      <div class="container-fluid mt-15">
+        <!-- data-grid-cols='' -  desctop  ; data-grid-cols-tablet - tablet  ;data-grid-height  - row height   -->
+        <div class="brk-grid-fitrows" data-grid-cols='5' data-grid-cols-tablet='3' data-grid-height='380' data-brk-library="component__portfolio_row">
+          <div class="brk-grid-fitrows__item">
+            @@include('templates/card.html',{ 
+              "title":"Some Title Here", 
+              "category":"category", 
+              "img-src":"img/370x370_1.jpg"
+            })
+          </div>
+          <div class="brk-grid-fitrows__item brk-grid-fitrows__item_width-2">
+            @@include('templates/card.html',{ 
+              "title":"Some Title Here", 
+              "category":"category", 
+              "img-src":"img/800x400_1.jpg" 
+            })
+          </div>
+          <div class="brk-grid-fitrows__item brk-grid-fitrows__item_width-2">
+            @@include('templates/card.html',{ 
+              "title":"Some Title Here", 
+              "category":"category", 
+              "img-src":"img/800x400_2.jpg" 
+            })
+          </div>
+          <div class="brk-grid-fitrows__item">
+            @@include('templates/card.html',{ 
+              "title":"Some Title Here", 
+              "category":"category", 
+              "img-src":"img/370x370_2.jpg" 
+            })
+          </div>
+          <div class="brk-grid-fitrows__item">
+            @@include('templates/card.html',{ 
+              "title":"Some Title Here", 
+              "category":"category", 
+              "img-src":"img/370x370_3.jpg" 
+            })
+          </div>
+          <div class="brk-grid-fitrows__item brk-grid-fitrows__item_width-2">
+            @@include('templates/card.html',{ 
+              "title":"Some Title Here", 
+              "category":"category", 
+              "img-src":"img/800x400_3.jpg"
+            })
+          </div>
+          <div class="brk-grid-fitrows__item">
+            @@include('templates/card.html',{ 
+              "title":"Some Title Here", 
+              "category":"category", 
+              "img-src":"img/370x370_4.jpg" 
+            })
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-100">
+        <button class="icon__btn icon__btn-anim icon__btn-lg icon__btn-invert" data-brk-library="component__button">
+          <span class="before"></span>
+          <i class="fal fa-sync icon-inside" aria-hidden="true"></i>
+          <span class="after"></span>
+          <span class="bg"></span>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+
+</body>
+
+</html>

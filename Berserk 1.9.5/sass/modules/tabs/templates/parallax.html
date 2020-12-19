@@ -1,0 +1,21 @@
+<div class="brk-tabs brk-tabs-parallax" data-hash="true" data-brk-library="component__tabs">
+  <ul class="brk-tabs-nav font__family-montserrat">
+    <li class="brk-tab @@if(context.tab_color_dark === 'true'){brk-tab_dark}"><i class="far fa-gem" aria-hidden="true"></i><span>Diamond</span></li>
+    <li class="brk-tab @@if(context.tab_color_dark === 'true'){brk-tab_dark}"><i class="fab fa-delicious" aria-hidden="true"></i><span>Delicious</span></li>
+    <li class="brk-tab @@if(context.tab_color_dark === 'true'){brk-tab_dark}"><i class="fab fa-gg" aria-hidden="true"></i><span>G & G</span></li>
+    <li class="brk-tab @@if(context.tab_color_dark === 'true'){brk-tab_dark}"><i class="fab fa-codepen" aria-hidden="true"></i><span>Codepen</span></li>
+    <li class="brk-tab @@if(context.tab_color_dark === 'true'){brk-tab_dark}"><i class="far fa-cube" aria-hidden="true"></i><span>Cube</span></li>
+  </ul>
+  <div class="brk-tabs-content">
+    @@if(context.tab1_path){
+      @@include("@@tab1_path")
+    }
+    @@if(!context.tab1_path){
+      @@include("./parallax-tab-1.html")
+    }
+    @@include("./parallax-tab-2.html")
+    @@include("./parallax-tab-3.html")
+    @@include("./parallax-tab-4.html")
+    @@include("./parallax-tab-5.html")
+  </div>
+</div>

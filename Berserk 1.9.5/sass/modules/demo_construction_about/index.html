@@ -1,0 +1,214 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Construction - About Us",
+"themeSkin": "brk-yellow.css"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+<div class="main-page">
+
+@@include('../demo_construction/templates/header.html', {})
+
+<section>
+@@include('../../modules/breadcrumbs/templates/dark.html', {
+"bg": "img/demo_construction/1920x430_1.jpg",
+"offset": "pt-80 pb-130",
+"title": "About <span class=\"font__weight-bold\">Us</span>"
+})
+</section>
+
+<section class="container mt-110 pb-30">
+  <h1 class="sr-only">Construction - About Us</h1>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="font__family-montserrat font__size-64 line__height-68 pt-40 text-center text-lg-left">
+        <div class="font__weight-light">From idea to real</div>
+        <div class="font__weight-bold">construction</div>
+      </div>
+
+      <div class="font__size-16 line__height-28 brk-dark-blur-font-color mt-40 text-center text-lg-left">The review of fire safety rules
+        undertaken in the wake of Grenfell tower has proposed the creation of “less prescriptive” regulation and cutting
+        out private sector Approved Inspectors from performing building control on high rise buildings. Final report
+        recommends new approval.
+      </div>
+
+      @@include("../../modules/progress-bars/templates/minimal.html",{
+      "valueCur":"80",
+      "title":"Hard Work",
+      "customClass":"mt-70"
+      })
+      @@include("../../modules/progress-bars/templates/minimal.html",{
+      "valueCur":"60",
+      "title":"Projects Delivery"
+      })
+      @@include("../../modules/progress-bars/templates/minimal.html",{
+      "valueCur":"93",
+      "title":"Customers Love",
+      "customClass": "mb-30"
+      })
+    </div>
+    <div class="col-lg-5 offset-lg-1">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/demo_construction/470x620_1.jpg" alt="alt" class="img-fluid mb-30 lazyload">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="bg-cover bg-norepeat bg-position_center bg-white bg-shaded bg-shaded_dark lazyload pt-70 pb-70"
+       data-bg="@@if(context.bg){@@bg}@@if(!context.bg){img/bg-1920_1.jpg}">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          @@include('../../modules/progress-circles/templates/minimal-single.html', {
+          "chartTitleClass": "text-white",
+          "single": "true",
+          "valueCur": "75",
+          "title": "Hard Work",
+          "colorBack": "rgba(255,255,255,.1)"
+          })
+        </div>
+        <div class="col-lg-3 col-md-6">
+          @@include('../../modules/progress-circles/templates/minimal-single.html', {
+          "chartTitleClass": "text-white",
+          "single": "true",
+          "valueCur": "90",
+          "title": "Donates",
+          "colorBack": "rgba(255,255,255,.1)"
+          })
+        </div>
+        <div class="col-lg-3 col-md-6">
+          @@include('../../modules/progress-circles/templates/minimal-single.html', {
+          "chartTitleClass": "text-white",
+          "single": "true",
+          "valueCur": "65",
+          "title": "Hard Work",
+          "colorBack": "rgba(255,255,255,.1)"
+          })
+        </div>
+        <div class="col-lg-3 col-md-6">
+          @@include('../../modules/progress-circles/templates/minimal-single.html', {
+          "chartTitleClass": "text-white",
+          "single": "true",
+          "valueCur": "50",
+          "title": "Donates",
+          "colorBack": "rgba(255,255,255,.1)"
+          })
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brk-bg-light-dark-2 pt-50 pb-80">
+  <div class="container mb-60">
+    <div class="row align-items-center">
+      <div class="col-xl-3">
+        @@include('../../modules/titles/templates/underline.html',{
+        "text": {
+        "main": "",
+        "secondary": "",
+        "sidedStyle": "font__family-montserrat highlight-underline line__height-42 font__size-36 font__weight-bold",
+        "sided": {
+        "main": "Founders",
+        "secondary": ""
+        }
+        }
+        })
+      </div>
+      <div class="col-xl-9">
+        <div class="font__size-16 line__height-26 brk-dark-blur-font-color mt-30">As widely expected, Hackitt has declined to
+          proscribe the use of flammable materials in cladding systems, despite widespread calls for her to do so. Her
+          report instead says it is for the construction industry.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3 col-md-6 col-12">
+        @@include('../../modules/team/templates/persone-circle.html', {
+        "title": "Bernard Show",
+        "secondary": "CEO",
+        "img": "img/demo_construction/270x340_1.jpg"
+        })
+      </div>
+      <div class="col-xl-3 col-md-6 col-12">
+        @@include('../../modules/team/templates/persone-circle.html', {
+        "title": "Antoni Hide",
+        "secondary": "Designer",
+        "img": "img/demo_construction/270x340_2.jpg"
+        })
+      </div>
+      <div class="col-xl-3 col-md-6 col-12">
+        @@include('../../modules/team/templates/persone-circle.html', {
+        "title": "Valenti Show",
+        "secondary": "Office Worker",
+        "img": "img/demo_construction/270x340_3.jpg"
+        })
+      </div>
+      <div class="col-xl-3 col-md-6 col-12">
+        @@include('../../modules/team/templates/persone-circle.html', {
+        "title": "Mike Berserk",
+        "secondary": "Main Developer",
+        "img": "img/demo_construction/270x340_4.jpg"
+        })
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container pt-70 pb-80 text-center text-xl-left">
+  <div class="row">
+    <div class="col-xl-3">
+      <div class="font__family-montserrat font__size-36 line__height-42 mb-30">
+        <div class="font__weight-light">Our Great</div>
+        <div class="font__weight-bold">Partners</div>
+      </div>
+
+      <p class="font__size-16 line__height-28 brk-dark-font-color mb-30">Dame Judith Hackitt’s final report has made a number of recommendations that will have significant implications for the construction industry. They are passed into law.</p>
+
+      @@include('../../modules/buttons/templates/buttons.html',{
+      "tag": "a",
+      "type": "btn-inside-out",
+      "customClass": "border-radius-25 font__family-open-sans font__weight-bold m-0",
+      "text": "View team page",
+      "text_hover" : "Open team page",
+      "href": "#",
+      "size": "md",
+      "width": "",
+      "icon": "",
+      "iconType": "background"
+      })
+    </div>
+    <div class="col-xl-9">
+      <div class="row">
+        <div class="col-xl-4 pt-15 pb-15">@@include('../../modules/widgets/templates/logo-set.html',{})</div>
+        <div class="col-xl-4 pt-15 pb-15">@@include('../../modules/widgets/templates/logo-set.html',{})</div>
+        <div class="col-xl-4 pt-15 pb-15">@@include('../../modules/widgets/templates/logo-set.html',{})</div>
+        <div class="col-xl-4 pt-15 pb-15">@@include('../../modules/widgets/templates/logo-set.html',{})</div>
+        <div class="col-xl-4 pt-15 pb-15">@@include('../../modules/widgets/templates/logo-set.html',{})</div>
+        <div class="col-xl-4 pt-15 pb-15">@@include('../../modules/widgets/templates/logo-set.html',{})</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+@@include('../../modules/social/templates/circle.html', {
+"img": "img/demo_construction/1920x518_1.jpg",
+"overlay": "brk-bg-black opacity-80"
+})
+</section>
+
+@@include('../../modules/footer/templates/footer-7.html')
+
+</div>
+
+@@include("../../assets/templates/footer.html", {
+  "demo": "true"
+})
+
+
+</body>

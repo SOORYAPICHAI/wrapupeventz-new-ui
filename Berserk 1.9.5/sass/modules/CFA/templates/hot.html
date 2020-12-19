@@ -1,0 +1,62 @@
+
+<div class="bg__style overlay__gradient all-light lazyload @@if(context.svg === "true"){pt-80 pb-180 pt-xs-20 pb-xs-25}" data-bg="@@if(context.img){@@img}@@if(!context.img){img/1920_174_1.jpg}" data-brk-library="component__call_to_action">
+  @@if(context.svg === "true"){
+    @@include('../../svg-pattern/templates/pattern-14.html')
+  }
+	<div class="container">
+		<div class="cfa__wrapper cfa__hot @@if(context.hot_primary){cfa__hot_primary} @@if(context.customPadding){@@customPadding} @@if(!context.customPadding){ pt-50 pb-50 pl-20 pr-20}">
+			<div><span class="font__family-open-sans font__size-13 font__weight-bold hot-panel @@if(context.hot_primary){hot-panel_primary}">
+         @@if(context.bordered__text){@@bordered__text}
+         @@if(!context.bordered__text){HOT!}
+      </span></div>
+			<h4 class="font__family-montserrat font__size-25 font__weight-bold text-uppercase">
+        @@if(context.bold__text){@@bold__text}
+        @@if(!context.bold__text){CALL FOR ACTION }
+        <span class="font__weight-ultralight">
+           @@if(context.light__text){@@light__text}
+           @@if(!context.light__text){BLOCK HEADING TITLE GOES HERE}
+        </span>
+      </h4>
+      @@if(context.button__text && context.button__text !== "false"){
+        @@if(context.btn_no_shadow === "true"){
+          @@include("../../buttons/templates/buttons.html",{
+            "type": "btn-inside-out",
+            "text": "@@button__text",
+            "text_hover": "@@text_hover",
+            "customClass": "btn-inside-out-invert border-radius-30 font__family-open-sans font__weight-bold btn-no-shadow btn-min-width-200"
+          })
+        }
+        @@if(context.btn_no_shadow !== "true"){
+          @@include("../../buttons/templates/buttons.html",{
+            "type": "btn-inside-out",
+            "text": "@@button__text",
+            "text_hover": "@@text_hover",
+            "customClass": "btn-inside-out-invert border-radius-30 font__family-open-sans font__weight-bold btn-min-width-200"
+          })
+        }
+      }
+      @@if(!context.button__text && context.button__text !== "false"){
+        @@if(context.btn_no_shadow === "true"){
+          @@include("../../buttons/templates/buttons.html",{
+            "type": "btn-inside-out",
+            "text": "read more",
+            "customClass": "btn-inside-out-invert border-radius-30 font__family-open-sans font__weight-bold btn-no-shadow btn-min-width-200"
+          })
+        }
+        @@if(context.btn_no_shadow !== "true"){
+          @@include("../../buttons/templates/buttons.html",{
+            "type": "btn-inside-out",
+            "text": "read more",
+            "customClass": "btn-inside-out-invert border-radius-30 font__family-open-sans font__weight-bold btn-min-width-200"
+          })
+        }
+      }
+		</div>
+  </div>
+  @@if(context.overlay){
+    <div class="brk-abs-overlay @@overlay"></div>
+  }
+  @@if(!context.overlay){
+    <span class="overlay_after brk-base-bg-gradient-14 opacity-90"></span>
+  }
+</div>

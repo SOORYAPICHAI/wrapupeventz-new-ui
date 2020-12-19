@@ -1,0 +1,97 @@
+  @@include("../../assets/templates/head.html", {
+  "titlePage": "Timelines"
+  })
+  </head>
+
+  <body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+  <div class="fonts fal fa-check"></div>
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-70 mt-100 mt-md-130">
+
+      <!-- Timeline strict -->
+      <div class="mt-100 mt-md-160">
+        <div class="container">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold text-left">
+            <span class="heading__number">01</span> Strict</h3>
+        </div>
+
+        @@include('templates/strict.html')
+        <div class="container mt-70 mt-md-80">
+        </div>
+      </div>
+
+      <!-- Timeline mosaic -->
+      <div class="mt-100 mt-md-120">
+        <div class="container">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold text-left">
+            <span class="heading__number">02</span> Mosaic</h3>
+        </div>
+
+        <div class="mt-70 mt-md-100">
+          @@include('templates/mosaic.html')
+        </div>
+      </div>
+
+      <!-- Timeline mosaic -->
+      <div class="mt-100 mt-md-120">
+        <div class="container">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold text-left">
+            <span class="heading__number">02</span> Mosaic Shaped</h3>
+        </div>
+
+        <div class="mt-70 mt-md-100">
+          @@include('templates/mosaic.html',{
+            "svg": "true"
+          })
+        </div>
+      </div>
+
+      <!-- Timeline masonry -->
+      <div class="mt-100 mt-md-140">
+        <div class="container">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold text-left">
+            <span class="heading__number">03</span> Masonry</h3>
+        </div>
+
+        <div class="mt-70 mt-md-90">
+          @@include("templates/masonry.html")
+        </div>
+      </div>
+
+      <!-- Timeline vertical v1 -->
+      <div class="mt-100 mt-md-120">
+        <div class="container">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold text-left">
+            <span class="heading__number">04</span> Vertical</h3>
+        </div>
+
+        <div class="container mt-70 mt-md-120">
+          @@include("templates/vertical-v1.html")
+        </div>
+      </div>
+
+      <!-- Timeline vertical v2 -->
+      <div class="mt-100 mt-md-180">
+        <div class="container">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold text-left">
+            <span class="heading__number">05</span> Vertical</h3>
+        </div>
+
+        <div class="container mt-70 mt-md-130">
+          @@include("templates/vertical-v2.html")
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+
+  </body>
+</html>

@@ -1,0 +1,37 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Construction - History",
+"themeSkin": "brk-yellow.css"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+
+<div class="main-page">
+
+  @@include('../demo_construction/templates/header.html', {})
+
+  <section>
+    @@include('../../modules/breadcrumbs/templates/dark.html', {
+    "bg": "img/demo_construction/1920x430_1.jpg",
+    "offset": "pt-80 pb-130",
+    "title": "Our <span class=\"font__weight-bold\">History</span>"
+    })
+  </section>
+
+  <section class="container mt-100 mb-40 mb-lg-70">
+    <h1 class="sr-only">Construction - History</h1>
+    @@include('../../modules/timelines/templates/vertical-v2.html')
+  </section>
+
+  @@include('../../modules/footer/templates/footer-7.html')
+
+</div>
+
+
+@@include("../../assets/templates/footer.html", {
+  "demo": "true"
+})
+
+
+</body>

@@ -1,0 +1,155 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Forum Post"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+  <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+  <main class="main-container">
+    <div class="brk-base-bg-light brk-base-box-shadow-inset pt-20 pb-10">
+      <div class="container">
+        @@include('../forum-main/templates/post-preview.html',{
+          "img-src":"img/50x50_1.jpg",
+          "title":"Some forum title",
+          "last-update":"Updated on January 7, 2016 in",
+          "category":"",
+          "comment-count":"20",
+          "like-count":"24",
+          "wide":"",
+          "private":"true",
+          "name":"Rebeca Oliva",
+          "postHeader":"true"
+        })
+
+        <div class="brk-forum-about-post mt-20 mb-10 d-flex align-items-center flex-column flex-sm-row">
+          <span class="font__family-montserrat font__size-18 font__weight-bold mr-30">Tags:</span>
+          @@include('../tags/templates/solid.html')
+          @@include('../buttons/templates/buttons.html',{
+          "type":"btn-inside-out",
+          "text":"Favorite",
+          "size":"sm",
+          "customClass":"font__family-open-sans font__size-14 font__weight-normal ml-auto border-radius-25 text-capitalize btn-shadow ml-xs-5 mr-xs-5"
+          })
+          @@include('../buttons/templates/buttons.html',{
+          "type":"btn-inside-out",
+          "text":"Subscribe",
+          "size":"sm",
+          "customClass":"font__family-open-sans font__size-14 font__weight-normal mr-0 border-radius-25 text-capitalize btn-shadow ml-xs-5 mr-xs-5"
+          })
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 col-xl-8 order-xs-2 order-lg-1">
+          <div class="brk-forum-posts mb-80 h-100 pl-xs-0">
+            <p class="font__family-montserrat font__size-16 font__weight-semibold line__height-16 mt-45 mb-15 pl-50">
+              Viewing topic 2 (of 2 total)</p>
+            <div class="brk-forum-post">
+              <img src="img/bg-1920_1.jpg" alt="alt" class="mb-30">
+              <p class="brk-dark-font-color font__family-open-sans font__size-16 line__height-26 mb-30 pr-20">
+                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+                laoreet. Curabitur ullamcorper ultricies nisi.
+              </p>
+              <p class="brk-dark-font-color font__family-open-sans font__size-16 line__height-26 pr-20">
+                Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
+                sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
+                lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+              </p>
+            </div>
+            <div class="brk-forum-post">
+              @@include('./templates/post-header.html')
+              <p class="brk-dark-font-color font__family-open-sans font__size-16 line__height-26 pr-20">
+                Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
+                sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
+                lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+              </p>
+            </div>
+            <div class="brk-forum-post no-border">
+              @@include('./templates/post-header.html')
+              <p class="brk-dark-font-color font__family-open-sans font__size-16 line__height-26 mb-30 pr-20">
+                Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis
+                arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
+                Integer ante arcu, accumsan
+              </p>
+              <p class="brk-dark-font-color font__family-open-sans font__size-16 line__height-26 pr-20">
+                Consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc.
+                Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis
+                vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus.
+                Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet
+                imperdiet orci. Nunc nec neque.
+              </p>
+            </div>
+
+            <p class="font__family-montserrat font__size-16 font__weight-semibold line__height-16 mt-20 mb-70 pl-50 pl-xs-0">
+              Viewing topic 2 (of 2 total)</p>
+
+            <div class="brk-forum-divider pb-30 pl-50 pl-xs-0 mb-50">
+              <p class="font__family-montserrat font__size-21 "><span class="font__weight-bold">Reply to: </span><span
+                      class="font__weight-light">First topic in first forum</span>
+              </p>
+            </div>
+
+            @@include('../alerts/templates/simple-v1.html',{
+            "containerClass":"alert_forum ml-50 ml-xs-0 mr-0 mb-10",
+            "icon":"<i class='start-icon far fa-thumbs-up font__size-14'></i>",
+            "title":"<span class='font__size-14 font__weight-light letter-spacing-20'>Your account has the ability to post unrestricted HTML content.</span>"
+            })
+
+            <div class="brk-forum-redactor brk-form-strict pl-50 pl-xs-0" data-brk-library="component__form,component__forum_main">
+              <textarea name="textarea" placeholder="Type your text"></textarea>
+              <div class="brk-forum-redactor__tags">
+                <span class="brk-dark-font-color brk-forum-redactor__tags-text font__family-open-sans font__size-14">Topic Tags:</span>
+                <input name="company" type="text" placeholder="">
+              </div>
+              <div class="brk-forum-redactor__footer d-flex pt-50 pb-100 align-items-center">
+                <input id="checkbox-strict-1" name="checkbox" type="checkbox" value="1" checked="checked">
+                <label class="brk-form-checkbox-label" for="checkbox-strict-1">Notify me of follow-up replies via
+                  email</label>
+
+                @@include('../buttons/templates/buttons.html',{
+                "tag": "button",
+                "type": "btn-inside-out",
+                "customClass": "border-radius-25 font__family-open-sans font__weight-bold",
+                "text": "submit",
+                "size": "md"
+                })
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-xl-4 order-xs-1 order-lg-2">
+          @@include('../widgets/templates/sidebar-forum.html',{
+          "containerClass":"h-100 pt-30"
+          })
+        </div>
+      </div>
+    </div>
+
+
+    @@include('../CFA/templates/hot.html',{
+    "bordered__text":"HOT!",
+    "bold__text":"CALL FOR ACTION ",
+    "light__text":"BLOCK HEADING TITLE GOES HERE",
+    "button__text":"READ MORE",
+    "text_hover": "READ MORE"
+    })
+  </main>
+
+</div>
+
+
+@@include("../../assets/templates/footer.html")
+
+
+
+</body>
+</html>

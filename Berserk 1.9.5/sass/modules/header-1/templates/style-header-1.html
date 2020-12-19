@@ -1,0 +1,507 @@
+@@include('../../header-1/templates/brk-header-mobile.html', {
+"white": "true"
+})
+
+<!--
+brk-header
+brk-header_style-1/2
+brk-header_color-white
+brk-header_color-dark
+brk-header_skin-1/2 !!!
+brk-header_not-fixed
+-->
+
+<header class="brk-header brk-header_style-1 brk-header_color-white d-flex flex-column" data-logo-src="img/logo-dark-2.png" data-bg-mobile="img/brk-bg-mobile-menu.jpg" data-sticky-hide="1" data-brk-library="component__header">
+
+  <!-- TOP BAR
+  brk-header__top-bar_hide
+  brk-header__top-bar_scroll
+  -->
+    <div class="brk-header__top-bar brk-header_border-bottom order-lg-1 order-2 brk-bg-grad @@if(context.topBarPosition){@@topBarPosition}@@if(!context.topBarPosition){brk-header__top-bar_hide}"
+         data-top="3"
+         style="@@if(context.topBarHeight){height: @@topBarHeight;}
+                @@if(!context.topBarHeight){height: 46px;}
+                @@if(context.topBarStyle){@@topBarStyle}">
+      <div class="brk-header__title font__family-montserrat font__weight-bold">Contact Us</div>
+
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-6 align-self-lg-stretch text-left">
+            @@include('../../header-1/templates/brk-header-element.html', {
+            "classMod": "brk-header__element_skin-1",
+            "tag": "a",
+            "href": "#",
+            "icon": "far fa-envelope",
+            "text": "admin@berserk.com",
+            "compareStyle": "",
+            "compare": ""
+            })
+
+            @@include('../../header-1/templates/brk-header-element.html', {
+            "classMod": "brk-header__element_skin-1",
+            "tag": "div",
+            "href": "#",
+            "icon": "far fa-clock",
+            "text": "Mn-Fr (9.00 am - 5.00 pm)",
+            "compareStyle": "",
+            "compare": ""
+            })
+          </div>
+          <div class="col-lg-6 align-self-lg-stretch text-left text-lg-right">
+            @@include('../../header-1/templates/brk-header-element.html', {
+            "classMod": "brk-header__element_skin-1",
+            "tag": "a",
+            "href": "shop-components-compare.html",
+            "icon": "fas fa-exchange-alt",
+            "text": "Compare List",
+            "compareStyle": "brk-header__compare_white",
+            "compare": "2"
+            })
+
+            @@include('../../header-1/templates/brk-header-element.html', {
+            "classMod": "brk-header__element_skin-1",
+            "tag": "a",
+            "href": "checkout.html",
+            "icon": "fas fa-chevron-circle-right",
+            "text": "Checkout",
+            "compareStyle": "",
+            "compare": ""
+            })
+
+            @@include('../../header-1/templates/brk-header-element.html', {
+            "classMod": "brk-header__element_skin-1",
+            "tag": "a",
+            "href": "login.html",
+            "icon": "fas fa-sign-in-alt",
+            "text": "Login",
+            "compareStyle": "",
+            "compare": ""
+            })
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End TOP BAR -->
+
+  <!-- MAIN BAR -->
+    <div class="brk-header__main-bar brk-header_border-bottom order-lg-2 order-1"
+         style="@@if(context.mainBarHeight){height: @@mainBarHeight;}
+                @@if(!context.mainBarHeight){height: 72px;}
+                @@if(context.mainBarStyle){@@mainBarStyle}"
+         @@if(context.mainBarHeightScroll){data-height-scroll="@@mainBarHeightScroll"}>
+
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-5 align-self-lg-stretch">
+            @@if(context.customNav !== "true"){
+              @@include('../../header-1/templates/brk-nav.html', {
+                "quantity": "6"
+              })
+            }
+            @@if(context.customNav === "true"){
+              <nav class="brk-nav @@if(context.modifier){@@modifier} brk-header__item">
+                <ul class="brk-nav__menu">
+                  @@if(context.homeNav === "true"){
+                    @@if(context.homeNavLink){
+                      @@include('../../header-1/templates/brk-nav-home.html',{
+                        "link": "@@homeNavLink"
+                      })
+                    }
+                    @@if(!context.homeNavLink){
+                      @@include('../../header-1/templates/brk-nav-home.html')
+                    }
+                  }
+
+									@@if(context.title1){
+									<li class="@@if(context.submenu1){brk-nav__children} brk-nav__drop-down-effect @@if(!context.submenu1){brk-nav__children_clear}">
+										<a href="@@if(context.link1){@@link1}@@if(!context.link1){#}">
+											<span>@@title1</span>
+										</a>
+										@@if(context.submenu1){
+										<ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+											@@if(context.submenu1.subtitle1){
+											<li class="dd-effect">
+												<a href="@@submenu1.sublink1">@@submenu1.subtitle1</a>
+											</li>
+											}
+											@@if(context.submenu1.subtitle2){
+											<li class="dd-effect">
+												<a href="@@submenu1.sublink2">@@submenu1.subtitle2</a>
+											</li>
+											}
+											@@if(context.submenu1.subtitle3){
+											<li class="dd-effect">
+												<a href="@@submenu1.sublink3">@@submenu1.subtitle3</a>
+											</li>
+											}
+											@@if(context.submenu1.subtitle4){
+											<li class="dd-effect">
+												<a href="@@submenu1.sublink4">@@submenu1.subtitle4</a>
+											</li>
+											}
+											@@if(context.submenu1.subtitle5){
+											<li class="dd-effect">
+												<a href="@@submenu1.sublink5">@@submenu1.subtitle5</a>
+											</li>
+											}
+											@@if(context.submenu1.subtitle6){
+											<li class="dd-effect">
+												<a href="@@submenu1.sublink6">@@submenu1.subtitle6</a>
+											</li>
+											}
+										</ul>
+										}
+									</li>
+									}
+									@@if(context.title2){
+									<li class="@@if(context.submenu2){brk-nav__children} brk-nav__drop-down-effect @@if(!context.submenu2){brk-nav__children_clear}">
+										<a href="@@if(context.link2){@@link2}@@if(!context.link2){#}">
+											<span>@@title2</span>
+										</a>
+										@@if(context.submenu2){
+										<ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+											@@if(context.submenu2.subtitle1){
+											<li class="dd-effect">
+												<a href="@@submenu2.sublink1">@@submenu2.subtitle1</a>
+											</li>
+											}
+											@@if(context.submenu2.subtitle2){
+											<li class="dd-effect">
+												<a href="@@submenu2.sublink2">@@submenu2.subtitle2</a>
+											</li>
+											}
+											@@if(context.submenu2.subtitle3){
+											<li class="dd-effect">
+												<a href="@@submenu2.sublink3">@@submenu2.subtitle3</a>
+											</li>
+											}
+											@@if(context.submenu2.subtitle4){
+											<li class="dd-effect">
+												<a href="@@submenu2.sublink4">@@submenu2.subtitle4</a>
+											</li>
+											}
+											@@if(context.submenu2.subtitle5){
+											<li class="dd-effect">
+												<a href="@@submenu2.sublink5">@@submenu2.subtitle5</a>
+											</li>
+											}
+											@@if(context.submenu2.subtitle6){
+											<li class="dd-effect">
+												<a href="@@submenu2.sublink6">@@submenu2.subtitle6</a>
+											</li>
+											}
+										</ul>
+										}
+									</li>
+									}
+									@@if(context.title3){
+									<li class="@@if(context.submenu3){brk-nav__children} brk-nav__drop-down-effect @@if(!context.submenu3){brk-nav__children_clear}">
+										<a href="@@if(context.link3){@@link3}@@if(!context.link3){#}">
+											<span>@@title3</span>
+										</a>
+										@@if(context.submenu3){
+										<ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+											@@if(context.submenu3.subtitle1){
+											<li class="dd-effect">
+												<a href="@@submenu3.sublink1">@@submenu3.subtitle1</a>
+											</li>
+											}
+											@@if(context.submenu3.subtitle2){
+											<li class="dd-effect">
+												<a href="@@submenu3.sublink2">@@submenu3.subtitle2</a>
+											</li>
+											}
+											@@if(context.submenu3.subtitle3){
+											<li class="dd-effect">
+												<a href="@@submenu3.sublink3">@@submenu3.subtitle3</a>
+											</li>
+											}
+											@@if(context.submenu3.subtitle4){
+											<li class="dd-effect">
+												<a href="@@submenu3.sublink4">@@submenu3.subtitle4</a>
+											</li>
+											}
+											@@if(context.submenu3.subtitle5){
+											<li class="dd-effect">
+												<a href="@@submenu3.sublink5">@@submenu3.subtitle5</a>
+											</li>
+											}
+											@@if(context.submenu3.subtitle6){
+											<li class="dd-effect">
+												<a href="@@submenu3.sublink6">@@submenu3.subtitle6</a>
+											</li>
+											}
+										</ul>
+										}
+									</li>
+									}
+									@@if(context.title4){
+									<li class="@@if(context.submenu4){brk-nav__children} brk-nav__drop-down-effect @@if(!context.submenu4){brk-nav__children_clear}">
+										<a href="@@if(context.link4){@@link4}@@if(!context.link4){#}">
+											<span>@@title4</span>
+										</a>
+										@@if(context.submenu4){
+										<ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+											@@if(context.submenu4.subtitle1){
+											<li class="dd-effect">
+												<a href="@@submenu4.sublink1">@@submenu4.subtitle1</a>
+											</li>
+											}
+											@@if(context.submenu4.subtitle2){
+											<li class="dd-effect">
+												<a href="@@submenu4.sublink2">@@submenu4.subtitle2</a>
+											</li>
+											}
+											@@if(context.submenu4.subtitle3){
+											<li class="dd-effect">
+												<a href="@@submenu4.sublink3">@@submenu4.subtitle3</a>
+											</li>
+											}
+											@@if(context.submenu4.subtitle4){
+											<li class="dd-effect">
+												<a href="@@submenu4.sublink4">@@submenu4.subtitle4</a>
+											</li>
+											}
+											@@if(context.submenu4.subtitle5){
+											<li class="dd-effect">
+												<a href="@@submenu4.sublink5">@@submenu4.subtitle5</a>
+											</li>
+											}
+											@@if(context.submenu4.subtitle6){
+											<li class="dd-effect">
+												<a href="@@submenu4.sublink6">@@submenu4.subtitle6</a>
+											</li>
+											}
+										</ul>
+										}
+									</li>
+									}
+									@@if(context.title5){
+									<li class="@@if(context.submenu5){brk-nav__children} brk-nav__drop-down-effect @@if(!context.submenu5){brk-nav__children_clear}">
+										<a href="@@if(context.link5){@@link5}@@if(!context.link5){#}">
+											<span>@@title5</span>
+										</a>
+										@@if(context.submenu5){
+										<ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+											@@if(context.submenu5.subtitle1){
+											<li class="dd-effect">
+												<a href="@@submenu5.sublink1">@@submenu5.subtitle1</a>
+											</li>
+											}
+											@@if(context.submenu5.subtitle2){
+											<li class="dd-effect">
+												<a href="@@submenu5.sublink2">@@submenu5.subtitle2</a>
+											</li>
+											}
+											@@if(context.submenu5.subtitle3){
+											<li class="dd-effect">
+												<a href="@@submenu5.sublink3">@@submenu5.subtitle3</a>
+											</li>
+											}
+											@@if(context.submenu5.subtitle4){
+											<li class="dd-effect">
+												<a href="@@submenu5.sublink4">@@submenu5.subtitle4</a>
+											</li>
+											}
+											@@if(context.submenu5.subtitle5){
+											<li class="dd-effect">
+												<a href="@@submenu5.sublink5">@@submenu5.subtitle5</a>
+											</li>
+											}
+											@@if(context.submenu5.subtitle6){
+											<li class="dd-effect">
+												<a href="@@submenu5.sublink6">@@submenu5.subtitle6</a>
+											</li>
+											}
+										</ul>
+										}
+									</li>
+									}
+                   
+                  @@if(context.blogNav === "true"){
+                    @@include('../../header-1/templates/brk-nav-blog.html')
+                  }
+                  @@if(context.pagesNav === "true"){
+                    @@include('../../header-1/templates/brk-nav-pages.html')
+                  }
+                  @@if(context.portfolioNav === "true"){
+                    @@include('../../header-1/templates/brk-nav-portfolio.html')
+                  }
+                  @@if(context.shopNav === "true"){
+                    @@include('../../header-1/templates/brk-nav-shop.html')
+                  }
+                  @@if(context.elementsNav === "true"){
+                    @@include('../../header-1/templates/brk-nav-elements.html')
+                  }
+                </ul>
+              </nav>
+            }
+          </div>
+          <div class="col-lg-2 align-self-lg-center d-none d-lg-block">
+            <div class="text-center">
+              @@include('../../header-1/templates/brk-header-logo.html', {
+              "logo_1": "@@if(context.logo_1){@@logo_1}@@if(!context.logo_1){img/logo.png}",
+              "logo_2": "@@if(context.logo_2){@@logo_2}@@if(!context.logo_2){img/logo-dark.png}"
+              })
+            </div>
+          </div>
+          <div class="col-lg-5 align-self-lg-stretch text-lg-right pr-lg-20">
+            <div class="brk-header__title font__family-montserrat font__weight-bold">My Shop</div>
+
+            @@include('../../header-1/templates/brk-call-us.html', {})
+
+            @@include('../../header-1/templates/brk-lang.html', {
+            "interactive": ""
+            })
+
+            @@include('../../header-1/templates/brk-mini-cart.html', {
+            "skinOpen": "skin-1"
+            })
+
+            @@include('../../header-1/templates/brk-social-links.html', {})
+
+            @@include('../../header-1/templates/brk-search.html',{
+            "interactive": "",
+            "icon": "fa fa-search"
+            })
+
+            @@include('../../header-1/templates/brk-info-menu-open.html',{
+            "skin": "brk-info-menu-open_skin-1"
+            })
+          </div>
+        </div>
+      </div>
+
+    </div>
+  <!-- End MAIN BAR -->
+
+</header><!-- /.brk-header -->
+@@include('../../header-1/templates/brk-info-menu.html',{})
+
+
+@@if(context.only_header !== "true"){
+<div>
+<div class="pt-100 pb-50 lazyload" data-bg="img/header-1-1.jpg" style="position: relative;background-repeat:no-repeat;background-position:center center;background-size: cover;">
+  <div class="brk-base-bg-gradient-brighter" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 9"></div>
+  <div class="bg__style overlay__gradient pt-100 pb-100" style="position: relative;z-index: 10;">
+    <div class="container all-light">
+      <div class="row align-items-center">
+        <div class="col-lg-4 order-lg-1">
+          <div class="mobile-case-1" style="background: url(img/app-case-1.png)">
+            <div class="mobile-bg" style="background: url(img/app-inside-1.jpg) center center;"></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="text-lg-right text-center z-index-high mt-30 mt-lg-0 wow fadeInUp">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/arrow-pointer.png" class="lazyload arrow__pointer-top-left" alt="alt">
+            <div class="inline-wrap inline-wrap-second">
+              <button class="icon__btn icon__btn-anim icon__btn-center icon__btn-md_1 mr-lg-0 ml-lg-20 order-lg-1">
+                <span class="after"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="before"></span>
+                <i class="fal fa-magic" aria-hidden="true"></i>
+              </button>
+              <div><h4 class="font__family-montserrat font__weight-light font__size-24 text-uppercase">Find the App</h4>
+              </div>
+            </div>
+            <p class="font__family-open-sans font__size-16 line__height-26 text-blue-3 mt-10">Lorem ipsum dolor sit
+              amet, consectetuer piscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penati.</p>
+          </div>
+          <div class="text-lg-right text-center z-index-high mt-30 wow fadeInUp">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/arrow-pointer.png" class="lazyload arrow__pointer-bottom-left" alt="alt">
+            <div class="inline-wrap inline-wrap-second">
+              <button class="icon__btn icon__btn-anim icon__btn-center icon__btn-md_1 mr-lg-0 ml-lg-20 order-lg-1">
+                <span class="after"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="before"></span>
+                <i class="fal fa-crosshairs" aria-hidden="true"></i>
+              </button>
+              <div><h4 class="font__family-montserrat font__weight-light font__size-24 text-uppercase">Join to Us</h4>
+              </div>
+            </div>
+            <p class="font__family-open-sans font__size-16 line__height-26 text-blue-3 mt-10">Lorem ipsum dolor sit
+              amet, consectetuer piscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penati.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 order-lg-2">
+          <div class="text-lg-left text-center z-index-high mt-30 mt-lg-0 wow fadeInUp" data-wow-delay="0.2s">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/arrow-pointer.png" class="lazyload arrow__pointer-top-right" alt="alt">
+            <div class="inline-wrap inline-wrap-second">
+              <button class="icon__btn icon__btn-anim icon__btn-center icon__btn-md_1 ml-lg-0 mr-lg-20">
+                <span class="after"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="before"></span>
+                <i class="fal fa-trophy" aria-hidden="true"></i>
+              </button>
+              <div><h4 class="font__family-montserrat font__weight-light font__size-24 text-uppercase">Setup the
+                App</h4></div>
+            </div>
+            <p class="font__family-open-sans font__size-16 line__height-26 text-blue-3 mt-10">Lorem ipsum dolor sit
+              amet, consectetuer piscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penati.</p>
+          </div>
+          <div class="text-lg-left text-center z-index-high mt-30 wow fadeInUp" data-wow-delay="0.2s">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/arrow-pointer.png" class="lazyload arrow__pointer-bottom-right" alt="alt">
+            <div class="inline-wrap inline-wrap-second">
+              <button class="icon__btn icon__btn-anim icon__btn-center icon__btn-md_1 ml-lg-0 mr-lg-20">
+                <span class="after"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="spike"></span>
+                <span class="before"></span>
+                <i class="fal fa-coffee" aria-hidden="true"></i>
+              </button>
+              <div><h4 class="font__family-montserrat font__weight-light font__size-24 text-uppercase">Enjoy the
+                App</h4></div>
+            </div>
+            <p class="font__family-open-sans font__size-16 line__height-26 text-blue-3 mt-10">Lorem ipsum dolor sit
+              amet, consectetuer piscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penati.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  @@include('../../app/templates/notebook.html', {
+    "containerClass":"mt-180",
+    "title":"Our app",
+    "imgSrc":"img/app-inside-0.png"
+  })
+
+
+</div>
+}

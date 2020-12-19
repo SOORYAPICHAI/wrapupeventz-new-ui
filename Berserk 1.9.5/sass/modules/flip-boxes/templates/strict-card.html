@@ -1,0 +1,37 @@
+<div class="flip-box text-sm-left @@if(context.customClass){@@customClass}">
+  <div class="flip flip_horizontal flip-box__strict" data-brk-library="component__flip_box">
+    <div class="flip__front">
+      <div class="flip-box__strict-number font__family-montserrat brk-base-font-color @@if(context.numberOpacity){@@numberOpacity}">
+        @@if(context.number){@@number}
+        @@if(!context.number){01}
+      </div>
+      <div class="flip-box__strict-title">
+        <div class="font__family-montserrat font__weight-light font__size-21 text-uppercase">
+          @@if(context.title){@@title}
+          @@if(!context.title){This is my boss <span class="font__weight-bold">Jonathan</span>}
+        </div>
+      </div>
+    </div>
+    <div class="flip__back">
+      <div class="flip-box__strict-number font__family-montserrat brk-base-font-color">
+        @@if(context.number){@@number}
+        @@if(!context.number){01}
+      </div>
+      <div class="flip-box__strict-item">
+        <h4 class="font__family-montserrat font__weight-light font__size-21 text-uppercase">
+          @@if(context.title){@@title}
+          @@if(!context.title){This is my boss <span class="font__weight-bold">Jonathan</span>}
+        </h4>
+        <p class="font__family-open-sans font__size-16 text-gray mt-25">
+          @@if(context.description){@@description}
+          @@if(!context.description){
+            Makin' their way, the only way they know
+            how, that's just a little bit more than.
+          }
+        </p>
+        <a href="#" class="font__family-open-sans font__weight-bold font__size-16 text-uppercase letter-spacing-100 link-icon mt-25">Read
+            More<i class="fas fa-long-arrow-alt-right icon"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

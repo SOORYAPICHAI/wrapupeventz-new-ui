@@ -1,0 +1,98 @@
+<div class="brk-header-mobile">
+  <div class="brk-header-mobile__open brk-header-mobile__open_white">
+    <span></span>
+  </div>
+
+  <div class="brk-header-mobile__logo">
+    <a href="#"><img src="img/logo-2.png" alt=""></a>
+  </div>
+</div><!-- /.brk-header-mobile -->
+
+<header class="brk-header brk-header_style-1 brk-header_color-dark brk-header_skin-1 d-flex flex-column brk-header_not-fixed"
+        data-logo-src="img/logo-dark-2.png"
+        data-bg-mobile="img/brk-bg-mobile-menu.jpg"
+        data-sticky-hide="1"
+        data-brk-library="component__header">
+
+  <!-- MAIN BAR -->
+  <div class="brk-header__main-bar bg-white"
+       style="@@if(context.mainBarHeight){height: @@mainBarHeight;}
+              @@if(!context.mainBarHeight){height: 76px;}
+              @@if(context.mainBarStyle){@@mainBarStyle}"
+       @@if(context.mainBarHeightScroll){data-height-scroll="@@mainBarHeightScroll"}>
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-2 align-self-lg-center d-none d-lg-block">
+          <div class="text-center">
+            <a href="demo_magazine.html" class="brk-header__logo brk-header__item">
+              <img src="img/logo-dark-1.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg align-self-lg-stretch text-lg-right">
+          <nav class="brk-nav brk-nav_modifier-bold brk-header__item">
+            <ul class="brk-nav__menu">
+              <li>
+                <a href="demo_magazine.html">
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="brk-nav__children brk-nav__drop-down-effect">
+                <a href="demo_magazine_about.html">
+                  <span>About</span>
+                </a>
+                <ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+                  <li class="dd-effect">
+                    <a href="demo_magazine_about.html">About Us</a>
+                  </li>
+                  <li class="dd-effect">
+                    <a href="demo_magazine_history.html">History</a>
+                  </li>
+                  <li class="dd-effect">
+                    <a href="demo_magazine_team.html">Team</a>
+                  </li>
+                  <li class="dd-effect">
+                    <a href="demo_magazine_partners.html">Partners</a>
+                  </li>
+                  <li class="dd-effect">
+                    <a href="demo_magazine_testimonials.html">Testimonials</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="demo_magazine_projects.html">
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="demo_magazine_services.html">
+                  <span>Services</span>
+                </a>
+              </li>
+              <li>
+                <a href="demo_magazine_news.html">
+                  <span>News</span>
+                </a>
+              </li>
+              <li>
+                <a href="demo_magazine_contact.html">
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-1 align-self-lg-stretch text-lg-right">
+          @@include('../../../modules/header-1/templates/brk-info-menu-open.html',{
+          "skin": "brk-info-menu-open_skin-3"
+          })
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End MAIN BAR -->
+
+  @@include('../../header-1/templates/brk-info-menu.html',{})
+
+</header><!-- /.brk-header -->

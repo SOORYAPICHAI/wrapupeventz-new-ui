@@ -1,0 +1,75 @@
+<div class="brk-sc-card-horizontal @@containerCustomClass" data-brk-library="component__shop_cards,fancybox">
+   <div class="row no-gutters">
+     <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+      <div class="brk-sc-card-horizontal__img-container d-flex align-items-center justify-content-center pl-15 pr-15">
+        <img src="@@img" alt="alt" class="brk-sc-card-horizontal__img">
+        <span class="brk-sc-card-horizontal__overlay brk-bg-gradient-bottom-92"></span>
+        <div class="flip-box__split-actions flip-box__split-actions_small"> 
+            <a href="#" class="add-cart d-flex align-items-center justify-content-center"><i class="fal fa-shopping-cart"></i></a>
+            <a href="@@img" class="add-search d-flex align-items-center justify-content-center fancybox"><i class="fal fa-search"></i></a>
+            <a href="#" class="add-wishlist d-flex align-items-center justify-content-center"><i class="fal fa-star"></i></a>
+            <a href="#" class="add-compare d-flex align-items-center justify-content-center"><i class="fal fa-exchange-alt"></i></a>
+          </div>
+        @@if(label1 !== "" || label2 !== ""){
+          <div class='brk-sc-card-labels 
+                      @@if(labelsType === ""){brk-sc-card-labels_top-labels}
+                      @@if(labelsType === "top"){brk-sc-card-labels_top-labels}
+                      @@if(labelsType === "side"){brk-sc-card-labels_side-labels}
+                      @@if(labelsType === "sideCornered"){brk-sc-card-labels_side-labels-cornered}'> 
+            <!--  brk-sc-card-labels_top-labels brk-sc-card-labels_side-labels brk-sc-card-labels_side-labels-cornered-->
+            @@if(label1 !== ""){
+            <div class="brk-sc-card-label">
+              <span class="brk-white-font-color font__family-montserrat font__size-13 font__weight-bold line__height-14 text-uppercase brk-sc-card-label__text">@@label1</span>
+              <span class="brk-sc-card-label__additional-1"></span>
+              <span class="brk-sc-card-label__additional-2"></span>
+              <span class="brk-sc-card-label__additional-3"></span>
+            </div>
+            }
+            @@if(label2 !== ""){
+            <div class="brk-sc-card-label">
+              <span class="brk-white-font-color font__family-montserrat font__size-13 font__weight-bold line__height-14 text-uppercase brk-sc-card-label__text">@@label2</span>
+              <span class="brk-sc-card-label__additional-1"></span>
+              <span class="brk-sc-card-label__additional-2"></span>
+              <span class="brk-sc-card-label__additional-3"></span>
+            </div>
+            }
+          </div>
+        }
+      </div>
+     </div>
+     <div class="col-12 col-sm-6 col-md-7 col-lg-8">
+      <div class="brk-sc-card-horizontal__about d-flex flex-column">
+        <div class="brk-sc-card-horizontal__main-info d-flex align-items-center flex-wrap">
+          <div class="d-flex flex-column mr-auto">
+            <a href="#" class="font__family-montserrat font__size-16 font__weight-bold line__height-16 mb-1">@@title</a>
+            <div class="font__family-montserrat font__size-14 ml-1">
+              <span class="brk-dark-font-color brk-sc-card-horizontal__old-price mr-10">@@oldPrice</span>
+              <span class="brk-base-font-color font__weight-bold">@@newPrice</span>
+            </div>
+          </div>
+          <div class="mt-10 mb-10">
+          @@include('../../elements/templates/rating.html', {
+            "value": "80%"
+            })
+          </div>
+        </div>
+        <div class="brk-sc-card-horizontal__description d-flex align-items-center">
+          @@if(paragraphDescription !== ""){
+            <p class="brk-sc-card-horizontal__description-paragraph font__family-open-sans font__size-14 font__weight-semibold line__height-21">
+              @@paragraphDescription
+            </p>
+          }
+          @@if(listDescription !== ""){
+            <ul class="brk-sc-card-horizontal__description-list font__family-open-sans font__size-14 font__weight-semibold">
+              @@for (var i = 0; i < listDescription.length; i++) {
+                <li class="brk-sc-card-horizontal__description-list-item">
+                    <i class="far fa-check"></i>`+listDescription[i]+`
+                </li>
+              }
+            </ul>
+          }          
+        </div>
+      </div>
+     </div>
+   </div>
+</div>

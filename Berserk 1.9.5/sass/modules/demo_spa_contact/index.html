@@ -1,0 +1,114 @@
+@@include('../../assets/templates/head.html',{
+"titlePage": "Spa & Beauty - Contact Us",
+"themeSkin": "brk-pink.css"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+@@include("../../modules/header-vertical-1/templates/style-header-vertical-1.html",{
+"logo_1": "img/demo_spa/logo-dark-1.png",
+"logo_2": "img/demo_spa/logo-dark-1.png",
+"only_header": "true",
+"lang": "false",
+"cart": "false",
+"logo": "false",
+"customNav": "true",
+"title1": "Home",
+"link1": "/index.html",
+"title2": "About Us",
+"link2": "/demo_spa_about.html",
+"submenu2": {
+"subtitle1": "About",
+"sublink1": "/demo_spa_about.html",
+"subtitle2": "Services",
+"sublink2": "/demo_spa_services.html",
+"subtitle3": "Team",
+"sublink3": "/demo_spa_team.html",
+"subtitle4": "Partners",
+"sublink4": "/demo_spa_partners.html"
+},
+"title3": "News",
+"link3": "/demo_spa_news.html",
+"title4": "Testimonials",
+"link4": "/demo_spa_testimonials.html",
+"title5": "Contact Us",
+"link5": "/demo_spa_contact.html"
+})
+<div class="main-wrapper">
+  <main class="main-container">
+
+    @@include('../../modules/breadcrumbs/templates/simple.html',{
+    "title": "Contact Us"
+    })
+    <h1 class="sr-only">Spa & Beauty - Contact Us</h1>
+
+    <section class="pt-80 pt-xs-0 pb-xs-40 pb-80">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <form action="#" class="brk-form brk-form-strict pt-15" data-brk-library="component__form">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <input type="text" placeholder="Your Name">
+                </div>
+                <div class="col-12 col-lg-6">
+                  <input type="text" placeholder="Your mail">
+                </div>
+                <div class="col-12">
+                  <textarea placeholder="Your Question" name="textarea" class="bordered-bottom" style="min-height: 110px"></textarea>
+                </div>
+              </div>
+              <div class="text-center">
+                @@include("../../modules/buttons/templates/buttons.html",{
+                "type": "btn-inside-out",
+                "text": "contact us",
+                "customClass": "btn-shadow border-radius-0 mt-35"
+                })
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-1 order-lg-2"></div>
+          <div class="col-12 col-lg-5 order-1 order-lg-3">
+            <h2 class="font__family-montserrat font__size-56 line__height-60 mb-25 mt-5 mt-lg-0 text-center text-lg-left">
+              <span class="font__weight-light">Need Help?</span><br>
+              <span class="font__weight-bold">Contact Us</span>
+            </h2>
+            <p class="brk-dark-font-color font__size-16 line__height-26 mb-35 text-center text-lg-left">
+              Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+            </p>
+
+            <p class="font__weight-bold font__size-14 mt-10 text-center text-lg-left">
+              <i class="icon mr-10 fa fa-envelope line__height-24 brk-base-font-color"></i>
+              <a href="mailto:info@domain.com" class="show-inline-block">info@domain.com</a>
+            </p>
+            <p class="font__weight-bold font__size-14 mt-15 text-center text-lg-left">
+              <i class="icon mr-10 fa fa-map-marker line__height-24 brk-base-font-color"></i>
+              Chicago, USA
+            </p>
+            <p class="font__weight-bold font__size-14 mt-15 text-center text-lg-left">
+              <i class="icon mr-10 fa fa-phone line__height-24 brk-base-font-color"></i>
+              <a href="tel:88001234567" class="show-inline-block">8 800 12 34 567</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    @@include('../../modules/google-maps/templates/layout-3.html')
+
+  </main>
+</div>
+
+@@include("../../modules/footer/templates/footer-12.html",{
+"demo": "true"
+})
+
+@@include('../../assets/templates/footer.html',{
+  "demo": "true"
+})
+
+</body>

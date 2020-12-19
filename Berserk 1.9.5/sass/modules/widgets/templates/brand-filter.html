@@ -1,0 +1,65 @@
+<div class="brk-brand-filter @@customContainerClass" data-brk-library="component__widgets">
+  @@if(context.title !== 'false'){
+    <h3 class="brk-brand-filter__title font__family-montserrat font__weight-bold font__size-14 line__height-14 text-uppercase text-center">
+      <span class="brk-brand-filter__title-text">brand</span>
+    </h3>
+  }
+  <div class="brk-brand-filter__container">
+    @@if(item1img || item1text){
+    <a href="#" class="brk-brand-filter__item">
+      @@if(context.item1text){
+        <span class="font__family-montserrat font__size-14 font__weight-medium text-uppercase brk-brand-filter__logo-text">@@item1text</span>
+      }
+      @@if(context.item1img){
+        <img src="@@item1img" alt="alt" class="brk-brand-filter__logo">
+      }
+    </a>
+    } @@if(item2img || item2text){
+    <a href="#" class="brk-brand-filter__item active">
+      @@if(context.item2text){
+        <span class="font__family-montserrat font__size-14 font__weight-medium text-uppercase brk-brand-filter__logo-text">@@item2text</span>
+      }
+      @@if(context.item2img){
+        <img src="@@item2img" alt="alt" class="brk-brand-filter__logo">
+      }
+    </a>
+    } @@if(item3img || item3text){
+    <a href="#" class="brk-brand-filter__item">
+      @@if(context.item3text){
+        <span class="font__family-montserrat font__size-14 font__weight-medium text-uppercase brk-brand-filter__logo-text">@@item3text</span>
+      }
+      @@if(context.item3img){
+        <img src="@@item3img" alt="alt" class="brk-brand-filter__logo">
+      }
+    </a>
+    } @@if(item4img || item4text){
+    <a href="#" class="brk-brand-filter__item">
+      @@if(context.item4text){
+        <span class="font__family-montserrat font__size-14 font__weight-medium text-uppercase brk-brand-filter__logo-text">@@item4text</span>
+      }
+      @@if(context.item4img){
+        <img src="@@item4img" alt="alt" class="brk-brand-filter__logo">
+      }
+    </a>
+    } @@if(item5img || item5text){
+    <a href="#" class="brk-brand-filter__item">
+      @@if(context.item5text){
+        <span class="font__family-montserrat font__size-14 font__weight-medium text-uppercase brk-brand-filter__logo-text">@@item5text</span>
+      }
+      @@if(context.item5img){
+        <img src="@@item5img" alt="alt" class="brk-brand-filter__logo">
+      }
+    </a>
+    } @@if(item6img || item6text){
+    <a href="#" class="brk-brand-filter__item">
+      @@if(context.item6text){
+        <span class="font__family-montserrat font__size-14 font__weight-medium text-uppercase brk-brand-filter__logo-text">@@item6text</span>
+      }
+      @@if(context.item6img){
+        <img src="@@item6img" alt="alt" class="brk-brand-filter__logo">
+      }
+    </a>
+    }
+  </div>
+
+</div>

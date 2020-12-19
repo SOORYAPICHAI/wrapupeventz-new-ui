@@ -1,0 +1,79 @@
+  @@include("../../assets/templates/head.html", {
+  "titlePage": "Google Maps"
+  })
+  </head>
+
+  <body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-70 mt-100 mt-md-130">
+
+      <section>
+        <div class="container mb-60">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">01</span> Layouts
+            </h3>
+          </div>
+        </div>
+
+        <h4 class="text-center font__family-montserrat font__size-16 font__weight-bold mb-50">Layout #1</h4>
+        @@include('templates/layout-1.html')
+
+        <h4 class="text-center font__family-montserrat font__size-16 font__weight-bold mb-50 mt-110">Layout #2</h4>
+        @@include('templates/layout-2.html')
+
+        <h4 class="text-center font__family-montserrat font__size-16 font__weight-bold mb-70 mt-80">Layout #3</h4>
+        @@include('templates/layout-3.html')
+
+        <h4 class="text-center font__family-montserrat font__size-16 font__weight-bold mb-70 mt-90">Layout #4</h4>
+        @@include('templates/layout-4.html')
+
+        <h4 class="text-center font__family-montserrat font__size-16 font__weight-bold mb-70 mt-100">Layout #5</h4>
+        @@include('templates/layout-5.html')
+
+        <h4 class="text-center font__family-montserrat font__size-16 font__weight-bold mb-70 mt-90">Layout #6</h4>
+        @@include('templates/layout-6.html')
+
+        <h4 class="text-center font__family-montserrat font__size-16 font__weight-bold mb-60 mt-110">Extra</h4>
+        @@include('templates/extra.html')
+
+      </section>
+
+      <section>
+        <div class="container mb-60 mt-140">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">02</span> Hidden Maps
+            </h3>
+          </div>
+        </div>
+
+        <div class="container">
+          <h4 class="text-left font__family-montserrat font__size-16 font__weight-bold mb-140 mt-110">Classic</h4>
+        </div>
+        @@include("templates/hidden-classic.html")
+
+        <div class="container">
+          <h4 class="text-left font__family-montserrat font__size-16 font__weight-bold mb-190 mt-120">Simple</h4>
+        </div>
+        @@include("templates/hidden-simple.html")
+
+        <div class="container">
+          <h4 class="text-left font__family-montserrat font__size-16 font__weight-bold mb-140 mt-140">Round</h4>
+        </div>
+        @@include("templates/hidden-round.html")
+
+      </section>
+
+    </main>
+
+  </div>
+
+    @@include("../../assets/templates/footer.html")
+
+  </body>
+</html>

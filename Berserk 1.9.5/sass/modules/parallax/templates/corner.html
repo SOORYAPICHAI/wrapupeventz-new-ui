@@ -1,0 +1,97 @@
+<div 
+  class="parallax-bg overflow-hid lazyload @@if(!context.customMargin){mt-70 mt-md-140} @@if(context.customMargin){@@customMargin}" 
+  data-bg="@@if(context.img1){@@img1}@@if(!context.img1){img/bg-1920_1.jpg}" 
+  data-brk-library="component__parallax">
+  @@if(context.staticOverlay1){
+    <div class="brk-abs-bg-overlay @@staticOverlay1"></div>
+  }
+  <div class="container">
+    <div class="row corner__wrap scroll-show content__side-left brk-parallax__bg-gradient-md">
+      <span class="parallax__bg-shape-lg brk-parallax__bg-color"></span>
+      <div class="col-md-5">
+        <div class="text-left pt-90 pb-90">
+          <h2 class="font__family-montserrat font__size-36 line__height-42">Engaging, purposeful,</h2>
+          <h2 class="font__family-montserrat font__weight-bold font__size-36 line__height-42">& Creative</h2>
+          <p 
+            class="font__family-montserrat font__size-15 line__height-24 mt-30 
+              @@if(context.textBaseDark !== 'true'){text-gray-light}
+              @@if(context.textBaseDark){brk-color-base-dark}">
+            Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.
+            Etiam rhoncus. Maecenas tempus, tellus eget condimentum oncus, sem quam semper. Aenean vulputate eleifend
+            tellus.
+          </p>
+          @@if(context.btnType === "prime"){
+            @@include("../../buttons/templates/buttons.html",{
+              "type": "btn-prime",
+              "text": "more",
+              "size": "md",
+              "customClass": "border-radius-25 btn-no-shadow btn-prime_thin btn-prime-primary-text-transparent pl-50 pr-50 mx-0 mt-30"
+            })
+          }
+          @@if(!context.btnType){
+            @@include("../../buttons/templates/buttons.html",{
+              "type":"btn-inside-out",
+              "text":"read more",
+              "customClass":"btn-shadow border-radius-25 font__weight-bold ml-0 mr-0 mt-30 btn-min-width-200"
+            })
+          }
+
+        </div>
+      </div>
+      <div class="col-md-7"></div>
+    </div>
+  </div>
+</div>
+
+<div 
+  class="parallax-bg overflow-hid mt-30 lazyload" 
+  data-bg="@@if(context.img2){@@img2}@@if(!context.img2){img/bg-1920_3.jpg}" 
+  data-brk-library="component__parallax">
+  @@if(context.staticOverlay2){
+    <div class="brk-abs-bg-overlay @@staticOverlay2"></div>
+  }
+  <div class="container">
+    <div class="row corner__wrap scroll-show content__side-right">
+      <span class="parallax__bg-shape-lg @@if(context.overlay2){@@overlay2}@@if(!context.overlay2){brk-parallax__bg-gradient}"></span>
+      <div class="col-md-7"></div>
+      <div class="col-md-5">
+        <div class="all-light text-left pt-70 pb-70">
+          <h4 
+            class="font__family-montserrat font__size-28 line__height-32 text-uppercase highlight-underline 
+              @@if(context.whiteColors ==='true'){highlight-underline_white}">
+            <span class="before wow fadeInUp"></span>
+            Make business with us <br><span class="font__weight-bold">& become beautiful</span>
+          </h4>
+          <p class="font__family-montserrat font__size-16 line__height-26 brk-white-font-color @@if(context.whiteColors !== 'true'){opacity-60} mt-30">Lorem
+            ipsum dolor sit
+            amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.</p>
+          <div class="mt-20">
+            @@if(context.btnType === "prime"){
+              @@include("../../buttons/templates/buttons.html",{
+                "type": "btn-prime",
+                "text": "more",
+                "size": "md",
+                "customClass": "border-radius-25 btn-no-shadow btn-prime_thin btn-prime-white-transparent pl-50 pr-50 mx-0"
+              })
+            }
+            @@if(!context.btnType){
+              @@include("../../buttons/templates/buttons.html",{
+                "type":"btn-prime",
+                "text":"Buy now",
+                "icon":"<i class='fa fa-shopping-cart icon-inside' aria-hidden='true'></i>",
+                "customClass":"border-radius-25 font__weight-bold ml-0 mr-0"
+              })
+            }
+            @@include("../../buttons/templates/buttons.html",{
+            "type":"btn-circle",
+            "icon":"<i class='icon-inside icon-inline fa fa-angle-right' aria-hidden='true'></i>",
+            "customClass":"btn-simple border-radius-50 btn-md"
+            })
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

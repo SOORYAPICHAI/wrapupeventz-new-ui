@@ -1,0 +1,15 @@
+<div class="brk-sc-card-preview @@if(context.customClass){@@customClass} d-flex" data-brk-library="component__shop_cards">
+  <a href="#" class="brk-sc-card-preview__img-container mr-25">
+    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.img){@@img}@@if(!context.img){img/shop/shop-win-10.png}" alt="alt" class="lazyload">    
+  </a>
+  <div class="d-flex flex-column justify-content-center">
+    <a href="#" class="brk-sc-card-preview__category border-radius-25 brk-white-font-color font__family-montserrat font__size-10 line__height-10 font__weight-meduim letter-spacing-20 text-uppercase align-self-start mb-10 @@if(context.gradient){@@gradient} @@if(!context.gradient){brk-bg-grad}">
+      categorie
+    </a>
+    <a href="#" class="@@if(context.titleClass){@@titleClass} font__family-montserrat font__size-18 font__weight-light letter-spacing-60 mb-1">@@if(context.title){@@title}@@if(!context.title){Some shop item}</a>
+    <div class="font__family-montserrat font__size-14 font__weight-normal d-flex">
+      <p class="@@if(!context.old_price_color){brk-dark-font-color}@@if(context.old_price_color){@@old_price_color} mr-3"><s>@@if(context.oldPrice){@@oldPrice} @@if(!context.oldPrice){$26.00}</s></p>
+      <p class="@@if(context.priceClass){@@priceClass} @@if(!context.priceClass){brk-white-font-color}">@@if(context.price){@@price} @@if(!context.price){$26.00}</p>
+    </div>
+  </div>
+</div> 

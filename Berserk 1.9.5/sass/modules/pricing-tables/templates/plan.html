@@ -1,0 +1,35 @@
+<div class="brk-pricing-plan" data-brk-library="component__pricing_table,component__button">
+
+  <div class="brk-pricing-plan__bg @@if(context.bg){lazyload}" @@if(context.bg){data-bg="@@bg"}>
+    @@if(context.bg){
+    <div class="brk-layer brk-bg-primary position-absolute opacity-90"></div>
+    }
+  </div>
+
+  <div class="brk-pricing-plan__content text-center">
+    <div class="brk-pricing-plan__title font__family-montserrat font__weight-semibold letter-spacing-200">
+      @@if(context.title){@@title}@@if(!context.title){Basic}
+    </div>
+    <div class="brk-pricing-plan__price font__family-montserrat font__weight-semibold">
+      <span class="sign">$</span>
+      <span class="price">@@if(context.price){@@price}@@if(!context.price){39}</span>
+      <span class="period">/ mo</span>
+    </div>
+    <div class="brk-pricing-plan__description font__family-playfair font__style-italic letter-spacing-20">
+      Perfect for businesses <br>of all sizes.
+    </div>
+    <div class="brk-pricing-plan__included">
+      <ul>
+        @@if(context.included) {
+        @@for (var i = 0; i < included.length; i++) {
+        <li><i class="fal fa-check"></i>`+included[i]+`</li>
+        }
+        }
+      </ul>
+    </div>
+
+    <button class="brk-pricing-plan__btn btn font__family-montserrat letter-spacing-100">
+      <span>Buy this plan</span>
+    </button>
+  </div>
+</div>

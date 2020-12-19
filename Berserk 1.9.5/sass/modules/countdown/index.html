@@ -1,0 +1,125 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Countdown"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- Countdown Circle -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> Circle</h3>
+    	</div>
+		@@include("templates/circle.html")
+    </div>
+
+    <!-- Countdown Light -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> Light</h3>
+      </div>
+      <div class="bg__style overlay__white mt-40" style="background-image: url(img/1920x460_1.jpg);">
+        <div class="container">
+          @@include('./templates/light.html')
+        </div>
+      </div>
+    </div>
+
+    <!-- Countdown Massive -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left mb-40"><span
+    			class="heading__number">03</span> Massive</h3>
+    	</div>
+		@@include("templates/massive.html")
+    </div>
+
+    <!-- Countdown Dash -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">04</span> Dash</h3>
+    	</div>
+		@@include("templates/dash.html")
+    </div>
+
+    <!-- Countdown Flip -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">05</span> Flip</h3>
+    	</div>
+			<div class="bg__style overlay__white mt-40" style="background-image: url(img/1920x470_1.jpg);">
+				<div class="container pt-100 pb-100">
+				@@include("templates/flip.html")
+				</div>
+			</div>
+    </div>
+
+    <!-- Countdown Flip 2 -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">06</span> Flip 2</h3>
+    	</div>
+			<div class="bg__style overlay__white mt-40" style="background-image: url(img/1920x362_1.jpg);">
+				<div class="container pt-100 pb-100">
+				@@include("templates/flip-2.html")
+				</div>
+			</div>
+    </div>
+
+    <!-- Countdown Large -->
+    <div class="mt-100">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">07</span> Large</h3>
+    	</div>    
+    <div class="bg__style overlay__gradient mt-40" style="background-image: url(img/1920x362_1.jpg);">
+      <div class="container">
+        <div class="countdown__wrapper countdown__large pt-120 pb-120">
+          @@include('./templates/large.html',{
+            "customClass":"pt-60 pb-60 pl-40 pr-40"
+          })
+        </div>
+      </div>
+      <span class="overlay_after"></span>
+    </div>
+
+
+    </div>
+
+		<!-- Countdown banner-timer -->
+		<div class="mt-100">
+			<div class="container">
+				<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+								class="heading__number">08</span> Banner timer</h3>
+			</div>
+
+      <div class="container mt-30">
+        <div class="py-5" style="max-width: 470px;background-image: linear-gradient(to top, rgba(var(--brand-primary-rgb),.94), rgba(var(--brk-base-2-rgb),.94));">
+          @@include('../countdown/templates/banner-timer.html',{
+          "bg": "img/brk-banner-timer.png"
+          })
+        </div>
+      </div>
+
+		</div>
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+@@if (context.text){
+	@@if (context.text.main){
+		<h2 class="title__heading-03 title__heading-main font__family-montserrat-alt font__weight-bold font__size-40" data-brk-library="component__title">@@text.main</h2>
+	}
+	@@if (context.text.secondary){
+		<div class="divider-dots" data-brk-library="component__title">
+			<span class="wow fadeIn" data-wow-delay="0.4s"></span>
+			<span class="wow fadeIn" data-wow-delay="0.5s"></span>
+			<span class="wow fadeIn" data-wow-delay="0.6s"></span>
+		</div>
+		<h4 class="title__heading-03 title__heading-sub font__family-montserrat font__size-16">@@text.secondary</h4>
+	}
+}

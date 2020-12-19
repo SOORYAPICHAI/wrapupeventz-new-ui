@@ -1,0 +1,30 @@
+<ul class="brk-filters brk-filters_style-3 justify-content-center d-flex flex-wrap @@if(context.customCLass){@@customCLass}" data-brk-library="component__gallery,component__shop_grid_filter">
+  <li class="brk-filters__item active" data-filter="*">
+    <i class="fal fa-th"></i>
+    <span>All</span>
+  </li>
+
+  @@if(context.sortItems){
+    @@for (var i = 0; i < sortItems.length; i++) {
+      <li class="brk-filters__item" data-filter=".`+sortItems[i]+`">
+        <span>`+sortItems[i]+`</span>
+      </li>
+    }
+  }
+  
+  @@if(!context.sortItems){
+    <li class="brk-filters__item" data-filter=".bags">
+      <span>Bags</span>
+    </li>
+    <li class="brk-filters__item" data-filter=".shoes">
+      <span>Shoes</span>
+    </li>
+    <li class="brk-filters__item" data-filter=".dresses">
+      <span>Dresses</span>
+    </li>
+    <li class="brk-filters__item" data-filter=".shirts">
+      <span>Shirts</span>
+    </li>
+  }
+
+</ul>

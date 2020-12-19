@@ -1,0 +1,121 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Titles"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper text-center">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- Title Massive -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> Massive</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+        @@include('./templates/massive.html',{
+          "text": {
+            "before": "We are Awesome",
+            "main": "Engaging, purposeful, and <br>",
+            "secondary": "creative",
+            "after": "Make business with us and become beautiful"
+          }
+        })
+    	</div>
+    </div>
+
+    <!-- Title Light -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> Light</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+		    @@include('./templates/light.html',{
+			    "text": {
+				    "before": "We are Awesome",
+				    "main": "Engaging, purposeful",
+				    "secondary": "& creative",
+				    "divider": "true",
+				    "after": "Aenean vulputate eleifend tellus. Aenean leoula, porttitor eu, consequat <br>vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in."
+			    }
+		    })
+    	</div>
+    </div>
+
+    <!-- Title Trend -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">03</span> Trend</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+		    @@include('./templates/trend.html',{
+			    "text": {
+				    "before": "We are Awesome",
+				    "main": "ENGAGING, PURPOSEFUL,",
+				    "secondary": "& Creative",
+				    "divider": "true",
+				    "after": "Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. <br> Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc."
+			    }
+		    })
+    	</div>
+    </div>
+
+    <!-- Title Creative -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">05</span> Creative</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+		    @@include('./templates/creative.html',{
+			    "text": {
+				    "main": "Engaging, purposeful",
+				    "secondary": "<span class='text-blue'>&</span> Creative",
+				    "divider": "true",
+				    "after": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam <br>lorem ante, dapibus in, viverra quis, feugiat a, tellus."
+			    }
+		    })
+    	</div>
+    </div>
+
+    <!-- Title Underline -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">04</span> Underline</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+		    @@include('./templates/underline.html',{
+			    "text": {
+				    "main": "Engaging, purposeful,",
+				    "secondary": "& Creative",
+		        "sided": {
+		          "main": "Make business with us",
+		          "secondary": "& become beautiful"
+		        }
+			    }
+		    })
+    	</div>
+    </div>
+
+
+		@@include("templates/other.html")
+
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+
+</body>
+</html>

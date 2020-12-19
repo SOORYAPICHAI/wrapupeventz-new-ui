@@ -1,0 +1,154 @@
+@@include('../../assets/templates/head.html',{
+"titlePage": "Travel Agency - Prices",
+"themeSkin": "brk-orange.css",
+"style": ""
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {})
+  @@include("../../modules/header-1/templates/style-header-1.html",{
+    "only_header": "true",
+    "customNav": "true",
+    "title1": "Home",
+    "link1": "demo_travel_agency.html",
+    "title2": "About",
+    "link2": "demo_travel_agency_about.html",
+    "submenu2": {
+      "subtitle1": "About Us",
+      "sublink1": "demo_travel_agency_about.html",
+      "subtitle2": "Team",
+      "sublink2": "demo_travel_agency_team.html",
+      "subtitle3": "History",
+      "sublink3": "demo_travel_agency_history.html",
+      "subtitle4": "Prices",
+      "sublink4": "demo_travel_agency_prices.html",
+      "subtitle5": "Testimonials",
+      "sublink5": "demo_travel_agency_testimonials.html"
+      },
+    "title3": "Services",
+    "link3": "demo_travel_agency_services.html",
+    "title4": "Tours",
+    "link4": "demo_travel_agency_tours.html",
+    "title5": "Contact",
+    "link5": "demo_travel_agency_contact.html"
+  })
+  <div class="main-wrapper">
+    <main class="main-container">
+
+      @@include("../breadcrumbs/templates/sunshine.html",{
+      "customPadding": "pt-130 pb-90 breadcrumbs__section-sunshine_white",
+      "title": "Prices",
+      "overlay1": "brk-base-gradient-34",
+      "overlay2": "brk-base-bg-gradient-90deg",
+      "squared": "true",
+      "img": "img/demo_travel_agency/1920x260_1.jpg"
+      })
+
+      <section class="pt-80 pb-120">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-6 pb-30">
+              @@include("../pricing-tables/templates/shop-card.html",{
+                "title": "1 Package",
+                "price": "50$",
+                "btnStyle1": "true",
+                "style1" : "true",
+                "customClass": "mb-40",
+                "list": ["Express Service","Customs Clearance","Time-Critical Services"]
+              })
+            </div>
+            <div class="col-xl-3 col-lg-6 pb-30">
+              @@include("../pricing-tables/templates/shop-card.html",{
+                "title": "2 Package",
+                "price": "100$",
+                "btnStyle1": "true",
+                "style1" : "true",
+                "customClass": "mb-40",
+                "list": ["Assembly, Re-distribution","Temperature Control","Consolidation Services"]
+              })
+            </div>
+            <div class="col-xl-3 col-lg-6 pb-30">
+              @@include("../pricing-tables/templates/shop-card.html",{
+                "title": "3 Package",
+                "price": "150$",
+                "btnStyle1": "true",
+                "style1" : "true",
+                "customClass": "mb-40",
+                "list": ["Consolidation Services","Express Service","Warehousing & Distribution"]
+              })
+            </div>
+            <div class="col-xl-3 col-lg-6 pb-30">
+              @@include("../pricing-tables/templates/shop-card.html",{
+                "title": "4 Package",
+                "price": "200$",
+                "btnStyle1": "true",
+                "style1" : "true",
+                "customClass": "mb-40",
+                "list": ["Time-Critical Services","Shipping & Receiving","Consolidation Services"]
+              })
+            </div>
+            <div class="col-xl-3 col-lg-6 pb-30">
+              @@include("../pricing-tables/templates/shop-card.html",{
+                "title": "5 Package",
+                "price": "250$",
+                "btnStyle1": "true",
+                "style1" : "true",
+                "customClass": "mb-40",
+                "list": ["Temperature Control","E-commerce Solutions","Express Service"]
+              })
+            </div>
+            <div class="col-xl-3 col-lg-6 pb-30">
+              @@include("../pricing-tables/templates/shop-card.html",{
+                "title": "6 Package",
+                "price": "300$",
+                "btnStyle1": "true",
+                "style1" : "true",
+                "customClass": "mb-40",
+                "list": ["Time-Critical Services","Direct service inland","Rack Storage"]
+              })
+            </div>
+            <div class="col-xl-3 col-lg-6 pb-30">
+              @@include("../pricing-tables/templates/shop-card.html",{
+                "title": "7 Package",
+                "price": "350$",
+                "btnStyle1": "true",
+                "style1" : "true",
+                "customClass": "mb-40",
+                "list": ["Shipping & Receiving","Temperature Control","E-commerce Solutions"]
+              })
+            </div>
+            <div class="col-xl-3 col-lg-6 pb-30">
+              @@include("../pricing-tables/templates/shop-card.html",{
+                "title": "8 Package",
+                "price": "400$",
+                "btnStyle1": "true",
+                "style1" : "true",
+                "customClass": "mb-40",
+                "list": ["Express Service","Direct service inland","Rack Storage"]
+              })
+            </div>
+          </div>
+
+          <div class="text-center mt-60">
+            @@include('../buttons/templates/buttons-invert.html', {
+              "class": "icon__btn icon__btn-anim icon__btn-md icon__btn-invert",
+              "tag": "a",
+              "href": "#"
+            })
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+  </div>
+
+  @@include("../../modules/footer/templates/footer-3.html",{
+  "demo": "true",
+  "overlay": "brk-base-gradient-34"
+  })
+
+  @@include('../../assets/templates/footer.html',{
+  "demo": "true"
+  })
+</body>

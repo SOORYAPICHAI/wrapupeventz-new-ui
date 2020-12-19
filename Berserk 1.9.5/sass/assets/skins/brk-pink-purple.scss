@@ -1,0 +1,45 @@
+$brk-base-colors: ();
+$brk-base-colors: map-merge((
+				"brand-primary":      darken(desaturate(adjust-hue(#2775ff, 124), 30.58), 10.20),
+				"secondary":          darken(desaturate(adjust-hue(#7202bb, 6), 43.54), 0.98),
+				"white":              #fff,
+				"black":              #000,
+				"brk-dark-base":      #272727,
+				"brk-base-1":         #ff4470,
+				"brk-base-2":         darken(desaturate(adjust-hue(#00c6ff, 124), 30.58), 10.20),
+				"brk-base-3":         darken(desaturate(adjust-hue(#0F5AE0, 124), 30.58), 10.20),
+				"brk-base-4":         #e8ecff,
+				"brk-base-5":         darken(desaturate(adjust-hue(#00f6ff, 124), 30.58), 10.20),
+				"brk-base-6":         darken(desaturate(adjust-hue(#0B98F6, 124), 30.58), 10.20),
+				"brk-base-7":         darken(desaturate(adjust-hue(#a7ebff, 124), 30.58), 10.20),
+				"brk-base-8":         darken(desaturate(adjust-hue(#1600ba, 124), 30.58), 10.20),
+				"brk-secondary-1":    darken(desaturate(adjust-hue(#4f34c9, 6), 43.54), 0.98),
+				"brk-secondary-2":    darken(desaturate(adjust-hue(#4F00BA, 6), 43.54), 0.98),
+				"brk-secondary-3":    darken(desaturate(adjust-hue(#7400ba, 6), 43.54), 0.98),
+				"brk-secondary-4":    darken(desaturate(adjust-hue(#6e50c2, 6), 43.54), 0.98),
+				"brk-secondary-5":    darken(desaturate(adjust-hue(#6377DF, 6), 43.54), 0.98),
+				"brk-secondary-6":    darken(desaturate(adjust-hue(#b50aff, 6), 43.54), 0.98),
+				"text-base-color-1":  #c4c4c4,
+				"text-base-color-2":  #ff4470,
+				"text-base-color-3":  #f3f3f3,
+        "form-color-1":				#e8ecff
+), $brk-base-colors);
+
+@function safe-rgb($color) {
+	@return unquote("#{red($color)}, #{green($color)}, #{blue($color)}");
+}
+
+/* ----------- Palette variable ----------- */
+:root {
+	@each $color, $value in $brk-base-colors {
+		--#{$color}: #{$value};
+	}
+
+	// RGB
+	@each $color, $value in $brk-base-colors {
+		--#{$color}-rgb: #{safe-rgb($value)};
+  }
+  
+  --b-radius: inherit; 
+}
+/* ----------- Palette variable ----------- */

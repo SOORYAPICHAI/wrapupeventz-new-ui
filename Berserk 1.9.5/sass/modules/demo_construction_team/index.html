@@ -1,0 +1,108 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Construction - Team",
+"themeSkin": "brk-yellow.css"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+<div class="main-page">
+
+  @@include('../demo_construction/templates/header.html', {})
+
+  <section>
+    @@include('../../modules/breadcrumbs/templates/dark.html', {
+    "bg": "img/demo_construction/1920x430_1.jpg",
+    "offset": "pt-80 pb-130",
+    "title": "Our <span class=\"font__weight-bold\">Team</span>"
+    })
+  </section>
+
+  <h1 class="sr-only">Construction - Team</h1>
+  <section class="container pt-110">
+    <div class="row">
+      <div class="col-xl-3 col-md-6 col-12">
+        @@include('../../modules/team/templates/persone-circle.html', {
+        "title": "Bernard Show",
+        "secondary": "Web Developer",
+        "img": "img/demo_construction/270x340_1.jpg"
+        })
+      </div>
+      <div class="col-xl-3 col-md-6 col-12">
+        @@include('../../modules/team/templates/persone-circle.html', {
+        "title": "Bernard Show",
+        "secondary": "Web Developer",
+        "img": "img/demo_construction/270x340_2.jpg"
+        })
+      </div>
+      <div class="col-xl-3 col-md-6 col-12">
+        @@include('../../modules/team/templates/persone-circle.html', {
+        "title": "Bernard Show",
+        "secondary": "Web Developer",
+        "img": "img/demo_construction/270x340_3.jpg"
+        })
+      </div>
+      <div class="col-xl-3 col-md-6 col-12">
+        @@include('../../modules/team/templates/persone-circle.html', {
+        "title": "Bernard Show",
+        "secondary": "Web Developer",
+        "img": "img/demo_construction/270x340_4.jpg"
+        })
+      </div>
+      <div class="col-xl-3 col-md-6 col-12">
+        @@include('../../modules/team/templates/persone-circle.html', {
+        "title": "Bernard Show",
+        "secondary": "Web Developer",
+        "img": "img/demo_construction/270x350_2.jpg"
+        })
+      </div>
+      <div class="col-xl-3 col-md-6 col-12">
+        @@include('../../modules/team/templates/persone-circle.html', {
+        "title": "Bernard Show",
+        "secondary": "Web Developer",
+        "img": "img/demo_construction/270x350_4.jpg"
+        })
+      </div>
+      <div class="col-xl-3 col-md-6 col-12">
+        @@include('../../modules/team/templates/persone-circle.html', {
+        "title": "Bernard Show",
+        "secondary": "Web Developer",
+        "img": "img/demo_construction/270x350_5.jpg"
+        })
+      </div>
+      <div class="col-xl-3 col-md-6 col-12">
+        @@include('../../modules/team/templates/persone-circle.html', {
+        "title": "Bernard Show",
+        "secondary": "Web Developer",
+        "img": "img/demo_construction/270x350_1.jpg"
+        })
+      </div>
+    </div>
+
+    <div class="text-center pt-60 pb-80">
+      @@include('../../modules/buttons/templates/buttons-invert.html', {
+      "class": "icon__btn icon__btn-anim icon__btn-md icon__btn-invert",
+      "tag": "a",
+      "href": "#"
+      })
+    </div>
+  </section>
+
+  <section class="bg-cover position-relative pt-90 pb-100 lazyload" data-bg="img/demo_construction/1920x518_1.jpg">
+    <div class="brk-layer brk-bg-black position-absolute opacity-80"></div>
+
+    <div class="container">
+      @@include("../../modules/sequence/templates/triangle.html")
+    </div>
+  </section>
+
+  @@include('../../modules/footer/templates/footer-7.html')
+
+</div>
+
+@@include("../../assets/templates/footer.html", {
+  "demo": "true"
+})
+
+
+</body>

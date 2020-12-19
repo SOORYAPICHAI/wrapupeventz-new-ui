@@ -1,0 +1,104 @@
+<footer class="brk-footer position-relative" @@if(context.id){id="@@id"} data-brk-library="component__footer,twitter_init">
+  <div class="brk-footer__wrapper @@if(context.animated === 'true'){brk-footer__wrapper_animated}">
+    @@if(context.svg === "true"){
+      @@include("../../svg-pattern/templates/pattern-1.html")
+    }
+    <div class="brk-footer__bg-container @@if(context.customClass){@@customClass}@@if(!context.customClass){pt-80 pb-50}">
+      @@if(context.singleOverlay !== "true"){
+        <span class="brk-footer__bg-left brk-footer__bg-left_footer-5"></span>
+        <span class="brk-footer__bg-right brk-footer__bg-right_footer-5"></span>
+      }
+      @@if(context.singleOverlay === "true"){
+        <span class="brk-abs-overlay brk-alt-gradient-90deg-96"></span>
+      }
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <a class="mb-30 d-sm-inline-block d-block text-center">
+              <img 
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+                data-src="@@if(context.logo){@@logo}@@if(!context.logo){img/brk-logo-trandy.png}" 
+                class="lazyload" 
+                alt="Berserk">
+            </a>
+            <p class="@@if(context.whiteColors === 'true'){brk-white-font-color}@@if(context.whiteColors !== 'true'){brk-dark-font-color-3} font__family-roboto font__size-15 font__weight-normal line__height-28 mb-20 mr-80 mr-xs-0 text-sm-left text-center">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit.
+            </p>
+            @@include('../../social-links/templates/simple-social-links.html',{ 
+              "socialIcon1":"<i class='fab fa-vimeo-v'></i>", 
+              "socialIcon2":"<i class='fab fa-youtube'></i>", 
+              "socialIcon3":"<i class='fab fa-facebook-f'></i>", 
+              "socialIcon4":"<i class='fab fa-twitter'></i>", 
+              "customContainerClass":"brk-social-links_rounded brk-white-font-color mb-50 d-flex justify-content-center justify-content-sm-start" 
+            })
+            <form 
+              action="#"
+              class="brk-subscribe-mail brk-form_footer-5 d-inline-block mb-60 
+                @@if(context.whiteColors === 'true'){brk-form_footer-5-light}" 
+              data-brk-library="recaptcha">
+              <input 
+                type="text" 
+                placeholder="E-mail address" 
+                name="EMAIL" 
+                class="
+                  @@if(context.inputCustomClass){@@inputCustomClass}
+                  @@if(!context.inputCustomClass){font__family-roboto font__size-15 font__weight-light}"> 
+              <button 
+                type="submit" 
+                class="
+                  d-flex align-items-center justify-content-center
+                  @@if(!context.buttonCustomClass){font__family-montserrat font__size-12 font__weight-bold text-uppercase}
+                  @@if(context.buttonCustomClass){@@buttonCustomClass}">
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="ml-lg-70 h-100 d-flex flex-column">
+              <h6 class="brk-white-font-color font__family-montserrat font__size-12 font__weight-semibold line__height-28 text-uppercase letter-spacing-100 mb-10">Tweets</h6>
+              <div class="mb-2 brk-styled-twitter @@if(context.whiteColors !== 'true'){brk-styled-twitter_dark-color}@@if(context.whiteColors === 'true'){brk-styled-twitter_white-color}">
+                <a href="https://twitter.com/We_Nikadevs" class="twitter-timeline" data-tweet-limit="1" data-chrome="noheader,nofooter,noborders,transparent"
+                  data-theme="light"></a>
+              </div>
+              <nav class="d-flex flex-wrap justify-content-sm-start justify-content-around mb-xs-20 mt-auto">
+                <ul class="mr-200 mr-xs-20 font__family-roboto font__size-15 font__weight-normal @@if(context.whiteColors === 'true'){brk-white-font-color}@@if(context.whiteColors !== 'true'){brk-dark-font-color-3}">
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Help</a>
+                  </li>
+                  <li>
+                    <a href="#">Contacts</a>
+                  </li>
+                  <li>
+                    <a href="#">Terms</a>
+                  </li>
+                </ul>
+                <ul class="font__family-roboto font__size-15 font__weight-medium @@if(context.whiteColors === 'true'){brk-white-font-color}@@if(context.whiteColors !== 'true'){brk-dark-font-color}">
+                  <li>
+                    <a href="#">Privacy</a>
+                  </li>
+                  <li>
+                    <a href="#">Shop</a>
+                  </li>
+                  <li>
+                    <a href="#">Testimonials</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-12">
+            <p class="@@if(context.whiteColors === 'true'){brk-white-font-color}@@if(context.whiteColors !== 'true'){brk-dark-font-color} font__family-roboto font__size-13 font__weight-medium text-sm-left text-center">© 2018. Berserk. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

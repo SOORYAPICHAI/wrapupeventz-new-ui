@@ -1,0 +1,89 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Panels"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- Panel Gradient -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> Gradient</h3>
+    	</div>
+    	<div class="container text-left mt-70 mt-md-130">
+		  @@include("templates/gradient.html")
+    	</div>
+    </div>
+
+    <!-- Panel Table -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> Table</h3>
+    	</div>
+    	<div class="container text-left mt-70 mt-md-130">
+		  @@include("templates/table.html")
+    	</div>
+    </div>
+
+    <!-- Panel Icon -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">03</span> Icon</h3>
+    	</div>
+    	<div class="container text-left mt-70 mt-md-130">
+		  @@include("templates/icon.html")
+    	</div>
+    </div>
+
+    <!-- Panel Image -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">04</span> Image</h3>
+    	</div>
+    	<div class="container text-left mt-70 mt-md-130">
+		  @@include("templates/image.html")
+    	</div>
+    </div>
+
+    <!-- Panel Large -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">05</span> Large</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+		  @@include("templates/large.html")
+    	</div>
+    </div>
+
+    <!-- Panel Info Block -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">06</span> Info Block</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+		  @@include("templates/info-block.html")
+    	</div>
+    </div>
+
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

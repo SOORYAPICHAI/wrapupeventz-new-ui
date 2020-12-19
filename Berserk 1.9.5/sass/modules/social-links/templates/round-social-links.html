@@ -1,0 +1,12 @@
+<div class="brk-social-links-round" data-brk-library="component__social_links">
+  @@for (var i = 0; i < arr.length; i++) {
+  <a href="`+arr[i].link+`" class="brk-social-links-round__link">
+    <div class="brk-social-links-round__icon">
+      <i class="`+arr[i].icon+`"></i>
+    </div>
+    <div class="brk-social-links-round__title">
+      `+arr[i].title+`
+    </div>
+  </a>
+  }
+</div>

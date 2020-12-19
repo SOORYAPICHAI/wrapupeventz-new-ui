@@ -1,0 +1,142 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Portfolio Isotope"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+  <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+  <main class="main-container mb-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="brk-grid-config d-flex mt-50 mb-60">
+            <ul class="brk-filters brk-filters_style-1 font__family-montserrat font__size-15 font__weight-bold line__height-44 text-uppercase">
+              <li class="brk-filters__item active" data-filter="*">
+                <span>All</span>
+                <span class="font__weight-normal brk-dark-font-color brk-filters__count"></span>
+              </li>
+              <li class="brk-filters__item" data-filter=".branding">
+                <span>Branding</span>
+                <span class="font__weight-normal brk-dark-font-color brk-filters__count"></span>
+              </li>
+              <li class="brk-filters__item" data-filter=".mockup">
+                <span>Mockup</span>
+                <span class="font__weight-normal brk-dark-font-color brk-filters__count"></span>
+              </li>
+              <li class="brk-filters__item" data-filter=".photography">
+                <span>Photography</span>
+                <span class="font__weight-normal brk-dark-font-color brk-filters__count"></span>
+              </li>
+            </ul>
+            <select id='brk-select__sizer' class="rendered">
+              <option id="brk-select__sizer-option" class="font__family-montserrat font__size-15 font__weight-bold text-uppercase letter-spacing-20 pr-20"></option>
+            </select>
+            <div class="line__height-44 font__family-montserrat font__size-15 font__weight-bold text-uppercase letter-spacing-20 pr-20">
+              <span>Sort by</span>
+              <div class="brk-select">
+                <select name="select" id='brk-grid-sort' class="font__weight-normal brk-dark-font-color text-uppercase rendered">
+                  <option value="original-order">none</option>
+                  <option value="category_name">category name</option>
+                  <option value="category_data">category in data</option>
+                  <option value="name">name</option>
+                </select>
+                <i class="fal fa-angle-down brk-select__icon"></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mb-90">
+      <div class="brk-grid brk-grid-sorted" data-grid-cols='5' data-grid-cols-tablet='3'>
+        <div class="brk-grid__sizer"></div>
+        <div class="brk-grid__item branding" data-category="category1">
+          @@include('templates/card.html',{
+          "title":"some title A",
+          "category":"category B",
+          "img-src":"img/370x370_1.jpg"
+          })
+        </div>
+        <div class="brk-grid__item brk-grid__item_width-2 brk-grid__item_height-2" data-category="category2">
+          @@include('templates/card.html',{
+          "title":"some title B",
+          "category":"category A",
+          "img-src":"img/370x370_2.jpg"
+          })
+        </div>
+        <div class="brk-grid__item branding" data-category="category2">
+          @@include('templates/card.html',{
+          "title":"some title A",
+          "category":"category B",
+          "img-src":"img/370x370_3.jpg"
+          })
+        </div>
+        <div class="brk-grid__item branding" data-category="category1">
+          @@include('templates/card.html',{
+          "title":"some title B",
+          "category":"category A",
+          "img-src":"img/370x370_4.jpg"
+          })
+        </div>
+
+        <div class="brk-grid__item brk-grid__item_width-2" data-category="category3">
+          @@include('templates/card.html',{
+          "title":"some title B",
+          "category":"category A",
+          "img-src":"img/370x370_5.jpg"
+          })
+        </div>
+        <div class="brk-grid__item brk-grid__item_height-2" data-category="category2">
+          @@include('templates/card.html',{
+          "title":"some title A",
+          "category":"category A",
+          "img-src":"img/370x370_6.jpg"
+          })
+        </div>
+        <div class="brk-grid__item brk-grid__item_width-2" data-category="category3">
+          @@include('templates/card.html',{
+          "title":"some title B",
+          "category":"category B",
+          "img-src":"img/370x370_1.jpg"
+          })
+        </div>
+        <div class="brk-grid__item mockup" data-category="category2">
+          @@include('templates/card.html',{
+          "title":"some title A",
+          "category":"category A",
+          "img-src":"img/370x370_2.jpg"
+          })
+        </div>
+        <div class="brk-grid__item photography" data-category="category3">
+          @@include('templates/card.html',{
+          "title":"some title B",
+          "category":"category B",
+          "img-src":"img/370x370_3.jpg"
+          })
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button class="icon__btn icon__btn-anim icon__btn-lg icon__btn-invert" data-brk-library="component__button">
+        <span class="before"></span>
+        <i class="fal fa-sync" aria-hidden="true"></i>
+        <span class="after"></span>
+        <span class="bg"></span>
+      </button>
+    </div>
+  </main>
+</div>
+
+
+@@include("../../assets/templates/footer.html")
+
+</body>
+
+</html>

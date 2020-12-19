@@ -1,0 +1,16 @@
+<div class="progress__wrapper progress__count @@if(context.customClass){@@customClass}" data-brk-library="component__progress_bar">
+  <div class="progress__descr">
+    <h5 class="font__family-montserrat font__size-16 font__weight-bold progress__title">@@if(!context.title){Hard Work}
+      @@if(context.title){@@title}</h5>
+    <div class="count">
+      <span class="font__family-montserrat font__weight-regular count-value">@@if(context.valueCur){@@valueCur}@@if(!context.valueCur){16}</span>
+      <span class="font__family-montserrat font__weight-regular count-amount">@@if(context.valueMax){@@valueMax}@@if(!context.valueMax){22}</span>
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress__bar">
+      <span class="circle"></span>
+    </div>
+  </div>
+</div>
+		

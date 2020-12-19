@@ -1,0 +1,20 @@
+<article class="brk-tiles-assorted @@if(context.bottom === "true"){brk-tiles-assorted_back} lazyload" data-bg="@@if(context.img){@@img}@@if(!context.img){img/400x800_1.jpg}" data-brk-library="component__tiles">
+  <div class="brk-tiles-assorted__title">
+    <div class="brk-tiles-assorted__title-content text-center">
+      <h3 class="font__family-roboto font__weight-light">@@if(context.title){@@title} @@if(!context.title){Awesome for you}</h3>
+      <h4 class="font__family-roboto font__weight-bold">@@if(context.subtitle){@@subtitle} @@if(!context.subtitle){Reach & Healthy}</h4>
+    </div>
+    <span class="brk-abs-overlay @@if(context.overlay1){@@overlay1}@@if(!context.overlay1){brk-base-bg-gradient-50deg-92}"></span>
+  </div>
+  <div class="before"></div>
+  <div class="brk-tiles-assorted__bg">
+    @@if(context.globalOverlay === "true"){<span class="brk-layer brk-base-bg-6 opacity-70"></span>}
+    <span class="brk-abs-overlay @@if(context.overlay2){@@overlay2} @@if(!context.overlay2){brk-base-bg-gradient-50deg}"></span>
+    <a href="#" class="brk-tiles-assorted__link">
+      <i class="fas fa-arrow-right"></i>
+    </a>
+    <a href="#" class="brk-tiles-assorted__search">
+      <i class="far fa-search"></i>
+    </a>
+  </div>
+</article>

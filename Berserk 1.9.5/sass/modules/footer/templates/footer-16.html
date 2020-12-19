@@ -1,0 +1,105 @@
+<footer 
+  class="brk-footer brk-footer-16 @@if(context.style1 === 'true'){brk-footer-16_style-1} position-relative" 
+  @@if(context.id){id="@@id"} 
+  data-brk-library="component__footer,assets_skrollr">
+  
+  <div 
+    class="brk-footer__wrapper 
+      @@if(context.style1 !== 'true'){pt-150 pb-300}
+      @@if(context.style1 === 'true'){pt-80 pb-300}
+      @@if(context.animated === 'true'){brk-footer__wrapper_animated}">
+
+    <div class="brk-abs-overlay brk-base-gradient-39"></div>
+    @@if(context.style1 !== "true"){
+    <div class="position-relative z-index-1" data-skrollr data-300-end="transform: translateY(150px)" data-end="transform: translateY(0)">
+      <div class="container-fluid">
+        <div class="text-center mb-100">
+          <h2 class="font__family-montserrat text-white font__size-64 font__weight-light line__height-64">Explore Us</h2>
+          <a href="#">
+            <img src="img/demo_winter_trip/logo.png" alt="logo">
+          </a>
+        </div>
+      </div>
+    </div>
+   }
+
+    @@if(context.style1 === "true"){
+    <div class="position-relative z-index-1" data-skrollr data-450-end="transform: translateY(200px)" data-end="transform: translateY(0)">
+      <div class="container-fluid">
+        <div class="text-center mb-80">
+          <h2 class="font__family-montserrat font__weight-light text-white font__size-64 line__height-66">Are you with us?</h2>
+          <h3 class="font__family-montserrat font__weight-bold text-white font__size-156 line__height-156">Fill the Form</h3>
+        </div>
+      </div>
+    </div>
+    }
+    <div class="position-relative z-index-3">
+      <div class="container">
+        @@if(context.style1 !== "true"){
+          <h4 class="font__family-montserrat font__weight-semibold font__size-18 line__height-20 text-uppercase brk-white-font-color letter-spacing-20 mb-15">
+            Get our news
+          </h4>
+          <form name="subscribe" action="#" data-brk-library="component__form,recaptcha" class="brk-subscribe-mail brk-footer-16__form">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <input name="EMAIL" type="email" placeholder="Subscribe" class="font__family-montserrat font__weight-bold font__size-96 line__height-96 brk-white-font-color letter-spacing-10">
+              </div>
+              <div class="col-lg-4 text-right">
+                @@include("../../buttons/templates/buttons.html",{
+                  "type": "btn-prime",
+                  "text": "subscribe now",
+                  "customClass": "text-lowercase btn-prime-white-transparent border-radius-25 btn-no-shadow mx-0 mb-0 mt-20 mt-lg-0 btn-min-width-200",
+                  "size": "md"
+                })
+              </div>
+            </div>
+          </form>
+        }
+        @@if(context.style1 === 'true'){
+        <form action="#" class="brk-subscribe-mail brk-form brk-form-strict brk-footer-16__form" data-brk-library="component__form,recaptcha">
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <input type="text" placeholder="Your Name" name="FNAME">
+              <input type="text" placeholder="Your mail" name="EMAIL">
+              <input type="text" placeholder="Mail Subject" name="SUBJECT">
+            </div>
+            <div class="col-12 col-lg-8">
+              <div class="brk-form__textarea-container">
+                <textarea name="MESSAGE" id="footer9" placeholder="Your Questions"></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="text-center">
+                @@include("../../buttons/templates/buttons.html",{
+                  "type": "btn-prime",
+                  "text": "check the offer",
+                  "customClass": "text-lowercase btn-prime-white-transparent border-radius-25 btn-no-shadow mx-0 mt-30 mb-70 btn-min-width-200 btn-prime_thin",
+                  "size": "md-2"
+                })
+              </div>
+            </div>
+          </div>
+        </form>
+        }
+        <hr class="brk-divider-white-1 mt-40 mb-50">
+        <div class="d-flex align-items-center flex-wrap justify-content-between pb-100">
+          <p class="brk-white-font-color font__size-16 line__height-18 font__weight-light">© all rights reserved</p>
+
+          <div>
+            @@include('../../social-links/templates/simple-social-links.html',{
+              "socialIcon1":"<i class='fab fa-twitter'></i>",
+              "socialIcon2":"<i class='fab fa-instagram'></i>",
+              "socialIcon3":"<i class='fab fa-google-plus-g'></i>",
+              "socialIcon4":"<i class='fab fa-youtube'></i>",
+              "socialIcon5":"<i class='fab fa-vimeo'></i>",
+              "socialIcon6":"<i class='fab fa-vk'></i>",
+              "customContainerClass":"brk-white-font-color font__size-16",
+              "wide": "true"
+            })
+          </div>
+        </div>
+      </div>
+    </div>
+    <img data-src="@@if(context.img){@@img}@@if(!context.img){img/demo_winter_trip/1920x575_1.png}" src="#" alt="alt" class="lazyload brk-footer-16__img-overlay z-index-2">
+  </div>
+</footer>

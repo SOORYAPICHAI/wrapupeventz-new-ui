@@ -1,0 +1,66 @@
+
+  <div class="brk-testimonials-layered-vertical" data-brk-library="component__testimonials,slider__swiper">
+
+    <div class="brk-testimonials-layered-vertical__container">
+      <div class="overlay-vertical"></div>
+
+      <div class="layered-vertical-slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="brk-testimonials-layered-vertical__item layered-vertical-item">
+              <div class="brk-testimonials-layered-vertical__person">
+                <div class="brk-testimonials-layered-vertical__person-info">
+                  <div class="brk-testimonials-layered-vertical__photo" style="background-image: url(@@if(context.img1){@@img1}@@if(!context.img1){img/people/pexels-photo-262391.jpeg})"></div>
+                  <div class="brk-testimonials-layered-vertical__name font__family-montserrat font__weight-bold">Ostin Paterson</div>
+                  <div class="brk-testimonials-layered-vertical__job font__family-open-sans letter-spacing-20">Client from Twitter</div>
+                </div>
+
+                @@include('../../elements/templates/rating.html', {
+                "value": "80%"
+                })
+              </div>
+              <div class="brk-testimonials-layered-vertical__comment font__family-open-sans">From the war room to the battlefield, the world was continually blowing up around Diana Prince. Yet Diana, aka Wonder Woman, never lost focus on why she left the safety of Themyscira for war-torn Europe: to stop the evil Ares and end the war. No matter what got in her way, no matter how often her path was blocked, she didn't stop.</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="brk-testimonials-layered-vertical__item layered-vertical-item">
+              <div class="brk-testimonials-layered-vertical__person">
+                <div class="brk-testimonials-layered-vertical__person-info">
+                  <div class="brk-testimonials-layered-vertical__photo" style="background-image: url(@@if(context.img2){@@img2}@@if(!context.img2){img/people/pexels-photo-274595.jpeg})"></div>
+                  <div class="brk-testimonials-layered-vertical__name font__family-montserrat font__weight-bold">Anna Jonson</div>
+                  <div class="brk-testimonials-layered-vertical__job font__family-open-sans letter-spacing-20">Client from Google</div>
+                </div>
+
+                @@include('../../elements/templates/rating.html', {
+                "value": "80%"
+                })
+              </div>
+              <div class="brk-testimonials-layered-vertical__comment font__family-open-sans">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Curabitur ullamcorper ultricies nisi.</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="brk-testimonials-layered-vertical__item layered-vertical-item">
+              <div class="brk-testimonials-layered-vertical__person">
+                <div class="brk-testimonials-layered-vertical__person-info">
+                  <div class="brk-testimonials-layered-vertical__photo" style="background-image: url(@@if(context.img3){@@img3}@@if(!context.img3){img/people/pexels-photo-428341.jpeg})"></div>
+                  <div class="brk-testimonials-layered-vertical__name font__family-montserrat font__weight-bold">Mike Paterson</div>
+                  <div class="brk-testimonials-layered-vertical__job font__family-open-sans letter-spacing-20">Client from Yahoo</div>
+                </div>
+
+                @@include('../../elements/templates/rating.html', {
+                "value": "80%"
+                })
+              </div>
+              <div class="brk-testimonials-layered-vertical__comment font__family-open-sans">For many small business owners and entrepreneurs, popular apps like Uber and Snapchat are sources of inspiration. It's easy to see the appeal of mobile apps: they can provide a direct connection between businesses and their customers, encouraging engagement by providing new services and perks.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-base-arrow-vertical button-prev"><i class="fas fa-arrow-down @@if(context.arrow_white === "true"){brk-white-font-color}"></i></div>
+      <div class="swiper-base-arrow-vertical button-next"><i class="fas fa-arrow-up @@if(context.arrow_white === "true"){brk-white-font-color}"></i></div>
+    </div>
+
+  </div>

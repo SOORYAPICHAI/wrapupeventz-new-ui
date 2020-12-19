@@ -1,0 +1,60 @@
+
+  <div class="brk-testimonials-dash-six" data-brk-library="component__testimonials,slider__swiper">
+    @@if(context.title !== "style2"){
+      <div class="brk-testimonials-dash-six__title-slider font__family-oxygen font__weight-light">Our Reviews</div>
+    }
+    @@if(context.title === "style2"){
+      <div class="text-left mb-100">
+        <div class="heading-style-left">
+          <h2 class="font__family-roboto font__weight-thin  font__size-56 line__height-64 heading-style-left-h">Our Reviews</h2>
+          <span class="title__heading-05 pl-1  title__heading-sub wow fadeInLeft heading-style-left-span font__family-roboto font__size-16 font__weight-bold"
+            style="visibility: visible; animation-name: fadeInRight;">kind words about my experience</span>
+        </div>
+      </div>
+    }
+
+    <div class="dash-six-slider swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="brk-testimonials-dash-six__item font__family-oxygen">
+            <div class="brk-testimonials-dash-six__comment font__weight-light">Many businesses further utilize Trello to manage their content marketing.</div>
+            <div class="brk-testimonials-dash-six__photo @@if(context.grayscale === "true"){grayscale-100} lazyload" data-bg="@@if(context.demo !== "true"){img/people/pexels-photo-672599.jpeg}@@if(context.demo === "true"){img/120x120_1.jpg}"></div>
+            <div class="brk-testimonials-dash-six__name font__weight-bold">Jon Jonson,</div>
+            <div class="brk-testimonials-dash-six__job"><i class="fal fa-minus"></i> Volunteer</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="brk-testimonials-dash-six__item font__family-oxygen">
+            <div class="brk-testimonials-dash-six__comment font__weight-light">If you're serious about boosting productivity within your business, begin building trust with.</div>
+            <div class="brk-testimonials-dash-six__photo @@if(context.grayscale === "true"){grayscale-100} lazyload" data-bg="@@if(context.demo !== "true"){img/people/pexels-photo-598745.jpeg}@@if(context.demo === "true"){img/120x120_2.jpg}"></div>
+            <div class="brk-testimonials-dash-six__name font__weight-bold">Sarah Kranz,</div>
+            <div class="brk-testimonials-dash-six__job"><i class="fal fa-minus"></i> Volunteer</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="brk-testimonials-dash-six__item font__family-oxygen">
+            <div class="brk-testimonials-dash-six__comment font__weight-light">Aenean vulputate eleifend tellusnean leo ligula, porttitor eu, sequat vitae, eleifend ac, enim.</div>
+            <div class="brk-testimonials-dash-six__photo @@if(context.grayscale === "true"){grayscale-100} lazyload" data-bg="@@if(context.demo !== "true"){img/people/pexels-photo-428341.jpeg}@@if(context.demo === "true"){img/120x120_3.jpg}"></div>
+            <div class="brk-testimonials-dash-six__name font__weight-bold">Mike Paterson,</div>
+            <div class="brk-testimonials-dash-six__job"><i class="fal fa-minus"></i> Volunteer</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="brk-testimonials-dash-six__item font__family-oxygen">
+            <div class="brk-testimonials-dash-six__comment font__weight-light">Embrace and invest in the technology that can help you automate, organize, manage and create.</div>
+            <div class="brk-testimonials-dash-six__photo @@if(context.grayscale === "true"){grayscale-100} lazyload" data-bg="@@if(context.demo !== "true"){img/people/pexels-photo-355164.jpeg}@@if(context.demo === "true"){img/120x120_2.jpg}"></div>
+            <div class="brk-testimonials-dash-six__name font__weight-bold">Lia Mit,</div>
+            <div class="brk-testimonials-dash-six__job"><i class="fal fa-minus"></i> Volunteer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dash-six-arrow">
+      <div class="dash-six-arrow-prev"><i class="fa fa-angle-left"></i></div>
+      <div class="dash-six-arrow-next"><i class="fa fa-angle-right"></i></div>
+    </div>
+  </div>

@@ -1,0 +1,201 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Testimonials"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+  <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+  <main class="main-container mb-50 mt-70">
+
+    <section>
+      <div class="container mb-100">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">01</span> Dash
+          </h3>
+        </div>
+      </div>
+      <div class="container mb-140">
+        @@include('./templates/dash-one.html')
+      </div>
+    </section>
+
+    <section class="pb-10">
+      <div class="container mb-140 pt-50">
+
+        <div class="text-left mb-50">
+          <span class="font__family-montserrat font__weight-light font__size-56 line__height-60 text-uppercase">Our</span>
+          <span class="font__family-montserrat font__weight-bold font__size-56 line__height-60 text-uppercase">Reviews</span>
+        </div>
+        @@include('./templates/dash-two.html')
+      </div>
+    </section>
+
+    <section class="mt-100">
+
+      <div class="brk-testimonials-dash-three text-center pt-60 pb-80" style="background-color: #f6f6f6;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 110">
+          <path d="M1920,110H0V0Z" style="fill:#f6f6f6"/>
+        </svg>
+
+        <h2 class="title__heading-06 title__heading-sub wow zoomIn" style="color: #E0E0E0">Clients</h2>
+        <h2 class="title__heading-06 title__heading-main">Over 10,000 customers <br><span
+                class="font__weight-extrabold">worldwide</span></h2>
+        @@include("./templates/dash-three.html")
+      </div>
+    </section>
+
+    <section>
+      <div class="container mt-150 mb-140">
+
+        <div class="text-center mb-10">
+          <span class="font__family-montserrat font__weight-light font__size-36 line__height-42">Our</span>
+          <span class="font__family-montserrat font__weight-bold font__size-36 line__height-42">Reviews</span>
+        </div>
+
+        <div class="row justify-content-center mb-40">
+          <div class="col-md-6">
+            <div class="font__family-open-sans font__size-16 line__height-28 brk-dark-blur-font-color text-center">
+              Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean
+              posuere, tortor sed cursus feugiat.
+            </div>
+          </div>
+        </div>
+
+        @@include('./templates/dash-four.html', {
+        "arr": [
+        {"title": "Ostin Paterson", "text": "Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc.", "img": "img/people/pexels-photo-262391.jpeg"},
+        {"title": "Anna Jonson", "text": "GrooveJar is a tool that helps you optimize your conversion rate. It offers several tools that can aid in email collection, highlight social proof and promotions and determine why your customers are leaving your site without buying just to name a few.", "img": "img/people/pexels-photo-274595.jpeg"},
+        {"title": "Lia Mit", "text": "Within Evernote, you can easily add links, tables, attachments, checklists, audio recordings, handwritten notes and other media to your notes, making it a convenient means of storing and sharing many types of data.", "img":"img/people/pexels-photo-355164.jpeg"},
+        {"title": "Mike Paterson", "text": "If you're still relying on handwritten to-do lists, whiteboards, sticky notes and other physical or paper-based tools for productivity and collaboration, you might find it useful to move your documents to the cloud for quicker and easier access -- especially if you're working with contractors or remote workers.", "img": "img/people/pexels-photo-428341.jpeg"}
+        ]
+        })
+      </div>
+    </section>
+
+    <section>
+      <div class="container pt-100 mb-140">
+        @@include('./templates/dash-five.html')
+      </div>
+    </section>
+
+    <section>
+      <div class="container pt-70 mb-140">
+        @@include('./templates/dash-six.html')
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-90 pt-110">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">02</span> Double
+          </h3>
+        </div>
+      </div>
+
+      <div class="position-relative pb-60 pt-50"
+           style="background: url(img/bg-1920_1.jpg) no-repeat center;background-size: cover;">
+        <div class="brk-abs-bg-overlay brk-base-bg-gradient-right"></div>
+
+        <div class="container position-relative z-index-3">
+          <div class="font__family-montserrat font__weight-ultralight font__size-36 line__height-42 text-uppercase pb-15 text-white"
+               style="border-bottom: 1px solid rgba(var(--white-rgb), 0.2);">Our Reviews
+          </div>
+        </div>
+
+        @@include('../testimonials/templates/double.html', {
+        "slider_1_style": "double-white",
+        "slider_1_bg": "img/560x379_1.jpg",
+        "slider_1_people_1": "",
+        "slider_1_people_2": "",
+        "slider_1_people_3": "",
+        "slider_2_style": "double-dark",
+        "slider_2_bg": "img/560x379_4.jpg",
+        "slider_2_people_1": "",
+        "slider_2_people_2": ""
+        })
+      </div>
+
+
+      <div class="position-relative mt-50 pb-60 pt-50"
+           style="background: url(img/bg-1920_3.jpg) no-repeat center;background-size: cover;">
+        <div class="brk-abs-bg-overlay brk-base-bg-gradient-right"></div>
+
+        <div class="container position-relative z-index-3">
+          <div class="font__family-montserrat font__weight-ultralight font__size-36 line__height-42 text-uppercase pb-15 text-white"
+               style="border-bottom: 1px solid rgba(var(--white-rgb), 0.2);">Our Reviews
+          </div>
+        </div>
+
+        @@include('../testimonials/templates/double.html', {
+        "slider_1_style": "double-dark-light",
+        "slider_1_bg": "img/560x379_2.jpg",
+        "slider_1_people_1": "",
+        "slider_1_people_2": "",
+        "slider_1_people_3": "",
+        "slider_2_style": "double-dark",
+        "slider_2_bg": "img/560x379_3.jpg",
+        "slider_2_people_1": "",
+        "slider_2_people_2": ""
+        })
+      </div>
+
+
+    </section>
+
+    <section>
+      <div class="container mt-160 mb-130">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">03</span> Layered Horizontal
+          </h3>
+        </div>
+      </div>
+      <div class="brk-testimonials-layered-horizontal" style="background-image: url(img/bg-1920_1.jpg)">
+        <span class="before-layer brk-base-bg-gradient-50deg-a"></span>
+        <span class="after-layer"></span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 137.5">
+          <path d="M0,0A3421.34,3421.34,0,0,0,953,137.49,3421.46,3421.46,0,0,0,1920,0" style="fill:#fff"/>
+        </svg>
+        @@include("./templates/layered-horizontal.html")
+      </div>
+
+    </section>
+
+    <section>
+      <div class="container mt-190 mb-130">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">04</span> Layered Vertical
+          </h3>
+        </div>
+      </div>
+      @@include("templates/layered-vertical.html")
+    </section>
+
+    <section>
+      <div class="container mt-200 mb-100">
+        <div class="text-left">
+          <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+            <span class="heading__number">05</span> Circle
+          </h3>
+        </div>
+      </div>
+      @@include('./templates/circle.html')
+    </section>
+
+  </main>
+
+</div>
+
+
+@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

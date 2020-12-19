@@ -1,0 +1,69 @@
+@@if(context.reverse !== "true"){
+<div class="row align-items-end justify-content-center @@if(context.customClass){@@customClass}" data-brk-library="component__image_frames">
+  <div class="col-lg-6 flex-lg-last">
+    <div class="frame-image img-double-bigger">
+      <div class="img">
+        <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.img_1){@@img_1} @@if(!context.img_1){img/370x540_1.jpg}" alt="alt">
+      </div>
+      <div class="img">
+        <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.img_2){@@img_2} @@if(!context.img_2){img/540x370_1.jpg}" alt="alt">
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 text-left mt-140 mt-lg-0 mb-lg-50">
+    <div class="extra__heading-3" data-brk-library="component__title_section">
+      <div class="heading">
+        <h2 class="font__family-montserrat font__weight-ultralight font__size-40 text-uppercase">@@if(context.phrase1){@@phrase1} @@if(!context.phrase1){QUality}</h2>
+        <h2 class="font__family-montserrat font__weight-bold font__size-40 text-uppercase">@@if(context.phrase2){@@phrase2} @@if(!context.phrase2){Technology}
+           @@if(context.phrase3 !== "disable"){
+            <br>
+            @@if(context.phrase3){@@phrase3} @@if(!context.phrase3){
+            <span class="font__weight-ultralight">&</span> People} 
+          }
+        </h2>
+      </div>
+      <h2 class="font__family-montserrat font__weight-semibold letter-spacing-20 after-heading">@@if(context.bgPhrase){@@bgPhrase} @@if(!context.bgPhrase){About}</h2>
+      <p class="font__family-open-sans font__size-16">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+        ante, dapibus in, viverra quis, feugiat a, tellus. </p>
+      <a href="#" class="font__family-montserrat font__weight-medium font__size-13 text-uppercase letter-spacing-100 text-blue link-icon mt-20">Learn more
+        <i class="icon fa fa-long-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</div>
+}
+
+@@if(context.reverse === "true"){
+  <div class="row align-items-end justify-content-center @@if(context.customClass){@@customClass}" data-brk-library="component__image_frames">
+    <div class="col-lg-6 text-left mt-140 mt-lg-40 mb-50">
+      <div class="extra__heading-3" data-brk-library="component__title_section">
+        <div class="heading">
+          <h2 class="font__family-montserrat font__weight-ultralight font__size-40 text-uppercase">@@if(context.phrase1){@@phrase1} @@if(!context.phrase1){QUality}</h2>
+          <h2 class="font__family-montserrat font__weight-bold font__size-40 text-uppercase">@@if(context.phrase2){@@phrase2} @@if(!context.phrase2){Technology}
+            @@if(context.phrase3 !== "disable"){
+              <br>
+              @@if(context.phrase3){@@phrase3} @@if(!context.phrase3){
+              <span class="font__weight-ultralight">&</span> People} 
+            }
+          </h2>
+        </div>
+        <h2 class="font__family-montserrat font__weight-semibold letter-spacing-20 after-heading">@@if(context.bgPhrase){@@bgPhrase} @@if(!context.bgPhrase){About}</h2>
+        <p class="font__family-open-sans font__size-16">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+          ante, dapibus in, viverra quis, feugiat a, tellus. </p>
+        <a href="#" class="font__family-montserrat font__weight-medium font__size-13 text-uppercase letter-spacing-100 text-blue link-icon mt-20">Learn more
+          <i class="icon fa fa-long-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-6 flex-lg-last">
+      <div class="frame-image img-double-bigger">
+        <div class="img">
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.img_1){@@img_1} @@if(!context.img_1){img/370x540_1.jpg}" alt="alt">
+        </div>
+        <div class="img">
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.img_2){@@img_2} @@if(!context.img_2){img/540x370_1.jpg}" alt="alt">
+        </div>
+      </div>
+    </div>
+  </div>
+}

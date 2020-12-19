@@ -1,0 +1,32 @@
+<div 
+  class="progress__wrapper progress__thin 
+    @@if(context.customClass){@@customClass}
+    @@if(context.topPosition){progress__thin_top}"
+  data-brk-library="component__progress_bar">
+  @@if(!context.topPosition){
+    <div class="progress">
+      <div data-valuemax="@@if(context.valueMax){@@valueMax}@@if(!context.valueMax){100}" 
+      data-valuemin="@@if(context.valueMin){@@valueMin}@@if(!context.valueMin){0}" 
+      data-valuenow="@@if(context.valueCur){@@valueCur}@@if(!context.valueCur){100}" class="progress__bar">
+        <span class="font__family-open-sans font__size-16 font__weight-semibold progress__bar-counter hide">@@if(context.valueCur){@@valueCur}@@if(!context.valueCur){100}</span>
+        <span class="circle"></span>
+      </div>
+    </div>
+    <h5 class="font__family-montserrat font__size-18 font__weight-medium letter-space-40 progress__title">
+      @@if(!context.title){Hard Work} @@if(context.title){@@title}
+    </h5>
+  }
+  @@if(context.topPosition){
+    <h5 class="font__family-montserrat font__size-18 font__weight-medium letter-space-40 progress__title">
+      @@if(!context.title){Hard Work} @@if(context.title){@@title}
+    </h5>
+    <div class="progress">
+      <div data-valuemax="@@if(context.valueMax){@@valueMax}@@if(!context.valueMax){100}" 
+      data-valuemin="@@if(context.valueMin){@@valueMin}@@if(!context.valueMin){0}" 
+      data-valuenow="@@if(context.valueCur){@@valueCur}@@if(!context.valueCur){100}" class="progress__bar">
+        <span class="font__family-open-sans font__size-16 font__weight-semibold progress__bar-counter hide">@@if(context.valueCur){@@valueCur}@@if(!context.valueCur){100}</span>
+        <span class="circle"></span>
+      </div>
+    </div>
+  }
+</div>

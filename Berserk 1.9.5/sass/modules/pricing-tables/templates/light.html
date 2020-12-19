@@ -1,0 +1,83 @@
+<div class="brk-pricing-light__item mb-40" data-brk-library="component__pricing_table,component__button">
+  @@if(context.stick) {
+  <div class="brk-pricing-light__stick">
+    <span class="brk-white-font-color font__family-montserrat font__size-16 font__weight-bold line__height-36 text-uppercase brk-sc-card-label__stick-text">@@stick</span>
+  </div>
+  }
+
+  <div class="brk-pricing-light__header">
+
+    @@if(context.old_price){
+      <h2 class="mb-1 brk-pricing-light__old-price font__family-montserrat font__size-16 font__weight-bold line__height-16">
+        <s>@@old_price</s> 
+      </h2>
+    }
+
+    @@if(context.price){
+      <h2 class="brk-pricing-light__price font__family-montserrat font__size-48 font__weight-bold line__height-50">
+       @@price
+      </h2>
+    }
+
+    @@if(context.period){
+      <h3 class="brk-pricing-light__period font__size-16 line__height-16 font__weight-semibold opacity-40">
+       @@period
+      </h3>
+    }
+   
+    @@include("../../buttons/templates/buttons.html",{
+      "type":"btn-inside-out",
+      "size":"lg",
+      "text":"select",
+      "customClass":"border-radius-30 brk-white-font-color font__family-open-sans font__weight-bold pl-70 pr-70"
+    })
+
+  </div>
+
+  <div class="brk-pricing-light__body pl-40 pr-40 pt-70 pb-50">
+    <ul class="brk-pricing-light__list w-100 font__size-16 line__height-18">
+      <li class="brk-pricing-light__list-item active mb-10">
+        <div class="brk-pricing-light__list-indicator">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-minus-circle"></i>
+        </div>
+        <p>Aenean vulputate</p>
+      </li>
+      <li class="brk-pricing-light__list-item active mb-10">
+        <div class="brk-pricing-light__list-indicator">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-minus-circle"></i>
+        </div>
+        <p>Eleifend tellus renean leo</p>
+      </li>
+      <li class="brk-pricing-light__list-item active mb-10">
+        <div class="brk-pricing-light__list-indicator">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-minus-circle"></i>
+        </div>
+        <p>Ligula porttitor euequat</p>
+      </li>
+      <li class="brk-pricing-light__list-item mb-10">
+        <div class="brk-pricing-light__list-indicator">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-minus-circle"></i>
+        </div>
+        <p>Vitae, eleifend ac, enim</p>
+      </li>
+      <li class="brk-pricing-light__list-item mb-10">
+        <div class="brk-pricing-light__list-indicator">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-minus-circle"></i>
+        </div>
+        <p>Leo eget bibendum sodales</p>
+      </li>
+      <li class="brk-pricing-light__list-item mb-10">
+        <div class="brk-pricing-light__list-indicator">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-minus-circle"></i>
+        </div>
+        <p>Augue velit cursus nunc</p>
+      </li>
+    </ul>
+  </div>
+</div>

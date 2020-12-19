@@ -1,0 +1,24 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/mixins";
+
+.brk-image-map {
+	z-index: 9;
+
+	&_absolute-top {
+		@media (min-width: 992px) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: auto;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.brk-image-map_full-width{
+  .imp-wrap{
+    max-width: none !important;
+    width: 100%;
+  }
+}

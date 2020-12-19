@@ -1,0 +1,58 @@
+<footer class="brk-footer position-relative @@if(context.customClass){@@customClass}" @@if(context.id){id="@@id"} data-brk-library="component__footer">
+  @@if(context.map === "true"){
+    @@include('../../google-maps/templates/hidden-classic.html')
+  }
+  <div class="brk-footer__wrapper pt-50 @@if(context.animated === 'true'){brk-footer__wrapper_animated}">
+  <span class="brk-abs-overlay brk-base-bg-gradient-left-100"></span>
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between flex-wrap mb-30">
+      <div class="d-flex align-items-center flex-wrap justify-content-between">
+        <p class="brk-white-font-color font__size-16 lh-16 mt-10 mb-10 line__height-24 mr-25 flex-wrap">
+          Follow us:</p>
+
+        <div style="margin-top: 5px;" >
+           @@include('../../social-links/templates/simple-social-links.html',{
+            "socialIcon1":"<i class='fab fa-twitter'></i>",
+            "socialIcon2":"<i class='fab fa-instagram'></i>",
+            "socialIcon3":"<i class='fab fa-google-plus-g'></i>",
+            "socialIcon4":"<i class='fab fa-youtube'></i>",
+            "socialIcon5":"<i class='fab fa-vimeo'></i>",
+            "socialIcon6":"<i class='fab fa-vk'></i>",
+            "customContainerClass":"brk-white-font-color font__size-13 pb-1"
+          })
+        </div>
+      </div>
+      <div>
+        <a href="#" class="font__family-montserrat font__size-14 font__weight-medium brk-white-font-color mr-40 brk-underline-dotted">Terms of services</a>
+        <a href="#" class="font__family-montserrat font__size-14 font__weight-medium brk-white-font-color brk-underline-dotted">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="brk-footer__wide-menu pt-20 pt-sm-15 pb-15 d-flex flex-wrap justify-content-between align-items-center">
+      <p class="font__size-14 line__height-21 font__weight-normal text-sm-left mx-xs-auto">© 2018 Berserk All rights
+        reserved</p>
+      <nav class="brk-footer-nav pt-10 pt-md-0">
+        <ul class="d-flex flex-wrap justify-content-center font__size-14 font__weight-medium text-uppercase">
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">pages</a>
+          </li>
+          <li>
+            <a href="#">elements</a>
+          </li>
+          <li>
+            <a href="#">portfolio</a>
+          </li>
+          <li>
+            <a href="#">blog</a>
+          </li>
+          <li>
+            <a href="#">shop</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </div>
+</footer>

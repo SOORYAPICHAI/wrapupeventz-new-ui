@@ -1,0 +1,33 @@
+@@if (context.text){
+	<div class="@@if(context.fullWidth !== "true"){maxw-770} @@if(context.customClass){@@customClass}" data-brk-library="component__title">
+		<div class="text-left @@if(context.row === "true"){d-md-flex justify-content-between align-items-center}">
+			@@if (context.text.main && !context.text.secondary){
+			<h2> 
+        <span class="@@if(!context.text.mainStyle){font__family-montserrat font__size-64 line__height-68}@@if(context.text.mainStyle){@@text.mainStyle}">@@text.main</span>
+      </h2>
+      }
+      @@if (context.text.main && context.text.secondary){
+        <h2> 
+          <span class="@@if(!context.text.mainStyle){font__family-montserrat font__size-64 line__height-68}@@if(context.text.mainStyle){@@text.mainStyle}">@@text.main</span>
+          <br>
+          <span class="@@if(!context.text.secondaryStyle){font__family-montserrat font__weight-bold font__size-64 line__height-68}@@if(context.text.secondaryStyle){@@text.secondaryStyle}">@@text.secondary</span>
+        </h2>
+      }      
+			@@if (context.text.divider){
+			<div class="divider-layers wow zoomIn"><span class="before"></span></div>
+			}
+			@@if (context.text.sided){
+			<h4 class="@@if(!context.text.sidedStyle){font__family-montserrat highlight-underline line__height-26 font__size-21 font__weight-light}@@if(context.text.sidedStyle){@@text.sidedStyle} @@if(context.text.sidedCustomClass){@@text.sidedCustomClass}">
+				<span class="before wow fadeInUp"></span>
+				@@if (context.text.sided.main){
+				<span class="before wow fadeInUp"></span>@@text.sided.main
+				}
+
+				@@if (context.text.sided.secondary){
+				<br><span class="font__weight-bold">@@text.sided.secondary</span>
+				}
+			</h4>
+			}
+		</div>
+	</div>
+}

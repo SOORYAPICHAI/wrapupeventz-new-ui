@@ -1,0 +1,36 @@
+@@if(context.only_counter !== "true"){
+  <div class="mt-50 pt-120 pb-120 overlay__white bg__style text-center" style="background-image: url(img/bg-1920_1.jpg);">
+  }
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-lg-4">
+        <div class="counter__wrapper-roller @@if(context.primary_theme === "true"){blue}@@if(!context.primary_theme){blue} text-center" data-brk-library="component__counter">
+          <div data-count-speed="3000" data-count-from="0" data-count-to="121" class="counter odometer"></div>
+          <h4 class="@@if(context.titleCustomClass){@@titleCustomClass}@@if(!context.titleCustomClass){font__family-montserrat font__weight-semibold font__size-24 line__height-26 mt-70}">
+            @@if(context.title1){@@title1}@@if(!context.title1){Some large <br> title}
+          </h4>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="counter__wrapper-roller @@if(context.primary_theme === "true"){blue}@@if(!context.primary_theme){purple} text-center" data-brk-library="component__counter">
+          <div data-count-speed="2000" data-count-from="0" data-count-to="674" class="counter odometer"></div>
+          <h4 class="@@if(context.titleCustomClass){@@titleCustomClass}@@if(!context.titleCustomClass){font__family-montserrat font__weight-semibold font__size-24 line__height-26 mt-70}">
+            @@if(context.title2){@@title2}@@if(!context.title2){Some large <br> title}
+          </h4>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="counter__wrapper-roller @@if(context.primary_theme === "true"){blue}@@if(!context.primary_theme){aqua} text-center" data-brk-library="component__counter">
+          <div data-count-speed="1000" data-count-from="0" data-count-to="2678" class="counter odometer"></div>
+          <h4 class="@@if(context.titleCustomClass){@@titleCustomClass}@@if(!context.titleCustomClass){font__family-montserrat font__weight-semibold font__size-24 line__height-26 mt-70}">
+            @@if(context.title3){@@title3}@@if(!context.title3){Some large <br> title}
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+@@if(context.only_counter !== "true"){
+  </div>
+}  

@@ -1,0 +1,25 @@
+  @@include("../../assets/templates/head.html", {
+  "titlePage": "Home Page"
+  })
+  </head>
+
+  <body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container">
+      @@include('templates/front-page-element.html', {})
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html",{
+      "customClass": "pt-250",
+      "demo": "true"
+    })
+
+  </body>
+</html>

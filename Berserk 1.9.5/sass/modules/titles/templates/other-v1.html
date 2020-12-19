@@ -1,0 +1,9 @@
+@@if (context.text){
+	@@if (context.text.main){
+		<h2 class="title__heading-01 font__family-montserrat-alt font__size-50 font__weight-bold title__heading-main wow zoomIn" data-brk-library="component__title">@@text.main</h2>
+	}
+	@@if (context.text.secondary){
+		<h4 class="title__heading-01 title__heading-sub font__family-montserrat font__size-21" data-brk-library="component__title">@@text.secondary</h4>
+	}
+	<hr class="title__heading-01 divider" data-brk-library="component__title">
+}

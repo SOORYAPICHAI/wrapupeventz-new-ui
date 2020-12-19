@@ -1,0 +1,25 @@
+<div class="brk-portfolio-galleries__card" data-brk-library="component__portfolio_galleries">
+  <img class="brk-abs-img lazyload" alt="alt" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.img){@@img}@@if(!context.img){img/home-page/gallery-1.jpg}">
+  <div class="brk-portfolio-galleries__label pt-60 pl-70 pr-60 pb-50">
+    <h2 class="font__family-roboto font__size-56 font__weight-thin mb-2">@@if(context.title){@@title} @@if(!context.title){Gallery}</h2>
+
+     @@if(context.subtitle){
+      <h3 class="brk-dark-font-color font__family-montserrat font__size-12 font__weight-normal text-uppercase letter-spacing-100 mb-auto"> @@subtitle</h3>
+    }
+
+    @@include("../../social-links/templates/simple-social-links.html",{
+      "socialIcon1":"<i class='fab fa-facebook-f'></i>",
+      "socialIcon2":"<i class='fab fa-twitter'></i>",
+      "socialIcon3":"<i class='fab fa-google-plus-g'></i>",
+      "socialIcon4":"<i class='fab fa-pinterest'></i>",
+      "socialIcon5":"<i class='fab fa-linkedin-in'></i>", 
+      "socialIcon6":"<i class='fab fa-vk'></i>",
+      "socialLink6":"",
+      "socialIcon7":"",
+      "customContainerClass":" brk-black-font-color font__size-13 brk-social-links_opacity" 
+    })
+   
+    <a href="#" class="text-uppercase font__family-montserrat font__size-12 font__weight-bold text-underline letter-spacing-100 mt-30"><u>read more</u></a>
+  </div>
+  
+</div>  

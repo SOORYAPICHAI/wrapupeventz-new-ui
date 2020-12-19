@@ -1,0 +1,182 @@
+@@include('../../assets/templates/head.html',{
+"titlePage": "Spa & Beauty - News",
+"themeSkin": "brk-pink.css"
+})
+</head>
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+@@include("../../modules/header-vertical-1/templates/style-header-vertical-1.html",{
+"logo_1": "img/demo_spa/logo-dark-1.png",
+"logo_2": "img/demo_spa/logo-dark-1.png",
+"only_header": "true",
+"lang": "false",
+"cart": "false",
+"logo": "false",
+"customNav": "true",
+"title1": "Home",
+"link1": "/index.html",
+"title2": "About Us",
+"link2": "/demo_spa_about.html",
+"submenu2": {
+"subtitle1": "About",
+"sublink1": "/demo_spa_about.html",
+"subtitle2": "Services",
+"sublink2": "/demo_spa_services.html",
+"subtitle3": "Team",
+"sublink3": "/demo_spa_team.html",
+"subtitle4": "Partners",
+"sublink4": "/demo_spa_partners.html"
+},
+"title3": "News",
+"link3": "/demo_spa_news.html",
+"title4": "Testimonials",
+"link4": "/demo_spa_testimonials.html",
+"title5": "Contact Us",
+"link5": "/demo_spa_contact.html"
+})
+<div class="main-wrapper">
+  <main class="main-container">
+
+    @@include('../../modules/breadcrumbs/templates/simple.html',{
+    "title": "News"
+    })
+
+    <h1 class="sr-only">Spa & Beauty - News</h1>
+
+
+    <section class="pt-80 pb-100">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-lg-8 col-xl-9 order-xs-2 order-lg-1">
+            <div class="brs-posts-container brs-posts-container_right-divider">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  @@include('../../modules/content-sliders/templates/rounded-card.html',{
+                  "img": "img/demo_spa/370x370_1.jpg",
+                  "title": "Some Post Title",
+                  "titleCustomClass": "text-center",
+                  "pCustomClass": "text-center",
+                  "p": "Phasellus dolor. Maecenas ulum mollis diam. Pellentesqueneque ellentesque habitant m tristique senectus.",
+                  "customClass": "mt-0 mb-30",
+                  "squareBtn": "true"
+                  })
+                </div>
+                <div class="col-12 col-lg-6">
+                  @@include('../../modules/content-sliders/templates/rounded-card.html',{
+                  "img": "img/demo_spa/370x370_2.jpg",
+                  "title": "Some Post Title",
+                  "titleCustomClass": "text-center",
+                  "pCustomClass": "text-center",
+                  "p": "Phasellus dolor. Maecenas ulum mollis diam. Pellentesqueneque ellentesque habitant m tristique senectus.",
+                  "customClass": "mt-0 mb-30",
+                  "squareBtn": "true"
+                  })
+                </div>
+                <div class="col-12 col-lg-6">
+                  @@include('../../modules/content-sliders/templates/rounded-card.html',{
+                  "img": "img/demo_spa/370x370_3.jpg",
+                  "title": "Some Post Title",
+                  "titleCustomClass": "text-center",
+                  "pCustomClass": "text-center",
+                  "p": "Phasellus dolor. Maecenas ulum mollis diam. Pellentesqueneque ellentesque habitant m tristique senectus.",
+                  "customClass": "mt-0 mb-30",
+                  "squareBtn": "true"
+                  })
+                </div>
+                <div class="col-12 col-lg-6">
+                  @@include('../../modules/content-sliders/templates/rounded-card.html',{
+                  "img": "img/demo_spa/370x370_4.jpg",
+                  "title": "Some Post Title",
+                  "titleCustomClass": "text-center",
+                  "pCustomClass": "text-center",
+                  "p": "Phasellus dolor. Maecenas ulum mollis diam. Pellentesqueneque ellentesque habitant m tristique senectus.",
+                  "customClass": "mt-0 mb-30",
+                  "squareBtn": "true"
+                  })
+                </div>
+              </div>
+              <div class="text-center mt-lg-80 mt-40 mb-60 mb-lg-100">
+                <a href="#" class="icon__btn icon__btn-anim icon__btn-md icon__btn-invert">
+                  <span class="before"></span>
+                  <i class="fas fa-sync" aria-hidden="true"></i>
+                  <span class="after"></span>
+                  <span class="bg"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 col-xl-3 order-xs-1 order-lg-2">
+
+            <div class="brs-sidebar brs-sidebar_right">
+              <div class="brs-sidebar__title">
+                <i class="fab fa-hotjar brs-sidebar__title-icon"></i>
+                <h2 class="font__family-montserrat font__size-21 font__weight-bold line__height-22">HOT News</h2>
+              </div>
+              <div class="brs-carousel brs-carousel_news">
+                <div>
+                  @@include("../../modules/shape-box/templates/half-card.html",{
+                  "img":"img/demo_spa/270x430_1.jpg",
+                  "subtitle":"01",
+                  "title":"Design",
+                  "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat",
+                  "customClass": "mb-0"
+                  })
+                </div>
+                <div>
+                  @@include("../../modules/shape-box/templates/half-card.html",{
+                  "img":"img/demo_spa/270x430_2.jpg",
+                  "subtitle":"02",
+                  "title":"Develop",
+                  "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat",
+                  "customClass": "mb-0"
+                  })
+                </div>
+                <div>
+                  @@include("../../modules/shape-box/templates/half-card.html",{
+                  "img":"img/demo_spa/270x430_3.jpg",
+                  "subtitle":"03",
+                  "title":"Research",
+                  "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat",
+                  "customClass": "mb-0"
+                  })
+                </div>
+                <div>
+                  @@include("../../modules/shape-box/templates/half-card.html",{
+                  "img":"img/demo_spa/270x430_4.jpg",
+                  "subtitle":"04",
+                  "title":"Promotion",
+                  "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat",
+                  "customClass": "mb-0"
+                  })
+                </div>
+              </div>
+
+              @@include('../../modules/widgets/templates/news-tab.html',{
+              "demo": "true"
+              })
+
+              <div class="brs-sidebar__title">
+                <h2 class="font__family-montserrat font__size-21 font__weight-bold line__height-22">Tags</h2>
+              </div>
+
+              @@include('../../modules/tags/templates/solid.html')
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+@@include("../../modules/footer/templates/footer-12.html",{
+"demo": "true"
+})
+
+@@include('../../assets/templates/footer.html',{
+  "demo": "true"
+})
+
+</body>

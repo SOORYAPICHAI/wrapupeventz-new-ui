@@ -1,0 +1,31 @@
+<div class="triple-slider slick-loading @@if(context.customCLass){@@customCLass}"
+     data-brk-library="slider__slick,component__image_caption">
+  <div>
+    @@include('../../image-caption-parallax/templates/image-caption-3.html',{
+    "img":"@@if(context.img_1){@@img_1}@@if(!context.img_1){img/shop-home-page/slider-1.jpg}",
+    "title": "Network device",
+    "subTitle": "& Personal computer"
+    })
+  </div>
+  <div>
+    @@include('../../image-caption-parallax/templates/image-caption-3.html',{
+    "img":"@@if(context.img_2){@@img_2}@@if(!context.img_2){img/shop-home-page/slider-2.jpg}",
+    "title": "Wireless device",
+    "subTitle": "& Portable media player"
+    })
+  </div>
+  <div>
+    @@include('../../image-caption-parallax/templates/image-caption-3.html',{
+    "img":"@@if(context.img_3){@@img_3}@@if(!context.img_3){img/shop-home-page/slider-3.jpg}",
+    "title": "Car audio",
+    "subTitle": "& Display device"
+    })
+  </div>
+  <div>
+    @@include('../../image-caption-parallax/templates/image-caption-3.html', {
+    "img": "@@if(context.img_4){@@img_4}",
+    "title": "Network device",
+    "subTitle": "& Personal computer"
+    })
+  </div>
+</div>

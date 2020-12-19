@@ -1,0 +1,24 @@
+
+	<div class="@@if(context.customClass){@@customClass} @@if(!context.customClass){pt-80 pb-80} bg__style overlay__gradient all-light text-center lazyload" data-bg="@@if(context.img){@@img}@@if(!context.img){img/1920x610_1.jpg}" data-brk-library="component__call_to_action">
+		<div class="container">
+			<i class="main-icon fa fa-trophy"></i>
+			<h3 class="font__family-montserrat font__weight-light brk-white-font-color opacity-60">
+        @@if(context.subTitle){@@subTitle}@@if(!context.subTitle){Some description goes here}
+      </h3>
+			<h2 class="font__family-montserrat font__weight-bold">
+        @@if(context.title){@@title}@@if(!context.title){Call for action Block heading title}
+      </h2>
+			<a href="#"
+			   class="btn btn-lg @@if(context.btn !== "square"){border-radius-25} @@if(context.btn === "square"){border-radius-0 pl-60 pr-60} font__family-open-sans font__weight-bold btn-inside-out btn-inside-out-invert mt-50">
+				<span class="before">Read More</span>
+				<span class="text">Read More</span>
+				<span class="after">Read More</span>
+			</a>
+    </div>
+    @@if(context.overlay){
+      <span class="brk-abs-overlay @@overlay"></span>
+    }
+    @@if(!context.overlay){
+      <span class="overlay_after brk-base-bg-gradient-14 opacity-90"></span>
+    }
+	</div>

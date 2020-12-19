@@ -1,0 +1,815 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Buttons"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+		<div class="container">
+			<div class="heading__1 mt-160" data-brk-library="component__title">
+				<h3 class="font__family-montserrat font__size-28 font__weight-bold"><span class="heading__number">01</span>
+					Buttons</h3>
+			</div>
+		</div>
+		<!-- Button Inside Out -->
+		<section class="btn-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"tag": "a",
+							"type": "btn-inside-out",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold btn-min-width-200",
+							"href": "http://google.com",
+							"size": "lg",
+							"width": "",
+							"icon": "",
+							"iconType": "background"
+						})
+						<!--
+							all options are not required except "type"
+							variant -- "" === default value.
+
+							"tag" default -- "a"; variants -- "" | "a" | "button" | any other tag: span, div, etc...
+							"width" default -- ""; variants -- "" | "full"
+ !!! required "type" default -- "btn-inside-out"; variants -- "" | "btn-inside-out" | "btn-inside-out btn-inside-out-invert" | "btn-prime" | "btn-gradient" | "btn-slice" | "btn-pos" | "btn-lightning" | "btn-gradient-wave" | "btn-ice"  | "btn-two-bg" | "icon__btn";
+							"customClass" --  ""; variants -- "" | any string value (space separated list of css classes).
+							"text" default -- "button"; variants -- "" | any string value as well as html or just simple text...
+							"size" default -- "lg"; variants -- "" | any string value used like modifier for 'btn-'/'icon__btn-' class | "lg" | "md" | "sm" | "xs" | etc...
+							"icon" default -- ""; variants -- "" | any kind of string or html tags...
+							"iconType" default -- ""; variants -- "" | "background"
+							-->
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-inside-out",
+							"customClass": "border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-inside-out",
+							"customClass": "border-radius-5 font__family-montserrat font__weight-light btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-inside-out",
+							"customClass": "border-radius-0 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-comments' aria-hidden='true'></i>",
+							"iconType": "background"
+						})
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Button Prime -->
+		<section class="btn-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-prime",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-prime",
+							"customClass": "border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-prime",
+							"customClass": "border-radius-5 font__family-montserrat font__weight-light btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-prime",
+							"customClass": "border-radius-0 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-comments' aria-hidden='true'></i>",
+							"iconType": "background"
+						})
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Button Gradient -->
+		<section class="btn-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-gradient",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold brk-white-font-color btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-gradient",
+							"customClass": "border-radius-10 font__family-open-sans font__weight-bold brk-white-font-color btn-min-width-200",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-gradient",
+							"customClass": "border-radius-5 font__family-montserrat font__weight-light brk-white-font-color btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-gradient",
+							"customClass": "border-radius-0 font__family-open-sans font__weight-bold brk-white-font-color btn-min-width-200",
+							"icon": "<i class='fa fa-comments' aria-hidden='true'></i>",
+							"iconType": "background"
+						})
+					</div>
+				</div>
+			</div>
+    </section>
+		<!-- Button Slice -->
+		<section class="btn-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-slice",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-slice",
+							"customClass": "border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-slice",
+							"customClass": "border-radius-5 font__family-montserrat font__weight-light btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-slice",
+							"customClass": "border-radius-0 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-comments' aria-hidden='true'></i>",
+							"iconType": "background"
+						})
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Button Position -->
+		<section class="btn-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-pos",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-pos",
+							"customClass": "border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-pos",
+							"customClass": "border-radius-5 font__family-montserrat font__weight-light btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-pos",
+							"customClass": "border-radius-0 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-comments' aria-hidden='true'></i>",
+							"iconType": "background"
+						})
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Button Lighlning -->
+		<section class="btn-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-lightning",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-lightning",
+							"customClass": "border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<span><i class='fa fa-trophy icon-inside icon-inline' aria-hidden='true'></i></span>"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-lightning",
+							"customClass": "border-radius-5 font__family-montserrat font__weight-light btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+							@@include('./templates/buttons.html',{
+								"type": "btn-lightning",
+								"customClass": "border-radius-0 font__family-open-sans font__weight-bold btn-min-width-200",
+								"icon": "<i class='fa fa-comments' aria-hidden='true'></i>",
+								"iconType": "background"
+							})
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Button Wave -->
+		<section class="btn-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-gradient-wave",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-gradient-wave",
+							"customClass": "border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-trophy icon-inside icon-inline' aria-hidden='true'></i>"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-gradient-wave",
+							"customClass": "border-radius-5 font__family-montserrat font__weight-light btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-gradient-wave",
+							"customClass": "border-radius-0 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-comments' aria-hidden='true'></i>",
+							"iconType": "background"
+						})
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Button Ice -->
+		<section class="btn-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-ice",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold btn-min-width-200"
+						})
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-ice",
+							"customClass": "border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-trophy icon-inside icon-inline' aria-hidden='true'></i>"
+						})
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-ice",
+							"customClass": "border-radius-5 font__family-montserrat font__weight-light btn-min-width-200"
+						})
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-ice",
+							"customClass": "border-radius-0 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-comments' aria-hidden='true'></i>",
+							"iconType": "background"
+						})
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Button Two BG -->
+		<section class="btn-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-two-bg",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-two-bg",
+							"customClass": "border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-trophy icon-inside icon-inline' aria-hidden='true'></i>"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-two-bg",
+							"customClass": "border-radius-5 font__family-montserrat font__weight-light btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-two-bg",
+							"customClass": "border-radius-0 font__family-open-sans font__weight-bold btn-min-width-200",
+							"icon": "<i class='fa fa-comments' aria-hidden='true'></i>",
+							"iconType": "background"
+						})
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Button Inside Out Invert -->
+		<section class="btn-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-inside-out btn-inside-out-invert",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold btn-min-width-200",
+							"size": "lg"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+						"type": "btn-inside-out btn-inside-out-invert",
+						"customClass": "border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200",
+						"icon": "<i class='fa fa-trophy icon-inside icon-inline' aria-hidden='true'></i>"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+						"type": "btn-inside-out btn-inside-out-invert",
+						"customClass": "border-radius-25 font__family-montserrat font__weight-light btn-min-width-200"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+						"type": "btn-inside-out btn-inside-out-invert",
+						"customClass": "border-radius-10 font__family-open-sans font__weight-bold btn-min-width-200",
+						"icon": "<i class='fa fa-comments' aria-hidden='true'></i>",
+						"iconType": "background"
+						})
+					</div>
+				</div>
+			</div>
+    </section>
+
+    
+
+
+		<!-- Button size -->
+		<div class="container">
+			<div class="heading__1 mt-160">
+				<h3 class="font__weight-bold"><span class="heading__number">02</span> Button sizes</h3>
+			</div>
+		</div>
+		<section class="btn-box hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="font__weight-bold font__family-montserrat font__size-21">S</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="font__weight-bold font__family-montserrat font__size-21">M</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="font__weight-bold font__family-montserrat font__size-21">L</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="font__weight-bold font__family-montserrat font__size-21">XL</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="btn-box">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-inside-out",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+							"size": "sm"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-inside-out",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+							"size": "md"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-inside-out",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+							"size": "lg"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-inside-out",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+							"size": "xl"
+						})
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="btn-box">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-sm-3">
+						@@include('./templates/buttons.html',{
+							"type": "icon__btn",
+							"customClass": "icon__btn-anim",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+							"size": "sm"
+						})
+					</div>
+
+					<div class="col-sm-3">
+						@@include('./templates/buttons.html',{
+							"type": "icon__btn",
+							"customClass": "icon__btn-anim",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+							"size": "md"
+						})
+					</div>
+
+					<div class="col-sm-3">
+						@@include('./templates/buttons.html',{
+							"type": "icon__btn",
+							"customClass": "icon__btn-anim",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+							"size": "lg"
+						})
+					</div>
+
+					<div class="col-sm-3">
+						@@include('./templates/buttons.html',{
+							"type": "icon__btn",
+							"customClass": "icon__btn-anim",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+							"size": "xl"
+						})
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="btn-box">
+			<div class="container">
+
+				<div class="row align-items-center">
+					<div class="col-sm-3">
+						@@include('./templates/buttons.html',{
+							"type": "icon__btn",
+							"customClass": "icon__btn-circled",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+							"size": "sm"
+						})
+					</div>
+
+					<div class="col-sm-3">
+						@@include('./templates/buttons.html',{
+							"type": "icon__btn",
+							"customClass": "icon__btn-circled",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+							"size": "md"
+						})
+					</div>
+
+					<div class="col-sm-3">
+						@@include('./templates/buttons.html',{
+							"type": "icon__btn",
+							"customClass": "icon__btn-circled",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+							"size": "lg"
+						})
+					</div>
+
+					<div class="col-sm-3">
+						@@include('./templates/buttons.html',{
+							"type": "icon__btn",
+							"customClass": "icon__btn-circled",
+							"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+							"size": "xl"
+						})
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Button full size -->
+		<div class="container">
+			<div class="heading__2 mt-160">
+				<h4 class="font__family-montserrat font__size-21 font__weight-bold">Full size</h4>
+			</div>
+		</div>
+		<section class="btn-box">
+			<div class="container">
+				<div class="row">
+					@@include('./templates/buttons.html',{
+						"type": "btn-inside-out",
+						"customClass": "border-radius-25 font__family-open-sans font__weight-bold",
+						"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+						"size": "lg",
+						"width": "full"
+					})
+
+					@@include('./templates/buttons.html',{
+						"type": "btn-gradient",
+						"customClass": "border-radius-25 font__family-open-sans font__weight-bold mt-20",
+						"icon": "<i class='fa fa-trophy icon-inside' aria-hidden='true'></i>",
+						"size": "lg",
+						"width": "full"
+					})
+
+					@@include('./templates/buttons.html',{
+						"type": "btn-inside-out btn-inside-out-invert",
+						"customClass": "border-radius-25 font__family-open-sans font__weight-bold mt-20",
+						"icon": "<i class='fa fa-trophy icon-inside icon-inline' aria-hidden='true'></i>",
+						"size": "lg",
+						"width": "full"
+					})
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Button fonts -->
+		<div class="container">
+			<div class="heading__1 mt-160">
+				<h3 class="font__weight-bold"><span class="heading__number">03</span> Button fonts</h3>
+			</div>
+		</div>
+		<section class="btn-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-prime",
+							"text": "Buy now <span class='font__family-times-new-roman text-lowercase font__style-italic'>for</span> 39$",
+							"customClass": "border-radius-25 font__family-open-sans font__weight-bold"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-prime",
+							"text": "Buy now <span class='font__family-montserrat text-lowercase'>for</span> 39$",
+							"customClass": "border-radius-25 font__family-times-new-roman font__weight-bold"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-prime",
+							"text": "Buy now <span class='font__weight-light'>for</span> 39$",
+							"customClass": "border-radius-25 font__family-montserrat font__weight-bold"
+						})
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						@@include('./templates/buttons.html',{
+							"type": "btn-prime",
+							"text": "Buy now <span class='font__family-times-new-roman text-lowercase font__style-italic'>for</span> 39$",
+							"customClass": "border-radius-25 font__family-montserrat font__weight-light"
+						})
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Button Delimiters -->
+		<div class="container">
+			<div class="heading__1 mt-160">
+				<h3 class="font__weight-bold"><span class="heading__number">04</span> Button Delimiters</h3>
+			</div>
+		</div>
+		<section class="btn-box delimiter">
+			<div class="container">
+				<div class="delimiter-box delimiter__delimiter-solid-gradient">
+					<span class="before"></span>
+					@@include('./templates/buttons.html',{
+						"type": "btn-inside-out",
+						"customClass": "border-radius-25 font__family-open-sans font__weight-bold",
+						"size": "lg"
+					})
+				</div>
+			</div>
+		</section>
+		<section class="btn-box delimiter">
+			<div class="container">
+				<div class="delimiter-box delimiter__delimiter-double-border">
+					<span class="before"></span>
+					@@include('./templates/buttons.html',{
+						"type": "btn-prime",
+						"customClass": "border-radius-25 font__family-open-sans font__weight-bold"
+					})
+				</div>
+			</div>
+		</section>
+		<section class="btn-box delimiter">
+			<div class="container">
+				<div class="delimiter-box delimiter__delimiter-solid-slope">
+					<span class="before"></span>
+					@@include('./templates/buttons.html',{
+						"type": "btn-ice",
+						"customClass": "border-radius-25 font__family-open-sans font__weight-bold"
+					})
+				</div>
+			</div>
+		</section>
+		<section class="btn-box delimiter">
+			<div class="container">
+				<div class="delimiter-box delimiter__delimiter-solid delimiter__delimiter-solid-shade">
+					<span class="before"></span>
+					@@include('./templates/buttons.html',{
+						"type": "btn-gradient-wave",
+						"customClass": "border-radius-25 font__family-open-sans font__weight-bold"
+					})
+				</div>
+			</div>
+		</section>
+		<section class="btn-box delimiter">
+			<div class="container">
+				<div class="delimiter-box delimiter__delimiter-doted">
+					<span class="before"></span>
+					@@include('./templates/buttons.html',{
+						"type": "btn-two-bg",
+						"customClass": "border-radius-25 font__family-open-sans font__weight-bold"
+					})
+				</div>
+			</div>
+		</section>
+		<section class="btn-box delimiter">
+			<div class="container">
+				<div class="delimiter-box delimiter__delimiter-double-colors">
+					<span class="before"></span>
+					@@include('./templates/buttons.html',{
+						"type": "btn-slice",
+						"customClass": "border-radius-25 font__family-open-sans font__weight-bold"
+					})
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Button dropdowns -->
+		<div class="container">
+			<div class="heading__1 mt-160">
+				<h3 class="font__weight-bold"><span class="heading__number">05</span> Button dropdowns</h3>
+			</div>
+		</div>
+		<section class="btn-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="margin-box__btn-dropdown font__weight-bold font__family-montserrat font__size-21">Dark - <span
+							class="font__weight-light">closed</span></div>
+
+						@@include('./templates/buttons-dropdowns.html', {
+						"class": "btn__primary font__family-open-sans font__weight-bold border-radius-25 invert",
+						"arrItem": ["First", "Second", "Third"]
+						})
+
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="margin-box__btn-dropdown font__weight-bold font__family-montserrat font__size-21">Dark - <span
+							class="font__weight-light">opened</span></div>
+
+						@@include('./templates/buttons-dropdowns.html', {
+						"class": "btn__primary font__family-open-sans font__weight-bold border-radius-25 invert open",
+						"arrItem": ["First", "Second", "Third"]
+						})
+
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="margin-box__btn-dropdown font__weight-bold font__family-montserrat font__size-21">Light - <span
+							class="font__weight-light">closed</span></div>
+
+						@@include('./templates/buttons-dropdowns.html', {
+						"class": "btn__white font__family-open-sans font__weight-light border-radius-25",
+						"arrItem": ["First", "Second", "Third"]
+						})
+
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="margin-box__btn-dropdown font__weight-bold font__family-montserrat font__size-21">Light - <span
+							class="font__weight-light">opened</span></div>
+
+						@@include('./templates/buttons-dropdowns.html', {
+						"class": "btn__white font__family-open-sans font__weight-light border-radius-25 open",
+						"arrItem": ["First", "Second", "Third"]
+						})
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="container">
+			<div class="heading__1 mt-160">
+				<h3 class="font__weight-bold"><span class="heading__number">05</span> Button invert</h3>
+			</div>
+		</div>
+		<section class="btn-box">
+
+			@@include('./templates/buttons-invert.html', {
+			"class": "icon__btn icon__btn-anim icon__btn-md icon__btn-invert",
+			"tag": "a",
+			"href": "#"
+			})
+
+		</section>
+
+		<div class="container">
+			<div class="heading__1 mt-160">
+				<h3 class="font__weight-bold"><span class="heading__number">06</span> Button backgrounds</h3>
+			</div>
+		</div>
+		<section class="btn-box">
+
+			@@include('./templates/buttons-backgrounds.html', {
+			"class": "btn-backgrounds_white font__family-montserrat font__weight-bold text-uppercase font__size-13",
+			"style": "",
+			"text": "",
+			"tag": "button",
+			"href": ""
+			})
+
+
+
+
+		</section>
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+	<!--<script src="js/components/buttons.js"></script>-->
+
+
+</body>
+</html>

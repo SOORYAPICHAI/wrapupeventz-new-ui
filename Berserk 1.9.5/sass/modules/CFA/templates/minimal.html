@@ -1,0 +1,11 @@
+<div class="cfa__wrapper cfa__minimal bg__style overlay__white text-center text-lg-left lazyload @@if(context.customClass){@@customClass}" data-bg="@@if(context.img){@@img}@@if(!context.img){img/1170x108_2.jpg}" data-brk-library="component__call_to_action">
+  <h4 class="font__family-montserrat font__size-21 font__weight-bold no-wrap">@@if(context.title){@@title}</h4>
+  <p class="font__family-open-sans font__size-14 text-dark text-center text-lg-left">@@if(context.paragraph){@@paragraph}</p>
+  @@if(btnText !== ""){
+    <a href="#" class="btn btn-lg border-radius-30 font__family-open-sans font__weight-bold btn-inside-out btn-min-width-200 btn-inside-out-invert">
+      <span class="before">@@btnText</span>
+      <span class="text">@@btnText</span>
+      <span class="after">@@btnText</span>
+    </a>
+  }
+</div>

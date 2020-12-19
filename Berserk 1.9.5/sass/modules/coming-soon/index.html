@@ -1,0 +1,37 @@
+@@include('../../assets/templates/head.html',{
+  "titlePage": "Coming Soon",
+  "themeSkin": "brk-blue.css"
+  })
+  </head>
+  
+  <body> @@include('../../modules/theme-options/templates/options.html', {})
+    <div class="main-wrapper"> 
+      <main class="main-container">  
+        <section class="position-relative full-screen d-flex flex-column justify-content-center text-center pt-100 pb-100"> 
+          @@include("../backgrounds/templates/bg-2.html",{
+            "innerContent": "false",
+            "customClass": "brk-abs-overlay",
+            "overlay": "brk-bg-gradient-35deg-92"
+          })
+          <div class="container z-index-2">
+            <h1 class="font__family-montserrat font__weight-bold font__size-64 line__height-64 text-white mt-0 mb-15">Coming Soon!</h1>
+            <h2 class="font__family-montserrat font__weight-normal font__size-18 line__height-21 text-white opacity-40">STAY TURNED</h2>
+            <div class="countdown__wrapper countdown__large pt-50 pb-60">
+              @@include("../countdown/templates/large.html",{
+                "customClass" : "pt-50 pb-60"
+              })
+            </div>
+            <form action="#" name="subscribe" class="brk-form-transparent brk-form-btn-inside brk-form-btn-inside_left maxw-300 brk-subscribe-mail" data-brk-library="recaptcha">
+              <input type="email" name="EMAIL" name="search" placeholder="SUBSCRIBE NOW" class="w-100 text-center pl-35">
+              <button type="submit" class="btn-white">
+                <i class="far fa-envelope"></i> 
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    @@include('../../assets/templates/footer.html',{
+    "demo": "true"
+    })
+  </body>

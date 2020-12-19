@@ -1,0 +1,57 @@
+<div class="d-flex flex-column brk-sc-item-page-header__info-main @@if(context.customClass){@@customClass}" data-brk-library="component__elements">
+    <h2 class="font__family-montserrat brk-white-font-color font__size-46 font__weight-light line__height-52 mb-20">Really Awesome, ECO
+      <br>
+      <span class="font__weight-bold letter-spacing--20">& Creative Bag</span>
+    </h2>
+
+    @@include('../../widgets/templates/shop-tags.html',{ 
+      "containerCLass":"mb-15 brk-sc-item-page-header__tags", 
+      "tag1":"T-Shirts",
+      "tag2":"Branding", 
+      "tag3":"WooCommerce" 
+    })
+    <div class="d-flex flex-wrap mb-20">
+      <div class="d-flex flex-column mr-35">
+
+        <div class="brk-sc-item-page-header__price-container">
+          <span class="brk-white-font-color font__family-montserrat font__weight-ultralight font__size-36 line__height-38">1,200$</span>
+          <span class="brk-sc-item-page-header__old-price brk-white-font-color opacity-50 font__family-montserrat font__size-14 font__weight-medium pl-1 mb-25">$26.00</span>
+        </div>
+      
+        @@include('../../elements/templates/color-filter.html',{ 
+          "customContainerClass":"brk-sc-item-page-header__color-filter", 
+          "title":"choose color", 
+          "titleClass":"brk-white-font-color", 
+          "item1bg":"brk-bg-blue", 
+          "item2bg":"brk-bg-green", 
+          "item3bg":"",
+          "item4bg":"brk-bg-yellow", 
+          "item5bg":"brk-bg-orange", 
+          "item6bg":"", 
+          "item7bg":"" 
+        })
+
+      </div>
+      <div class="d-flex flex-column mr-auto mb-20 pl-1">
+        <span class="brk-white-font-color font__family-montserrat font__size-14 font__weight-normal">Rating:</span>
+        <div class="brk-sc-item-page-header__rating mb-40">
+          @@include('../../elements/templates/rating.html', { 
+            "value": "80%" 
+          })
+        </div>
+          @@include('../../elements/templates/size-chooser.html', {
+            "titleClass":"brk-white-font-color pt-2"
+          })
+
+      </div>
+      <div class="d-flex brk-sc-item-page-header__btn-container">
+        @@include('../../buttons/templates/buttons.html',{ 
+          "type": "btn-prime", 
+          "customClass": "border-radius-30 font__family-open-sans font__weight-semibold mt-auto brk-sc-item-page-header__btn", 
+          "icon": "<i class='fa fa-shopping-basket' aria-hidden='true'></i>", 
+          "text":"Add to cart", 
+          "size": "lg" 
+        })
+      </div>
+    </div>
+  </div>

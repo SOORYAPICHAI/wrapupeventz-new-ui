@@ -1,0 +1,42 @@
+<div class="flip-box brk-sc-flip-two text-center" data-brk-library="component__shop_flip,component__flip_box_css,scrollbar">
+  <div class="flip @@if(context.styleFlip){@@styleFlip} @@if(!context.styleFlip){flip_horizontal}">
+    <div class="flip__front brk-sc-flip-two__front">
+      <div class="brk-sc-flip-two__thumb">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@thumb" alt="alt" class="lazyload">
+      </div>
+      <div class="brk-sc-flip-two__description">
+        @@if(context.stick){<div class="brk-sc-flip-two__stick font__family-montserrat font__weight-light brk-white-font-color brk-bg-primary">@@stick</div>}
+        <div class="brk-sc-flip-two__price font__family-montserrat font__weight-medium brk-base-font-color">@@price</div>
+        <div class="brk-sc-flip-two__front-title font__family-montserrat font__weight-light brk-dark-font-color">@@frontTitle</div>
+      </div>
+    </div>
+    <div class="flip__back brk-sc-flip-two__back">
+      <div class="brk-sc-flip-two__back-layer">
+        <div class="brk-sc-flip-two__back-title font__family-montserrat font__weight-medium">@@backTitle</div>
+
+        <div class="brk-sc-flip-two__list scrollbar-inner">
+          <ul class="pl-15 pr-15">
+            <li><i class="far fa-check brk-base-font-color"></i> Duis arcu tortor</li>
+            <li><i class="far fa-check brk-base-font-color"></i> Quisque rutrmper</li>
+            <li><i class="far fa-check brk-base-font-color"></i> Quisque rutrmper</li>
+            <li><i class="far fa-check brk-base-font-color"></i> Quisque rutrmper</li>
+            <li><i class="far fa-check brk-base-font-color"></i> Etiam ultricies</li>
+            <li><i class="far fa-check brk-base-font-color"></i> Duis arcu tortorsci</li>
+            <li><i class="far fa-check brk-base-font-color"></i> Quisque rutrum</li>
+          </ul>
+        </div>
+
+        <div class="brk-sc-flip-two__button">
+          @@include('../../buttons/templates/buttons.html',{
+          "type": "btn-inside-out",
+          "text": "@@price",
+          "text_hover": "buy it",
+          "customClass": "border-radius-25 font__family-open-sans font__weight-semibold",
+          "icon": "<i class='far fa-shopping-basket icon-inside'></i>",
+          "size": "md"
+          })
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

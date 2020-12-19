@@ -1,0 +1,32 @@
+<a href="#" class="brk-ip-simple brk-tilter @@if(context.customClass){@@customClass}" data-brk-library="component__image_caption">
+  <figure class="brk-tilter__figure">
+    <div class="brk-ip-simple__overlay brk-base-bg-gradient-10"></div>
+    <img 
+      class="brk-ip-simple__img lazyload" 
+      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+      @@if(context.img){
+        data-src = "@@img"
+      }
+      @@if(!context.img){
+        data-src="img/370x500_1.jpg" 
+      }
+      alt="alt">
+    <figcaption class="brk-tilter__caption">
+      <h3 class="brk-ip-simple__title font__family-montserrat font__size-32 line__height-42 text-left">
+        @@if(context.title){
+          @@title
+        }
+        @@if(!context.title){
+          <span class="font__weight-light">SOME </span><span class="font__weight-bold">TITLE</span>
+        }
+      </h3>
+    </figcaption>
+    <p class="brk-ip-simple__paragraph font__family-open-sans font__size-16 font-weight-light line-height-26 text-left">
+      @@if(context.description){@@description}
+      @@if(!context.description){
+        Aenean vulputate eleifnd fend tellus. Renean leo ligula
+      }
+    </p>
+    <span class="brk-ip-simple__paragraph__angle"></span>
+  </figure>
+</a>

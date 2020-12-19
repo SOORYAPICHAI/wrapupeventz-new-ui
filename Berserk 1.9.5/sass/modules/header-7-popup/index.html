@@ -1,0 +1,44 @@
+  @@include("../../assets/templates/head.html", {
+  "titlePage": "Header 7 Popup"
+  })
+	</head>
+
+  <body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container">
+
+      @@include('../header-7-popup/templates/style-header-7-popup.html')
+      
+      <!-- Custom Nav Example -->      
+			<!-- @@include('../header-7-popup/templates/style-header-7-popup.html', {
+        "customNav": "true",
+        "title1": "Popular",
+        "link1": "#popular",
+        "title2": "Best Sellers",
+        "link2": "#bestsellers",
+        "title3": "Sub Menu",
+        "submenu3": {
+          "subtitle1": "Some Title 1", "sublink1": "title1link.html", 
+          "subtitle2": "Some Title 2", "sublink2": "title2link.html", 
+          "subtitle3": "Some Title 3", "sublink3": "title3link.html" 
+        }
+      }) -->
+
+      @@include('../sliders/templates/thumbnailed-full-100vh.html')
+
+      @@include('../app/templates/notebook.html')
+      @@include('../app/templates/notebook.html')
+      @@include('../app/templates/notebook.html')
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<div class='position-relative @@if(context.trapezoid == "true"){pt-lg-280 pt-70 pt-md-150} @@if(context.btmSvg === "true"){pb-40 pb-lg-100 pb-xl-240}' data-brk-library="component__tabbed_contents">
+  @@if(context.svg !== "false"){
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 136" class="brk-fill-white">
+      <path d="M1920,136A3691.84,3691.84,0,0,0,0,136V0H1920Z"/>
+    </svg>
+  }
+  @@if(context.trapezoid == "true"){
+    @@include("../../svg-pattern/templates/pattern-18.html")
+  }
+  <div class="brk-abs-overlay lazyload" @@if(context.bgImg){data-bg="@@bgImg"}>
+    <span class="brk-abs-overlay  @@if(context.overlay){@@overlay}@@if(!context.overlay){brk-base-bg-gradient--30deg-96}"></span>
+  </div>
+	<div class="brk-tabs brk-tabs_tabbed-icons-gradient " data-index="1">
+				<div class="container">
+					<ul class="brk-tabs-nav font__family-montserrat">
+					  <li class="brk-tab"><i class="fal fa-home" aria-hidden="true"></i><span>Current Location</span></li>
+					  <li class="brk-tab"><i class="fal fa-list-ul" aria-hidden="true"></i><span>Best Skills</span></li>
+					  <li class="brk-tab"><i class="far fa-cog" aria-hidden="true"></i><span>Preferences</span></li>
+					  <li class="brk-tab"><i class="fal fa-calendar" aria-hidden="true"></i><span>Deadlines</span></li>
+					</ul>
+				</div>
+				<div class="brk-tabs-content" >
+				  <div class="brk-tab-item">
+						  <div class="container">
+							  <h3 class="font__family-montserrat font__size-28 font__weight-light text-center brk-white-font-color opacity-60">Some description goes here</h3>
+							  <h2 class="font__family-montserrat font__weight-bold line__height-60 brk-white-font-color mb-30 text-center">Some main title goes here</h2>
+			  
+							  <div class="row justify-content-center">
+								  <div class="col-xl-8 col-lg-10 col-md-12">
+									  <p class="line__height-26 font__size-16 mb-30">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+								  </div>
+							  </div>
+
+								<div class="text-center">
+									<button class="btn btn-lg border-radius-30 font__family-open-sans font__weight-bold btn-inside-out btn-inside-out-invert" data-brk-library="component__button">
+										<span class="before">Read More</span>
+										<span class="text">Click me</span>
+										<span class="after">Read More</span>
+									</button>
+								</div>
+							</div>
+				  </div>
+				  <div class="brk-tab-item">
+						  <div class="container">
+							  <div class="row">
+								  <div class="col-lg-6">
+                    <div class="text-center text-lg-left">
+                      <img class="brk-base-box-shadow lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/570x430_1.jpg" alt="alt">
+                    </div>
+								  </div>
+								  <div class="col-lg-6 pl-35 pt-40 text-center">
+									  <h4 class="font__family-montserrat font__weight-light font__size-48 text-lg-left text-center brk-white-font-color">Working with</h4>
+									  <h4 class="font__family-montserrat font__weight-bold font__size-48 text-lg-left text-center brk-white-font-color pb-20">Our Team</h4>
+                    <p class="line__height-26 font__size-16 text-lg-left text-center pb-20">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    @@if(context.tags !== "true"){
+                      <p class="line__height-26 font__size-16 text-lg-left text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    }
+                    @@if(context.tags === "true"){
+                      @@include('../../tags/templates/solid.html',{
+                        "customClass": "brk-tags_transparent brk-tags_square"
+                      })
+                    }
+                    </div>
+							  </div>
+						  </div>
+				  </div>
+				  <div class="brk-tab-item">
+						  <div class="container">
+							  <div class="row">
+								  <div class="col-xl-4">
+									  <h4 class="font__family-montserrat font__weight-semibold font__size-28 text-lg-left text-center brk-white-font-color mb-20 mt-10">Foundation of the company</h4>
+									  <p class="font__size-16 line__height-26 text-lg-left text-center">Viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+								  </div>
+								  <div class="col-xl-4">
+									  <h4 class="font__family-montserrat font__weight-semibold font__size-28 text-lg-left text-center brk-white-font-color mb-20 mt-10">Promoting products and services</h4>
+									  <p class="font__size-16 line__height-26 text-lg-left text-center mb-30">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
+								  </div>
+								  <div class="col-xl-4">
+                    <div class="text-center text-xl-left">
+                      <a href="img/320x320_3.jpg" class="frame-image image-popup img-square shadow fancybox" data-brk-library="fancybox">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/320x320_3.jpg" alt="alt" class="lazyload"><span class="square"></span>
+                      </a>
+                      </div>
+								  </div>
+							  </div>
+						  </div>
+				  </div>
+				  <div class="brk-tab-item">
+						  <div class="container">
+							  <div class="row">
+								  <div class="col-sm-6 col-lg-4">
+									   @@include("../../image-frames/templates/borders-v4-1.html")
+								  </div>
+								  <div class="col-sm-6 col-lg-4">
+									   @@include("../../image-frames/templates/borders-v4-2.html")
+								  </div>
+								  <div class="col-sm-6 col-lg-4">
+									   @@include("../../image-frames/templates/borders-v4-3.html")
+								  </div>
+							  </div>
+						  </div>
+				  </div>
+				</div>
+        </div>
+  @@if(context.btmSvg === "true"){
+    @@include('../../svg-pattern/templates/pattern-4.html')
+  }
+</div>
+

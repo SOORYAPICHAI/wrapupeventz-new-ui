@@ -1,0 +1,210 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Shop Components Item Sidebar"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+    <main class="main-container mt-180">
+      
+      <div class="container">
+        <div class="brk-sc-shop-item" data-brk-library="component__shop_item_page">
+          <div class="row">
+            <div class="col-12 col-lg-8 col-xl-9">
+              <div class="brk-sc-shop-item__main">
+                <div class="row">
+                  <!-- Carousel -->
+                  <div class="col-12 col-lg-5">
+                    <!-- Carousel -->
+                    <!-- Labels -->
+                    <div class="brk-sc-shop-item__labels">
+                      @@include('../shop-components-cards/templates/label.html') 
+                      @@include('../shop-components-cards/templates/label.html',{
+                        "title":"<i class='fas fa-leaf'></i> ECO", 
+                        "gradient":"brk-base-bg-gradient-21" 
+                      }) 
+                    </div>
+                    <!-- Labels end -->
+                    @@include('../sliders/templates/thumbnailed.html',{
+                      "sliderToShowNav":"3",
+                      "containerCustomClass":"slider-thumbnailed_shop-sidebar",
+                      "img1":"img/shop/tshirt-brk-big.png", 
+                      "img2":"img/shop/tshirt-brk-big-1.png", 
+                      "img3":"img/shop/tshirt-brk-big-2.png",
+                      "img4":"img/shop/tshirt-brk-big-3.png", 
+                      "img5":"img/shop/tshirt-brk-big-1.png" 
+                    })
+                    <!-- Carousel end -->
+                  </div>
+                  <!-- Carousel end-->
+                  
+                  <!-- Side carousel info -->
+                  <div class="col-12 col-lg-7">
+                    <div class="brk-sc-shop-item__info">
+                      <!-- Categories -->
+                      @@include('../elements/templates/category.html', { 
+                        "containerClass":"mb-15",
+                        "item1": "T-Shirts,",
+                        "item2": "Branding,"
+                      })
+                      <!-- Categories end -->
+                      <!-- Title -->
+                      <h2 class="font__family-montserrat brk-black-font-color font__size-28 font__weight-light line__height-32">Really Awesome, ECO &
+                        <br>
+                        <span class="font__weight-bold">Creative Bag</span>
+                      </h2>
+                      <!-- Title end -->
+                      <!-- Divider -->
+                      <div class="brk-sc-divider mt-35 mb-35"></div>
+                      <!-- Divider end-->
+                      
+                      <!-- Main info -->
+                      <div class="brk-sc-info-grid d-flex flex-wrap">
+                        @@include('../elements/templates/color-filter.html',{ 
+                          "customContainerClass":"brk-color-filter_shop", 
+                          "title":"choose color",
+                          "item1bg":"brk-bg-blue", 
+                          "item2bg":"brk-bg-green", 
+                          "item3bg":"",
+                          "item4bg":"brk-bg-yellow", 
+                          "item5bg":"brk-bg-orange", 
+                          "item6bg":"", 
+                          "item7bg":"" 
+                        })
+
+                        @@include('../elements/templates/size-chooser.html', {})
+
+                        <div class="d-flex align-items-center">
+                          <span class="font__family-montserrat font__weight-ultralight font__size-36 line__height-38">1,200$</span>
+                          <div class="ml-4">
+                            <span class="font__family-montserrat font__size-14 font__weight-light">Rating:</span>
+                            @@include('../elements/templates/rating.html', {
+                            "value": "80%"
+                            })
+                          </div>
+                        </div>
+                        <div>
+                          @@include('../buttons/templates/buttons.html',{ 
+                            "type": "btn-prime", 
+                            "customClass": "border-radius-25 font__family-open-sans font__weight-bold mt-auto brk-sc-shop-item__info-btn", 
+                            "icon": "<i class='fa fa-shopping-basket' aria-hidden='true'></i>", 
+                            "text":"Add to cart", 
+                            "size": "lg"   
+                          })
+                        </div>
+
+                      </div>
+                      <!-- Main info end -->
+                      <!-- Divider -->
+                      <div class="brk-sc-divider mb-30"></div>
+                      <!-- Divider end-->
+                      <!-- Secondary info -->
+                      <div class="d-flex flex-wrap justify-content-between">
+                        <div class="d-flex flex-column mr-60 mb-40 font__family-open-sans">
+                          <span class="font__size-12 font__weight-normal brk-dark-font-color line__height-16 text-uppercase mb-1">SKU</span>
+                          <span class="font__size-14 font__weight-bold line__height-14">5149 8422</span>
+                          <span class="font__size-13 font__weight-semibold line__height-14">Code</span>
+                        </div>
+                        <div class="d-flex flex-column mr-60 mb-40 font__family-open-sans">
+                          <span class="font__size-12 font__weight-normal brk-dark-font-color line__height-16 text-uppercase mb-1">Material</span>
+                          <span class="font__size-14 font__weight-bold line__height-14">Lether</span>
+                          <span class="font__size-13 font__weight-semibold line__height-14">Black</span>
+                        </div>
+                        <div class="d-flex flex-column mr-60 mb-40 font__family-open-sans">
+                          <span class="font__size-12 font__weight-normal brk-dark-font-color line__height-16 text-uppercase mb-1">shipment</span>
+                          <span class="font__size-14 font__weight-bold line__height-14">2 Days</span>
+                          <span class="font__size-13 font__weight-semibold line__height-14">Working days</span>
+                        </div>
+                      </div>
+                      <!-- Secondary info end -->
+                    </div>
+                  </div>
+                  <!-- Side carousel info end-->
+                </div>
+
+                <!-- Tabs -->
+                @@include('./templates/tabs.html')
+                <!-- Tabs end-->
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-xl-3">
+              @@include('../widgets/templates/sidebar-shop.html',{
+                "customClass":"brk-sc-shop-item__sidebar"
+              })
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="brk-sc-item-page-body__bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              @@include('../shop-components-cards/templates/bonus.html',{
+              "containerClass":"mb-30",
+              "link":"Sign Up"
+              })
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              @@include('../shop-components-cards/templates/bonus.html',{
+              "containerClass":"mb-30",
+              "title":
+              "<span class='text-uppercase font__weight-medium'>do you want even</span><br><span class='font__family-playfair font__style-italic'>cheaper?</span>",
+              "paragraph":
+              "Do <span class='font__weight-bold brk-black-font-color'>selfie</span> with our products & get <br> $100 <br> for the next purchase."
+              })
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              @@include('../shop-components-cards/templates/bonus.html',{
+              "containerClass":"mb-30",
+              "title":
+              "<span class='text-uppercase font__weight-medium'>Do you want a gift</span> <br> <span class='font__family-playfair font__style-italic'>or a souvenir?</span>",
+              "paragraph":
+              "Buy our product with <span class='font__weight-bold brk-black-font-color'>free shipping</span> <br> and recieve a gift from us or <br> a souvenir"
+              })
+            </div>
+          </div>
+
+          <div class="brk-sc-item-page-tabs pb-110">
+            <h5 class="brk-sc-item-page-tabs__title brk-black-font-color font__family-montserrat font__size-36 line__height-42 font__weight-normal d-inline-flex flex-wrap">Need help? <span class="font__weight-bold pl-2"> Read F.A.Q</span>
+            </h5>
+            @@include('../tabs/templates/simple-smooth.html',{
+            "title1":"How to get a discount?",
+            "title2":"Free Shipping",
+            "title3":"How to buy & pay",
+            "content1":
+            "<h3 class='font__family-montserrat font__size-21 font__weight-bold line__height-22 mb-50'>How to get a discount?</h3><p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit amet orci eget met orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nigna magna mi.</p> <p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>Donec sodales sagittis mbibenagna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. </p> <p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>",
+            "content2":
+            "<h3 class='font__family-montserrat font__size-21 font__weight-bold line__height-22 mb-50'>Free Shipping</h3><p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit amet orci eget met orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nigna magna mi.</p> <p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>Donec sodales sagittis mbibenagna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. </p> <p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>",
+            "content3":
+            "<h3 class='font__family-montserrat font__size-21 font__weight-bold line__height-22 mb-50'>How to buy & pay</h3><p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis faucibus. Nullam quis ante. Etiam sit amet orci eget met orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nigna magna mi.</p> <p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>Donec sodales sagittis mbibenagna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. </p> <p class='font__family-open-sans brk-dark-font-color font__size-16 font__weight-normal line__height-26 mb-25'>condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>"
+            })
+          </div>
+
+        </div>
+      </div>
+      @@include('../tabs/templates/rounded.html',{
+      "title1":"<i class='fa fa-shopping-basket' aria-hidden='true'></i> <span>Related posts</span>",
+      "title2":"<i class='fa fa-star' aria-hidden='true'></i> <span>Reviews</span>",
+      "title3":"<i class='fa fa-comments' aria-hidden='true'></i> <span>comments</span>"
+      })
+
+    </main>
+
+  </div>
+  
+    @@include("../../assets/templates/footer.html", {
+    "customClass": "pt-0"
+    })
+
+</body>
+
+</html>

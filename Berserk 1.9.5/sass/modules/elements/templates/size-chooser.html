@@ -1,0 +1,21 @@
+<div class="brk-size-chooser d-flex flex-column @@if(context.containerClass){containerClass}">
+  <span class="brk-size-chooser__title @@if(context.titleClass){@@titleClass} font__family-montserrat font__size-14 font__weight-bold line__height-14 text-uppercase" data-brk-library="component__elements">
+    @@if(context.title){
+      @@title
+    }
+    @@if(!context.title){
+      Choose size
+    }
+  </span>
+  <div class="brk-size-chooser__items d-flex">
+    <a href="#" class="brk-size-chooser__item">
+      S
+    </a>
+    <a href="#" class="brk-size-chooser__item">
+      L
+    </a>
+    <a href="#" class="brk-size-chooser__item">
+      XL
+    </a>
+  </div>
+</div>

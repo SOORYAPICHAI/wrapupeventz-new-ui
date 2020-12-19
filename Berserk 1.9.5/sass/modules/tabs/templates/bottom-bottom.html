@@ -1,0 +1,149 @@
+
+    <div class="brk-tabs @@if(!context.position){brk-tabs-bottom-top} @@if(context.position === "top"){brk-tabs-bottom-top} @@if(context.position === "bottom"){brk-tabs-bottom-bottom}" data-hash="true" data-brk-library="component__tabs">
+        <ul class="brk-tabs-nav font__family-montserrat">
+          <li class="brk-tab"><i class="far fa-gem" aria-hidden="true"></i><span>Diamond</span></li>
+          <li class="brk-tab"><i class="fab fa-delicious" aria-hidden="true"></i><span>Delicious</span></li>
+          <li class="brk-tab"><i class="fab fa-gg" aria-hidden="true"></i><span>G & G</span></li>
+          <li class="brk-tab"><i class="fab fa-codepen" aria-hidden="true"></i><span>Codepen</span></li>
+          <li class="brk-tab"><i class="far fa-cube" aria-hidden="true"></i><span>Cube</span></li>
+        </ul>
+        <div class="brk-tabs-content">
+            <div class="brk-tab-item">
+              <div class="row">
+                <div class="col-lg-8">
+      						<h2 class="font__family-montserrat-alt font__weight-bold font__size-36 line__height-42 text-uppercase mb-20">Engaging, purposeful<br><span class="text-blue">&</span> Creative</h2>  
+
+                  <p class="brk-dark-font-color mb-40">Jeff Bezos started Amazon 23 years ago as an online bookstore. Today it has grown into the largest internet retailer in the world; it’s home to an Oscar- and Emmy-winning production studio; its subscription service, Amazon Prime, reached 80 million members this year (up from 58 million in 2016); and it’s made Bezos one of the richest men on the planet.
+                  </p>
+
+                  @@include("../../progress-bars/templates/gradient.html",{
+                    "valueCur":"100",
+                    "title":"Hard Work"
+                  })
+                  @@include("../../progress-bars/templates/gradient.html",{
+                    "valueCur":"80",
+                    "title":"Projects Delivery",
+                    "customClass":"mb-40"
+                  })
+                </div>
+                <div class="col-lg-4">
+                  <div class="rotation-slider-min dots-base-skin dots-base-color slick-loading mb-30"
+                       data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": true, "autoplay": true, "autoplaySpeed": 4000}'
+                       data-brk-library="slider__slick">
+                    <div><img src="img/370x543_3.jpg" alt="alt"></div>
+                    <div><img src="img/370x543_2.jpg" alt="alt"></div>
+                    <div><img src="img/370x543_1.jpg" alt="alt"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brk-tab-item">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h2 class="font__family-montserrat-alt font__weight-bold font__size-36 line__height-42 text-uppercase mb-30">As Bobby Flay Cooks Up an IPO</h2>
+
+                  <p class="brk-dark-font-color mb-40">It’s 1 pm on a Thursday, and Bobby Flay is sitting in his favorite spot to conduct daily business: the corner banquette in the front window at Gato, the Lower Manhattan outpost of his fine-dining empire. He is dressed casually in a dark-blue henley and jeans, wrapping up a call as his team gets situated around him for the first agenda item of the day: testing 10 new cocktails.</p>
+
+          				@@include("../../progress-bars/templates/transparent.html",{
+                    "valueCur":"60",
+                    "title":"Hard Work"
+                  })
+                  @@include("../../progress-bars/templates/transparent.html",{
+                    "valueCur":"80",
+                    "title":"Projects Delivery",
+                    "customClass":"mb-40"
+                  })
+
+                </div>
+                <div class="col-lg-4">
+                  @@include("../../shape-box/templates/stripe-card.html",{
+                    "img":"img/300x460_1.jpg",
+                    "title":"Design",
+                    "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat"
+                  })
+                </div>
+              </div>
+            </div>
+            <div class="brk-tab-item">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h2 class="font__family-montserrat-alt font__weight-bold font__size-36 line__height-42 text-uppercase mb-30">How Glossier Hacked Social Media</h2>
+
+                  <p class="brk-dark-font-color mb-40">On a Thursday afternoon in late spring, 32-year-old Glossier founder and CEO Emily Weiss rides the elevator to the penthouse level of her company's downtown Manhattan headquarters. She's a thoroughly millennial girlboss in jeans, sneakers and a royal blue sweatshirt with weiss embroidered in small white script. Her hair is pulled back in a ponytail, and for the founder of a beauty products company, she wears notably little makeup - just some mascara and possibly a swipe of Glossier Lip Gloss, a recent product release touted online as having a "fuzzy doe-foot applicator."
+                  </p>
+                  @@include("../../progress-bars/templates/gradient.html",{
+                    "valueCur":"100",
+                    "title":"Hard Work"
+                  })
+                  @@include("../../progress-bars/templates/gradient.html",{
+                    "valueCur":"80",
+                    "title":"Projects Delivery",
+                    "customClass":"mb-40"
+                  })
+                  
+                </div>
+                <div class="col-lg-4">
+                  @@include("../../shape-box/templates/inline-card.html",{
+                    "img":"img/300x460_2.jpg",
+                    "title":"Design",
+                    "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat"
+                  })
+                </div>
+              </div>
+            </div>
+            <div class="brk-tab-item">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h2 class="font__family-montserrat-alt font__weight-bold font__size-36 line__height-42 text-uppercase mb-30">Pitching Your Business to a Journalist? Here's What Works.</h2>
+
+                  <p class="brk-dark-font-color mb-40">Entrepreneurs often ask me if publicists’ pitches really lead to stories. Journalists don’t like answering that. When we bite on a publicist’s suggestion, we feel like we aren’t doing our jobs -- that rather than hunting down a great yarn, we just ran with what fell in our laps. But the honest answer is: Yes, sometimes a pitch works. And I’ll tell you the background from one such story in this issue, so you can see how it happens.
+                  </p>
+
+                  @@include("../../progress-bars/templates/gradient.html",{
+                    "valueCur":"100",
+                    "title":"Hard Work"
+                  })
+                  @@include("../../progress-bars/templates/gradient.html",{
+                    "valueCur":"80",
+                    "title":"Projects Delivery",
+                    "customClass":"mb-40"
+                  })
+                  
+                </div>
+                <div class="col-lg-4">
+                  @@include("../../shape-box/templates/inline-card.html",{
+                    "img":"img/300x460_3.jpg",
+                    "title":"Promotion",
+                    "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat"
+                  })
+                </div>
+              </div>
+            </div>
+            <div class="brk-tab-item">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h2 class="font__family-montserrat-alt font__weight-bold font__size-36 line__height-42 text-uppercase mb-30">How to Master the Interview</h2>
+
+                  <p class="brk-dark-font-color mb-40">You might think you’ve got an intuitive knack for interviewing prospective talent, but a whole body of research begs to differ. As it turns out, our brains are often swayed by the least meaningful moments of the interview process. Recognizing those quirks before you start out can make you a more effective interviewer -- just as strategically (some might say, cynically) deploying them could make you a more attractive candidate. 
+                  </p>
+                  @@include("../../progress-bars/templates/gradient.html",{
+                    "valueCur":"100",
+                    "title":"Hard Work"
+                  })
+                  @@include("../../progress-bars/templates/gradient.html",{
+                    "valueCur":"80",
+                    "title":"Projects Delivery",
+                    "customClass":"mb-40"
+                  })
+                </div>
+                <div class="col-lg-4">
+                  @@include("../../shape-box/templates/inline-card.html",{
+                    "img":"img/300x460_1.jpg",
+                    "title":"Research",
+                    "paragraph":"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat"
+                  })
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>

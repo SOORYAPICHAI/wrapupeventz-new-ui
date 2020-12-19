@@ -1,0 +1,116 @@
+<div class="brk-light-gradient-0deg-100 brk-border-btn pb-110" data-brk-library="component__portfolio_masonry"
+  @@if(context.inline_style){style="@@inline_style"}>
+  <div class="container">
+    <div class="row">
+      <ul class="brk-filters brk-filters_style-2 font__size-14 font__weight-bold line__height-16 text-uppercase mx-auto d-inline-flex brk-base-font-color pl-35 pr-35 mt-70 mt-lg-0 mb-20 mb-lg-60">
+        <li class="brk-filters__item active" data-filter="*">
+          <span>All</span>
+        </li>
+        <li class="brk-filters__item" data-filter=".logotypes">
+          <span>Logotypes</span>
+        </li>
+        <li class="brk-filters__item" data-filter=".magazines">
+          <span>magazines</span>
+        </li>
+        <li class="brk-filters__item" data-filter=".albums">
+          <span>Photo albums</span>
+        </li>
+        <li class="brk-filters__item" data-filter=".design">
+          <span>Graphic Design</span>
+        </li>
+      </ul>
+    </div>
+    <div class="brk-grid row">
+      <div class="brk-grid__sizer"></div>
+      <div class="col-xl-3 col-lg-4 col-md-6 brk-grid__item brk-grid__item_height-370 magazines design"
+           data-brk-hover3d='{"imgWrapper": ".post-filmstrip", "caption": ".post-filmstrip__content"}'>
+        @@include("../../content-sliders/templates/filmstrip-card.html",{
+          "title":"7 Signs",
+          "paragraph":"The web is both an interactive and virtually unlimited medium, meaning",
+          "img":"@@if(context.img_1){@@img_1}@@if(!context.img_1){img/home-page/isotope-1.jpg}",
+          "customClass":"text-center brk-base-box-shadow"
+        })
+      </div>
+      <div class="col-xl-6 col-lg-8 col-md-6 brk-grid__item brk-grid__item_height-370 logotypes magazines"
+           data-brk-hover3d='{"imgWrapper": ".post-filmstrip", "caption": ".post-filmstrip__content"}'>
+        @@include("../../content-sliders/templates/filmstrip-card.html",{
+          "title":"Smartly Coded & Maintained.",
+          "paragraph":"The web is both an interactive and virtually unlimited medium, meaning that your own little corner of it has great potential.",
+          "img":"@@if(context.img_2){@@img_2}@@if(!context.img_2){img/home-page/isotope-2.jpg}",
+          "customClass":"text-center brk-base-box-shadow"
+        })
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 brk-grid__item brk-grid__item_height-370 albums design"
+           data-brk-hover3d='{"imgWrapper": ".post-filmstrip", "caption": ".post-filmstrip__content"}'>
+        @@include("../../content-sliders/templates/filmstrip-card.html",{
+          "title":"Scalable",
+          "paragraph":"The web is both an interactive and virtually unlimited medium, meaning",
+          "img":"@@if(context.img_3){@@img_3}@@if(!context.img_3){img/home-page/isotope-3.jpg}",
+          "customClass":"text-center brk-base-box-shadow"
+        })
+      </div>
+
+      <div class="col-xl-6 col-lg-8 col-md-6 brk-grid__item brk-grid__item_height-370 logotypes magazines"
+           data-brk-hover3d='{"imgWrapper": ".post-filmstrip", "caption": ".post-filmstrip__content"}'>
+        @@include("../../content-sliders/templates/filmstrip-card.html",{
+        "title":"Smartly Coded & Maintained.",
+        "paragraph":"The web is both an interactive and virtually unlimited medium, meaning that your own little corner of it has great potential.",
+        "img":"@@if(context.img_4){@@img_4}@@if(!context.img_4){img/home-page/isotope-2.jpg}",
+        "customClass":"text-center brk-base-box-shadow"
+        })
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 brk-grid__item brk-grid__item_height-370 albums design"
+           data-brk-hover3d='{"imgWrapper": ".post-filmstrip", "caption": ".post-filmstrip__content"}'>
+        @@include("../../content-sliders/templates/filmstrip-card.html",{
+        "title":"Scalable",
+        "paragraph":"The web is both an interactive and virtually unlimited medium, meaning.",
+        "img":"@@if(context.img_5){@@img_5}@@if(!context.img_5){img/home-page/isotope-3.jpg}",
+        "customClass":"text-center brk-base-box-shadow"
+        })
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 brk-grid__item brk-grid__item_height-370 magazines design"
+           data-brk-hover3d='{"imgWrapper": ".post-filmstrip", "caption": ".post-filmstrip__content"}'>
+        @@include("../../content-sliders/templates/filmstrip-card.html",{
+        "title":"7 Signs",
+        "paragraph":"The web is both an interactive and virtually unlimited medium, meaning",
+        "img":"@@if(context.img_6){@@img_6}@@if(!context.img_6){img/home-page/isotope-1.jpg}",
+        "customClass":"text-center brk-base-box-shadow"
+        })
+      </div>
+
+      <div class="col-xl-3 col-lg-4 col-md-6 brk-grid__item brk-grid__item_height-370 albums design">
+        @@include("../../media-embeds/templates/html5.html",{
+        "img":"@@if(context.img_7){@@img_7}@@if(!context.img_7){img/home-page/isotope-3.jpg}",
+        "overlay": "@@if(context.overlay){@@overlay}@@if(!context.overlay){false}"
+        })
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 brk-grid__item brk-grid__item_height-370 magazines design"
+           data-brk-hover3d='{"imgWrapper": ".post-filmstrip", "caption": ".post-filmstrip__content"}'>
+        @@include("../../content-sliders/templates/filmstrip-card.html",{
+        "title":"7 Signs",
+        "paragraph":"The web is both an interactive and virtually unlimited medium, meaning",
+        "img":"@@if(context.img_8){@@img_8}@@if(!context.img_8){img/home-page/isotope-1.jpg}",
+        "customClass":"text-center brk-base-box-shadow"
+        })
+      </div>
+      <div class="col-xl-6 col-lg-8 col-md-6 brk-grid__item brk-grid__item_height-370 logotypes magazines"
+           data-brk-hover3d='{"imgWrapper": ".post-filmstrip", "caption": ".post-filmstrip__content"}'>
+        @@include("../../content-sliders/templates/filmstrip-card.html",{
+        "title":"Smartly Coded & Maintained.",
+        "paragraph":"The web is both an interactive and virtually unlimited medium, meaning that your own little corner of it has great potential.",
+        "img":"@@if(context.img_9){@@img_9}@@if(!context.img_9){img/home-page/isotope-2.jpg}",
+        "customClass":"text-center brk-base-box-shadow"
+        })
+      </div>
+    </div>
+    <div class="text-center">
+    @@include('../../buttons/templates/buttons.html',{
+      "type":"btn-inside-out",
+      "text":"load more",
+      "tag": "button",
+      "customClass":"btn-inside-out-invert btn-no-shadow font__weight-bold pr-50 pl-50 ml-auto mr-auto mt-0 mb-0 border-radius-30 brk-load-button"
+    })
+    </div>
+    
+  </div>
+</div> 

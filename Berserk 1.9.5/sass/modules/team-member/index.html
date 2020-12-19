@@ -1,0 +1,218 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Team Member"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-50 mt-70">
+
+      <div class="container">
+        <div class="brk-team-member" data-brk-library="component__team_page">
+          <div class="brk-team-member__header">
+
+            <div class="brk-team-member__img-container fancybox" href="img/team/main-photo.png">
+              <img src="img/team/main-photo.png" alt="alt" class="brk-team-member__img">
+            </div>
+            <div class="brk-team-member__info">
+
+              <div class="brk-team-member__main-info pb-35 mb-70">
+                <h2 class="brk-team-member__name  font__family-montserrat font__size-36 font__weight-normal text-uppercase">Bernard Show</h2>
+                @@include('../social-links/templates/simple-social-links.html',{
+                  "socialIcon1":"<i class='fab fa-facebook-f'></i>",
+                  "socialIcon2":"<i class='fab fa-twitter'></i>",
+                  "socialIcon3":"<i class='fab fa-google-plus-g'></i>",
+                  "socialIcon4":"<i class='fab fa-linkedin-in'></i>",
+                  "socialIcon5":"",
+                  "socialIcon6":"",
+                  "socialIcon7":"",
+                  "customContainerClass":"font__size-15"
+                })   
+                <span class='w-100 brk-dark-font-color font__family-montserrat font__weight-normal font__size-15'>Web Developer</span>
+              </div>
+
+              <div class="brk-team-member__secondary-info">
+                <div class="row">
+                  <div class="col-12 col-lg-4">
+                    @@include('./templates/services.html',{
+                      "icon":"<i class='fal fa-home'></i>",
+                      "title":"Current Location",
+                      "description":"Phasellus dolor. Maecenas vestibulum mollis ellentesque ut neque esque habitant morbi tristique senectus et" 
+                  })
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    @@include('./templates/services.html',{
+                      "icon":"<i class='fal fa-list-ul'></i>",
+                      "title":"Best Skills",
+                      "description":"Phasellus dolor. Maecenas vestibulum mollis ellentesque ut neque esque habitant morbi tristique senectus et" 
+                  })
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    @@include('./templates/services.html',{
+                      "icon":"<i class='fal fa-cog'></i>", 
+                      "title":"Preferences",
+                      "description":"Phasellus dolor. Maecenas vestibulum mollis ellentesque ut neque esque habitant morbi tristique senectus et" 
+                  })
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="pt-50">
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <div class="mt-10 mb-50">
+                  @@include('../progress-bars/templates/count.html',{
+                    "valueCur":"16",
+                    "title":"Hard Work"
+                  })
+                  @@include('../progress-bars/templates/count.html',{
+                    "valueCur":"22",
+                    "title":"Projects Delivery"
+                  })
+                  @@include('../progress-bars/templates/count.html',{
+                    "valueCur":"14",
+                    "title":"Customers Love"
+                  })
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <h3 class=" font__family-montserrat font__size-21 line__height-22 font__weight-bold mb-25">How to hire me?</h3>
+                <p class="brk-dark-font-color font__family-open-sans font__size-16 line__height-26 mb-25">
+                  Maecenas nec odio et ante tincidunt tempus. Donecbero vitae sapien ut libero nenatis.
+                </p>
+                <p class="brk-dark-font-color font__family-open-sans font__size-16 line__height-26">
+                  Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate. Quisque
+                  rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                </p>
+              </div>
+              <div class="col-12">
+                <div class="mt-40 mb-70">
+                  @@include('../tabs/templates/canted.html')
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="brk-base-box-shadow-inset-2 brk-base-bg-light pt-60 pb-60">
+        <div class="container">
+          <h5 class=" mb-20 text-center font__family-montserrat font__size-56 font__weight-bold">Our Team</h5>
+          <div class="row">
+            <div class="col-0 col-md-3"></div>
+            <div class="col-12 col-md-7">
+              <p class="brk-dark-font-color fotn__family-open-sans font__size-16 font__weight-normal line__height-26 text-center mb-70">
+                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                dapibus in
+              </p>
+            </div>
+          </div>
+        </div>
+        <div 
+          class="brk-slider-team default-slider" 
+          data-brk-library="slider__slick"
+          data-slick='{
+            "slidesToShow": 8, 
+            "slidesToScroll": 1, 
+            "arrows": false, 
+            "autoplay": true, 
+            "autoplaySpeed": 3500, 
+            "draggable": true, 
+            "swipeToSlide": true, 
+            "infinite": true,
+            "responsive": [
+              {
+                "breakpoint": 1024,
+                "settings": {
+                  "slidesToShow": 5
+                }
+              },
+              {
+                "breakpoint": 600,
+                "settings": {
+                  "slidesToShow": 3
+
+                }
+              },
+              {
+                "breakpoint": 480,
+                "settings": {
+                  "slidesToShow": 2
+                }
+              }
+            ]
+          }'
+         >
+          <div>
+            @@include('./templates/zoom-img.html',{
+              "imgSrc":"img/team/slider-1.png"
+            })
+          </div>
+          <div>
+            @@include('./templates/zoom-img.html',{
+              "imgSrc":"img/team/slider-2.png"
+            })
+          </div>
+                      
+          <div>
+            @@include('./templates/zoom-img.html',{
+              "imgSrc":"img/team/main-photo.png"
+            })
+          </div>
+          <div>
+            @@include('./templates/zoom-img.html',{
+              "imgSrc":"img/team/slider-4.png"
+            })
+          </div>
+          <div>
+            @@include('./templates/zoom-img.html',{
+              "imgSrc":"img/team/slider-5.png"
+            })
+          </div>
+          <div>
+            @@include('./templates/zoom-img.html',{
+              "imgSrc":"img/team/slider-6.png"
+            })
+          </div>
+          <div>
+            @@include('./templates/zoom-img.html',{
+              "imgSrc":"img/team/slider-7.png"
+            })
+          </div>
+          <div>
+            @@include('./templates/zoom-img.html',{
+              "imgSrc":"img/team/slider-8.png"
+            })
+          </div>
+          <div>
+            @@include('./templates/zoom-img.html',{
+              "imgSrc":"img/team/slider-2.png"
+            })
+          </div>
+          <div>
+            @@include('./templates/zoom-img.html',{
+              "imgSrc":"img/team/slider-5.png"
+            })
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html",{
+      "customClass": "pt-0"
+    })
+
+</body>
+
+</html>

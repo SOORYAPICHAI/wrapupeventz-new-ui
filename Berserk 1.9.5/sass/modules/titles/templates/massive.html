@@ -1,0 +1,17 @@
+@@if (context.text){
+	@@if (context.text.before){
+		<h2 class="font__family-montserrat font__size-36" data-brk-library="component__title">@@text.before</h2>
+	}
+	@@if (context.text.main){
+		<h2 class="font__family-montserrat font__weight-bold font__size-56 line__height-60 mt-10" data-brk-library="component__title">@@text.main 
+      @@if (context.text.secondary){
+        <span class="highlight-massive font__family-playfair font__weight-bold">
+          @@text.secondary <span class='after wow zoomIn'></span>
+        </span>
+      }
+    </h2>
+	}
+	@@if (context.text.after){
+		<p class="font__family-montserrat font__size-18 mt-30" data-brk-library="component__title">@@text.after</p>
+	}
+}

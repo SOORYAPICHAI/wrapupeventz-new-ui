@@ -1,0 +1,67 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Blog"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- Todo : hosted video play button , quote block-->
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+    <main class="main-container">
+      <div class="container mt-80">
+        <div class="row">
+          <div class="col-12 col-lg-8 col-xl-9 order-xs-2 order-lg-1">
+            <div class="brs-posts-container brs-posts-container_right-divider">
+     
+              <div class="mb-60">
+                @@include("./templates/slider-post.html")
+              </div>
+              <div class="mb-60">
+                @@include("./templates/simple-post.html")
+              </div>
+              <div class="mb-60">
+                @@include('../media-embeds/templates/html5.html',{
+                  "info": "true"
+                })
+              </div>
+              <div class="mb-60">
+                @@include("./templates/map-post.html")
+              </div>
+              <div class="mb-60">
+                @@include("./templates/video-post.html")
+              </div>
+              <div class="mb-60">
+                @@include("./templates/quote-post.html")
+              </div>
+              <div class="mb-60">
+                @@include("./templates/video-post-vimeo.html")
+              </div>
+              <div class="mt-80 mb-50">
+                @@include("../pagination/templates/seven.html")
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3 order-xs-1 order-lg-2">
+            @@include('../widgets/templates/sidebar.html',{
+              "customClass":""
+            })
+          </div> 
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+  
+    @@include("../../assets/templates/footer.html")
+  
+
+</body>
+
+</html>

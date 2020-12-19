@@ -1,0 +1,147 @@
+<div 
+  class="timeline timeline--masonry-grid timeline--vertical-circles
+    @@if(context.squared){timeline--vertical-circle_squared}
+    @@if(context.dark){timeline--vertical-circle_dark}" 
+  data-brk-library="component__timelines_css,component__timelines_js">
+
+	<div class="timeline__wrapper">
+		<div class="timeline__item">
+			<div class="timeline__box">
+        @@if(context.demo !== "true" && context.demo !== "its"){
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/370x370_1.jpg" alt="alt">
+        }
+        @@if(context.demo === "true"){
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/370x278_1.jpg" alt="alt">
+        }
+        @@if(context.demo === "its"){
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@img_1" alt="alt">
+        }
+				<div class="timeline__content text-left brk-dark-font-color">
+					<div class="timeline__date">
+						<div class="timeline__date-year @@if(context.fontFamily){@@fontFamily}@@if(!context.fontFamily){font__family-montserrat} font__weight-semibold font__size-18 brk-base-font-color line__height-16">
+							@@if(context.year1){@@year1}@@if(!context.year1){2014}
+						</div>
+						<div class="timeline__date-month @@if(context.fontFamily){@@fontFamily}@@if(!context.fontFamily){font__family-montserrat} font__weight-medium font__size-15 line__height-16">
+							Aug 06
+						</div>
+					</div>
+
+					<p class="mt-15 text-center @@if(context.fontFamily){@@fontFamily}@@if(!context.fontFamily){font__family-oxygen} font__weight-medium font__size-16 letter-spacing--1 line__height-26">
+            @@if(context.paragraph1){@@paragraph1}
+            @@if(!context.paragraph1){
+              Aenean vulputate eleifend tellusnean leo ligula, porttitor eu, sequat vitae, eleifend ac, enim.
+            }
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="timeline__item">
+			<div class="timeline__box">
+				<div class="timeline__content text-center brk-dark-font-color">
+					<div class="timeline__date text-center">
+						<div class="timeline__date-year @@if(context.fontFamily){@@fontFamily}@@if(!context.fontFamily){font__family-montserrat} font__weight-bold font__size-18 brk-black-font-color line__height-16">
+              @@if(context.year2){@@year2}@@if(!context.year2){2014}
+						</div>
+						<div class="timeline__date-month @@if(context.fontFamily){@@fontFamily}@@if(!context.fontFamily){font__family-montserrat} font__weight-medium font__size-15 line__height-16">
+							Aug 06
+						</div>
+					</div>
+
+					<p class="mt-30  @@if(context.fontFamily){@@fontFamily}@@if(!context.fontFamily){font__family-oxygen} font__weight-medium font__size-16 letter-spacing--1 line__height-26">
+            @@if(context.paragraph2){@@paragraph2}
+            @@if(!context.paragraph2){
+              Aenean vulputate eleifend tellusnean leo ligula, porttitor eu, sequat vitae, eleifend ac, enim.
+            }
+					</p>
+
+					<ul class="mt-30 text-left @@if(context.fontFamily){@@fontFamily}@@if(!context.fontFamily){font__family-oxygen} font__weight-medium font__size-14 letter-spacing--1 brk-black-font-color line__height-24">
+						<li>@@if(context.listItem1){@@listItem1}@@if(!context.listItem1){Duis arcu tortoro venenatis}</li>
+						<li>@@if(context.listItem2){@@listItem2}@@if(!context.listItem2){Quisque Nullam quir rutrmper}</li>
+						<li>@@if(context.listItem3){@@listItem3}@@if(!context.listItem3){Etiam dui quis mi ultricies}</li>
+					</ul>
+          @@if(!context.squared){
+            <button class="mt-25 btn btn-lg border-radius-30 font__family-open-sans font__weight-bold btn-inside-out" data-brk-library="component__button">
+              <span class="before">Read More</span>
+              <span class="text">Read More</span>
+              <span class="after">Read More</span>
+            </button>
+          }
+          @@if(context.squared){
+            <div class="text-center mt-25">
+              <a href="#" class="font__family-poppins font__size-12 font__weight-bold line__height-18 text-uppercase letter-spacing-100 brk-line-bottom-2">Contact me</a>
+            </div>
+          }
+				</div>
+			</div>
+		</div>
+
+		<div class="timeline__item">
+			<div class="timeline__box">
+        @@if(context.demo !== "true" && context.demo !== "its"){
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/370x370_2.jpg" alt="alt">
+        }
+        @@if(context.demo === "true"){
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/370x400_1.jpg" alt="alt">
+        }
+        @@if(context.demo === "its"){
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@img_2" alt="alt">
+        }
+				<div class="timeline__content text-left brk-dark-font-color">
+					<div class="timeline__date">
+						<div class="timeline__date-year @@if(context.fontFamily){@@fontFamily}@@if(!context.fontFamily){font__family-montserrat} font__weight-semibold font__size-18 brk-base-font-color line__height-16">
+              @@if(context.year3){@@year3}@@if(!context.year3){2014}
+						</div>
+						<div class="timeline__date-month @@if(context.fontFamily){@@fontFamily}@@if(!context.fontFamily){font__family-montserrat} font__weight-medium font__size-15 brk-black-font-color line__height-16">
+							Aug 06
+						</div>
+					</div>
+
+					<p class="mt-15 text-center @@if(context.fontFamily){@@fontFamily}@@if(!context.fontFamily){font__family-oxygen} font__weight-medium font__size-16 letter-spacing--1 line__height-26">
+            @@if(context.paragraph3){@@paragraph3}
+            @@if(!context.paragraph3){
+              Aenean vulputate eleifend tellusnean leo ligula, porttitor eu, sequat vitae, eleifend ac, enim.
+            }
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="timeline__item">
+			<div class="timeline__box">
+        @@if(context.demo !== "true" && context.demo !== "its"){
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/370x370_3.jpg" alt="alt">
+        }
+        @@if(context.demo === "true"){
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/370x278_2.jpg" alt="alt">
+        }
+        @@if(context.demo === "its"){
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@img_3" alt="alt">
+        }
+				<div class="timeline__content text-left brk-dark-font-color">
+					<div class="timeline__date">
+						<div class="timeline__date-year @@if(context.fontFamily){@@fontFamily}@@if(!context.fontFamily){font__family-montserrat} font__weight-semibold font__size-18 brk-base-font-color line__height-16">
+              @@if(context.year4){@@year4}@@if(!context.year4){2014}
+						</div>
+						<div class="timeline__date-month @@if(context.fontFamily){@@fontFamily}@@if(!context.fontFamily){font__family-montserrat} font__weight-medium font__size-15 brk-black-font-color line__height-16">
+							Aug 06
+						</div>
+					</div>
+
+					<p class="mt-15 text-center @@if(context.fontFamily){@@fontFamily}@@if(!context.fontFamily){font__family-oxygen} font__weight-medium font__size-16 letter-spacing--1 line__height-26">
+            @@if(context.paragraph4){@@paragraph4}
+            @@if(!context.paragraph4){
+              Aenean vulputate eleifend tellusnean leo ligula, porttitor eu, sequat vitae, eleifend ac, enim.
+            }
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="timeline__progress-bar">
+		<a class="btn btn-simple btn-circle border-radius-50" data-brk-library="component__button">
+			<i class="fal fa-sync"></i>
+		</a>
+	</div>
+</div>

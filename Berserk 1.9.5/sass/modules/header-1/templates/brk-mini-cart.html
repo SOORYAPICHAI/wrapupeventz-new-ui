@@ -1,0 +1,132 @@
+<div class="brk-mini-cart brk-header__item @@if(context.classMod){@@classMod}">
+  @@if(context.skinOpen == "skin-1") {
+  <a href="cart.html" class="brk-mini-cart__open d-flex @@if(context.openMod){@@openMod}">
+    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+    <span class="brk-mini-cart__label font__family-montserrat font__weight-medium text-uppercase letter-spacing-60 font__size-10 opacity-80">My cart</span>
+    <span class="brk-mini-cart__title">Shopping Cart</span>
+    <span class="brk-mini-cart__count @@if(context.countSkin){@@countSkin}">4</span>
+  </a>
+  }
+
+  @@if(context.skinOpen == "skin-2") {
+    <div class="brk-mini-cart__info-open">
+      <div class="brk-mini-cart__info-open-thumb">
+        <div class="thumb-1 lazyload"
+             data-bg="@@if(context.thumb_1){@@thumb_1}@@if(!context.thumb_1){img/brk-min-cart-header-9-1.jpg}"></div>
+        <div class="thumb-2 lazyload"
+             data-bg="@@if(context.thumb_2){@@thumb_2}@@if(!context.thumb_2){img/brk-min-cart-header-9-2.jpg}"></div>
+
+        <span class="brk-mini-cart__info-open-count">2</span>
+      </div>
+
+      <div class="brk-mini-cart__info-open-total-price font__family-montserrat font__weight-semibold">$140.00</div>
+    </div>
+  }
+
+  <div class="brk-mini-cart__menu">
+    <div class="brk-mini-cart__header">
+      <span class="font__family-montserrat font__weight-bold font__size-18">Your Cart</span>
+    </div>
+
+    <div class="brk-mini-cart__products">
+      <!-- product -->
+      <div class="brk-mini-cart__product">
+        <div class="brk-mini-cart__product--img">
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.productImg_1){@@productImg_1}@@if(!context.productImg_1){img/shop/shop-setout-2.png}" alt="alt">
+        </div>
+        <div class="brk-mini-cart__product--title-price">
+          <a href="#">
+            <h4 class="font__family-montserrat font__size-16 line__height-21 font__weight-semibold text-truncate">Some shop item</h4>
+          </a>
+          <span class="brk-mini-cart__product--old-price font__family-montserrat">$26.00</span>
+          <span class="brk-mini-cart__product--price font__family-montserrat">$16.00</span>
+        </div>
+
+        <div class="brk-quantity">
+          <span class="brk-quantity__arrows minus"></span>
+          <input class="brk-quantity__value" name="quantity" type="text" value="2">
+          <span class="brk-quantity__arrows plus"></span>
+        </div>
+
+        <a href="#" class="brk-mini-cart__product--remove remove"><i class="fa fa-times-circle"
+                                                                    aria-hidden="true"></i></a>
+      </div>
+      <!-- end product -->
+      <!-- product -->
+      <div class="brk-mini-cart__product">
+        <div class="brk-mini-cart__product--img">
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.productImg_2){@@productImg_2}@@if(!context.productImg_2){img/shop/shop-setout-2.png}" alt="alt">
+        </div>
+        <div class="brk-mini-cart__product--title-price">
+          <a href="#">
+            <h4 class="font__family-montserrat font__size-16 line__height-21 font__weight-semibold text-truncate">Some shop item</h4>
+          </a>
+          <span class="brk-mini-cart__product--old-price font__family-montserrat">$26.00</span>
+          <span class="brk-mini-cart__product--price font__family-montserrat">$16.00</span>
+        </div>
+
+        <div class="brk-quantity">
+          <span class="brk-quantity__arrows minus"></span>
+          <input class="brk-quantity__value" name="quantity" type="text" value="2">
+          <span class="brk-quantity__arrows plus"></span>
+        </div>
+
+        <a href="#" class="brk-mini-cart__product--remove remove"><i class="fa fa-times-circle"
+                                                                    aria-hidden="true"></i></a>
+      </div>
+      <!-- end product -->
+      <!-- product -->
+      <div class="brk-mini-cart__product">
+        <div class="brk-mini-cart__product--img">
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.productImg_3){@@productImg_3}@@if(!context.productImg_3){img/shop/shop-setout-2.png}" alt="alt">
+        </div>
+        <div class="brk-mini-cart__product--title-price">
+          <a href="#">
+            <h4 class="font__family-montserrat font__size-16 line__height-21 font__weight-semibold text-truncate">Some shop item</h4>
+          </a>
+          <span class="brk-mini-cart__product--old-price font__family-montserrat">$26.00</span>
+          <span class="brk-mini-cart__product--price font__family-montserrat">$16.00</span>
+        </div>
+
+        <div class="brk-quantity">
+          <span class="brk-quantity__arrows minus"></span>
+          <input class="brk-quantity__value" name="quantity" type="text" value="2">
+          <span class="brk-quantity__arrows plus"></span>
+        </div>
+
+        <a href="#" class="brk-mini-cart__product--remove remove"><i class="fa fa-times-circle"
+                                                                    aria-hidden="true"></i></a>
+      </div>
+      <!-- end product -->
+      <!-- product -->
+      <div class="brk-mini-cart__product">
+        <div class="brk-mini-cart__product--img">
+          <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@if(context.productImg_4){@@productImg_4}@@if(!context.productImg_4){img/shop/shop-setout-2.png}" alt="alt">
+        </div>
+        <div class="brk-mini-cart__product--title-price">
+          <a href="#">
+            <h4 class="font__family-montserrat font__size-16 line__height-21 font__weight-semibold text-truncate">Some shop item</h4>
+          </a>
+          <span class="brk-mini-cart__product--old-price font__family-montserrat">$26.00</span>
+          <span class="brk-mini-cart__product--price font__family-montserrat">$16.00</span>
+        </div>
+
+        <div class="brk-quantity">
+          <span class="brk-quantity__arrows minus"></span>
+          <input class="brk-quantity__value" name="quantity" type="text" value="2">
+          <span class="brk-quantity__arrows plus"></span>
+        </div>
+
+        <a href="#" class="brk-mini-cart__product--remove remove"><i class="fa fa-times-circle"
+                                                                    aria-hidden="true"></i></a>
+      </div>
+      <!-- end product -->
+    </div>
+    <div class="brk-mini-cart__links">
+      <div class="brk-mini-cart__links--wrap">
+        <a class="brk-mini-cart__links--cart" href="cart.html"><i class="fa fa-shopping-basket"></i> Cart</a>
+        <a class="brk-mini-cart__links--checkout" href="checkout.html">Proceed to checkout <i class="far fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

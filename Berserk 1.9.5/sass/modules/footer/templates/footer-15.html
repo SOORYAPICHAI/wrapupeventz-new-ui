@@ -1,0 +1,93 @@
+<footer class="brk-footer position-relative" @@if(context.id){id="@@id"} data-brk-library="component__footer">
+  <div class="brk-footer__wrapper overflow-hid @@if(context.animated === 'true'){brk-footer__wrapper_animated}">
+    @@include('../../svg-pattern/templates/pattern-16.html')
+    @@include("../../backgrounds/templates/bg-17.html",{
+      "right": "40px",
+      "top": "80px",
+      "left": "auto",
+      "bottom": "auto"
+    })
+    @@include("../../backgrounds/templates/bg-18.html",{
+      "right": "auto",
+      "top": "auto",
+      "left": "77px",
+      "bottom": "8px"
+    })
+    @@include("../../backgrounds/templates/bg-16.html",{
+      "right": "auto",
+      "top": "100px",
+      "left": "77px",
+      "bottom": "auto"
+    })
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-6">
+          <div class="pt-160 pb-130 position-relative">
+            <span class="brk-abs-overlay bg-cover bg-lg-contain" style="left: -130px; width: calc(100% + 240px); background-repeat: no-repeat;  background-image: url('img/footer-shape-1.svg')"></span>
+            <h5 class="brk-white-font-color font__family-montserrat font__size-42 line__height-50 font__weight-bold text-uppercase text-center text-sm-left">Contact Us</h5>
+            <p class="brk-white-font-color font__family-montserrat font__size-25 font__weight-light line__height-30 mb-30 text-center text-sm-left">And we can change your life</p>
+            <p class="brk-white-font-color font__size-16 font__weight-normal line__height-26 mb-20 text-center text-sm-left">
+              Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus.
+            </p>
+            <hr class="horiz-line mb-10 mt-30">
+            <div class="d-flex flex-wrap brk-footer__info-grid flex-sm-row flex-column brk-white-font-color text-center text-sm-left">
+              <p class="font__family-open-sans font__weight-bold font__size-14 mt-10">
+                <i class="brk-footer-icon text-middle fa fa-envelope line__height-24"></i>
+                <a href="mailto:info@domain.com" class="show-inline-block">info@domain.com</a>
+              </p>
+              <p class="font__family-open-sans font__weight-bold font__size-14 mt-10">
+                <i class="brk-footer-icon text-middle fa fa-map-marker line__height-24"></i>Chicago, USA
+              </p>
+              <p class="font__family-open-sans font__weight-bold font__size-14 mt-10">
+                <i class="brk-footer-icon text-middle fa fa-comments line__height-24"></i>Contact Us
+              </p>
+              <p class="font__family-open-sans font__weight-bold font__size-14 mt-10">
+                <i class="brk-footer-icon text-middle fa fa-phone line__height-24"></i>
+                <a href="#" class="show-inline-block">8 800 12 34 567</a>
+              </p>
+            </div>
+            <hr class="horiz-line mb-25 mt-30">
+            <form name="subscribe" action="#" data-brk-library="component__form,recaptcha" class="brk-subscribe-mail">
+              <div class="brk-subscribe">
+                <input name="EMAIL" type="email" placeholder="enter-your@mail.com">
+                <button type="submit" data-brk-library="component__button">
+                  <i class="far fa-envelope"></i>
+                </button>
+              </div>
+            </form>            
+          </div>
+        </div>
+        <div class="col-xl-2"></div>
+        <div class="col-xl-6">
+          <form action="#" class="brk-form-strict pt-120 pt-xs-50 brk-subscribe-mail brk-subscribe-mail_dark z-index-3" data-brk-library="recaptcha">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <input type="text" placeholder="Your Name" name="FNAME">
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="text" placeholder="Your mail" name="EMAIL">
+              </div>
+              <div class="col-12">
+                <input type="text" placeholder="Mail Subject" name="SUBJECT">
+              </div>
+              <div class="col-12">
+                <textarea name="MESSAGE" id="footer15" placeholder="Your Question" class="bordered-bottom"></textarea>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn-backgrounds btn-backgrounds_left-icon btn-backgrounds_white font__family-montserrat font__weight-bold text-uppercase font__size-13 mt-50">
+                Send a message
+                <span class="before line__height-15">
+                  <i class="far fa-hand-point-right font__size-15"></i>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-right z-index-3 position-relative pt-10 pb-70">
+        <p class="brk-white-font-color font__family-montserrat font__size-13 font__weight-bold line__height-21 text-uppercase">© All Rights reserved <br>2018</p>
+      </div>
+    </div>
+  </div>
+</footer>

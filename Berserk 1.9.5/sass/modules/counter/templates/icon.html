@@ -1,0 +1,64 @@
+@@if(context.only_counter !== "true"){
+	<div class="mt-50 pt-150 pb-150 overlay__white bg__style text-center" style="background-image: url(img/bg-1920_2.jpg);">
+}
+    <div class="container">
+			<div class="row justify-content-center">
+
+				<div class="col-sm-6 col-xl-3">
+					<div class="counter__wrapper-icon blue" data-brk-library="component__counter">
+						<i class="icon far fa-bell opacity-20"></i>
+						<div class="cont">
+							<div data-count-speed="3000" data-count-from="0" data-count-to="164" class="counter"></div>
+							<p class="font__family-montserrat font__weight-semibold font__size-16 mt-10">
+                @@if(context.title1){@@title1}
+                @@if(!context.title1){Some item title <br>goes here}
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-xl-3">
+					<div class="counter__wrapper-icon pink" data-brk-library="component__counter">
+						<i class="icon fas fa-trophy opacity-20"></i>
+						<div class="cont">
+							<div data-count-speed="3000" data-count-from="0" data-count-to="178" class="counter"></div>
+							<p class="font__family-montserrat font__weight-semibold font__size-16 mt-10">
+                @@if(context.title2){@@title2}
+                @@if(!context.title2){Some item title <br>goes here}
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-xl-3">
+					<div class="counter__wrapper-icon aqua" data-brk-library="component__counter">
+						<i class="icon fas fa-anchor opacity-20"></i>
+						<div class="cont">
+							<div data-count-speed="3000" data-count-from="0" data-count-to="124" class="counter"></div>
+							<p class="font__family-montserrat font__weight-semibold font__size-16 mt-10">
+                @@if(context.title3){@@title3}
+                @@if(!context.title3){Some item title <br>goes here}
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-xl-3">
+					<div class="counter__wrapper-icon cyan" data-brk-library="component__counter">
+						<i class="icon far fa-paper-plane opacity-20"></i>
+						<div class="cont">
+							<div data-count-speed="3000" data-count-from="0" data-count-to="130" class="counter"></div>
+							<p class="font__family-montserrat font__weight-semibold font__size-16 mt-10">
+                @@if(context.title4){@@title4}
+                @@if(!context.title4){Some item title <br>goes here}
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+    </div>
+
+@@if(context.only_counter !== "true"){  
+  </div>
+}

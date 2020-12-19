@@ -1,0 +1,86 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Shop - Compare"
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {})
+  @@include('../default-header/templates/header.html')
+  <div class="main-wrapper">
+    <main class="main-container mt-80">
+      <section>
+        <div class="container">
+          @@include("./templates/compare-table.html")
+        </div>
+      </section>
+
+      <section class="mt-100 pb-60 brk-bg-light-gray bg-position_bottom-center bg-norepeat bg-cover"
+               style="background-image:url(img/1920x428.png);">
+        <div class="container">
+          <div class="brk-swiper-default z-index-5 position-relative"
+               data-brk-swiper='{"slidesPerView": 4, "spaceBetween": 30, "autoplay": {"delay": 3000}, "breakpoints": {
+               "1200": {"slidesPerView": 3},
+               "992": {"slidesPerView": 2},
+               "768": {"slidesPerView": 1}
+               }}'
+               data-brk-library="slider__swiper">
+            <div class="swiper-container pt-60">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  @@include('../shop-components-flip/templates/flip-3.html', {
+                  "price": "$24.00",
+                  "title": "Polo shirt",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/210x299_1.png"
+                  })
+                </div>
+                <div class="swiper-slide">
+                  @@include('../shop-components-flip/templates/flip-3.html', {
+                  "price": "$24.00",
+                  "title": "Hugo Boss",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/210x299_2.png",
+                  "stick": "-30%"
+                  })
+                </div>
+                <div class="swiper-slide">
+                  @@include('../shop-components-flip/templates/flip-3.html', {
+                  "price": "$24.00",
+                  "title": "Tommy Hilfiger",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/210x299_3.png"
+                  })
+                </div>
+                <div class="swiper-slide">
+                  @@include('../shop-components-flip/templates/flip-3.html', {
+                  "price": "$24.00",
+                  "title": "Long-sleeve top",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/210x299_4.png"
+                  })
+                </div>
+                <div class="swiper-slide">
+                  @@include('../shop-components-flip/templates/flip-3.html', {
+                  "price": "$24.00",
+                  "title": "Sleeveless shirt",
+                  "styleFlip": "flip_horizontal",
+                  "thumb": "img/210x299_1.png"
+                  })
+                </div>
+              </div>
+            </div>
+            <div class="brk-swiper-default-nav brk-swiper-default-nav-prev"><i class="fas fa-caret-left"></i></div>
+            <div class="brk-swiper-default-nav brk-swiper-default-nav-next"><i class="fas fa-caret-right"></i></div>
+          </div>
+
+
+        </div>
+      </section>
+    </main>
+  </div>
+  @@include("../../assets/templates/footer.html",{
+    "customClass": "pt-0"
+  })
+
+</body>
+
+</html>

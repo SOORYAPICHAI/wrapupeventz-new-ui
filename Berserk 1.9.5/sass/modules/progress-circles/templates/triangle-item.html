@@ -1,0 +1,11 @@
+<div class="chart__wrapper chart-triangled align-items-center flex-row @@if(context.customClass){@@customClass}" data-brk-library="component__progress_circle">
+  <div class="chart mx-auto">
+    <div class="chart__circle mb-20"
+         data-valuenow="@@if(context.value){@@value}@@if(!context.value){75}"
+         data-color="@@if(context.color1){@@color1}@@if(!context.color1){var(--brand-primary)}"
+         data-color-end="@@if(context.color2){@@color1}">
+      <span class="font__family-montserrat font__size-38 font__weight-light chart__circle-counter"><span class="percents">0</span>%</span>
+    </div>
+    <h5 class="font__family-montserrat font__size-16 font__weight-light chart__title text-center">@@if(context.title){@@title}@@if(!context.title){Hard Work}</h5>
+  </div>
+</div>

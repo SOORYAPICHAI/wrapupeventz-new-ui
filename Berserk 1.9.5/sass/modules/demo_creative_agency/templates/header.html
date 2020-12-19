@@ -1,0 +1,143 @@
+@@include('../../header-1/templates/brk-header-mobile.html', {
+"white": "true"
+})
+
+<!--
+brk-header
+brk-header_style-1/2/3
+brk-header_color-white
+brk-header_color-dark
+brk-header_not-fixed
+-->
+
+<header class="brk-header brk-header_style-1 brk-header_color-white brk-header_skin-1 d-flex flex-column" data-logo-src="img/logo-dark-2.png" data-bg-mobile="img/brk-bg-mobile-menu.jpg" data-sticky-hide="1" data-brk-library="component__header">
+
+  <!-- TOP BAR
+  brk-header__top-bar_hide
+  brk-header__top-bar_scroll
+  -->
+  <div class="brk-header__top-bar brk-header_border-bottom order-lg-1 order-2 brk-bg-grad brk-header__top-bar_hide"
+       data-top="3"
+       style="height: 46px;">
+    <div class="brk-header__title font__family-montserrat font__weight-bold">Contact Us</div>
+
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-6 align-self-lg-stretch text-left">
+          @@include('../../../modules/header-1/templates/brk-header-element.html', {
+          "classMod": "brk-header__element_skin-1",
+          "tag": "a",
+          "href": "#",
+          "icon": "far fa-envelope",
+          "text": "admin@berserk.com",
+          "compareStyle": "",
+          "compare": ""
+          })
+
+          @@include('../../../modules/header-1/templates/brk-header-element.html', {
+          "classMod": "brk-header__element_skin-1",
+          "tag": "div",
+          "href": "#",
+          "icon": "far fa-clock",
+          "text": "Mn-Fr (9.00 am - 5.00 pm)",
+          "compareStyle": "",
+          "compare": ""
+          })
+        </div>
+        <div class="col-lg-6 align-self-lg-stretch text-left text-lg-right">
+          @@include('../../../modules/header-1/templates/brk-header-element.html', {
+          "classMod": "brk-header__element_skin-1",
+          "tag": "a",
+          "href": "shop-components-compare.html",
+          "icon": "fas fa-exchange-alt",
+          "text": "Compare List",
+          "compareStyle": "brk-header__compare_white",
+          "compare": "2"
+          })
+
+          @@include('../../../modules/header-1/templates/brk-header-element.html', {
+          "classMod": "brk-header__element_skin-1",
+          "tag": "a",
+          "href": "checkout.html",
+          "icon": "fas fa-chevron-circle-right",
+          "text": "Checkout",
+          "compareStyle": "",
+          "compare": ""
+          })
+
+          @@include('../../../modules/header-1/templates/brk-header-element.html', {
+          "classMod": "brk-header__element_skin-1",
+          "tag": "a",
+          "href": "login.html",
+          "icon": "fas fa-sign-in-alt",
+          "text": "Login",
+          "compareStyle": "",
+          "compare": ""
+          })
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End TOP BAR -->
+
+  <!-- MAIN BAR -->
+  <div class="brk-header__main-bar brk-header_border-bottom order-lg-2 order-1"
+       style="height: 72px;">
+
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-5 align-self-lg-stretch">
+          <nav class="brk-nav brk-header__item">
+            <ul class="brk-nav__menu">
+              @@include("../../../modules/header-1/templates/brk-nav-home.html", {
+              "link": "#top"
+              })
+              @@include("../../../modules/header-1/templates/brk-nav-elements.html")
+              @@include("../../../modules/header-1/templates/brk-nav-blog.html")
+              @@include("../../../modules/header-1/templates/brk-nav-portfolio.html")
+              @@include("../../../modules/header-1/templates/brk-nav-shop.html")
+              @@include("../../../modules/header-1/templates/brk-nav-pages.html")
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-2 align-self-lg-center d-none d-lg-block">
+          <div class="text-center">
+            @@include('../../../modules/header-1/templates/brk-header-logo.html', {
+            "logo_1": "img/logo.png",
+            "logo_2": "img/logo-dark.png"
+            })
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-lg-stretch text-lg-right pr-lg-20">
+          <div class="brk-header__title font__family-montserrat font__weight-bold">My Shop</div>
+
+          @@include('../../../modules/header-1/templates/brk-call-us.html', {})
+
+          @@include('../../../modules/header-1/templates/brk-lang.html', {
+          "interactive": ""
+          })
+
+          @@include('../../../modules/header-1/templates/brk-mini-cart.html', {
+          "skinOpen": "skin-1"
+          })
+
+          @@include('../../../modules/header-1/templates/brk-social-links.html', {})
+
+          @@include('../../../modules/header-1/templates/brk-search.html',{
+          "interactive": "",
+          "icon": "fa fa-search"
+          })
+
+          @@include('../../../modules/header-1/templates/brk-info-menu-open.html',{
+          "skin": "brk-info-menu-open_skin-1"
+          })
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End MAIN BAR -->
+
+</header><!-- /.brk-header -->
+
+@@include('../../header-1/templates/brk-info-menu.html',{})

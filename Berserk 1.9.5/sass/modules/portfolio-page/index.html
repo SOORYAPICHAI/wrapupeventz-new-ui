@@ -1,0 +1,34 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Portfolio Page"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+    <main class="main-container">
+        <div class="mb-70">
+            @@include('../sliders/templates/projects.html')
+        </div>
+        <div class="container" style='margin-bottom:73px'>
+            @@include('../tabs/templates/simple-smooth.html')
+        </div>
+        <div class="mb-210">
+            @@include('./templates/gradient-section.html')
+        </div>
+
+    </main>
+
+</div>
+
+  @@include("../../assets/templates/footer.html", {
+  "customClass": "mt-0"
+  })
+
+</body>
+</html>

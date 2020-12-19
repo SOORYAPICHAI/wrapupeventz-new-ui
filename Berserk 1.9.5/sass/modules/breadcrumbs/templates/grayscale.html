@@ -1,0 +1,22 @@
+	<div class="breadcrumbs__section breadcrumbs__section-grayscale pt-60 pb-60 bg__style lazyload"
+	     data-bg="@@if(context.bg){@@bg}@@if(!context.bg){img/1920x200_1.jpg}" data-brk-library="component__breadcrumbs_css">
+		<div class="full__size-absolute @@if(context.overlay){@@overlay}@@if(!context.overlay){breadcrumb-bg brk-base-bg-3}"></div>
+		<div class="container">
+			<div class="breadcrumbs__wrapper">
+				<div class="pull-left text-left" data-brk-library="component__title">
+					<h2 class="brk-white-font-color font__size-36 line__height-50 font__family-montserrat-alt font__weight-bold">
+            @@if(context.title){@@title}
+            @@if(!context.title){Some Page Title}
+          </h2>
+					<h5 class="font__size-14 font__family-montserrat highlight-trend">Page sub title goes here</h5>
+				</div>
+
+				<ol class="breadcrumb pull-right font__size-14 font__weight-bold font__family-montserrat">
+					<li>
+						<a href="#">Bread <i class="fas fa-arrow-right"></i></a>
+					</li>
+					<li class="active">Crumbs</li>
+				</ol>
+			</div>
+		</div>
+	</div>

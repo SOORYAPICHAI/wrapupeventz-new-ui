@@ -1,0 +1,84 @@
+@@include('../../assets/templates/head.html',{
+"titlePage": "Travel Agency - History",
+"themeSkin": "brk-orange.css",
+"style": ""
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {})
+  @@include("../../modules/header-1/templates/style-header-1.html",{
+    "only_header": "true",
+    "customNav": "true",
+    "title1": "Home",
+    "link1": "demo_travel_agency.html",
+    "title2": "About",
+    "link2": "demo_travel_agency_about.html",
+    "submenu2": {
+      "subtitle1": "About Us",
+      "sublink1": "demo_travel_agency_about.html",
+      "subtitle2": "Team",
+      "sublink2": "demo_travel_agency_team.html",
+      "subtitle3": "History",
+      "sublink3": "demo_travel_agency_history.html",
+      "subtitle4": "Prices",
+      "sublink4": "demo_travel_agency_prices.html",
+      "subtitle5": "Testimonials",
+      "sublink5": "demo_travel_agency_testimonials.html"
+      },
+    "title3": "Services",
+    "link3": "demo_travel_agency_services.html",
+    "title4": "Tours",
+    "link4": "demo_travel_agency_tours.html",
+    "title5": "Contact",
+    "link5": "demo_travel_agency_contact.html"
+  })
+  <div class="main-wrapper">
+    <main class="main-container">
+
+      @@include("../breadcrumbs/templates/sunshine.html",{
+      "customPadding": "pt-130 pb-90 breadcrumbs__section-sunshine_white",
+      "title": "History",
+      "overlay1": "brk-base-gradient-34",
+      "overlay2": "brk-base-bg-gradient-90deg",
+      "squared": "true",
+      "img": "img/demo_travel_agency/1920x260_1.jpg"
+      })
+      
+      <section class="pt-80 pb-40">
+        <div class="container">
+          @@include("../tabs/templates/parallax.html",{
+            "tab1_path": "./parallax-tab-6.html",
+            "tab_color_dark": "true"
+          })
+        </div>
+      </section>
+
+      <section class="pt-40 pb-80">
+        <div class="container">
+          <div class="text-center maxw-770 mb-60">
+            @@include('../titles/templates/trend.html',{
+              "text": {
+                "main": "Office Tour",
+                "main_customClass": "text-uppercase mb-25 brk-color-base-3",
+                "divider": "true",
+                "after": "Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere",
+                "after_customClass": "font__family-montserrat font__size-18 font__weight-light line__height-26 letter-spacing-20"
+              }
+            })
+          </div>
+          @@include("../timelines/templates/vertical-v2.html")
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  @@include("../../modules/footer/templates/footer-3.html",{
+  "demo": "true",
+  "overlay": "brk-base-gradient-34"
+  })
+
+  @@include('../../assets/templates/footer.html',{
+  "demo": "true"
+  })
+</body>

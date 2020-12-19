@@ -1,0 +1,55 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Cart"
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {})  @@include('../default-header/templates/header.html')
+  <div class="main-wrapper">
+    <main class="main-container mt-100 mt-md-130">
+      <div class="container">
+        
+        @@include("../steps/templates/checkers.html",{
+          "title1": "Cart",
+          "title2": "Checkout",
+          "title3": "Payment",
+          "title4": "Done",
+          "complete1": "true",
+          "active1": "true",
+          "fullWidth": "true",
+          "customClass": "mb-130",
+          "link2": "checkout.html" 
+        })
+
+        <ul class="brk-styled-scroll-x pb-20">
+          @@include("../checkout/templates/order-header.html")
+          @@include("../checkout/templates/order-item.html",{
+            "cart_item": "true"
+          })
+          @@include("../checkout/templates/order-item.html",{
+            "cart_item": "true"
+          })
+          @@include("../checkout/templates/order-item.html",{
+            "cart_item": "true"
+          })
+        </ul>
+        @@include("../checkout/templates/order.html",{
+          "list": "false",
+          "customClass": "mt-50",
+          "form": "true"
+        })
+        <div class="text-center translate-top-50">
+          @@include("../buttons/templates/buttons.html",{
+            "type": "btn-inside-out",
+            "text": "Proceed to Checkout",
+            "text_hover": "Proceed to Checkout",
+            "customClass" : "border-radius-25 btn-shadow pl-50 pr-50"
+          })
+        </div>
+      </div>
+    </main>
+  </div>
+  @@include("../../assets/templates/footer.html")
+
+</body>
+
+</html>

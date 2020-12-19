@@ -1,0 +1,9 @@
+<a href="/" class="brk-header__logo brk-header__item @@modifier">
+  @@if(context.logo_1 && context.logo_2){
+  <img class="brk-header__logo-1 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@logo_1" alt="alt">
+  <img class="brk-header__logo-2 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@logo_2" alt="alt">
+  }
+  @@if(context.logo_1 && !context.logo_2){
+  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@logo_1" alt="alt">
+  }
+</a>

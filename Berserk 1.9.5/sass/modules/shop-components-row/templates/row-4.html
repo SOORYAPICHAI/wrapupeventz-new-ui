@@ -1,0 +1,68 @@
+<div 
+  class="brk-sc-row-four @@if(context.customClass){@@customClass}" 
+  data-brk-library="component__shop_product_row,slider__swiper">
+
+  <div 
+    class="brk-sc-row-four__bg lazyload" 
+    data-bg="@@if(!context.img){img/bg-1920_1.jpg}@@if(context.img){@@img}">
+    <div class="brk-sc-row-four__bg-layer @@if(context.overlay){@@overlay}@@if(!context.overlay){brk-sc-tiles-row-gradient-right-1}"></div>
+  </div>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="brk-sc-row-four__slide swiper-slide">
+
+        <div class="brk-sc-row-four__video">
+          @@include('../../media-embeds/templates/html5.html',{ 
+            "info":"false",
+            "img": "img/demo_winter_trip/470x332_1.jpg",
+            "overlay": "false" 
+          })
+        </div>
+        <div class="brk-sc-row-four__desc brk-white-font-color">
+          <h4 class="font__family-montserrat brk-white-font-color">
+            <span class="font__weight-light">Video </span>
+            <span class="font__weight-bold">Reviews</span>
+          </h4>
+
+          <div class="brk-sc-row-four__desc--cat">
+            Category: <span class="font__weight-bold text-uppercase">Sport</span>
+          </div>
+
+          <div class="brk-sc-row-four__desc--text">Aenean vulputate eleifend tellus. Renean leo ligula, porttitor
+            eoigula, porttitor euequat vitae, eleifend ac, enim.
+          </div>
+        </div>
+      </div>
+      <div class="brk-sc-row-four__slide swiper-slide">
+
+        <div class="brk-sc-row-four__video">
+          @@include('../../media-embeds/templates/html5.html',{ 
+            "info":"false",
+            "img": "img/demo_winter_trip/470x332_1.jpg",
+            "overlay": "false" 
+          })
+        </div>
+        <div class="brk-sc-row-four__desc brk-white-font-color">
+          <h4 class="font__family-montserrat brk-white-font-color">
+            <span class="font__weight-light">Video </span>
+            <span class="font__weight-bold">Reviews</span>
+          </h4>
+
+          <div class="brk-sc-row-four__desc--cat">
+            Category: <span class="font__weight-bold text-uppercase">Sport</span>
+          </div>
+
+          <div class="brk-sc-row-four__desc--text">Aenean vulputate eleifend tellus. Renean leo ligula, porttitor
+            eoigula, porttitor euequat vitae, eleifend ac, enim.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="brk-sc-row-four-pagination"></div>
+
+</div>

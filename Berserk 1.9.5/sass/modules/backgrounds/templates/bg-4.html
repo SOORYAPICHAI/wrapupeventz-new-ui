@@ -1,0 +1,26 @@
+<div 
+  class="brk-backgrounds lazyload @@if(context.customClass){@@customClass}" 
+  data-bg="@@if(context.img){@@img}@@if(!context.img){img/coming-soon/1920x920_1.jpg}" 
+  data-brk-library="component__backgrounds_css,component__backgrounds_js">
+	<div class="brk-backgrounds__before @@if(context.overlay){@@overlay}@@if(!context.overlay){brk-bg-gradient--260deg-96-h}"></div>
+
+	<canvas id="brk-metaballs" class="brk-backgrounds__canvas"></canvas>
+  @@if(context.innerContent !== "false"){
+
+ 	<div class="brk-backgrounds__content">
+
+ 		<div class="container mt-140 mb-150">
+
+			<div class="maxw-770">
+				<div class="text-left" data-brk-library="component__title">
+					<h2 class="font__family-montserrat font__size-64 line__height-68 brk-white-font-color">Engaging, purposeful,</h2>
+					<h2 class="font__family-montserrat font__weight-bold font__size-64 line__height-68 brk-white-font-color">& Creative</h2>
+					<h4 class="font__family-montserrat highlight-underline line__height-26 font__size-21 font__weight-light brk-white-font-color"><span class="before wow fadeInUp"></span>Make business with us <br><span class="font__weight-bold brk-white-font-color">& become beautiful</span></h4>
+				</div>
+			</div>
+
+ 		</div>
+
+  </div>
+  }
+</div>

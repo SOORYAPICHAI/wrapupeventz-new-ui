@@ -1,0 +1,34 @@
+<div class="brk-simple-card-2 @@if(context.minimal){brk-simple-card-2_minimal} @@if(context.greyscale){brk-simple-card-2_greyscale}">
+  <div class="brk-simple-card-2__animation-wrapper" data-brk-library="component__portfolio_row@@if(context.fancybox){,fancybox}">
+    <img class="brk-simple-card-2__img" src="@@img-src" alt="alt">
+    <div class="brk-simple-card-2__overlay @@if(context.overlay){@@overlay}@@if(!context.overlay){brk-base-bg-gradient-10deg}"></div>
+    <div class="brk-simple-card-2__info text-center">
+      <a class="brk-simple-card-2__category text-white font__family-montserrat font__size-12 font__weight-bold line__height-12 text-uppercase letter-spacing-100">@@category</a>
+      <a class="brk-simple-card-2__title text-white font__family-roboto font__size-36 font__weight-ultralight line__height-38">@@title</a>
+    </div>
+    @@if(!context.minimal){
+      <a 
+        class="icon__btn icon__btn-white icon__btn-sm icon__btn-anim
+          @@if(context.fancybox){fancybox}"
+        @@if(context.fancybox){
+          href="@@img-src"
+          data-fancybox="portfolio-rows-fancybox-group"
+        }>
+        <i class="far fa-plus icon-inside" aria-hidden="true"></i>
+        <span class="before"></span>
+        <span class="after"></span>
+      </a>
+    }
+    @@if(context.minimal){
+      <a 
+        class="brk-simple-card-2__btn
+          @@if(context.fancybox){fancybox}"
+        @@if(context.fancybox){
+          href="@@img-src"
+          data-fancybox="portfolio-rows-fancybox-group"
+        }>
+        <i class="far fa-plus icon-inside" aria-hidden="true"></i>
+      </a>
+    }
+  </div>
+</div>

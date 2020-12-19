@@ -1,0 +1,69 @@
+<div class="slider-thumbnailed @@containerCustomClass slick-loading fa-req">
+  <div class="slider-thumbnailed-for arrows-modern @@if(context.primaryArrows === 'true'){arrows-modern_primary}"
+       data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "fade": true, "arrows": true, "autoplay": false, "autoplaySpeed": 4200}'
+       data-brk-library="slider__slick"
+       style="min-height: auto">
+      @@if(context.img1){
+        <div>
+          <img src="@@img1" alt="alt">
+        </div>
+      }
+      @@if(context.img2){
+        <div>
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@img2" alt="alt" class="lazyload">
+        </div>
+      }
+      @@if(context.img3){
+        <div>
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@img3" alt="alt" class="lazyload">
+        </div>
+      }
+      @@if(context.img4){
+        <div>
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@img4" alt="alt" class="lazyload">
+        </div>
+      }
+      @@if(context.img5){
+        <div>
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@img5" alt="alt" class="lazyload">
+        </div>
+      }
+  </div>
+  <div class="slider-thumbnailed-nav" data-slick='{"slidesToShow": @@if(context.sliderToShowNav){@@sliderToShowNav}@@if(!context.sliderToShowNav){4}, "slidesToScroll": 1}'>
+      @@if(context.img1){
+        <div class="brk-slid">
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@img1" class="brk-slid__img lazyload" alt="alt">
+          <span class="brk-slid__overlay"></span>
+          <i class="fal fa-plus font__size-24 brk-slid__icon"></i>
+        </div>
+      }
+      @@if(context.img2){
+        <div class="brk-slid">
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@img2" class="brk-slid__img lazyload" alt="alt">
+          <span class="brk-slid__overlay"></span>
+          <i class="fal fa-plus font__size-24 brk-slid__icon"></i>
+        </div>
+      }
+      @@if(context.img3){
+        <div class="brk-slid">
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@img3" class="brk-slid__img lazyload" alt="alt">
+          <span class="brk-slid__overlay"></span>
+          <i class="fal fa-plus font__size-24 brk-slid__icon"></i>
+        </div>
+      }
+      @@if(context.img4){
+        <div class="brk-slid">
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@img4" class="brk-slid__img lazyload" alt="alt">
+          <span class="brk-slid__overlay"></span>
+          <i class="fal fa-plus font__size-24 brk-slid__icon"></i>
+        </div>
+      }
+      @@if(context.img5){
+        <div class="brk-slid">
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@img5" class="brk-slid__img lazyload" alt="alt">
+          <span class="brk-slid__overlay"></span>
+          <i class="fal fa-plus font__size-24 brk-slid__icon"></i>
+        </div>
+      }
+  </div>
+</div>

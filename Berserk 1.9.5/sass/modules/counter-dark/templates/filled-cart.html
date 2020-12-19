@@ -1,0 +1,17 @@
+<div class="counter__wrapper-filled gray text-center" data-brk-library="component__counter">
+  <div class="counter-wrap">
+    <svg>
+      <circle	cx="93" cy="93" r="93"></circle>
+    </svg>
+    <div class="counter-tri"><span class="before"></span></div>
+    <div data-count-speed="3000"
+         data-count-from="0"
+         data-count-to="@@if(context.countTo){@@countTo}@@if(!context.countTo){98}"
+         data-count-max="@@if(context.countMax){@@countMax}@@if(!context.countMax){390}"
+         class="counter font__weight-semibold"></div>
+  </div>
+  <h4 class="@@if(context.titleStyle){@@titleStyle} font__family-montserrat font__weight-bold font__size-19 line__height-22 mt-30">
+    @@if(context.title){@@title}
+    @@if(!context.title){Some item title <br>goes here}
+  </h4>
+</div>

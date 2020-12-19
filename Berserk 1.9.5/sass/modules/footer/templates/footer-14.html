@@ -1,0 +1,128 @@
+<footer class="brk-footer position-relative" @@if(context.id){id="@@id"} data-brk-library="component__footer">
+  <div class="brk-footer__wrapper @@if(context.animated === "true"){brk-footer__wrapper_animated} d-flex flex-column align-items-center border-bottom-3 brk-border-color-primary brk-bgi-1 brk-bg-pattern @@if(context.img){lazyload}" data-bg="@@if(context.img){@@img}">
+    @@if(!context.overlay){
+      <span class="brk-abs-bg-overlay brk-bg-gradient-40deg-92"></span>
+    }
+    @@if(context.overlay){
+      <span class="brk-abs-bg-overlay @@overlay"></span>
+    }
+
+    <span class="brk-svg-pattern-container brk-svg-pattern-container_top" style="height: 750px;">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2014 755" style="top: -10px; left: -65px; width: calc(100% + 100px);">
+        <defs>
+          <path id="footer-path-id-1" d="M-55 9101s-64.59 843.48 49.67 740.9c114.26-102.57 360.5-86.27 681.26-104.04 320.75-17.77 501.91-155.63 694.2-405.18C1562.42 9083.14 1940 9124.6 1940 9124.6V9096z"
+          />
+        </defs>
+        <g>
+          <g transform="translate(74 -9096)">
+            <use fill="#fff" xlink:href="#footer-path-id-1" />
+          </g>
+        </g>
+      </svg>
+    </span>
+
+    <div class="position-relative z-index-3 mb-70 w-100">
+      <div class="text-center">
+        <h4 class="font__family-montserrat font__weight-light font__size-28 line__height-30 mb-10 brk-base-font-color">
+          Read FAQ or
+        </h4>
+        <h3 class="font__family-montserrat font__size-42 font__weight-bold line__height-46 mb-100">
+          Contact Us
+        </h3>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7">
+            @@include('../../accordions/templates/image.html',{
+              "small": "true",
+              "bgPattern": "true",
+              "customClass": "mb-50"
+            })
+          </div>
+          <div class="col-12 col-lg-5">
+            <article class="brk-form_footer-14 mb-50">
+              <p class="brk-white-font-color font__size-18 font__weight-bold line__height-18">Have a question?</p>
+              <h6 class="brk-white-font-color font__family-montserrat font__size-36 font__weight-normal line__height-40 text-uppercase mb-10">Contact Us</h6>
+              <form action="#" class="brk-subscribe-mail brk-form-strict brk-form-strict_transparent w-100" data-brk-library="component__form,recaptcha">
+                <input type="text" placeholder="Your Name" name="FNAME">
+                <input type="text" placeholder="Your mail" name="EMAIL">
+                <textarea name="MESSAGE" id="footer14" placeholder="Your Questions" style="min-height: 107px"></textarea>
+                <div class="text-center">
+                  @@include('../../buttons/templates/buttons.html',{
+                    "tag": "button",
+                    "type": "btn-inside-out",
+                    "text": "contact us",
+                    "customClass": "pl-70 pr-70 btn-inside-out-invert btn-no-shadow border-radius-25 mt-30"
+                  })
+                </div>
+              </form>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="position-relative z-index-3 w-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="text-center te d-flex flex-column mb-50">
+              <div class="icon__cover" data-brk-library="component__services">
+                @@include('../../buttons/templates/buttons.html',{
+                  "type":"icon__btn",
+                  "customClass":"icon__btn-anim icon__btn_clear",
+                  "size":"sm",
+                  "icon":"<i class='fa fa-phone' aria-hidden='true'></i>"
+                })
+              </div>              
+              <p class="brk-white-font-color font__family-montserrat font__size-24 line__height-24 mb-10 font__weight-semibold">
+                Phone
+              </p>
+              <a href="#" class="brk-white-font-color font__family-open-sans font__size-20 line__height-24">8 800 12 34 567</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="text-center d-flex flex-column mb-50">
+              <div class="icon__cover" data-brk-library="component__services">
+                @@include('../../buttons/templates/buttons.html',{
+                  "type":"icon__btn",
+                  "customClass":"icon__btn-anim icon__btn_clear",
+                  "size":"sm",
+                  "icon":"<i class='fa fa-map-marker' aria-hidden='true'></i>"
+                })
+              </div>  
+              <p class="brk-white-font-color font__family-montserrat font__size-24 line__height-24 mb-10 font__weight-semibold">
+                Address
+              </p>
+              <p class="brk-white-font-color font__family-open-sans font__size-20 line__height-24">
+                123 6th St. Melbourne, <br>
+                FL 32904
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="text-center d-flex flex-column mb-50">
+              <div class="icon__cover" data-brk-library="component__services">
+                @@include('../../buttons/templates/buttons.html',{
+                  "type":"icon__btn",
+                  "customClass":"icon__btn-anim icon__btn_clear",
+                  "size":"sm",
+                  "icon":"<i class='fa fa-envelope' aria-hidden='true'></i>"
+                })
+              </div>
+              <p class="brk-white-font-color font__family-montserrat font__size-24 line__height-24 mb-10 font__weight-semibold">
+                Email
+              </p>
+              <a href="mailto:info@domain.com" class="brk-white-font-color font__family-open-sans font__size-20 line__height-24">info@domain.com</a>
+            </div>
+          </div>
+          <hr class="horiz-line mt-0 mb-20">
+          <div class="text-center mb-25 w-100">
+            <p class="brk-white-font-color font__family-open-sans font__size-14">© 2018 <span class="font__weight-bold">Berserk</span> All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+

@@ -1,0 +1,62 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "App Showcase"
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+	
+    <!-- APP Notebook -->
+    <div class="mt-100 mt-md-130">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> iPad</h3>
+    	</div>
+      @@include('templates/notebook.html',{
+        "customClass":"mt-180",
+        "title":"Our app",
+        "imgSrc":"img/app-inside-0.png"
+      })
+    </div>
+
+    <!-- APP iPhone Lined -->
+    <div class="mt-100 mt-md-130">
+    	<div class="container mb-80">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> iPhone Lined</h3>
+    	</div>
+		  @@include("templates/lined-phone.html")
+    </div>
+
+    <!-- APP iPhone Simple -->
+    <div class="mt-100 mt-md-130">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">03</span> iPhone Simple</h3>
+    	</div>
+		  @@include("templates/simple-phone.html")
+    </div>
+
+    <!-- APP Notebook -->
+    <div class="mt-100 mt-md-130">
+    	<div class="container mb-80">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">04</span> Notebook</h3>
+    	</div>
+		  @@include("templates/app-notebook.html")
+    </div>      
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+</body>
+</html>

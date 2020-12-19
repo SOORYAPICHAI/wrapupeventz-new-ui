@@ -1,0 +1,90 @@
+@@include('../../assets/templates/head.html',{
+"titlePage": "Spa & Beauty - Testimonials",
+"themeSkin": "brk-pink.css"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+@@include("../../modules/header-vertical-1/templates/style-header-vertical-1.html",{
+"logo_1": "img/demo_spa/logo-dark-1.png",
+"logo_2": "img/demo_spa/logo-dark-1.png",
+"only_header": "true",
+"lang": "false",
+"cart": "false",
+"logo": "false",
+"customNav": "true",
+"title1": "Home",
+"link1": "/index.html",
+"title2": "About Us",
+"link2": "/demo_spa_about.html",
+"submenu2": {
+"subtitle1": "About",
+"sublink1": "/demo_spa_about.html",
+"subtitle2": "Services",
+"sublink2": "/demo_spa_services.html",
+"subtitle3": "Team",
+"sublink3": "/demo_spa_team.html",
+"subtitle4": "Partners",
+"sublink4": "/demo_spa_partners.html"
+},
+"title3": "News",
+"link3": "/demo_spa_news.html",
+"title4": "Testimonials",
+"link4": "/demo_spa_testimonials.html",
+"title5": "Contact Us",
+"link5": "/demo_spa_contact.html"
+})
+<div class="main-wrapper">
+  <main class="main-container">
+
+    @@include('../../modules/breadcrumbs/templates/simple.html',{
+    "title": "Testimonials"
+    })
+
+    <h1 class="sr-only">Spa & Beauty - Testimonials</h1>
+
+
+    <section class="pb-90 pt-70">
+      <div class="container">
+        <h2 class="font__family-montserrat font__size-56 line__height-60 text-uppercase text-center font__weight-light mb-60">Staff <span class="font__weight-bold">Reviews</span></h2>
+        @@include('../../modules/testimonials/templates/dash-four.html', {
+        "arr": [
+        {"title": "Mersa Meridion", "text": "The perfect facial to prepare your skin to look its best. This service includes cleansing, gentle exfoliating, hydrating mask and a deep moisturizer to let your inner beauty shine. Great for teens or those that are new to high-performance skin care. This revolutionary facial will change the image of your skin in just one application. Vitamin C, glycolic acid and gentle enzymes speed up cellular turnover and brighten your skin.", "img": "img/demo_spa/70x70_1.jpg"},
+        {"title": "Mersa Meridion", "text": "The perfect facial to prepare your skin to look its best. This service includes cleansing, gentle exfoliating, hydrating mask and a deep moisturizer to let your inner beauty shine. Great for teens or those that are new to high-performance skin care. This revolutionary facial will change the image of your skin in just one application. Vitamin C, glycolic acid and gentle enzymes speed up cellular turnover and brighten your skin.", "img": "img/demo_spa/70x70_2.jpg"},
+        {"title": "Mersa Meridion", "text": "The perfect facial to prepare your skin to look its best. This service includes cleansing, gentle exfoliating, hydrating mask and a deep moisturizer to let your inner beauty shine. Great for teens or those that are new to high-performance skin care. This revolutionary facial will change the image of your skin in just one application. Vitamin C, glycolic acid and gentle enzymes speed up cellular turnover and brighten your skin.", "img": "img/demo_spa/70x70_3.jpg"},
+        {"title": "Mersa Meridion", "text": "The perfect facial to prepare your skin to look its best. This service includes cleansing, gentle exfoliating, hydrating mask and a deep moisturizer to let your inner beauty shine. Great for teens or those that are new to high-performance skin care. This revolutionary facial will change the image of your skin in just one application. Vitamin C, glycolic acid and gentle enzymes speed up cellular turnover and brighten your skin.", "img": "img/demo_spa/70x70_4.jpg"}
+        ],
+        "overlay": "brk-base-gradient-33"
+        })
+      </div>
+    </section>
+
+    <section class="pt-80 pb-130 pt-xs-60 pb-xs-60 position-relative z-index-1">
+      <div class="brk-abs-overlay brk-base-gradient-33"></div>
+      <div class="container">
+        <h2 class="font__family-montserrat brk-white-font-color font__size-56 line__height-60 text-uppercase text-center font__weight-light mb-60">Check Our <br><span class="font__weight-bold">Clients Reviews</span></h2>
+        @@include('../../modules/testimonials/templates/dash-four.html', {
+        "arr": [
+        {"title": "Mersa Meridion", "text": "The perfect facial to prepare your skin to look its best. This service includes cleansing, gentle exfoliating, hydrating mask and a deep moisturizer to let your inner beauty shine. Great for teens or those that are new to high-performance skin care. This revolutionary facial will change the image of your skin in just one application. Vitamin C, glycolic acid and gentle enzymes speed up cellular turnover and brighten your skin.", "img": "img/demo_spa/70x70_1.jpg"},
+        {"title": "Mersa Meridion", "text": "The perfect facial to prepare your skin to look its best. This service includes cleansing, gentle exfoliating, hydrating mask and a deep moisturizer to let your inner beauty shine. Great for teens or those that are new to high-performance skin care. This revolutionary facial will change the image of your skin in just one application. Vitamin C, glycolic acid and gentle enzymes speed up cellular turnover and brighten your skin.", "img": "img/demo_spa/70x70_2.jpg"},
+        {"title": "Mersa Meridion", "text": "The perfect facial to prepare your skin to look its best. This service includes cleansing, gentle exfoliating, hydrating mask and a deep moisturizer to let your inner beauty shine. Great for teens or those that are new to high-performance skin care. This revolutionary facial will change the image of your skin in just one application. Vitamin C, glycolic acid and gentle enzymes speed up cellular turnover and brighten your skin.", "img": "img/demo_spa/70x70_3.jpg"},
+        {"title": "Mersa Meridion", "text": "The perfect facial to prepare your skin to look its best. This service includes cleansing, gentle exfoliating, hydrating mask and a deep moisturizer to let your inner beauty shine. Great for teens or those that are new to high-performance skin care. This revolutionary facial will change the image of your skin in just one application. Vitamin C, glycolic acid and gentle enzymes speed up cellular turnover and brighten your skin.", "img": "img/demo_spa/70x70_4.jpg"}
+        ],
+        "overlay": "brk-base-bg-gradient-90deg"
+        })
+      </div>
+    </section>
+
+  </main>
+</div>
+
+@@include("../../modules/footer/templates/footer-12.html",{
+"demo": "true"
+})
+
+@@include('../../assets/templates/footer.html',{
+  "demo": "true"
+})
+
+</body>

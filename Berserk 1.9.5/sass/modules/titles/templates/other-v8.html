@@ -1,0 +1,11 @@
+@@if (context.text){
+	@@if (context.text.secondary){
+		<p class="font__family-montserrat font__weight-semibold font__size-12 text-blue letter-spacing-200 text-uppercase" data-brk-library="component__title">@@text.secondary</p>
+	}
+	@@if (context.text.main){
+		<h3 class="font__family-montserrat font__weight-semibold font__size-30 letter-spacing-100 text-uppercase mt-10" data-brk-library="component__title">@@text.main</h3>
+	}
+	@@if (context.text.after){
+		<p class="font__size-16 font__family-open-sans line__height-26 text-dark mt-20" data-brk-library="component__title">@@text.after</p>
+	}
+}

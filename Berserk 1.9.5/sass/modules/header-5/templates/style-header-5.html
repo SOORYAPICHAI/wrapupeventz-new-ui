@@ -1,0 +1,286 @@
+@@include('../../header-1/templates/brk-header-mobile.html', {
+"white": "true"
+})
+
+<header class="brk-header brk-header_style-1 brk-header_color-dark brk-header_skin-1 d-flex flex-column
+@@if(context.notFixed === 'true'){brk-header_not-fixed}
+@@if(context.notFixed !== 'true'){position-fixed}"
+        data-logo-src="img/logo-dark-2.png"
+        data-bg-mobile="img/brk-bg-mobile-menu.jpg" data-brk-library="component__header">
+
+  <!-- MAIN BAR -->
+  <div class="brk-header__main-bar bg-white"
+       style="@@if(context.mainBarHeight){height: @@mainBarHeight;}
+              @@if(!context.mainBarHeight){height: 76px;}
+              @@if(context.mainBarStyle){@@mainBarStyle}"
+       @@if(context.mainBarHeightScroll){data-height-scroll="@@mainBarHeightScroll"}>
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-2 align-self-lg-center d-none d-lg-block">
+          <div class="text-center">
+            @@include('../../header-1/templates/brk-header-logo.html', {
+            "logo_1": "@@if(context.logo_1){@@logo_1}@@if(!context.logo_1){img/logo-dark-1.png}",
+            "logo_2": "@@if(context.logo_2){@@logo_2}@@if(!context.logo_2){img/logo-dark-1.png}"
+            })
+          </div>
+        </div>
+        <div class="col-lg align-self-lg-stretch text-lg-right">
+          @@if(context.customNav !== "true"){
+            @@include('../../header-1/templates/brk-nav.html', {
+              "quantity": "4",
+              "modifier": "brk-nav_modifier-bold"
+            })
+          }
+          @@if(context.customNav === "true"){
+            <nav class="brk-nav brk-nav_modifier-bold brk-header__item">
+              <ul class="brk-nav__menu">
+                @@if(context.homeNav === "true"){
+                  @@if(context.homeNavLink){
+                    @@include('../../header-1/templates/brk-nav-home.html',{
+                      "link": "@@homeNavLink"
+                    })
+                  }
+                  @@if(!context.homeNavLink){
+                    @@include('../../header-1/templates/brk-nav-home.html')
+                  }
+                }
+
+                @@if(context.title1){
+                  <li class="brk-nav__children brk-nav__drop-down-effect @@if(!context.submenu1){brk-nav__children_clear}">
+                    <a href="@@if(context.link1){@@link1}@@if(!context.link1){#}">
+                      <span>@@title1</span>
+                    </a>
+                    @@if(context.submenu1){
+                      <ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+                        @@if(context.submenu1.subtitle1){
+                          <li class="dd-effect">
+                            <a href="@@submenu1.sublink1">@@submenu1.subtitle1</a>
+                          </li>
+                        }
+                        @@if(context.submenu1.subtitle2){
+                          <li class="dd-effect">
+                            <a href="@@submenu1.sublink2">@@submenu1.subtitle2</a>
+                          </li>
+                        }
+                        @@if(context.submenu1.subtitle3){
+                          <li class="dd-effect">
+                            <a href="@@submenu1.sublink3">@@submenu1.subtitle3</a>
+                          </li>
+                        }
+                        @@if(context.submenu1.subtitle4){
+                          <li class="dd-effect">
+                            <a href="@@submenu1.sublink4">@@submenu1.subtitle4</a>
+                          </li>
+                        }
+                        @@if(context.submenu1.subtitle5){
+                          <li class="dd-effect">
+                            <a href="@@submenu1.sublink5">@@submenu1.subtitle5</a>
+                          </li>
+                        }
+                        @@if(context.submenu1.subtitle6){
+                          <li class="dd-effect">
+                            <a href="@@submenu1.sublink6">@@submenu1.subtitle6</a>
+                          </li>
+                        }
+                      </ul>
+                    }
+                  </li>
+                }
+                @@if(context.title2){
+                  <li class="brk-nav__children brk-nav__drop-down-effect @@if(!context.submenu2){brk-nav__children_clear}">
+                    <a href="@@if(context.link2){@@link2}@@if(!context.link2){#}">
+                      <span>@@title2</span>
+                    </a>
+                    @@if(context.submenu2){
+                      <ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+                        @@if(context.submenu2.subtitle1){
+                          <li class="dd-effect">
+                            <a href="@@submenu2.sublink1">@@submenu2.subtitle1</a>
+                          </li>
+                        }
+                        @@if(context.submenu2.subtitle2){
+                          <li class="dd-effect">
+                            <a href="@@submenu2.sublink2">@@submenu2.subtitle2</a>
+                          </li>
+                        }
+                        @@if(context.submenu2.subtitle3){
+                          <li class="dd-effect">
+                            <a href="@@submenu2.sublink3">@@submenu2.subtitle3</a>
+                          </li>
+                        }
+                        @@if(context.submenu2.subtitle4){
+                          <li class="dd-effect">
+                            <a href="@@submenu2.sublink4">@@submenu2.subtitle4</a>
+                          </li>
+                        }
+                        @@if(context.submenu2.subtitle5){
+                          <li class="dd-effect">
+                            <a href="@@submenu2.sublink5">@@submenu2.subtitle5</a>
+                          </li>
+                        }
+                        @@if(context.submenu2.subtitle6){
+                          <li class="dd-effect">
+                            <a href="@@submenu2.sublink6">@@submenu2.subtitle6</a>
+                          </li>
+                        }
+                      </ul>
+                    }
+                  </li>
+                }
+                @@if(context.title3){
+                  <li class="brk-nav__children brk-nav__drop-down-effect @@if(!context.submenu3){brk-nav__children_clear}">
+                    <a href="@@if(context.link3){@@link3}@@if(!context.link3){#}">
+                      <span>@@title3</span>
+                    </a>
+                    @@if(context.submenu3){
+                      <ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+                        @@if(context.submenu3.subtitle1){
+                          <li class="dd-effect">
+                            <a href="@@submenu3.sublink1">@@submenu3.subtitle1</a>
+                          </li>
+                        }
+                        @@if(context.submenu3.subtitle2){
+                          <li class="dd-effect">
+                            <a href="@@submenu3.sublink2">@@submenu3.subtitle2</a>
+                          </li>
+                        }
+                        @@if(context.submenu3.subtitle3){
+                          <li class="dd-effect">
+                            <a href="@@submenu3.sublink3">@@submenu3.subtitle3</a>
+                          </li>
+                        }
+                        @@if(context.submenu3.subtitle4){
+                          <li class="dd-effect">
+                            <a href="@@submenu3.sublink4">@@submenu3.subtitle4</a>
+                          </li>
+                        }
+                        @@if(context.submenu3.subtitle5){
+                          <li class="dd-effect">
+                            <a href="@@submenu3.sublink5">@@submenu3.subtitle5</a>
+                          </li>
+                        }
+                        @@if(context.submenu3.subtitle6){
+                          <li class="dd-effect">
+                            <a href="@@submenu3.sublink6">@@submenu3.subtitle6</a>
+                          </li>
+                        }
+                      </ul>
+                    }
+                  </li>
+                }
+                @@if(context.title4){
+                  <li class="brk-nav__children brk-nav__drop-down-effect @@if(!context.submenu4){brk-nav__children_clear}">
+                    <a href="@@if(context.link4){@@link4}@@if(!context.link4){#}">
+                      <span>@@title4</span>
+                    </a>
+                    @@if(context.submenu4){
+                      <ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+                        @@if(context.submenu4.subtitle1){
+                          <li class="dd-effect">
+                            <a href="@@submenu4.sublink1">@@submenu4.subtitle1</a>
+                          </li>
+                        }
+                        @@if(context.submenu4.subtitle2){
+                          <li class="dd-effect">
+                            <a href="@@submenu4.sublink2">@@submenu4.subtitle2</a>
+                          </li>
+                        }
+                        @@if(context.submenu4.subtitle3){
+                          <li class="dd-effect">
+                            <a href="@@submenu4.sublink3">@@submenu4.subtitle3</a>
+                          </li>
+                        }
+                        @@if(context.submenu4.subtitle4){
+                          <li class="dd-effect">
+                            <a href="@@submenu4.sublink4">@@submenu4.subtitle4</a>
+                          </li>
+                        }
+                        @@if(context.submenu4.subtitle5){
+                          <li class="dd-effect">
+                            <a href="@@submenu4.sublink5">@@submenu4.subtitle5</a>
+                          </li>
+                        }
+                        @@if(context.submenu4.subtitle6){
+                          <li class="dd-effect">
+                            <a href="@@submenu4.sublink6">@@submenu4.subtitle6</a>
+                          </li>
+                        }
+                      </ul>
+                    }
+                  </li>
+                }
+                @@if(context.title5){
+                  <li class="brk-nav__children brk-nav__drop-down-effect @@if(!context.submenu5){brk-nav__children_clear}">
+                    <a href="@@if(context.link5){@@link5}@@if(!context.link5){#}">
+                      <span>@@title5</span>
+                    </a>
+                    @@if(context.submenu5){
+                      <ul class="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
+                        @@if(context.submenu5.subtitle1){
+                          <li class="dd-effect">
+                            <a href="@@submenu5.sublink1">@@submenu5.subtitle1</a>
+                          </li>
+                        }
+                        @@if(context.submenu5.subtitle2){
+                          <li class="dd-effect">
+                            <a href="@@submenu5.sublink2">@@submenu5.subtitle2</a>
+                          </li>
+                        }
+                        @@if(context.submenu5.subtitle3){
+                          <li class="dd-effect">
+                            <a href="@@submenu5.sublink3">@@submenu5.subtitle3</a>
+                          </li>
+                        }
+                        @@if(context.submenu5.subtitle4){
+                          <li class="dd-effect">
+                            <a href="@@submenu5.sublink4">@@submenu5.subtitle4</a>
+                          </li>
+                        }
+                        @@if(context.submenu5.subtitle5){
+                          <li class="dd-effect">
+                            <a href="@@submenu5.sublink5">@@submenu5.subtitle5</a>
+                          </li>
+                        }
+                        @@if(context.submenu5.subtitle6){
+                          <li class="dd-effect">
+                            <a href="@@submenu5.sublink6">@@submenu5.subtitle6</a>
+                          </li>
+                        }
+                      </ul>
+                    }
+                  </li>
+                }
+                 
+                @@if(context.blogNav === "true"){
+                  @@include('../../header-1/templates/brk-nav-blog.html')
+                }
+                @@if(context.pagesNav === "true"){
+                  @@include('../../header-1/templates/brk-nav-pages.html')
+                }
+                @@if(context.portfolioNav === "true"){
+                  @@include('../../header-1/templates/brk-nav-portfolio.html')
+                }
+                @@if(context.shopNav === "true"){
+                  @@include('../../header-1/templates/brk-nav-shop.html')
+                }
+                @@if(context.elementsNav === "true"){
+                  @@include('../../header-1/templates/brk-nav-elements.html')
+                }
+              </ul>
+            </nav>
+          }
+        </div>
+        <div class="col-lg-1 align-self-lg-stretch text-lg-right">
+          @@include('../../header-1/templates/brk-info-menu-open.html',{
+          "skin": "brk-info-menu-open_skin-3"
+          })
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End MAIN BAR -->
+
+  @@include('../../header-1/templates/brk-info-menu.html',{})
+
+</header><!-- /.brk-header -->

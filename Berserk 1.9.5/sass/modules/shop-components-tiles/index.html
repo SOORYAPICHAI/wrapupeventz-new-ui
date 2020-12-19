@@ -1,0 +1,149 @@
+  @@include("../../assets/templates/head.html", {
+  "titlePage": "Shop Components Tiles"
+  })
+
+  </head>
+
+  <body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-50 mt-100 mt-md-130">
+
+      <section>
+        <div class="container mb-90">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">01</span> Trend
+            </h3>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-xl-6">
+            @@include('templates/tiles-trend.html', {
+              "coloText": "brk-sc-tiles-trend_white-text brk-base-bg-gradient-5",
+              "directionText": "brk-sc-tiles-trend_right-text",
+              "bgImage": "img/bg-1920_1.jpg",
+              "thumb": "img/sc-tiles-1.png",
+              "title": "Some <strong>Heading here</strong>",
+              "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor nean massa. Cum sociis natoque penatibus et magnis dis parturient mnsectetes.",
+              "price": "1,200$",
+              "buttonColor": "white"
+            })
+          </div>
+          <div class="col-xl-6">
+            @@include('templates/tiles-trend.html', {
+            "coloText": "brk-sc-tiles-trend_dark-text",
+            "directionText": "brk-sc-tiles-trend_left-text",
+            "bgImage": "img/bg-1920_1.jpg",
+            "thumb": "img/sc-tiles-2.png",
+            "title": "Some <strong>Heading here</strong>",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor nean massa. Cum sociis natoque penatibus et magnis dis parturient mnsectetes.",
+            "price": "1,200$",
+              "buttonColor": "dark"
+            })
+          </div>
+        </div>
+
+      </section>
+
+      <section>
+        <div class="container mb-90 mt-120">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">02</span> Images
+            </h3>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-xl-6">
+            @@include('templates/tiles-images.html', {
+              "style": "brk-sc-tiles-images_style-1",
+              "bgImage": "img/brk-tiles-img-1.jpg",
+              "title": "Men <strong>Collection</strong>",
+              "year": "2018",
+              "text": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim",
+              "typeButtons": "btn-gradient"
+            })
+          </div>
+          <div class="col-xl-6">
+            @@include('templates/tiles-images.html', {
+            "style": "brk-sc-tiles-images_style-2",
+            "bgImage": "img/brk-tiles-img-2.jpg",
+            "title": "Women <strong>Collection</strong>",
+            "year": "2018",
+            "text": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim",
+            "typeButtons": "btn-prime"
+            })
+          </div>
+          <div class="col-xl-6">
+            @@include('templates/tiles-images.html', {
+            "style": "brk-sc-tiles-images_style-1",
+            "dark": "true",
+            "bgImage": "img/800x400_1.jpg",
+            "title": "Men <strong>Collection</strong>",
+            "year": "2018",
+            "text": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim",
+            "typeButtons": "btn-gradient"
+            })
+          </div>
+          <div class="col-xl-6">
+            @@include('templates/tiles-images.html', {
+            "style": "brk-sc-tiles-images_style-2",
+            "dark": "true",
+            "bgImage": "img/bg-17.jpg",
+            "title": "Women <strong>Collection</strong>",
+            "year": "2018",
+            "text": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim",
+            "typeButtons": "btn-prime"
+            })
+          </div>
+        </div>
+
+      </section>
+
+      <section>
+        <div class="container mb-90 mt-120">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">03</span> Split
+            </h3>
+          </div>
+        </div>
+
+        <div class="container">
+          @@include('templates/tiles-split.html')
+        </div>
+
+      </section>
+
+      <section>
+        <div class="container mb-90 mt-120">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">04</span> Angle
+            </h3>
+          </div>
+        </div>
+
+        @@include('templates/tiles-angle.html')
+
+      </section>
+
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+    <!--<script src="js/components/shop-components-tiles.js"></script>
+    <script src="vendor/slickCarousel/js/slick.min.js"></script>
+    <script src="js/assets/sliders-skin.js"></script>-->
+  
+
+  </body>
+</html>

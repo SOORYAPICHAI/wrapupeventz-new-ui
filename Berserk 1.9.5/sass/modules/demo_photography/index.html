@@ -1,0 +1,97 @@
+@@include('../../assets/templates/head.html',{
+  "titlePage": "Photography",
+  "themeSkin": "brk-blue.css"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+<div class="main-page">
+
+  @@include('../../modules/header-7-popup/templates/style-header-7-popup.html', {
+  "customNav": "true",
+  "title1": "Home",
+  "link1": "/index.html",
+  "title2": "Portfolio",
+  "link2": "#portfolio",
+  "title3": "About",
+  "link3": "#about",
+  "title4": "Gallery",
+  "link4": "#",
+  "submenu4": {
+  "subtitle1": "Gallery Sliders", "sublink1": "/gallery-sliders.html",
+  "subtitle2": "Gallery 2 Cols", "sublink2": "/gallery-2-cols.html",
+  "subtitle3": "Gallery 3 Cols", "sublink3": "/gallery-3-cols.html",
+  "subtitle4": "Gallery 4 Cols", "sublink4": "/gallery-4-cols.html",
+  "subtitle5": "Gallery 6 Cols", "sublink5": "/gallery-6-cols.html",
+  "subtitle6": "Gallery Masonry", "sublink6": "/gallery-3-cols-masonry.html"
+  }
+  })
+
+  <h1 class="sr-only">Photography</h1>
+
+  <section>
+    @@include("../../modules/sliders/templates/thumbnailed-full-100vh.html")
+  </section>
+
+  <section id="portfolio">
+    <div class="brk-portfolio-galleries">
+      <div class="row brk-gutters-5">
+        <div class="col-12 col-md-6">
+          @@include('../../modules/portfolio-galleries/templates/card.html',{
+          "img":"img/demo_photography/945x620_1.jpg",
+          "title":"Gallery 1",
+          "subtitle":"18 photos"
+          })
+        </div>
+        <div class="col-12 col-md-6">
+          @@include('../../modules/portfolio-galleries/templates/card.html',{
+          "img":"img/demo_photography/945x620_2.jpg",
+          "title":"Gallery 2",
+          "subtitle":"5 photos"
+          })
+        </div>
+        <div class="col-12 col-md-6">
+          @@include('../../modules/portfolio-galleries/templates/card.html',{
+          "img":"img/demo_photography/945x620_3.jpg",
+          "title":"Gallery 3",
+          "subtitle":"20 photos"
+          })
+        </div>
+        <div class="col-12 col-md-6">
+          @@include('../../modules/portfolio-galleries/templates/card.html',{
+          "img":"img/demo_photography/945x620_4.jpg",
+          "title":"Gallery 4",
+          "subtitle":"80 photos"
+          })
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="pt-100 pb-100" id="about">
+    <div class="container">
+      <h2 class="font__family-montserrat font__size-36 text-uppercase font__size-36 line__height-36 text-center mb-50">
+        <span class="font__weight-bold">Photographer</span> & Artist
+      </h2>
+      <p class="brk-dark-font-color font__size-16 line__height-26 letter-spacing-100 text-center">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+        <br> consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
+        <br> viverra quis, feugiat a, tellus.
+      </p>
+
+    </div>
+
+  </section>
+
+  @@include('../../modules/footer/templates/footer-2.html',{
+  "animated":"true"
+  })
+
+</div>
+
+  @@include('../../assets/templates/footer.html',{
+    "demo": "true"
+  })
+
+</body>

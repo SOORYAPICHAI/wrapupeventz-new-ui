@@ -1,0 +1,240 @@
+@@include('../../assets/templates/head.html',{
+"titlePage": "Travel Agency - Team",
+"themeSkin": "brk-orange.css",
+"style": ""
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {})
+  @@include("../../modules/header-1/templates/style-header-1.html",{
+    "only_header": "true",
+    "customNav": "true",
+    "title1": "Home",
+    "link1": "demo_travel_agency.html",
+    "title2": "About",
+    "link2": "demo_travel_agency_about.html",
+    "submenu2": {
+      "subtitle1": "About Us",
+      "sublink1": "demo_travel_agency_about.html",
+      "subtitle2": "Team",
+      "sublink2": "demo_travel_agency_team.html",
+      "subtitle3": "History",
+      "sublink3": "demo_travel_agency_history.html",
+      "subtitle4": "Prices",
+      "sublink4": "demo_travel_agency_prices.html",
+      "subtitle5": "Testimonials",
+      "sublink5": "demo_travel_agency_testimonials.html"
+      },
+    "title3": "Services",
+    "link3": "demo_travel_agency_services.html",
+    "title4": "Tours",
+    "link4": "demo_travel_agency_tours.html",
+    "title5": "Contact",
+    "link5": "demo_travel_agency_contact.html"
+  })
+  <div class="main-wrapper">
+    <main class="main-container">
+
+      @@include("../breadcrumbs/templates/sunshine.html",{
+      "customPadding": "pt-130 pb-90 breadcrumbs__section-sunshine_white",
+      "title": "Team",
+      "overlay1": "brk-base-gradient-34",
+      "overlay2": "brk-base-bg-gradient-90deg",
+      "squared": "true",
+      "img": "img/demo_travel_agency/1920x260_1.jpg"
+      })
+
+      <section class="pt-60 pb-40">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              @@include('../team/templates/persone-circle.html', {
+              "title": "Stacy Evans",
+              "secondary": "Researcher",
+              "img": "img/270x414_1.jpg"
+              })
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              @@include('../team/templates/persone-circle.html', {
+              "title": "Alfonso Krueger",
+              "secondary": "Data processor",
+              "img": "img/270x414_3.jpg"
+              })
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              @@include('../team/templates/persone-circle.html', {
+              "title": "Rylie Shea",
+              "secondary": "Computer analyst",
+              "img": "img/270x414_4.jpg"
+              })
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              @@include('../team/templates/persone-circle.html', {
+              "title": "Kameron Webb",
+              "secondary": "Journalist",
+              "img": "img/270x414_5.jpg"
+              })
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              @@include('../team/templates/persone-circle.html', {
+              "title": "Julissa Mora",
+              "secondary": "Tarot Reader",
+              "img": "img/270x414_6.jpg"
+              })
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              @@include('../team/templates/persone-circle.html', {
+              "title": "Giselle Wright",
+              "secondary": "Social worker",
+              "img": "img/270x414_7.jpg"
+              })
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              @@include('../team/templates/persone-circle.html', {
+              "title": "Chace Finley",
+              "secondary": "Homemaker",
+              "img": "img/270x414_8.jpg"
+              })
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              @@include('../team/templates/persone-circle.html', {
+              "title": "Brooklyn Li",
+              "secondary": "Assembly line worker",
+              "img": "img/270x414_2.jpg"
+              })
+            </div>
+          </div>
+          <div class="text-center mt-60 mt-sm-100">
+            @@include('../buttons/templates/buttons-invert.html', {
+            "class": "icon__btn icon__btn-anim icon__btn-md icon__btn-invert",
+            "tag": "a",
+            "href": "#"
+            })
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-20">
+        <div class="text-center mb-60">
+          @@include('../titles/templates/trend.html',{
+          "text": {
+          "main": "Our Blog",
+          "main_customClass": "text-uppercase mb-25 brk-color-base-3",
+          "divider": "true"
+          }
+          })
+        </div>
+        <div class="filmstrip-slider slider--scroll brk-z-index-10 lazyload" data-spacebetween="30" data-brk-library="slider__swiper"
+          data-bg="img/demo_travel_agency/1920x749_1.jpg">
+          <div class="brk-abs-bg-overlay brk-base-gradient-34"></div>
+          <div class="filmstrip-slider-container swiper-container">
+            <div class="swiper-wrapper">
+
+              @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+              "title":"The development will deliver 39 new buildings",
+              "paragraph":"The practices Wickside project will deliver 475 homes and 300 jobs on a 2.9ha former waste transfer site at Hackney Wick.",
+              "img":"img/demo_travel_agency/370x370_1.jpg",
+              "customClass":"swiper-slide brk-base-box-shadow",
+              "permalink_bg":"brk-base-gradient-34"
+              })
+
+              @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+              "title":"BUJ Architects and Ash Sakula Architects",
+              "paragraph":"Olympic Park that falls under the remit of the London Legacy Development Corporation.",
+              "img":"img/demo_travel_agency/370x370_2.jpg",
+              "customClass":"swiper-slide brk-base-box-shadow",
+              "permalink_bg":"brk-base-gradient-34"
+              })
+
+              @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+              "title":"Wickside project will deliver",
+              "paragraph":"The practices’ Wickside project will deliver 475 homes and 300 jobs on a 2.9ha former waste transfer site at Hackney Wick. ",
+              "img":"img/demo_travel_agency/370x370_3.jpg",
+              "customClass":"swiper-slide brk-base-box-shadow",
+              "permalink_bg":"brk-base-gradient-34"
+              })
+
+              @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+              "title":"The final report by Dame Judith Hackitt",
+              "paragraph":"Fire and Rescue Authorities (FRAs) and the Health and Safety Executive (HSE), to oversee the approval and regulation of buildings higher than 10-storeys.",
+              "img":"img/demo_travel_agency/370x370_4.jpg",
+              "customClass":"swiper-slide brk-base-box-shadow",
+              "permalink_bg":"brk-base-gradient-34"
+              })
+
+              @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+              "title":"As widely expected, Hackitt has declined to proscribe",
+              "paragraph":"Her report instead says it is for the construction industry to 'respond to the [building regulations] by shaping detailed guidance to support the delivery of those outcomes.'",
+              "img":"img/demo_travel_agency/370x370_5.jpg",
+              "customClass":"swiper-slide brk-base-box-shadow",
+              "permalink_bg":"brk-base-gradient-34"
+              })
+
+              @@include("../../modules/content-sliders/templates/filmstrip-card.html",{
+              "title":"Aquatic: Stock Photography from Under The Sea",
+              "paragraph":"Deep below the ocean's surface there is a vibrant, vast ecosystem full of life: a rich diversity of marine life.",
+              "img":"img/demo_travel_agency/370x370_6.jpg",
+              "customClass":"swiper-slide brk-base-box-shadow",
+              "permalink_bg":"brk-base-gradient-34"
+              })
+            </div>
+          </div>
+
+          <div class="brk-scrollbar">
+            <div class="brk-scrollbar-track"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-80 pb-40">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-xl-4">
+              @@include("../image-caption-parallax/templates/image-parallax-2.html",{
+                "subtitle": "Tyne and Wear",
+                "title": "Tour to Tyne and Wear",
+                "subtitleCustomClass": "font__family-montserrat font__size-13 font__weight-normal line__height-16 letter-spacing-100",
+                "titleCustomClass": "font__family-montserrat font__size-34 font__weight-normal line__height-40",
+                "img": "img/demo_travel_agency/330x460_1.jpg",
+                "overlay": "brk-base-gradient-34",
+                "customClass": "mb-100"
+              })
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              @@include("../image-caption-parallax/templates/image-parallax-2.html",{
+                "subtitle": "Leeds",
+                "title": "Tour to Lincolnshire",
+                "subtitleCustomClass": "font__family-montserrat font__size-13 font__weight-normal line__height-16 letter-spacing-100",
+                "titleCustomClass": "font__family-montserrat font__size-34 font__weight-normal line__height-40",
+                "img": "img/demo_travel_agency/330x460_2.jpg",
+                "overlay": "brk-base-gradient-34",
+                "customClass": "mb-100"
+              })
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              @@include("../image-caption-parallax/templates/image-parallax-2.html",{
+                "subtitle": "Isle of Wight",
+                "title": "Tour to Isle of Wight",
+                "subtitleCustomClass": "font__family-montserrat font__size-13 font__weight-normal line__height-16 letter-spacing-100",
+                "titleCustomClass": "font__family-montserrat font__size-34 font__weight-normal line__height-40",
+                "img": "img/demo_travel_agency/330x460_3.jpg",
+                "overlay": "brk-base-gradient-34",
+                "customClass": "mb-100"
+              })
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  @@include("../../modules/footer/templates/footer-3.html",{
+  "demo": "true",
+  "overlay": "brk-base-gradient-34"
+  })
+
+  @@include('../../assets/templates/footer.html',{
+  "demo": "true"
+  })
+</body>

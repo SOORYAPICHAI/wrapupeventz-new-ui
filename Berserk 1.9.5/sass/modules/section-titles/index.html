@@ -1,0 +1,59 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Section Titles"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- Section Title 1 -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> Extra Headings</h3>
+    	</div>
+    	<div class="container mt-70 mt-md-130">
+        @@include('./templates/first.html')
+    	</div>
+    </div>
+
+    <!-- Section Title 2 -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> Extra Headings</h3>
+    	</div>
+    	<div class="bg-purple mt-70 mt-md-130 pt-220 pb-110">
+    		<div class="container all-light">
+          @@include('./templates/second.html')
+    		</div>
+    	</div>
+    </div>
+
+    <!-- Section Title 3 -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">03</span> Extra Headings</h3>
+    	</div>
+    	<div class="container mt-200">
+         @@include('./templates/third.html')        
+      </div>
+    </div>
+
+
+	</main>
+
+</div>
+
+
+  @@include("../../assets/templates/footer.html")
+
+</body>
+</html>

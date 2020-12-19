@@ -1,0 +1,11 @@
+<div class="progress__wrapper progress__stripe @@if(context.customClass){@@customClass}" data-brk-library="component__progress_bar">
+  <h5 class="font__family-montserrat font__size-16 font__weight-bold progress__title">
+     @@if(!context.title){Hard Work} @@if(context.title){@@title}
+  </h5>
+  <div class="progress">
+    <span class="font__family-montserrat font__size-16 font__weight-bold progress__bar-counter hide">@@if(context.valueCur){@@valueCur}@@if(!context.valueCur){100}</span>
+    <div data-valuemax="@@if(context.valueMax){@@valueMax}@@if(!context.valueMax){100}" 
+         data-valuemin="@@if(context.valueMin){@@valueMin}@@if(!context.valueMin){0}" 
+         data-valuenow="@@if(context.valueCur){@@valueCur}@@if(!context.valueCur){100}" class="progress__bar"></div>
+  </div>
+</div>

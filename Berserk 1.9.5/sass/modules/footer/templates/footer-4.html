@@ -1,0 +1,48 @@
+<footer class="brk-footer position-relative" @@if(context.id){id="@@id"} data-brk-library="component__footer">
+  <div class="brk-footer__wrapper @@if(context.animated === "true"){brk-footer__wrapper_animated}">
+    <div class="brk-footer__bg-container pt-50 pb-50">
+      <span class="brk-footer__bg-left brk-base-bg-gradient-24"></span>
+      <span class="brk-footer__bg-right brk-base-bg-gradient-top"></span>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h6 class="brk-white-font-color font__family-montserrat font__size-36 font__weight-bold line__height-40 mb-40 text-center text-sm-left">Follow Us</h6>
+            <div class="d-flex align-items-center justify-content-sm-between justify-content-center flex-wrap">
+              @@include('../../social-links/templates/simple-social-links.html',{
+                "socialIcon1":"<i class='fab fa-twitter'></i>",
+                "socialIcon2":"<i class='fab fa-instagram'></i>",
+                "socialIcon3":"<i class='fab fa-google-plus-g'></i>",
+                "socialIcon4":"<i class='fab fa-youtube'></i>",
+                "socialIcon5":"<i class='fab fa-vimeo'></i>",
+                "socialIcon6":"<i class='fab fa-vk'></i>",
+                "customContainerClass":"brk-white-font-color mb-10 font__size-15 brk-social-links_footer-4"
+              })
+              @@include('../../buttons/templates/buttons.html',{
+                "tag": "a",
+                "type": "btn-prime",
+                "customClass": "border-radius-25 btn-no-shadow font__family-open-sans font__weight-bold font__size-16 btn-prime_footer-4 pl-40 pr-40 mr-40 mb-10 ml-0 mt-0 mr-xs-0",
+                "text": "Work with us",
+                "size": "md",
+                "icon": "<i class='fa fa-link' aria-hidden='true'></i>"
+              })
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="ml-md-5">
+              <h6 class="brk-white-font-color font__family-montserrat font__size-36 font__weight-bold line__height-40 mb-45 mt-xs-20">Subscribe now</h6>
+              <form action="#" class="brk-subscribe-mail brk-form-strict brk-form-strict_footer-4" data-brk-library="component__form,recaptcha">
+                <input type="email" placeholder="Email" name="EMAIL">
+                <button type="submit" class="font__size-16 d-flex align-items-center justify-content-center">
+                  <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </button>
+              </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="brk-base-bg-gradient-26 d-flex align-items-center justify-content-center pt-30 pb-30 brk-footer__border-gradient">
+      <p class="brk-dark-font-color font__family-open-sans font__size-14">© 2018 <span class="brk-white-font-color font__weight-bold">Berserk</span> All rights reserved</p>
+    </div>
+  </div>
+</footer>

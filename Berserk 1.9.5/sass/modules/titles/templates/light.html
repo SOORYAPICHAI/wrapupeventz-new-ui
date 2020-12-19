@@ -1,0 +1,17 @@
+@@if (context.text){
+	@@if (context.text.before){
+		<h5 class="font__family-montserrat font__weight-light text-uppercase font__size-18 text-blue" data-brk-library="component__title">@@text.before</h5>
+	}
+	@@if (context.text.main){
+    <h2 class="font__family-roboto font__weight-thin @@if(context.text.main_line__height){line__height-@@text.main_line__height} @@if(!context.text.main_line__height){line__height-60} @@if(context.text.main_font__size){font__size-@@text.main_font__size} @@if(!context.text.main_font__size){font__size-56} text-uppercase letter-spacing-60 mt-20" data-brk-library="component__title">@@text.main</h2>
+	}
+	@@if (context.text.secondary){
+		<h2 class="font__family-roboto font__weight-normal @@if(context.text.secondary_line__height){line__height-@@text.secondary_line__height} @@if(!context.text.secondary_line__height){line__height-60} @@if(context.text.secondary_font__size){font__size-@@text.secondary_font__size} @@if(!context.text.secondary_font__size){font__size-56} text-uppercase letter-spacing-60" data-brk-library="component__title">@@text.secondary</h2>
+	}
+	@@if (context.text.divider){
+		<hr class='divider wow zoomIn @@if(context.text.divider_customMargin){@@text.divider_customMargin} @@if(context.text.divider_position === "left"){ml-md-0} @@if(context.text.divider_position === "right"){mr-0}' data-brk-library="component__title">
+	}
+	@@if (context.text.after){
+		<p class="font__family-roboto font__size-16 font__weight-light @@if(context.text.after_color){@@text.after_color} @@if(context.text.after_customClass){@@text.after_customClass}" data-brk-library="component__title">@@text.after</p>
+	}
+}

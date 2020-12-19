@@ -1,0 +1,41 @@
+<div class="flip-box brk-sc-flip-four" data-brk-library="component__shop_flip,component__flip_box_css">
+  <div class="flip @@if(context.styleFlip){@@styleFlip} @@if(!context.styleFlip){flip_horizontal}">
+    <div class="flip__front brk-sc-flip-four__front">
+      <div class="brk-sc-flip-four__col">
+        <div class="d-flex flex-wrap">
+          <span class="brk-sc-flip-four__cat font__family-montserrat brk-bg-primary brk-white-font-color">@@cat</span>
+          @@if(context.stick){<span class="brk-sc-flip-four__stick">@@stick</span>}
+        </div>
+        <div class="brk-sc-flip-four__title">
+          <h4 class="font__family-montserrat font__weight-bold">@@title</h4>
+        </div>
+        <div class="brk-sc-flip-four__old-price font__family-montserrat font__weight-medium">@@oldPrice</div>
+        <div class="brk-sc-flip-four__price brk-base-font-color font__family-montserrat font__weight-bold">@@price</div>
+      </div>
+      <div class="brk-sc-flip-four__thumb"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@thumb" class="lazyload" alt="alt"></div>
+    </div>
+    <div class="flip__back brk-sc-flip-four__back brk-base-bg-gradient-5">
+      <div class="brk-sc-flip-four__col-back">
+        <div>
+          <div class="d-flex flex-wrap">
+            <span class="brk-sc-flip-four__cat font__family-montserrat brk-bg-primary brk-white-font-color">@@cat</span>
+            @@if(context.stick){<span class="brk-sc-flip-four__stick">@@stick</span>}
+          </div>
+          <div class="brk-sc-flip-four__title brk-sc-flip-four__title_back">
+            <h4 class="font__family-montserrat font__weight-bold">@@titleBack</h4>
+          </div>
+        </div>
+
+        @@include('../../buttons/templates/buttons.html',{
+        "type": "btn-inside-out",
+        "text": " ",
+        "text_hover": " ",
+        "customClass": "font__family-open-sans font__weight-bold",
+        "icon": "<i class='fas fa-shopping-basket icon-inside' aria-hidden='true'></i>"
+        })
+      </div>
+      <div class="brk-sc-flip-four__description">@@description</div>
+      <div class="brk-sc-flip-four__thumb-back"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@@thumb" class="lazyload" alt="alt"></div>
+    </div>
+  </div>
+</div>

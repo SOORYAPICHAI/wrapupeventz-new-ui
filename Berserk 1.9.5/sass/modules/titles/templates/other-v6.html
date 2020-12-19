@@ -1,0 +1,25 @@
+@@if (context.text){
+  @@if (context.text.main){
+    <h2 
+      class='title__heading-06 title__heading-sub wow zoomIn 
+        @@if(context.white === "true"){title__heading-sub_light} 
+        @@if(context.text.main_dark === "true"){title__heading-sub_dark} 
+        @@if(context.text.main_colored === "true"){title__heading-sub_colored}
+        @@if(context.text.main_colorByClass === "true"){title__heading-sub_class-color}
+        @@if(context.text.main_customClass){@@text.main_customClass}
+        @@if(!context.text.main_customClass){font__family-montserrat font__size-56 font__weight-bold}' 
+      data-brk-library="component__title">
+      @@text.main
+    </h2>
+  }
+  @@if (context.text.secondary){
+    <h2 
+      class="title__heading-06 title__heading-main 
+        @@if(context.white === 'true'){title__heading-main_light}
+        @@if(!context.text.secondary_customClass){font__family-montserrat font__size-40 font__weight-ultralight}
+        @@if(context.text.secondary_customClass){@@text.secondary_customClass}" 
+      data-brk-library="component__title">
+      @@text.secondary
+    </h2>
+  }
+}

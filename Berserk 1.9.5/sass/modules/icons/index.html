@@ -1,0 +1,33 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Icons"
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {})
+  @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-50 mt-70">
+      <div class="container" data-brk-library="component__icons">
+        <div class="brk-fa-icons-container">
+          
+        </div>
+        <div class="brk-fa-icons-more text-center mt-80">
+          <button type="button" class="icon__btn icon__btn-anim icon__btn-md icon__btn-invert brk-library-rendered" data-brk-library="component__button">
+            <span class="before"></span> <i class="fas fa-sync" aria-hidden="true"></i> <span class="after"></span> <span class="bg"></span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+
+  @@include("../../assets/templates/footer.html")
+
+</body>
+
+</html>

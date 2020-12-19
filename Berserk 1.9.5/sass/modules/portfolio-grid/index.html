@@ -1,0 +1,25 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Portfolio Grid"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+  <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+  <main class="main-container mb-50">
+    @@include("../portfolio-grid/templates/cards.html")
+    @@include("../pagination/templates/seven.html")
+  </main>
+
+</div>
+
+
+@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

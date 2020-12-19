@@ -1,0 +1,85 @@
+<div 
+  class="brk-hosted-video 
+    @@if(context.short === 'true'){brk-hosted-video_short} 
+    @@if(context.inner === 'true'){brk-hosted-video_inner} 
+    @@if(context.large_shadow === 'true'){brk-hosted-video_large-shadow} 
+    @@if(context.only_btn === "true"){brk-hosted-video_no-poster}
+    @@if(context.customClass){@@customClass}"
+  data-brk-library="component__media_embeds,fancybox">
+
+  @@if(context.overlay !== "false"){
+    <div 
+      class="brk-abs-bg-overlay 
+        @@if(context.overlay){@@overlay}
+        @@if(!context.overlay){brk-hosted-video__before brk-base-bg-gradient-50deg-opacity-28}">
+  </div>
+  }
+  @@if(context.img !== "false"){
+    <img 
+    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+    data-src="@@if(context.img){@@img}@@if(!context.img){img/blog/hosted-video.png}" 
+    alt="alt" 
+    class="brk-hosted-video__img lazyload">
+  }
+  
+  @@if(context.body !== "false"){
+  <div class="brk-hosted-video__body">
+
+    @@if(context.inner !== "true"){
+      @@if(context.xs_button !== "true"){
+      <a class="icon__btn icon__btn_reverse icon__btn-circled icon__btn-lg fancybox brk-hosted-video__btn" href="http://dev.nikadevs.com/berserk-data/Placeholder_Video.mp4" data-brk-library="component__button">
+        <span class="before"></span>
+        <i class="fa fa-play" aria-hidden="true"></i>
+        <span class="after"></span>
+      </a>
+      }
+      @@if(context.xs_button === "true"){
+        <a class="icon__btn icon__btn_reverse icon__btn-anim icon__btn-sm fancybox brk-hosted-video__btn" href="https://www.youtube.com/watch?v=pvrQT8pYgBU" data-brk-library="component__button">
+          <span class="before"></span>
+          <i class="fa fa-play" aria-hidden="true" style="font-size: 11px;"></i>
+          <span class="after"></span>
+        </a>
+      }
+    }
+    @@if(context.inner === "true"){
+      <a href="#" class="icon__btn icon__btn_reverse icon__btn-circled icon__btn-lg fancybox brk-hosted-video__btn" type="button" data-brk-library="component__button">
+          <span class="before"></span>
+          <i class="fa fa-play" aria-hidden="true"></i>
+          <span class="after"></span>
+      </a>
+    }
+
+    
+    @@if(context.info == "true"){
+    <div class="brk-hosted-video__description">
+      <div class="brk-hosted-video__about">
+        <div class="brk-hosted-video__information font__family-montserrat font__weight-semibold font__size-13 line__height-14">
+          <a href="#" class="brk-hosted-video__date brk-dark-font-color">
+            <i class="far fa-clock brk-hosted-video__date-icon"></i>Aug 12, 17
+          </a>
+          <a href="#" class="brk-hosted-video__comments brk-dark-font-color">
+            <i class="far fa-comments brk-hosted-video__comments-icon"></i> 12
+          </a>
+        </div>
+        <h2 class="brk-hosted-video__title font__family-montserrat font__size-24 font__weight-bold line__height-28 text-left">Hosted Video</h2>
+      </div>
+      <p class="brk-hosted-video__paragraph text-left font__family-open-sans font__size-16 font__weight-normal line__height-26">Aenean vulputate eleifend tellus. Aenean leo ligula, ttitor eu, nsequ vitae, eleifend ac, enim. Aliquam lorem ante,
+        dapibus in, viverra.</p>
+    </div>
+    }
+  </div>
+  }
+
+  @@if(context.only_btn === "true"){
+    <a href="https://www.youtube.com/watch?v=pvrQT8pYgBU" class="icon__btn icon__btn-lg icon__btn-circled icon__btn-circled_active  brk-hosted-video__btn fancybox" data-brk-library="component__button">
+      <i class="fa fa-play icon-inside" aria-hidden="true"></i> 
+      <span class="before"></span>
+      <span class="after"></span>
+    </a>
+  }
+
+
+  <video class="brk-hosted-video__video-container" controls id="id">
+    <source src="http://dev.nikadevs.com/berserk-data/Placeholder_Video.mp4" type="video/mp4">
+  </video>
+</div>

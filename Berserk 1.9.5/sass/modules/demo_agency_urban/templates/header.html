@@ -1,0 +1,71 @@
+<section>
+<div class="brk-header-mobile">
+  <div class="brk-header-mobile__open brk-header-mobile__open_white">
+    <span></span>
+  </div>
+
+  <div class="brk-header-mobile__logo">
+    <a href="#"><img src="img/logo-2.png" alt=""></a>
+  </div>
+</div><!-- /.brk-header-mobile -->
+
+<header class="brk-header brk-header_style-1 brk-header_color-white brk-header_skin-1 position-fixed d-flex flex-column" data-logo-src="img/logo-dark-2.png" data-bg-mobile="img/brk-bg-mobile-menu.jpg" data-brk-library="component__header">
+
+<!-- MAIN BAR -->
+<div class="brk-header__main-bar"
+     style="height: 72px;">
+
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-2 align-self-lg-center d-none d-lg-block">
+        <div class="pl-10">
+          @@include('../../../modules/header-1/templates/brk-header-logo.html', {
+          "logo_1": "img/logo-1.png",
+          "logo_2": "img/logo-dark-1.png"
+          })
+        </div>
+      </div>
+      <div class="col-lg align-self-lg-stretch text-lg-right">
+        <nav class="brk-nav brk-header__item">
+          <ul class="brk-nav__menu">
+            @@include("../../../modules/header-1/templates/brk-nav-home.html", {
+            "link": "#header"
+            })
+            <li>
+              <a href="#about">
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio">
+                <span>Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#prices">
+                <span>Prices</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-lg-1 align-self-lg-stretch text-lg-right">
+        @@include('../../../modules/header-1/templates/brk-info-menu-open.html',{
+        "skin": "brk-info-menu-open_skin-4"
+        })
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- End MAIN BAR -->
+
+  @@include('../../header-1/templates/brk-info-menu.html',{})
+
+</header><!-- /.brk-header -->
+</section>

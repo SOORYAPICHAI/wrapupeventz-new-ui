@@ -1,0 +1,87 @@
+<div class="brk-gradien-carousel position-relative brk-z-index-10" data-brk-library="component__gallery_sliders,fancybox">
+
+  @@include('sort-list.html',{
+  "custom-container-class":"brk-sort-list_full-width brk-sort-list_bottom-indicators mb-40",
+  "sort-value1":"all",
+  "sort-value2":"branding",
+  "sort-value3":"photography"
+
+  })
+
+  <div class="@@if(!context.customClass){brk-bordered-bg pt-100 pb-130}@@if(context.customClass){@@customClass}">
+    @@if(context.onlySlider !== "true"){
+    <div class="brk-bordered-bg__img @@if(context.pattern === "true"){brk-bg-pattern brk-abs-overlay} @@if(!context.bgImg){brk-abs-overlay brk-bgi-1 brk-bg-pattern}"
+    @@if(context.bgImg){style="background-image: url('@@bgImg');"}>
+  </div>
+  <div class="brk-abs-overlay @@if(context.overlay){@@overlay}@@if(!context.overlay){brk-base-bg-gradient-10deg}"></div>
+  }
+
+  <div class="brk-gradien-carousel__items slick-loading">
+    <div>
+      @@include('gradient-card.html',{
+      "container-custom-class":"brk-gradient-card_hover-sizer",
+      "filter":"photography",
+      "img-src":"@@if(context.img_1){@@img_1}@@if(!context.img_1){img/560x379_1.jpg}",
+      "overlay-class":"brk-base-bg-gradient-6-black"
+      })
+    </div>
+    <div>
+      @@include('gradient-card.html',{
+      "container-custom-class":"brk-gradient-card_hover-sizer",
+      "filter":"branding",
+      "img-src":"@@if(context.img_2){@@img_2}@@if(!context.img_2){img/560x379_2.jpg}",
+      "overlay-class":"brk-base-bg-gradient-6-black"
+      })
+    </div>
+    <div>
+      @@include('gradient-card.html',{
+      "container-custom-class":"brk-gradient-card_hover-sizer",
+      "filter":"branding",
+      "img-src":"@@if(context.img_3){@@img_3}@@if(!context.img_3){img/560x379_3.jpg}",
+      "overlay-class":"brk-base-bg-gradient-6-black"
+      })
+    </div>
+    <div>
+      @@include('gradient-card.html',{
+      "container-custom-class":"brk-gradient-card_hover-sizer",
+      "filter":"photography",
+      "img-src":"@@if(context.img_4){@@img_4}@@if(!context.img_4){img/560x379_4.jpg}",
+      "overlay-class":"brk-base-bg-gradient-6-black"
+      })
+    </div>
+    <div>
+      @@include('gradient-card.html',{
+      "container-custom-class":"brk-gradient-card_hover-sizer",
+      "filter":"branding",
+      "img-src":"@@if(context.img_5){@@img_5}@@if(!context.img_5){img/560x379_3.jpg}",
+      "overlay-class":"brk-base-bg-gradient-6-black"
+      })
+    </div>
+    <div>
+      @@include('gradient-card.html',{
+      "container-custom-class":"brk-gradient-card_hover-sizer",
+      "filter":"branding",
+      "img-src":"@@if(context.img_6){@@img_6}@@if(!context.img_6){img/560x379_1.jpg}",
+      "overlay-class":"brk-base-bg-gradient-6-black"
+      })
+    </div>
+    <div>
+      @@include('gradient-card.html',{
+      "container-custom-class":"brk-gradient-card_hover-sizer",
+      "filter":"branding",
+      "img-src":"@@if(context.img_7){@@img_7}@@if(!context.img_7){img/560x379_4.jpg}",
+      "overlay-class":"brk-base-bg-gradient-6-black"
+      })
+    </div>
+    <div>
+      @@include('gradient-card.html',{
+      "container-custom-class":"brk-gradient-card_hover-sizer",
+      "filter":"branding",
+      "img-src":"@@if(context.img_8){@@img_8}@@if(!context.img_8){img/560x379_3.jpg}",
+      "overlay-class":"brk-base-bg-gradient-6-black"
+      })
+    </div>
+  </div>
+</div>
+
+</div>

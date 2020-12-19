@@ -1,0 +1,14 @@
+<ul class="list-angle @@if(context.customClass){@@customClass} @@if(!context.customClass){brk-secondary-font-color font__family-roboto font__weight-light font__size-15 line__height-28}" data-brk-library="component__list">
+    @@if(!context.list){
+      <li>Aenean massa cum sociis natoque penatibus</li>
+      <li>Vivamus elementum semper nisi.vulputate eleifend tellus</li>
+      <li>Etiam ultricies nisi vel augue curabitur ullamcorper</li>
+    }
+    @@if(context.list){
+      @@for (var i = 0; i < list.length; i++) {
+        <li>`+list[i]+`</li>
+      }
+    }
+  </ul>
+  
+        

@@ -1,0 +1,17 @@
+@@if (context.text){
+	@@if (context.text.main){
+		<h2 class="font__family-montserrat-alt font__weight-bold line__height-60 font__size-56 text-uppercase" data-brk-library="component__title">@@text.main
+		}
+		@@if (context.text.secondary){
+		<br>@@text.secondary</h2>
+	}
+	@@if (!context.text.secondary){
+		</h2>
+	}
+	@@if (context.text.divider){
+		<div class="divider-layers wow zoomIn" data-brk-library="component__title"><span class="before"></span></div>
+	}
+	@@if (context.text.after){
+		<p class="font__size-16 font__family-oxygen font__weight-light line__height-26 text-dark" data-brk-library="component__title">@@text.after</p>
+	}
+}

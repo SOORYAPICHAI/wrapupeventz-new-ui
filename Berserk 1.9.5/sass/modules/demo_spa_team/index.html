@@ -1,0 +1,199 @@
+@@include('../../assets/templates/head.html',{
+"titlePage": "Spa & Beauty - Team",
+"themeSkin": "brk-pink.css"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+@@include("../../modules/header-vertical-1/templates/style-header-vertical-1.html",{
+"logo_1": "img/demo_spa/logo-dark-1.png",
+"logo_2": "img/demo_spa/logo-dark-1.png",
+"only_header": "true",
+"lang": "false",
+"cart": "false",
+"logo": "false",
+"customNav": "true",
+"title1": "Home",
+"link1": "/index.html",
+"title2": "About Us",
+"link2": "/demo_spa_about.html",
+"submenu2": {
+"subtitle1": "About",
+"sublink1": "/demo_spa_about.html",
+"subtitle2": "Services",
+"sublink2": "/demo_spa_services.html",
+"subtitle3": "Team",
+"sublink3": "/demo_spa_team.html",
+"subtitle4": "Partners",
+"sublink4": "/demo_spa_partners.html"
+},
+"title3": "News",
+"link3": "/demo_spa_news.html",
+"title4": "Testimonials",
+"link4": "/demo_spa_testimonials.html",
+"title5": "Contact Us",
+"link5": "/demo_spa_contact.html"
+})
+<div class="main-wrapper">
+  <main class="main-container">
+
+    @@include('../../modules/breadcrumbs/templates/simple.html')
+
+    <h1 class="sr-only">Spa & Beauty - Team</h1>
+
+
+    <section class="pt-80 pb-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3">
+            @@include('../../modules/team/templates/strict-card.html',{
+            "title": "Leana K.A",
+            "img": "img/demo_spa/270x414_1.jpg",
+            "colored": "true"
+            })
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            @@include('../../modules/team/templates/strict-card.html',{
+            "title": "Samanta J.D",
+            "img": "img/demo_spa/270x414_2.jpg",
+            "colored": "true"
+            })
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            @@include('../../modules/team/templates/strict-card.html',{
+            "title": "Marry W.S",
+            "img": "img/demo_spa/270x414_3.jpg",
+            "colored": "true"
+            })
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            @@include('../../modules/team/templates/strict-card.html',{
+            "title": "Gerar Q.W",
+            "img": "img/demo_spa/270x414_4.jpg",
+            "colored": "true"
+            })
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            @@include('../../modules/team/templates/strict-card.html',{
+            "title": "Gerar Q.W",
+            "img": "img/demo_spa/270x414_5.jpg",
+            "colored": "true"
+            })
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            @@include('../../modules/team/templates/strict-card.html',{
+            "title": "Marry W.S",
+            "img": "img/demo_spa/270x414_6.jpg",
+            "colored": "true"
+            })
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            @@include('../../modules/team/templates/strict-card.html',{
+            "title": "Gerar Q.W",
+            "img": "img/demo_spa/270x414_7.jpg",
+            "colored": "true"
+            })
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            @@include('../../modules/team/templates/strict-card.html',{
+            "title": "Marry W.S",
+            "img": "img/demo_spa/270x414_8.jpg",
+            "colored": "true"
+            })
+          </div>
+        </div>
+        <div class="text-center mt-80">
+          <a href="#" class="icon__btn icon__btn-anim icon__btn-md icon__btn-invert" data-brk-library="component__button">
+            <span class="before"></span>
+            <i class="fas fa-sync" aria-hidden="true"></i>
+            <span class="after"></span>
+            <span class="bg"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="position-relative z-index-1 pt-lg-90 pt-70 pb-50 lazyload" data-bg="img/demo_spa/1920x600_1.jpg">
+        <div class="brk-abs-overlay brk-base-gradient-32"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <h2 class="brk-white-font-color font__family-montserrat font__size-56 line__height-60 text-uppercase mb-40 text-center text-lg-left">
+                <span class="font__weight-light">Our Office</span><br>
+                <span class="font__family-playfair font__weight-normal brk-base-font-color">& </span><span class="font__weight-bold">atmosphere</span>
+              </h2>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex align-items-end h-100">
+                <p class="brk-white-font-color font__size-16 font__weight-normal line__height-26 mb-40 text-center text-lg-left">
+                  Aenean vulputate eleifend tellus. Aenean leoula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in. Aenean vulputate eleifend tellus. Aenean leoula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="brk-strict-carousel pb-20">
+        <div class="container">
+          <div class="brk-strict-carousel__items slick-loading" data-brk-library="component__gallery_sliders">
+            <div>
+              @@include('../../modules/gallery-sliders/templates/strict-card.html',{
+              "img-src":"img/demo_spa/400x400_1.jpg",
+              "title":"some title here"
+              })
+            </div>
+            <div>
+              @@include('../../modules/gallery-sliders/templates/strict-card.html',{
+              "img-src":"img/demo_spa/400x400_2.jpg",
+              "title":"some title here"
+              })
+            </div>
+            <div>
+              @@include('../../modules/gallery-sliders/templates/strict-card.html',{
+              "img-src":"img/demo_spa/400x400_3.jpg",
+              "title":"some title here"
+              })
+            </div>
+            <div>
+              @@include('../../modules/gallery-sliders/templates/strict-card.html',{
+              "img-src":"img/demo_spa/400x400_4.jpg",
+              "title":"some title here"
+              })
+            </div>
+            <div>
+              @@include('../../modules/gallery-sliders/templates/strict-card.html',{
+              "img-src":"img/demo_spa/400x400_5.jpg",
+              "title":"some title here"
+              })
+            </div>
+          </div>
+
+          <div class="brk-strict-carousel__control">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        @@include("../../modules/tabs/templates/side-left.html",{
+        "position":"right",
+        "customClass": "mt-80 mb-90"
+        })
+      </div>
+    </section>
+
+  </main>
+</div>
+
+@@include("../../modules/footer/templates/footer-12.html",{
+"demo": "true"
+})
+
+@@include('../../assets/templates/footer.html',{
+  "demo": "true"
+})
+
+</body>

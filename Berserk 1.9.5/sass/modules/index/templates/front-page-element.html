@@ -1,0 +1,1082 @@
+<div class="brk-page-intro pb-30" data-brk-library="component__index">
+  <div class="brk-page-intro__header brk-base-bg-gradient-90deg" style="background-image: url(img/page-intro/1920x760_1.jpg)">
+    <div class="brk-page-intro__before brk-base-bg-gradient-10deg"></div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl-2 col-lg-1 d-flex flex-column align-items-center pt-70">
+          @@include('../../buttons/templates/buttons.html',{
+            "tag": "a",
+            "href": "https://www.youtube.com/watch?v=cZM8OoYu4So&feature=youtu.be",
+            "type": "icon__btn",
+            "customClass": "icon__btn-circled icon__btn-circled_active icon__btn-white",
+            "icon": "<i class='fas fa-play icon-inside' aria-hidden='true'></i>",
+            "size": "sm",
+            "attr": "target='_blank'"
+          })
+          <a href="https://www.youtube.com/watch?v=cZM8OoYu4So&feature=youtu.be" target="_blank" class="text-white font__family-montserrat font__size-16 line__height-20 mt-20 z-index-1">Template <br> Overview</a>
+        </div>
+        <div class="col-xl-8 col-lg-10 col-12">
+          <div class="brk-page-intro__logo-search pt-70 pb-80">
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-3">
+                <img src="img/logo-big.png" alt="alt">
+              </div>
+              <div class="col-md-9">
+                <form class="brk-page-intro__search mt-md-0 mt-20 pl-md-30 pl-0" action="/">
+                  <input class="brk-page-intro__search--input"
+                         data-placeholder="For example: Commerce, For example: Gallery, For example: Portfolio"
+                         type="search"
+                         placeholder="For example: Commerce"
+                         data-keywords="apps, applications, business, onepage, agency, demo, homepage, landing, creative, portfolio, corporate, slider, megamenu, professional, freelance, gallery, photography, digital, logistic, art, artistry, exhibition, museum, construction, building, house, blog, news, magazine, horizontal-menu, spa, beauty, service, manicure, salon, price, hairdresser, shop, commerce, e-commerce, products, sell, cart, header, table, progress, menu, shortcodes, elements, components, grid, breadcrumbs, footers, forum, columns, masonry, isotope, accordions, alerts, app, backgrounds, buttons, call, action, carousel, categories, lists, content, countdown, counter, delimiters, dividers, flip, boxes, form, contact, google, maps, hotspots, image, parallax, frames, info, box, media, embeds, pagination, panels, pricing, bar, section, sequence, shape, social, blocks, steps, tabbed, tab, tabs, tags, tag, team, testimonials, tiles, titles, typing, rotator, login, signin, signup, log-in, ,sign-in, sign-up, authentication, registration, coming, soon, compare, winter, snow, mountains, ski, snowboard, trip, travel, subscribe">
+                  <div class="brk-page-intro__search--submit"><i class="fas fa-search"></i></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-2 col-lg-1"></div>
+        <div class="col-12">
+          <ul class="brk-page-intro__sorting d-flex flex-wrap justify-content-center font__family-montserrat">
+            <li class="brk-page-intro__sorting-item checked" data-filter="*">
+              <div class="brk-page-intro__sorting-title">All</div>
+              <div class="brk-page-intro__sorting-before"></div>
+            </li>
+            <li class="brk-page-intro__sorting-item" data-filter=".filter-portfolio">
+              <div class="brk-page-intro__sorting-title">Portfolio</div>
+              <div class="brk-page-intro__sorting-before"></div>
+              <div class="brk-page-intro__sorting-count font__weight-semibold"></div>
+            </li>
+            <li class="brk-page-intro__sorting-item" data-filter=".filter-shop">
+              <div class="brk-page-intro__sorting-title">Shop</div>
+              <div class="brk-page-intro__sorting-before"></div>
+              <div class="brk-page-intro__sorting-count font__weight-semibold"></div>
+            </li>
+            <li class="brk-page-intro__sorting-item" data-filter=".filter-business">
+              <div class="brk-page-intro__sorting-title">Business</div>
+              <div class="brk-page-intro__sorting-before"></div>
+              <div class="brk-page-intro__sorting-count font__weight-semibold"></div>
+            </li>
+            <li class="brk-page-intro__sorting-item" data-filter=".filter-gallery">
+              <div class="brk-page-intro__sorting-title">Gallery</div>
+              <div class="brk-page-intro__sorting-before"></div>
+              <div class="brk-page-intro__sorting-count font__weight-semibold"></div>
+            </li>
+            <li class="brk-page-intro__sorting-item" data-filter=".filter-shortcodes">
+              <div class="brk-page-intro__sorting-title">Shortcodes</div>
+              <div class="brk-page-intro__sorting-before"></div>
+              <div class="brk-page-intro__sorting-count font__weight-semibold"></div>
+            </li>
+            <li class="brk-page-intro__sorting-item" data-filter=".filter-header">
+              <div class="brk-page-intro__sorting-title">Headers</div>
+              <div class="brk-page-intro__sorting-before"></div>
+              <div class="brk-page-intro__sorting-count font__weight-semibold"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    @@include('../../svg-pattern/templates/pattern-7.html', {
+    "only_bottom": "true"
+    })
+  </div>
+
+  <div class="brk-page-intro__body">
+    <div class="container">
+      <div id="scrollingPanel" class="brk-page-intro__items row font__family-montserrat">
+
+        <!--
+         {
+        "cat": "",
+        "link": "",
+        "img": "",
+        "title": "",
+        "subtitle": ""
+        }
+        -->
+
+        @@loop('../templates/front-page-item.html', [
+        {
+        "cat": "filter-business filter-onepage filter-agency filter-demo filter-homepage filter-landing filter-creative filter-corporate filter-slider",
+        "link": "demo_creative_agency.html",
+        "img": "img/page-intro/demo-creative-agency.jpg",
+        "title": "Creative Agency",
+        "subtitle": "Demo"
+        },
+        {
+        "cat": "filter-business filter-onepage filter-agency filter-demo filter-homepage filter-landing filter-creative filter-corporate filter-slider filter-apps filter-applications",
+        "link": "demo_agency_animation.html",
+        "img": "img/page-intro/demo-agency-animation.jpg",
+        "title": "Agency Animation",
+        "subtitle": "Demo"
+        },
+        {
+          "cat": "filter-onepage filter-demo filter-homepage filter-landing filter-winter filter-snow filter-mountains filter-ski filter-snowboard filter-trip filter-travel",
+          "link": "demo_winter_trip_agency.html",
+          "img": "img/page-intro/demo_winter_trip.jpg",
+          "title": "Winter Trip Agency",
+          "subtitle": "Demo",
+          "stick1": "New",
+          "stick2": "Version 1.6"
+        },
+        {
+          "cat": "filter-onepage filter-demo filter-homepage filter-landing filter-app filter-freelance",
+          "link": "demo_saas.html",
+          "img": "img/page-intro/demo_saas.jpg",
+          "title": "SAAS",
+          "subtitle": "Demo",
+          "stick1": "New",
+          "stick2": "Version 1.5"
+        },
+        {
+        "cat": "filter-business filter-onepage filter-agency filter-demo filter-homepage filter-landing filter-creative filter-corporate filter-slider",
+        "link": "demo_website_agency.html",
+        "img": "img/page-intro/demo-website-agency.jpg",
+        "title": "Website agency",
+        "subtitle": "Demo"
+        },
+        {
+        "cat": "filter-business filter-onepage filter-agency filter-demo filter-homepage filter-landing filter-creative filter-portfolio filter-corporate filter-slider",
+        "link": "demo_agency_fluid.html",
+        "img": "img/page-intro/demo-agency-fluid.jpg",
+        "title": "Agency Fluid",
+        "subtitle": "Demo"
+        },
+        {
+        "cat": "filter-business filter-onepage filter-agency filter-demo filter-homepage filter-portfolio filter-slider filter-megamenu filter-professional filter-freelance",
+        "link": "demo_freelance_blog.html",
+        "img": "img/page-intro/demo-freelance-blog.jpg",
+        "title": "Freelance blog",
+        "subtitle": "Demo"
+        },
+        {
+        "cat": "filter-portfolio filter-onepage filter-demo filter-homepage filter-landing filter-slider filter-freelance",
+        "link": "demo_minimalistic_portfolio.html",
+        "img": "img/page-intro/demo_minimalistic_portfolio.jpg",
+        "title": "Portfolio minimalistic",
+        "subtitle": "Demo",
+        "stick1": "New",
+        "stick2": "Version 1.3"
+        },
+        {
+        "cat": "filter-business filter-onepage filter-agency filter-demo filter-homepage filter-landing filter-creative filter-corporate filter-slider",
+        "link": "demo_agency_modern.html",
+        "img": "img/page-intro/demo-agency-modern.jpg",
+        "title": "agency Modern",
+        "subtitle": "Demo"
+        },
+        {
+        "cat": "filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-demo filter-homepage filter-business filter-slider",
+        "link": "demo_shop_drone.html",
+        "img": "img/page-intro/demo-shop-drone.jpg",
+        "title": "Shop Drone",
+        "subtitle": "Demo e-commerce"
+        },
+        {
+        "cat": "filter-business filter-agency filter-demo filter-homepage filter-slider filter-megamenu filter-professional",
+        "link": "demo_travel_agency.html",
+        "img": "img/page-intro/demo-travel-agency.jpg",
+        "title": "Travel agency",
+        "subtitle": "Demo",
+        "stick1": "New",
+        "stick2": "Version 1.1"
+        },
+        {
+        "cat": "filter-business filter-onepage filter-agency filter-demo filter-homepage filter-portfolio filter-slider filter-megamenu filter-professional filter-freelance",
+        "link": "demo_freelance_portfolio.html",
+        "img": "img/page-intro/demo-freelance-portfolio.jpg",
+        "title": "Freelance portfolio",
+        "subtitle": "Demo"
+        },
+        {
+        "cat": "filter-business filter-onepage filter-agency filter-demo filter-homepage filter-landing filter-creative filter-portfolio filter-corporate filter-slider",
+        "link": "demo_agency_urban.html",
+        "img": "img/page-intro/demo-agency-urban.jpg",
+        "title": "agency Urban",
+        "subtitle": "Demo"
+        },
+        {
+        "cat": "filter-demo filter-homepage filter-business",
+        "link": "home-page-1.html",
+        "img": "img/page-intro/home_page_5.jpg",
+        "title": "Home Page 1",
+        "subtitle": "HomePage"
+        },
+        {
+        "cat": "filter-demo filter-homepage filter-business",
+        "link": "home-page-2.html",
+        "img": "img/page-intro/home_page_7.jpg",
+        "title": "Home Page 2",
+        "subtitle": "HomePage"
+        },
+        {
+        "cat": "filter-demo filter-homepage filter-business",
+        "link": "home-page-3.html",
+        "img": "img/page-intro/home_page_8.jpg",
+        "title": "Home Page 3",
+        "subtitle": "HomePage"
+        },
+        {
+        "cat": "filter-demo filter-homepage filter-business",
+        "link": "home-page-4.html",
+        "img": "img/page-intro/home_page_9.jpg",
+        "title": "Home Page 4",
+        "subtitle": "HomePage"
+        },
+        {
+        "cat": "filter-demo filter-homepage filter-business",
+        "link": "home-page-5.html",
+        "img": "img/page-intro/home_page_11.jpg",
+        "title": "Home Page 5",
+        "subtitle": "HomePage"
+        },
+        {
+        "cat": "filter-demo filter-homepage filter-business",
+        "link": "home-page-6.html",
+        "img": "img/page-intro/home_page_12.jpg",
+        "title": "Home Page 6",
+        "subtitle": "HomePage"
+        },
+        {
+        "cat": "filter-onepage filter-demo filter-homepage filter-landing filter-portfolio filter-slider filter-gallery filter-photography filter-digital",
+        "link": "demo_photography.html",
+        "img": "img/page-intro/demo-photography.jpg",
+        "title": "photography",
+        "subtitle": "Demo"
+        },
+        {
+        "cat": "filter-logistic filter-corporate filter-slider filter-business filter-demo filter-homepage",
+        "link": "demo_logistic.html",
+        "img": "img/page-intro/demo-logistic.jpg",
+        "title": "logistic",
+        "subtitle": "Demo"
+        },
+        {
+        "cat": "filter-art filter-artistry filter-exhibition filter-museum filter-gallery filter-slider filter-demo filter-homepage",
+        "link": "demo_art.html",
+        "img": "img/page-intro/demo-art.jpg",
+        "title": "art",
+        "subtitle": "Demo"
+        },
+        {
+        "cat": "filter-construction filter-demo filter-homepage filter-building filter-house filter-business filter-slider",
+        "link": "demo_construction.html",
+        "img": "img/page-intro/demo-construction.jpg",
+        "title": "construction",
+        "subtitle": "Demo"
+        },
+        {
+          "cat": "filter-onepage filter-demo filter-homepage filter-landing filter-winter filter-snow filter-mountains filter-ski filter-snowboard filter-trip filter-travel",
+          "link": "demo_winter_trip_agency_cta.html",
+          "img": "img/page-intro/demo_winter_trip_agency_cta.jpg",
+          "title": "Winter Event Anounce",
+          "subtitle": "Demo",
+          "stick1": "New",
+          "stick2": "Version 1.7"
+        },
+        {
+        "cat": "filter-demo filter-homepage filter-blog filter-news filter-magazine filter-business filter-slider filter-horizontal-menu",
+        "link": "demo_magazine.html",
+        "img": "img/page-intro/demo-magazine.jpg",
+        "title": "magazine",
+        "subtitle": "Demo"
+        },
+        {
+        "cat": "filter-spa filter-beauty filter-service filter-manicure filter-salon filter-slider filter-demo filter-homepage filter-price filter-hairdresser",
+        "link": "demo_spa.html",
+        "img": "img/page-intro/demo-spa.jpg",
+        "title": "Spa & Beauty",
+        "subtitle": "Demo"
+        },
+        {
+        "cat": "filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-demo filter-homepage filter-business filter-slider",
+        "link": "demo_shop_video.html",
+        "img": "img/page-intro/demo-shop-video.jpg",
+        "title": "shop Video",
+        "subtitle": "Demo e-commerce"
+        },
+        {
+        "cat": "filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-demo filter-homepage filter-business filter-slider",
+        "link": "demo_product_landing.html",
+        "img": "img/page-intro/demo-product-landing.jpg",
+        "title": "Product landing",
+        "subtitle": "Demo e-commerce"
+        },
+        {
+        "cat": "filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-demo filter-homepage filter-business filter-slider",
+        "link": "demo_shop_modern.html",
+        "img": "img/page-intro/demo-shop-modern.jpg",
+        "title": "shop Modern",
+        "subtitle": "Demo e-commerce"
+        },
+        {
+        "cat": "filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-demo filter-homepage filter-business filter-slider",
+        "link": "demo_shop_electronics.html",
+        "img": "img/page-intro/demo-shop-electronics.jpg",
+        "title": "shop Electronics",
+        "subtitle": "Demo e-commerce"
+        },
+        {
+        "cat": "filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-demo filter-homepage filter-business filter-slider",
+        "link": "demo_shop_clothes.html",
+        "img": "img/page-intro/demo-shop-clothes.jpg",
+        "title": "shop Clothes",
+        "subtitle": "Demo e-commerce"
+        },
+        {
+        "cat": "filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-demo filter-homepage filter-business filter-slider",
+        "link": "demo_shop_trendy.html",
+        "img": "img/page-intro/demo-shop-trendy.jpg",
+        "title": "shop Trendy",
+        "subtitle": "Demo e-commerce"
+        },
+        {
+        "cat": "filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-demo filter-homepage filter-business filter-slider",
+        "link": "demo_product_sport.html",
+        "img": "img/page-intro/demo-product-sport.jpg",
+        "title": "Product Sport",
+        "subtitle": "Demo e-commerce"
+        },
+        {
+        "cat": "filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-demo filter-homepage filter-business filter-slider",
+        "link": "cart.html",
+        "img": "img/page-intro/cart.jpg",
+        "title": "Cart",
+        "subtitle": "Demo e-commerce",
+        "stick1": "New",
+        "stick2": "Version 1.2"
+        },
+        {
+        "cat": "filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-demo filter-homepage filter-business filter-slider",
+        "link": "checkout.html",
+        "img": "img/page-intro/checkout.jpg",
+        "title": "Checkout",
+        "subtitle": "Demo e-commerce",
+        "stick1": "New",
+        "stick2": "Version 1.2"
+        },
+        {
+        "cat": "filter-shop filter-compare filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-business filter-slider",
+        "link": "shop-components-compare.html",
+        "img": "img/page-intro/shop-components-compare.jpg",
+        "title": "Shop Compare",
+        "subtitle": "Shop",
+        "stick1": "New",
+        "stick2": "Version 1.3"
+        },
+        {
+        "cat": "filter-demo filter-homepage filter-business",
+        "link": "404.html",
+        "img": "img/page-intro/404.jpg",
+        "title": "404",
+        "subtitle": "Page not found",
+        "stick1": "New",
+        "stick2": "Version 1.2"
+        },
+        {
+        "cat": "filter-demo filter-homepage filter-business",
+        "link": "403.html",
+        "img": "img/page-intro/403.jpg",
+        "title": "403",
+        "subtitle": "Access denied",
+        "stick1": "New",
+        "stick2": "Version 1.2"
+        },
+        {
+        "cat": "filter-login filter-signin filter-signup filter-log-in filter-sign-in filter-sign-up filter-authentication filter-registration",
+        "link": "login.html",
+        "img": "img/page-intro/login.jpg",
+        "title": "Log in",
+        "subtitle": "Page",
+        "stick1": "New",
+        "stick2": "Version 1.2"
+        },
+        {
+        "cat": "filter-login filter-signin filter-signup filter-log-in filter-sign-in filter-sign-up filter-authentication filter-registration",
+        "link": "register.html",
+        "img": "img/page-intro/register.jpg",
+        "title": "Register",
+        "subtitle": "Page",
+        "stick1": "New",
+        "stick2": "Version 1.2"
+        },
+        {
+        "cat": "filter-coming filter-soon",
+        "link": "coming-soon.html",
+        "img": "img/page-intro/coming-soon.jpg",
+        "title": "Coming Soon",
+        "subtitle": "Page",
+        "stick1": "New",
+        "stick2": "Version 1.2"
+        },
+        {
+        "cat": "filter-coming filter-soon",
+        "link": "coming-soon-twitter.html",
+        "img": "img/page-intro/coming_soon_twitter.jpg",
+        "title": "Coming Soon Twitter",
+        "subtitle": "Page",
+        "stick1": "New",
+        "stick2": "Version 1.8"
+        },
+        {
+        "cat": "filter-contact filter-subscribe filter-maps",
+        "link": "contact-us-bussines.html",
+        "img": "img/page-intro/contact_us_bussines.jpg",
+        "title": "Contact Us Bussines",
+        "subtitle": "Page",
+        "stick1": "New",
+        "stick2": "Version 1.8.5"
+        },
+        {
+        "cat": "filter-blog filter-grid filter-elements filter-components",
+        "link": "blog-grid.html",
+        "img": "img/page-intro/blog_grid.jpg",
+        "title": "blog Grid",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-blog filter-elements filter-components",
+        "link": "blog-page.html",
+        "img": "img/page-intro/blog_item.jpg",
+        "title": "blog Item",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-blog filter-list filter-elements filter-components",
+        "link": "blog.html",
+        "img": "img/page-intro/blog_list.jpg",
+        "title": "blog List",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-breadcrumbs filter-elements filter-components",
+        "link": "breadcrumbs.html",
+        "img": "img/page-intro/breadcrumbs.jpg",
+        "title": "Breadcrumbs",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-footers filter-elements filter-components",
+        "link": "footer.html",
+        "img": "img/page-intro/footers.jpg",
+        "title": "Footers",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-forum filter-elements filter-components",
+        "link": "forum-main.html",
+        "img": "img/page-intro/forum_main.jpg",
+        "title": "Forum Main",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-forum filter-elements filter-components",
+        "link": "forum-post.html",
+        "img": "img/page-intro/forum_post.jpg",
+        "title": "Forum Post",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-forum filter-elements filter-components",
+        "link": "forum-author.html",
+        "img": "img/page-intro/forum_user-page.jpg",
+        "title": "Forum User Page",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-gallery filter-columns filter-elements filter-components",
+        "link": "gallery-2-cols.html",
+        "img": "img/page-intro/gallery_2-columns.jpg",
+        "title": "gallery 2 Columns",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-gallery filter-columns filter-elements filter-components",
+        "link": "gallery-cols.html",
+        "img": "img/page-intro/gallery_3-columns.jpg",
+        "title": "gallery 3 Columns",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-gallery filter-columns filter-masonry filter-elements filter-components",
+        "link": "gallery-3-cols-masonry.html",
+        "img": "img/page-intro/gallery_3-columns-masonry.jpg",
+        "title": "gallery 3 Columns Masonry",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-gallery filter-columns filter-elements filter-components",
+        "link": "gallery-4-cols.html",
+        "img": "img/page-intro/gallery_4-columns.jpg",
+        "title": "gallery 4 Columns",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-gallery filter-columns filter-elements filter-components",
+        "link": "gallery-4-cols-wide.html",
+        "img": "img/page-intro/gallery_4-columns-wide.jpg",
+        "title": "gallery 4 Columns Wide",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-gallery filter-columns filter-elements filter-components",
+        "link": "gallery-6-cols.html",
+        "img": "img/page-intro/gallery_6-columns.jpg",
+        "title": "gallery 6 Columns",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-1.html",
+        "img": "img/page-intro/header-1.jpg",
+        "title": "header #1",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-2.html",
+        "img": "img/page-intro/header-01.jpg",
+        "title": "header #2",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-vertical-1.html",
+        "img": "img/page-intro/header-02.jpg",
+        "title": "header #3",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-7-popup.html",
+        "img": "img/page-intro/header-03.jpg",
+        "title": "header #4",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-3.html",
+        "img": "img/page-intro/header-3.jpg",
+        "title": "header #5",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-4.html",
+        "img": "img/page-intro/header-4.jpg",
+        "title": "header #6",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-5.html",
+        "img": "img/page-intro/header-5.jpg",
+        "title": "header #7",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-6.html",
+        "img": "img/page-intro/header-6.jpg",
+        "title": "header #8",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-7.html",
+        "img": "img/page-intro/header-7.jpg",
+        "title": "header #9",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-8.html",
+        "img": "img/page-intro/header-8.jpg",
+        "title": "header #10",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-9.html",
+        "img": "img/page-intro/header-9.jpg",
+        "title": "header #11",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-10.html",
+        "img": "img/page-intro/header-10.jpg",
+        "title": "header #12",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-11.html",
+        "img": "img/page-intro/header-11.jpg",
+        "title": "header #13",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-12.html",
+        "img": "img/page-intro/header-12.jpg",
+        "title": "header #14",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-header filter-menu filter-elements filter-components",
+        "link": "header-13.html",
+        "img": "img/page-intro/header-13.jpg",
+        "title": "header #15",
+        "subtitle": "Header"
+        },
+        {
+        "cat": "filter-portfolio filter-elements filter-components",
+        "link": "portfolio-categories.html",
+        "img": "img/page-intro/portfolio_categories.jpg",
+        "title": "portfolio Categories",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-portfolio filter-elements filter-components",
+        "link": "portfolio-grid.html",
+        "img": "img/page-intro/portfolio_grid.jpg",
+        "title": "portfolio Grid",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-portfolio filter-isotope filter-elements filter-components",
+        "link": "portfolio-isotope.html",
+        "img": "img/page-intro/portfolio_isotope.jpg",
+        "title": "portfolio Isotope",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-portfolio filter-elements filter-components",
+        "link": "portfolio-list.html",
+        "img": "img/page-intro/portfolio_list.jpg",
+        "title": "portfolio List",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-portfolio filter-elements filter-components",
+        "link": "portfolio-masonry.html",
+        "img": "img/page-intro/portfolio_masonry.jpg",
+        "title": "portfolio Masonry",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-portfolio filter-elements filter-components",
+        "link": "portfolio-masonry-2.html",
+        "img": "img/page-intro/portfolio_masonry-2.jpg",
+        "title": "portfolio Masonry 2",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-portfolio filter-elements filter-components",
+        "link": "portfolio-page.html",
+        "img": "img/page-intro/portfolio_page.jpg",
+        "title": "portfolio Page",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-portfolio filter-elements filter-components",
+        "link": "portfolio-rows.html",
+        "img": "img/page-intro/portfolio_rows.jpg",
+        "title": "portfolio Rows",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-portfolio filter-elements filter-components",
+        "link": "portfolio-galleries.html",
+        "img": "img/page-intro/portfolio_galleries.jpg",
+        "title": "Portfolio galleries",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-elements filter-components",
+        "link": "shop-components-grid.html",
+        "img": "img/page-intro/shop_grid.jpg",
+        "title": "shop Grid",
+        "subtitle": "Shortcodes e-commerce"
+        },
+        {
+        "cat": "filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-elements filter-components",
+        "link": "shop-components-item-sidebar.html",
+        "img": "img/page-intro/shop_item-sidebar.jpg",
+        "title": "shop Item Sidebar",
+        "subtitle": "Shortcodes e-commerce"
+        },
+        {
+        "cat": "filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-elements filter-components",
+        "link": "shop-components-list.html",
+        "img": "img/page-intro/shop_list.jpg",
+        "title": "shop List",
+        "subtitle": "Shortcodes e-commerce"
+        },
+        {
+        "cat": "filter-shortcodes filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-elements filter-components",
+        "link": "shop-components-tiles.html",
+        "img": "img/page-intro/shop-components_1.jpg",
+        "title": "shop Components Tiles",
+        "subtitle": "Shortcodes e-commerce"
+        },
+        {
+        "cat": "filter-shortcodes filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-elements filter-components",
+        "link": "shop-components-row.html",
+        "img": "img/page-intro/shop-components_3.jpg",
+        "title": "shop components row",
+        "subtitle": "Shortcodes e-commerce"
+        },
+        {
+        "cat": "filter-shortcodes filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-elements filter-components",
+        "link": "shop-components-masonry.html",
+        "img": "img/page-intro/shop-components_4.jpg",
+        "title": "shop Components Masonry",
+        "subtitle": "Shortcodes e-commerce"
+        },
+        {
+        "cat": "filter-shortcodes filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-elements filter-components",
+        "link": "shop-components-flip.html",
+        "img": "img/page-intro/shop-components_6.jpg",
+        "title": "shop Components Flip",
+        "subtitle": "Shortcodes e-commerce"
+        },
+        {
+        "cat": "filter-shortcodes filter-shop filter-commerce filter-e-commerce filter-products filter-sell filter-cart filter-elements filter-components",
+        "link": "shop-components-honeycomb.html",
+        "img": "img/page-intro/shop-components_7.jpg",
+        "title": "shop Components Honeycomb",
+        "subtitle": "Shortcodes e-commerce"
+        },
+        {
+        "cat": "filter-shortcodes filter-accordions filter-elements filter-components",
+        "link": "accordions.html",
+        "img": "img/page-intro/shortcodes_accordions.jpg",
+        "title": "Accordions",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-alerts filter-elements filter-components",
+        "link": "alerts.html",
+        "img": "img/page-intro/shortcodes_alerts.jpg",
+        "title": "Alerts",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-app filter-elements filter-components",
+        "link": "app.html",
+        "img": "img/page-intro/shortcodes_app-showcase.jpg",
+        "title": "App Showcase",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-backgrounds filter-elements filter-components",
+        "link": "backgrounds.html",
+        "img": "img/page-intro/shortcodes_backgrounds.jpg",
+        "title": "Backgrounds",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-buttons filter-elements filter-components",
+        "link": "buttons.html",
+        "img": "img/page-intro/shortcodes_buttons.jpg",
+        "title": "Buttons",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-cfa filter-call filter-action filter-elements filter-components",
+        "link": "CFA.html",
+        "img": "img/page-intro/shortcodes_call-for-action.jpg",
+        "title": "Call For Action",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-carousel filter-sliders filter-elements filter-components",
+        "link": "sliders.html",
+        "img": "img/page-intro/shortcodes_carousel-sliders.jpg",
+        "title": "Carousel sliders",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-categories filter-lists filter-elements filter-components",
+        "link": "lists.html",
+        "img": "img/page-intro/shortcodes_categories-lists.jpg",
+        "title": "Categories Lists",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-content filter-sliders filter-elements filter-components",
+        "link": "content-sliders.html",
+        "img": "img/page-intro/shortcodes_content-slider.jpg",
+        "title": "Content sliders",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-countdown filter-elements filter-components",
+        "link": "countdown.html",
+        "img": "img/page-intro/shortcodes_countdown.jpg",
+        "title": "Countdown",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-counter filter-elements filter-components",
+        "link": "counter.html",
+        "img": "img/page-intro/shortcodes_counters.jpg",
+        "title": "Counter",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-delimiters filter-elements filter-components",
+        "link": "delimiters.html",
+        "img": "img/page-intro/shortcodes_delimiters.jpg",
+        "title": "Delimiters",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-dividers filter-elements filter-components",
+        "link": "dividers.html",
+        "img": "img/page-intro/shortcodes_dividers.jpg",
+        "title": "Dividers",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-flip filter-boxes filter-elements filter-components",
+        "link": "flip-boxes.html",
+        "img": "img/page-intro/shortcodes_flip-boxes.jpg",
+        "title": "Flip Boxes",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-form filter-contact filter-elements filter-components",
+        "link": "form-controls.html",
+        "img": "img/page-intro/shortcodes_form-controls.jpg",
+        "title": "Form Controls",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-gallery filter-sliders filter-elements filter-components",
+        "link": "gallery-sliders.html",
+        "img": "img/page-intro/shortcodes_gallery.jpg",
+        "title": "gallery sliders",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-google filter-maps filter-contact filter-elements filter-components",
+        "link": "google-maps.html",
+        "img": "img/page-intro/shortcodes_google-maps.jpg",
+        "title": "Google maps",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-hotspots filter-image filter-maps filter-elements filter-components",
+        "link": "image-map.html",
+        "img": "img/page-intro/shortcodes_hotspots-image-maps.jpg",
+        "title": "Hotspots image maps",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-image filter-caption filter-parallax filter-elements filter-components",
+        "link": "image-caption-parallax.html",
+        "img": "img/page-intro/shortcodes_image-caption-parallax.jpg",
+        "title": "Image caption parallax",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-image filter-frames filter-elements filter-components",
+        "link": "image-frames.html",
+        "img": "img/page-intro/shortcodes_image-frames.jpg",
+        "title": "Image frames",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-info filter-box filter-elements filter-components",
+        "link": "info-box.html",
+        "img": "img/page-intro/shortcodes_info-box.jpg",
+        "title": "Info box",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-media filter-embeds filter-elements filter-components",
+        "link": "media-embeds.html",
+        "img": "img/page-intro/shortcodes_media_embeds.jpg",
+        "title": "Media embeds",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-pagination filter-elements filter-components",
+        "link": "pagination.html",
+        "img": "img/page-intro/shortcodes_pagination.jpg",
+        "title": "Pagination",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-panels filter-elements filter-components",
+        "link": "panels.html",
+        "img": "img/page-intro/shortcodes_panels.jpg",
+        "title": "Panels",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-parallax filter-blocks filter-elements filter-components",
+        "link": "parallax.html",
+        "img": "img/page-intro/shortcodes_parallax-blocks.jpg",
+        "title": "Parallax blocks",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-pricing filter-table filter-elements filter-components",
+        "link": "pricing-tables.html",
+        "img": "img/page-intro/shortcodes_pricing-table.jpg",
+        "title": "Pricing table",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-progress filter-bar filter-elements filter-components",
+        "link": "progress-bars.html",
+        "img": "img/page-intro/shortcodes_progress-bar.jpg",
+        "title": "progress bar",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-progress filter-bar filter-elements filter-components",
+        "link": "progress-circles.html",
+        "img": "img/page-intro/shortcodes_progress-circle.jpg",
+        "title": "progress circles",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-section filter-titles filter-elements filter-components",
+        "link": "section-titles.html",
+        "img": "img/page-intro/shortcodes_section-titles.jpg",
+        "title": "Section titles",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-sequence filter-elements filter-components",
+        "link": "sequence.html",
+        "img": "img/page-intro/shortcodes_sequence.jpg",
+        "title": "Sequence",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-services filter-elements filter-components",
+        "link": "services.html",
+        "img": "img/page-intro/shortcodes_services.jpg",
+        "title": "services",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-shape filter-box filter-elements filter-components",
+        "link": "shape-box.html",
+        "img": "img/page-intro/shortcodes_shape-box.jpg",
+        "title": "Shape box",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-social filter-blocks filter-elements filter-components",
+        "link": "social.html",
+        "img": "img/page-intro/shortcodes_social-blocks.jpg",
+        "title": "Social blocks",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-steps filter-elements filter-components",
+        "link": "steps.html",
+        "img": "img/page-intro/shortcodes_steps.jpg",
+        "title": "Steps",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-tabbed filter-content filter-elements filter-components",
+        "link": "tabbed-contents.html",
+        "img": "img/page-intro/shortcodes_tabbed-content.jpg",
+        "title": "Tabbed content",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-table filter-elements filter-components",
+        "link": "tables.html",
+        "img": "img/page-intro/shortcodes_tables.jpg",
+        "title": "tables",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-tab filter-tabs filter-elements filter-components",
+        "link": "tabs.html",
+        "img": "img/page-intro/shortcodes_tabs.jpg",
+        "title": "Tabs",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-tags filter-tag filter-elements filter-components",
+        "link": "tags.html",
+        "img": "img/page-intro/shortcodes_tags.jpg",
+        "title": "Tags",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-team filter-elements filter-components",
+        "link": "team.html",
+        "img": "img/page-intro/shortcodes_team.jpg",
+        "title": "Team",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-testimonials filter-elements filter-components",
+        "link": "testimonials.html",
+        "img": "img/page-intro/shortcodes_testimonials.jpg",
+        "title": "Testimonials",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-tiles filter-elements filter-components",
+        "link": "tiles.html",
+        "img": "img/page-intro/shortcodes_tiles.jpg",
+        "title": "Tiles",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-elements filter-components",
+        "link": "timelines.html",
+        "img": "img/page-intro/shortcodes_timelines.jpg",
+        "title": "Timelines",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-titles filter-elements filter-components",
+        "link": "titles.html",
+        "img": "img/page-intro/shortcodes_titles.jpg",
+        "title": "Titles",
+        "subtitle": "Shortcodes"
+        },
+        {
+        "cat": "filter-shortcodes filter-typing filter-rotator filter-elements filter-components",
+        "link": "typing-rotator.html",
+        "img": "img/page-intro/shortcodes_typing-rotator.jpg",
+        "title": "Typing rotator",
+        "subtitle": "Shortcodes"
+        }
+
+        ])
+
+        <!--
+         {
+        "cat": "shortcodes  elements components",
+        "link": "",
+        "img": "img/page-intro/",
+        "title": "",
+        "subtitle": "Shortcodes"
+        }
+        -->
+
+
+
+
+        <!-- TODO: company_services.jpg, forum_topic-posts.jpg, forum_topics.jpg, shortcodes_team-item.jpg -->
+      </div>
+    </div>
+  </div>
+
+</div>

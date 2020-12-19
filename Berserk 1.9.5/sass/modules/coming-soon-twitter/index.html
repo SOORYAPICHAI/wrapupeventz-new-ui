@@ -1,0 +1,52 @@
+@@include('../../assets/templates/head.html',{
+  "titlePage": "Coming Soon Twitter",
+  "themeSkin": "brk-pink-purple.css"
+  })
+  </head>
+  
+  <body> @@include('../../modules/theme-options/templates/options.html', {})
+    <div class="main-wrapper"> 
+      <main class="main-container"> 
+        <section class="position-relative full-screen d-flex flex-column pt-60 pb-60" data-brk-library="twitter_init"> 
+          @@include("../backgrounds/templates/bg-4.html",{
+            "innerContent": "false",
+            "customClass": "brk-abs-overlay",
+            "overlay": "brk-bg-gradient--260deg-96",
+            "img": "img/coming-soon/1920x920_1.jpg"
+          })
+          <div class="container z-index-2">
+            <a href="index.html" class="d-inline-block mb-50">
+              <img src="img/coming-soon/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="container z-index-2 my-auto">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h1 class="font__family-montserrat font__weight-light brk-white-font-color font__size-36 line__height-40 mb-30">Coming Soon!</h1>
+                <h2 class="font__family-montserrat font__weight-bold brk-white-font-color font__size-48 line__height-52 mb-80">
+                  Get back really soon, <br>
+                  please keep calm
+                </h2>
+                @@include("../countdown/templates/flip-2.html",{
+                  "brk_base_1": "true",
+                  "not_centred": "true",
+                  "customClass": "mb-50"
+                })                
+              </div>
+              <div class="col-lg-2"></div>
+              <div class="col-lg-4 col-12">
+                <h3 class="font__family-montserrat font__size-36 font__weight-bold brk-white-font-color">Our Twitter</h3>
+                <hr class="horiz-line mt-30 mb-20">
+                <div class="brk-styled-twitter-3 brk-styled-twitter-3_primary">
+                  <a href="https://twitter.com/We_Nikadevs" class="twitter-timeline" data-tweet-limit="3" data-chrome="noheader,transparent,nofooter,noborders" data-theme="dark"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    @@include('../../assets/templates/footer.html',{
+    "demo": "true"
+    })
+  </body>

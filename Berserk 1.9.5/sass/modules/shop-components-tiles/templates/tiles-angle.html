@@ -1,0 +1,52 @@
+<div class="brk-sc-tiles-angle lazyload" data-bg="@@if(context.img){@@img}@@if(!context.img){img/bg-full_1.jpg}" data-brk-library="component__shop_tiles">
+  <div class="brk-sc-tiles-angle__loading">
+    <span class="before"></span>
+    <i class="fal fa-sync"></i>
+  </div>
+
+  <div class="brk-sc-tiles-angle__top brk-base-bg-gradient-50deg-a">
+    <div class="brk-sc-tiles-angle__container">
+      <div class="brk-sc-tiles-angle__slider">
+        @@include('../../content-sliders/templates/angle-slider.html', {
+          "bp1200": "2",
+          "bp992": "3",
+          "bp768": "2",
+          "bp576": "1"
+        })
+      </div>
+      <div class="brk-sc-tiles-angle__content">
+        <h4 class="font__family-montserrat brk-white-font-color">
+          <span class="font__weight-light">Women </span>
+          <span class="font__weight-bold">Collection</span>
+        </h4>
+
+        <p class="font__family-oxygen font__weight-light brk-white-font-color">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+          montes</p>
+      </div>
+    </div>
+  </div>
+  <div class="brk-sc-tiles-angle__bottom brk-base-bg-gradient-bottom-blue">
+    <div class="brk-sc-tiles-angle__container">
+      <div class="brk-sc-tiles-angle__slider">
+        @@include('../../content-sliders/templates/angle-slider.html', {
+        "bp1200": "2",
+        "bp992": "3",
+        "bp768": "2",
+        "bp576": "1"
+        })
+      </div>
+      <div class="brk-sc-tiles-angle__content">
+        <h4 class="font__family-montserrat brk-white-font-color">
+          <span class="font__weight-light">Men </span>
+          <span class="font__weight-bold">Collection</span>
+        </h4>
+
+        <p class="font__family-oxygen font__weight-light brk-white-font-color">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+          montes</p>
+      </div>
+    </div>
+  </div>
+
+</div>

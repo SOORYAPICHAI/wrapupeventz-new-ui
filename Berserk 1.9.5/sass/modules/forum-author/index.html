@@ -1,0 +1,38 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Forum Author"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+    <main class="main-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 col-xl-8 order-xs-2 order-lg-1">
+            <div class="mb-130"></div>
+            @@include("./templates/author-card.html")
+          </div>
+          <div class="col-12 col-lg-4 col-xl-4 order-xs-1 order-lg-2">
+            @@include('../widgets/templates/sidebar-forum.html',{ 
+              "containerClass":"h-100" 
+            })
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  
+  @@include("../../assets/templates/footer.html")
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+  @@include("../../assets/templates/head.html", {
+  "titlePage": "Header 8"
+  })
+
+	</head>
+
+  <body>  @@include('../../modules/theme-options/templates/options.html', {})
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-50">
+
+      <!-- Custom Nav Example -->      
+			<!-- @@include('../header-8/templates/style-header-8.html', {
+        "customNav": "true",
+        "homeNav": "true",
+        "shopNav": "true",
+        "elementsNav": "true",
+        "title1": "Popular",
+        "link1": "#popular",
+        "title2": "Best Sellers",
+        "link2": "#bestsellers",
+        "title3": "Sub Menu",
+        "submenu3": {
+          "subtitle1": "Some Title 1", "sublink1": "title1link.html", 
+          "subtitle2": "Some Title 2", "sublink2": "title2link.html", 
+          "subtitle3": "Some Title 3", "sublink3": "title3link.html" 
+        }
+      }) -->
+			@@include('templates/style-header-8.html', {
+      "white": "true"
+      })
+
+      <div style="background-image:url(img/brk-header-8.jpg);background-repeat:no-repeat;background-position:center center;background-size: cover;height: 100vh;"></div>
+
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+
+  </body>
+</html>

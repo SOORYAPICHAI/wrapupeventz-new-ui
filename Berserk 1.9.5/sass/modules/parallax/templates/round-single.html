@@ -1,0 +1,33 @@
+<div class="parallax-bg overflow-hid"
+     style="background-image: url(@@if(context.img){@@img}@@if(!context.img){img/parallax-7.jpg})" data-brk-library="component__parallax">
+  <div class="container">
+    <div class="row round__wrap scroll-show content__side-left">
+        <span class="parallax__bg-shape-lg brk-parallax__bg-color-md">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1787 480" preserveAspectRatio="none">
+            <defs><style>.a {
+              fill: #fff;
+              fill-rule: evenodd;
+            }</style></defs>
+            <path class="a" d="M1787,480c-132.55,0-240-107.45-240-240S1654.45,0,1787,0H0V480Z"/>
+          </svg>
+        </span>
+      <div class="col-md-5">
+        <div class="pt-120 pb-120 text-center">
+          <p class="font__family-open-sans font__weight-bold font__size-16 text-blue">We are Awesome</p>
+          <hr class="divider mt-20 mb-10">
+          <h2
+                  class="font__family-montserat font__weight-ultralight font__size-36 line__height-42 text-uppercase mt-20">
+            Engaging, purposeful</h2>
+          <h2 class="font__family-roboto font__weight-light font__size-36 line__height-42 text-uppercase">&
+            creative</h2>
+          @@include("../../buttons/templates/buttons.html",{
+          "type":"btn-inside-out",
+          "text":"All info",
+          "icon":"<i class='fal fa-comments icon-inside' aria-hidden='true'></i>",
+          "customClass":"btn-shadow border-radius-30 font__weight-bold mt-30 btn-min-width-200"
+          })
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

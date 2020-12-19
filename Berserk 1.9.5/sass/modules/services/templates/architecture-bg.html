@@ -1,0 +1,14 @@
+<div class="services-architecture-bg @@if(context.customClass){@@customClass} @@if(context.wide === "true"){services-architecture-bg_wide} @@if(context.bg){lazyload}" @@if(context.bg){data-bg="img/@@bg"} data-brk-library="component__services">
+  @@if(context.overlay !== "false"){
+    <div class="brk-abs-overlay @@overlay z-index-2"></div>
+  }
+
+  <div class="services-architecture-bg__icon">
+    <i class="@@if(context.overlay === "false"){brk-base-font-color-i }@@icon"></i>
+  </div>
+
+  <div class="services-architecture-bg__container">
+    <h4 class="@@if(!context.titleStyle){font__size-21 line__height-24 text-uppercase font__weight-bold pb-10 text-white}@@if(context.titleStyle){@@titleStyle}">@@title</h4>
+    <span class="@@if(!context.descriptionStyle){font__size-14 line__height-24 opacity-80}@@if(context.descriptionStyle){@@descriptionStyle}">@@description</span>
+  </div>
+</div>

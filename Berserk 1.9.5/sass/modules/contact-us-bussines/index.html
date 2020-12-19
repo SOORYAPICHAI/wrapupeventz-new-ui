@@ -1,0 +1,123 @@
+@@include("../../assets/templates/head.html", {
+  "titlePage": "Contact Us Bussines"
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {})
+
+  <div class="main-wrapper">
+    <main class="main-container">
+
+      @@include('../header-1/templates/style-header-1.html', {
+        "only_header": "true"
+      })
+
+      @@include("../breadcrumbs/templates/thin.html",{
+        "img": "img/contact-us/1920x260_1.jpg",
+        "overlay": "brk-base-bg-gradient-right-100 opacity-90",
+        "title": "Contact Us",
+        "subtitle": "Have a question? Make a request below"
+      })
+      
+      <section class="pt-80 pb-25"> 
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <form action="#" class="brk-subscribe-mail brk-subscribe-mail_dark brk-form-strict pt-15 wow fadeInLeft" data-brk-library='component__form,recaptcha'>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <input type="text" name="FNAME" placeholder="Your Name">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <input type="text" name="EMAIL" placeholder="Your Mail">
+                  </div>
+                  <div class="col-12">
+                    <textarea name="MESSAGE" class="bordered-bottom" placeholder="Your Question" style="min-height: 110px;"></textarea>
+                  </div>
+                </div>
+                <div class="text-center">
+                  @@include("../buttons/templates/buttons.html",{
+                    "tag": "button",
+                    "type": "btn-inside-out",
+                    "text": "send a message",
+                    "text_hover": "send a message",
+                    "icon": "<i class='fas fa-shopping-basket icon-inside'></i>",
+                    "customClass": "border-radius-30 mt-25 btn-shadow"
+                  })
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+              <div class="wow fadeInRight">
+                <h1 class="font__family-montserrat font__size-56 line__height-60 font__weight-thin mb-30">
+                  Need Help? <br>
+                  <span class="font__weight-bold">Contact Us</span>
+                </h1>
+                <p class="brk-dark-font-color font__size-14 line__height-26 mb-35">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
+                <p class="font__family-open-sans font__weight-bold font__size-14 mb-15">
+                  <i class="brk-footer-icon text-middle fa fa-envelope line__height-24 brk-base-font-color"></i> 
+                <a href="mailto:info@domain.com" class="show-inline-block">info@domain.com</a>
+                </p>
+                <p class="font__family-open-sans font__weight-bold font__size-14 mb-15">
+                  <i class="brk-footer-icon text-middle fas fa-map-marker-alt line__height-24 brk-base-font-color"></i> 
+                  <span>Chicago, USA</span>
+                </p>
+                <p class="font__family-open-sans font__weight-bold font__size-14 mb-15">
+                  <i class="brk-footer-icon text-middle fa fa-phone line__height-24 brk-base-font-color"></i> 
+                  <a href="#" class="show-inline-block">800 12 34 567</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="position-relative pt-lg-160 pt-80 pb-80 wow fadeInUp">
+        @@include("../svg-pattern/templates/pattern-24.html")
+        <div class="brk-abs-overlay brk-base-bg-gradient--30deg"></div>
+        <div class="container">
+          <h2 class="font__family-montserrat font__weight-bold font__size-56 line__height-60 brk-white-font-color mb-20 text-center wow fadeInUp">Short FAQ</h2>
+          <p class="font__size-16 line__height-26 text-white opacity-80 maxw-770 mb-60 text-center wow fadeInUp">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="wow fadeInLeft">
+                <div class="pl-20 pr-20">
+                  @@include("../accordions/templates/others-v4.html",{
+                    "customClass": "mb-90"
+                  })
+                </div>
+                <h3 class="font__family-montserrat font__size-40 line__height-48 text-uppercase font__weight-bold text-white pl-lg-100 mb-30"><span class="font__weight-light">QUality <br></span>Technology <br> & People</h3>
+                <p class="font__size-16 line__height-26 pl-lg-100 mb-90 text-white opacity-80 pr-lg-25">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="wow fadeInRight">
+                <h3 class="font__family-montserrat font__size-40 line__height-48 text-uppercase font__weight-bold text-white mb-30 pl-lg-30 pt-35">
+                <span class="font__weight-light">QUality <br></span>Technology <br> & People</h3>
+                <p class="font__size-16 line__height-26 mb-90 text-white opacity-80 pl-lg-30 pr-lg-100">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                  
+                @@include("../image-frames/templates/double-images.html")
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        @@include("../google-maps/templates/layout-1.html")
+      </section>
+
+    </main>
+
+  </div>
+  
+  @@include("../footer/templates/footer-1.html",{
+    "onlyBtm": "true"
+  })
+  @@include("../../assets/templates/footer.html",{
+    "demo": "true"
+  })
+</body>
+
+</html>

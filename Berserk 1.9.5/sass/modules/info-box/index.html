@@ -1,0 +1,135 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Info Box"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- Info Box Chess -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> Chess</h3>
+    	</div>
+      @@include('./templates/chess.html')
+    </div>
+
+    <!-- Info Box Outline -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> Outline</h3>
+    	</div>
+		  @@include("templates/outline.html",{
+        "parallax": "true"
+      })
+    </div>
+
+    <!-- Info Box Gradient -->
+    <div class="mt-100 mt-md-160 ">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">03</span> Gradient</h3>
+    	</div>
+		  @@include("templates/gradient.html")
+    </div>
+
+    <!-- Info Box Shuffle -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">04</span> Shuffle</h3>
+    	</div>
+		  @@include("templates/shuffle.html")
+    </div>
+
+    <!-- Info Box Web -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">05</span> Web</h3>
+    	</div>
+		  @@include("templates/web.html")
+    </div>
+
+    <!-- Info Box Strict -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">06</span> Strict</h3>
+    	</div>
+		  @@include("templates/strict.html")
+    </div>
+
+    <!-- Info Box Image -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">07</span> Image</h3>
+    	</div>
+		  @@include("templates/image.html")
+    </div>
+
+    <!-- Info Box Icon -->
+    <div class="mt-100 mt-md-160">
+    	<div class="container mb-70 mb-md-130">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">08</span> Icon</h3>
+    	</div>
+		  @@include("templates/icon.html",{
+        "overlay": "true"
+      })
+    </div>
+
+    <!-- Info Box Icon Simple -->
+    <div class="mt-100 mt-md-160">
+      <div class="container">
+        <h3 class="font__family-montserrat font__size-28 font__weight-bold text-left mb-70">
+          <span class="heading__number">08</span> Icon Simple</h3>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4">
+            @@include("./templates/icon-simple.html",{
+              "icon":"<i class='far fa-file font__weight-normal' aria-hidden='true'></i>",
+              "customClass":"mb-20",
+              "title":"Service #4",
+              "paragraph":"Aenean vulputate eleifend tellus. Renean leo ligula, porttitor euequat vitae, eleifend ac, enim."
+            })
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            @@include("./templates/icon-simple.html",{
+              "icon":"<i class='far fa-keyboard' aria-hidden='true'></i>",
+              "customClass":"mb-20",
+              "title":"Service #5",
+              "paragraph":"Aenean vulputate eleifend tellus. Renean leo ligula, porttitor euequat vitae, eleifend ac, enim."
+            })
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            @@include("./templates/icon-simple.html",{
+              "icon":"<i class='far fa-gem' class='font__weight-normal' aria-hidden='true'></i>",
+              "customClass":"mb-20",
+              "title":"Service #6",
+              "paragraph":"Aenean vulputate eleifend tellus. Renean leo ligula, porttitor euequat vitae, eleifend ac, enim."
+            })
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+	</main>
+
+</div>
+
+
+  @@include("../../assets/templates/footer.html")
+
+</body>
+</html>

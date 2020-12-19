@@ -1,0 +1,215 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Pricing Tables"
+})
+
+</head>
+
+<body class="font__family-open-sans">  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-50 mt-100 mt-md-130">
+
+      <section>
+        <div class="container mb-100">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">01</span> Colored
+            </h3>
+          </div>
+        </div>
+
+        <div class="container mb-140">
+          @@include('./templates/colored.html',{
+            "customCLass":"w-100"
+          })
+        </div>
+      </section>
+
+      <section>
+        <div class="container mb-100">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">02</span> Doubled
+            </h3>
+          </div>
+        </div>
+
+        <div class="container mb-140">
+          <div class="row">
+            @@include('./templates/doubled.html', {})
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mb-100">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">03</span> Horizontal
+            </h3>
+          </div>
+        </div>
+
+        <div class="container mb-140">
+          @@include('./templates/horizontal.html', {})
+        </div>
+      </section>
+
+      <section>
+        <div class="container mb-100">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">04</span> Rounded
+            </h3>
+          </div>
+        </div>
+
+        <div class="container mb-140">
+          <div class="row">
+            @@include('./templates/rounded.html', {})
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <div class="container mb-100">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">05</span> Strict
+            </h3>
+          </div>
+        </div>
+
+        <div class="container mb-140">
+          <div class="row no-gutters">
+            @@include('./templates/strict.html', {})
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mb-100">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">06</span> Shop
+            </h3>
+          </div>
+        </div>
+
+        <div class="container mb-140">
+          <div class="row">
+            @@include("./templates/shop.html")
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mb-100">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">07</span> Plan
+            </h3>
+          </div>
+        </div>
+
+        <div class="container mb-140">
+          <div class="row">
+            <div class="col-lg-4">
+              @@include("./templates/plan.html", {
+              "bg": "img/300x460_1.jpg",
+              "title": "Basic",
+              "price": "39",
+              "included": [
+              "Proin gravida nibhconseq",
+              "Enean sollicitud",
+              "Lorem quis bibendum"
+              ]
+              })
+            </div>
+            <div class="col-lg-4">
+              @@include("./templates/plan.html", {
+              "bg": "img/300x460_2.jpg",
+              "title": "Popular",
+              "price": "59",
+              "included": [
+              "Proin gravida nibhconseq",
+              "Enean sollicitud",
+              "Lorem quis bibendum",
+              "Aliquam laoreet sodales",
+              "Enean sollicitud"
+              ]
+              })
+            </div>
+            <div class="col-lg-4">
+              @@include("./templates/plan.html", {
+              "bg": "img/300x460_3.jpg",
+              "title": "Classic",
+              "price": "79",
+              "included": [
+              "Proin gravida nibhconseq",
+              "Enean sollicitud",
+              "Lorem quis bibendum",
+              "Aliquam laoreet sodales",
+              "Enean sollicitud",
+              "Proin gravida nibhconseq"
+              ]
+              })
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mb-100">
+          <div class="text-left">
+            <h3 class="font__family-montserrat font__size-28 font__weight-bold">
+              <span class="heading__number">08</span> Light
+            </h3>
+          </div>
+        </div>
+
+          <div class="brk-pricing-light">
+            <div class="container">
+              <div class="row no-gutters">
+                <div class="col-12 col-lg-4">
+                 @@include("./templates/light.html",{
+                  "price":"Free",
+                  "period":"Only first time"
+                 })
+                </div>
+                <div class="col-12 col-lg-4">
+                  @@include("./templates/light.html",{
+                    "old_price":"1560$",
+                    "price":"1460$",
+                    "period":"Per/Month",
+                    "stick": "the best"
+                  })
+                </div>
+                <div class="col-12 col-lg-4">
+                  @@include("./templates/light.html",{
+                    "old_price":"2560$",
+                    "price":"2400$",
+                    "period":"Per/Month"
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+
+</body>
+
+</html>

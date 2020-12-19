@@ -1,0 +1,88 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Parallax"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- Parallax blocks Corner -->
+    <div class="mt-100 mt-md-170">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> Corner</h3>
+    	</div>
+		  @@include("templates/corner.html")
+    </div>
+
+    <!-- Parallax blocks Circle -->
+    <div class="mt-100 mt-md-170">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> Circle</h3>
+    	</div>
+		  @@include("templates/circle.html")
+    </div>
+
+    <!-- Parallax blocks Triangle -->
+    <div class="mt-100 mt-md-170">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">03</span> Triangle</h3>
+    	</div>
+		  @@include("templates/triangle.html")
+    </div>
+
+    <!-- Parallax blocks Round -->
+    <div class="mt-100 mt-md-170">
+    	<div class="container mb-70 mb-md-140">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">04</span> Round</h3>
+    	</div>
+		  @@include("templates/round.html",{
+        "overlay1": "brk-base-bg-light-blue"
+      })
+    </div>
+
+    <!-- Parallax blocks Curve -->
+    <div class="mt-100 mt-md-170">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">05</span> Wing</h3>
+    	</div>
+		  @@include("templates/wing.html")
+    </div>
+
+    <!-- Parallax blocks Double Triangle -->
+    <div class="mt-100 mt-md-170">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">06</span> Double Triangle</h3>
+    	</div>
+		  @@include("templates/double-triangle.html")
+    </div>
+
+    <!-- Parallax blocks Corner -->
+    <div class="mt-100 mt-md-170">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">07</span> Full Height</h3>
+    	</div>
+		  @@include("templates/full-height.html")
+    </div>
+    
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

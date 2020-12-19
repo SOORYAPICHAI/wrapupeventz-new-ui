@@ -1,0 +1,101 @@
+@@include('../../assets/templates/head.html',{
+"titlePage": "Travel Agency - Contact",
+"themeSkin": "brk-orange.css",
+"style": ""
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {})
+  @@include("../../modules/header-1/templates/style-header-1.html",{
+    "only_header": "true",
+    "customNav": "true",
+    "title1": "Home",
+    "link1": "demo_travel_agency.html",
+    "title2": "About",
+    "link2": "demo_travel_agency_about.html",
+    "submenu2": {
+      "subtitle1": "About Us",
+      "sublink1": "demo_travel_agency_about.html",
+      "subtitle2": "Team",
+      "sublink2": "demo_travel_agency_team.html",
+      "subtitle3": "History",
+      "sublink3": "demo_travel_agency_history.html",
+      "subtitle4": "Prices",
+      "sublink4": "demo_travel_agency_prices.html",
+      "subtitle5": "Testimonials",
+      "sublink5": "demo_travel_agency_testimonials.html"
+      },
+    "title3": "Services",
+    "link3": "demo_travel_agency_services.html",
+    "title4": "Tours",
+    "link4": "demo_travel_agency_tours.html",
+    "title5": "Contact",
+    "link5": "demo_travel_agency_contact.html"
+  })
+  <div class="main-wrapper">
+    <main class="main-container">
+
+      @@include("../breadcrumbs/templates/sunshine.html",{
+      "customPadding": "pt-130 pb-90 breadcrumbs__section-sunshine_white",
+      "title": "Contact",
+      "overlay1": "brk-base-gradient-34",
+      "overlay2": "brk-base-bg-gradient-90deg",
+      "squared": "true",
+      "img": "img/demo_travel_agency/1920x260_1.jpg"
+      })
+
+      <section class="pt-80 pb-80">
+        <div class="container">
+          @@include("../google-maps/templates/layout-5.html",{
+            "height": "433",
+            "customClass": "mb-40"
+          })
+          <div class="maxw-770">
+            <form action="#" class="brk-form-strict brk-subscribe-mail" data-brk-library="recaptcha">
+              <div class="row">
+                <div class="col-12 col-md-6"><input name="FNAME" type="text" placeholder="Your Name"></div>
+                <div class="col-12 col-md-6"><input name="EMAIL" type="email" placeholder="Your mail"></div>
+                <div class="col-12"><textarea name="MESSAGE" placeholder="Your Questions" class="bordered-bottom"></textarea></div>
+                <div class="col-12 text-center">
+                  @@include("../buttons/templates/buttons.html",{
+                    "tag": "button",
+                    "type": "btn-inside-out",
+                    "text": "Contact Us",
+                    "text_hover": "Send info",
+                    "customClass": "font__family-montserrat letter-spacing-80 font__weight-normal mt-25 pl-90 pr-90 mb-0 btn-shadow"
+                  })
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      @@include("../tiles/templates/formats.html",{
+        "img1": "img/demo_travel_agency/480x330_1.jpg",
+        "label1": "Sweden",
+        "img2": "img/demo_travel_agency/480x330_2.jpg",
+        "label2": "Thailand",
+        "img3": "img/demo_travel_agency/480x330_3.jpg",
+        "label3": "Greece",
+        "img4": "img/demo_travel_agency/480x330_4.jpg",
+        "label4": "Turkey",
+        "label_custom_class": "font-weight-normal",
+        "primary_labels": "true",
+        "overlay1": "brk-base-gradient-35",
+        "overlay2": "brk-base-gradient-36",
+        "noMargin": "true"
+      })
+
+    </main>
+  </div>
+
+  @@include("../../modules/footer/templates/footer-3.html",{
+  "demo": "true",
+  "overlay": "brk-base-gradient-34"
+  })
+
+  @@include('../../assets/templates/footer.html',{
+  "demo": "true"
+  })
+</body>

@@ -1,0 +1,47 @@
+<div 
+  class="rotation-slider slick-loading arrows-classic fa-req
+    @@if(context.customClass){@@customClass}" 
+  data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "arrows": true, "draggable": true, "autoplay": true, "autoplaySpeed": 2000}' 
+  data-brk-library="slider__slick,fancybox">
+  @@if(!context.imgArr){
+  <div>
+    <div class="brk-slid">
+      <a href="img/560x379_1.jpg" class="frame-image image-popup img-square shadow fancybox">
+        <img  class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/560x379_1.jpg" alt="alt">
+      </a>
+    </div>
+  </div>
+  <div>
+    <div class="brk-slid">
+      <a href="img/560x379_2.jpg" class="frame-image image-popup img-square shadow fancybox">
+        <img  class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/560x379_2.jpg" alt="alt">
+      </a>
+    </div>
+  </div>
+  <div>
+    <div class="brk-slid">
+      <a href="img/560x379_3.jpg" class="frame-image image-popup img-square shadow fancybox">
+        <img  class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/560x379_3.jpg" alt="alt">
+      </a>
+    </div>
+  </div>
+  <div>
+    <div class="brk-slid">
+      <a href="img/560x379_4.jpg" class="frame-image image-popup img-square shadow fancybox">
+        <img  class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/560x379_4.jpg" alt="alt">
+      </a>
+    </div>
+  </div>
+  }
+  @@if(context.imgArr){
+    @@for (var i = 0; i < imgArr.length; i++) {
+      <div>
+        <div class="brk-slid">
+          <a href="`+imgArr[i]+`" class="frame-image image-popup img-square shadow fancybox">
+            <img  class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="`+imgArr[i]+`" alt="alt">
+          </a>
+        </div>
+      </div>
+    }
+  }
+</div>

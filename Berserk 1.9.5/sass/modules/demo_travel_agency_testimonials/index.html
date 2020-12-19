@@ -1,0 +1,196 @@
+@@include('../../assets/templates/head.html',{
+"titlePage": "Travel Agency - Reviews",
+"themeSkin": "brk-orange.css",
+"style": ""
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {})
+  @@include("../../modules/header-1/templates/style-header-1.html",{
+    "only_header": "true",
+    "customNav": "true",
+    "title1": "Home",
+    "link1": "demo_travel_agency.html",
+    "title2": "About",
+    "link2": "demo_travel_agency_about.html",
+    "submenu2": {
+      "subtitle1": "About Us",
+      "sublink1": "demo_travel_agency_about.html",
+      "subtitle2": "Team",
+      "sublink2": "demo_travel_agency_team.html",
+      "subtitle3": "History",
+      "sublink3": "demo_travel_agency_history.html",
+      "subtitle4": "Prices",
+      "sublink4": "demo_travel_agency_prices.html",
+      "subtitle5": "Testimonials",
+      "sublink5": "demo_travel_agency_testimonials.html"
+      },
+    "title3": "Services",
+    "link3": "demo_travel_agency_services.html",
+    "title4": "Tours",
+    "link4": "demo_travel_agency_tours.html",
+    "title5": "Contact",
+    "link5": "demo_travel_agency_contact.html"
+  })
+  <div class="main-wrapper">
+    <main class="main-container">
+
+      @@include("../breadcrumbs/templates/sunshine.html",{
+      "customPadding": "pt-130 pb-90 breadcrumbs__section-sunshine_white",
+      "title": "Reviews",
+      "overlay1": "brk-base-gradient-34",
+      "overlay2": "brk-base-bg-gradient-90deg",
+      "squared": "true",
+      "img": "img/demo_travel_agency/1920x260_1.jpg"
+      })
+
+      <section class="pt-30 pb-70 pt-md-70 pb-md-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="text-center text-md-left">
+                @@include('../titles/templates/trend.html',{
+                  "text": {
+                    "main": "Clients Reviews",
+                    "main_customClass": "text-uppercase mb-25 mt-20 brk-color-base-3",
+                    "divider": "true",
+                    "divider_customClass": "divider-cross_left" 
+                  }
+                })
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="font__family-montserrat font__size-21 font__weight-bold line__height-28 mb-10 mt-35 text-center text-md-left">How to hire me?</p>
+                <p class="font__size-16 font__weight-normal line__height-26 mb-40 brk-dark-font-color text-center text-md-left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus magnis.</p>
+            </div>
+            <div class="col-md-6">
+               @@include('../testimonials/templates/single-swiper.html', {
+                "slider_1_style": "double-dark-blue",
+                "slider_1_bg": "img/demo_travel_agency/570x340_1.jpg",
+                "reviews_squared": "true",
+                "reviews": "East of England",
+                "slide_1_title": "Adventure is worthwhile",
+                "slide_2_title": "For my part, I travel not to go anywhere, but to go. I travel for travel’s sake.",
+                "slide_3_title": "Traveling – it leaves you speechless, then turns you into a storyteller.",
+                "slider_1_people_1": "img/people/86x86_1.jpg",
+                "slider_1_people_2": "img/people/86x86_2.jpg",
+                "slider_1_people_3": "img/people/86x86_3.jpg"
+                })
+            </div>
+            <div class="col-md-6">
+               @@include('../testimonials/templates/single-swiper.html', {
+                "slider_1_style": "double-dark-blue",
+                "slider_1_bg": "img/demo_travel_agency/570x340_2.jpg",                
+                "reviews_squared": "true",
+                "reviews": "East of England",
+                "slide_1_title": "We travel, some of us forever, to seek other places, other lives, other souls.",
+                "slide_2_title": "A journey is best measured in friends, rather than miles.",
+                "slide_3_title": "The gladdest moment in human life, me thinks, is a departure into unknown lands.",
+                "slider_1_people_1": "img/people/86x86_4.jpg",
+                "slider_1_people_2": "img/people/86x86_5.jpg",
+                "slider_1_people_3": "img/people/86x86_6.jpg"
+                })
+            </div>
+            <div class="col-md-6">
+               @@include('../testimonials/templates/single-swiper.html', {
+                "slider_1_style": "double-dark-blue",
+                "slider_1_bg": "img/demo_travel_agency/570x340_2.jpg",                
+                "reviews_squared": "true",
+                "reviews": "North West England",
+                "slide_3_title": "No place is ever as bad as they tell you it’s going to be.",
+                "slide_2_title": "I am not the same, having seen the moon shine on the other side of the world.",
+                "slide_1_title": "Travel makes one modest. You see what a tiny place you occupy in the world.",
+                "slider_1_people_1": "img/people/86x86_7.jpg",
+                "slider_1_people_2": "img/people/86x86_8.jpg",
+                "slider_1_people_3": "img/people/86x86_9.jpg"
+                })
+            </div>
+            <div class="col-md-6">
+               @@include('../testimonials/templates/single-swiper.html', {
+                "slider_1_style": "double-dark-blue",
+                "slider_1_bg": "img/demo_travel_agency/570x340_1.jpg",                
+                "reviews_squared": "true",
+                "reviews": "North West England",
+                "slide_1_title": "We travel not to escape life, but for life not to escape us.",
+                "slide_2_title": "The man who goes alone can start today; but he who travels with another...",
+                "slide_3_title": "To awaken alone in a strange town is one of the pleasantest...",
+                "slider_1_people_1": "img/people/86x86_10.jpg",
+                "slider_1_people_2": "img/people/86x86_11.jpg",
+                "slider_1_people_3": "img/people/86x86_12.jpg"
+                })
+            </div>
+            <div class="col-md-6">
+               @@include('../testimonials/templates/single-swiper.html', {
+                "slider_1_style": "double-dark-blue",
+                "slider_1_bg": "img/demo_travel_agency/570x340_1.jpg",                
+                "reviews_squared": "true",
+                "reviews": "North East England",
+                "slide_1_title": "The life you have led doesn’t need to be the only life you have.",
+                "slide_2_title": "Man cannot discover new oceans unless he has the courage to lose...",
+                "slide_3_title": "The world is a book, and those who do not travel read only one page.",
+                "slider_1_people_1": "img/people/86x86_13.jpg",
+                "slider_1_people_2": "img/people/86x86_14.jpg",
+                "slider_1_people_3": "img/people/86x86_15.jpg"
+                })
+            </div>
+            <div class="col-md-6">
+               @@include('../testimonials/templates/single-swiper.html', {
+                "slider_1_style": "double-dark-blue",
+                "slider_1_bg": "img/demo_travel_agency/570x340_2.jpg",                
+                "reviews_squared": "true",
+                "reviews": "North East England",
+                "slide_1_title": "Travel and change of place impart new vigor to the mind.",
+                "slide_2_title": "Twenty years from now you will be more disappointed by the...",
+                "slide_3_title": "Once a year, go someplace you’ve never been before.",
+                "slider_1_people_1": "img/people/86x86_9.jpg",
+                "slider_1_people_2": "img/people/86x86_1.jpg",
+                "slider_1_people_3": "img/people/86x86_3.jpg"
+                })
+            </div>
+          </div>
+        </div>
+        <div class="text-center pt-70 pt-md-110">
+          @@include('../buttons/templates/buttons-invert.html', {
+            "class": "icon__btn icon__btn-anim icon__btn-md icon__btn-invert",
+            "tag": "a",
+            "href": "#"
+          })
+        </div>
+      </section>
+
+      <div class="position-relative pb-60 pt-60 lazyload parallax-bg" data-bg="img/demo_travel_agency/1920x867_1.jpg">
+        <div class="brk-abs-bg-overlay brk-base-gradient-34"></div>
+
+        <div class="container position-relative z-index-3">
+          <div class="font__family-montserrat font__weight-bold font__size-36 line__height-42 text-uppercase pb-15 text-white text-center text-md-left" style="border-bottom: 1px solid rgba(var(--white-rgb), 0.2);">Companies Reviews
+          </div>
+        </div>
+
+        @@include('../testimonials/templates/double.html', {
+          "slider_1_style": "double-white",
+          "slider_1_bg": "img/560x379_1.jpg",
+          "slider_2_style": "double-dark",
+          "slider_2_bg": "img/560x379_4.jpg",
+          "reviews_squared": "true",
+          "reviews": "THAILAND",
+          "slider_1_people_1": "img/people/86x86_1.jpg",
+          "slider_1_people_2": "img/people/86x86_2.jpg",
+          "slider_1_people_3": "img/people/86x86_3.jpg",
+          "slider_2_people_1": "img/people/86x86_4.jpg",
+          "slider_2_people_2": "img/people/86x86_5.jpg",
+          "slider_2_people_3": "img/people/86x86_6.jpg"
+        })
+      </div>
+
+    </main>
+  </div>
+
+  @@include("../../modules/footer/templates/footer-3.html",{
+  "demo": "true",
+  "overlay": "brk-base-gradient-34"
+  })
+
+  @@include('../../assets/templates/footer.html',{
+  "demo": "true"
+  })
+</body>

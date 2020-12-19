@@ -1,0 +1,60 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Parallax Video"
+})
+
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+	<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<main class="main-container mb-70 mt-100 mt-md-130">
+
+    <!-- Parallax blocks Video Local -->
+    <div class="mt-100 mt-md-170">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">01</span> Video Local</h3>
+    	</div>
+		  @@include("templates/video-local.html")
+    </div>
+
+    <!-- Parallax blocks Video YouTube -->
+    <div class="mt-100 mt-md-170">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">02</span> Video YouTube</h3>
+    	</div>
+		  @@include("templates/video-youtube.html")
+    </div>
+
+    <!-- Parallax blocks Video Vimeo -->
+    <div class="mt-100 mt-md-170">
+    	<div class="container">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">03</span> Video Vimeo</h3>
+    	</div>
+		  @@include("templates/video-vimeo.html")
+    </div> 
+
+    <div class="mt-100 mt-md-170">
+    	<div class="container mb-70 mb-md-140">
+    		<h3 class="font__family-montserrat font__size-28 font__weight-bold text-left"><span
+    			class="heading__number">04</span> Round</h3>
+    	</div>
+		  @@include("templates/round.html",{
+        "grayscale":"true"
+      })
+    </div> 
+
+	</main>
+
+</div>
+
+
+	@@include("../../assets/templates/footer.html")
+
+</body>
+</html>

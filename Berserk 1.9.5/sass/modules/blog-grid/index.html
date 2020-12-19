@@ -1,0 +1,70 @@
+  @@include("../../assets/templates/head.html", {
+  "titlePage": "Blog Grid"
+  })
+  </head>
+
+  <body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container mb-50 mt-70">
+      <div class="row no-gutters">
+        <div class="col-xl-4">
+          @@include('../blog-grid/templates/blog-grid-card.html', {
+          "size": "small",
+          "color": "white"
+          })
+        </div>
+        <div class="col-xl-4">
+          @@include('../blog-grid/templates/blog-grid-card.html', {
+          "size": "small",
+          "color": "dark"
+          })
+        </div>
+        <div class="col-xl-4">
+          @@include('../blog-grid/templates/blog-grid-card.html', {
+          "size": "small",
+          "color": "white"
+          })
+        </div>
+        <div class="col-xl-8">
+          <div class="row no-gutters">
+            <div class="col-xl-6">
+              @@include('../blog-grid/templates/blog-grid-card.html', {
+              "size": "small",
+              "color": "dark"
+              })
+            </div>
+            <div class="col-xl-6">
+              @@include('../blog-grid/templates/blog-grid-card.html', {
+              "size": "small",
+              "color": "white"
+              })
+            </div>
+            <div class="col-xl-12">
+              @@include('../blog-grid/templates/blog-grid-card.html', {
+              "size": "small",
+              "color": "colored"
+              })
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          @@include('../blog-grid/templates/blog-grid-card.html', {
+          "size": "big",
+          "color": "dark"
+          })
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  
+    @@include("../../assets/templates/footer.html")
+  
+
+  </body>
+</html>

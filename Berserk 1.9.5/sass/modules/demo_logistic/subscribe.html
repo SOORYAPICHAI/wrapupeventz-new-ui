@@ -1,0 +1,28 @@
+<div class="pt-50 pb-50 position-relative lazyload" data-bg="img/demo_logistic/1920x180_2.jpg" data-brk-library="component__form">
+  <span class="brk-abs-bg-overlay brk-base-bg-gradient-360deg"></span>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-12">
+        <div class="text-center text-lg-left">
+          <h2 class="brk-white-font-color font__family-montserrat font__size-34 font__weight-bold line__height-40 text-uppercase letter-spacing-40 mb-xs-20">
+            Subscribe to our <br> newsletter
+          </h2>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <form action="#" class="brk-subscribe-mail d-flex brk-form-strict brk-form-strict_bd-white brk-strict-transparent-form" data-brk-library="recaptcha"> 
+          <input type="email" placeholder="Your Mail" name="EMAIL">
+          @@include('../../modules/buttons/templates/buttons.html',{
+            "tag": "button",
+            "type": "btn-inside-out btn-inside-out-invert",
+            "text": "Request our news",
+            "text_hover": "Make a Request",
+            "size": "md",
+            "icon": "<i class='far fa-newspaper icon-inside'></i>",
+            "customClass": "border-radius-25 pl-40 pr-40 btn-no-shadow align-self-center font__weight-bold"
+          })
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

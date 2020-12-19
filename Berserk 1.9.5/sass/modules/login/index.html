@@ -1,0 +1,94 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Login"
+})
+</head>
+
+<body> @@include('../../modules/theme-options/templates/options.html', {})
+  <!-- The Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+    <main class="main-container">
+
+      <section class="">
+        <div class="container-fluid">
+          <div class="row row-no-gutter">
+            <div class="col-12 col-lg-5 order-2 order-lg-1">
+              <div class="full-screen position-relative d-flex flex-column justify-content-center align-items-center">
+                @@include("../backgrounds/templates/bg-1.html",{
+                  "innerContent": "false",
+                  "customClass": "brk-abs-overlay"
+                })
+                <a href="index.html" class="z-index-2 mb-60 pl-15 pr-15">
+                  <img src="img/456x82_logo.png" alt="logo" class="">
+                </a>
+                @@include("../buttons/templates/buttons-backgrounds.html",{
+                  "class": "btn-backgrounds_transparent btn-backgrounds_left-icon font__family-montserrat font__weight-normal text-uppercase font__size-13 z-index-2 text-center",
+                  "style": "padding-left:85px; padding-right: 60px;",
+                  "icon": "<i class='fas fa-arrow-left'></i>",
+                  "text": "Back to the Homepage",
+                  "tag": "a",
+                  "href": "index.html" 
+                })
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-7 order-1 order-lg-2">
+              <div class="full-screen d-flex align-items-center">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-1"></div>
+                    <div class="col-12 col-md-10">
+                      <h1 class="font__family-montserrat font__weight-bold font__size-42 line__height-42 mt-0 mb-45">LOGIN</h1>
+                      <form action="#" class="brk-form brk-form-strict maxw-570" data-brk-library="component__form">
+                        <input type="text" placeholder="Username or Email Address">
+                        <input type="password" placeholder="Password">
+
+                        <div class="no-margin pl-10 pr-10 mb-30 mt-40 d-flex flex-wrap justify-content-between align-items-center">
+                          <div>
+                            <input id="checkbox-strict-1" name="checkbox" type="checkbox" value="1" checked="checked">
+                            <label class="brk-form-checkbox-label" for="checkbox-strict-1">Remember Me</label>
+                          </div>
+
+                          <div>
+                            <a class="font__size-14 line__height-24 brk-base-font-color text-decoration_underline" href="#">Forgot password?</a>
+                          </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap justify-content-between">
+                          @@include("../buttons/templates/buttons-backgrounds.html",{
+                            "class": "btn-backgrounds btn-backgrounds_280 btn-backgrounds_white btn-backgrounds_left-icon font__family-montserrat font__weight-bold text-uppercase font__size-13 z-index-2 text-center letter-spacing-20 mt-10",
+                            "icon": "<i class=\"far fa-hand-point-right\"></i>",
+                            "text": "Login Now",
+                            "tag": "button" 
+                          })
+                          @@include("../buttons/templates/buttons-backgrounds.html",{
+                            "class": "btn-backgrounds btn-backgrounds_280 btn-backgrounds_white font__family-montserrat font__weight-bold text-uppercase font__size-13 z-index-2 text-center letter-spacing-20 mt-10",
+                            "icon": "<i class=\"fas fa-user\"></i>",
+                            "text": "Sign up",
+                            "tag": "a",
+                            "href": "#" 
+                          })
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+
+  @@include("../../assets/templates/footer.html",{
+    "demo": "true"
+  })
+
+</body>
+
+</html>

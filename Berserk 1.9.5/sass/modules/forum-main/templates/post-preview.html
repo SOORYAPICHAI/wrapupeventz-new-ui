@@ -1,0 +1,76 @@
+<div class='brk-forum-preview @@if(wide === "true"){brk-forum-preview_wide} @@if(postHeader === "true"){brk-forum-preview_post-header}' data-brk-library="component__forum_main">
+        <a href="#" class="brk-forum-preview__user-link"> 
+            <img class="brk-forum-preview__user-img" alt="alt" src="@@img-src"> 
+            <div class="brk-forum-preview__user-overlay brk-base-bg-gradient-10deg"></div>
+            <i class="fal fa-plus brk-forum-preview__user-icon text-white font__size-24"></i>
+        </a>
+        <div class="brk-forum-preview__body">
+            @@if(name){
+            <a href="#" class="brk-forum-preview__name brk-bg-primary">
+                <span class="font__family-open-sans font__size-14 font__weight-normal line__height-14 text-white">@@name</span>
+            </a>
+            }
+            <a href="#" class="font__family-montserrat font__size-16 font__weight-bold brk-forum-preview__title">@@title</a>
+            <div class="brk-forum-preview__info font__family-open-sans font__size-14 font__weight-normal brk-dark-font-color">
+                <span>@@last-update</span>
+                @@if(category === "JobPosting"){
+                    @@include('category-with-circle.html',{
+                        "bg-color-class":"brk-bg-blue",
+                        "category-name":"JobPosting", 
+                        "customClass":""
+                    })
+                }
+                @@if(category === "GettingStarted"){
+                    @@include('category-with-circle.html',{
+                        "bg-color-class":"brk-bg-green",
+                        "category-name":"Getting Started",
+                        "customClass":""
+                    })
+                }
+                @@if(category === "Question"){
+                    @@include('category-with-circle.html',{
+                        "bg-color-class":"brk-bg-cyan",
+                        "category-name":"Question",
+                        "customClass":""
+                    })
+                }
+                @@if(category === "Feature"){
+                    @@include('category-with-circle.html',{
+                        "bg-color-class":"brk-bg-orange",
+                        "category-name":"Feature",
+                        "customClass":""
+                    })
+                }
+                @@if(category === "Ideas"){
+                    @@include('category-with-circle.html',{
+                        "bg-color-class":"brk-bg-brown",
+                        "category-name":"Ideas",
+                        "customClass":""
+                    })
+                }
+                @@if(!category){
+                    @@include('category-with-circle.html',{
+                        "bg-color-class":"brk-bg-green",
+                        "category-name":"Category",
+                        "customClass":""
+                    })
+                }
+                <a href="#" class="ml-10" title="Topics">
+                    <i class="fal fa-check-circle"></i>
+                    <span class="brk-forum-preview__comment-count">@@comment-count</span>
+                </a>
+                <a href="#" class="ml-10" title="Posts">
+                    <i class="fal fa-list"></i>
+                    <span class="brk-forum-preview__like-count">@@like-count</span>
+                </a>
+            </div>
+        </div>
+        @@if(private === "true"){
+            <div class="brk-forum-preview__private">
+                <span class="brk-forum-preview__private-hover brk-bg-primary text-white font__family-open-sans font__size-14 font__weight-normal">Private</span>
+                <span class="brk-forum-preview__private-lock ">
+                        <i class="fas fa-lock font__size-11"></i>
+                    </span>
+            </div>  
+        }
+    </div>

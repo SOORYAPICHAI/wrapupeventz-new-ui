@@ -1,0 +1,50 @@
+<div class="brs-sidebar brs-sidebar_right @@if(context.customClass){@@customClass}" data-brk-library="component__widgets">
+    <div class="brs-sidebar__title">
+        <i class="fab fa-hotjar brs-sidebar__title-icon"></i>
+        <h3 class="font__family-montserrat font__size-21 font__weight-bold line__height-22">HOT News</h3>
+    </div>
+    <div class="brs-carousel brs-carousel_news" data-brk-library="slider__slick">
+      @@if(context.demo !== "true"){
+        @@include('post-mini-vertical.html',{
+          "imgSrc":"img/blog/news-img.png",
+          "title": "Some large title lorem ipsum"
+        })
+        @@include('post-mini-vertical.html',{
+          "imgSrc":"img/blog/simple-post.png"
+        }) 
+        @@include('post-mini-vertical.html',{
+          "imgSrc":"img/blog/quote-post-1.png"
+        })
+      }
+      @@if(context.demo === "true"){
+        @@include('post-mini-vertical.html',{
+          "imgSrc":"img/240x190_1.jpg"
+        })
+        @@include('post-mini-vertical.html',{
+          "imgSrc":"img/240x190_1.jpg"
+        })
+        @@include('post-mini-vertical.html',{
+          "imgSrc":"img/240x190_1.jpg"
+        })
+      }
+    </div>
+    @@if(context.demo === "true"){
+      @@include('news-tab.html',{
+        "demo": "true"
+      })
+    }
+    @@if(context.demo !== "true"){
+      @@include('news-tab.html')
+    }    
+    <div class="brs-sidebar__title">
+        <h3 class="font__family-montserrat font__size-21 font__weight-bold line__height-22">Tags</h3>
+    </div>
+    @@if(context.tabs === "light"){
+      @@include('../../tags/templates/light.html')    
+    }
+    @@if(context.tabs !== "light"){
+      @@include('../../tags/templates/solid.html')
+    }
+
+
+</div>

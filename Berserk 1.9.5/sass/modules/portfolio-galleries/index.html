@@ -1,0 +1,55 @@
+@@include("../../assets/templates/head.html", {
+"titlePage": "Portfolio Galleries"
+})
+</head>
+
+<body>  @@include('../../modules/theme-options/templates/options.html', {}) @@include('../default-header/templates/header.html')
+
+<!-- The Main Wrapper -->
+<div class="main-wrapper">
+
+  <!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+  <main class="main-container mb-50">
+    <div class="brk-portfolio-galleries">
+
+      <div class="row brk-gutters-5">
+        <div class="col-12 col-md-6">
+          @@include('./templates/card.html',{
+          "img":"img/home-page/gallery-1.jpg",
+          "title":"Gallery 1",
+          "subtitle":"18 photos"
+          })
+        </div>
+        <div class="col-12 col-md-6">
+          @@include('./templates/card.html',{
+          "img":"img/home-page/gallery-2.jpg",
+          "title":"Gallery 2",
+          "subtitle":"5 photos"
+          })
+        </div>
+        <div class="col-12 col-md-6">
+          @@include('./templates/card.html',{
+          "img":"img/home-page/gallery-3.jpg",
+          "title":"Gallery 3",
+          "subtitle":"20 photos"
+          })
+        </div>
+        <div class="col-12 col-md-6">
+          @@include('./templates/card.html',{
+          "img":"img/home-page/gallery-4.jpg",
+          "title":"Gallery 4",
+          "subtitle":"80 photos"
+          })
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</div>
+
+@@include("../../assets/templates/footer.html")
+
+</body>
+</html>
