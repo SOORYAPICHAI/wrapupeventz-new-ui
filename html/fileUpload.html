@@ -1,3 +1,5 @@
+<!-- REFER DOCUMENTATION -->
+<!-- // https://docs.fineuploader.com/ -->
 <!DOCTYPE html>
 <html>
 
@@ -115,6 +117,10 @@
     ====================================================================== -->
     <script>
         var s3Uploader;
+        const urls = () =>{
+            var submittedFileCount = s3Uploader.getUploads({status: qq.status.UPLOAD_SUCCESSFUL});
+            return url = submittedFileCount
+        }
         s3Uploader = new qq.s3.FineUploader({
             debug: true,
             element: document.getElementById('fine-uploader-s3'),
@@ -182,7 +188,7 @@
                 onComplete: function (id, name, response) {
                     debugger
                     var previewLink = qq(this.getItemByFileId(id)).getByClass('preview-link')[0];
-
+                    let 
                     if (response.success) {
                         previewLink.setAttribute("href", s3BucketEndPoint.concat('/').concat(response.message.key))
                     }

@@ -68,12 +68,14 @@
 													<div class="card expanded">
 														<div class="card-header text-left" role="tab" id="headingOne">
 															<span class="card-dash brk-base-bg-gradient-bottom"></span>
+															<!-- 	data-toggle="collapse"
+																	data-parent=".accordion-slider" href="#collapseOne"
+																	aria-expanded="false" aria-controls="collapseOne" -->
 															<h5
 																class="mb-0 font__family-montserrat font__weight-semibold letter-spacing-20 font__size-16 line__height-16 brk-base-font-color text-uppercase">
 																<a class="font__weight-medium card-title"
-																	data-toggle="collapse"
-																	data-parent=".accordion-slider" href="#collapseOne"
-																	aria-expanded="false" aria-controls="collapseOne">
+																
+																	id="collapseOneHref">
 																	<i class="far fa-gem"></i> Basic
 																</a>
 															</h5>
@@ -87,7 +89,7 @@
 															aria-labelledby="headingOne">
 															<div class="card-block text-left font__family-open-sans"
 																style="padding: 40px 40px 40px;">
-																<div class="row">
+																<!-- <div class="row">
 																	<div class="col-sm-6 mb-20">
 																		<label
 																			class="brk-form-label font__family-montserrat font__weight-bold"
@@ -159,17 +161,23 @@
 																		<input id="brk-pincode-form" name="pincode"
 																			type="tel" placeholder="600087">
 																	</div>
-																</div>
+																</div> -->
+																<div class="row" id="basicQuestions">
 
+																</div>
 																<div class="row btn-box">
 																	<div
 																		class="col-12 offset-sm-6 col-sm-6 mt-20 text-center text-sm-right">
 																		<a class="btn btn-inside-out btn-lg btn-icon-abs border-radius-25 font__family-open-sans font__weight-bold btn-min-width-200"
+																			id="next"
 																			data-brk-library="component__button"
 																			data-toggle="collapse"
 																			data-parent=".accordion-slider"
 																			href="#collapseTwo" aria-expanded="false"
-																			aria-controls="collapseTwo">
+																			style="display: none;"
+																			aria-controls="collapseTwo">hidden</a>
+																		<a class="btn btn-inside-out btn-lg btn-icon-abs border-radius-25 font__family-open-sans font__weight-bold btn-min-width-200"
+																			onclick="validations(['basicQuestions'],null,'next')">
 
 																			<span class="before">Next</span><span
 																				class="text">Click Me</span><span
@@ -190,12 +198,14 @@
 													<div class="card">
 														<div class="card-header text-left" role="tab" id="headingTwo">
 															<span class="card-dash brk-base-bg-gradient-bottom"></span>
+															<!-- data-toggle="collapse"
+																	data-parent=".accordion-slider" href="#collapseTwo"
+																	aria-expanded="false" aria-controls="collapseTwo" -->
 															<h5
 																class="mb-0 font__family-montserrat font__weight-semibold letter-spacing-20 font__size-16 line__height-16 brk-base-font-color text-uppercase">
 																<a class="font__weight-medium card-title collapsed"
-																	data-toggle="collapse"
-																	data-parent=".accordion-slider" href="#collapseTwo"
-																	aria-expanded="false" aria-controls="collapseTwo">
+																	
+																	id="collapseTwoHref">
 																	<i class="fab fa-delicious"></i> Additional
 																</a>
 															</h5>
@@ -212,13 +222,11 @@
 
 																</div>
 																<div class="row mt-20">
-																	<div
-																		class="col-12">
+																	<div class="col-12">
 
 
-																		
-																		<label
-																		id="includedContentLabel"
+
+																		<label id="includedContentLabel"
 																			class="brk-form-label font__family-montserrat font__weight-bold">City/State</label>
 																		<div id="includedContent">
 																		</div>
@@ -229,7 +237,7 @@
 																		class="col-12 offset-sm-6 col-sm-6 mt-20 text-center text-sm-right">
 																		<div class="btn btn-inside-out btn-lg btn-icon-abs border-radius-25 font__family-open-sans font__weight-bold btn-min-width-200"
 																			data-brk-library="component__button"
-																			onclick="validations()">
+																			onclick="validations(['additionalQuestions','fine-uploader-s3'])">
 
 																			<span class="before">Register</span><span
 																				class="text">Click Me</span><span
@@ -277,13 +285,32 @@
 
 	<script>
 		let role = new URL(location.href).searchParams.get('role')
-
-		document.getElementById('additionalQuestions').innerHTML += questions()[role].map(val => {
+		document.getElementById('basicQuestions').innerHTML += questions()['basic'].map(val => {
+			debugger
 			if (val.type === "FileUpload") {
-				
-					$("#includedContentLabel").text(val.label);
-					$("#includedContent").load("fileUpload.html");
-				
+
+				$("#includedContentLabel").text(val.label);
+				$("#includedContent").load("fileUpload.html");
+
+				return null
+			}
+			else {
+				return (
+					`
+				<div class="col-12 col-sm-${Math.round(12 / 2)} mt-20">
+					${htmlElements(val)["element"]}
+					</div>	
+					`
+				)
+			}
+		}).join("")
+		document.getElementById('additionalQuestions').innerHTML += questions()[role].map(val => {
+
+			if (val.type === "FileUpload") {
+
+				$("#includedContentLabel").text(val.label);
+				$("#includedContent").load("fileUpload.html");
+
 				return null
 			}
 			else {
