@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -102,7 +103,9 @@
     </style>
 
     <title>Fine Uploader S3 Demo</title>
+    <script src="/config.js"></script>
 </head>
+
 <body>
     <!-- Fine Uploader DOM Element
     ====================================================================== -->
@@ -111,29 +114,43 @@
     <!-- Your code to create an instance of Fine Uploader and bind to the DOM/template
     ====================================================================== -->
     <script>
-        var s3Uploader = new qq.s3.FineUploader({
+        var s3Uploader;
+        s3Uploader = new qq.s3.FineUploader({
             debug: true,
             element: document.getElementById('fine-uploader-s3'),
             template: 'qq-template-s3',
             request: {
-                endpoint: "https://wrapupeventzimages.s3.ap-south-1.amazonaws.com/",
-                accessKey: "AKIAIYAYQXPOJNQFHFFA"
+                endpoint: s3BucketEndPoint,
+                accessKey: "AKIAIYAYQXPOJNQFHFFA",
+
             },
             signature: {
-        endpoint: "http://localhost:8000/api/signature"
-    },
-    uploadSuccess: {
-        endpoint: 'http://localhost:8000/api/post-answers'
-    },
-    
+                endpoint: `${apiEndPoint}/api/signature`,
+                version: 4,
+
+            },
+            uploadSuccess: {
+                endpoint: `${apiEndPoint}/api/post-answers`
+            },
+
             // iframeSupport: {
             //     localBlankPagePath: "/server/success.html"
             // },
-            objectProperties:{
-                acl:"public-read",
-                bucket:"wrapupeventzimages",
+            objectProperties: {
+                "acl": "public-read",
+                bucket: "wrapupeventzimages",
+                region: "ap-south-1",
+                key: function (id) {
+                    return 'testNewWrapupEventzsite/' + s3Uploader.getName(id);
+                }
                 // key:`testNewWrapupEventzsite`
             },
+            deleteFile: {
+        enabled: true,
+        forceConfirm: true,
+        endpoint: `${apiEndPoint}/api/delete`,
+        
+    },
             cors: {
                 expected: true
             },
@@ -159,16 +176,21 @@
                 }
             },
             callbacks: {
-                onComplete: function(id, name, response) {
+                onDelete: function(id) {
+            this.setDeleteFileParams({filename: this.getName(id)}, id);
+        },
+                onComplete: function (id, name, response) {
                     debugger
                     var previewLink = qq(this.getItemByFileId(id)).getByClass('preview-link')[0];
 
                     if (response.success) {
-                        previewLink.setAttribute("href", response.tempLink)
+                        previewLink.setAttribute("href", s3BucketEndPoint.concat('/').concat(response.message.key))
                     }
                 }
             }
         });
     </script>
+    
 </body>
+
 </html>
