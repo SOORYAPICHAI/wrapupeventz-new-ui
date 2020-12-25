@@ -1,0 +1,3 @@
+const validations =() =>{
+    alert('clicked')
+}

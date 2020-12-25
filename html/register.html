@@ -19,6 +19,7 @@
 	<link rel="stylesheet" id="brk-direction-offsets" href="css/assets/offsets.css">
 	<link id="brk-css-min" rel="stylesheet" href="css/assets/styles.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -206,9 +207,43 @@
 														</div>
 														<div id="collapseTwo" class="collapse" role="tabpanel"
 															aria-labelledby="headingTwo">
-															<div class="card-block text-left font__family-open-sans"
-																id="additionalQuestions">
+															<div class="card-block text-left font__family-open-sans">
+																<div class="row" id="additionalQuestions">
 
+																</div>
+																<div class="row mt-20">
+																	<div
+																		class="col-12">
+
+
+																		
+																		<label
+																		id="includedContentLabel"
+																			class="brk-form-label font__family-montserrat font__weight-bold">City/State</label>
+																		<div id="includedContent">
+																		</div>
+																	</div>
+																</div>
+																<div class="row btn-box">
+																	<div
+																		class="col-12 offset-sm-6 col-sm-6 mt-20 text-center text-sm-right">
+																		<div class="btn btn-inside-out btn-lg btn-icon-abs border-radius-25 font__family-open-sans font__weight-bold btn-min-width-200"
+																			data-brk-library="component__button"
+																			onclick="validations()">
+
+																			<span class="before">Register</span><span
+																				class="text">Click Me</span><span
+																				class="after">Register</span>
+																		</div>
+
+																		<!-- <a class="font__weight-medium card-title collapsed"
+																		data-toggle="collapse"
+																		data-parent=".accordion-slider" href="#collapseTwo"
+																		aria-expanded="false" aria-controls="collapseTwo">
+																		<i class="fab fa-delicious"></i> Additional
+																	</a> -->
+																	</div>
+																</div>
 															</div>
 														</div>
 													</div>
@@ -237,9 +272,32 @@
 	<a href="#top" id="toTop"></a>
 	<script defer="defer" src="js/scripts.min.js"></script>
 	<script src="data/userRegister/questions.js"></script>
+	<script src="htmlElements/index.js"></script>
+	<script src="htmlElements/validations.js"></script>
+
 	<script>
-		document.getElementById('additionalQuestions').innerHTML += questions()
+		let role = new URL(location.href).searchParams.get('role')
+
+		document.getElementById('additionalQuestions').innerHTML += questions()[role].map(val => {
+			if (val.type === "FileUpload") {
+				
+					$("#includedContentLabel").text(val.label);
+					$("#includedContent").load("fileUpload.html");
+				
+				return null
+			}
+			else {
+				return (
+					`
+				<div class="col-12  mt-20">
+					${htmlElements(val)["element"]}
+					</div>	
+					`
+				)
+			}
+		}).join("")
 	</script>
+
 </body>
 
 </html>
