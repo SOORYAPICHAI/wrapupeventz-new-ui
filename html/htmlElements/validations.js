@@ -8,7 +8,9 @@ function validateEmail(email) {
 }
 // validations
 let error = {};
-const conditions = (inputType, id) => {
+
+const conditions = (section, inputType, id) => {
+  error[section] = {}
   debugger;
   switch (inputType) {
     case "input":
@@ -16,12 +18,12 @@ const conditions = (inputType, id) => {
         if (document.getElementById(id).value) {
           document.getElementById(`${id}-error-label`).style.display = "none";
           document.getElementById(`${id}-error-label`).innerHTML = "";
-          error[`${id}-error-label`] = false;
+          error[section][`${id}-error-label`] = false ;
         } else {
           document.getElementById(`${id}-error-label`).style.display = "block";
           document.getElementById(`${id}-error-label`).innerHTML =
             validationMessages.required;
-          error[`${id}-error-label`] = true;
+          error[section][`${id}-error-label`] =  true ;
         }
       } else if (document.getElementById(id).type === "radio") {
         var radios = document.getElementsByName(`${id}-name`);
@@ -35,12 +37,12 @@ const conditions = (inputType, id) => {
         if (valid) {
           document.getElementById(`${id}-error-label`).style.display = "none";
           document.getElementById(`${id}-error-label`).innerHTML = "";
-          error[`${id}-error-label`] = false;
+          error[section][`${id}-error-label`] = false ;
         } else {
           document.getElementById(`${id}-error-label`).style.display = "block";
           document.getElementById(`${id}-error-label`).innerHTML =
             validationMessages.required;
-          error[`${id}-error-label`] = true;
+          error[section][`${id}-error-label`] =  true ;
         }
       } else if (document.getElementById(id).type === "checkbox") {
         var checkbox = document.getElementsByName(`${id}-name`);
@@ -54,12 +56,12 @@ const conditions = (inputType, id) => {
         if (valid) {
           document.getElementById(`${id}-error-label`).style.display = "none";
           document.getElementById(`${id}-error-label`).innerHTML = "";
-          error[`${id}-error-label`] = false;
+          error[section][`${id}-error-label`] = false ;
         } else {
           document.getElementById(`${id}-error-label`).style.display = "block";
           document.getElementById(`${id}-error-label`).innerHTML =
             validationMessages.required;
-          error[`${id}-error-label`] = true;
+          error[section][`${id}-error-label`] =  true ;
         }
       } else if (document.getElementById(id).type === "email") {
         debugger;
@@ -67,41 +69,41 @@ const conditions = (inputType, id) => {
           if (validateEmail(document.getElementById(id).value)) {
             document.getElementById(`${id}-error-label`).style.display = "none";
             document.getElementById(`${id}-error-label`).innerHTML = "";
-            error[`${id}-error-label`] = false;
+            error[section][`${id}-error-label`] = false ;
           } else {
             document.getElementById(`${id}-error-label`).style.display =
               "block";
             document.getElementById(`${id}-error-label`).innerHTML =
               validationMessages.emailError;
-            error[`${id}-error-label`] = true;
+            error[section][`${id}-error-label`] =  true ;
           }
         } else {
           document.getElementById(`${id}-error-label`).style.display = "block";
           document.getElementById(`${id}-error-label`).innerHTML =
             validationMessages.required;
-          error[`${id}-error-label`] = true;
+          error[section][`${id}-error-label`] =  true ;
         }
       } else if (document.getElementById(id).type === "tel") {
         if (document.getElementById(id).value) {
           document.getElementById(`${id}-error-label`).style.display = "none";
           document.getElementById(`${id}-error-label`).innerHTML = "";
-          error[`${id}-error-label`] = false;
+          error[section][`${id}-error-label`] = false ;
         } else {
           document.getElementById(`${id}-error-label`).style.display = "block";
           document.getElementById(`${id}-error-label`).innerHTML =
             validationMessages.required;
-          error[`${id}-error-label`] = true;
+          error[section][`${id}-error-label`] =  true ;
         }
       } else if (document.getElementById(id).type === "date") {
         if (new Date(document.getElementById(id).value).getFullYear()) {
           document.getElementById(`${id}-error-label`).style.display = "none";
           document.getElementById(`${id}-error-label`).innerHTML = "";
-          error[`${id}-error-label`] = false;
+          error[section][`${id}-error-label`] = false ;
         } else {
           document.getElementById(`${id}-error-label`).style.display = "block";
           document.getElementById(`${id}-error-label`).innerHTML =
             validationMessages.required;
-          error[`${id}-error-label`] = true;
+          error[section][`${id}-error-label`] =  true ;
         }
       }
       break;
@@ -109,29 +111,29 @@ const conditions = (inputType, id) => {
       if (document.getElementById(id).value.length > 0) {
         document.getElementById(`${id}-error-label`).style.display = "none";
         document.getElementById(`${id}-error-label`).innerHTML = "";
-        error[`${id}-error-label`] = false;
+        error[section][`${id}-error-label`] = false ;
       } else {
         document.getElementById(`${id}-error-label`).style.display = "block";
         document.getElementById(`${id}-error-label`).innerHTML =
           validationMessages.required;
-        error[`${id}-error-label`] = true;
+        error[section][`${id}-error-label`] =  true ;
       }
       break;
     case "textArea":
       if (document.getElementById(id).value) {
         document.getElementById(`${id}-error-label`).style.display = "none";
         document.getElementById(`${id}-error-label`).innerHTML = "";
-        error[`${id}-error-label`] = false;
+        error[section][`${id}-error-label`] = false ;
       } else {
         document.getElementById(`${id}-error-label`).style.display = "block";
         document.getElementById(`${id}-error-label`).innerHTML =
           validationMessages.required;
-        error[`${id}-error-label`] = true;
+        error[section][`${id}-error-label`] =  true ;
       }
       break;
   }
 };
-const validations = (parentDivIds, isUpload, isNext) => {
+const validations = (section, parentDivIds, isUpload, isNext) => {
   // if uploads exists
 
   if (isUpload) {
@@ -144,7 +146,7 @@ const validations = (parentDivIds, isUpload, isNext) => {
           return $(`#${id}`)
             .find(inputTypes)
             .each(function () {
-              conditions(inputTypes, $(this).attr("id"));
+              conditions(section, inputTypes, $(this).attr("id"));
               IDs.push($(this).attr("id"));
             });
         }
@@ -152,20 +154,18 @@ const validations = (parentDivIds, isUpload, isNext) => {
     });
   }
 
-  if (!(Object.keys(error).filter(val=>error[val]===true).length > 0)) {
+  console.log(error,"--error--sections")
+  if (!(Object.keys(error).filter((val) => error[val] === true).length > 0)) {
     if (isNext) {
-      document.getElementById(isNext).click()
+      document.getElementById(isNext).click();
     } else {
-        
       // API CALL
     }
-  }
-  else{
-    document.getElementById("collapseOneHref").href = "javascript:void(0);"
-      document.getElementById("collapseTwoHref").href = "javascript:void(0);"
+  } else {
+    document.getElementById("collapseOneHref").href = "javascript:void(0);";
+    document.getElementById("collapseTwoHref").href = "javascript:void(0);";
   }
 };
-
 
 // NEED TO DO PANNEL BASED VALIDATIONS
 // REGISTER API INTEGERATION IS PENDING

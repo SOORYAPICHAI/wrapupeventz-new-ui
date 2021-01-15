@@ -127,7 +127,7 @@
             template: 'qq-template-s3',
             request: {
                 endpoint: s3BucketEndPoint,
-                accessKey: "AKIAIYAYQXPOJNQFHFFA",
+                accessKey: "AKIAIMVTZZVKOHMPBUKA",
 
             },
             signature: {
@@ -144,10 +144,10 @@
             // },
             objectProperties: {
                 "acl": "public-read",
-                bucket: "wrapupeventzimages",
+                bucket: "wrapupeventz",
                 region: "ap-south-1",
                 key: function (id) {
-                    return 'testNewWrapupEventzsite/' + s3Uploader.getName(id);
+                    return 'wrapupeventz/' + s3Uploader.getName(id);
                 }
                 // key:`testNewWrapupEventzsite`
             },
@@ -188,7 +188,6 @@
                 onComplete: function (id, name, response) {
                     debugger
                     var previewLink = qq(this.getItemByFileId(id)).getByClass('preview-link')[0];
-                    let 
                     if (response.success) {
                         previewLink.setAttribute("href", s3BucketEndPoint.concat('/').concat(response.message.key))
                     }
