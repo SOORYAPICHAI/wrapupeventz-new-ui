@@ -20,7 +20,7 @@
 	<link id="brk-css-min" rel="stylesheet" href="css/assets/styles.min.css">
 </head>
 
-<body>
+<body onload="careersOpenings()">
 	<div class="brk-loader">
 		<div class="brk-loader__loader"></div>
 	</div>
@@ -190,7 +190,7 @@
 	<div id="footer"></div>
 	<a href="#top" id="toTop"></a>
 	<script defer="defer" src="js/scripts.min.js"></script>
-	<script src="data/careerOpenings/index.js"></script>
+	<!-- <script src="data/careerOpenings/index.js"></script> -->
 	<script src="header/index.js"></script>
 	<script src="footer/index.js"></script>
 
@@ -204,8 +204,47 @@
 
 	<!-- CAREERS DATA -->
 	<script>
-		careersOpenings().map((val, i) => {
-			document.getElementById('careers').innerHTML += `<div class="col-md-6 col-xl-3">
+		// const arr = async() =>  await careersOpenings()
+		const careersOpenings = async () => {
+			const endPoint =
+				window.location.host === "127.0.0.1:5500"
+					? "http://localhost:8000"
+					: "https://wrapupeventz.com";
+			let _openings = [];
+
+			const json = async (response) => {
+				let res = await response
+				return res.json();
+			};
+
+			await fetch(`${endPoint}/api/get-careeropenings`, {
+				method: "GET",
+				headers: {
+					'Content-Type': 'application/json;charset=utf-8'
+				},
+			})
+				// .then((status)=>status)
+				.then(response => response.json())
+				.then(async (data) => {
+					debugger;
+					// let datajson = json(await data);
+					if (data?.data?.length > 0) {
+						_openings = data.data.map((openings) => {
+							return {
+								label: openings.service_name,
+								value: openings.service_id,
+								description:
+									"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat",
+								image: "#",
+								url: `/register.html?role=${openings.service_name}`,
+							};
+						});
+					} else {
+						_openings = [];
+					}
+					debugger;
+					_openings.map((val, i) => {
+						document.getElementById('careers').innerHTML =  `<div class="col-md-6 col-xl-3">
     <figure class="shape-box shape-box_half" data-brk-library="component__shape_box">
         <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/300x460_1.jpg " alt="alt" class="lazyload">
         <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
@@ -214,7 +253,7 @@
                 <h3 class="font__family-montserrat font__size-36 brk-base-font-color">0${val.value}</h3>
                 <h4 class="font__family-montserrat font__weight-bold font__size-24 text-uppercase main-title">${val.label} </h4>
             </div>
-            <p class="font__family-open-sans font__size-14 text-gray">${val.description}</p>
+                        <p class="font__family-open-sans font__size-14 text-gray">${val.description}</p>
             <a href=${val.url} class="btn btn-inside-out btn-lg border-radius-30 font__weight-bold" data-brk-library="component__button">
                 <span class="before">Apply</span><span class="text">Click Me</span><span class="after">Apply</span>
             </a>
@@ -222,7 +261,25 @@
         <span class="after"></span>
     </figure>
 </div>`
-		})
+					})
+					// document.getElementById('careers').innerHTML += datas
+				})
+				.catch((error) => {
+					console.error("Error:", error);
+				});
+
+			// return [
+			//   { label: "Photographer", value:1, description:"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat", image:"#", url:"/register.html?role=photographer" },
+			//   { label: "Catering", value:2, description:"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat", image:"#", url:"/register.html?role=photographer" },
+			//   { label: "Makeup", value:3, description:"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat", image:"#", url:"/register.html?role=photographer" },
+			//   { label: "Music & Dance", value:4, description:"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat", image:"#", url:"/register.html?role=photographer" },
+			//   { label: "Venues", value:5, description:"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat", image:"#", url:"/register.html?role=photographer" },
+			//   { label: "Decorators", value:6, description:"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat", image:"#", url:"/register.html?role=photographer" },
+			// ];
+		};
+
+
+
 	</script>
 </body>
 

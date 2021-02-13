@@ -1,4 +1,13 @@
 const header = (headerType) => {
+	const {apiEndPoint} = require("../config.js")
+  const hitApi = () => {
+    fetch(`${apiEndPoint}api/get-header-data`)
+      .then(data=>{
+		  console.log(data,"====DATA=====")
+	  })
+      .catch((err) => {});
+  };
+  hitApi()
   if (headerType === "dark") {
     return `
 	<div class="brk-header-mobile">
