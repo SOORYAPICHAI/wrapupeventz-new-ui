@@ -335,8 +335,14 @@
 
 	<!-- LOAD HEADERS AND FOOTER -->
 
+	<script src="/config.js"></script>
 	<script>
-		document.getElementById('header').innerHTML += header('dark')
+		// config.js file required
+				const  loadHeader = async() => {
+			const data = await header('dark');
+			document.getElementById('header').innerHTML += data
+		}
+		loadHeader()
 		document.getElementById('footer').innerHTML += footer()
 	</script>
 </body>

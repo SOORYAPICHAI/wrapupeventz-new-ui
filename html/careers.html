@@ -20,7 +20,7 @@
 	<link id="brk-css-min" rel="stylesheet" href="css/assets/styles.min.css">
 </head>
 
-<body onload="careersOpenings()">
+<body >
 	<div class="brk-loader">
 		<div class="brk-loader__loader"></div>
 	</div>
@@ -197,15 +197,23 @@
 
 	<!-- LOAD HEADERS AND FOOTER -->
 
+	<script src="/config.js"></script>
 	<script>
-		document.getElementById('header').innerHTML += header()
+		// config.js file required
+		const loadHeader = async () => {
+			const data = await header();
+			document.getElementById('header').innerHTML += data
+		}
+		loadHeader()
 		document.getElementById('footer').innerHTML += footer()
 	</script>
 
 	<!-- CAREERS DATA -->
 	<script>
+
 		// const arr = async() =>  await careersOpenings()
 		const careersOpenings = async () => {
+			let arr = []
 			const endPoint =
 				window.location.host === "127.0.0.1:5500"
 					? "http://localhost:8000"
@@ -236,7 +244,7 @@
 								description:
 									"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat",
 								image: "#",
-								url: `/register.html?role=${openings.service_name}`,
+								url: `/register.html?role=${(((openings.service_name).replace('&', '')).replace(/\s+/g, '')).toLowerCase()}`,
 							};
 						});
 					} else {
@@ -244,25 +252,28 @@
 					}
 					debugger;
 					_openings.map((val, i) => {
-						document.getElementById('careers').innerHTML =  `<div class="col-md-6 col-xl-3">
-    <figure class="shape-box shape-box_half" data-brk-library="component__shape_box">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/300x460_1.jpg " alt="alt" class="lazyload">
-        <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
-        <figcaption>
-            <div class="show-cont">
-                <h3 class="font__family-montserrat font__size-36 brk-base-font-color">0${val.value}</h3>
-                <h4 class="font__family-montserrat font__weight-bold font__size-24 text-uppercase main-title">${val.label} </h4>
-            </div>
-                        <p class="font__family-open-sans font__size-14 text-gray">${val.description}</p>
-            <a href=${val.url} class="btn btn-inside-out btn-lg border-radius-30 font__weight-bold" data-brk-library="component__button">
-                <span class="before">Apply</span><span class="text">Click Me</span><span class="after">Apply</span>
-            </a>
-        </figcaption>
-        <span class="after"></span>
-    </figure>
-</div>`
+						arr.push('<div class="col-md-6 col-xl-3">' +
+							'<figure class="shape-box shape-box_half" data-brk-library="component__shape_box">' +
+							'<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/300x460_1.jpg " alt="alt" class="lazyload"/>' +
+							'<div class="brk-abs-overlay z-index-0 bg-black opacity-60">' + '</div>' +
+							'<figcaption>' +
+							'<div class="show-cont">' +
+							'<h3 class="font__family-montserrat font__size-36 brk-base-font-color">' + `#${i+100}` + '</h3>' +
+							'<h4 class="font__family-montserrat font__weight-bold font__size-24 text-uppercase main-title">' + `${val.label}` + '</h4>' +
+							'</div>' +
+							'<p class="font__family-open-sans font__size-14 text-gray">' + `${val.description}` + '</p>' +
+							'<a href=' + val.url + ' class="btn btn-inside-out btn-lg border-radius-30 font__weight-bold" data-brk-library="component__button">' +
+							'<span class="before">Apply</span><span class="text">Click Me</span><span class="after">Apply</span>' +
+							'</a>' +
+							'</figcaption>' +
+							'<span class="after"></span>' +
+							'</figure>' +
+							'</div>')
 					})
-					// document.getElementById('careers').innerHTML += datas
+
+					
+					return arr
+
 				})
 				.catch((error) => {
 					console.error("Error:", error);
@@ -276,10 +287,34 @@
 			//   { label: "Venues", value:5, description:"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat", image:"#", url:"/register.html?role=photographer" },
 			//   { label: "Decorators", value:6, description:"Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor consequat", image:"#", url:"/register.html?role=photographer" },
 			// ];
+			return arr.join('')
 		};
 
-
-
+		const loadOpportunities = async () => {
+			const data = await careersOpenings();
+			debugger
+			document.getElementById('careers').innerHTML += data
+		
+			
+		}
+		loadOpportunities()
+		document.getElementById('careers').innerHTML += '<div class="col-md-6 col-xl-3" style="display:none">' +
+							'<figure class="shape-box shape-box_half" data-brk-library="component__shape_box">' +
+							'<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/300x460_1.jpg " alt="alt" class="lazyload"/>' +
+							'<div class="brk-abs-overlay z-index-0 bg-black opacity-60">' + '</div>' +
+							'<figcaption>' +
+							'<div class="show-cont">' +
+							'<h3 class="font__family-montserrat font__size-36 brk-base-font-color">' + `0{i}` + '</h3>' +
+							'<h4 class="font__family-montserrat font__weight-bold font__size-24 text-uppercase main-title">' + `{val.label}` + '</h4>' +
+							'</div>' +
+							'<p class="font__family-open-sans font__size-14 text-gray">' + `{val.description}` + '</p>' +
+							'<a href= + val.url +  class="btn btn-inside-out btn-lg border-radius-30 font__weight-bold" data-brk-library="component__button">' +
+							'<span class="before">Apply</span><span class="text">Click Me</span><span class="after">Apply</span>' +
+							'</a>' +
+							'</figcaption>' +
+							'<span class="after"></span>' +
+							'</figure>' +
+							'</div>'
 	</script>
 </body>
 

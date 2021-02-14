@@ -17,9 +17,7 @@ const footer = () =>{
 									<p class="font__family-montserrat font__size-16 font__weight-medium text-uppercase mt-15 mb-30">Policy info</p>
 									<ul class="brk-dark-font-color line__height-26">
 										<li class="mb-10"><a href="#">Privacy info</a></li>
-										<li class="mb-10"><a href="#">Terms of Sale</a></li>
 										<li class="mb-10"><a href="#">Terms of Use</a></li>
-										<li><a href="#">Takedown Policy</a></li>
 									</ul>
 								</nav>
 								<nav class="col-6 col-lg-3 pb-lg-0 pb-30">
@@ -27,25 +25,14 @@ const footer = () =>{
 									<ul class="brk-dark-font-color line__height-26">
 										<li class="mb-10"><a href="#">About Us</a></li>
 										<li class="mb-10"><a href="#">Careers</a></li>
-										<li class="mb-10"><a href="#">Find Store</a></li>
-										<li><a href="#">Blog</a></li>
 									</ul>
 								</nav>
-								<nav class="col-6 col-lg-3 pb-lg-0 pb-30">
-									<p class="font__family-montserrat font__size-16 font__weight-medium text-uppercase mt-15 mb-30">Business</p>
-									<ul class="brk-dark-font-color line__height-26">
-										<li class="mb-10"><a href="#">Online Shopping</a></li>
-										<li class="mb-10"><a href="#">Become a Seller</a></li>
-										<li class="mb-10"><a href="#">Advertisement</a></li>
-										<li><a href="#">Be an Affiliate</a></li>
-									</ul>
-								</nav>
+							
 								<nav class="col-6 col-lg-3 pb-lg-0 pb-30">
 									<p class="font__family-montserrat font__size-16 font__weight-medium text-uppercase mt-15 mb-30">Need Help?</p>
 									<ul class="brk-dark-font-color line__height-26">
-										<li class="mb-10"><a href="#">FAQ</a></li>
-										<li class="mb-10"><a href="#">Help Center</a></li>
-										<li><a href="#">Online Chat</a></li>
+										<li class="mb-10"><a href="/contact-us.html">Contact Us</a></li>
+										<li class="mb-10"><a href="#">Find Store</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -72,3 +59,13 @@ const footer = () =>{
 	</footer>
     `
 }
+
+// <nav class="col-6 col-lg-3 pb-lg-0 pb-30">
+								// 	<p class="font__family-montserrat font__size-16 font__weight-medium text-uppercase mt-15 mb-30">Business</p>
+								// 	<ul class="brk-dark-font-color line__height-26">
+								// 		<li class="mb-10"><a href="#">Online Shopping</a></li>
+								// 		<li class="mb-10"><a href="#">Become a Seller</a></li>
+								// 		<li class="mb-10"><a href="#">Advertisement</a></li>
+								// 		<li><a href="#">Be an Affiliate</a></li>
+								// 	</ul>
+								// </nav>
