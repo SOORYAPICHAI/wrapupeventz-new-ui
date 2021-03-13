@@ -413,7 +413,7 @@
   background-image: linear-gradient(to right, var(--brk-base-3), var(--secondary)); }
 
 .brk-base-bg-gradient-15 {
-  background-image: linear-gradient(to right, var(--brk-base-2), var(--brk-base-5) 50%, var(--secondary)); }
+  background-image: linear-gradient(to right, var(--brk-base-2), var(--brk-base-3) 50%, var(--secondary)); }
 
 .brk-base-bg-gradient-16 {
   background-image: linear-gradient(-10deg, rgba(var(--brk-secondary-4-rgb), 0.96), rgba(var(--brk-secondary-5-rgb), 1)); }

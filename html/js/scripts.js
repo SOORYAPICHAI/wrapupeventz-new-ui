@@ -3367,31 +3367,31 @@ function isSafari() {
         $(this).addClass("rendered");
 
         if (_.attr('type') === 'file') {
-          // if (_.parents().hasClass('brk-form-strict')) {
-          //   _.wrap(function () {
-          //     return '<label class="' + wrap + '"></label>';
-          //   });
-          //   _.parent().append('<span class="file-info">Choose file</span><span class="icon-before"><i class="fa fa-upload" aria-hidden="true"></i></span>');
-          // } else if (_.parents().hasClass('brk-form-round')) {
-          //   _.wrap(function () {
-          //     return '<label class="' + wrap + '"></label>';
-          //   });
-          //   _.parent().append('<span class="file-info">Choose file</span><span class="icon-before"><i class="fal fa-upload" aria-hidden="true"></i></span>');
-          // } else if (_.parents().hasClass('brk-form-transparent')) {
-          //   _.wrap(function () {
-          //     return '<label class="' + wrap + '"></label>';
-          //   });
-          //   _.parent().append('<span class="file-info">Choose file</span><span class="icon-before"><i class="fa fa-upload" aria-hidden="true"></i></span>');
-          // }
+          if (_.parents().hasClass('brk-form-strict')) {
+            _.wrap(function () {
+              return '<label class="' + wrap + '"></label>';
+            });
+            _.parent().append('<span class="file-info">Choose file</span><span class="icon-before"><i class="fa fa-upload" aria-hidden="true"></i></span>');
+          } else if (_.parents().hasClass('brk-form-round')) {
+            _.wrap(function () {
+              return '<label class="' + wrap + '"></label>';
+            });
+            _.parent().append('<span class="file-info">Choose file</span><span class="icon-before"><i class="fal fa-upload" aria-hidden="true"></i></span>');
+          } else if (_.parents().hasClass('brk-form-transparent')) {
+            _.wrap(function () {
+              return '<label class="' + wrapTr + '"></label>';
+            });
+            _.parent().append('<span class="file-info">Choose file</span><span class="icon-before"><i class="fa fa-upload" aria-hidden="true"></i></span>');
+          }
 
         }
 
-        // _.on('change', function () {
-        //   var file = _.val(),
-        //     fileInfo = $('.file-info');
-        //   file = file.replace(/\\/g, "/").split('/').pop();
-        //   fileInfo.html(file);
-        // });
+        _.on('change', function () {
+          var file = _.val(),
+            fileInfo = $('.file-info');
+          file = file.replace(/\\/g, "/").split('/').pop();
+          fileInfo.html(file);
+        });
       });
 
       // checkbox
